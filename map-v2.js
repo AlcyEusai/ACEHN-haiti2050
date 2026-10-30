@@ -1,20 +1,27 @@
 
 /* =========================================================
    HAÏTI 2050 — ATLAS TERRITORIAL
-   Carte administrative interactive — V2
-   Source géographique : fichiers GeoJSON locaux
+   Carte administrative interactive — V2.1
+
+   ADM1 : Départements
+   ADM2 : Arrondissements
+
+   Source : geoBoundaries / OpenStreetMap
+   Fichiers GeoJSON hébergés localement
    ========================================================= */
 
 (() => {
   "use strict";
 
-  // Vérification de Leaflet et de la carte existante
+  // Vérification des dépendances
   if (typeof L === "undefined" || typeof map === "undefined") {
-    console.error("Haïti 2050 : Leaflet ou la carte est indisponible.");
+    console.error(
+      "Haïti 2050 : Leaflet ou la carte est indisponible."
+    );
     return;
   }
 
-  // Supprimer les anciens repères départementaux
+  // Retirer les anciens repères départementaux
   if (typeof markers !== "undefined") {
     markers.forEach(marker => {
       if (map.hasLayer(marker)) {
@@ -23,7 +30,7 @@
     });
   }
 
-  // Fichiers géographiques locaux
+  // Sources géographiques locales
   const GEOJSON_FILES = {
     ADM1: "./data/haiti-adm1.geojson",
     ADM2: "./data/haiti-adm2.geojson"
@@ -31,117 +38,114 @@
 
   const layers = {};
   let selectedPolygon = null;
+  let selectedLevel = null;
 
-  // Normaliser les noms des territoires
+  // Normalisation des noms
   function normalize(value) {
     return String(value || "")
       .normalize("NFD")
       .replace(/[\u0300-\u036f]/g, "")
-      .replace(/[’'-]/g, " ")
+      .replace(/[’‘']/g, " ")
+      .replace(/-/g, " ")
       .replace(/\s+/g, " ")
       .trim()
       .toLowerCase();
   }
 
-  // Zone d'information
-  const status = document.createElement("div");
+  // Nettoyer les préfixes administratifs
+  function normalizeDepartment(value) {
+    return normalize(value)
+      .replace(/^departement de l /, "")
+      .replace(/^departement du /, "")
+      .replace(/^departement de /, "")
+      .replace(/^department of /, "")
+      .replace(/^department /, "")
+      .trim();
+  }
 
-  status.id = "mapV2Status";
-  status.style.cssText = `
-    padding: 12px 16px;
-    font-size: 13px;
-    color: #35506a;
-    background: #f4f8fa;
-    border-top: 1px solid #e0e8ee;
-    line-height: 1.6;
-  `;
+  // Correspondances entre les noms
+  const DEPARTMENT_ALIASES = {
+    "ouest": "Ouest",
+    "sud": "Sud",
+    "sud est": "Sud-Est",
+    "grand anse": "Grand'Anse",
+    "grande anse": "Grand'Anse",
+    "nippes": "Nippes",
+    "artibonite": "Artibonite",
+    "centre": "Centre",
+    "nord": "Nord",
+    "nord est": "Nord-Est",
+    "nord ouest": "Nord-Ouest"
+  };
 
-  status.setAttribute("role", "status");
-  status.setAttribute("aria-live", "polite");
+  // Récupérer le nom du territoire
+  function getTerritoryName(feature) {
+    const p = feature.properties || {};
 
-  const mapContainer = document.querySelector(".mapCol");
+    return (
+      p.shapeName ||
+      p.name ||
+      p.NAME ||
+      p.NAME_1 ||
+      p.NAME_2 ||
+      p.nom ||
+      "Territoire non identifié"
+    );
+  }
 
-  if (mapContainer) {
-    mapContainer.appendChild(status);
+  // Zone d'information sous la carte
+  let status = document.getElementById("mapV2Status");
+
+  if (!status) {
+    status = document.createElement("div");
+    status.id = "mapV2Status";
+
+    status.style.cssText = `
+      padding: 12px 16px;
+      font-size: 13px;
+      color: #35506a;
+      background: #f4f8fa;
+      border-top: 1px solid #e0e8ee;
+      line-height: 1.6;
+    `;
+
+    status.setAttribute("role", "status");
+    status.setAttribute("aria-live", "polite");
+
+    const container = document.querySelector(".mapCol");
+
+    if (container) {
+      container.appendChild(status);
+    }
   }
 
   function setStatus(message) {
     status.textContent = message;
   }
 
-  // Récupérer le nom d'un territoire
-  function getTerritoryName(feature) {
-    const properties = feature.properties || {};
-
-    return (
-      properties.shapeName ||
-      properties.name ||
-      properties.NAME ||
-      properties.NAME_1 ||
-      properties.NAME_2 ||
-      properties.nom ||
-      "Territoire non identifié"
-    );
-  }
-
-  // Sélectionner un département
+  // Sélectionner un département dans l'interface
   function selectMapDepartment(name) {
+    const normalizedName = normalizeDepartment(name);
+
+    const mappedName =
+      DEPARTMENT_ALIASES[normalizedName] || name;
+
     const department = departments.find(item =>
-      normalize(item.name) === normalize(name)
+      normalize(item.name) === normalize(mappedName)
     );
 
     if (!department) {
       setStatus(
-        "Département : " + name +
-        " — correspondance à vérifier."
+        "Département non reconnu : " + name
       );
-      return;
+      return false;
     }
 
     selectDepartment(department.name, false);
+    return true;
   }
 
-  // Sélectionner une commune
-  function selectMapCommune(name) {
-    const matches = [];
-
-    departments.forEach(department => {
-      department.communes.forEach(commune => {
-        if (normalize(commune) === normalize(name)) {
-          matches.push({
-            department: department.name,
-            commune
-          });
-        }
-      });
-    });
-
-    // Ne pas attribuer une commune au mauvais département
-    if (matches.length !== 1) {
-      setStatus(
-        "Commune : " + name +
-        " — identification administrative à vérifier."
-      );
-      return;
-    }
-
-    const match = matches[0];
-
-    selectDepartment(match.department, false);
-
-    currentCommune = match.commune;
-
-    const communeSelect =
-      document.getElementById("commune");
-
-    if (communeSelect) {
-      communeSelect.value = match.commune;
-    }
-
-    renderSelection();
-  }
-
-  // Styles des frontières
+  // Styles géographiques
   function getStyle(level) {
     if (level === "ADM1") {
       return {
@@ -155,27 +159,81 @@
 
     return {
       color: "#d97706",
-      weight: 1.2,
-      opacity: 0.85,
+      weight: 1.3,
+      opacity: 0.9,
       fillColor: "#f59e0b",
-      fillOpacity: 0.04
+      fillOpacity: 0.05
     };
   }
 
-  // Chargement d'un fichier GeoJSON
+  // Réinitialiser la sélection précédente
+  function resetSelectedPolygon() {
+    if (!selectedPolygon || !selectedLevel) {
+      return;
+    }
+
+    const previousLayer = layers[selectedLevel];
+
+    if (
+      previousLayer &&
+      previousLayer.hasLayer(selectedPolygon)
+    ) {
+      previousLayer.resetStyle(selectedPolygon);
+    }
+
+    selectedPolygon = null;
+    selectedLevel = null;
+  }
+
+  // Sélectionner un polygone
+  function highlightPolygon(polygon, level) {
+    resetSelectedPolygon();
+
+    selectedPolygon = polygon;
+    selectedLevel = level;
+
+    polygon.setStyle({
+      color: "#0d2943",
+      weight: 3,
+      fillColor: "#38bdf8",
+      fillOpacity: 0.30
+    });
+
+    if (polygon.bringToFront) {
+      polygon.bringToFront();
+    }
+  }
+
+  // Afficher le territoire sélectionné
+  function zoomToPolygon(polygon, level) {
+    const bounds = polygon.getBounds();
+
+    if (!bounds.isValid()) {
+      return;
+    }
+
+    map.fitBounds(bounds, {
+      padding: [25, 25],
+      maxZoom: level === "ADM1" ? 10 : 12
+    });
+  }
+
+  // Chargement des données GeoJSON
   async function loadGeoJSON(level) {
     const url = GEOJSON_FILES[level];
 
     if (!url) {
-      throw new Error("Niveau administratif inconnu : " + level);
+      throw new Error(
+        "Niveau administratif inconnu : " + level
+      );
     }
 
     const response = await fetch(url);
 
     if (!response.ok) {
       throw new Error(
-        "Impossible de charger " + url +
-        " (HTTP " + response.status + ")"
+        "Fichier introuvable : " + url +
+        " — HTTP " + response.status
       );
     }
 
@@ -186,8 +244,7 @@
       !Array.isArray(data.features)
     ) {
       throw new Error(
-        "Le fichier " + url +
-        " ne contient pas une collection GeoJSON valide."
+        "Format GeoJSON invalide : " + url
       );
     }
 
@@ -202,15 +259,13 @@
           direction: "auto"
         });
 
-        // Survol du territoire
+        // Survol
         polygon.on("mouseover", () => {
-          polygon.setStyle({
-            weight: 3,
-            fillOpacity: 0.25
-          });
-
-          if (polygon.bringToFront) {
-            polygon.bringToFront();
+          if (selectedPolygon !== polygon) {
+            polygon.setStyle({
+              weight: 3,
+              fillOpacity: 0.20
+            });
           }
         });
 
@@ -220,47 +275,35 @@
           }
         });
 
-        // Clic sur un territoire
-        polygon.on("click", () => {
-          if (selectedPolygon) {
-            const oldLayer =
-              layers.ADM1?.hasLayer(selectedPolygon)
-                ? layers.ADM1
-                : layers.ADM2;
-
-            if (oldLayer) {
-              oldLayer.resetStyle(selectedPolygon);
-            }
+        // Sélection par clic
+        polygon.on("click", event => {
+          if (event.originalEvent) {
+            L.DomEvent.stopPropagation(
+              event.originalEvent
+            );
           }
 
-          selectedPolygon = polygon;
-
-          polygon.setStyle({
-            color: "#0d2943",
-            weight: 3,
-            fillOpacity: 0.30
-          });
-
-          const bounds = polygon.getBounds();
-
-          if (bounds.isValid()) {
-            map.fitBounds(bounds, {
-              padding: [25, 25],
-              maxZoom: level === "ADM1" ? 10 : 12
-            });
-          }
+          highlightPolygon(polygon, level);
+          zoomToPolygon(polygon, level);
 
           if (level === "ADM1") {
-            selectMapDepartment(name);
-          } else {
-            selectMapCommune(name);
-          }
+            const found = selectMapDepartment(name);
 
-          setStatus(
-            (level === "ADM1"
-              ? "Département : "
-              : "Division ADM2 : ") + name
-          );
+            setStatus(
+              "Département : " + name +
+              (found
+                ? " — sélectionné"
+                : " — correspondance à vérifier")
+            );
+          } else {
+            // ADM2 = arrondissement, pas commune
+            setStatus(
+              "Arrondissement : " + name +
+              " — niveau ADM2. " +
+              "Les communes seront intégrées " +
+              "dans une prochaine étape."
+            );
+          }
         });
       }
     });
@@ -270,7 +313,7 @@
     return data.features.length;
   }
 
-  // Affichage selon le niveau de zoom
+  // Affichage des couches selon le zoom
   function updateVisibleLayers() {
     const zoom = map.getZoom();
 
@@ -278,30 +321,40 @@
       layers.ADM1.addTo(map);
     }
 
-    if (layers.ADM2) {
-      if (zoom >= 9) {
-        if (!map.hasLayer(layers.ADM2)) {
-          layers.ADM2.addTo(map);
-        }
-      } else {
-        if (map.hasLayer(layers.ADM2)) {
-          map.removeLayer(layers.ADM2);
-        }
+    if (!layers.ADM2) {
+      return;
+    }
+
+    if (zoom >= 9) {
+      if (!map.hasLayer(layers.ADM2)) {
+        layers.ADM2.addTo(map);
+      }
+    } else {
+      if (map.hasLayer(layers.ADM2)) {
+        map.removeLayer(layers.ADM2);
       }
     }
   }
 
-  // Bouton vue nationale
+  // Bouton de retour à la vue nationale
   function setupNationalView() {
     const button = document.getElementById("nationBtn");
 
-    if (!button) return;
+    if (!button) {
+      return;
+    }
 
     button.addEventListener("click", () => {
+      resetSelectedPolygon();
+
       if (layers.ADM1) {
-        map.fitBounds(layers.ADM1.getBounds(), {
-          padding: [20, 20]
-        });
+        const bounds = layers.ADM1.getBounds();
+
+        if (bounds.isValid()) {
+          map.fitBounds(bounds, {
+            padding: [20, 20]
+          });
+        }
       } else {
         map.setView([18.96, -72.65], 8);
       }
@@ -310,21 +363,80 @@
     });
   }
 
-  // Initialisation
-  async function initialize() {
-    setStatus("Chargement des frontières administratives…");
+  // Légende cartographique
+  function addLegend() {
+    const legend = L.control({
+      position: "bottomright"
+    });
 
-    const results = await Promise.allSettled([
-      loadGeoJSON("ADM1"),
-      loadGeoJSON("ADM2")
-    ]);
+    legend.onAdd = function() {
+      const div = L.DomUtil.create(
+        "div",
+        "haiti2050-legend"
+      );
+
+      div.style.cssText = `
+        background: white;
+        padding: 12px;
+        border-radius: 8px;
+        box-shadow: 0 2px 12px #0002;
+        font-size: 12px;
+        line-height: 1.8;
+        color: #15283b;
+      `;
+
+      div.innerHTML = `
+        <strong>Haïti 2050</strong>
+
+        <div>
+          <span style="
+            display:inline-block;
+            width:12px;
+            height:12px;
+            background:#0aa98c;
+            margin-right:6px;
+          "></span>
+          Départements
+        </div>
+
+        <div>
+          <span style="
+            display:inline-block;
+            width:12px;
+            height:12px;
+            background:#f59e0b;
+            margin-right:6px;
+          "></span>
+          Arrondissements (zoom ≥ 9)
+        </div>
+      `;
+
+      L.DomEvent.disableClickPropagation(div);
+      L.DomEvent.disableScrollPropagation(div);
+
+      return div;
+    };
+
+    legend.addTo(map);
+  }
+
+  // Initialisation générale
+  async function initialize() {
+    setStatus(
+      "Chargement des frontières administratives…"
+    );
+
+    const levels = ["ADM1", "ADM2"];
+
+    const results = await Promise.allSettled(
+      levels.map(level => loadGeoJSON(level))
+    );
 
     const labels = {
       ADM1: "Départements",
-      ADM2: "Communes (ADM2)"
+      ADM2: "Arrondissements"
     };
 
-    const levels = ["ADM1", "ADM2"];
     const messages = [];
 
     results.forEach((result, index) => {
@@ -347,6 +459,7 @@
       }
     });
 
+    // Ajuster la carte sur Haïti
     if (layers.ADM1) {
       const bounds = layers.ADM1.getBounds();
 
@@ -357,72 +470,30 @@
       }
     }
 
+    // Activer les couches
     updateVisibleLayers();
 
     map.on("zoomend", updateVisibleLayers);
 
     setupNationalView();
-
-    // Légende cartographique
-    const legend = L.control({
-      position: "bottomright"
-    });
-
-    legend.onAdd = function() {
-      const div = L.DomUtil.create(
-        "div",
-        "haiti2050-legend"
-      );
-
-      div.style.cssText = `
-        background: white;
-        padding: 12px;
-        border-radius: 8px;
-        box-shadow: 0 2px 12px #0002;
-        font-size: 12px;
-        line-height: 1.8;
-      `;
-
-      div.innerHTML = `
-        <strong>Haïti 2050</strong>
-        <div>
-          <span style="
-            display:inline-block;
-            width:12px;
-            height:12px;
-            background:#0aa98c;
-            margin-right:6px;
-          "></span>
-          Départements
-        </div>
-        <div>
-          <span style="
-            display:inline-block;
-            width:12px;
-            height:12px;
-            background:#f59e0b;
-            margin-right:6px;
-          "></span>
-          Communes (zoom ≥ 9)
-        </div>
-      `;
-
-      return div;
-    };
-
-    legend.addTo(map);
+    addLegend();
 
     setStatus(
       messages.join(" | ") +
-      " — Source : geoBoundaries"
+      " — Source : geoBoundaries / OpenStreetMap"
     );
   }
 
+  // Lancer la carte V2
   initialize().catch(error => {
-    console.error("Erreur d'initialisation :", error);
+    console.error(
+      "Haïti 2050 — erreur d'initialisation :",
+      error
+    );
 
     setStatus(
-      "Erreur lors de l'initialisation de la carte."
+      "Impossible d'initialiser la carte V2."
     );
   });
+
 })();
