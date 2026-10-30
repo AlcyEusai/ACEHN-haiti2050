@@ -1,43 +1,591 @@
-const departments=[
-{name:'Ouest',center:[18.54,-72.34],communes:['Port-au-Prince','Delmas','Pétion-Ville','Carrefour','Croix-des-Bouquets','Léogâne','Gressier','Cabaret','Arcahaie','Ganthier']},
-{name:'Sud',center:[18.2,-73.75],communes:['Les Cayes','Aquin','Fond-des-Blancs','Camp-Perrin','Port-Salut','Saint-Louis-du-Sud','Cavaillon','Chantal','Torbeck','Roche-à-Bateau']},
-{name:'Sud-Est',center:[18.23,-72.54],communes:['Jacmel','Marigot','Cayes-Jacmel','Bainet','Belle-Anse','Anse-à-Pitres','Thiotte']},
-{name:"Grand'Anse",center:[18.65,-74.12],communes:['Jérémie','Abricots','Bonbon','Dame-Marie','Anse-d’Hainault','Corail','Roseaux','Pestel']},
-{name:'Nippes',center:[18.44,-73.1],communes:['Miragoâne','Petite-Rivière-de-Nippes','Anse-à-Veau','Baradères','Petit-Trou-de-Nippes','L’Asile']},
-{name:'Artibonite',center:[19.45,-72.69],communes:['Gonaïves','Saint-Marc','Dessalines','Petite-Rivière-de-l’Artibonite','Verrettes','Gros-Morne','Ennery','Marmelade']},
-{name:'Centre',center:[19.14,-72.0],communes:['Hinche','Mirebalais','Lascahobas','Belladère','Cerca-la-Source','Thomonde','Maïssade','Saut-d’Eau']},
-{name:'Nord',center:[19.76,-72.2],communes:['Cap-Haïtien','Limbé','Acul-du-Nord','Milot','Plaine-du-Nord','Grande-Rivière-du-Nord','Plaisance','Saint-Raphaël']},
-{name:'Nord-Est',center:[19.67,-71.83],communes:['Fort-Liberté','Ouanaminthe','Trou-du-Nord','Terrier-Rouge','Caracol','Sainte-Suzanne','Mont-Organisé']},
-{name:'Nord-Ouest',center:[19.93,-72.83],communes:['Port-de-Paix','Saint-Louis-du-Nord','Jean-Rabel','Môle-Saint-Nicolas','Bombardopolis','Baie-de-Henne','Bassin-Bleu']}
+
+/*
+ * HAÏTI 2050 — APP.JS V2.4
+ * Navigation territoriale unifiée
+ * Départements > Arrondissements > Communes
+ *
+ * Nécessite territoires.js chargé avant app.js.
+ * Compatible avec map-v2.js.
+ */
+
+const $ = id => document.getElementById(id);
+
+const normalizeTerritory = value =>
+  String(value || "")
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .replace(/[’‘']/g, "'")
+    .replace(/[^a-zA-Z0-9]/g, "")
+    .toLowerCase();
+
+const territorialData = window.HAITI_TERRITOIRES;
+
+if (
+  !territorialData ||
+  !Array.isArray(territorialData.departements)
+) {
+  throw new Error(
+    "HAÏTI 2050 : territoires.js est absent ou invalide."
+  );
+}
+
+// Centres indicatifs des départements.
+// Ils ne représentent pas des limites administratives.
+const departmentCenters = {
+  "Ouest": [18.54, -72.34],
+  "Sud": [18.20, -73.75],
+  "Sud-Est": [18.23, -72.54],
+  "Grand'Anse": [18.65, -74.12],
+  "Nippes": [18.44, -73.10],
+  "Artibonite": [19.45, -72.69],
+  "Centre": [19.14, -72.00],
+  "Nord": [19.76, -72.20],
+  "Nord-Est": [19.67, -71.83],
+  "Nord-Ouest": [19.93, -72.83]
+};
+
+// Structure conservée pour la compatibilité avec map-v2.js.
+const departments = territorialData.departements.map(d => ({
+  name: d.nom,
+  center: departmentCenters[d.nom] || [18.96, -72.65],
+  communes: d.arrondissements.flatMap(a => a.communes)
+}));
+
+const demo = [
+  {
+    id: "demo-1",
+    department: "Sud",
+    commune: "Fond-des-Blancs",
+    title: "Marché communal organisé",
+    category: "Marché et commerce",
+    description:
+      "Concept : espaces de vente couverts, accès à l'eau, " +
+      "installations sanitaires et zone de stockage agricole.",
+    budget: "À étudier",
+    demo: true
+  },
+  {
+    id: "demo-2",
+    department: "Sud",
+    commune: "Fond-des-Blancs",
+    title: "Énergie solaire communautaire",
+    category: "Énergie solaire",
+    description:
+      "Concept : étudier un mini-réseau solaire pour " +
+      "les services publics et les activités économiques.",
+    budget: "À étudier",
+    demo: true
+  },
+  {
+    id: "demo-3",
+    department: "Sud",
+    commune: "Fond-des-Blancs",
+    title: "Amélioration des routes rurales",
+    category: "Routes et transports",
+    description:
+      "Concept : prioriser les axes d'accès aux écoles, " +
+      "marchés et établissements de santé après étude technique.",
+    budget: "À étudier",
+    demo: true
+  }
 ];
-const demo=[{id:'demo-1',department:'Sud',commune:'Fond-des-Blancs',title:'Marché communal organisé',category:'Marché et commerce',description:'Concept : espaces de vente couverts, accès à l’eau, installations sanitaires et zone de stockage agricole.',budget:'À étudier',demo:true},{id:'demo-2',department:'Sud',commune:'Fond-des-Blancs',title:'Énergie solaire communautaire',category:'Énergie solaire',description:'Concept : étudier un mini-réseau solaire pour les services publics et les activités économiques.',budget:'À étudier',demo:true},{id:'demo-3',department:'Sud',commune:'Fond-des-Blancs',title:'Amélioration des routes rurales',category:'Routes et transports',description:'Concept : prioriser les axes d’accès aux écoles, marchés et établissements de santé après étude technique.',budget:'À étudier',demo:true}];
-const read=(key,fallback)=>{try{return JSON.parse(localStorage.getItem(key))??fallback}catch{return fallback}};
-let projects=read('haiti2050-projects',demo),localities=read('haiti2050-localities',{});
-const $=id=>document.getElementById(id);let currentDepartment='Sud',currentCommune='Fond-des-Blancs';
-function option(sel,value,label){const o=document.createElement('option');o.value=value;o.textContent=label;sel.append(o)}
-for(const d of departments){option($('department'),d.name,d.name);option($('formDepartment'),d.name,d.name)}
-$('department').value=currentDepartment;
-const map=L.map('map',{scrollWheelZoom:false}).setView([18.96,-72.65],8);
-L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap contributors'}).addTo(map);
-const markers=[];departments.forEach(d=>{const m=L.circleMarker(d.center,{radius:9,color:'#fff',weight:2,fillColor:'#008f7a',fillOpacity:.95}).addTo(map).bindTooltip(d.name);m.on('click',()=>selectDepartment(d.name,true));markers.push(m)});
-function selectDepartment(name,zoom){currentDepartment=name;$('department').value=name;const d=departments.find(x=>x.name===name);$('commune').replaceChildren();for(const c of d.communes)option($('commune'),c,c);currentCommune=d.communes.includes(currentCommune)?currentCommune:d.communes[0];$('commune').value=currentCommune;if(zoom)map.flyTo(d.center,10);renderSelection()}
-function renderSelection(){ $('selectionTitle').textContent=currentCommune; $('selectionDescription').textContent =
-  `Département : ${currentDepartment}. ` +
-  `Commune sélectionnée : ${currentCommune}. ` +
-  `Les frontières des départements et des arrondissements ` +
-  `sont intégrées à l'atlas. Les limites communales ` +
-  `et les sections communales seront ajoutées ` +
-  `progressivement après vérification.`;const key=currentDepartment+'|'+currentCommune;const ul=$('localities');ul.replaceChildren();const arr=localities[key]||[];if(!arr.length){const li=document.createElement('li');li.textContent='Aucune localité validée pour le moment.';ul.append(li)}else for(const item of arr){const li=document.createElement('li');li.textContent=item+' (saisie locale, à vérifier)';ul.append(li)}renderProjects()}
-function renderProjects(){const container=$('projectCards');container.replaceChildren();const shown=projects.filter(p=>p.department===currentDepartment&&p.commune.toLowerCase()===currentCommune.toLowerCase());$('projectCount').textContent=projects.length;for(const p of shown){const article=document.createElement('article');article.className='projectCard';if(p.image&&/^https:\/\//.test(p.image)){const img=document.createElement('img');img.src=p.image;img.alt='Illustration du projet';img.loading='lazy';article.append(img)}const chip=document.createElement('span');chip.className='chip';chip.textContent=p.demo?'Concept illustratif':'Proposition locale';const h=document.createElement('h3');h.textContent=p.title;const info=document.createElement('p');info.textContent=p.description;const sub=document.createElement('p');sub.textContent=p.category+' · Budget : '+(p.budget||'À étudier');article.append(chip,h,info,sub);container.append(article)}if(!shown.length){const p=document.createElement('p');p.textContent='Aucun projet renseigné pour cette commune. Utilisez « Ajouter un projet » pour commencer.';container.append(p)}}
-$('communeCount').textContent=departments.reduce((n,d)=>n+d.communes.length,0);
-$('department').addEventListener('change',e=>selectDepartment(e.target.value,true));$('commune').addEventListener('change',e=>{currentCommune=e.target.value;renderSelection()});$('nationBtn').onclick=()=>map.flyTo([18.96,-72.65],8);
-$('searchBtn').onclick=()=>{const q=$('search').value.trim().toLocaleLowerCase('fr');if(!q)return;const d=departments.find(d=>d.communes.some(c=>c.toLocaleLowerCase('fr').includes(q)));if(!d){alert('Commune non présente dans le répertoire initial. Elle pourra être ajoutée dans une version ultérieure.');return}currentCommune=d.communes.find(c=>c.toLocaleLowerCase('fr').includes(q));selectDepartment(d.name,true)};
-$('search').addEventListener('keydown',e=>{if(e.key==='Enter')$('searchBtn').click()});
-$('addLocality').onclick=()=>{const value=$('localityName').value.trim();if(!value)return;const key=currentDepartment+'|'+currentCommune;localities[key]??=[];if(!localities[key].includes(value))localities[key].push(value);localStorage.setItem('haiti2050-localities',JSON.stringify(localities));$('localityName').value='';renderSelection()};
-const dialog=$('projectDialog');$('newProject').onclick=()=>{$('formDepartment').value=currentDepartment;$('formCommune').value=currentCommune;dialog.showModal()};$('closeDialog').onclick=$('cancelDialog').onclick=()=>dialog.close();$('projectForm').onsubmit=e=>{e.preventDefault();const p={id:Date.now(),department:$('formDepartment').value,commune:$('formCommune').value.trim(),title:$('formTitle').value.trim(),category:$('formCategory').value,description:$('formDescription').value.trim(),budget:$('formBudget').value.trim(),image:$('formImage').value.trim(),demo:false};projects.push(p);try{localStorage.setItem('haiti2050-projects',JSON.stringify(projects))}catch{alert('Stockage du navigateur saturé.')}dialog.close();$('projectForm').reset();renderProjects()};selectDepartment('Sud',false);
 
-/* HAÏTI 2050 — FICHE TERRITORIALE PILOTE */
+function readStorage(key, fallback) {
+  try {
+    return JSON.parse(localStorage.getItem(key)) ?? fallback;
+  } catch {
+    return fallback;
+  }
+}
 
+let projects = readStorage("haiti2050-projects", demo);
+let localities = readStorage("haiti2050-localities", {});
+
+let currentDepartment = "Sud";
+let currentArrondissement = "Aquin";
+let currentCommune = "Fond-des-Blancs";
+
+function option(select, value, label) {
+  const element = document.createElement("option");
+  element.value = value;
+  element.textContent = label;
+  select.appendChild(element);
+}
+
+function fillSelect(select, values, placeholder) {
+  if (!select) return;
+
+  select.replaceChildren();
+  option(select, "", placeholder);
+
+  values.forEach(value => {
+    option(select, value, value);
+  });
+}
+
+function getDepartment(name) {
+  return territorialData.departements.find(
+    d => normalizeTerritory(d.nom) === normalizeTerritory(name)
+  );
+}
+
+function getArrondissement(departmentName, arrondissementName) {
+  const department = getDepartment(departmentName);
+
+  return department?.arrondissements.find(
+    a => normalizeTerritory(a.nom) ===
+         normalizeTerritory(arrondissementName)
+  );
+}
+
+function findCommune(communeName, departmentName = null) {
+  const query = normalizeTerritory(communeName);
+
+  for (const department of territorialData.departements) {
+    if (
+      departmentName &&
+      normalizeTerritory(department.nom) !==
+        normalizeTerritory(departmentName)
+    ) {
+      continue;
+    }
+
+    for (const arrondissement of department.arrondissements) {
+      const commune = arrondissement.communes.find(
+        name => normalizeTerritory(name) === query
+      );
+
+      if (commune) {
+        return {
+          department: department.nom,
+          arrondissement: arrondissement.nom,
+          commune
+        };
+      }
+    }
+  }
+
+  return null;
+}
+
+function updateArrondissementOptions() {
+  const department = getDepartment(currentDepartment);
+
+  fillSelect(
+    $("arrondissement"),
+    department
+      ? department.arrondissements.map(a => a.nom)
+      : [],
+    "Choisir un arrondissement"
+  );
+}
+
+function updateCommuneOptions() {
+  const arrondissement = getArrondissement(
+    currentDepartment,
+    currentArrondissement
+  );
+
+  fillSelect(
+    $("commune"),
+    arrondissement ? arrondissement.communes : [],
+    "Choisir une commune"
+  );
+}
+
+// Initialisation des menus.
+fillSelect(
+  $("department"),
+  territorialData.departements.map(d => d.nom),
+  "Choisir un département"
+);
+
+fillSelect(
+  $("formDepartment"),
+  territorialData.departements.map(d => d.nom),
+  "Choisir un département"
+);
+
+function syncMenus() {
+  $("department").value = currentDepartment;
+
+  updateArrondissementOptions();
+  $("arrondissement").value = currentArrondissement;
+
+  updateCommuneOptions();
+  $("commune").value = currentCommune;
+}
+
+// Initialisation de la carte Leaflet.
+const map = L.map("map", {
+  scrollWheelZoom: false
+}).setView([18.96, -72.65], 8);
+
+L.tileLayer(
+  "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+  {
+    maxZoom: 18,
+    attribution: "© OpenStreetMap contributors"
+  }
+).addTo(map);
+
+// Conserver cette variable pour map-v2.js.
+const markers = [];
+
+departments.forEach(d => {
+  const marker = L.circleMarker(d.center, {
+    radius: 9,
+    color: "#fff",
+    weight: 2,
+    fillColor: "#008f7a",
+    fillOpacity: 0.95
+  }).addTo(map);
+
+  marker.bindTooltip(d.name);
+
+  marker.on("click", () => {
+    selectDepartment(d.name, true);
+  });
+
+  markers.push(marker);
+});
+
+function selectTerritory(
+  departmentName,
+  arrondissementName = null,
+  communeName = null,
+  zoom = false
+) {
+  const department = getDepartment(departmentName);
+  if (!department) return false;
+
+  currentDepartment = department.nom;
+
+  const arrondissement =
+    getArrondissement(department.nom, arrondissementName) ||
+    department.arrondissements[0];
+
+  if (!arrondissement) return false;
+
+  currentArrondissement = arrondissement.nom;
+
+  const commune = arrondissement.communes.find(
+    name =>
+      normalizeTerritory(name) ===
+      normalizeTerritory(communeName)
+  );
+
+  currentCommune = commune || arrondissement.communes[0] || "";
+
+  syncMenus();
+
+  if (zoom) {
+    const center =
+      departmentCenters[currentDepartment] || [18.96, -72.65];
+
+    map.flyTo(center, 10);
+  }
+
+  renderSelection();
+  return true;
+}
+
+// Fonction attendue par map-v2.js.
+function selectDepartment(name, zoom = false) {
+  const department = getDepartment(name);
+  if (!department) return false;
+
+  const previous = findCommune(
+    currentCommune,
+    department.nom
+  );
+
+  return selectTerritory(
+    department.nom,
+    previous?.arrondissement,
+    previous?.commune,
+    zoom
+  );
+}
+
+function renderSelection() {
+  const title = $("selectionTitle");
+  const description = $("selectionDescription");
+
+  if (title) title.textContent = currentCommune;
+
+  if (description) {
+    description.textContent =
+      "Département : " + currentDepartment +
+      ". Arrondissement : " + currentArrondissement +
+      ". Commune : " + currentCommune +
+      ". Les limites communales et les sections " +
+      "communales seront intégrées progressivement " +
+      "après vérification.";
+  }
+
+  const key = currentDepartment + "|" + currentCommune;
+  const list = $("localities");
+
+  if (list) {
+    list.replaceChildren();
+
+    const items = localities[key] || [];
+
+    if (!items.length) {
+      const li = document.createElement("li");
+      li.textContent =
+        "Aucune localité validée pour le moment.";
+      list.appendChild(li);
+    } else {
+      items.forEach(item => {
+        const li = document.createElement("li");
+        li.textContent =
+          item + " (saisie locale, à vérifier)";
+        list.appendChild(li);
+      });
+    }
+  }
+
+  renderProjects();
+  renderTerritoryProfile();
+}
+
+function renderProjects() {
+  const container = $("projectCards");
+  if (!container) return;
+
+  container.replaceChildren();
+
+  const shown = projects.filter(p =>
+    normalizeTerritory(p.department) ===
+      normalizeTerritory(currentDepartment) &&
+    normalizeTerritory(p.commune) ===
+      normalizeTerritory(currentCommune)
+  );
+
+  $("projectCount").textContent = projects.length;
+
+  shown.forEach(p => {
+    const article = document.createElement("article");
+    article.className = "projectCard";
+
+    if (p.image && /^https:\/\//.test(p.image)) {
+      const img = document.createElement("img");
+      img.src = p.image;
+      img.alt = "Illustration du projet";
+      img.loading = "lazy";
+      article.appendChild(img);
+    }
+
+    const chip = document.createElement("span");
+    chip.className = "chip";
+    chip.textContent = p.demo
+      ? "Concept illustratif"
+      : "Proposition locale";
+
+    const title = document.createElement("h3");
+    title.textContent = p.title;
+
+    const description = document.createElement("p");
+    description.textContent = p.description;
+
+    const details = document.createElement("p");
+    details.textContent =
+      p.category + " · Budget : " +
+      (p.budget || "À étudier");
+
+    article.append(
+      chip,
+      title,
+      description,
+      details
+    );
+
+    container.appendChild(article);
+  });
+
+  if (!shown.length) {
+    const message = document.createElement("p");
+    message.textContent =
+      "Aucun projet renseigné pour cette commune. " +
+      "Utilisez « Ajouter un projet » pour commencer.";
+
+    container.appendChild(message);
+  }
+}
+
+// Nombre de communes présentes dans le répertoire.
+const communeTotal = territorialData.departements.reduce(
+  (total, department) =>
+    total + department.arrondissements.reduce(
+      (n, arrondissement) =>
+        n + arrondissement.communes.length,
+      0
+    ),
+  0
+);
+
+$("communeCount").textContent = communeTotal;
+
+// Événements de navigation.
+$("department").addEventListener("change", event => {
+  if (!event.target.value) return;
+  selectDepartment(event.target.value, true);
+});
+
+$("arrondissement").addEventListener("change", event => {
+  if (!event.target.value) return;
+
+  selectTerritory(
+    currentDepartment,
+    event.target.value,
+    null,
+    false
+  );
+});
+
+$("commune").addEventListener("change", event => {
+  if (!event.target.value) return;
+
+  selectTerritory(
+    currentDepartment,
+    currentArrondissement,
+    event.target.value,
+    false
+  );
+});
+
+$("nationBtn").onclick = () => {
+  map.flyTo([18.96, -72.65], 8);
+};
+
+// Recherche nationale.
+$("searchBtn").onclick = () => {
+  const query = normalizeTerritory(
+    $("search").value.trim()
+  );
+
+  if (!query) return;
+
+  let found = null;
+
+  for (const department of territorialData.departements) {
+    for (const arrondissement of department.arrondissements) {
+      const commune = arrondissement.communes.find(
+        name => normalizeTerritory(name).includes(query)
+      );
+
+      if (commune) {
+        found = {
+          department: department.nom,
+          arrondissement: arrondissement.nom,
+          commune
+        };
+        break;
+      }
+    }
+
+    if (found) break;
+  }
+
+  if (!found) {
+    alert(
+      "Commune introuvable dans le répertoire territorial."
+    );
+    return;
+  }
+
+  selectTerritory(
+    found.department,
+    found.arrondissement,
+    found.commune,
+    true
+  );
+};
+
+$("search").addEventListener("keydown", event => {
+  if (event.key === "Enter") {
+    $("searchBtn").click();
+  }
+});
+
+// Gestion des localités.
+$("addLocality").onclick = () => {
+  const value = $("localityName").value.trim();
+  if (!value || !currentCommune) return;
+
+  const key = currentDepartment + "|" + currentCommune;
+
+  localities[key] ??= [];
+
+  if (!localities[key].some(
+    item => normalizeTerritory(item) ===
+            normalizeTerritory(value)
+  )) {
+    localities[key].push(value);
+  }
+
+  try {
+    localStorage.setItem(
+      "haiti2050-localities",
+      JSON.stringify(localities)
+    );
+  } catch {
+    alert("Impossible d'enregistrer cette localité.");
+  }
+
+  $("localityName").value = "";
+  renderSelection();
+};
+
+// Gestion des projets.
+const dialog = $("projectDialog");
+
+$("newProject").onclick = () => {
+  $("formDepartment").value = currentDepartment;
+  $("formCommune").value = currentCommune;
+  dialog.showModal();
+};
+
+$("closeDialog").onclick =
+$("cancelDialog").onclick = () => dialog.close();
+
+$("projectForm").onsubmit = event => {
+  event.preventDefault();
+
+  const project = {
+    id: Date.now(),
+    department: $("formDepartment").value,
+    commune: $("formCommune").value.trim(),
+    title: $("formTitle").value.trim(),
+    category: $("formCategory").value,
+    description: $("formDescription").value.trim(),
+    budget: $("formBudget").value.trim(),
+    image: $("formImage").value.trim(),
+    demo: false
+  };
+
+  projects.push(project);
+
+  try {
+    localStorage.setItem(
+      "haiti2050-projects",
+      JSON.stringify(projects)
+    );
+  } catch {
+    alert(
+      "Stockage du navigateur saturé. " +
+      "Le projet ne pourra pas être conservé."
+    );
+  }
+
+  dialog.close();
+  $("projectForm").reset();
+  renderProjects();
+};
+
+// Fiche territoriale pilote.
 const territoryProfiles = {
   "Sud|Fond-des-Blancs": {
     title: "Fond-des-Blancs",
@@ -60,20 +608,19 @@ function renderTerritoryProfile() {
   const key = currentDepartment + "|" + currentCommune;
   const profile = territoryProfiles[key];
 
-  let container =
-    document.getElementById("territoryProfile");
+  let container = $("territoryProfile");
 
   if (!container) {
     container = document.createElement("section");
     container.id = "territoryProfile";
+
     container.style.cssText =
       "max-width:1240px;margin:20px auto;" +
       "padding:24px;background:#fff;" +
       "border:1px solid #e0e8ee;" +
       "border-radius:14px;";
 
-    document.getElementById("atlas")
-      .appendChild(container);
+    $("atlas").appendChild(container);
   }
 
   container.replaceChildren();
@@ -110,11 +657,16 @@ function renderTerritoryProfile() {
   );
 }
 
-// Actualiser la fiche lors des changements
-document.getElementById("department")
-  .addEventListener("change", renderTerritoryProfile);
+// Initialisation.
+selectTerritory(
+  "Sud",
+  "Aquin",
+  "Fond-des-Blancs",
+  false
+);
 
-document.getElementById("commune")
-  .addEventListener("change", renderTerritoryProfile);
-
-renderTerritoryProfile();
+console.log(
+  "HAÏTI 2050 V2.4 — " +
+  communeTotal +
+  " communes chargées."
+);
