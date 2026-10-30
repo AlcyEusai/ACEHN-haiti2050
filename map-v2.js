@@ -29,8 +29,20 @@
     if (!response.ok) throw Error("API " + level);
 
     const metadata = await response.json();
-    const url = metadata.simplifiedGeometryGeoJSON ||
-                metadata.gjDownloadURL;
+    const originalUrl =
+     metadata.simplifiedGeometryGeoJSON ||
+     metadata.gjDownloadURL;
+
+   if (!originalUrl) {
+     throw new Error("URL GeoJSON introuvable");
+   }
+
+   const url = originalUrl
+     .replace(
+       "https://github.com/",
+       "https://raw.githubusercontent.com/"
+     )
+     .replace(/\/raw\//, "/");
 
     if (!url) throw Error("GeoJSON introuvable");
 
