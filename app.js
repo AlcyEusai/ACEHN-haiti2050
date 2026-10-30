@@ -29,3 +29,86 @@ $('searchBtn').onclick=()=>{const q=$('search').value.trim().toLocaleLowerCase('
 $('search').addEventListener('keydown',e=>{if(e.key==='Enter')$('searchBtn').click()});
 $('addLocality').onclick=()=>{const value=$('localityName').value.trim();if(!value)return;const key=currentDepartment+'|'+currentCommune;localities[key]??=[];if(!localities[key].includes(value))localities[key].push(value);localStorage.setItem('haiti2050-localities',JSON.stringify(localities));$('localityName').value='';renderSelection()};
 const dialog=$('projectDialog');$('newProject').onclick=()=>{$('formDepartment').value=currentDepartment;$('formCommune').value=currentCommune;dialog.showModal()};$('closeDialog').onclick=$('cancelDialog').onclick=()=>dialog.close();$('projectForm').onsubmit=e=>{e.preventDefault();const p={id:Date.now(),department:$('formDepartment').value,commune:$('formCommune').value.trim(),title:$('formTitle').value.trim(),category:$('formCategory').value,description:$('formDescription').value.trim(),budget:$('formBudget').value.trim(),image:$('formImage').value.trim(),demo:false};projects.push(p);try{localStorage.setItem('haiti2050-projects',JSON.stringify(projects))}catch{alert('Stockage du navigateur saturé.')}dialog.close();$('projectForm').reset();renderProjects()};selectDepartment('Sud',false);
+
+/* HAÏTI 2050 — FICHE TERRITORIALE PILOTE */
+
+const territoryProfiles = {
+  "Sud|Fond-des-Blancs": {
+    title: "Fond-des-Blancs",
+    description:
+      "Territoire pilote du programme Haïti 2050. " +
+      "Les projets présentés sont des propositions " +
+      "d'aménagement à étudier avec les acteurs locaux.",
+    priorities: [
+      "Amélioration des routes rurales",
+      "Construction et rénovation des écoles",
+      "Accès aux soins de santé",
+      "Développement de l'énergie solaire",
+      "Modernisation des marchés",
+      "Accès à l'eau potable"
+    ]
+  }
+};
+
+function renderTerritoryProfile() {
+  const key = currentDepartment + "|" + currentCommune;
+  const profile = territoryProfiles[key];
+
+  let container =
+    document.getElementById("territoryProfile");
+
+  if (!container) {
+    container = document.createElement("section");
+    container.id = "territoryProfile";
+    container.style.cssText =
+      "max-width:1240px;margin:20px auto;" +
+      "padding:24px;background:#fff;" +
+      "border:1px solid #e0e8ee;" +
+      "border-radius:14px;";
+
+    document.getElementById("atlas")
+      .appendChild(container);
+  }
+
+  container.replaceChildren();
+
+  if (!profile) {
+    container.hidden = true;
+    return;
+  }
+
+  container.hidden = false;
+
+  const title = document.createElement("h2");
+  title.textContent = profile.title;
+
+  const description = document.createElement("p");
+  description.textContent = profile.description;
+
+  const subtitle = document.createElement("h3");
+  subtitle.textContent = "Priorités d'aménagement";
+
+  const list = document.createElement("ul");
+
+  profile.priorities.forEach(priority => {
+    const item = document.createElement("li");
+    item.textContent = priority;
+    list.appendChild(item);
+  });
+
+  container.append(
+    title,
+    description,
+    subtitle,
+    list
+  );
+}
+
+// Actualiser la fiche lors des changements
+document.getElementById("department")
+  .addEventListener("change", renderTerritoryProfile);
+
+document.getElementById("commune")
+  .addEventListener("change", renderTerritoryProfile);
+
+renderTerritoryProfile();
