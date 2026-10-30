@@ -287,7 +287,18 @@ function selectTerritory(
   }
 
   renderSelection();
-  return true;
+
+document.dispatchEvent(
+  new CustomEvent("haiti2050:territorychange", {
+    detail: {
+      department: currentDepartment,
+      arrondissement: currentArrondissement,
+      commune: currentCommune
+    }
+  })
+);
+
+return true;
 }
 
 // Fonction attendue par map-v2.js.
