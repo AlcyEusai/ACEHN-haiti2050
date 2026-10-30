@@ -420,6 +420,90 @@
     legend.addTo(map);
   }
 
+   
+  // Navigation par arrondissement
+  function setupArrondissementSearch() {
+    const tools = document.querySelector(".mapTools");
+
+    if (!tools) return;
+
+    const select = document.createElement("select");
+    select.id = "arrondissementSelect";
+    select.setAttribute(
+      "aria-label",
+      "Choisir un arrondissement"
+    );
+
+    select.style.cssText = `
+      width: auto;
+      max-width: 260px;
+      padding: 9px;
+      font-size: 13px;
+    `;
+
+    const firstOption = document.createElement("option");
+    firstOption.value = "";
+    firstOption.textContent = "Choisir un arrondissement";
+    select.appendChild(firstOption);
+
+    if (layers.ADM2) {
+      const territories = [];
+
+      layers.ADM2.eachLayer(polygon => {
+        const name = getTerritoryName(
+          polygon.feature
+        );
+
+        territories.push({
+          name,
+          polygon
+        });
+      });
+
+      territories.sort((a, b) =>
+        a.name.localeCompare(b.name, "fr")
+      );
+
+      territories.forEach((territory, index) => {
+        const option = document.createElement("option");
+
+        option.value = String(index);
+        option.textContent = territory.name;
+
+        select.appendChild(option);
+      });
+
+      select.addEventListener("change", () => {
+        if (select.value === "") return;
+
+        const territory =
+          territories[Number(select.value)];
+
+        if (!territory) return;
+
+        highlightPolygon(
+          territory.polygon,
+          "ADM2"
+        );
+
+        zoomToPolygon(
+          territory.polygon,
+          "ADM2"
+        );
+
+        setStatus(
+          "Arrondissement : " +
+          territory.name
+        );
+      });
+    } else {
+      select.disabled = true;
+    }
+
+    tools.appendChild(select);
+  }
+
+
   // Initialisation générale
   async function initialize() {
     setStatus(
@@ -477,6 +561,7 @@
 
     setupNationalView();
     addLegend();
+    setupArrondissementSearch();
 
     setStatus(
       messages.join(" | ") +
