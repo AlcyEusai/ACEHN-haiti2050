@@ -25,7 +25,7 @@
   document.querySelector(".mapCol").append(status);
 
   async function load(level) {
-    const response = await fetch(api(level));
+    const data = await geoResponse.json();
     if (!response.ok) throw Error("API " + level);
 
     const metadata = await response.json();
