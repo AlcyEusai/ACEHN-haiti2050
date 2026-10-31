@@ -1,11 +1,14 @@
 
 /*
- * HAÏTI 2050 — APP.JS V2.4
+ * HAÏTI 2050 — APP.JS V2.5
  * Navigation territoriale unifiée
  * Départements > Arrondissements > Communes
  *
- * Nécessite territoires.js chargé avant app.js.
- * Compatible avec map-v2.js.
+ * Compatible avec :
+ * - territoires.js
+ * - map-v2.js
+ * - communes-v25.js
+ * - quartiers.js
  */
 
 const $ = id => document.getElementById(id);
@@ -30,7 +33,6 @@ if (
 }
 
 // Centres indicatifs des départements.
-// Ils ne représentent pas des limites administratives.
 const departmentCenters = {
   "Ouest": [18.54, -72.34],
   "Sud": [18.20, -73.75],
@@ -44,13 +46,14 @@ const departmentCenters = {
   "Nord-Ouest": [19.93, -72.83]
 };
 
-// Structure conservée pour la compatibilité avec map-v2.js.
+// Compatibilité avec map-v2.js.
 const departments = territorialData.departements.map(d => ({
   name: d.nom,
   center: departmentCenters[d.nom] || [18.96, -72.65],
   communes: d.arrondissements.flatMap(a => a.communes)
 }));
 
+// Projets de démonstration.
 const demo = [
   {
     id: "demo-1",
@@ -129,7 +132,10 @@ function getDepartment(name) {
   );
 }
 
-function getArrondissement(departmentName, arrondissementName) {
+function getArrondissement(
+  departmentName,
+  arrondissementName
+) {
   const department = getDepartment(departmentName);
 
   return department?.arrondissements.find(
@@ -220,6 +226,8 @@ function syncMenus() {
 const map = L.map("map", {
   scrollWheelZoom: false
 }).setView([18.96, -72.65], 8);
+
+// Carte partagée avec les autres scripts.
 window.haiti2050Map = map;
 
 L.tileLayer(
@@ -230,7 +238,7 @@ L.tileLayer(
   }
 ).addTo(map);
 
-// Conserver cette variable pour map-v2.js.
+// Repères départementaux.
 const markers = [];
 
 departments.forEach(d => {
@@ -251,6 +259,7 @@ departments.forEach(d => {
   markers.push(marker);
 });
 
+// Sélection territoriale.
 function selectTerritory(
   departmentName,
   arrondissementName = null,
@@ -258,6 +267,7 @@ function selectTerritory(
   zoom = false
 ) {
   const department = getDepartment(departmentName);
+
   if (!department) return false;
 
   currentDepartment = department.nom;
@@ -276,35 +286,38 @@ function selectTerritory(
       normalizeTerritory(communeName)
   );
 
-  currentCommune = commune || arrondissement.communes[0] || "";
+  currentCommune =
+    commune || arrondissement.communes[0] || "";
 
   syncMenus();
 
   if (zoom) {
     const center =
-      departmentCenters[currentDepartment] || [18.96, -72.65];
+      departmentCenters[currentDepartment] ||
+      [18.96, -72.65];
 
     map.flyTo(center, 10);
   }
 
   renderSelection();
 
-document.dispatchEvent(
-  new CustomEvent("haiti2050:territorychange", {
-    detail: {
-      department: currentDepartment,
-      arrondissement: currentArrondissement,
-      commune: currentCommune
-    }
-  })
-);
+  document.dispatchEvent(
+    new CustomEvent("haiti2050:territorychange", {
+      detail: {
+        department: currentDepartment,
+        arrondissement: currentArrondissement,
+        commune: currentCommune
+      }
+    })
+  );
 
-return true;
+  return true;
 }
 
-// Fonction attendue par map-v2.js.
+// Sélection d'un département.
 function selectDepartment(name, zoom = false) {
   const department = getDepartment(name);
+
   if (!department) return false;
 
   const previous = findCommune(
@@ -320,11 +333,14 @@ function selectDepartment(name, zoom = false) {
   );
 }
 
+// Affichage de la sélection.
 function renderSelection() {
   const title = $("selectionTitle");
   const description = $("selectionDescription");
 
-  if (title) title.textContent = currentCommune;
+  if (title) {
+    title.textContent = currentCommune;
+  }
 
   if (description) {
     description.textContent =
@@ -347,7 +363,7 @@ function renderSelection() {
     if (!items.length) {
       const li = document.createElement("li");
       li.textContent =
-        "Aucune localité validée pour le moment.";
+        "Aucune localité enregistrée pour le moment.";
       list.appendChild(li);
     } else {
       items.forEach(item => {
@@ -363,8 +379,10 @@ function renderSelection() {
   renderTerritoryProfile();
 }
 
+// Affichage des projets.
 function renderProjects() {
   const container = $("projectCards");
+
   if (!container) return;
 
   container.replaceChildren();
@@ -427,7 +445,7 @@ function renderProjects() {
   }
 }
 
-// Nombre de communes présentes dans le répertoire.
+// Nombre de communes dans le répertoire.
 const communeTotal = territorialData.departements.reduce(
   (total, department) =>
     total + department.arrondissements.reduce(
@@ -440,9 +458,10 @@ const communeTotal = territorialData.departements.reduce(
 
 $("communeCount").textContent = communeTotal;
 
-// Événements de navigation.
+// Événements des menus.
 $("department").addEventListener("change", event => {
   if (!event.target.value) return;
+
   selectDepartment(event.target.value, true);
 });
 
@@ -468,20 +487,20 @@ $("commune").addEventListener("change", event => {
   );
 });
 
+// Vue nationale.
 $("nationBtn").onclick = () => {
   map.flyTo([18.96, -72.65], 8);
 };
 
-// Recherche nationale.
-
-$("searchBtn").onclick = function (event) {
+// Recherche des communes.
+$("searchBtn").onclick = function(event) {
   event.preventDefault();
 
   const input = $("search");
   const query = normalizeTerritory(input.value.trim());
 
   if (!query) {
-    alert("Veuillez saisir le nom d'une commune.");
+    alert("Veuillez saisir un nom de territoire.");
     input.focus();
     return;
   }
@@ -495,7 +514,7 @@ $("searchBtn").onclick = function (event) {
           matches.push({
             department: department.nom,
             arrondissement: arrondissement.nom,
-            commune: commune
+            commune
           });
         }
       }
@@ -522,15 +541,16 @@ $("searchBtn").onclick = function (event) {
     true
   );
 
-  document.getElementById("selectionTitle")
-    ?.scrollIntoView({
-      behavior: "smooth",
-      block: "nearest"
-    });
+  $("selectionTitle")?.scrollIntoView({
+    behavior: "smooth",
+    block: "nearest"
+  });
 };
 
+// Recherche avec la touche Entrée.
 $("search").addEventListener("keydown", event => {
   if (event.key === "Enter") {
+    event.preventDefault();
     $("searchBtn").click();
   }
 });
@@ -538,30 +558,53 @@ $("search").addEventListener("keydown", event => {
 // Gestion des localités.
 $("addLocality").onclick = () => {
   const value = $("localityName").value.trim();
+
   if (!value || !currentCommune) return;
 
   const key = currentDepartment + "|" + currentCommune;
 
   localities[key] ??= [];
 
-  if (!localities[key].some(
-    item => normalizeTerritory(item) ===
-            normalizeTerritory(value)
-  )) {
-    localities[key].push(value);
+  const exists = localities[key].some(
+    item =>
+      normalizeTerritory(item) ===
+      normalizeTerritory(value)
+  );
+
+  if (exists) {
+    alert(
+      "Cette localité est déjà enregistrée pour cette commune."
+    );
+    return;
   }
+
+  localities[key].push(value);
 
   try {
     localStorage.setItem(
       "haiti2050-localities",
       JSON.stringify(localities)
     );
-  } catch {
+  } catch (error) {
+    localities[key].pop();
+
+    console.error(
+      "Haïti 2050 — enregistrement localité :",
+      error
+    );
+
     alert("Impossible d'enregistrer cette localité.");
+    return;
   }
 
   $("localityName").value = "";
+
   renderSelection();
+
+  // Synchronisation avec quartiers.js.
+  document.dispatchEvent(
+    new CustomEvent("haiti2050:localitychange")
+  );
 };
 
 // Gestion des projets.
@@ -691,7 +734,7 @@ selectTerritory(
 );
 
 console.log(
-  "HAÏTI 2050 V2.4 — " +
+  "HAÏTI 2050 V2.5 — " +
   communeTotal +
   " communes chargées."
 );
