@@ -451,79 +451,155 @@
 })();
 
 
+
 /*
- * HAÏTI 2050 — Suggestions de quartiers et localités
- * À ajouter à la fin de quartiers.js
+ * HAÏTI 2050 — Recherche unifiée V2.7
+ * Sections communales + quartiers + localités
  */
 
 (() => {
   "use strict";
 
   const input = document.getElementById("search");
-  const suggestions = document.getElementById(
-    "localitySuggestions"
-  );
+  const panel = document.getElementById("localitySuggestions");
+  const searchButton = document.getElementById("searchBtn");
 
-  if (!input || !suggestions) return;
+  if (!input || !panel) return;
 
   const normalize = value =>
     String(value || "")
       .normalize("NFD")
       .replace(/[\u0300-\u036f]/g, "")
-      .toLowerCase()
-      .trim();
+      .replace(/[^a-zA-Z0-9]/g, "")
+      .toLowerCase();
 
-  function currentCommune() {
-    return document.getElementById("commune")?.value || "";
+  const getValue = id =>
+    document.getElementById(id)?.value || "";
+
+  function allResults() {
+    const results = [];
+
+    const sections =
+      window.haiti2050SearchSections?.("") || [];
+
+    sections.forEach(section => {
+      results.push({
+        type: "Section communale",
+        name: section.name,
+        commune: section.commune,
+        department: section.department,
+        arrondissement: "",
+        code: section.code || ""
+      });
+    });
+
+    const localities =
+      window.haiti2050SearchLocalities?.("") || [];
+
+    localities.forEach(item => {
+      results.push({
+        type: "Quartier / localité",
+        name: item.locality,
+        commune: item.commune,
+        department: item.department,
+        arrondissement: item.arrondissement,
+        code: ""
+      });
+    });
+
+    return results;
   }
 
-  function currentDepartment() {
-    return document.getElementById("department")?.value || "";
-  }
-
-  function allLocalities() {
-    if (
-      typeof window.haiti2050SearchLocalities !== "function"
-    ) {
-      return [];
-    }
-
-    // Recherche parmi les localités déjà enregistrées.
-    return window.haiti2050SearchLocalities("");
-  }
-
-  function getMatches() {
+  function findResults() {
     const query = normalize(input.value);
-    const commune = currentCommune();
-    const department = currentDepartment();
+    const department = normalize(getValue("department"));
+    const commune = normalize(getValue("commune"));
 
-    // Sans saisie, afficher les localités de la commune.
-    if (!query) {
-      return allLocalities().filter(item =>
-        normalize(item.commune) === normalize(commune) &&
-        normalize(item.department) === normalize(department)
+    return allResults().filter(item => {
+      if (query) {
+        return (
+          normalize(item.name).includes(query) ||
+          normalize(item.commune).includes(query)
+        );
+      }
+
+      const sameDepartment =
+        normalize(item.department) === department;
+
+      const sameCommune =
+        normalize(item.commune) === commune;
+
+      // Correspondance historique Fond-des-Blancs/Aquin.
+      const fondDesBlancs =
+        department === "sud" &&
+        commune === "fonddesblancs" &&
+        normalize(item.commune) === "aquin" &&
+        normalize(item.name).includes("fonddesblancs");
+
+      return sameDepartment &&
+        (sameCommune || fondDesBlancs);
+    });
+  }
+
+  function showMessage(message) {
+    let status = document.getElementById(
+      "localitySearchMessage"
+    );
+
+    if (!status) {
+      status = document.createElement("p");
+      status.id = "localitySearchMessage";
+      status.setAttribute("role", "status");
+
+      searchButton?.insertAdjacentElement(
+        "afterend",
+        status
       );
     }
 
-    return allLocalities().filter(item =>
-      normalize(item.locality).includes(query)
+    status.textContent = message;
+  }
+
+  function selectResult(item) {
+    input.value = item.name;
+    panel.hidden = true;
+
+    if (
+      item.type === "Quartier / localité" &&
+      typeof window.selectTerritory === "function"
+    ) {
+      window.selectTerritory(
+        item.department,
+        item.arrondissement,
+        item.commune,
+        true
+      );
+    }
+
+    showMessage(
+      item.type + " : " + item.name +
+      " — Commune de référence : " +
+      item.commune +
+      " — Département : " +
+      item.department +
+      ". Données à vérifier."
     );
   }
 
-  function showSuggestions() {
-    suggestions.replaceChildren();
+  function renderSuggestions() {
+    panel.replaceChildren();
 
-    const matches = getMatches();
+    const matches = findResults();
 
     if (!matches.length) {
-      const message = document.createElement("p");
-      message.textContent = input.value.trim()
-        ? "Aucun quartier ou localité trouvé."
-        : "Aucune localité enregistrée pour cette commune.";
+      const empty = document.createElement("p");
+      empty.className = "suggestion-empty";
+      empty.textContent = input.value.trim()
+        ? "Aucun résultat dans le répertoire actuel."
+        : "Aucune entrée disponible pour cette commune.";
 
-      message.className = "suggestion-empty";
-      suggestions.appendChild(message);
-      suggestions.hidden = false;
+      panel.appendChild(empty);
+      panel.hidden = false;
       return;
     }
 
@@ -533,60 +609,91 @@
       button.className = "suggestion-item";
       button.setAttribute("role", "option");
 
-      button.textContent =
-        item.locality + " — " +
-        item.commune + " (" + item.department + ")";
+      const title = document.createElement("strong");
+      title.textContent = item.name;
+
+      const description = document.createElement("small");
+      description.textContent =
+        item.type + " — " +
+        item.commune + " (" +
+        item.department + ")";
+
+      button.append(title, description);
 
       button.addEventListener("click", () => {
-        input.value = item.locality;
-        suggestions.hidden = true;
-
-        if (typeof selectTerritory === "function") {
-          selectTerritory(
-            item.department,
-            item.arrondissement,
-            item.commune,
-            true
-          );
-        }
-
-        const message = document.getElementById(
-          "localitySearchMessage"
-        );
-
-        if (message) {
-          message.textContent =
-            "Localité sélectionnée : " +
-            item.locality +
-            " — " + item.commune +
-            ". Rattachement à vérifier.";
-        }
+        selectResult(item);
       });
 
-      suggestions.appendChild(button);
+      panel.appendChild(button);
     });
 
-    suggestions.hidden = false;
+    panel.hidden = false;
   }
 
-  input.addEventListener("focus", showSuggestions);
-  input.addEventListener("input", showSuggestions);
+  input.setAttribute("autocomplete", "off");
 
-  document.addEventListener("click", event => {
-    if (
-      event.target !== input &&
-      !suggestions.contains(event.target)
-    ) {
-      suggestions.hidden = true;
+  input.addEventListener("focus", renderSuggestions);
+  input.addEventListener("input", renderSuggestions);
+
+  document.addEventListener(
+    "haiti2050:sectionsloaded",
+    () => {
+      if (document.activeElement === input) {
+        renderSuggestions();
+      }
     }
-  });
+  );
 
   document.addEventListener(
     "haiti2050:localitychange",
     () => {
       if (document.activeElement === input) {
-        showSuggestions();
+        renderSuggestions();
       }
     }
   );
+
+  document.addEventListener("click", event => {
+    if (
+      event.target !== input &&
+      !panel.contains(event.target)
+    ) {
+      panel.hidden = true;
+    }
+  });
+
+  // Capture le clic avant les anciens gestionnaires
+  // afin d'utiliser la recherche unifiée.
+  searchButton?.addEventListener(
+    "click",
+    event => {
+      event.stopImmediatePropagation();
+
+      const matches = findResults();
+
+      if (!input.value.trim()) {
+        renderSuggestions();
+        return;
+      }
+
+      if (!matches.length) {
+        showMessage(
+          "Aucun résultat dans le répertoire actuel."
+        );
+        return;
+      }
+
+      const exact = matches.find(item =>
+        normalize(item.name) === normalize(input.value)
+      );
+
+      selectResult(exact || matches[0]);
+    },
+    true
+  );
+
+  console.log(
+    "Haïti 2050 — Recherche unifiée V2.7 activée."
+  );
 })();
+
