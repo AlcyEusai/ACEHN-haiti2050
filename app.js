@@ -529,28 +529,6 @@ $("searchBtn").onclick = function (event) {
     });
 };
 
-        break;
-      }
-    }
-
-    if (found) break;
-  }
-
-  if (!found) {
-    alert(
-      "Commune introuvable dans le répertoire territorial."
-    );
-    return;
-  }
-
-  selectTerritory(
-    found.department,
-    found.arrondissement,
-    found.commune,
-    true
-  );
-};
-
 $("search").addEventListener("keydown", event => {
   if (event.key === "Enter") {
     $("searchBtn").click();
