@@ -1,9 +1,11 @@
 #etablissementsPanel { width:100%; min-width:0; box-sizing:border-box; }
-#etablissementsPanel select,#etablissementsPanel input {display:block;width:100%;box-sizing:border-box;margin:8px 0 12px;}
-.etablissements-results {max-height:420px;overflow:auto;}
-.etablissement-card {padding:12px 0;border-bottom:1px solid #dce5ec;overflow-wrap:anywhere;}
-.etablissement-card p {margin:5px 0;font-size:.9rem;}
-.etablissement-card small {display:block;color:#667085;margin-bottom:7px;}
-.etablissement-card img {display:block;max-width:100%;max-height:180px;object-fit:cover;margin:8px 0;border-radius:7px;}
-.etablissement-card button {margin:6px 10px 6px 0;cursor:pointer;}
-.etablissement-card a {display:inline-block;margin:6px 0;}
+#etablissementsPanel .etab-field { margin:12px 0; }
+#etablissementsPanel .etab-field label { display:block; margin-bottom:5px; }
+#etablissementsPanel select, #etablissementsPanel input { width:100%; min-width:0; box-sizing:border-box; padding:10px; }
+#etablissementsPanel .etablissements-results { max-height:550px; overflow:auto; }
+#etablissementsPanel .etablissement-card { padding:12px 0; border-bottom:1px solid #dbe5e9; overflow-wrap:anywhere; }
+#etablissementsPanel .etablissement-card p { margin:6px 0; font-size:.9rem; }
+#etablissementsPanel .etablissement-card small { display:block; margin-bottom:8px; }
+#etablissementsPanel .etablissement-card img { display:block; width:100%; max-height:180px; object-fit:cover; margin:8px 0; border-radius:8px; }
+#etablissementsPanel .etablissement-card button { margin:6px 10px 6px 0; cursor:pointer; }
+#atlas .workspace > aside, #atlas .workspace > .mapCol { min-width:0; }
