@@ -27,7 +27,7 @@
       border: 1px solid #dce5ec;
       border-radius: 12px;
       background: #ffffff;
-`    ;
+`      ;
 
     const label = document.createElement("label");
     label.htmlFor = "geonamesSearch";
@@ -50,14 +50,28 @@
 
     panel.append(label, field, status, results);
 
-    // Insérer la recherche dans la colonne de gauche,
-    // juste avant le champ de recherche existant.
-    const sidebar = existing.closest(".sidebarSection")
-      || existing.parentElement;
+    
+    // Placer le panneau dans la colonne de gauche
+    const sidebar = document.querySelector(
+      "#atlas .workspace aside"
+    );
 
-    if (sidebar && sidebar.parentElement) {
-      sidebar.parentElement.insertBefore(panel, sidebar);
+    if (sidebar) {
+      const searchLabel = sidebar.querySelector(
+        'label[for="search"]'
+      );
+
+      if (searchLabel) {
+        sidebar.insertBefore(panel, searchLabel);
+      } else {
+        sidebar.appendChild(panel);
+      }
+    } else {
+      console.error(
+        "Haïti 2050 : colonne latérale introuvable."
+      );
     }
+  
 
     try {
       const response = await fetch(
