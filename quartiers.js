@@ -450,3 +450,144 @@
     "Haïti 2050 — recherche des localités activée."
   );
 })();
+
+
+/*
+ * HAÏTI 2050 — Suggestions de quartiers et localités
+ * À ajouter à la fin de quartiers.js
+ */
+
+(() => {
+  "use strict";
+
+  const input = document.getElementById("search");
+  const suggestions = document.getElementById(
+    "localitySuggestions"
+  );
+
+  if (!input || !suggestions) return;
+
+  const normalize = value =>
+    String(value || "")
+      .normalize("NFD")
+      .replace(/[\u0300-\u036f]/g, "")
+      .toLowerCase()
+      .trim();
+
+  function currentCommune() {
+    return document.getElementById("commune")?.value || "";
+  }
+
+  function currentDepartment() {
+    return document.getElementById("department")?.value || "";
+  }
+
+  function allLocalities() {
+    if (
+      typeof window.haiti2050SearchLocalities !== "function"
+    ) {
+      return [];
+    }
+
+    // Recherche parmi les localités déjà enregistrées.
+    return window.haiti2050SearchLocalities("");
+  }
+
+  function getMatches() {
+    const query = normalize(input.value);
+    const commune = currentCommune();
+    const department = currentDepartment();
+
+    // Sans saisie, afficher les localités de la commune.
+    if (!query) {
+      return allLocalities().filter(item =>
+        normalize(item.commune) === normalize(commune) &&
+        normalize(item.department) === normalize(department)
+      );
+    }
+
+    return allLocalities().filter(item =>
+      normalize(item.locality).includes(query)
+    );
+  }
+
+  function showSuggestions() {
+    suggestions.replaceChildren();
+
+    const matches = getMatches();
+
+    if (!matches.length) {
+      const message = document.createElement("p");
+      message.textContent = input.value.trim()
+        ? "Aucun quartier ou localité trouvé."
+        : "Aucune localité enregistrée pour cette commune.";
+
+      message.className = "suggestion-empty";
+      suggestions.appendChild(message);
+      suggestions.hidden = false;
+      return;
+    }
+
+    matches.slice(0, 100).forEach(item => {
+      const button = document.createElement("button");
+      button.type = "button";
+      button.className = "suggestion-item";
+      button.setAttribute("role", "option");
+
+      button.textContent =
+        item.locality + " — " +
+        item.commune + " (" + item.department + ")";
+
+      button.addEventListener("click", () => {
+        input.value = item.locality;
+        suggestions.hidden = true;
+
+        if (typeof selectTerritory === "function") {
+          selectTerritory(
+            item.department,
+            item.arrondissement,
+            item.commune,
+            true
+          );
+        }
+
+        const message = document.getElementById(
+          "localitySearchMessage"
+        );
+
+        if (message) {
+          message.textContent =
+            "Localité sélectionnée : " +
+            item.locality +
+            " — " + item.commune +
+            ". Rattachement à vérifier.";
+        }
+      });
+
+      suggestions.appendChild(button);
+    });
+
+    suggestions.hidden = false;
+  }
+
+  input.addEventListener("focus", showSuggestions);
+  input.addEventListener("input", showSuggestions);
+
+  document.addEventListener("click", event => {
+    if (
+      event.target !== input &&
+      !suggestions.contains(event.target)
+    ) {
+      suggestions.hidden = true;
+    }
+  });
+
+  document.addEventListener(
+    "haiti2050:localitychange",
+    () => {
+      if (document.activeElement === input) {
+        showSuggestions();
+      }
+    }
+  );
+})();
