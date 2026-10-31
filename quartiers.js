@@ -274,8 +274,6 @@
   function searchLocality(query) {
     const target = normalize(query);
 
-    if (!target) return [];
-
     const matches = [];
 
     for (const department of territorialData.departements) {
@@ -331,7 +329,8 @@
 
     if (!matches.length) {
       showSearchMessage(
-        "Aucune localité enregistrée sous ce nom."
+        "Aucun résultat dans les localités enregistrées. " +
+        "Le répertoire territorial doit encore être complété."
       );
       return false;
     }
