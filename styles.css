@@ -42,3 +42,37 @@
   color: #667788;
   font-size: 14px;
 }
+
+/* HAÏTI 2050 — Recherche nationale */
+
+.workspace {
+  min-width: 0;
+}
+
+.workspace aside,
+.workspace .mapCol {
+  min-width: 0;
+}
+
+#geonamesSearchPanel {
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
+}
+
+#geonamesSearch {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+#geonamesSearchPanel .suggestion-item {
+  white-space: normal;
+  overflow-wrap: anywhere;
+}
+
+#map {
+  width: 100%;
+  min-width: 0;
+}
