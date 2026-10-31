@@ -139,15 +139,23 @@
 
         <!-- RECHERCHE -->
         <label for="search">
-          Rechercher une commune
+          Rechercher un quartier ou une localité
         </label>
 
         <input
           id="search"
           type="search"
-          placeholder="Ex. Jacmel, Aquin…"
+          placeholder="Ex. nom du quartier ou de la localité..."
         >
 
+        <div
+          id="localitySuggestions"
+          class="locality-suggestions"
+          role="listbox"
+          aria-label="Suggestions de quartiers et localités"
+          hidden
+         ></div>
+        
         <button
           id="searchBtn"
           type="button"
