@@ -1,0 +1,9 @@
+#etablissementsPanel { width:100%; min-width:0; box-sizing:border-box; }
+#etablissementsPanel select,#etablissementsPanel input {display:block;width:100%;box-sizing:border-box;margin:8px 0 12px;}
+.etablissements-results {max-height:420px;overflow:auto;}
+.etablissement-card {padding:12px 0;border-bottom:1px solid #dce5ec;overflow-wrap:anywhere;}
+.etablissement-card p {margin:5px 0;font-size:.9rem;}
+.etablissement-card small {display:block;color:#667085;margin-bottom:7px;}
+.etablissement-card img {display:block;max-width:100%;max-height:180px;object-fit:cover;margin:8px 0;border-radius:7px;}
+.etablissement-card button {margin:6px 10px 6px 0;cursor:pointer;}
+.etablissement-card a {display:inline-block;margin:6px 0;}
