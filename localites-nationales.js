@@ -17,8 +17,17 @@
 
     const panel = document.createElement("section");
     panel.id = "geonamesSearchPanel";
-    panel.style.cssText =
-      "margin:16px 0;padding:14px;border:1px solid #dce5ec;border-radius:12px";
+    panel.style.cssText = `
+      width: 100%;
+      max-width: 100%;
+      min-width: 0;
+      box-sizing: border-box;
+      margin: 12px 0;
+      padding: 12px;
+      border: 1px solid #dce5ec;
+      border-radius: 12px;
+      background: #ffffff;
+`    ;
 
     const label = document.createElement("label");
     label.htmlFor = "geonamesSearch";
@@ -40,10 +49,15 @@
       "max-height:260px;overflow:auto;margin-top:8px";
 
     panel.append(label, field, status, results);
-    existing.parentElement?.insertAdjacentElement(
-      "afterend",
-      panel
-    );
+
+    // Insérer la recherche dans la colonne de gauche,
+    // juste avant le champ de recherche existant.
+    const sidebar = existing.closest(".sidebarSection")
+      || existing.parentElement;
+
+    if (sidebar && sidebar.parentElement) {
+      sidebar.parentElement.insertBefore(panel, sidebar);
+    }
 
     try {
       const response = await fetch(
