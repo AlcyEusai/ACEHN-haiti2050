@@ -1,30 +1,46 @@
 
 /*
- * HAÏTI 2050 — V2.5
+ * HAÏTI 2050 — V2.5 corrigée
  * Frontières communales et fiches territoriales
  *
  * Dépendances :
+ * - Leaflet
  * - territoires.js
  * - app.js
- * - map-v2.js
  *
- * Fichier géographique :
- * data/haiti-communes.geojson
+ * Données :
+ * - data/haiti-communes.geojson
  */
 
 (() => {
   "use strict";
 
   const GEOJSON_URL = "./data/haiti-communes.geojson";
-
   const $ = id => document.getElementById(id);
 
   if (
     typeof L === "undefined" ||
-    typeof map === "undefined" ||
     !window.HAITI_TERRITOIRES
   ) {
-    console.error("Haïti 2050 : dépendances absentes.");
+    console.error(
+      "Haïti 2050 : Leaflet ou territoires.js absent."
+    );
+    return;
+  }
+
+  // Utiliser uniquement une véritable instance Leaflet.
+  const map = window.haiti2050Map;
+
+  if (
+    !map ||
+    typeof map.on !== "function" ||
+    typeof map.fitBounds !== "function" ||
+    typeof map.getZoom !== "function"
+  ) {
+    console.error(
+      "Haïti 2050 : carte Leaflet indisponible. " +
+      "Ajouter window.haiti2050Map = map dans app.js."
+    );
     return;
   }
 
@@ -50,11 +66,10 @@
            normalize(commune);
   }
 
-  // Variantes orthographiques connues.
   const aliases = {
-    "gonaives": "lesgonaives",
-    "coteaux": "lescoteaux",
-    "anseapitres": "anseapitre"
+    gonaives: "lesgonaives",
+    coteaux: "lescoteaux",
+    anseapitres: "anseapitre"
   };
 
   function canonical(value) {
@@ -116,7 +131,7 @@
       }
     }
 
-    // Ne pas associer arbitrairement deux homonymes.
+    // Ne pas associer arbitrairement des homonymes.
     return matches.length === 1 ? matches[0] : null;
   }
 
@@ -141,11 +156,16 @@
         "background:#f1f7f8;color:#234;" +
         "margin:0;";
 
-      document.querySelector(".mapCol")
-        ?.appendChild(status);
+      const target =
+        document.querySelector(".mapCol") ||
+        $("map")?.parentElement;
+
+      target?.appendChild(status);
     }
 
-    status.textContent = message;
+    if (status) {
+      status.textContent = message;
+    }
   }
 
   function defaultStyle() {
@@ -204,12 +224,9 @@
     if (selection.commune) {
       updateStatus(
         polygon
-          ? "Frontière affichée : " +
-            selection.commune
-          : "Commune : " +
-            selection.commune +
-            " — frontière non disponible " +
-            "dans cette couche."
+          ? "Frontière affichée : " + selection.commune
+          : "Commune : " + selection.commune +
+            " — frontière non disponible dans cette couche."
       );
     }
 
@@ -230,7 +247,8 @@
         "padding:24px;border:1px solid #dce5ec;" +
         "border-radius:14px;background:#fff;";
 
-      $("atlas")?.appendChild(sheet);
+      ($("atlas") || $("map")?.parentElement)
+        ?.appendChild(sheet);
     }
 
     sheet.replaceChildren();
@@ -298,16 +316,19 @@
 
     const projectList = document.createElement("ul");
 
-    const matchingProjects =
-      (typeof projects !== "undefined" &&
-       Array.isArray(projects))
-        ? projects.filter(p =>
-            normalize(p.department) ===
-              normalize(selection.department) &&
-            normalize(p.commune) ===
-              normalize(selection.commune)
-          )
+    const availableProjects =
+      typeof projects !== "undefined" &&
+      Array.isArray(projects)
+        ? projects
         : [];
+
+    const matchingProjects = availableProjects.filter(
+      project =>
+        normalize(project.department) ===
+          normalize(selection.department) &&
+        normalize(project.commune) ===
+          normalize(selection.commune)
+    );
 
     if (!matchingProjects.length) {
       const item = document.createElement("li");
@@ -345,6 +366,20 @@
     );
   }
 
+  function updateVisibleCommunes() {
+    if (!communeLayer) return;
+
+    if (map.getZoom() >= 10) {
+      if (!map.hasLayer(communeLayer)) {
+        communeLayer.addTo(map);
+      }
+    } else {
+      if (map.hasLayer(communeLayer)) {
+        map.removeLayer(communeLayer);
+      }
+    }
+  }
+
   async function loadCommunes() {
     updateStatus(
       "Chargement des frontières communales..."
@@ -377,8 +412,6 @@
           const department =
             getFeatureDepartment(feature);
 
-          // Le nom doit correspondre sans ambiguïté
-          // au répertoire territorial.
           const referenceCommune =
             findReference(name, department);
 
@@ -407,8 +440,9 @@
               return;
             }
 
-            // Utilise la fonction centrale d'app.js.
-            if (typeof selectTerritory === "function") {
+            if (
+              typeof selectTerritory === "function"
+            ) {
               selectTerritory(
                 referenceCommune.department,
                 referenceCommune.arrondissement,
@@ -456,20 +490,6 @@
     }
   }
 
-  function updateVisibleCommunes() {
-    if (!communeLayer) return;
-
-    if (map.getZoom() >= 10) {
-      if (!map.hasLayer(communeLayer)) {
-        communeLayer.addTo(map);
-      }
-    } else {
-      if (map.hasLayer(communeLayer)) {
-        map.removeLayer(communeLayer);
-      }
-    }
-  }
-
   $("department")?.addEventListener(
     "change",
     () => queueMicrotask(() => syncFromMenus(false))
@@ -485,22 +505,10 @@
     () => queueMicrotask(() => syncFromMenus(true))
   );
 
-  // Recherche et sélection programmatiques :
-  // observer la sélection centrale d'app.js.
-  if (typeof selectTerritory === "function") {
-    const originalSelect = selectTerritory;
-
-    // Ne pas réassigner une déclaration lexicale :
-    // la synchronisation des menus est également
-    // déclenchée par les interactions utilisateur.
-  }
-
   document.addEventListener(
-  "haiti2050:territorychange",
-  () => {
-    syncFromMenus(false);
-  }
-);
+    "haiti2050:territorychange",
+    () => syncFromMenus(false)
+  );
 
   map.on("zoomend", updateVisibleCommunes);
 
