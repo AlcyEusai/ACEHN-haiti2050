@@ -50,28 +50,26 @@
 
     panel.append(label, field, status, results);
 
-    
-    // Placer le panneau dans la colonne de gauche
+    panel.append(label, field, status, results);
+
+    // Trouver la vraie barre latérale
     const sidebar = document.querySelector(
-      "#atlas .workspace aside"
+      "#atlas .workspace > aside"
     );
 
-    if (sidebar) {
-      const searchLabel = sidebar.querySelector(
-        'label[for="search"]'
-      );
-
-      if (searchLabel) {
-        sidebar.insertBefore(panel, searchLabel);
-      } else {
-        sidebar.appendChild(panel);
-      }
-    } else {
-      console.error(
-        "Haïti 2050 : colonne latérale introuvable."
-      );
+    if (!sidebar) {
+      console.error("Barre latérale introuvable");
+      return;
     }
-  
+
+    // Placer la recherche après le menu Commune
+    const communeSelect = document.getElementById("commune");
+
+    if (communeSelect && sidebar.contains(communeSelect)) {
+      communeSelect.insertAdjacentElement("afterend", panel);
+    } else {
+      sidebar.appendChild(panel);
+    }
 
     try {
       const response = await fetch(
