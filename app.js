@@ -472,27 +472,62 @@ $("nationBtn").onclick = () => {
 };
 
 // Recherche nationale.
-$("searchBtn").onclick = () => {
-  const query = normalizeTerritory(
-    $("search").value.trim()
-  );
 
-  if (!query) return;
+$("searchBtn").onclick = function (event) {
+  event.preventDefault();
 
-  let found = null;
+  const input = $("search");
+  const query = normalizeTerritory(input.value.trim());
+
+  if (!query) {
+    alert("Veuillez saisir le nom d'une commune.");
+    input.focus();
+    return;
+  }
+
+  const matches = [];
 
   for (const department of territorialData.departements) {
     for (const arrondissement of department.arrondissements) {
-      const commune = arrondissement.communes.find(
-        name => normalizeTerritory(name).includes(query)
-      );
+      for (const commune of arrondissement.communes) {
+        if (normalizeTerritory(commune).includes(query)) {
+          matches.push({
+            department: department.nom,
+            arrondissement: arrondissement.nom,
+            commune: commune
+          });
+        }
+      }
+    }
+  }
 
-      if (commune) {
-        found = {
-          department: department.nom,
-          arrondissement: arrondissement.nom,
-          commune
-        };
+  if (matches.length === 0) {
+    alert(
+      "Aucune commune trouvée pour : " + input.value
+    );
+    return;
+  }
+
+  const exact = matches.find(
+    item => normalizeTerritory(item.commune) === query
+  );
+
+  const result = exact || matches[0];
+
+  selectTerritory(
+    result.department,
+    result.arrondissement,
+    result.commune,
+    true
+  );
+
+  document.getElementById("selectionTitle")
+    ?.scrollIntoView({
+      behavior: "smooth",
+      block: "nearest"
+    });
+};
+
         break;
       }
     }
