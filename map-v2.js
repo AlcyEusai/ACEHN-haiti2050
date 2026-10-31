@@ -14,7 +14,9 @@
   "use strict";
 
   // Vérification des dépendances
-  if (typeof L === "undefined" || typeof map === "undefined") {
+  const map = window.haiti2050Map;
+
+  if (typeof L === "undefined" || !map || typeof map.fitBounds !== "function" || typeof map.on !== "function") {
     console.error(
       "Haïti 2050 : Leaflet ou la carte est indisponible."
     );
