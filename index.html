@@ -1,22 +1,482 @@
-<!doctype html><html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Haïti 2050 | Atlas territorial</title><link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"><link rel="stylesheet" href="styles.css"></head><body><header><div class="brand"><span class="flag">🇭🇹</span><div><b>HAÏTI <em>2050</em></b><small>Atlas du développement territorial</small></div></div><nav><a href="#atlas">Atlas</a><a href="#projects">Projets</a><a href="#method">Méthodologie</a></nav><span class="tag">Atlas territorial • V2</span></header><section class="hero"><div><p class="eyebrow">UN TERRITOIRE • UNE VISION • DES PROJETS</p><h1>Imaginons l'avenir<br>de chaque commune d'Haïti.</h1><p>Explorez les départements, découvrez les communes et documentez les transformations possibles — des routes aux écoles, de l'eau potable à l'énergie solaire.</p><a class="primary" href="#atlas">Explorer la carte ↗</a></div><div class="heroStats"><div><strong>10</strong><span>départements</span></div><div><strong id="communeCount">—</strong><span>communes dans le répertoire initial</span></div><div><strong id="projectCount">—</strong><span>projets documentés</span></div></div></section><main id="atlas"><div class="sectiontitle"><div><p class="eyebrow">ATLAS INTERACTIF</p><h2>Explorer le territoire</h2><p>Explorez les 10 départements et les 42 arrondissements d'Haïti grâce aux frontières géographiques interactives. Zoomez pour afficher les arrondissements, cliquez sur un territoire ou sélectionnez une commune dans le répertoire.</p></div></div><div class="workspace"><aside><label for="department">Département</label>
-<select id="department"></select>
 
-<label for="arrondissement">Arrondissement</label>
-<select id="arrondissement">
-  <option value="">Choisir un arrondissement</option>
-</select>
+<!doctype html>
+<html lang="fr">
 
-<label for="commune">Commune</label>
-<select id="commune"></select><label for="search">Rechercher une commune</label><input id="search" placeholder="Ex. Jacmel, Aquin…"><button id="searchBtn" class="secondary">Rechercher</button><div class="sidebarSection"><h3 id="selectionTitle">Territoire sélectionné</h3><p id="selectionDescription"></p><p class="note">
-  Haïti 2050 développe progressivement un répertoire
-  territorial national. Les informations sur les communes,
-  sections communales et localités seront complétées
-  à partir de sources vérifiées et de contributions locales.
-</p></div><div class="sidebarSection"><h3>Localités documentées</h3><ul id="localities"></ul><div class="inline"><input id="localityName" placeholder="Nom de localité"><button id="addLocality" title="Ajouter une localité">+</button></div><small>Ajout local à ce navigateur, non vérifié.</small></div></aside><div class="mapCol"><div class="mapTools"><button id="nationBtn" class="secondary">🇭🇹 Vue nationale</button><span>Fond cartographique © OpenStreetMap</span></div><div id="map" role="application" aria-label="Carte interactive d'Haïti"></div><div class="mapFooter">
-  Données géographiques : geoBoundaries / OpenStreetMap.
-  Limites administratives de référence à vérifier.
-  Les frontières communales et les sections communales
-  seront intégrées progressivement.
-</div></div></div></main><section id="projects" class="projects"><div class="sectiontitle"><div><p class="eyebrow">PROJETS D'AMÉNAGEMENT</p><h2>Transformer les idées en projets</h2><p>Fiches de projets par commune, avec catégories, descriptions, illustrations et statut.</p></div><button id="newProject" class="primary">+ Ajouter un projet</button></div><div id="projectCards" class="cards"></div></section><section id="method" class="method"><p class="eyebrow">TRANSPARENCE</p><h2>Une vision, pas un plan d'urbanisme approuvé</h2><p>Les vues prospectives sont des propositions conceptuelles. Elles ne représentent ni des constructions autorisées ni des engagements financiers. Les limites communales, sections communales, coordonnées, photographies, budgets et diagnostics doivent être vérifiés auprès de sources fiables et d'acteurs locaux avant publication comme données factuelles.</p><p>Cette démonstration fonctionne sans compte : vos ajouts sont enregistrés uniquement dans votre navigateur. Une version collaborative nécessitera un serveur, une base de données, une modération et des sauvegardes.</p></section><footer>HAÏTI 2050 · Prototype d'atlas territorial · Construire avec les communautés</footer><dialog id="projectDialog"><form id="projectForm"><div class="dialogHead"><h2>Fiche de projet</h2><button type="button" id="closeDialog" class="iconBtn">✕</button></div><label>Département<select id="formDepartment" required></select></label><label>Commune<input id="formCommune" required></label><label>Nom du projet<input id="formTitle" required maxlength="100" placeholder="Ex. Marché communal moderne"></label><label>Catégorie<select id="formCategory"><option>Routes et transports</option><option>Éducation</option><option>Santé</option><option>Énergie solaire</option><option>Eau et assainissement</option><option>Agriculture</option><option>Marché et commerce</option><option>Espaces publics</option><option>Autre</option></select></label><label>Description<textarea id="formDescription" rows="4" required placeholder="Objectifs et bénéfices pour la population"></textarea></label><label>Budget estimatif (facultatif)<input id="formBudget" placeholder="À étudier"></label><label>Image du projet (facultatif, URL https://)<input id="formImage" type="url" placeholder="https://..."></label><p class="note">Utilisez uniquement des images dont vous possédez les droits. Les projets ajoutés restent dans ce navigateur.</p><div class="actions"><button type="button" id="cancelDialog" class="secondary">Annuler</button><button class="primary" type="submit">Enregistrer</button></div></form></dialog><script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script><script src="territoires.js"></script><script src="app.js"></script>
-<script src="map-v2.js"></script><script src="communes-v25.js"></script><script src="quartiers.js"></script><script src="sections.js"></script><script src="controle-sections.js"></script> 
-</body></html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1">
+
+  <title>Haïti 2050 | Atlas territorial</title>
+
+  <!-- Leaflet CSS -->
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+  >
+
+  <!-- Styles du site -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <!-- EN-TÊTE -->
+  <header>
+    <div class="brand">
+      <span class="flag">🇭🇹</span>
+
+      <div>
+        <b>HAÏTI <em>2050</em></b>
+        <small>Atlas du développement territorial</small>
+      </div>
+    </div>
+
+    <nav>
+      <a href="#atlas">Atlas</a>
+      <a href="#projects">Projets</a>
+      <a href="#method">Méthodologie</a>
+    </nav>
+
+    <span class="tag">Atlas territorial • V2.5</span>
+  </header>
+
+  <!-- ACCUEIL -->
+  <section class="hero">
+    <div>
+      <p class="eyebrow">
+        UN TERRITOIRE • UNE VISION • DES PROJETS
+      </p>
+
+      <h1>
+        Imaginons l'avenir<br>
+        de chaque commune d'Haïti.
+      </h1>
+
+      <p>
+        Explorez les départements, découvrez les communes
+        et documentez les transformations possibles —
+        des routes aux écoles, de l'eau potable
+        à l'énergie solaire.
+      </p>
+
+      <a class="primary" href="#atlas">
+        Explorer la carte ↗
+      </a>
+    </div>
+
+    <div class="heroStats">
+      <div>
+        <strong>10</strong>
+        <span>départements</span>
+      </div>
+
+      <div>
+        <strong id="communeCount">—</strong>
+        <span>communes dans le répertoire initial</span>
+      </div>
+
+      <div>
+        <strong id="projectCount">—</strong>
+        <span>projets documentés</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ATLAS -->
+  <main id="atlas">
+
+    <div class="sectiontitle">
+      <div>
+        <p class="eyebrow">ATLAS INTERACTIF</p>
+
+        <h2>Explorer le territoire</h2>
+
+        <p>
+          Explorez les départements et les arrondissements
+          d'Haïti grâce aux frontières géographiques
+          interactives. Zoomez pour afficher les
+          arrondissements, cliquez sur un territoire
+          ou sélectionnez une commune dans le répertoire.
+        </p>
+      </div>
+    </div>
+
+    <div class="workspace">
+
+      <!-- BARRE LATÉRALE -->
+      <aside>
+
+        <label for="department">
+          Département
+        </label>
+
+        <select id="department">
+          <option value="">
+            Choisir un département
+          </option>
+        </select>
+
+        <label for="arrondissement">
+          Arrondissement
+        </label>
+
+        <select id="arrondissement">
+          <option value="">
+            Choisir un arrondissement
+          </option>
+        </select>
+
+        <label for="commune">
+          Commune
+        </label>
+
+        <select id="commune">
+          <option value="">
+            Choisir une commune
+          </option>
+        </select>
+
+        <!-- RECHERCHE -->
+        <label for="search">
+          Rechercher une commune
+        </label>
+
+        <input
+          id="search"
+          type="search"
+          placeholder="Ex. Jacmel, Aquin…"
+        >
+
+        <button
+          id="searchBtn"
+          type="button"
+          class="secondary"
+        >
+          Rechercher
+        </button>
+
+        <!-- TERRITOIRE SÉLECTIONNÉ -->
+        <div class="sidebarSection">
+
+          <h3 id="selectionTitle">
+            Territoire sélectionné
+          </h3>
+
+          <p id="selectionDescription"></p>
+
+          <p class="note">
+            Haïti 2050 développe progressivement
+            un répertoire territorial national.
+
+            Les informations sur les communes,
+            sections communales et localités
+            seront complétées à partir de sources
+            vérifiées et de contributions locales.
+          </p>
+        </div>
+
+        <!-- LOCALITÉS -->
+        <div class="sidebarSection">
+
+          <h3>Localités documentées</h3>
+
+          <ul id="localities"></ul>
+
+          <div class="inline">
+            <input
+              id="localityName"
+              placeholder="Nom de localité"
+            >
+
+            <button
+              id="addLocality"
+              type="button"
+              title="Ajouter une localité"
+            >
+              +
+            </button>
+          </div>
+
+          <small>
+            Ajout local à ce navigateur, non vérifié.
+          </small>
+
+        </div>
+
+      </aside>
+
+      <!-- CARTE -->
+      <div class="mapCol">
+
+        <div class="mapTools">
+
+          <button
+            id="nationBtn"
+            type="button"
+            class="secondary"
+          >
+            🇭🇹 Vue nationale
+          </button>
+
+          <span>
+            Fond cartographique © OpenStreetMap
+          </span>
+
+        </div>
+
+        <div
+          id="map"
+          role="application"
+          aria-label="Carte interactive d'Haïti"
+        ></div>
+
+        <div class="mapFooter">
+          Données géographiques :
+          geoBoundaries / OpenStreetMap.
+
+          Limites administratives de référence
+          à vérifier.
+
+          Les frontières communales sont intégrées
+          progressivement selon les données disponibles.
+
+          Les sections communales seront ajoutées
+          après validation de leurs données géographiques.
+        </div>
+
+      </div>
+
+    </div>
+
+  </main>
+
+  <!-- PROJETS -->
+  <section id="projects" class="projects">
+
+    <div class="sectiontitle">
+
+      <div>
+        <p class="eyebrow">
+          PROJETS D'AMÉNAGEMENT
+        </p>
+
+        <h2>
+          Transformer les idées en projets
+        </h2>
+
+        <p>
+          Fiches de projets par commune,
+          avec catégories, descriptions,
+          illustrations et statut.
+        </p>
+      </div>
+
+      <button
+        id="newProject"
+        type="button"
+        class="primary"
+      >
+        + Ajouter un projet
+      </button>
+
+    </div>
+
+    <div id="projectCards" class="cards"></div>
+
+  </section>
+
+  <!-- MÉTHODOLOGIE -->
+  <section id="method" class="method">
+
+    <p class="eyebrow">TRANSPARENCE</p>
+
+    <h2>
+      Une vision, pas un plan d'urbanisme approuvé
+    </h2>
+
+    <p>
+      Les vues prospectives sont des propositions
+      conceptuelles.
+
+      Elles ne représentent ni des constructions
+      autorisées ni des engagements financiers.
+
+      Les limites communales, sections communales,
+      coordonnées, photographies, budgets
+      et diagnostics doivent être vérifiés
+      auprès de sources fiables et d'acteurs locaux
+      avant publication comme données factuelles.
+    </p>
+
+    <p>
+      Cette démonstration fonctionne sans compte :
+      vos ajouts sont enregistrés uniquement
+      dans votre navigateur.
+
+      Une version collaborative nécessitera
+      un serveur, une base de données,
+      une modération et des sauvegardes.
+    </p>
+
+  </section>
+
+  <!-- PIED DE PAGE -->
+  <footer>
+    HAÏTI 2050 · Prototype d'atlas territorial ·
+    Construire avec les communautés
+  </footer>
+
+  <!-- FORMULAIRE DE PROJET -->
+  <dialog id="projectDialog">
+
+    <form id="projectForm">
+
+      <div class="dialogHead">
+
+        <h2>Fiche de projet</h2>
+
+        <button
+          type="button"
+          id="closeDialog"
+          class="iconBtn"
+        >
+          ✕
+        </button>
+
+      </div>
+
+      <label>
+        Département
+
+        <select
+          id="formDepartment"
+          required
+        ></select>
+      </label>
+
+      <label>
+        Commune
+
+        <input
+          id="formCommune"
+          required
+        >
+      </label>
+
+      <label>
+        Nom du projet
+
+        <input
+          id="formTitle"
+          required
+          maxlength="100"
+          placeholder="Ex. Marché communal moderne"
+        >
+      </label>
+
+      <label>
+        Catégorie
+
+        <select id="formCategory">
+          <option>Routes et transports</option>
+          <option>Éducation</option>
+          <option>Santé</option>
+          <option>Énergie solaire</option>
+          <option>Eau et assainissement</option>
+          <option>Agriculture</option>
+          <option>Marché et commerce</option>
+          <option>Espaces publics</option>
+          <option>Autre</option>
+        </select>
+      </label>
+
+      <label>
+        Description
+
+        <textarea
+          id="formDescription"
+          rows="4"
+          required
+          placeholder="Objectifs et bénéfices pour la population"
+        ></textarea>
+      </label>
+
+      <label>
+        Budget estimatif (facultatif)
+
+        <input
+          id="formBudget"
+          placeholder="À étudier"
+        >
+      </label>
+
+      <label>
+        Image du projet (facultatif, URL https://)
+
+        <input
+          id="formImage"
+          type="url"
+          placeholder="https://..."
+        >
+      </label>
+
+      <p class="note">
+        Utilisez uniquement des images
+        dont vous possédez les droits.
+
+        Les projets ajoutés restent
+        dans ce navigateur.
+      </p>
+
+      <div class="actions">
+
+        <button
+          type="button"
+          id="cancelDialog"
+          class="secondary"
+        >
+          Annuler
+        </button>
+
+        <button
+          type="submit"
+          class="primary"
+        >
+          Enregistrer
+        </button>
+
+      </div>
+
+    </form>
+
+  </dialog>
+
+  <!-- SCRIPTS -->
+
+  <!-- Leaflet -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+  <!-- Données territoriales -->
+  <script src="territoires.js"></script>
+
+  <!-- Application principale -->
+  <script src="app.js"></script>
+
+  <!-- Départements et arrondissements -->
+  <script src="map-v2.js"></script>
+
+  <!-- Communes et fiches territoriales -->
+  <script src="communes-v25.js"></script>
+
+  <!-- Quartiers et localités -->
+  <script src="quartiers.js"></script>
+
+  <!-- Sections communales temporairement désactivées -->
+  <!--
+  <script src="sections.js"></script>
+  <script src="controle-sections.js"></script>
+  -->
+
+</body>
+</html>
