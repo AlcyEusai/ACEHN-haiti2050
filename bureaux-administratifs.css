@@ -1,0 +1,10 @@
+/* Haïti 2050 — Annuaire administratif */
+#administrationsPanel { width:100%; max-width:100%; min-width:0; box-sizing:border-box; margin:18px 0; }
+#administrationsPanel select, #administrationsPanel input { display:block; width:100%; box-sizing:border-box; margin:7px 0 12px; }
+#adminResults { max-height:520px; overflow-y:auto; }
+.admin-office { padding:12px 0; border-top:1px solid #dce5ec; overflow-wrap:anywhere; }
+.admin-office h4 { margin:0 0 6px; }
+.admin-office p { margin:0 0 5px; }
+.admin-office small { display:block; color:#667788; margin-bottom:8px; }
+.admin-office img { width:100%; height:auto; border-radius:8px; margin:8px 0; }
+.admin-office a { display:inline-block; margin-right:8px; }
