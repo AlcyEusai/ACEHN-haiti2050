@@ -220,6 +220,7 @@ function syncMenus() {
 const map = L.map("map", {
   scrollWheelZoom: false
 }).setView([18.96, -72.65], 8);
+window.haiti2050Map = map;
 
 L.tileLayer(
   "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
