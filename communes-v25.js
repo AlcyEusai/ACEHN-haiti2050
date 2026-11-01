@@ -1,15 +1,19 @@
 
 /*
- * HAÏTI 2050 — COMMUNES V3
+ * HAÏTI 2050 — COMMUNES V3.1
  * Frontières communales, zoom automatique et fiches.
  *
  * Dépendances :
  * - Leaflet
  * - territoires.js
  * - app.js
+ * - map-v2.js
  *
  * Données :
  * - data/haiti-communes.geojson
+ *
+ * Les limites affichées proviennent exclusivement du GeoJSON.
+ * Aucune frontière n'est inventée.
  */
 
 (() => {
@@ -39,6 +43,10 @@
   const polygons = new Map();
   const matchedCommunes = new Set();
 
+  /*
+   * Normalisation des noms :
+   * accents, apostrophes, espaces et tirets.
+   */
   function normalize(value) {
     return String(value || "")
       .normalize("NFD")
@@ -48,19 +56,43 @@
       .toLowerCase();
   }
 
-  function territoryKey(department, commune) {
-    return normalize(department) + "|" + normalize(commune);
-  }
-
-  const aliases = {
+  /*
+   * Correspondances de noms entre les deux sources.
+   *
+   * La clé est le nom normalisé du GeoJSON.
+   * La valeur est le nom normalisé du répertoire.
+   *
+   * Ces alias ne modifient aucune géométrie.
+   */
+  const communeAliases = {
     gonaives: "lesgonaives",
     coteaux: "lescoteaux",
+    cornillongrandbois: "cornillon",
+    lavallee: "lavalleedejacmel",
+    chamsolme: "chansolme",
     anseapitres: "anseapitre"
   };
 
-  function canonical(value) {
+  const departmentAliases = {
+    grandeanse: "grandanse"
+  };
+
+  function canonicalCommune(value) {
     const key = normalize(value);
-    return aliases[key] || key;
+    return communeAliases[key] || key;
+  }
+
+  function canonicalDepartment(value) {
+    const key = normalize(value);
+    return departmentAliases[key] || key;
+  }
+
+  function territoryKey(department, commune) {
+    return (
+      canonicalDepartment(department) +
+      "|" +
+      canonicalCommune(commune)
+    );
   }
 
   function getFeatureName(feature) {
@@ -91,22 +123,30 @@
     );
   }
 
+  /*
+   * Recherche dans le répertoire territorial.
+   *
+   * On vérifie toujours le département afin
+   * d'éviter d'associer deux communes homonymes.
+   */
   function findReference(name, department = "") {
-    const target = canonical(name);
-    const depTarget = normalize(department);
+    const target = canonicalCommune(name);
+    const depTarget = canonicalDepartment(department);
     const matches = [];
 
     for (const dep of reference.departements) {
       if (
         depTarget &&
-        normalize(dep.nom) !== depTarget
+        canonicalDepartment(dep.nom) !== depTarget
       ) {
         continue;
       }
 
       for (const arr of dep.arrondissements) {
         for (const commune of arr.communes) {
-          if (canonical(commune) === target) {
+          if (
+            canonicalCommune(commune) === target
+          ) {
             matches.push({
               department: dep.nom,
               arrondissement: arr.nom,
@@ -129,6 +169,9 @@
     };
   }
 
+  /*
+   * Message d'information sous la carte.
+   */
   function updateStatus(message) {
     let status = $("communeMapStatus");
 
@@ -138,8 +181,11 @@
       status.setAttribute("role", "status");
 
       status.style.cssText =
-        "padding:10px 15px;font-size:13px;" +
-        "background:#f1f7f8;color:#234;margin:0;";
+        "padding:10px 15px;" +
+        "font-size:13px;" +
+        "background:#f1f7f8;" +
+        "color:#234;" +
+        "margin:0;";
 
       const target =
         document.querySelector(".mapCol") ||
@@ -166,7 +212,9 @@
     ) || null;
   }
 
-  // Afficher la couche communale si nécessaire.
+  /*
+   * Afficher la couche des communes.
+   */
   function showCommuneLayer() {
     if (
       communeLayer &&
@@ -176,13 +224,19 @@
     }
   }
 
-  // Zoom sur les frontières réelles de la commune.
+  /*
+   * Zoom sur la véritable limite géographique.
+   */
   function zoomToCommune(polygon) {
-    if (!polygon?.getBounds) return false;
+    if (!polygon?.getBounds) {
+      return false;
+    }
 
     const bounds = polygon.getBounds();
 
-    if (!bounds.isValid()) return false;
+    if (!bounds.isValid()) {
+      return false;
+    }
 
     showCommuneLayer();
 
@@ -195,7 +249,9 @@
     return true;
   }
 
-  // Sélection et mise en évidence du polygone.
+  /*
+   * Sélection et mise en évidence d'une commune.
+   */
   function selectPolygon(polygon, zoom = true) {
     if (selectedPolygon && communeLayer) {
       communeLayer.resetStyle(selectedPolygon);
@@ -203,7 +259,9 @@
 
     selectedPolygon = polygon || null;
 
-    if (!polygon) return false;
+    if (!polygon) {
+      return false;
+    }
 
     showCommuneLayer();
 
@@ -225,7 +283,9 @@
     return true;
   }
 
-  // Synchronisation avec app.js.
+  /*
+   * Synchronisation avec les menus de app.js.
+   */
   function syncFromMenus(zoom = true) {
     const selection = currentSelection();
 
@@ -244,14 +304,16 @@
       selectPolygon(polygon, zoom);
 
       updateStatus(
-        "Commune : " + selection.commune +
+        "Commune : " +
+        selection.commune +
         " — frontière communale affichée."
       );
     } else {
       selectPolygon(null, false);
 
       updateStatus(
-        "Commune : " + selection.commune +
+        "Commune : " +
+        selection.commune +
         " — frontière géographique indisponible " +
         "ou non associée au répertoire."
       );
@@ -260,20 +322,26 @@
     renderCommuneSheet();
   }
 
-  // Fonction partagée pour les autres modules.
+  /*
+   * Fonction accessible aux autres modules.
+   */
   window.haiti2050ZoomToCommune = function(
     department,
     commune
   ) {
     const polygon = findPolygon(department, commune);
 
-    if (!polygon) return false;
+    if (!polygon) {
+      return false;
+    }
 
     selectPolygon(polygon, true);
     return true;
   };
 
-  // Fiche territoriale communale.
+  /*
+   * Création de la fiche territoriale communale.
+   */
   function renderCommuneSheet() {
     const selection = currentSelection();
 
@@ -284,9 +352,12 @@
       sheet.id = "communeSheetV25";
 
       sheet.style.cssText =
-        "max-width:1240px;margin:24px auto;" +
-        "padding:24px;border:1px solid #dce5ec;" +
-        "border-radius:14px;background:#fff;";
+        "max-width:1240px;" +
+        "margin:24px auto;" +
+        "padding:24px;" +
+        "border:1px solid #dce5ec;" +
+        "border-radius:14px;" +
+        "background:#fff;";
 
       ($("atlas") || $("map")?.parentElement)
         ?.appendChild(sheet);
@@ -307,26 +378,33 @@
     );
 
     const heading = document.createElement("h2");
+
     heading.textContent =
-      "Fiche territoriale : " + selection.commune;
+      "Fiche territoriale : " +
+      selection.commune;
 
     const location = document.createElement("p");
+
     location.textContent =
-      "Département : " + selection.department +
+      "Département : " +
+      selection.department +
       " | Arrondissement : " +
       selection.arrondissement;
 
     const geography = document.createElement("p");
+
     geography.textContent = polygon
       ? "Limite communale disponible sur la carte."
       : "Limite communale non encore disponible " +
         "dans le fichier géographique.";
 
     const subtitle = document.createElement("h3");
+
     subtitle.textContent =
       "Développement territorial — Horizon 2050";
 
     const introduction = document.createElement("p");
+
     introduction.textContent =
       "Cette fiche rassemble les informations " +
       "administratives disponibles et les projets " +
@@ -352,6 +430,7 @@
     });
 
     const projectsTitle = document.createElement("h3");
+
     projectsTitle.textContent =
       "Projets enregistrés pour cette commune";
 
@@ -365,27 +444,34 @@
 
     const matchingProjects = availableProjects.filter(
       project =>
-        normalize(project.department) ===
-          normalize(selection.department) &&
-        normalize(project.commune) ===
-          normalize(selection.commune)
+        canonicalDepartment(project.department) ===
+          canonicalDepartment(selection.department) &&
+        canonicalCommune(project.commune) ===
+          canonicalCommune(selection.commune)
     );
 
     if (!matchingProjects.length) {
       const item = document.createElement("li");
+
       item.textContent =
         "Aucun projet enregistré pour le moment.";
+
       projectList.appendChild(item);
     } else {
       matchingProjects.forEach(project => {
         const item = document.createElement("li");
+
         item.textContent =
-          project.title + " — " + project.category;
+          project.title +
+          " — " +
+          project.category;
+
         projectList.appendChild(item);
       });
     }
 
     const note = document.createElement("p");
+
     note.style.cssText =
       "font-size:12px;color:#64748b;";
 
@@ -407,13 +493,16 @@
     );
   }
 
-  // Affichage selon le niveau de zoom.
+  /*
+   * Affichage de la couche selon le niveau de zoom.
+   */
   function updateVisibleCommunes() {
-    if (!communeLayer) return;
+    if (!communeLayer) {
+      return;
+    }
 
     const selection = currentSelection();
 
-    // Une commune sélectionnée reste visible.
     const shouldShow =
       Boolean(selection.commune) ||
       map.getZoom() >= 10;
@@ -425,7 +514,9 @@
     }
   }
 
-  // Chargement des frontières GeoJSON.
+  /*
+   * Chargement des frontières communales.
+   */
   async function loadCommunes() {
     updateStatus(
       "Chargement des frontières communales..."
@@ -436,8 +527,10 @@
 
       if (!response.ok) {
         throw new Error(
-          "HTTP " + response.status +
-          " : " + GEOJSON_URL
+          "HTTP " +
+          response.status +
+          " : " +
+          GEOJSON_URL
         );
       }
 
@@ -455,6 +548,7 @@
 
         onEachFeature(feature, polygon) {
           const name = getFeatureName(feature);
+
           const department =
             getFeatureDepartment(feature);
 
@@ -473,13 +567,16 @@
             } else {
               console.warn(
                 "Haïti 2050 : plusieurs polygones " +
-                "pour la commune " + name
+                "pour la commune " +
+                name
               );
             }
           }
 
           polygon.bindTooltip(
-            name || "Commune non identifiée",
+            referenceCommune?.commune ||
+              name ||
+              "Commune non identifiée",
             { sticky: true }
           );
 
@@ -492,7 +589,8 @@
 
             if (!referenceCommune) {
               updateStatus(
-                "Polygone : " + name +
+                "Polygone : " +
+                name +
                 " — correspondance administrative " +
                 "à vérifier."
               );
@@ -533,17 +631,32 @@
         " communes associées au répertoire."
       );
 
-      console.log("Haïti 2050 — communes", {
-        polygones: data.features.length,
-        correspondances: matchedCommunes.size
-      });
+      console.log(
+        "Haïti 2050 — communes V3.1",
+        {
+          polygones: data.features.length,
+          correspondances: matchedCommunes.size,
+          communesRepertoire:
+            reference.departements.reduce(
+              (total, dep) =>
+                total +
+                dep.arrondissements.reduce(
+                  (sum, arr) =>
+                    sum + arr.communes.length,
+                  0
+                ),
+              0
+            )
+        }
+      );
 
-      // Si un territoire a été choisi pendant
-      // le chargement, synchroniser maintenant.
+      /*
+       * Synchroniser la sélection éventuellement
+       * effectuée pendant le chargement.
+       */
       syncFromMenus(
         Boolean(currentSelection().commune)
       );
-
     } catch (error) {
       console.warn(
         "Haïti 2050 — frontières communales :",
@@ -560,12 +673,16 @@
     }
   }
 
-  // Un seul événement de navigation territoriale
-  // évite les zooms concurrents.
+  /*
+   * Un seul événement de navigation territoriale
+   * évite les zooms concurrents.
+   */
   document.addEventListener(
     "haiti2050:territorychange",
     () => {
-      if (!ready) return;
+      if (!ready) {
+        return;
+      }
 
       const selection = currentSelection();
 
