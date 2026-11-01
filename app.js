@@ -236,6 +236,42 @@ const map = L.map("map", {
 // Carte partagée avec les autres scripts.
 window.haiti2050Map = map;
 
+// Zoom automatique sur un territoire ou une localité.
+window.haiti2050ZoomTo = function(latitude, longitude, zoom = 14) {
+  const lat = Number(latitude);
+  const lon = Number(longitude);
+
+  if (!Number.isFinite(lat) || !Number.isFinite(lon)) {
+    console.warn("Coordonnées GPS indisponibles.");
+    return false;
+  }
+
+  map.flyTo([lat, lon], zoom, {
+    animate: true,
+    duration: 1.2
+  });
+
+  return true;
+};
+
+// Zoom sur les frontières d'une couche GeoJSON.
+window.haiti2050ZoomToBounds = function(layer) {
+  if (!layer || typeof layer.getBounds !== "function") {
+    return false;
+  }
+
+  const bounds = layer.getBounds();
+
+  if (!bounds.isValid()) return false;
+
+  map.flyToBounds(bounds, {
+    padding: [25, 25],
+    maxZoom: 15,
+    duration: 1.2
+  });
+
+  return true;
+};
 L.tileLayer(
   "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
   {
@@ -528,7 +564,7 @@ $("arrondissement").addEventListener("change", event => {
     currentDepartment,
     event.target.value || null,
     null,
-    false
+    true
   );
 });
 
@@ -537,7 +573,7 @@ $("commune").addEventListener("change", event => {
     currentDepartment,
     currentArrondissement,
     event.target.value || null,
-    false
+    true
   );
 });
 
