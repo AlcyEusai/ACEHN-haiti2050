@@ -408,3 +408,83 @@ window.HAITI_TERRITOIRES = {
     );
   }
 })();
+
+
+/*
+ * HAÏTI 2050 — Contrôle des frontières communales
+ * Compare territoires.js avec haiti-communes.geojson
+ */
+
+(async function verifierFrontieresCommunales() {
+  const repertoire = window.HAITI_TERRITOIRES;
+
+  function normaliser(nom) {
+    return String(nom || "")
+      .normalize("NFD")
+      .replace(/[\u0300-\u036f]/g, "")
+      .replace(/grande['’ -]?anse/gi, "grandanse")
+      .replace(/grand['’ -]?anse/gi, "grandanse")
+      .replace(/[^a-zA-Z0-9]/g, "")
+      .toLowerCase();
+  }
+
+  try {
+    const reponse = await fetch(
+      "./data/haiti-communes.geojson"
+    );
+
+    if (!reponse.ok) {
+      throw new Error("HTTP " + reponse.status);
+    }
+
+    const geojson = await reponse.json();
+
+    const frontieres = new Set(
+      geojson.features.map(feature => {
+        const p = feature.properties || {};
+
+        return (
+          normaliser(p.ADM1_FR) + "|" +
+          normaliser(p.ADM2_FR)
+        );
+      })
+    );
+
+    const communes = [];
+
+    repertoire.departements.forEach(departement => {
+      departement.arrondissements.forEach(arrondissement => {
+        arrondissement.communes.forEach(commune => {
+          communes.push({
+            departement: departement.nom,
+            arrondissement: arrondissement.nom,
+            commune
+          });
+        });
+      });
+    });
+
+    const manquantes = communes.filter(item => {
+      const cle =
+        normaliser(item.departement) + "|" +
+        normaliser(item.commune);
+
+      return !frontieres.has(cle);
+    });
+
+    console.log("HAÏTI 2050 — Contrôle géographique");
+    console.log("Communes du répertoire :", communes.length);
+    console.log("Frontières GeoJSON :", geojson.features.length);
+    console.log("Communes sans correspondance :", manquantes.length);
+
+    console.table(manquantes);
+
+    window.HAITI_COMMUNES_SANS_FRONTIERES = manquantes;
+
+  } catch (erreur) {
+    console.error(
+      "Impossible de comparer les frontières :",
+      erreur
+    );
+  }
+})();
