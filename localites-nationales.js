@@ -50,8 +50,6 @@
 
     panel.append(label, field, status, results);
 
-    panel.append(label, field, status, results);
-
     // Trouver la vraie barre latérale
     const sidebar = document.querySelector(
       "#atlas .workspace > aside"
@@ -117,8 +115,8 @@
 
           button.textContent =
             place.nom + " — " +
-            place.latitude.toFixed(4) + ", " +
-            place.longitude.toFixed(4);
+            Number(place.latitude).toFixed(4) + ", " +
+            Number(place.longitude).toFixed(4);
 
           button.addEventListener("click", () => {
             field.value = place.nom;
