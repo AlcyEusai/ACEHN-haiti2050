@@ -1079,10 +1079,248 @@
     }
   }
 
+  
+/*
+ * HAÏTI 2050 — INTÉGRATION GEONAMES
+ *
+ * Associe provisoirement les localités GPS
+ * aux communes à partir des polygones GeoJSON.
+ *
+ * Ne modifie pas les limites administratives.
+ * Ne remplace pas les données enregistrées.
+ */
+
+function pointInRing(lon, lat, ring) {
+  let inside = false;
+
+  for (
+    let i = 0, j = ring.length - 1;
+    i < ring.length;
+    j = i++
+  ) {
+    const xi = ring[i][0];
+    const yi = ring[i][1];
+    const xj = ring[j][0];
+    const yj = ring[j][1];
+
+    const intersects =
+      ((yi > lat) !== (yj > lat)) &&
+      (lon <
+        ((xj - xi) * (lat - yi)) /
+        (yj - yi) + xi);
+
+    if (intersects) {
+      inside = !inside;
+    }
+  }
+
+  return inside;
+}
+
+function pointInPolygon(lon, lat, rings) {
+  if (
+    !Array.isArray(rings) ||
+    !rings.length ||
+    !pointInRing(lon, lat, rings[0])
+  ) {
+    return false;
+  }
+
+  return !rings
+    .slice(1)
+    .some(ring => pointInRing(lon, lat, ring));
+}
+
+function pointInGeometry(lon, lat, geometry) {
+  if (!geometry) return false;
+
+  if (geometry.type === "Polygon") {
+    return pointInPolygon(
+      lon,
+      lat,
+      geometry.coordinates
+    );
+  }
+
+  if (geometry.type === "MultiPolygon") {
+    return geometry.coordinates.some(
+      polygon => pointInPolygon(lon, lat, polygon)
+    );
+  }
+
+  return false;
+}
+
+function getGeoJSONName(feature) {
+  const p = feature.properties || {};
+
+  return (
+    p.ADM2_FR ||
+    p.ADM2_EN ||
+    p.shapeName ||
+    p.name ||
+    ""
+  );
+}
+
+function getGeoJSONDepartment(feature) {
+  const p = feature.properties || {};
+
+  return (
+    p.ADM1_FR ||
+    p.ADM1_EN ||
+    p.department ||
+    p.departement ||
+    ""
+  );
+}
+
+async function loadGeoNamesLocalities() {
+  try {
+    const responses = await Promise.all([
+      fetch("./data/haiti-localites.json"),
+      fetch("./data/haiti-communes.geojson")
+    ]);
+
+    if (!responses.every(response => response.ok)) {
+      throw new Error(
+        "Impossible de charger les données GeoNames ou les communes."
+      );
+    }
+
+    const [rawLocalities, geojson] =
+      await Promise.all(
+        responses.map(response => response.json())
+      );
+
+    const places = Array.isArray(rawLocalities)
+      ? rawLocalities
+      : rawLocalities.localites ||
+        rawLocalities.features ||
+        [];
+
+    if (
+      !Array.isArray(places) ||
+      !Array.isArray(geojson.features)
+    ) {
+      throw new Error("Structure des données invalide.");
+    }
+
+    const communes = geojson.features
+      .map(feature => {
+        const name = getGeoJSONName(feature);
+        const department =
+          getGeoJSONDepartment(feature);
+
+        let reference = null;
+
+        for (const dep of data.departements) {
+          if (
+            normalizeDepartment(dep.nom) !==
+            normalizeDepartment(department)
+          ) {
+            continue;
+          }
+
+          for (const arr of dep.arrondissements) {
+            for (const commune of arr.communes) {
+              if (
+                normalize(commune) === normalize(name)
+              ) {
+                reference = {
+                  department: dep.nom,
+                  commune
+                };
+              }
+            }
+          }
+        }
+
+        return reference
+          ? { feature, ...reference }
+          : null;
+      })
+      .filter(Boolean);
+
+    let linked = 0;
+    let ambiguous = 0;
+
+    for (const place of places) {
+      const name = String(
+        place.nom ||
+        place.name ||
+        place.properties?.name ||
+        ""
+      ).trim();
+
+      const position = validGPS(
+        place.latitude ??
+          place.properties?.latitude,
+        place.longitude ??
+          place.properties?.longitude
+      );
+
+      if (!name || !position) continue;
+
+      const matches = communes.filter(commune =>
+        pointInGeometry(
+          position.lon,
+          position.lat,
+          commune.feature.geometry
+        )
+      );
+
+      // Ne pas choisir arbitrairement une commune.
+      if (matches.length !== 1) {
+        if (matches.length > 1) ambiguous++;
+        continue;
+      }
+
+      const match = matches[0];
+
+      sharedLocalities.push({
+        name,
+        department: match.department,
+        commune: match.commune,
+        latitude: position.lat,
+        longitude: position.lon,
+        source: "GeoNames",
+        communeVerifiee: false
+      });
+
+      linked++;
+    }
+
+    console.info(
+      "Haïti 2050 : " +
+      linked +
+      " localités GeoNames rattachées provisoirement."
+    );
+
+    console.info(
+      "Points géographiquement ambigus : " +
+      ambiguous
+    );
+
+    refresh();
+
+  } catch (error) {
+    console.warn(
+      "Haïti 2050 : erreur GeoNames :",
+      error
+    );
+
+    showMessage(
+      "Les localités nationales n'ont pas pu être chargées."
+    );
+  }
+}
+ 
   refresh();
   loadSharedLocalities();
+  loadGeoNamesLocalities();
 
   console.log(
-    "Haïti 2050 — Quartiers V4 activés."
+    "Haïti 2050 — Quartiers V4 + GeoNames activés."
   );
-})();
+  })();
