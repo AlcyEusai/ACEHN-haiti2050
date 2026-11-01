@@ -1225,7 +1225,11 @@ async function loadGeoNamesLocalities() {
           for (const arr of dep.arrondissements) {
             for (const commune of arr.communes) {
               if (
-                normalize(commune) === normalize(name)
+                (
+                  normalize(commune) === normalize(name) ||
+                  normalize(commune).replace(/^les/, "") === normalize(name) ||
+                  normalize(name).replace(/^les/, "") === normalize(commune)
+                )
               ) {
                 reference = {
                   department: dep.nom,
