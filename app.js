@@ -426,37 +426,6 @@ function renderSelection() {
     }
   }
 
-  const list = $("localities");
-
-  if (list) {
-    list.replaceChildren();
-
-    if (!currentCommune) {
-      const li = document.createElement("li");
-      li.textContent =
-        "Sélectionnez une commune pour consulter " +
-        "ses localités enregistrées.";
-      list.appendChild(li);
-    } else {
-      const key = currentDepartment + "|" + currentCommune;
-      const items = localities[key] || [];
-
-      if (!items.length) {
-        const li = document.createElement("li");
-        li.textContent =
-          "Aucune localité enregistrée pour le moment.";
-        list.appendChild(li);
-      } else {
-        items.forEach(item => {
-          const li = document.createElement("li");
-          li.textContent =
-            item + " (saisie locale, à vérifier)";
-          list.appendChild(li);
-        });
-      }
-    }
-  }
-
   renderProjects();
   renderTerritoryProfile();
 }
