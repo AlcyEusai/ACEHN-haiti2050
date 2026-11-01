@@ -322,6 +322,35 @@
     renderCommuneSheet();
   }
 
+  
+/*
+ * HAÏTI 2050 — Accès aux polygones communaux
+ * pour les autres modules.
+ *
+ * Retourne un objet GeoJSON correspondant
+ * à la commune sélectionnée, ou null.
+ */
+window.haiti2050GetCommuneGeoJSON = function(
+  department,
+  commune
+) {
+  const polygon = findPolygon(department, commune);
+
+  if (!polygon || typeof polygon.toGeoJSON !== "function") {
+    return null;
+  }
+
+  return polygon.toGeoJSON();
+};
+
+/*
+ * Vérifie si les frontières communales
+ * ont été chargées.
+ */
+window.haiti2050CommunesReady = function() {
+  return ready;
+};
+
   /*
    * Fonction accessible aux autres modules.
    */
@@ -621,6 +650,15 @@
       });
 
       ready = true;
+
+      document.dispatchEvent(
+        new CustomEvent("haiti2050:communesready", {
+          detail: {
+            polygons: data.features.length,
+            matchedCommunes: matchedCommunes.size
+         }
+        })
+      );
 
       updateVisibleCommunes();
 
