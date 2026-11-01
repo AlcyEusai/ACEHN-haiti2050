@@ -422,10 +422,9 @@ window.HAITI_TERRITOIRES = {
     return String(nom || "")
       .normalize("NFD")
       .replace(/[\u0300-\u036f]/g, "")
-      .replace(/grande['’ -]?anse/gi, "grandanse")
-      .replace(/grand['’ -]?anse/gi, "grandanse")
-      .replace(/[^a-zA-Z0-9]/g, "")
-      .toLowerCase();
+      .toLowerCase()
+      .replace(/[^a-z0-9]/g, "")
+      .replace(/^les(?=[a-z])/, "");
   }
 
   try {
