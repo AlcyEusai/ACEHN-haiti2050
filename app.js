@@ -714,6 +714,7 @@ $("projectForm").onsubmit = event => {
   dialog.close();
   $("projectForm").reset();
   renderProjects();
+  document.dispatchEvent(new CustomEvent("haiti2050:projectschange"));
 };
 
 // Fiche territoriale pilote conservée.
