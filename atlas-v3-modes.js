@@ -55,8 +55,6 @@
     }
   );
 
-  // Réservé aux projets futurs géoréférencés validés.
-  const futureProjects = L.layerGroup();
   // Satellite lisible : contours fins, sans remplissage opaque.
   // Classe CSS appliquée uniquement à la carte actuelle.
   const update = () => {
@@ -65,12 +63,10 @@
     if (mode === "satellite") {
       streets.forEach(layer => map.removeLayer(layer));
       if (!map.hasLayer(satellite)) satellite.addTo(map);
-      map.removeLayer(futureProjects);
       status.textContent = "Imagerie satellite du fournisseur : la date des prises de vue varie.";
     } else if (mode === "future") {
       if (map.hasLayer(satellite)) map.removeLayer(satellite);
       streets.forEach(layer => { if (!map.hasLayer(layer)) layer.addTo(map); });
-      if (!map.hasLayer(futureProjects)) futureProjects.addTo(map);
       status.textContent = "Vision 2050 : aucun projet sans GPS n'est placé sur la carte. Les projets restent consultables dans leurs fiches.";
     } else {
       if (map.hasLayer(satellite)) map.removeLayer(satellite);
@@ -84,5 +80,4 @@
   };
   select.addEventListener("change", update);
   update();
-  window.haiti2050FutureLayer = futureProjects;
 })();
