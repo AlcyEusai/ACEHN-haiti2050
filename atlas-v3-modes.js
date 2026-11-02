@@ -71,7 +71,6 @@
     } else {
       if (map.hasLayer(satellite)) map.removeLayer(satellite);
       streets.forEach(layer => { if (!map.hasLayer(layer)) layer.addTo(map); });
-      map.removeLayer(futureProjects);
       status.textContent = "Territoire actuel — fond OpenStreetMap.";
     }
     document.dispatchEvent(new CustomEvent("haiti2050:viewchange", {
