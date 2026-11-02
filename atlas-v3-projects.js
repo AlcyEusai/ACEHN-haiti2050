@@ -92,17 +92,15 @@
       action.className = "secondary";
       action.textContent = "Renseigner / vérifier l’emplacement";
       action.style.marginTop = "6px";
-      action.addEventListener("click", () => {
-        const form = item.querySelector("form");
-        form.hidden = !form.hidden;
-      });
       const form = document.createElement("form");
       form.hidden = true;
-      form.style.cssText = "display:grid;gap:6px;margin-top:8px;max-width:420px";
-      // hidden can be overridden by CSS display:grid; explicitly force via inline display.
+      form.style.cssText = "gap:6px;margin-top:8px;max-width:420px";
       form.style.display = "none";
+      action.setAttribute("aria-expanded", "false");
       action.addEventListener("click", () => {
+        form.hidden = !form.hidden;
         form.style.display = form.hidden ? "none" : "grid";
+        action.setAttribute("aria-expanded", String(!form.hidden));
       });
       const lat = document.createElement("input");
       lat.type = "number"; lat.step = "any"; lat.placeholder = "Latitude (ex. 18.2)";
@@ -160,6 +158,7 @@
   document.addEventListener("haiti2050:territorychange", refresh);
   document.addEventListener("haiti2050:projectschange", refresh);
   document.addEventListener("haiti2050:viewchange", refresh);
+  document.addEventListener("haiti2050:futuremapready", refresh);
   ["department", "arrondissement", "commune"].forEach(id =>
     $(id)?.addEventListener("change", () => setTimeout(refresh, 0)));
   $("projectForm")?.addEventListener("submit", () => setTimeout(refresh, 0));
