@@ -352,10 +352,8 @@ function selectTerritory(
 
   syncMenus();
 
-  if (zoom) {
-    const center =
-      departmentCenters[currentDepartment] || nationalCenter;
-
+  if (zoom && !currentArrondissement && !currentCommune) {
+    const center = departmentCenters[currentDepartment] || nationalCenter;
     map.flyTo(center, 10);
   }
 
