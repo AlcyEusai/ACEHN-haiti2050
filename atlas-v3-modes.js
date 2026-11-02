@@ -57,8 +57,11 @@
 
   // Réservé aux projets futurs géoréférencés validés.
   const futureProjects = L.layerGroup();
+  // Satellite lisible : contours fins, sans remplissage opaque.
+  // Classe CSS appliquée uniquement à la carte actuelle.
   const update = () => {
     const mode = select.value;
+    map.getContainer().classList.toggle("haiti2050-satellite-clean", mode === "satellite");
     if (mode === "satellite") {
       streets.forEach(layer => map.removeLayer(layer));
       if (!map.hasLayer(satellite)) satellite.addTo(map);
