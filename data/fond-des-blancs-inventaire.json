@@ -7,11 +7,11 @@
       "id": "hospital-sb",
       "name": "Hôpital Saint-Boniface",
       "category": "sante",
-      "lat": 18.27753,
-      "lon": -73.13024,
-      "verification": "coordonnees_cartographiques",
+      "lat": null,
+      "lon": null,
+      "verification": "localisation_a_verifier",
       "source": "https://www.openstreetmap.org/way/92449608",
-      "note": "Bâtiment hospitalier cartographié ; activité confirmée par l'organisme gestionnaire.",
+      "note": "Bâtiment hospitalier cartographié ; activité confirmée par l'organisme gestionnaire. Coordonnées non corroborées par une source géographique consultable : marqueur suspendu.",
       "secondary": "https://healthequityintl.org/our-work/st-boniface-hospital-sbh"
     },
     {
@@ -28,21 +28,21 @@
       "id": "ecole-nationale",
       "name": "École nationale Fond-des-Blancs",
       "category": "education",
-      "lat": 18.2872575,
-      "lon": -73.136239,
-      "verification": "source_documentaire",
+      "lat": null,
+      "lon": null,
+      "verification": "localisation_a_verifier",
       "source": "https://charesso.org/en/observatories/elections/centres/?departement=CENTRE",
-      "note": "Coordonnées publiées dans un répertoire de centres ; emplacement à confirmer sur le terrain."
+      "note": "Coordonnées publiées dans un répertoire de centres ; emplacement à confirmer sur le terrain. Coordonnées non corroborées par une source géographique consultable : marqueur suspendu."
     },
     {
       "id": "college-classique",
       "name": "Collège classique (Sainthon)",
       "category": "education",
-      "lat": 18.276839,
-      "lon": -73.125859,
-      "verification": "source_documentaire",
+      "lat": null,
+      "lon": null,
+      "verification": "localisation_a_verifier",
       "source": "https://charesso.org/en/observatories/elections/centres/?departement=CENTRE",
-      "note": "Coordonnées déclarées pour un centre ; identification et fonctionnement à confirmer."
+      "note": "Coordonnées déclarées pour un centre ; identification et fonctionnement à confirmer. Coordonnées non corroborées par une source géographique consultable : marqueur suspendu."
     },
     {
       "id": "eglise-francis",
@@ -62,7 +62,7 @@
       "lon": null,
       "verification": "localisation_a_verifier",
       "source": "https://fonddesblancsht.org/",
-      "note": "Présence mentionnée dans un annuaire ; coordonnées précises et caractère officiel du portail à vérifier."
+      "note": "Présence institutionnelle à confirmer auprès de la mairie ; le statut officiel du portail cité n'est pas authentifié."
     },
     {
       "id": "adf",
