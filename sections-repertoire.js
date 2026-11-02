@@ -169,7 +169,8 @@
           name: section.name,
           code: section.code,
           commune: section.commune,
-          department: section.department
+          department: section.department,
+          geometry: section.geometry
         }
       })
     );
@@ -185,6 +186,7 @@
 
     selectedPolygon = null;
     selectedSection = null;
+    document.dispatchEvent(new CustomEvent("haiti2050:sectionclear"));
   }
 
   // Affichage des sections dans le répertoire.
@@ -387,7 +389,8 @@
             commune: String(p.ADM2_FR || "").trim(),
             department: String(p.ADM1_FR || "").trim(),
             code: String(p.ADM3_PCODE || "").trim(),
-            polygon
+            polygon,
+            geometry: feature.geometry
           };
 
           if (
