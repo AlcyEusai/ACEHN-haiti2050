@@ -37,6 +37,25 @@
     window.haiti2050FutureMap = futureMap;
     window.haiti2050FutureProjectLayer = futureLayer;
   }
+  // Synchronise les déplacements lorsque la carte actuelle change de territoire.
+  let syncScheduled = false;
+  const syncFromCurrent = () => {
+    if (!futureMap || panel.hidden || syncScheduled) return;
+    syncScheduled = true;
+    requestAnimationFrame(() => {
+      syncScheduled = false;
+      if (!panel.hidden) {
+        futureMap.setView(current.getCenter(), current.getZoom(), { animate: false });
+      }
+    });
+  };
+  current.on("moveend", syncFromCurrent);
+  current.on("zoomend", syncFromCurrent);
+  document.addEventListener("haiti2050:territorychange", () => {
+    // Certains modules déclenchent le zoom après l'événement de sélection.
+    requestAnimationFrame(syncFromCurrent);
+  });
+
   document.addEventListener("haiti2050:viewchange", event => {
     const future = event.detail?.mode === "future";
     panel.hidden = !future;
