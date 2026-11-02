@@ -1,1330 +1,744 @@
 
-/*
- * HAÏTI 2050 — QUARTIERS ET LOCALITÉS V4
- *
- * - Affichage automatique des quartiers géolocalisés
- * - Conservation des anciennes données localStorage
- * - Chargement facultatif d'un GeoJSON partagé
- * - Recherche des communes, sections et localités
- * - Zoom et fiches des localités
- * - Aucune coordonnée inventée
- */
-
+/* HAITI 2050 — quartiers.js — version nationale */
 (() => {
-  "use strict";
-
+  'use strict';
   const $ = id => document.getElementById(id);
-  const data = window.HAITI_TERRITOIRES;
-  const map = window.haiti2050Map;
-
-  if (!Array.isArray(data?.departements)) {
-    console.error("Haïti 2050 : territoires.js absent.");
+  const atlas = window.HAITI_TERRITOIRES;
+  if (!Array.isArray(atlas?.departements)) {
+    console.error('territoires.js manquant');
     return;
   }
-
-  const LOCALITIES_KEY = "haiti2050-localities";
-  const QUARTIERS_KEY = "haiti2050-quartiers";
-  const GPS_KEY = "haiti2050-localities-gps";
-  const GEOJSON_URL = "./data/haiti-quartiers.geojson";
-
-  function normalize(value) {
-    return String(value || "")
-      .normalize("NFD")
-      .replace(/[\u0300-\u036f]/g, "")
-      .replace(/[^a-zA-Z0-9]/g, "")
-      .toLowerCase();
-  }
-
-  function normalizeDepartment(value) {
-    const name = normalize(value);
-    return name === "grandeanse" ? "grandanse" : name;
-  }
-
-  function readStorage(key) {
+  const map = window.haiti2050Map;
+  const layer = map && window.L
+    ? L.layerGroup().addTo(map) : null;
+  const norm = s => String(s ?? '')
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .toLowerCase()
+    .replace(/[^a-z0-9]/g, '');
+  const depNorm = s => norm(s)
+    .replace(/^grandeanse$/, 'grandanse');
+  const alias = s => norm(s)
+    .replace(/^(les|la|le)(?=[a-z])/, '');
+  const key = (d,c) => depNorm(d) + '|' + norm(c);
+  const gps = (a,b) => {
+    if (a == null || b == null ||
+        String(a).trim() === '' ||
+        String(b).trim() === '') return null;
+    const lat = Number(a), lon = Number(b);
+    return Number.isFinite(lat) &&
+      Number.isFinite(lon) &&
+      Math.abs(lat) <= 90 &&
+      Math.abs(lon) <= 180 ? {lat,lon} : null;
+  };
+  const read = name => {
     try {
-      const value = JSON.parse(localStorage.getItem(key));
-      return value && typeof value === "object" &&
-        !Array.isArray(value) ? value : {};
+      const x = JSON.parse(
+        localStorage.getItem(name) || '{}'
+      );
+      return x && typeof x === 'object' &&
+        !Array.isArray(x) ? x : {};
     } catch {
       return {};
     }
+  };
+  const manual = read('haiti2050-localities');
+  const manualGPS = read('haiti2050-localities-gps');
+  const legacyQuartiers = read('haiti2050-quartiers');
+  const entries = new Map();
+  const refs = [];
+  for (const d of atlas.departements)
+    for (const a of d.arrondissements)
+      for (const c of a.communes)
+        refs.push({
+          department:d.nom,
+          arrondissement:a.nom,
+          commune:c
+        });
+
+  function findRef(d,c) {
+    const candidates = refs.filter(r =>
+      depNorm(r.department) === depNorm(d)
+    );
+    const exact = candidates.filter(r =>
+      norm(r.commune) === norm(c)
+    );
+    if (exact.length === 1) return exact[0];
+    if (exact.length) return null;
+    const approximate = candidates.filter(r =>
+      alias(r.commune) === alias(c)
+    );
+    return approximate.length === 1
+      ? approximate[0] : null;
   }
 
-  const localities = readStorage(LOCALITIES_KEY);
-  const quartiers = readStorage(QUARTIERS_KEY);
-  const coordinates = readStorage(GPS_KEY);
+  function add(ref, name, position, source,
+               verified = false) {
+    if (!ref || !String(name ?? '').trim()) return;
+    const k = key(ref.department,ref.commune);
+    if (!entries.has(k)) entries.set(k,new Map());
+    const m = entries.get(k);
+    const n = norm(name);
+    const old = m.get(n);
+    if (old) {
+      if (!old.position && position)
+        old.position = position;
+      if (verified) old.verified = true;
+      return;
+    }
+    m.set(n,{
+      ...ref,
+      name:String(name).trim(),
+      position,
+      source,
+      verified
+    });
+  }
 
-  // Données partagées publiquement, si disponibles.
-  const sharedLocalities = [];
-
-  // Couche des marqueurs des quartiers.
-  const markerLayer =
-    map && typeof L !== "undefined"
-      ? L.layerGroup()
-      : null;
-
-  let selectedMarker = null;
-
-  function territory() {
+  function current() {
     return {
-      department: $("department")?.value || "",
-      arrondissement: $("arrondissement")?.value || "",
-      commune: $("commune")?.value || ""
+      department:$('department')?.value || '',
+      arrondissement:$('arrondissement')?.value || '',
+      commune:$('commune')?.value || ''
     };
   }
 
-  function keyFor(department, commune) {
-    return normalizeDepartment(department) +
-      "|" + normalize(commune);
-  }
-
-  function gpsKey(department, commune, name) {
-    return keyFor(department, commune) +
-      "|" + normalize(name);
-  }
-
-  function uniqueNames(items) {
-    const seen = new Set();
-
-    return items.filter(name => {
-      if (typeof name !== "string") return false;
-
-      const key = normalize(name);
-      if (!key || seen.has(key)) return false;
-
-      seen.add(key);
-      return true;
-    });
-  }
-
-  function validGPS(latitude, longitude) {
-    if (
-      latitude === null ||
-      longitude === null ||
-      latitude === undefined ||
-      longitude === undefined ||
-      String(latitude).trim() === "" ||
-      String(longitude).trim() === ""
-    ) {
-      return null;
-    }
-
-    const lat = Number(latitude);
-    const lon = Number(longitude);
-
-    if (
-      !Number.isFinite(lat) ||
-      !Number.isFinite(lon) ||
-      lat < -90 || lat > 90 ||
-      lon < -180 || lon > 180
-    ) {
-      return null;
-    }
-
-    return { lat, lon };
-  }
-
-  function findShared(department, commune) {
-    return sharedLocalities.filter(item =>
-      normalizeDepartment(item.department) ===
-        normalizeDepartment(department) &&
-      normalize(item.commune) === normalize(commune)
-    );
-  }
-
-  function getLocalities(department, commune) {
-    const oldKey = department + "|" + commune;
-    const newKey = keyFor(department, commune);
-
-    return uniqueNames([
-      ...(Array.isArray(localities[oldKey])
-        ? localities[oldKey] : []),
-      ...(Array.isArray(localities[newKey])
-        ? localities[newKey] : []),
-      ...(Array.isArray(quartiers[newKey])
-        ? quartiers[newKey] : []),
-      ...findShared(department, commune).map(x => x.name)
-    ]);
-  }
-
-  function getGPS(department, commune, name) {
-    const saved = coordinates[
-      gpsKey(department, commune, name)
-    ];
-
-    if (saved) {
-      const position = validGPS(
-        saved.latitude,
-        saved.longitude
-      );
-
-      if (position) return position;
-    }
-
-    const shared = findShared(department, commune)
-      .find(item =>
-        normalize(item.name) === normalize(name)
-      );
-
-    return shared
-      ? validGPS(shared.latitude, shared.longitude)
-      : null;
-  }
-
-  function showMessage(message) {
-    let status = $("localitySearchMessage");
-
-    if (!status) {
-      status = document.createElement("p");
-      status.id = "localitySearchMessage";
-      status.setAttribute("role", "status");
-      status.style.cssText =
-        "font-size:13px;line-height:1.5;" +
-        "margin:10px 0;color:#234;";
-
-      const target =
-        $("searchBtn") ||
-        $("atlas") ||
-        $("map");
-
-      target?.insertAdjacentElement("afterend", status);
-    }
-
-    status.textContent = message;
-  }
-
-  function clearSelectedMarker() {
-    if (selectedMarker && markerLayer) {
-      markerLayer.removeLayer(selectedMarker);
-    }
-
-    selectedMarker = null;
-  }
-
-  /*
-   * Afficher tous les quartiers GPS de la commune.
-   */
-  function renderMapMarkers() {
-    if (!map || !markerLayer || typeof L === "undefined") {
-      return;
-    }
-
-    markerLayer.clearLayers();
-    selectedMarker = null;
-
-    const current = territory();
-
-    if (!current.department || !current.commune) {
-      if (map.hasLayer(markerLayer)) {
-        map.removeLayer(markerLayer);
+  function localities(d,c) {
+    const k = key(d,c);
+    const result = new Map(entries.get(k) || []);
+    for (const oldKey of [d+'|'+c,k]) {
+      const names = [
+        ...(Array.isArray(manual[oldKey])
+          ? manual[oldKey] : []),
+        ...(Array.isArray(legacyQuartiers[oldKey])
+          ? legacyQuartiers[oldKey] : [])
+      ];
+      for (const name of names) {
+        if (!name || result.has(norm(name))) continue;
+        const p = manualGPS[k+'|'+norm(name)];
+        result.set(norm(name),{
+          department:d,
+          commune:c,
+          name,
+          position:p
+            ? gps(p.latitude,p.longitude) : null,
+          source:'Ajout local',
+          verified:false
+        });
       }
-      return;
     }
-
-    const names = getLocalities(
-      current.department,
-      current.commune
+    return [...result.values()].sort((a,b) =>
+      a.name.localeCompare(b.name,'fr')
     );
+  }
 
-    let count = 0;
+  function inRing(x,y,ring) {
+    let inside = false;
+    for (let i=0,j=ring.length-1;
+         i<ring.length;j=i++) {
+      const a=ring[i], b=ring[j];
+      if ((a[1]>y)!==(b[1]>y) &&
+          x < (b[0]-a[0])*(y-a[1])/
+              (b[1]-a[1])+a[0]) {
+        inside=!inside;
+      }
+    }
+    return inside;
+  }
 
-    names.forEach(name => {
-      const position = getGPS(
-        current.department,
-        current.commune,
-        name
-      );
+  const inPolygon = (x,y,rings) =>
+    !!rings?.length &&
+    inRing(x,y,rings[0]) &&
+    !rings.slice(1).some(r=>inRing(x,y,r));
 
-      if (!position) return;
+  function inGeometry(x,y,g) {
+    if (g?.type === 'Polygon')
+      return inPolygon(x,y,g.coordinates);
+    if (g?.type === 'MultiPolygon')
+      return g.coordinates.some(p=>inPolygon(x,y,p));
+    return false;
+  }
 
-      const marker = L.marker([
-        position.lat,
-        position.lon
+  function bounds(g) {
+    const b=[Infinity,Infinity,-Infinity,-Infinity];
+    function visit(v) {
+      if (!Array.isArray(v)) return;
+      if (typeof v[0] === 'number' &&
+          typeof v[1] === 'number') {
+        b[0]=Math.min(b[0],v[0]);
+        b[1]=Math.min(b[1],v[1]);
+        b[2]=Math.max(b[2],v[0]);
+        b[3]=Math.max(b[3],v[1]);
+      } else v.forEach(visit);
+    }
+    visit(g?.coordinates);
+    return Number.isFinite(b[0]) ? b : null;
+  }
+
+  async function fetchJSON(url) {
+    try {
+      const response=await fetch(url);
+      if (!response.ok) {
+        if (response.status !== 404)
+          console.warn(url,response.status);
+        return null;
+      }
+      return await response.json();
+    } catch(e) {
+      console.warn('Chargement',url,e);
+      return null;
+    }
+  }
+
+  let loaded=false;
+
+  async function load() {
+    const [communes,places,verified,shared] =
+      await Promise.all([
+        fetchJSON('./data/haiti-communes.geojson'),
+        fetchJSON('./data/haiti-localites.json'),
+        fetchJSON(
+          './data/rattachements-localites-verifies.json'
+        ),
+        fetchJSON('./data/haiti-quartiers.geojson')
       ]);
 
-      const popup = document.createElement("div");
+    const polygons=(communes?.features || [])
+      .map(f => {
+        const p=f.properties || {};
+        return {
+          ref:findRef(
+            p.ADM1_FR || p.department,
+            p.ADM2_FR || p.name
+          ),
+          geometry:f.geometry,
+          b:bounds(f.geometry)
+        };
+      })
+      .filter(p=>p.ref && p.b);
 
-      const heading = document.createElement("strong");
-      heading.textContent = name;
+    const confirmed=new Map();
+    for (const v of Array.isArray(verified)
+         ? verified : []) {
+      const ref=findRef(
+        v.departement || v.department,
+        v.commune
+      );
+      if (ref && v.id != null)
+        confirmed.set(String(v.id),ref);
+    }
 
-      const detail = document.createElement("p");
-      detail.textContent =
-        current.commune + " — " + current.department;
+    let spatial=0, explicit=0, unknown=0;
 
-      popup.append(heading, detail);
+    for (const place of Array.isArray(places)
+         ? places : []) {
+      const position=gps(
+        place.latitude,place.longitude
+      );
+      const name=place.nom || place.name;
+      if (!position || !name) {
+        unknown++;
+        continue;
+      }
+      const ref=confirmed.get(String(place.id));
+      if (ref) {
+        add(
+          ref,name,position,
+          'Rattachement vérifié',true
+        );
+        explicit++;
+        continue;
+      }
+      const matches=new Map();
+      for (const p of polygons) {
+        if (
+          position.lon>=p.b[0] &&
+          position.lon<=p.b[2] &&
+          position.lat>=p.b[1] &&
+          position.lat<=p.b[3] &&
+          inGeometry(
+            position.lon,
+            position.lat,
+            p.geometry
+          )
+        ) {
+          matches.set(
+            key(p.ref.department,p.ref.commune),
+            p.ref
+          );
+        }
+      }
+      if (matches.size === 1) {
+        add(
+          [...matches.values()][0],
+          name,position,
+          'GeoNames : attribution spatiale'
+        );
+        spatial++;
+      } else {
+        unknown++;
+      }
+    }
 
-      marker.bindPopup(popup);
-      marker.bindTooltip(name);
+    for (const f of shared?.features || []) {
+      if (f.geometry?.type !== 'Point') continue;
+      const p=f.properties || {};
+      const ref=findRef(
+        p.department || p.departement || p.ADM1_FR,
+        p.commune || p.ADM2_FR
+      );
+      const position=gps(
+        f.geometry.coordinates?.[1],
+        f.geometry.coordinates?.[0]
+      );
+      if (ref && position)
+        add(
+          ref,
+          p.name || p.nom || p.quartier,
+          position,
+          'Quartiers GeoJSON'
+        );
+    }
 
-      markerLayer.addLayer(marker);
-      count++;
+    loaded=true;
+    console.info('Haïti 2050 : localités', {
+      communes:refs.length,
+      polygones:polygons.length,
+      spatial,
+      explicit,
+      sansRattachement:unknown
     });
-
-    if (count && !map.hasLayer(markerLayer)) {
-      markerLayer.addTo(map);
-    }
-
-    if (!count && map.hasLayer(markerLayer)) {
-      map.removeLayer(markerLayer);
-    }
-
-    const total = names.length;
-
-    if (total) {
-      showMessage(
-        current.commune + " : " +
-        total + " quartier(s) ou localité(s) enregistré(s), " +
-        count + " position(s) GPS affichée(s)."
-      );
-    } else {
-      showMessage(
-        "Aucun quartier ou localité enregistré pour " +
-        current.commune + "."
-      );
-    }
+    refresh();
+    document.dispatchEvent(
+      new CustomEvent('haiti2050:localitiesloaded')
+    );
   }
 
-  /*
-   * Zoom sur un quartier géolocalisé.
-   */
-  function zoomToLocality(department, commune, name) {
-    const position = getGPS(department, commune, name);
+  function notice(value) {
+    let el=$('localitySearchMessage');
+    if (!el) {
+      el=document.createElement('p');
+      el.id='localitySearchMessage';
+      el.setAttribute('role','status');
+      (
+        $('localities')?.parentElement ||
+        $('map')?.parentElement
+      )?.appendChild(el);
+    }
+    if (el) el.textContent=value;
+  }
 
-    if (!position || !map || typeof L === "undefined") {
-      showMessage(
-        "Localité trouvée : " + name +
-        ". Position GPS non renseignée."
-      );
-
+  function zoom(d,c,name) {
+    const item=localities(d,c).find(x =>
+      norm(x.name)===norm(name)
+    );
+    if (!item?.position || !map) {
+      notice('Position GPS indisponible : '+name);
       return false;
     }
-
-    clearSelectedMarker();
-
-    if (markerLayer) {
-      selectedMarker = L.marker([
-        position.lat,
-        position.lon
-      ]);
-
-      const popup = document.createElement("div");
-      popup.textContent =
-        name + " — " + commune + " (" + department + ")";
-
-      selectedMarker.bindPopup(popup);
-      markerLayer.addLayer(selectedMarker);
-
-      if (!map.hasLayer(markerLayer)) {
-        markerLayer.addTo(map);
-      }
-
-      selectedMarker.openPopup();
-    }
-
-    map.flyTo(
-      [position.lat, position.lon],
-      15,
-      { animate: true, duration: 1.2 }
-    );
-
-    showMessage(
-      "Quartier ou localité : " + name +
-      " — position affichée sur la carte."
-    );
-
+    map.flyTo([
+      item.position.lat,
+      item.position.lon
+    ],15);
+    if (window.L)
+      L.popup()
+        .setLatLng([
+          item.position.lat,
+          item.position.lon
+        ])
+        .setContent(
+          document.createTextNode(
+            item.name+' — '+c
+          )
+        )
+        .openOn(map);
     return true;
   }
 
-  window.haiti2050ZoomToLocality = zoomToLocality;
+  window.haiti2050ZoomToLocality=zoom;
 
-  /*
-   * Enregistrement local d'un quartier.
-   */
-  function saveLocality(name, latitude, longitude) {
-    const current = territory();
-
-    if (!current.department || !current.commune) {
-      alert("Sélectionnez d'abord une commune.");
-      return false;
-    }
-
-    name = String(name || "").trim();
-
-    if (!name) {
-      alert("Veuillez saisir le nom du quartier.");
-      return false;
-    }
-
-    const existing = getLocalities(
-      current.department,
-      current.commune
-    );
-
-    if (
-      existing.some(x =>
-        normalize(x) === normalize(name)
+  function button(item) {
+    const b=document.createElement('button');
+    b.type='button';
+    b.textContent=item.name;
+    b.title=item.position
+      ? 'Voir sur la carte'
+      : 'GPS indisponible';
+    b.style.cssText=
+      'display:block;width:100%;' +
+      'text-align:left;padding:8px;' +
+      'margin:3px 0;cursor:pointer';
+    b.addEventListener('click',() =>
+      zoom(
+        item.department,
+        item.commune,
+        item.name
       )
-    ) {
-      alert("Cette localité est déjà enregistrée.");
+    );
+    return b;
+  }
+
+  function renderLocalities() {
+    const list=$('localities');
+    if (!list) return;
+    list.replaceChildren();
+    const s=current();
+
+    if (!s.commune) {
+      const li=document.createElement('li');
+      li.textContent='Sélectionnez une commune.';
+      list.appendChild(li);
+      return;
+    }
+
+    const items=localities(
+      s.department,s.commune
+    );
+    if (!items.length) {
+      const li=document.createElement('li');
+      li.textContent=loaded
+        ? 'Aucune localité rattachée dans les données disponibles.'
+        : 'Chargement des localités...';
+      list.appendChild(li);
+      return;
+    }
+    for (const item of items) {
+      const li=document.createElement('li');
+      li.appendChild(button(item));
+      list.appendChild(li);
+    }
+  }
+
+  function renderMarkers() {
+    if (!layer || !map) return;
+    layer.clearLayers();
+    const s=current();
+    if (!s.commune) return;
+    for (const item of localities(
+      s.department,s.commune
+    )) {
+      if (!item.position) continue;
+      const marker=L.marker([
+        item.position.lat,
+        item.position.lon
+      ]).bindTooltip(item.name);
+      marker.on('click',() =>
+        zoom(
+          item.department,
+          item.commune,
+          item.name
+        )
+      );
+      layer.addLayer(marker);
+    }
+  }
+
+  function save(name,latitude,longitude) {
+    const s=current();
+    name=String(name || '').trim();
+
+    if (!s.commune || !name) {
+      alert(
+        'Sélectionnez une commune et saisissez une localité.'
+      );
+      return false;
+    }
+    if (localities(
+      s.department,s.commune
+    ).some(x=>norm(x.name)===norm(name))) {
+      alert('Localité déjà enregistrée.');
       return false;
     }
 
-    const hasLat = String(latitude).trim() !== "";
-    const hasLon = String(longitude).trim() !== "";
+    const hasA=String(latitude).trim() !== '';
+    const hasB=String(longitude).trim() !== '';
 
-    if (hasLat !== hasLon) {
-      alert("Renseignez les deux coordonnées GPS.");
+    if (hasA !== hasB) {
+      alert('Renseignez les deux coordonnées GPS.');
       return false;
     }
 
-    const position = hasLat
-      ? validGPS(latitude, longitude)
-      : null;
-
-    if (hasLat && !position) {
-      alert("Coordonnées GPS invalides.");
+    const position=hasA
+      ? gps(latitude,longitude) : null;
+    if (hasA && !position) {
+      alert('Coordonnées invalides.');
       return false;
     }
 
-    const key = current.department +
-      "|" + current.commune;
-
-    const updatedLocalities = {
-      ...localities,
-      [key]: [
-        ...(Array.isArray(localities[key])
-          ? localities[key] : []),
+    const k=s.department+'|'+s.commune;
+    const next={
+      ...manual,
+      [k]:[
+        ...(Array.isArray(manual[k])
+          ? manual[k] : []),
         name
       ]
     };
+    const nextGPS={...manualGPS};
 
-    const updatedGPS = { ...coordinates };
-
-    if (position) {
-      updatedGPS[
-        gpsKey(current.department, current.commune, name)
-      ] = {
-        latitude: position.lat,
-        longitude: position.lon
+    if (position)
+      nextGPS[
+        key(s.department,s.commune)+'|'+norm(name)
+      ]={
+        latitude:position.lat,
+        longitude:position.lon
       };
-    }
 
     try {
       localStorage.setItem(
-        LOCALITIES_KEY,
-        JSON.stringify(updatedLocalities)
+        'haiti2050-localities',
+        JSON.stringify(next)
       );
-
-      if (position) {
-        localStorage.setItem(
-          GPS_KEY,
-          JSON.stringify(updatedGPS)
-        );
-      }
-
-      Object.assign(localities, updatedLocalities);
-      Object.assign(coordinates, updatedGPS);
-    } catch (error) {
-      console.error(error);
-      alert("Enregistrement impossible.");
+      localStorage.setItem(
+        'haiti2050-localities-gps',
+        JSON.stringify(nextGPS)
+      );
+    } catch(e) {
+      console.error(e);
+      alert('Enregistrement impossible.');
       return false;
     }
 
+    Object.assign(manual,next);
+    Object.assign(manualGPS,nextGPS);
     refresh();
-
     document.dispatchEvent(
-      new CustomEvent("haiti2050:localitychange")
+      new CustomEvent('haiti2050:localitychange')
     );
-
     return true;
   }
 
-  /*
-   * Bouton d'une localité dans les listes.
-   */
-  function createLocalityButton(name, current) {
-    const button = document.createElement("button");
-    button.type = "button";
-    button.textContent = name;
+  function renderPanel() {
+    let panel=$('quartiersPanel');
+    if (!panel) {
+      panel=document.createElement('section');
+      panel.id='quartiersPanel';
+      panel.style.cssText=
+        'padding:20px;margin:20px 0;' +
+        'border:1px solid #ddd;' +
+        'border-radius:12px';
+      (
+        $('localities')?.parentElement ||
+        $('map')?.parentElement
+      )?.appendChild(panel);
+    }
 
-    const position = getGPS(
-      current.department,
-      current.commune,
-      name
+    if (!panel) return;
+    panel.replaceChildren();
+    const s=current();
+    panel.hidden=!s.commune;
+    if (!s.commune) return;
+
+    const h=document.createElement('h2');
+    h.textContent=
+      'Quartiers et localités de '+s.commune;
+
+    const p=document.createElement('p');
+    p.textContent=
+      localities(
+        s.department,s.commune
+      ).length +
+      ' localité(s) répertoriée(s). ' +
+      'Les rattachements spatiaux sont indicatifs. ' +
+      'Les ajouts manuels restent dans ce navigateur.';
+
+    const name=document.createElement('input');
+    name.placeholder='Nom de la localité';
+    name.setAttribute(
+      'aria-label','Nom de la localité'
     );
 
-    button.title = position
-      ? "Voir sur la carte"
-      : "Coordonnées GPS non renseignées";
+    const lat=document.createElement('input');
+    lat.type='number';
+    lat.step='any';
+    lat.placeholder='Latitude (facultative)';
+    lat.setAttribute('aria-label','Latitude');
 
-    button.style.cssText =
-      "width:100%;text-align:left;padding:9px;" +
-      "margin:3px 0;border:1px solid #dce5ec;" +
-      "border-radius:7px;background:#f8fafc;" +
-      "cursor:pointer;color:#163b58;";
+    const lon=document.createElement('input');
+    lon.type='number';
+    lon.step='any';
+    lon.placeholder='Longitude (facultative)';
+    lon.setAttribute('aria-label','Longitude');
 
-    button.addEventListener("click", () => {
-      zoomToLocality(
-        current.department,
-        current.commune,
-        name
+    const b=document.createElement('button');
+    b.type='button';
+    b.textContent='+ Ajouter une localité';
+    b.addEventListener('click',() => {
+      if (save(
+        name.value,
+        lat.value,
+        lon.value
+      )) notice(
+        'Localité enregistrée dans ce navigateur.'
       );
-
-      $("map")?.scrollIntoView({
-        behavior: "smooth",
-        block: "center"
-      });
     });
-
-    return button;
+    panel.append(h,p,name,lat,lon,b);
   }
 
-  /*
-   * Liste des localités existante dans index.html.
-   */
-  function renderLocalities() {
-    const current = territory();
-    const list = $("localities");
-
-    if (!list) return;
-
-    list.replaceChildren();
-
-    if (!current.commune) {
-      const li = document.createElement("li");
-      li.textContent =
-        "Sélectionnez une commune pour voir ses localités.";
-      list.appendChild(li);
-      return;
-    }
-
-    const names = getLocalities(
-      current.department,
-      current.commune
-    );
-
-    if (!names.length) {
-      const li = document.createElement("li");
-      li.textContent =
-        "Aucune localité enregistrée.";
-      list.appendChild(li);
-      return;
-    }
-
-    names.forEach(name => {
-      const li = document.createElement("li");
-      li.appendChild(createLocalityButton(name, current));
-      list.appendChild(li);
-    });
-  }
-
-  /*
-   * Panneau Quartiers et localités.
-   */
-  function renderQuartiers() {
-    const current = territory();
-
-    let container = $("quartiersPanel");
-
-    if (!container) {
-      container = document.createElement("section");
-      container.id = "quartiersPanel";
-
-      container.style.cssText =
-        "max-width:1240px;margin:24px auto;" +
-        "padding:24px;background:#fff;" +
-        "border:1px solid #dce5ec;" +
-        "border-radius:14px;";
-
-      const target = $("atlas") || $("map")?.parentElement;
-      target?.appendChild(container);
-    }
-
-    if (!container) return;
-
-    container.replaceChildren();
-
-    if (!current.commune) {
-      container.hidden = true;
-      return;
-    }
-
-    container.hidden = false;
-
-    const title = document.createElement("h2");
-    title.textContent =
-      "Quartiers et localités de " + current.commune;
-
-    const names = getLocalities(
-      current.department,
-      current.commune
-    );
-
-    const gpsCount = names.filter(name =>
-      getGPS(current.department, current.commune, name)
-    ).length;
-
-    const note = document.createElement("p");
-    note.textContent =
-      names.length + " localité(s) enregistrée(s), " +
-      gpsCount + " géolocalisée(s). " +
-      "Les noms et positions doivent être vérifiés. " +
-      "Les ajouts manuels sont enregistrés " +
-      "uniquement dans ce navigateur.";
-
-    const list = document.createElement("ul");
-
-    if (!names.length) {
-      const li = document.createElement("li");
-      li.textContent =
-        "Aucun quartier ou localité enregistré.";
-      list.appendChild(li);
-    } else {
-      names.forEach(name => {
-        const li = document.createElement("li");
-        li.appendChild(createLocalityButton(name, current));
-        list.appendChild(li);
-      });
-    }
-
-    const input = document.createElement("input");
-    input.id = "newQuartier";
-    input.placeholder =
-      "Nom du quartier ou de la localité";
-
-    const latitude = document.createElement("input");
-    latitude.type = "number";
-    latitude.step = "any";
-    latitude.placeholder = "Latitude GPS (facultative)";
-    latitude.setAttribute("aria-label", "Latitude GPS");
-
-    const longitude = document.createElement("input");
-    longitude.type = "number";
-    longitude.step = "any";
-    longitude.placeholder = "Longitude GPS (facultative)";
-    longitude.setAttribute("aria-label", "Longitude GPS");
-
-    const button = document.createElement("button");
-    button.type = "button";
-    button.className = "secondary";
-    button.textContent = "+ Ajouter une localité";
-
-    button.addEventListener("click", () => {
-      const saved = saveLocality(
-        input.value,
-        latitude.value,
-        longitude.value
-      );
-
-      if (saved) {
-        showMessage(
-          "Localité enregistrée dans ce navigateur."
-        );
-      }
-    });
-
-    input.addEventListener("keydown", event => {
-      if (event.key === "Enter") {
-        event.preventDefault();
-        button.click();
-      }
-    });
-
-    container.append(
-      title,
-      note,
-      list,
-      input,
-      latitude,
-      longitude,
-      button
-    );
-  }
-
-  /*
-   * Recherche de toutes les localités enregistrées.
-   */
-  function searchLocality(query) {
-    const target = normalize(query);
-    const matches = [];
-
-    for (const department of data.departements) {
-      for (const arrondissement of department.arrondissements) {
-        for (const commune of arrondissement.communes) {
-          const names = getLocalities(
-            department.nom,
-            commune
-          );
-
-          for (const name of names) {
-            if (
-              !target ||
-              normalize(name).includes(target)
-            ) {
-              matches.push({
-                department: department.nom,
-                arrondissement: arrondissement.nom,
-                commune,
-                locality: name
-              });
-            }
-          }
-        }
-      }
-    }
-
-    return matches;
-  }
-
-  window.haiti2050SearchLocalities = searchLocality;
-
-  /*
-   * Recherche unifiée.
-   */
-  function allResults() {
-    const results = [];
-
-    const sections =
-      window.haiti2050SearchSections?.("") || [];
-
-    sections.forEach(section => {
-      results.push({
-        type: "section",
-        name: section.name,
-        department: section.department,
-        commune: section.commune,
-        code: section.code || ""
-      });
-    });
-
-    searchLocality("").forEach(item => {
-      results.push({
-        type: "locality",
-        name: item.locality,
-        ...item
-      });
-    });
-
-    for (const department of data.departements) {
-      for (const arrondissement of department.arrondissements) {
-        for (const commune of arrondissement.communes) {
+  function search(query) {
+    const q=norm(query);
+    const results=[];
+    for (const r of refs)
+      for (const item of localities(
+        r.department,r.commune
+      ))
+        if (norm(item.name).includes(q))
           results.push({
-            type: "commune",
-            name: commune,
-            department: department.nom,
-            arrondissement: arrondissement.nom,
-            commune
+            ...r,
+            name:item.name,
+            type:'locality'
           });
-        }
-      }
-    }
-
     return results;
   }
 
+  window.haiti2050SearchLocalities=search;
+
   function selectResult(item) {
-    const input = $("search");
-    const panel = $("localitySuggestions");
+    if (typeof window.selectTerritory === 'function')
+      window.selectTerritory(
+        item.department,
+        item.arrondissement,
+        item.commune,
+        false
+      );
+    else if (typeof selectTerritory === 'function')
+      selectTerritory(
+        item.department,
+        item.arrondissement,
+        item.commune,
+        false
+      );
 
-    if (input) input.value = item.name;
-    if (panel) panel.hidden = true;
-
-    if (item.type === "locality") {
-      if (typeof selectTerritory === "function") {
-        selectTerritory(
-          item.department,
-          item.arrondissement,
-          item.commune,
-          false
-        );
-      }
-
-      renderMapMarkers();
-
-      zoomToLocality(
+    if (item.type==='locality') {
+      refresh();
+      zoom(
         item.department,
         item.commune,
         item.name
       );
+    } else if (
+      typeof window.haiti2050ZoomToCommune==='function'
+    ) {
+      window.haiti2050ZoomToCommune(
+        item.department,
+        item.commune
+      );
+    }
+    refresh();
+  }
 
-      $("map")?.scrollIntoView({
-        behavior: "smooth",
-        block: "center"
+  function results(q) {
+    const n=norm(q);
+    if (!n) return [];
+    const communes=refs
+      .filter(r=>norm(r.commune).includes(n))
+      .map(r=>({
+        ...r,
+        name:r.commune,
+        type:'commune'
+      }));
+    const local=search(q);
+    return [...communes,...local];
+  }
+
+  function suggestions() {
+    const box=$('localitySuggestions');
+    const input=$('search');
+    if (!box || !input) return;
+
+    box.replaceChildren();
+    const found=results(input.value).slice(0,80);
+    for (const item of found) {
+      const b=document.createElement('button');
+      b.type='button';
+      b.className='suggestion-item';
+      b.textContent=
+        item.name+' — '+item.commune+
+        ' ('+item.department+')';
+      b.addEventListener('click',() => {
+        input.value=item.name;
+        box.hidden=true;
+        selectResult(item);
       });
-
-      return;
+      box.appendChild(b);
     }
-
-    if (item.type === "section") {
-      let found = null;
-
-      for (const dep of data.departements) {
-        if (
-          normalizeDepartment(dep.nom) !==
-          normalizeDepartment(item.department)
-        ) continue;
-
-        for (const arr of dep.arrondissements) {
-          for (const commune of arr.communes) {
-            if (
-              normalize(commune) ===
-              normalize(item.commune)
-            ) {
-              found = {
-                department: dep.nom,
-                arrondissement: arr.nom,
-                commune
-              };
-              break;
-            }
-          }
-          if (found) break;
-        }
-        if (found) break;
-      }
-
-      if (found) {
-        if (typeof selectTerritory === "function") {
-          selectTerritory(
-            found.department,
-            found.arrondissement,
-            found.commune,
-            false
-          );
-        }
-
-        if (
-          typeof window.haiti2050ZoomToSection ===
-          "function"
-        ) {
-          window.haiti2050ZoomToSection(
-            found.department,
-            found.commune,
-            item.name
-          );
-        }
-      } else {
-        showMessage(
-          "Rattachement de la section à vérifier."
-        );
-      }
-
-      return;
-    }
-
-    if (item.type === "commune") {
-      if (typeof selectTerritory === "function") {
-        selectTerritory(
-          item.department,
-          item.arrondissement,
-          item.commune,
-          false
-        );
-      }
-
-      if (
-        typeof window.haiti2050ZoomToCommune ===
-        "function"
-      ) {
-        window.haiti2050ZoomToCommune(
-          item.department,
-          item.commune
-        );
-      }
-
-      refresh();
-    }
+    box.hidden=!input.value.trim();
   }
 
-  function findResults() {
-    const input = $("search");
-    const target = normalize(input?.value || "");
+  const searchInput=$('search');
+  const searchBtn=$('searchBtn');
 
-    if (!target) return [];
-
-    return allResults().filter(item =>
-      normalize(item.name).includes(target)
-    );
-  }
-
-  function renderSuggestions() {
-    const panel = $("localitySuggestions");
-
-    if (!panel) return;
-
-    panel.replaceChildren();
-
-    const matches = findResults();
-
-    if (!matches.length) {
-      const p = document.createElement("p");
-      p.className = "suggestion-empty";
-      p.textContent =
-        "Aucun résultat dans le répertoire actuel.";
-      panel.appendChild(p);
-    } else {
-      matches.slice(0, 100).forEach(item => {
-        const button = document.createElement("button");
-        button.type = "button";
-        button.className = "suggestion-item";
-        button.setAttribute("role", "option");
-
-        const title = document.createElement("strong");
-        title.textContent = item.name;
-
-        const description = document.createElement("small");
-        description.textContent =
-          " — " + item.type +
-          " — " + item.commune +
-          " (" + item.department + ")";
-
-        button.append(title, description);
-
-        button.addEventListener("click", () => {
-          selectResult(item);
-        });
-
-        panel.appendChild(button);
-      });
-    }
-
-    panel.hidden = false;
-  }
-
-  /*
-   * Événements de recherche.
-   */
-  const searchButton = $("searchBtn");
-  const searchInput = $("search");
-  const suggestions = $("localitySuggestions");
-
-  if (searchButton && searchInput) {
-    searchButton.addEventListener(
-      "click",
-      event => {
-        const query = searchInput.value.trim();
-
-        if (!query) {
-          if (suggestions) renderSuggestions();
-          return;
-        }
-
-        const matches = findResults();
-
-        if (!matches.length) {
-          showMessage(
-            "Aucun résultat dans le répertoire actuel."
-          );
-          return;
-        }
-
-        const exact = matches.find(
-          item => normalize(item.name) === normalize(query)
-        );
-
-        const exactCommune = matches.find(
-          item =>
-            item.type === "commune" &&
-            normalize(item.name) === normalize(query)
-        );
-
-        selectResult(exactCommune || exact || matches[0]);
-
-        event.preventDefault();
-        event.stopImmediatePropagation();
-      },
-      true
-    );
-  }
-
-  if (searchInput && suggestions) {
-    searchInput.setAttribute("autocomplete", "off");
-
-    searchInput.addEventListener(
-      "focus",
-      renderSuggestions
-    );
-
-    searchInput.addEventListener(
-      "input",
-      renderSuggestions
-    );
-
-    document.addEventListener("click", event => {
-      if (
-        event.target !== searchInput &&
-        !suggestions.contains(event.target)
-      ) {
-        suggestions.hidden = true;
-      }
-    });
-  }
-
-  document.addEventListener(
-    "haiti2050:sectionsloaded",
-    () => {
-      if (document.activeElement === searchInput) {
-        renderSuggestions();
-      }
-    }
+  searchInput?.addEventListener(
+    'input',suggestions
   );
+  searchInput?.addEventListener(
+    'focus',suggestions
+  );
+
+  searchBtn?.addEventListener(
+    'click',
+    event => {
+      const found=results(
+        searchInput?.value || ''
+      );
+      if (!found.length) return;
+
+      const exact=found.find(x =>
+        x.type==='commune' &&
+        norm(x.name)===norm(searchInput.value)
+      ) || found.find(x =>
+        norm(x.name)===norm(searchInput.value)
+      ) || found[0];
+
+      event.preventDefault();
+      event.stopImmediatePropagation();
+
+      if ($('localitySuggestions'))
+        $('localitySuggestions').hidden=true;
+
+      selectResult(exact);
+    },
+    true
+  );
+
+  document.addEventListener('click',event => {
+    const box=$('localitySuggestions');
+    if (
+      box &&
+      event.target!==searchInput &&
+      !box.contains(event.target)
+    ) box.hidden=true;
+  });
 
   function refresh() {
     renderLocalities();
-    renderQuartiers();
-    renderMapMarkers();
+    renderPanel();
+    renderMarkers();
   }
 
   document.addEventListener(
-    "haiti2050:territorychange",
-    refresh
+    'haiti2050:territorychange',refresh
   );
-
   document.addEventListener(
-    "haiti2050:localitychange",
-    refresh
+    'haiti2050:localitychange',refresh
   );
 
-  /*
-   * Charger les quartiers publics depuis un GeoJSON.
-   *
-   * Format attendu :
-   * FeatureCollection de points, avec propriétés
-   * name, department, commune.
-   *
-   * Le fichier est facultatif.
-   */
-  async function loadSharedLocalities() {
-    try {
-      const response = await fetch(GEOJSON_URL);
-
-      if (response.status === 404) {
-        console.info(
-          "Haïti 2050 : aucun fichier partagé " +
-          "de quartiers pour le moment."
-        );
-        return;
-      }
-
-      if (!response.ok) {
-        throw new Error("HTTP " + response.status);
-      }
-
-      const geojson = await response.json();
-
-      if (
-        geojson.type !== "FeatureCollection" ||
-        !Array.isArray(geojson.features)
-      ) {
-        throw new Error("GeoJSON de quartiers invalide.");
-      }
-
-      for (const feature of geojson.features) {
-        if (
-          feature.geometry?.type !== "Point" ||
-          !Array.isArray(feature.geometry.coordinates)
-        ) {
-          continue;
-        }
-
-        const p = feature.properties || {};
-
-        const name = String(
-          p.name || p.nom || p.quartier || ""
-        ).trim();
-
-        const department = String(
-          p.department || p.departement || p.ADM1_FR || ""
-        ).trim();
-
-        const commune = String(
-          p.commune || p.ADM2_FR || ""
-        ).trim();
-
-        const [longitude, latitude] =
-          feature.geometry.coordinates;
-
-        const position = validGPS(latitude, longitude);
-
-        if (
-          !name ||
-          !department ||
-          !commune ||
-          !position
-        ) {
-          continue;
-        }
-
-        sharedLocalities.push({
-          name,
-          department,
-          commune,
-          latitude: position.lat,
-          longitude: position.lon
-        });
-      }
-
-      console.log(
-        "Haïti 2050 : " +
-        sharedLocalities.length +
-        " quartiers publics géolocalisés chargés."
-      );
-
-      refresh();
-    } catch (error) {
-      console.warn(
-        "Haïti 2050 : chargement des quartiers :",
-        error
-      );
-    }
-  }
-
-  
-/*
- * HAÏTI 2050 — INTÉGRATION GEONAMES
- *
- * Associe provisoirement les localités GPS
- * aux communes à partir des polygones GeoJSON.
- *
- * Ne modifie pas les limites administratives.
- * Ne remplace pas les données enregistrées.
- */
-
-function pointInRing(lon, lat, ring) {
-  let inside = false;
-
-  for (
-    let i = 0, j = ring.length - 1;
-    i < ring.length;
-    j = i++
-  ) {
-    const xi = ring[i][0];
-    const yi = ring[i][1];
-    const xj = ring[j][0];
-    const yj = ring[j][1];
-
-    const intersects =
-      ((yi > lat) !== (yj > lat)) &&
-      (lon <
-        ((xj - xi) * (lat - yi)) /
-        (yj - yi) + xi);
-
-    if (intersects) {
-      inside = !inside;
-    }
-  }
-
-  return inside;
-}
-
-function pointInPolygon(lon, lat, rings) {
-  if (
-    !Array.isArray(rings) ||
-    !rings.length ||
-    !pointInRing(lon, lat, rings[0])
-  ) {
-    return false;
-  }
-
-  return !rings
-    .slice(1)
-    .some(ring => pointInRing(lon, lat, ring));
-}
-
-function pointInGeometry(lon, lat, geometry) {
-  if (!geometry) return false;
-
-  if (geometry.type === "Polygon") {
-    return pointInPolygon(
-      lon,
-      lat,
-      geometry.coordinates
+  for (const id of [
+    'department',
+    'arrondissement',
+    'commune'
+  ]) {
+    $(id)?.addEventListener(
+      'change',() => setTimeout(refresh,0)
     );
   }
 
-  if (geometry.type === "MultiPolygon") {
-    return geometry.coordinates.some(
-      polygon => pointInPolygon(lon, lat, polygon)
-    );
-  }
-
-  return false;
-}
-
-function getGeoJSONName(feature) {
-  const p = feature.properties || {};
-
-  return (
-    p.ADM2_FR ||
-    p.ADM2_EN ||
-    p.shapeName ||
-    p.name ||
-    ""
-  );
-}
-
-function getGeoJSONDepartment(feature) {
-  const p = feature.properties || {};
-
-  return (
-    p.ADM1_FR ||
-    p.ADM1_EN ||
-    p.department ||
-    p.departement ||
-    ""
-  );
-}
-
-async function loadGeoNamesLocalities() {
-  try {
-    const responses = await Promise.all([
-      fetch("./data/haiti-localites.json"),
-      fetch("./data/haiti-communes.geojson")
-    ]);
-
-    if (!responses.every(response => response.ok)) {
-      throw new Error(
-        "Impossible de charger les données GeoNames ou les communes."
-      );
-    }
-
-    const [rawLocalities, geojson] =
-      await Promise.all(
-        responses.map(response => response.json())
-      );
-
-    const places = Array.isArray(rawLocalities)
-      ? rawLocalities
-      : rawLocalities.localites ||
-        rawLocalities.features ||
-        [];
-
-    if (
-      !Array.isArray(places) ||
-      !Array.isArray(geojson.features)
-    ) {
-      throw new Error("Structure des données invalide.");
-    }
-
-    const communes = geojson.features
-      .map(feature => {
-        const name = getGeoJSONName(feature);
-        const department =
-          getGeoJSONDepartment(feature);
-
-        let reference = null;
-
-        for (const dep of data.departements) {
-          if (
-            normalizeDepartment(dep.nom) !==
-            normalizeDepartment(department)
-          ) {
-            continue;
-          }
-
-          for (const arr of dep.arrondissements) {
-            for (const commune of arr.communes) {
-              if (
-                (
-                  normalize(commune) === normalize(name) ||
-                  normalize(commune).replace(/^les/, "") === normalize(name) ||
-                  normalize(name).replace(/^les/, "") === normalize(commune)
-                )
-              ) {
-                reference = {
-                  department: dep.nom,
-                  commune
-                };
-              }
-            }
-          }
-        }
-
-        return reference
-          ? { feature, ...reference }
-          : null;
-      })
-      .filter(Boolean);
-
-    let linked = 0;
-    let ambiguous = 0;
-
-    for (const place of places) {
-      const name = String(
-        place.nom ||
-        place.name ||
-        place.properties?.name ||
-        ""
-      ).trim();
-
-      const position = validGPS(
-        place.latitude ??
-          place.properties?.latitude,
-        place.longitude ??
-          place.properties?.longitude
-      );
-
-      if (!name || !position) continue;
-
-      const matches = communes.filter(commune =>
-        pointInGeometry(
-          position.lon,
-          position.lat,
-          commune.feature.geometry
-        )
-      );
-
-      // Ne pas choisir arbitrairement une commune.
-      if (matches.length !== 1) {
-        if (matches.length > 1) ambiguous++;
-        continue;
-      }
-
-      const match = matches[0];
-
-      sharedLocalities.push({
-        name,
-        department: match.department,
-        commune: match.commune,
-        latitude: position.lat,
-        longitude: position.lon,
-        source: "GeoNames",
-        communeVerifiee: false
-      });
-
-      linked++;
-    }
-
-    console.info(
-      "Haïti 2050 : " +
-      linked +
-      " localités GeoNames rattachées provisoirement."
-    );
-
-    console.info(
-      "Points géographiquement ambigus : " +
-      ambiguous
-    );
-
-    refresh();
-
-  } catch (error) {
-    console.warn(
-      "Haïti 2050 : erreur GeoNames :",
-      error
-    );
-
-    showMessage(
-      "Les localités nationales n'ont pas pu être chargées."
-    );
-  }
-}
- 
   refresh();
-  loadSharedLocalities();
-  loadGeoNamesLocalities();
 
-  console.log(
-    "Haïti 2050 — Quartiers V4 + GeoNames activés."
-  );
-  })();
+  load().catch(e => {
+    console.error('Chargement national',e);
+    notice(
+      'Erreur de chargement des localités.'
+    );
+  });
+})();
