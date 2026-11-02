@@ -12,6 +12,7 @@
   const panel = document.createElement("section");
   panel.id = "haiti2050FuturePanel";
   panel.hidden = true;
+  panel.style.display = "none";
   panel.setAttribute("aria-label", "Carte prospective Haïti 2050");
   panel.innerHTML = `
     <h3 style="margin:12px 0 5px">Carte prospective — Haïti 2050</h3>
@@ -39,13 +40,18 @@
   document.addEventListener("haiti2050:viewchange", event => {
     const future = event.detail?.mode === "future";
     panel.hidden = !future;
+    panel.style.display = future ? "block" : "none";
     currentMap.hidden = future;
+    currentMap.style.display = future ? "none" : "";
     if (future) {
       ensureMap();
       futureMap.setView(current.getCenter(), current.getZoom(), {animate:false});
-      setTimeout(() => futureMap.invalidateSize(), 0);
+      requestAnimationFrame(() => {
+        futureMap.invalidateSize();
+        document.dispatchEvent(new CustomEvent("haiti2050:futuremapready"));
+      });
     } else {
-      current.invalidateSize();
+      requestAnimationFrame(() => current.invalidateSize());
     }
   });
 })();
