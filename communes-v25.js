@@ -283,6 +283,81 @@
     return true;
   }
 
+  
+  let fallbackRequest = 0;
+  let localityPositionsPromise = null;
+
+  function fallbackZoom(department, commune) {
+    const requestId = ++fallbackRequest;
+
+    if (!localityPositionsPromise) {
+      localityPositionsPromise =
+        fetch("./data/haiti-localites.json")
+          .then(response => {
+            if (!response.ok) {
+              throw new Error("HTTP " + response.status);
+            }
+            return response.json();
+          })
+          .catch(error => {
+            console.warn(error);
+            localityPositionsPromise = null;
+            return [];
+          });
+    }
+
+    localityPositionsPromise.then(places => {
+      if (
+        requestId !== fallbackRequest ||
+        !Array.isArray(places)
+      ) return;
+
+      const matches = places.filter(place =>
+        canonicalCommune(place.nom || place.name) ===
+          canonicalCommune(commune) &&
+        Number(place.latitude) >= 18 &&
+        Number(place.latitude) <= 20.2 &&
+        Number(place.longitude) >= -75 &&
+        Number(place.longitude) <= -71.5
+      );
+
+      if (matches.length !== 1) {
+        updateStatus(
+          "Aucune position unique vérifiable pour " +
+          commune + "."
+        );
+        return;
+      }
+
+      const selection = currentSelection();
+
+      if (
+        canonicalDepartment(selection.department) !==
+          canonicalDepartment(department) ||
+        canonicalCommune(selection.commune) !==
+          canonicalCommune(commune)
+      ) return;
+
+      const place = matches[0];
+
+      map.flyTo(
+        [
+          Number(place.latitude),
+          Number(place.longitude)
+        ],
+        12,
+        { duration: 1.2 }
+      );
+
+      updateStatus(
+        commune +
+        " — zoom sur le lieu habité GeoNames. " +
+        "Ce point n'est pas une frontière communale."
+      );
+    });
+  }
+
+
   /*
    * Synchronisation avec les menus de app.js.
    */
@@ -308,16 +383,16 @@
         selection.commune +
         " — frontière communale affichée."
       );
-    } else {
-      selectPolygon(null, false);
+        } else {
+          selectPolygon(null, false);
 
-      updateStatus(
-        "Commune : " +
-        selection.commune +
-        " — frontière géographique indisponible " +
-        "ou non associée au répertoire."
-      );
-    }
+          if (zoom) {
+            fallbackZoom(
+              selection.department,
+              selection.commune
+            );
+          }
+        }
 
     renderCommuneSheet();
   }
@@ -361,6 +436,7 @@ window.haiti2050CommunesReady = function() {
     const polygon = findPolygon(department, commune);
 
     if (!polygon) {
+      fallbackZoom(department, commune);
       return false;
     }
 
