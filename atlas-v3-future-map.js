@@ -56,8 +56,8 @@
     requestAnimationFrame(syncFromCurrent);
   });
 
-  document.addEventListener("haiti2050:viewchange", event => {
-    const future = event.detail?.mode === "future";
+  const applyMode = mode => {
+    const future = mode === "future";
     panel.hidden = !future;
     panel.style.display = future ? "block" : "none";
     currentMap.hidden = future;
@@ -72,5 +72,9 @@
     } else {
       requestAnimationFrame(() => current.invalidateSize());
     }
-  });
+  };
+  document.addEventListener("haiti2050:viewchange", event => applyMode(event.detail?.mode));
+  const selector = document.getElementById("haiti2050ViewMode");
+  selector?.addEventListener("change", () => applyMode(selector.value));
+  if (selector) applyMode(selector.value);
 })();
