@@ -742,3 +742,102 @@
     );
   });
 })();
+
+
+/*
+ * HAÏTI 2050 — Affichage des localités
+ * lors de la sélection d'une commune.
+ */
+(() => {
+  "use strict";
+
+  const map = window.haiti2050Map;
+
+  if (!map || !window.L) return;
+
+  const localityLayer = L.layerGroup().addTo(map);
+
+  const normalize = value =>
+    String(value || "")
+      .normalize("NFD")
+      .replace(/[\u0300-\u036f]/g, "")
+      .toLowerCase()
+      .replace(/[^a-z0-9]/g, "");
+
+  async function showLocalities() {
+    const department =
+      document.getElementById("department")?.value;
+
+    const commune =
+      document.getElementById("commune")?.value;
+
+    localityLayer.clearLayers();
+
+    if (!department || !commune) return;
+
+    if (
+      typeof window.haiti2050SearchLocalities !==
+      "function"
+    ) {
+      console.warn("Recherche des localités indisponible.");
+      return;
+    }
+
+    const results =
+      window.haiti2050SearchLocalities("");
+
+    const matches = results.filter(item =>
+      normalize(item.department) ===
+        normalize(department) &&
+      normalize(item.commune) ===
+        normalize(commune)
+    );
+
+    for (const item of matches) {
+      // Utiliser la fonction existante pour localiser
+      // chaque lieu lorsqu'une position est disponible.
+      // La recherche ne fournit pas toujours le GPS.
+      if (
+        !Number.isFinite(Number(item.latitude)) ||
+        !Number.isFinite(Number(item.longitude)) ||
+        item.latitude == null ||
+        item.longitude == null
+      ) continue;
+
+      const marker = L.circleMarker(
+        [
+          Number(item.latitude),
+          Number(item.longitude)
+        ],
+        {
+          radius: 5,
+          color: "#075985",
+          fillColor: "#0ea5e9",
+          fillOpacity: 0.85,
+          weight: 1
+        }
+      );
+
+      marker.bindTooltip(item.name || item.locality);
+
+      localityLayer.addLayer(marker);
+    }
+
+    console.info(
+      "Localités de " + commune + " : " +
+      matches.length + " entrées trouvées."
+    );
+  }
+
+  document.addEventListener(
+    "haiti2050:territorychange",
+    showLocalities
+  );
+
+  document.addEventListener(
+    "haiti2050:localitiesloaded",
+    showLocalities
+  );
+
+  showLocalities();
+})();
