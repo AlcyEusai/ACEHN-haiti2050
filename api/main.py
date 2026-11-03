@@ -45,6 +45,11 @@ def init():
           reason TEXT NOT NULL,created_at TEXT NOT NULL,
           UNIQUE(place_id,possible_match_id)
         );
+        CREATE TABLE IF NOT EXISTS duplicate_resolutions (
+          id INTEGER PRIMARY KEY AUTOINCREMENT, candidate_id INTEGER NOT NULL UNIQUE,
+          decision TEXT NOT NULL, reason TEXT NOT NULL, reviewed_at TEXT NOT NULL,
+          FOREIGN KEY(candidate_id) REFERENCES duplicate_candidates(id)
+        );
         """)
 init()
 class Submission(BaseModel):
@@ -118,7 +123,7 @@ def pending(x_admin_token:str|None=Header(default=None)):
 def duplicates(x_admin_token:str|None=Header(default=None)):
     require_admin(x_admin_token)
     with connect() as db:
-        return [dict(x) for x in db.execute("SELECT * FROM duplicate_candidates ORDER BY id DESC LIMIT 200")]
+        return [dict(x) for x in db.execute("SELECT c.* FROM duplicate_candidates c LEFT JOIN duplicate_resolutions r ON r.candidate_id=c.id WHERE r.id IS NULL ORDER BY c.id DESC LIMIT 200")]
 @app.post("/api/admin/places/{place_id}/review")
 def review_place(place_id:str,review:Review,x_admin_token:str|None=Header(default=None)):
     require_admin(x_admin_token)
@@ -127,7 +132,7 @@ def review_place(place_id:str,review:Review,x_admin_token:str|None=Header(defaul
         if not place:raise HTTPException(404,"Fiche introuvable")
         if place["status"]!="pending":raise HTTPException(409,"Décision déjà enregistrée")
         if review.decision=="approved":
-            duplicates=db.execute("SELECT COUNT(*) AS n FROM duplicate_candidates WHERE place_id=? OR possible_match_id=?",(place_id,place_id)).fetchone()["n"]
+            duplicates=db.execute("SELECT COUNT(*) AS n FROM duplicate_candidates c LEFT JOIN duplicate_resolutions r ON r.candidate_id=c.id WHERE (c.place_id=? OR c.possible_match_id=?) AND r.id IS NULL",(place_id,place_id)).fetchone()["n"]
             if duplicates:raise HTTPException(409,"Doublon potentiel à examiner avant approbation")
         db.execute("UPDATE places SET status=?,updated_at=? WHERE id=?",(review.decision,now(),place_id))
         record(db,place_id,"reviewed","admin",review.model_dump())
@@ -138,3 +143,26 @@ def health():
     with connect() as db:
         db.execute("SELECT 1")
     return {"status":"ok"}
+
+class DuplicateDecision(BaseModel):
+    decision:str=Field(pattern="^(distinct|duplicate)$")
+    reason:str=Field(min_length=5,max_length=500)
+@app.post("/api/admin/duplicates/{candidate_id}/resolve")
+def resolve_duplicate(candidate_id:int,review:DuplicateDecision,x_admin_token:str|None=Header(default=None)):
+    require_admin(x_admin_token)
+    with connect() as db:
+        candidate=db.execute("SELECT * FROM duplicate_candidates WHERE id=?",(candidate_id,)).fetchone()
+        if not candidate:raise HTTPException(404,"Conflit introuvable")
+        if db.execute("SELECT 1 FROM duplicate_resolutions WHERE candidate_id=?",(candidate_id,)).fetchone():
+            raise HTTPException(409,"Conflit déjà résolu")
+        db.execute("INSERT INTO duplicate_resolutions(candidate_id,decision,reason,reviewed_at) VALUES(?,?,?,?)",
+                   (candidate_id,review.decision,review.reason,now()))
+        record(db,candidate["place_id"],"duplicate_resolved","admin",
+               {"candidate_id":candidate_id,"other_place_id":candidate["possible_match_id"],**review.model_dump()})
+        if review.decision=="duplicate":
+            # Never silently merge sources or overwrite approved records.
+            db.execute("UPDATE places SET status='rejected',updated_at=? WHERE id=? AND status='pending'",
+                       (now(),candidate["place_id"]))
+            record(db,candidate["place_id"],"rejected_duplicate","admin",
+                   {"candidate_id":candidate_id,"kept_place_id":candidate["possible_match_id"]})
+        return {"candidate_id":candidate_id,"decision":review.decision}
