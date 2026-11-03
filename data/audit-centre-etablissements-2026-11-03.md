@@ -85,3 +85,15 @@ Le *Registre des écoles du département du Centre* publié par le MENFP pour 20
 La série *Bulletin de l'ISPAN* est identifiée : https://www.haitidocs.org/series/ispan-bulletin?lang=fr . Aucune nouvelle attribution de monument n'a été enregistrée comme vérifiée sans notice ISPAN spécifique au lieu. Les sites de Fort Anglais, Bassin Zim et Saut-d'Eau restent documentés à des degrés différents, sans déduction de classement juridique ou de localisation exacte.
 
 **Statut de l'inventaire :** santé = agrégats historiques sur 12 communes + 8 établissements nominatifs précédemment ajoutés ; éducation = 18 établissements publics de Hinche ajoutés ; patrimoine = vérification primaire encore ouverte. Aucun contact institutionnel effectué.
+
+## Dépouillement nominatif MENFP — Mirebalais et Saut-d'Eau
+
+Le registre MENFP 2024-2025 a été exploité pour **28 écoles publiques supplémentaires** : 14 à Mirebalais (Gascogne, Sarazin, Crête Brûlée et ville) et 14 à Saut-d'Eau (Canot, La Selle, Coupe Mardi-Gras, Montagne Terrible et ville). Les noms et codes CIE ont été ajoutés à `data/registre-etablissements.json`, sans géolocalisation. Source : https://www.haitidocs.org/doc/menfp-registre-ecoles-centre-2025?lang=ht .
+
+**Attention à la couverture :** ces 28 écoles ne représentent pas la totalité des établissements de ces deux communes. Les secteurs non publics, d'autres sections et les dix autres communes du Centre restent à dépouiller. Les données concernent 2024-2025, non l'ouverture effective en novembre 2026.
+
+### Santé : validation nominative encore ouverte
+
+Le registre MSPP 2015 permet un inventaire nominatif, mais les établissements supplémentaires des autres communes ne sont pas ajoutés tant que leur nom, leur code et leur rattachement communal ne sont pas vérifiés directement dans le document. Les **64 institutions** du tableau historique restent un agrégat, non 64 fiches individuelles. Le rapprochement avec la cartographie sanitaire actualisée est nécessaire avant toute indication de fonctionnement actuel.
+
+**Priorité suivante :** dépouiller le MENFP pour Boucan-Carré, Lascahobas, Belladère, Savanette, Cerca-la-Source, Thomassique, Maïssade, Thomonde et Cerca-Carvajal; vérifier les institutions MSPP restantes par nom et code. Le cas de Baptiste doit être traité avec les précautions de découpage administratif déjà documentées.
