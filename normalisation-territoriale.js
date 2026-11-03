@@ -6,6 +6,16 @@ window.HAITI_NORMALISER_ETABLISSEMENTS = function(records) {
   if (!ref || !Array.isArray(ref.departements)) return {records,rapport:{erreur:"Référentiel territorial absent"}};
   const norm = v => String(v||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^a-z0-9]/g,'');
   const aliases = {'artibonitedepartment':'artibonite','suddepartment':'sud','nordestdepartment':'nordest','nordouestdepartment':'nordouest','centredepartement':'centre','centredepartmant':'centre','centredepartementhaiti':'centre','centredept':'centre','centredepart':'centre','centredepartment':'centre','grandeansedepartment':'grandeanse','nippesdepartment':'nippes','sudestdepartment':'sudest','norddepartment':'nord','ouestdepartment':'ouest'};
+  const communeAliases = {
+    'gonaives':'lesgonaives',
+    'cornillongrandbois':'cornillon',
+    'lavallee':'lavalleedejacmel',
+    'coteaux':'lescoteaux',
+    'chamsolme':'chansolme',
+    'communeileavache':'ileavache',
+    'communeportapiment':'portapiment'
+  };
+  aliases['grandeanse']='grandanse';
   const deps = new Map(), all = new Map();
   for (const d of ref.departements) {
     const communes = new Map();
@@ -23,13 +33,13 @@ window.HAITI_NORMALISER_ETABLISSEMENTS = function(records) {
     const dk=norm(rawDep), dep=deps.get(aliases[dk]||dk);
     if(dep) {
       if(x.departement!==dep.nom){x.departement=dep.nom;rapport.departements_normalises++;}
-      const matches=dep.communes.get(norm(rawComm))||[];
+      const matches=dep.communes.get(communeAliases[norm(rawComm)]||norm(rawComm))||[];
       if(matches.length===1){
         if(x.commune!==matches[0].commune){x.commune=matches[0].commune;rapport.communes_normalisees++;}
         if(!x.arrondissement)x.arrondissement=matches[0].arrondissement;
       } else {rapport.non_rattaches.push({index,id:x.id||'',departement:rawDep,commune:rawComm,raison:matches.length?'commune_ambigue':'commune_introuvable'});}
     } else if(!dk) {
-      const matches=all.get(norm(rawComm))||[];
+      const matches=all.get(communeAliases[norm(rawComm)]||norm(rawComm))||[];
       if(matches.length===1){
         x.departement=matches[0].departement;x.commune=matches[0].commune;
         if(!x.arrondissement)x.arrondissement=matches[0].arrondissement;
