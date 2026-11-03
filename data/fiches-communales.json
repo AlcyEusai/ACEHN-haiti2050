@@ -2186,24 +2186,38 @@
       "arrondissement": "Saint-Marc",
       "commune": "Saint-Marc",
       "updatedAt": "2026-11-03",
-      "administrativeSource": "https://www.ihsi.gouv.ht/statistiques/statistiques_demographiques_et_sociales/projections_et_estimations_de_la_population",
+      "administrativeSource": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
       "history": {
-        "text": "Notice historique à rechercher et à vérifier.",
-        "sources": [],
-        "status": "a_verifier"
+        "text": "Commune reconnue dans le tableau 1 des divisions territoriales de l'IHSI 2024. Histoire locale et patrimoine à documenter par des sources spécialisées.",
+        "sources": [
+          "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf"
+        ],
+        "status": "documente"
       },
       "services": [],
       "infrastructures": [],
       "heritage": [],
-      "verification": "inventaire_en_cours",
+      "verification": "statut_communal_et_population_adulte_documentes",
       "audit": {
         "reviewedAt": "2026-11-03",
-        "method": "Structure initiale d'après le répertoire administratif du projet; chiffres et informations locales non renseignés sans contrôle des tableaux IHSI.",
+        "method": "Comparaison du tableau 1 de l'IHSI 2024 (statut de commune) et du tableau 202 sur la population âgée de 18 ans et plus.",
         "warnings": [
-          "Population, superficie et histoire locale à documenter à partir des sources primaires.",
-          "Services, infrastructures et patrimoine : inventaire à réaliser.",
-          "Aucune coordonnée GPS ni établissement ajouté sans preuve."
+          "Le tableau 1 de l'IHSI 2024 répertorie cinq communes dans l'arrondissement de Saint-Marc.",
+          "Le tableau 202 présente la population de 18 ans et plus pour trois d'entre elles, mais ne ventile pas Liancourt et Montrouis séparément.",
+          "Ne pas confondre population de 18 ans et plus avec population totale.",
+          "Ne pas déduire des chiffres de Liancourt ou Montrouis par soustraction.",
+          "Services, histoire locale et patrimoine à documenter séparément."
         ]
+      },
+      "administrativeStatus": "commune_ihsi_2024",
+      "population18Plus2024": {
+        "value": 183811,
+        "urban": 149212,
+        "rural": 34599,
+        "year": 2024,
+        "source": "https://budget.gouv.ht/storage/app/uploads/public/67c/e9d/d54/67ce9dd540912792656630.pdf",
+        "status": "documente",
+        "note": "Tableau 202, population estimée de 18 ans et plus; ne pas assimiler à la population totale."
       }
     },
     {
@@ -2211,24 +2225,38 @@
       "arrondissement": "Saint-Marc",
       "commune": "Verrettes",
       "updatedAt": "2026-11-03",
-      "administrativeSource": "https://www.ihsi.gouv.ht/statistiques/statistiques_demographiques_et_sociales/projections_et_estimations_de_la_population",
+      "administrativeSource": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
       "history": {
-        "text": "Notice historique à rechercher et à vérifier.",
-        "sources": [],
-        "status": "a_verifier"
+        "text": "Commune reconnue dans le tableau 1 des divisions territoriales de l'IHSI 2024. Histoire locale et patrimoine à documenter par des sources spécialisées.",
+        "sources": [
+          "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf"
+        ],
+        "status": "documente"
       },
       "services": [],
       "infrastructures": [],
       "heritage": [],
-      "verification": "inventaire_en_cours",
+      "verification": "statut_communal_et_population_adulte_documentes",
       "audit": {
         "reviewedAt": "2026-11-03",
-        "method": "Structure initiale d'après le répertoire administratif du projet; chiffres et informations locales non renseignés sans contrôle des tableaux IHSI.",
+        "method": "Comparaison du tableau 1 de l'IHSI 2024 (statut de commune) et du tableau 202 sur la population âgée de 18 ans et plus.",
         "warnings": [
-          "Population, superficie et histoire locale à documenter à partir des sources primaires.",
-          "Services, infrastructures et patrimoine : inventaire à réaliser.",
-          "Aucune coordonnée GPS ni établissement ajouté sans preuve."
+          "Le tableau 1 de l'IHSI 2024 répertorie cinq communes dans l'arrondissement de Saint-Marc.",
+          "Le tableau 202 présente la population de 18 ans et plus pour trois d'entre elles, mais ne ventile pas Liancourt et Montrouis séparément.",
+          "Ne pas confondre population de 18 ans et plus avec population totale.",
+          "Ne pas déduire des chiffres de Liancourt ou Montrouis par soustraction.",
+          "Services, histoire locale et patrimoine à documenter séparément."
         ]
+      },
+      "administrativeStatus": "commune_ihsi_2024",
+      "population18Plus2024": {
+        "value": 100430,
+        "urban": 59790,
+        "rural": 40640,
+        "year": 2024,
+        "source": "https://budget.gouv.ht/storage/app/uploads/public/67c/e9d/d54/67ce9dd540912792656630.pdf",
+        "status": "documente",
+        "note": "Tableau 202, population estimée de 18 ans et plus; ne pas assimiler à la population totale."
       }
     },
     {
@@ -2236,24 +2264,38 @@
       "arrondissement": "Saint-Marc",
       "commune": "La Chapelle",
       "updatedAt": "2026-11-03",
-      "administrativeSource": "https://www.ihsi.gouv.ht/statistiques/statistiques_demographiques_et_sociales/projections_et_estimations_de_la_population",
+      "administrativeSource": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
       "history": {
-        "text": "Notice historique à rechercher et à vérifier.",
-        "sources": [],
-        "status": "a_verifier"
+        "text": "Commune reconnue dans le tableau 1 des divisions territoriales de l'IHSI 2024. Histoire locale et patrimoine à documenter par des sources spécialisées.",
+        "sources": [
+          "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf"
+        ],
+        "status": "documente"
       },
       "services": [],
       "infrastructures": [],
       "heritage": [],
-      "verification": "inventaire_en_cours",
+      "verification": "statut_communal_et_population_adulte_documentes",
       "audit": {
         "reviewedAt": "2026-11-03",
-        "method": "Structure initiale d'après le répertoire administratif du projet; chiffres et informations locales non renseignés sans contrôle des tableaux IHSI.",
+        "method": "Comparaison du tableau 1 de l'IHSI 2024 (statut de commune) et du tableau 202 sur la population âgée de 18 ans et plus.",
         "warnings": [
-          "Population, superficie et histoire locale à documenter à partir des sources primaires.",
-          "Services, infrastructures et patrimoine : inventaire à réaliser.",
-          "Aucune coordonnée GPS ni établissement ajouté sans preuve."
+          "Le tableau 1 de l'IHSI 2024 répertorie cinq communes dans l'arrondissement de Saint-Marc.",
+          "Le tableau 202 présente la population de 18 ans et plus pour trois d'entre elles, mais ne ventile pas Liancourt et Montrouis séparément.",
+          "Ne pas confondre population de 18 ans et plus avec population totale.",
+          "Ne pas déduire des chiffres de Liancourt ou Montrouis par soustraction.",
+          "Services, histoire locale et patrimoine à documenter séparément."
         ]
+      },
+      "administrativeStatus": "commune_ihsi_2024",
+      "population18Plus2024": {
+        "value": 20894,
+        "urban": 8935,
+        "rural": 11959,
+        "year": 2024,
+        "source": "https://budget.gouv.ht/storage/app/uploads/public/67c/e9d/d54/67ce9dd540912792656630.pdf",
+        "status": "documente",
+        "note": "Tableau 202, population estimée de 18 ans et plus; ne pas assimiler à la population totale."
       }
     },
     {
@@ -2261,50 +2303,62 @@
       "arrondissement": "Saint-Marc",
       "commune": "Liancourt",
       "updatedAt": "2026-11-03",
-      "administrativeSource": "https://www.ihsi.gouv.ht/statistiques/statistiques_demographiques_et_sociales/projections_et_estimations_de_la_population",
+      "administrativeSource": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
       "history": {
-        "text": "Notice historique à rechercher et à vérifier.",
-        "sources": [],
-        "status": "a_verifier"
+        "text": "Commune reconnue dans le tableau 1 des divisions territoriales de l'IHSI 2024. Histoire locale et patrimoine à documenter par des sources spécialisées.",
+        "sources": [
+          "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf"
+        ],
+        "status": "documente"
       },
       "services": [],
       "infrastructures": [],
       "heritage": [],
-      "verification": "inventaire_en_cours",
+      "verification": "statut_communal_documente_population_distincte_non_disponible",
       "audit": {
         "reviewedAt": "2026-11-03",
-        "method": "Structure initiale d'après le répertoire administratif du projet; chiffres et informations locales non renseignés sans contrôle des tableaux IHSI.",
+        "method": "Comparaison du tableau 1 de l'IHSI 2024 (statut de commune) et du tableau 202 sur la population âgée de 18 ans et plus.",
         "warnings": [
-          "Population, superficie et histoire locale à documenter à partir des sources primaires.",
-          "Services, infrastructures et patrimoine : inventaire à réaliser.",
-          "Aucune coordonnée GPS ni établissement ajouté sans preuve."
+          "Population communale distincte non disponible dans le tableau 202 consulté.",
+          "Le tableau 1 de l'IHSI 2024 répertorie cinq communes dans l'arrondissement de Saint-Marc.",
+          "Le tableau 202 présente la population de 18 ans et plus pour trois d'entre elles, mais ne ventile pas Liancourt et Montrouis séparément.",
+          "Ne pas confondre population de 18 ans et plus avec population totale.",
+          "Ne pas déduire des chiffres de Liancourt ou Montrouis par soustraction.",
+          "Services, histoire locale et patrimoine à documenter séparément."
         ]
-      }
+      },
+      "administrativeStatus": "commune_ihsi_2024"
     },
     {
       "department": "Artibonite",
       "arrondissement": "Saint-Marc",
       "commune": "Montrouis",
       "updatedAt": "2026-11-03",
-      "administrativeSource": "https://www.ihsi.gouv.ht/statistiques/statistiques_demographiques_et_sociales/projections_et_estimations_de_la_population",
+      "administrativeSource": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
       "history": {
-        "text": "Notice historique à rechercher et à vérifier.",
-        "sources": [],
-        "status": "a_verifier"
+        "text": "Commune reconnue dans le tableau 1 des divisions territoriales de l'IHSI 2024. Histoire locale et patrimoine à documenter par des sources spécialisées.",
+        "sources": [
+          "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf"
+        ],
+        "status": "documente"
       },
       "services": [],
       "infrastructures": [],
       "heritage": [],
-      "verification": "inventaire_en_cours",
+      "verification": "statut_communal_documente_population_distincte_non_disponible",
       "audit": {
         "reviewedAt": "2026-11-03",
-        "method": "Structure initiale d'après le répertoire administratif du projet; chiffres et informations locales non renseignés sans contrôle des tableaux IHSI.",
+        "method": "Comparaison du tableau 1 de l'IHSI 2024 (statut de commune) et du tableau 202 sur la population âgée de 18 ans et plus.",
         "warnings": [
-          "Population, superficie et histoire locale à documenter à partir des sources primaires.",
-          "Services, infrastructures et patrimoine : inventaire à réaliser.",
-          "Aucune coordonnée GPS ni établissement ajouté sans preuve."
+          "Population communale distincte non disponible dans le tableau 202 consulté.",
+          "Le tableau 1 de l'IHSI 2024 répertorie cinq communes dans l'arrondissement de Saint-Marc.",
+          "Le tableau 202 présente la population de 18 ans et plus pour trois d'entre elles, mais ne ventile pas Liancourt et Montrouis séparément.",
+          "Ne pas confondre population de 18 ans et plus avec population totale.",
+          "Ne pas déduire des chiffres de Liancourt ou Montrouis par soustraction.",
+          "Services, histoire locale et patrimoine à documenter séparément."
         ]
-      }
+      },
+      "administrativeStatus": "commune_ihsi_2024"
     },
     {
       "department": "Artibonite",
