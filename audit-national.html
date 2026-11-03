@@ -9,6 +9,7 @@
 <button id="export" type="button">Exporter le tableau CSV</button>
 <div id="tablewrap"><table><thead id="head"></thead><tbody id="body"></tbody></table></div>
 <script src="./territoires.js"></script>
+<script src="./normalisation-territoriale.js"></script>
 <script>
 (async()=>{
 const norm=s=>String(s||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^a-z0-9]/g,'');
@@ -19,6 +20,8 @@ const paths=['./data/etablissements.json','./data/ecoles-savanette-menfp-2024-20
 const responses=await Promise.all(paths.map(async(p,i)=>{try{const r=await fetch(p);if(!r.ok){if(i===0)throw Error('Registre principal indisponible');return [];}const data=await r.json();if(!Array.isArray(data))throw Error('Format JSON invalide : '+p);return data;}catch(e){if(i===0)throw e;return [];}}));
 const ids=new Set(),codes=new Set(),records=[];
 for(const r of responses.flat()){const id=String(r.id||''),code=String(r.code_menfp||'');if((id&&ids.has(id))||(code&&codes.has(code)))continue;if(id)ids.add(id);if(code)codes.add(code);records.push(r);}
+const reconciliation=window.HAITI_NORMALISER_ETABLISSEMENTS(records);
+records.splice(0,records.length,...reconciliation.records);
 const cats=[...new Set(records.map(x=>x.categorie).filter(Boolean))].sort((a,b)=>a.localeCompare(b,'fr'));
 const by=new Map();
 for(const x of records){const k=norm(x.departement)+'|'+norm(x.commune);if(!by.has(k))by.set(k,[]);by.get(k).push(x);}
@@ -29,7 +32,7 @@ const tr=document.createElement('tr');for(const h of headers){const th=document.
 function render(){body.replaceChildren();const term=norm(search.value);for(const r of rows.filter(x=>norm(x.departement+' '+x.arrondissement+' '+x.commune).includes(term))){const tr=document.createElement('tr');for(const v of [r.departement,r.arrondissement,r.commune,r.total,...r.counts]){const td=document.createElement('td');td.textContent=v;tr.append(td);}body.append(tr);}}
 search.addEventListener('input',render);
 document.getElementById('export').addEventListener('click',()=>{const quote=s=>'"'+String(s).replace(/"/g,'""')+'"';const csv='\ufeff'+[headers,...rows.map(r=>[r.departement,r.arrondissement,r.commune,r.total,...r.counts])].map(row=>row.map(quote).join(';')).join('\r\n');const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([csv],{type:'text/csv;charset=utf-8'}));a.download='haiti2050-audit-149-communes.csv';a.click();URL.revokeObjectURL(a.href);});
-document.getElementById('status').textContent=communes.length+' communes du référentiel • '+records.length+' fiches chargées • '+cats.length+' catégories • '+rows.filter(x=>x.total===0).length+' communes sans fiche';
+document.getElementById('status').textContent=communes.length+' communes du référentiel • '+records.length+' fiches chargées • '+cats.length+' catégories • '+rows.filter(x=>x.total===0).length+' communes sans fiche • '+reconciliation.rapport.non_rattaches_total+' fiches non rattachées';
 render();
 })().catch(e=>{document.getElementById('status').textContent='Erreur : '+e.message;console.error(e)});
 </script></body></html>
