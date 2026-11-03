@@ -86,8 +86,14 @@
   [deptEl, arrEl, communeEl].forEach(el => el?.addEventListener('change', () => setTimeout(refresh, 0)));
   window.addEventListener('haiti2050:territorychange', () => setTimeout(refresh, 0));
   count.textContent = 'Chargement des établissements…';
-  fetch('./data/etablissements.json').then(r => { if (!r.ok) throw new Error(`HTTP ${r.status}`); return r.json(); }).then(data => {
-    if (!Array.isArray(data)) throw new Error('Le JSON doit être un tableau.');
-    records = data; refresh();
+  Promise.all([
+    fetch('./data/etablissements.json').then(r => { if (!r.ok) throw new Error(`HTTP ${r.status}`); return r.json(); }),
+    fetch('./data/ecoles-savanette-menfp-2024-2025.json').then(r => { if (!r.ok) throw new Error(`HTTP ${r.status}`); return r.json(); })
+  ]).then(([data, savanette]) => {
+    if (!Array.isArray(data) || !Array.isArray(savanette)) throw new Error('Les JSON doivent être des tableaux.');
+    const ids = new Set(data.map(x => x.id));
+    const codes = new Set(data.map(x => String(x.code_menfp || '')).filter(Boolean));
+    records = data.concat(savanette.filter(x => !ids.has(x.id) && !codes.has(String(x.code_menfp || ''))));
+    refresh();
   }).catch(e => { count.textContent = 'Chargement impossible : ' + e.message; console.error(e); });
 })();
