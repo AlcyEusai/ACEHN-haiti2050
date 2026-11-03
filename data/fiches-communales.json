@@ -1874,23 +1874,58 @@
       "updatedAt": "2026-11-03",
       "administrativeSource": "https://www.ihsi.gouv.ht/statistiques/statistiques_demographiques_et_sociales/projections_et_estimations_de_la_population",
       "history": {
-        "text": "Notice historique à rechercher et à vérifier.",
-        "sources": [],
-        "status": "a_verifier"
+        "text": "Les Gonaïves sont le lieu de proclamation de l'indépendance d'Haïti le 1er janvier 1804. La ville est le chef-lieu du département de l'Artibonite.",
+        "sources": [
+          "https://heritage.bnf.fr/france-ameriques/jean-jacques-dessalines-et-lindependance-dhaiti",
+          "https://www.haiti-reference.info/pages/plan/geographie-et-tourisme/divisions-territoriales/chefs-lieux/gonaives/"
+        ],
+        "status": "historique"
       },
       "services": [],
       "infrastructures": [],
-      "heritage": [],
-      "verification": "inventaire_en_cours",
+      "heritage": [
+        {
+          "name": "Mémoire de la proclamation de l'indépendance",
+          "detail": "Événement historique du 1er janvier 1804 aux Gonaïves. Les monuments et bâtiments précis associés restent à inventorier et localiser.",
+          "source": "https://heritage.bnf.fr/france-ameriques/jean-jacques-dessalines-et-lindependance-dhaiti",
+          "status": "historique"
+        }
+      ],
+      "verification": "demographie_documentee_histoire_partielle",
       "audit": {
         "reviewedAt": "2026-11-03",
-        "method": "Structure initiale d'après le répertoire administratif du projet; chiffres et informations locales non renseignés sans contrôle des tableaux IHSI.",
+        "method": "Recoupement des estimations IHSI 2024 tableau 248 et des sources historiques indiquées.",
         "warnings": [
-          "Population, superficie et histoire locale à documenter à partir des sources primaires.",
-          "Services, infrastructures et patrimoine : inventaire à réaliser.",
-          "Aucune coordonnée GPS ni établissement ajouté sans preuve."
+          "Estimations 2024, non recensement 2026.",
+          "Équipements publics, établissements et infrastructures à inventorier séparément.",
+          "Aucune coordonnée GPS inventée.",
+          "Patrimoine matériel local à vérifier sur des sources spécifiques."
         ]
-      }
+      },
+      "populationTotale2024": {
+        "value": 391173,
+        "year": 2024,
+        "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+        "status": "documente",
+        "note": "IHSI 2024, tableau 248 : estimation de population communale totale."
+      },
+      "populationUrbaine": {
+        "value": 358704,
+        "year": 2024,
+        "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+        "status": "documente",
+        "note": "IHSI 2024, tableau 248 : estimation de population urbaine."
+      },
+      "populationRurale": {
+        "value": 32469,
+        "year": 2024,
+        "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+        "status": "documente",
+        "note": "IHSI 2024, tableau 248 : estimation de population rurale."
+      },
+      "areaKm2": 573.58,
+      "areaSource": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+      "areaStatus": "documente"
     },
     {
       "department": "Artibonite",
@@ -1899,22 +1934,46 @@
       "updatedAt": "2026-11-03",
       "administrativeSource": "https://www.ihsi.gouv.ht/statistiques/statistiques_demographiques_et_sociales/projections_et_estimations_de_la_population",
       "history": {
-        "text": "Notice historique à rechercher et à vérifier.",
-        "sources": [],
+        "text": "Le rattachement administratif et les données démographiques de la commune sont documentés par l'IHSI. Une histoire locale précise reste à rechercher dans les archives.",
+        "sources": [
+          "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf"
+        ],
         "status": "a_verifier"
       },
       "services": [],
       "infrastructures": [],
       "heritage": [],
-      "verification": "inventaire_en_cours",
+      "verification": "demographie_documentee_histoire_partielle",
       "audit": {
         "reviewedAt": "2026-11-03",
-        "method": "Structure initiale d'après le répertoire administratif du projet; chiffres et informations locales non renseignés sans contrôle des tableaux IHSI.",
+        "method": "Recoupement des estimations IHSI 2024 tableau 248 et des sources historiques indiquées.",
         "warnings": [
-          "Population, superficie et histoire locale à documenter à partir des sources primaires.",
-          "Services, infrastructures et patrimoine : inventaire à réaliser.",
-          "Aucune coordonnée GPS ni établissement ajouté sans preuve."
+          "Estimations 2024, non recensement 2026.",
+          "Équipements publics, établissements et infrastructures à inventorier séparément.",
+          "Aucune coordonnée GPS inventée.",
+          "Patrimoine matériel local à vérifier sur des sources spécifiques."
         ]
+      },
+      "populationTotale2024": {
+        "value": 56226,
+        "year": 2024,
+        "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+        "status": "documente",
+        "note": "IHSI 2024, tableau 248 : estimation de population communale totale."
+      },
+      "populationUrbaine": {
+        "value": 14725,
+        "year": 2024,
+        "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+        "status": "documente",
+        "note": "IHSI 2024, tableau 248 : estimation de population urbaine."
+      },
+      "populationRurale": {
+        "value": 41501,
+        "year": 2024,
+        "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+        "status": "documente",
+        "note": "IHSI 2024, tableau 248 : estimation de population rurale."
       }
     },
     {
@@ -1924,22 +1983,46 @@
       "updatedAt": "2026-11-03",
       "administrativeSource": "https://www.ihsi.gouv.ht/statistiques/statistiques_demographiques_et_sociales/projections_et_estimations_de_la_population",
       "history": {
-        "text": "Notice historique à rechercher et à vérifier.",
-        "sources": [],
+        "text": "Le rattachement administratif et les données démographiques de la commune sont documentés par l'IHSI. Une histoire locale précise reste à rechercher dans les archives.",
+        "sources": [
+          "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf"
+        ],
         "status": "a_verifier"
       },
       "services": [],
       "infrastructures": [],
       "heritage": [],
-      "verification": "inventaire_en_cours",
+      "verification": "demographie_documentee_histoire_partielle",
       "audit": {
         "reviewedAt": "2026-11-03",
-        "method": "Structure initiale d'après le répertoire administratif du projet; chiffres et informations locales non renseignés sans contrôle des tableaux IHSI.",
+        "method": "Recoupement des estimations IHSI 2024 tableau 248 et des sources historiques indiquées.",
         "warnings": [
-          "Population, superficie et histoire locale à documenter à partir des sources primaires.",
-          "Services, infrastructures et patrimoine : inventaire à réaliser.",
-          "Aucune coordonnée GPS ni établissement ajouté sans preuve."
+          "Estimations 2024, non recensement 2026.",
+          "Équipements publics, établissements et infrastructures à inventorier séparément.",
+          "Aucune coordonnée GPS inventée.",
+          "Patrimoine matériel local à vérifier sur des sources spécifiques."
         ]
+      },
+      "populationTotale2024": {
+        "value": 49572,
+        "year": 2024,
+        "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+        "status": "documente",
+        "note": "IHSI 2024, tableau 248 : estimation de population communale totale."
+      },
+      "populationUrbaine": {
+        "value": 37266,
+        "year": 2024,
+        "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+        "status": "documente",
+        "note": "IHSI 2024, tableau 248 : estimation de population urbaine."
+      },
+      "populationRurale": {
+        "value": 12306,
+        "year": 2024,
+        "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+        "status": "documente",
+        "note": "IHSI 2024, tableau 248 : estimation de population rurale."
       }
     },
     {
