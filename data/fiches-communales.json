@@ -532,6 +532,106 @@
           "Fiche documentaire initiale, non exhaustive."
         ]
       }
+    },
+    {
+      "department": "Nord",
+      "arrondissement": "Saint-Raphaël",
+      "commune": "Saint-Raphaël",
+      "updatedAt": "2026-11-03",
+      "history": {
+        "text": "Notice historique en cours de recherche documentaire.",
+        "sources": [],
+        "status": "a_verifier"
+      },
+      "services": [],
+      "infrastructures": [],
+      "heritage": [],
+      "verification": "inventaire_en_cours",
+      "audit": {
+        "reviewedAt": "2026-11-03",
+        "method": "Création d'une notice de travail; aucun fait local non sourcé ajouté.",
+        "warnings": [
+          "Histoire, population et superficie : sources à rechercher et recouper.",
+          "Services publics, établissements, patrimoine et infrastructures : inventaire non commencé.",
+          "Aucune coordonnée GPS ni statistique inférée.",
+          "Cette fiche ne doit pas être considérée comme une notice documentaire validée."
+        ]
+      }
+    },
+    {
+      "department": "Nord",
+      "arrondissement": "Saint-Raphaël",
+      "commune": "Ranquitte",
+      "updatedAt": "2026-11-03",
+      "history": {
+        "text": "Notice historique en cours de recherche documentaire.",
+        "sources": [],
+        "status": "a_verifier"
+      },
+      "services": [],
+      "infrastructures": [],
+      "heritage": [],
+      "verification": "inventaire_en_cours",
+      "audit": {
+        "reviewedAt": "2026-11-03",
+        "method": "Création d'une notice de travail; aucun fait local non sourcé ajouté.",
+        "warnings": [
+          "Histoire, population et superficie : sources à rechercher et recouper.",
+          "Services publics, établissements, patrimoine et infrastructures : inventaire non commencé.",
+          "Aucune coordonnée GPS ni statistique inférée.",
+          "Cette fiche ne doit pas être considérée comme une notice documentaire validée."
+        ]
+      }
+    },
+    {
+      "department": "Nord",
+      "arrondissement": "Saint-Raphaël",
+      "commune": "Pignon",
+      "updatedAt": "2026-11-03",
+      "history": {
+        "text": "Notice historique en cours de recherche documentaire.",
+        "sources": [],
+        "status": "a_verifier"
+      },
+      "services": [],
+      "infrastructures": [],
+      "heritage": [],
+      "verification": "inventaire_en_cours",
+      "audit": {
+        "reviewedAt": "2026-11-03",
+        "method": "Création d'une notice de travail; aucun fait local non sourcé ajouté.",
+        "warnings": [
+          "Histoire, population et superficie : sources à rechercher et recouper.",
+          "Services publics, établissements, patrimoine et infrastructures : inventaire non commencé.",
+          "Aucune coordonnée GPS ni statistique inférée.",
+          "Cette fiche ne doit pas être considérée comme une notice documentaire validée."
+        ]
+      }
+    },
+    {
+      "department": "Nord",
+      "arrondissement": "Saint-Raphaël",
+      "commune": "La Victoire",
+      "updatedAt": "2026-11-03",
+      "history": {
+        "text": "Notice historique en cours de recherche documentaire.",
+        "sources": [],
+        "status": "a_verifier"
+      },
+      "services": [],
+      "infrastructures": [],
+      "heritage": [],
+      "verification": "inventaire_en_cours",
+      "audit": {
+        "reviewedAt": "2026-11-03",
+        "method": "Création d'une notice de travail; aucun fait local non sourcé ajouté.",
+        "warnings": [
+          "Histoire, population et superficie : sources à rechercher et recouper.",
+          "Services publics, établissements, patrimoine et infrastructures : inventaire non commencé.",
+          "Aucune coordonnée GPS ni statistique inférée.",
+          "Cette fiche ne doit pas être considérée comme une notice documentaire validée."
+        ]
+      }
     }
   ]
 }
