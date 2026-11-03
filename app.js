@@ -352,10 +352,8 @@ function selectTerritory(
 
   syncMenus();
 
-  if (zoom) {
-    const center =
-      departmentCenters[currentDepartment] || nationalCenter;
-
+  if (zoom && !currentArrondissement && !currentCommune) {
+    const center = departmentCenters[currentDepartment] || nationalCenter;
     map.flyTo(center, 10);
   }
 
@@ -714,6 +712,7 @@ $("projectForm").onsubmit = event => {
   dialog.close();
   $("projectForm").reset();
   renderProjects();
+  document.dispatchEvent(new CustomEvent("haiti2050:projectschange"));
 };
 
 // Fiche territoriale pilote conservée.
