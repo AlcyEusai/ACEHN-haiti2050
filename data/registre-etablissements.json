@@ -303,6 +303,167 @@
           "source": "https://delr.mesi.ht/presentation/modules/monitoring.aspx?activeTab=tab_rapport_gestion&menuID=listInstitutionID"
         }
       ]
+    },
+    {
+      "id": "ht-sud-les-cayes-lycee-philippe-guerrier",
+      "name": "Lycée Philippe Guerrier",
+      "category": "education",
+      "department": "Sud",
+      "arrondissement": "Les Cayes",
+      "commune": "Les Cayes",
+      "lat": null,
+      "lon": null,
+      "source": "https://www.haitilibre.com/docs/Liste-des-lycees-de-la-republique.pdf",
+      "verification": "existence_documentee_localisation_non_verifiee",
+      "reviewStatus": "existence_documentee",
+      "evidence": "Liste MENFP des lycées du Sud, adresse rue Maurice et Anderson. État du bâtiment et fonctionnement à actualiser.",
+      "updatedAt": "2026-11-03",
+      "checkedOnlineAt": "2026-11-03",
+      "history": [
+        {
+          "date": "2026-11-03",
+          "action": "Ajout documentaire multi-sectoriel sans point GPS",
+          "source": "https://www.haitilibre.com/docs/Liste-des-lycees-de-la-republique.pdf"
+        }
+      ]
+    },
+    {
+      "id": "ht-sud-les-cayes-lycee-jean-claudy-museau",
+      "name": "Lycée Jean Claudy Museau",
+      "category": "education",
+      "department": "Sud",
+      "arrondissement": "Les Cayes",
+      "commune": "Les Cayes",
+      "lat": null,
+      "lon": null,
+      "source": "https://www.haitilibre.com/docs/Liste-des-lycees-de-la-republique.pdf",
+      "verification": "existence_documentee_localisation_non_verifiee",
+      "reviewStatus": "existence_documentee",
+      "evidence": "Liste MENFP des lycées du Sud, secteur Bergeaud. Coordonnées précises non vérifiées.",
+      "updatedAt": "2026-11-03",
+      "checkedOnlineAt": "2026-11-03",
+      "history": [
+        {
+          "date": "2026-11-03",
+          "action": "Ajout documentaire multi-sectoriel sans point GPS",
+          "source": "https://www.haitilibre.com/docs/Liste-des-lycees-de-la-republique.pdf"
+        }
+      ]
+    },
+    {
+      "id": "ht-sud-aquin-lycee-pierre-sully",
+      "name": "Lycée Pierre Sully",
+      "category": "education",
+      "department": "Sud",
+      "arrondissement": "Aquin",
+      "commune": "Aquin",
+      "lat": null,
+      "lon": null,
+      "source": "https://www.haitilibre.com/docs/Liste-des-lycees-de-la-republique.pdf",
+      "verification": "existence_documentee_localisation_non_verifiee",
+      "reviewStatus": "existence_documentee",
+      "evidence": "Liste MENFP des lycées du Sud, rue David Saint Preux. Coordonnées précises non vérifiées.",
+      "updatedAt": "2026-11-03",
+      "checkedOnlineAt": "2026-11-03",
+      "history": [
+        {
+          "date": "2026-11-03",
+          "action": "Ajout documentaire multi-sectoriel sans point GPS",
+          "source": "https://www.haitilibre.com/docs/Liste-des-lycees-de-la-republique.pdf"
+        }
+      ]
+    },
+    {
+      "id": "ht-sud-les-cayes-marche-en-fer",
+      "name": "Marché en Fer des Cayes",
+      "category": "commerce",
+      "department": "Sud",
+      "arrondissement": "Les Cayes",
+      "commune": "Les Cayes",
+      "lat": null,
+      "lon": null,
+      "source": "https://www.jobpaw.com/private/memoire/944.pdf",
+      "verification": "existence_documentee_localisation_non_verifiee",
+      "reviewStatus": "existence_documentee",
+      "evidence": "Étude universitaire UNDH décrivant le marché en Fer entre première et deuxième Grande Rue. Fonctionnement actuel à confirmer.",
+      "updatedAt": "2026-11-03",
+      "checkedOnlineAt": "2026-11-03",
+      "history": [
+        {
+          "date": "2026-11-03",
+          "action": "Ajout documentaire multi-sectoriel sans point GPS",
+          "source": "https://www.jobpaw.com/private/memoire/944.pdf"
+        }
+      ]
+    },
+    {
+      "id": "ht-sud-les-cayes-marche-relais",
+      "name": "Marché Relais des Cayes",
+      "category": "commerce",
+      "department": "Sud",
+      "arrondissement": "Les Cayes",
+      "commune": "Les Cayes",
+      "lat": null,
+      "lon": null,
+      "source": "https://www.jobpaw.com/private/memoire/944.pdf",
+      "verification": "existence_documentee_localisation_non_verifiee",
+      "reviewStatus": "existence_documentee",
+      "evidence": "Étude universitaire UNDH distinguant le marché Relais du marché en Fer; localisation précise et activité actuelle à confirmer.",
+      "updatedAt": "2026-11-03",
+      "checkedOnlineAt": "2026-11-03",
+      "history": [
+        {
+          "date": "2026-11-03",
+          "action": "Ajout documentaire multi-sectoriel sans point GPS",
+          "source": "https://www.jobpaw.com/private/memoire/944.pdf"
+        }
+      ]
+    },
+    {
+      "id": "ht-sud-les-cayes-aeroport-antoine-simon",
+      "name": "Aéroport Antoine Simon des Cayes",
+      "category": "infrastructure",
+      "department": "Sud",
+      "arrondissement": "Les Cayes",
+      "commune": "Les Cayes",
+      "lat": null,
+      "lon": null,
+      "source": "https://communication.gouv.ht/communiques/lancement-des-etudes-et-elaboration-du-plan-directeur-de-laeroport-international-antoine-simon-des-cayes/",
+      "verification": "existence_documentee_localisation_non_verifiee",
+      "reviewStatus": "existence_documentee",
+      "evidence": "Communiqué gouvernemental du 23 mai 2025 relatif au plan directeur. Existence de l'infrastructure documentée, exploitation actuelle et GPS à confirmer.",
+      "updatedAt": "2026-11-03",
+      "checkedOnlineAt": "2026-11-03",
+      "history": [
+        {
+          "date": "2026-11-03",
+          "action": "Ajout documentaire multi-sectoriel sans point GPS",
+          "source": "https://communication.gouv.ht/communiques/lancement-des-etudes-et-elaboration-du-plan-directeur-de-laeroport-international-antoine-simon-des-cayes/"
+        }
+      ]
+    },
+    {
+      "id": "ht-sud-les-cayes-mairie",
+      "name": "Mairie des Cayes",
+      "category": "administration",
+      "department": "Sud",
+      "arrondissement": "Les Cayes",
+      "commune": "Les Cayes",
+      "lat": null,
+      "lon": null,
+      "source": "https://communication.gouv.ht/communiques/lancement-des-etudes-et-elaboration-du-plan-directeur-de-laeroport-international-antoine-simon-des-cayes/",
+      "verification": "institution_documentee_batiment_non_localise",
+      "reviewStatus": "existence_documentee",
+      "evidence": "La participation de la mairesse des Cayes est mentionnée dans un communiqué officiel. Le bâtiment municipal et son emplacement ne sont pas établis par cette source.",
+      "updatedAt": "2026-11-03",
+      "checkedOnlineAt": "2026-11-03",
+      "history": [
+        {
+          "date": "2026-11-03",
+          "action": "Ajout documentaire multi-sectoriel sans point GPS",
+          "source": "https://communication.gouv.ht/communiques/lancement-des-etudes-et-elaboration-du-plan-directeur-de-laeroport-international-antoine-simon-des-cayes/"
+        }
+      ]
     }
   ]
 }
