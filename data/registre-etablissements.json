@@ -4274,6 +4274,986 @@
           "source": "https://www.haitidocs.org/doc/menfp-registre-ecoles-centre-2025?lang=ht"
         }
       ]
+    },
+    {
+      "id": "ht-centre-menfp-2025-061201109303",
+      "name": "ECOLE NATIONALE ANTENOR FIRMIN BASSIN CAVE",
+      "category": "education",
+      "department": "Centre",
+      "arrondissement": "Hinche",
+      "commune": "Maïssade",
+      "section": "Savane Grande",
+      "lat": null,
+      "lon": null,
+      "source": "https://www.haitidocs.org/doc/menfp-registre-ecoles-centre-2025?lang=ht",
+      "verification": "existence_documentee_registre_menfp_2024_2025",
+      "reviewStatus": "registre_scolaire_a_actualiser",
+      "institutionCode": "061201109303",
+      "ownershipReference": "public",
+      "referenceYear": "2024-2025",
+      "note": "École inscrite au registre MENFP 2024-2025 ; activité actuelle et localisation précise non vérifiées.",
+      "updatedAt": "2026-11-03",
+      "evidence": "MENFP, commune de Maïssade, section Savane Grande, code 061201109303",
+      "checkedOnlineAt": "2026-11-03",
+      "history": [
+        {
+          "date": "2026-11-03",
+          "action": "Ajout au registre depuis la liste MENFP 2024-2025, sans vérification d'activité en 2026",
+          "source": "https://www.haitidocs.org/doc/menfp-registre-ecoles-centre-2025?lang=ht"
+        }
+      ]
+    },
+    {
+      "id": "ht-centre-menfp-2025-061201118392",
+      "name": "ECOLE NATIONALE DE CEVERINE",
+      "category": "education",
+      "department": "Centre",
+      "arrondissement": "Hinche",
+      "commune": "Maïssade",
+      "section": "Savane Grande",
+      "lat": null,
+      "lon": null,
+      "source": "https://www.haitidocs.org/doc/menfp-registre-ecoles-centre-2025?lang=ht",
+      "verification": "existence_documentee_registre_menfp_2024_2025",
+      "reviewStatus": "registre_scolaire_a_actualiser",
+      "institutionCode": "061201118392",
+      "ownershipReference": "public",
+      "referenceYear": "2024-2025",
+      "note": "École inscrite au registre MENFP 2024-2025 ; activité actuelle et localisation précise non vérifiées.",
+      "updatedAt": "2026-11-03",
+      "evidence": "MENFP, commune de Maïssade, section Savane Grande, code 061201118392",
+      "checkedOnlineAt": "2026-11-03",
+      "history": [
+        {
+          "date": "2026-11-03",
+          "action": "Ajout au registre depuis la liste MENFP 2024-2025, sans vérification d'activité en 2026",
+          "source": "https://www.haitidocs.org/doc/menfp-registre-ecoles-centre-2025?lang=ht"
+        }
+      ]
+    },
+    {
+      "id": "ht-centre-menfp-2025-061201107939",
+      "name": "ECOLE NATIONALE FRANCOIS CAPOIS DE SELPETRE",
+      "category": "education",
+      "department": "Centre",
+      "arrondissement": "Hinche",
+      "commune": "Maïssade",
+      "section": "Savane Grande",
+      "lat": null,
+      "lon": null,
+      "source": "https://www.haitidocs.org/doc/menfp-registre-ecoles-centre-2025?lang=ht",
+      "verification": "existence_documentee_registre_menfp_2024_2025",
+      "reviewStatus": "registre_scolaire_a_actualiser",
+      "institutionCode": "061201107939",
+      "ownershipReference": "public",
+      "referenceYear": "2024-2025",
+      "note": "École inscrite au registre MENFP 2024-2025 ; activité actuelle et localisation précise non vérifiées.",
+      "updatedAt": "2026-11-03",
+      "evidence": "MENFP, commune de Maïssade, section Savane Grande, code 061201107939",
+      "checkedOnlineAt": "2026-11-03",
+      "history": [
+        {
+          "date": "2026-11-03",
+          "action": "Ajout au registre depuis la liste MENFP 2024-2025, sans vérification d'activité en 2026",
+          "source": "https://www.haitidocs.org/doc/menfp-registre-ecoles-centre-2025?lang=ht"
+        }
+      ]
+    },
+    {
+      "id": "ht-centre-menfp-2025-061201100846",
+      "name": "ECOLE NATIONALE HENRY CHRISTOPHE",
+      "category": "education",
+      "department": "Centre",
+      "arrondissement": "Hinche",
+      "commune": "Maïssade",
+      "section": "Savane Grande",
+      "lat": null,
+      "lon": null,
+      "source": "https://www.haitidocs.org/doc/menfp-registre-ecoles-centre-2025?lang=ht",
+      "verification": "existence_documentee_registre_menfp_2024_2025",
+      "reviewStatus": "registre_scolaire_a_actualiser",
+      "institutionCode": "061201100846",
+      "ownershipReference": "public",
+      "referenceYear": "2024-2025",
+      "note": "École inscrite au registre MENFP 2024-2025 ; activité actuelle et localisation précise non vérifiées.",
+      "updatedAt": "2026-11-03",
+      "evidence": "MENFP, commune de Maïssade, section Savane Grande, code 061201100846",
+      "checkedOnlineAt": "2026-11-03",
+      "history": [
+        {
+          "date": "2026-11-03",
+          "action": "Ajout au registre depuis la liste MENFP 2024-2025, sans vérification d'activité en 2026",
+          "source": "https://www.haitidocs.org/doc/menfp-registre-ecoles-centre-2025?lang=ht"
+        }
+      ]
+    },
+    {
+      "id": "ht-centre-menfp-2025-061201117562",
+      "name": "ECOLE NATIONALE JOSEPH PIERRE SULLY DE MAISSADE",
+      "category": "education",
+      "department": "Centre",
+      "arrondissement": "Hinche",
+      "commune": "Maïssade",
+      "section": "Savane Grande",
+      "lat": null,
+      "lon": null,
+      "source": "https://www.haitidocs.org/doc/menfp-registre-ecoles-centre-2025?lang=ht",
+      "verification": "existence_documentee_registre_menfp_2024_2025",
+      "reviewStatus": "registre_scolaire_a_actualiser",
+      "institutionCode": "061201117562",
+      "ownershipReference": "public",
+      "referenceYear": "2024-2025",
+      "note": "École inscrite au registre MENFP 2024-2025 ; activité actuelle et localisation précise non vérifiées.",
+      "updatedAt": "2026-11-03",
+      "evidence": "MENFP, commune de Maïssade, section Savane Grande, code 061201117562",
+      "checkedOnlineAt": "2026-11-03",
+      "history": [
+        {
+          "date": "2026-11-03",
+          "action": "Ajout au registre depuis la liste MENFP 2024-2025, sans vérification d'activité en 2026",
+          "source": "https://www.haitidocs.org/doc/menfp-registre-ecoles-centre-2025?lang=ht"
+        }
+      ]
+    },
+    {
+      "id": "ht-centre-menfp-2025-061201106974",
+      "name": "ECOLE NATIONALE PHILIPPE GUERRIER",
+      "category": "education",
+      "department": "Centre",
+      "arrondissement": "Hinche",
+      "commune": "Maïssade",
+      "section": "Savane Grande",
+      "lat": null,
+      "lon": null,
+      "source": "https://www.haitidocs.org/doc/menfp-registre-ecoles-centre-2025?lang=ht",
+      "verification": "existence_documentee_registre_menfp_2024_2025",
+      "reviewStatus": "registre_scolaire_a_actualiser",
+      "institutionCode": "061201106974",
+      "ownershipReference": "public",
+      "referenceYear": "2024-2025",
+      "note": "École inscrite au registre MENFP 2024-2025 ; activité actuelle et localisation précise non vérifiées.",
+      "updatedAt": "2026-11-03",
+      "evidence": "MENFP, commune de Maïssade, section Savane Grande, code 061201106974",
+      "checkedOnlineAt": "2026-11-03",
+      "history": [
+        {
+          "date": "2026-11-03",
+          "action": "Ajout au registre depuis la liste MENFP 2024-2025, sans vérification d'activité en 2026",
+          "source": "https://www.haitidocs.org/doc/menfp-registre-ecoles-centre-2025?lang=ht"
+        }
+      ]
+    },
+    {
+      "id": "ht-centre-menfp-2025-061201118987",
+      "name": "ECOLE NATIONALE SOURCE IGNAME (PSUGO)",
+      "category": "education",
+      "department": "Centre",
+      "arrondissement": "Hinche",
+      "commune": "Maïssade",
+      "section": "Savane Grande",
+      "lat": null,
+      "lon": null,
+      "source": "https://www.haitidocs.org/doc/menfp-registre-ecoles-centre-2025?lang=ht",
+      "verification": "existence_documentee_registre_menfp_2024_2025",
+      "reviewStatus": "registre_scolaire_a_actualiser",
+      "institutionCode": "061201118987",
+      "ownershipReference": "public",
+      "referenceYear": "2024-2025",
+      "note": "École inscrite au registre MENFP 2024-2025 ; activité actuelle et localisation précise non vérifiées.",
+      "updatedAt": "2026-11-03",
+      "evidence": "MENFP, commune de Maïssade, section Savane Grande, code 061201118987",
+      "checkedOnlineAt": "2026-11-03",
+      "history": [
+        {
+          "date": "2026-11-03",
+          "action": "Ajout au registre depuis la liste MENFP 2024-2025, sans vérification d'activité en 2026",
+          "source": "https://www.haitidocs.org/doc/menfp-registre-ecoles-centre-2025?lang=ht"
+        }
+      ]
+    },
+    {
+      "id": "ht-centre-menfp-2025-061201110206",
+      "name": "ECOLE NATIONALE TOUSSAINT LOUVERTURE MADAME JOA",
+      "category": "education",
+      "department": "Centre",
+      "arrondissement": "Hinche",
+      "commune": "Maïssade",
+      "section": "Savane Grande",
+      "lat": null,
+      "lon": null,
+      "source": "https://www.haitidocs.org/doc/menfp-registre-ecoles-centre-2025?lang=ht",
+      "verification": "existence_documentee_registre_menfp_2024_2025",
+      "reviewStatus": "registre_scolaire_a_actualiser",
+      "institutionCode": "061201110206",
+      "ownershipReference": "public",
+      "referenceYear": "2024-2025",
+      "note": "École inscrite au registre MENFP 2024-2025 ; activité actuelle et localisation précise non vérifiées.",
+      "updatedAt": "2026-11-03",
+      "evidence": "MENFP, commune de Maïssade, section Savane Grande, code 061201110206",
+      "checkedOnlineAt": "2026-11-03",
+      "history": [
+        {
+          "date": "2026-11-03",
+          "action": "Ajout au registre depuis la liste MENFP 2024-2025, sans vérification d'activité en 2026",
+          "source": "https://www.haitidocs.org/doc/menfp-registre-ecoles-centre-2025?lang=ht"
+        }
+      ]
+    },
+    {
+      "id": "ht-centre-menfp-2025-061202104458",
+      "name": "ECOLE NATIONALE ALEXANDRE PETION DE RANTHIONOBY",
+      "category": "education",
+      "department": "Centre",
+      "arrondissement": "Hinche",
+      "commune": "Maïssade",
+      "section": "Narang",
+      "lat": null,
+      "lon": null,
+      "source": "https://www.haitidocs.org/doc/menfp-registre-ecoles-centre-2025?lang=ht",
+      "verification": "existence_documentee_registre_menfp_2024_2025",
+      "reviewStatus": "registre_scolaire_a_actualiser",
+      "institutionCode": "061202104458",
+      "ownershipReference": "public",
+      "referenceYear": "2024-2025",
+      "note": "École inscrite au registre MENFP 2024-2025 ; activité actuelle et localisation précise non vérifiées.",
+      "updatedAt": "2026-11-03",
+      "evidence": "MENFP, commune de Maïssade, section Narang, code 061202104458",
+      "checkedOnlineAt": "2026-11-03",
+      "history": [
+        {
+          "date": "2026-11-03",
+          "action": "Ajout au registre depuis la liste MENFP 2024-2025, sans vérification d'activité en 2026",
+          "source": "https://www.haitidocs.org/doc/menfp-registre-ecoles-centre-2025?lang=ht"
+        }
+      ]
+    },
+    {
+      "id": "ht-centre-menfp-2025-061202119752",
+      "name": "ECOLE NATIONALE CHARLEMAGNE",
+      "category": "education",
+      "department": "Centre",
+      "arrondissement": "Hinche",
+      "commune": "Maïssade",
+      "section": "Narang",
+      "lat": null,
+      "lon": null,
+      "source": "https://www.haitidocs.org/doc/menfp-registre-ecoles-centre-2025?lang=ht",
+      "verification": "existence_documentee_registre_menfp_2024_2025",
+      "reviewStatus": "registre_scolaire_a_actualiser",
+      "institutionCode": "061202119752",
+      "ownershipReference": "public",
+      "referenceYear": "2024-2025",
+      "note": "École inscrite au registre MENFP 2024-2025 ; activité actuelle et localisation précise non vérifiées.",
+      "updatedAt": "2026-11-03",
+      "evidence": "MENFP, commune de Maïssade, section Narang, code 061202119752",
+      "checkedOnlineAt": "2026-11-03",
+      "history": [
+        {
+          "date": "2026-11-03",
+          "action": "Ajout au registre depuis la liste MENFP 2024-2025, sans vérification d'activité en 2026",
+          "source": "https://www.haitidocs.org/doc/menfp-registre-ecoles-centre-2025?lang=ht"
+        }
+      ]
+    },
+    {
+      "id": "ht-centre-menfp-2025-061202105738",
+      "name": "ECOLE NATIONALE DE RAMIER (BOIS ROUGE)",
+      "category": "education",
+      "department": "Centre",
+      "arrondissement": "Hinche",
+      "commune": "Maïssade",
+      "section": "Narang",
+      "lat": null,
+      "lon": null,
+      "source": "https://www.haitidocs.org/doc/menfp-registre-ecoles-centre-2025?lang=ht",
+      "verification": "existence_documentee_registre_menfp_2024_2025",
+      "reviewStatus": "registre_scolaire_a_actualiser",
+      "institutionCode": "061202105738",
+      "ownershipReference": "public",
+      "referenceYear": "2024-2025",
+      "note": "École inscrite au registre MENFP 2024-2025 ; activité actuelle et localisation précise non vérifiées.",
+      "updatedAt": "2026-11-03",
+      "evidence": "MENFP, commune de Maïssade, section Narang, code 061202105738",
+      "checkedOnlineAt": "2026-11-03",
+      "history": [
+        {
+          "date": "2026-11-03",
+          "action": "Ajout au registre depuis la liste MENFP 2024-2025, sans vérification d'activité en 2026",
+          "source": "https://www.haitidocs.org/doc/menfp-registre-ecoles-centre-2025?lang=ht"
+        }
+      ]
+    },
+    {
+      "id": "ht-centre-menfp-2025-061202106122",
+      "name": "ECOLE NATIONALE JACQUES ROUMAIN DE LARIQUE",
+      "category": "education",
+      "department": "Centre",
+      "arrondissement": "Hinche",
+      "commune": "Maïssade",
+      "section": "Narang",
+      "lat": null,
+      "lon": null,
+      "source": "https://www.haitidocs.org/doc/menfp-registre-ecoles-centre-2025?lang=ht",
+      "verification": "existence_documentee_registre_menfp_2024_2025",
+      "reviewStatus": "registre_scolaire_a_actualiser",
+      "institutionCode": "061202106122",
+      "ownershipReference": "public",
+      "referenceYear": "2024-2025",
+      "note": "École inscrite au registre MENFP 2024-2025 ; activité actuelle et localisation précise non vérifiées.",
+      "updatedAt": "2026-11-03",
+      "evidence": "MENFP, commune de Maïssade, section Narang, code 061202106122",
+      "checkedOnlineAt": "2026-11-03",
+      "history": [
+        {
+          "date": "2026-11-03",
+          "action": "Ajout au registre depuis la liste MENFP 2024-2025, sans vérification d'activité en 2026",
+          "source": "https://www.haitidocs.org/doc/menfp-registre-ecoles-centre-2025?lang=ht"
+        }
+      ]
+    },
+    {
+      "id": "ht-centre-menfp-2025-061202108192",
+      "name": "ECOLE NATIONALE OSWALD DURAND",
+      "category": "education",
+      "department": "Centre",
+      "arrondissement": "Hinche",
+      "commune": "Maïssade",
+      "section": "Narang",
+      "lat": null,
+      "lon": null,
+      "source": "https://www.haitidocs.org/doc/menfp-registre-ecoles-centre-2025?lang=ht",
+      "verification": "existence_documentee_registre_menfp_2024_2025",
+      "reviewStatus": "registre_scolaire_a_actualiser",
+      "institutionCode": "061202108192",
+      "ownershipReference": "public",
+      "referenceYear": "2024-2025",
+      "note": "École inscrite au registre MENFP 2024-2025 ; activité actuelle et localisation précise non vérifiées.",
+      "updatedAt": "2026-11-03",
+      "evidence": "MENFP, commune de Maïssade, section Narang, code 061202108192",
+      "checkedOnlineAt": "2026-11-03",
+      "history": [
+        {
+          "date": "2026-11-03",
+          "action": "Ajout au registre depuis la liste MENFP 2024-2025, sans vérification d'activité en 2026",
+          "source": "https://www.haitidocs.org/doc/menfp-registre-ecoles-centre-2025?lang=ht"
+        }
+      ]
+    },
+    {
+      "id": "ht-centre-menfp-2025-061203109439",
+      "name": "ECOLE NATIONALE AMIRAL KILLICK DE SAVANE MITON",
+      "category": "education",
+      "department": "Centre",
+      "arrondissement": "Hinche",
+      "commune": "Maïssade",
+      "section": "Hatty",
+      "lat": null,
+      "lon": null,
+      "source": "https://www.haitidocs.org/doc/menfp-registre-ecoles-centre-2025?lang=ht",
+      "verification": "existence_documentee_registre_menfp_2024_2025",
+      "reviewStatus": "registre_scolaire_a_actualiser",
+      "institutionCode": "061203109439",
+      "ownershipReference": "public",
+      "referenceYear": "2024-2025",
+      "note": "École inscrite au registre MENFP 2024-2025 ; activité actuelle et localisation précise non vérifiées.",
+      "updatedAt": "2026-11-03",
+      "evidence": "MENFP, commune de Maïssade, section Hatty, code 061203109439",
+      "checkedOnlineAt": "2026-11-03",
+      "history": [
+        {
+          "date": "2026-11-03",
+          "action": "Ajout au registre depuis la liste MENFP 2024-2025, sans vérification d'activité en 2026",
+          "source": "https://www.haitidocs.org/doc/menfp-registre-ecoles-centre-2025?lang=ht"
+        }
+      ]
+    },
+    {
+      "id": "ht-centre-menfp-2025-061203119494",
+      "name": "ECOLE NATIONALE DE LAGOUNE",
+      "category": "education",
+      "department": "Centre",
+      "arrondissement": "Hinche",
+      "commune": "Maïssade",
+      "section": "Hatty",
+      "lat": null,
+      "lon": null,
+      "source": "https://www.haitidocs.org/doc/menfp-registre-ecoles-centre-2025?lang=ht",
+      "verification": "existence_documentee_registre_menfp_2024_2025",
+      "reviewStatus": "registre_scolaire_a_actualiser",
+      "institutionCode": "061203119494",
+      "ownershipReference": "public",
+      "referenceYear": "2024-2025",
+      "note": "École inscrite au registre MENFP 2024-2025 ; activité actuelle et localisation précise non vérifiées.",
+      "updatedAt": "2026-11-03",
+      "evidence": "MENFP, commune de Maïssade, section Hatty, code 061203119494",
+      "checkedOnlineAt": "2026-11-03",
+      "history": [
+        {
+          "date": "2026-11-03",
+          "action": "Ajout au registre depuis la liste MENFP 2024-2025, sans vérification d'activité en 2026",
+          "source": "https://www.haitidocs.org/doc/menfp-registre-ecoles-centre-2025?lang=ht"
+        }
+      ]
+    },
+    {
+      "id": "ht-centre-menfp-2025-061203119297",
+      "name": "ECOLE NATIONALE FOYER DES ENFANTS",
+      "category": "education",
+      "department": "Centre",
+      "arrondissement": "Hinche",
+      "commune": "Maïssade",
+      "section": "Hatty",
+      "lat": null,
+      "lon": null,
+      "source": "https://www.haitidocs.org/doc/menfp-registre-ecoles-centre-2025?lang=ht",
+      "verification": "existence_documentee_registre_menfp_2024_2025",
+      "reviewStatus": "registre_scolaire_a_actualiser",
+      "institutionCode": "061203119297",
+      "ownershipReference": "public",
+      "referenceYear": "2024-2025",
+      "note": "École inscrite au registre MENFP 2024-2025 ; activité actuelle et localisation précise non vérifiées.",
+      "updatedAt": "2026-11-03",
+      "evidence": "MENFP, commune de Maïssade, section Hatty, code 061203119297",
+      "checkedOnlineAt": "2026-11-03",
+      "history": [
+        {
+          "date": "2026-11-03",
+          "action": "Ajout au registre depuis la liste MENFP 2024-2025, sans vérification d'activité en 2026",
+          "source": "https://www.haitidocs.org/doc/menfp-registre-ecoles-centre-2025?lang=ht"
+        }
+      ]
+    },
+    {
+      "id": "ht-centre-menfp-2025-061203112075",
+      "name": "ECOLE NATIONALE LOUIS LAMARTINIERE DE HATTY",
+      "category": "education",
+      "department": "Centre",
+      "arrondissement": "Hinche",
+      "commune": "Maïssade",
+      "section": "Hatty",
+      "lat": null,
+      "lon": null,
+      "source": "https://www.haitidocs.org/doc/menfp-registre-ecoles-centre-2025?lang=ht",
+      "verification": "existence_documentee_registre_menfp_2024_2025",
+      "reviewStatus": "registre_scolaire_a_actualiser",
+      "institutionCode": "061203112075",
+      "ownershipReference": "public",
+      "referenceYear": "2024-2025",
+      "note": "École inscrite au registre MENFP 2024-2025 ; activité actuelle et localisation précise non vérifiées.",
+      "updatedAt": "2026-11-03",
+      "evidence": "MENFP, commune de Maïssade, section Hatty, code 061203112075",
+      "checkedOnlineAt": "2026-11-03",
+      "history": [
+        {
+          "date": "2026-11-03",
+          "action": "Ajout au registre depuis la liste MENFP 2024-2025, sans vérification d'activité en 2026",
+          "source": "https://www.haitidocs.org/doc/menfp-registre-ecoles-centre-2025?lang=ht"
+        }
+      ]
+    },
+    {
+      "id": "ht-centre-menfp-2025-061280118575",
+      "name": "ECOLE NATIONALE DE LA GUABITE",
+      "category": "education",
+      "department": "Centre",
+      "arrondissement": "Hinche",
+      "commune": "Maïssade",
+      "section": "Quartier Louverture",
+      "lat": null,
+      "lon": null,
+      "source": "https://www.haitidocs.org/doc/menfp-registre-ecoles-centre-2025?lang=ht",
+      "verification": "existence_documentee_registre_menfp_2024_2025",
+      "reviewStatus": "registre_scolaire_a_actualiser",
+      "institutionCode": "061280118575",
+      "ownershipReference": "public",
+      "referenceYear": "2024-2025",
+      "note": "École inscrite au registre MENFP 2024-2025 ; activité actuelle et localisation précise non vérifiées.",
+      "updatedAt": "2026-11-03",
+      "evidence": "MENFP, commune de Maïssade, section Quartier Louverture, code 061280118575",
+      "checkedOnlineAt": "2026-11-03",
+      "history": [
+        {
+          "date": "2026-11-03",
+          "action": "Ajout au registre depuis la liste MENFP 2024-2025, sans vérification d'activité en 2026",
+          "source": "https://www.haitidocs.org/doc/menfp-registre-ecoles-centre-2025?lang=ht"
+        }
+      ]
+    },
+    {
+      "id": "ht-centre-menfp-2025-061290116351",
+      "name": "ECOLE NATIONALE JEAN-JACQUES DESSALINES DE MAISSADE",
+      "category": "education",
+      "department": "Centre",
+      "arrondissement": "Hinche",
+      "commune": "Maïssade",
+      "section": "Ville de Maïssade",
+      "lat": null,
+      "lon": null,
+      "source": "https://www.haitidocs.org/doc/menfp-registre-ecoles-centre-2025?lang=ht",
+      "verification": "existence_documentee_registre_menfp_2024_2025",
+      "reviewStatus": "registre_scolaire_a_actualiser",
+      "institutionCode": "061290116351",
+      "ownershipReference": "public",
+      "referenceYear": "2024-2025",
+      "note": "École inscrite au registre MENFP 2024-2025 ; activité actuelle et localisation précise non vérifiées.",
+      "updatedAt": "2026-11-03",
+      "evidence": "MENFP, commune de Maïssade, section Ville de Maïssade, code 061290116351",
+      "checkedOnlineAt": "2026-11-03",
+      "history": [
+        {
+          "date": "2026-11-03",
+          "action": "Ajout au registre depuis la liste MENFP 2024-2025, sans vérification d'activité en 2026",
+          "source": "https://www.haitidocs.org/doc/menfp-registre-ecoles-centre-2025?lang=ht"
+        }
+      ]
+    },
+    {
+      "id": "ht-centre-menfp-2025-061290117308",
+      "name": "LYCEE JOSEPH PIERRE SULLY",
+      "category": "education",
+      "department": "Centre",
+      "arrondissement": "Hinche",
+      "commune": "Maïssade",
+      "section": "Ville de Maïssade",
+      "lat": null,
+      "lon": null,
+      "source": "https://www.haitidocs.org/doc/menfp-registre-ecoles-centre-2025?lang=ht",
+      "verification": "existence_documentee_registre_menfp_2024_2025",
+      "reviewStatus": "registre_scolaire_a_actualiser",
+      "institutionCode": "061290117308",
+      "ownershipReference": "public",
+      "referenceYear": "2024-2025",
+      "note": "École inscrite au registre MENFP 2024-2025 ; activité actuelle et localisation précise non vérifiées.",
+      "updatedAt": "2026-11-03",
+      "evidence": "MENFP, commune de Maïssade, section Ville de Maïssade, code 061290117308",
+      "checkedOnlineAt": "2026-11-03",
+      "history": [
+        {
+          "date": "2026-11-03",
+          "action": "Ajout au registre depuis la liste MENFP 2024-2025, sans vérification d'activité en 2026",
+          "source": "https://www.haitidocs.org/doc/menfp-registre-ecoles-centre-2025?lang=ht"
+        }
+      ]
+    },
+    {
+      "id": "ht-centre-menfp-2025-061301115483",
+      "name": "ECOLE NATIONALE DE BENTO",
+      "category": "education",
+      "department": "Centre",
+      "arrondissement": "Hinche",
+      "commune": "Thomonde",
+      "section": "Cabral",
+      "lat": null,
+      "lon": null,
+      "source": "https://www.haitidocs.org/doc/menfp-registre-ecoles-centre-2025?lang=ht",
+      "verification": "existence_documentee_registre_menfp_2024_2025",
+      "reviewStatus": "registre_scolaire_a_actualiser",
+      "institutionCode": "061301115483",
+      "ownershipReference": "public",
+      "referenceYear": "2024-2025",
+      "note": "École inscrite au registre MENFP 2024-2025 ; activité actuelle et localisation précise non vérifiées.",
+      "updatedAt": "2026-11-03",
+      "evidence": "MENFP, commune de Thomonde, section Cabral, code 061301115483",
+      "checkedOnlineAt": "2026-11-03",
+      "history": [
+        {
+          "date": "2026-11-03",
+          "action": "Ajout au registre depuis la liste MENFP 2024-2025, sans vérification d'activité en 2026",
+          "source": "https://www.haitidocs.org/doc/menfp-registre-ecoles-centre-2025?lang=ht"
+        }
+      ]
+    },
+    {
+      "id": "ht-centre-menfp-2025-061301118758",
+      "name": "ECOLE NATIONALE D'ORESTE",
+      "category": "education",
+      "department": "Centre",
+      "arrondissement": "Hinche",
+      "commune": "Thomonde",
+      "section": "Cabral",
+      "lat": null,
+      "lon": null,
+      "source": "https://www.haitidocs.org/doc/menfp-registre-ecoles-centre-2025?lang=ht",
+      "verification": "existence_documentee_registre_menfp_2024_2025",
+      "reviewStatus": "registre_scolaire_a_actualiser",
+      "institutionCode": "061301118758",
+      "ownershipReference": "public",
+      "referenceYear": "2024-2025",
+      "note": "École inscrite au registre MENFP 2024-2025 ; activité actuelle et localisation précise non vérifiées.",
+      "updatedAt": "2026-11-03",
+      "evidence": "MENFP, commune de Thomonde, section Cabral, code 061301118758",
+      "checkedOnlineAt": "2026-11-03",
+      "history": [
+        {
+          "date": "2026-11-03",
+          "action": "Ajout au registre depuis la liste MENFP 2024-2025, sans vérification d'activité en 2026",
+          "source": "https://www.haitidocs.org/doc/menfp-registre-ecoles-centre-2025?lang=ht"
+        }
+      ]
+    },
+    {
+      "id": "ht-centre-menfp-2025-061301104518",
+      "name": "ECOLE NATIONALE ELSHADDAI",
+      "category": "education",
+      "department": "Centre",
+      "arrondissement": "Hinche",
+      "commune": "Thomonde",
+      "section": "Cabral",
+      "lat": null,
+      "lon": null,
+      "source": "https://www.haitidocs.org/doc/menfp-registre-ecoles-centre-2025?lang=ht",
+      "verification": "existence_documentee_registre_menfp_2024_2025",
+      "reviewStatus": "registre_scolaire_a_actualiser",
+      "institutionCode": "061301104518",
+      "ownershipReference": "public",
+      "referenceYear": "2024-2025",
+      "note": "École inscrite au registre MENFP 2024-2025 ; activité actuelle et localisation précise non vérifiées.",
+      "updatedAt": "2026-11-03",
+      "evidence": "MENFP, commune de Thomonde, section Cabral, code 061301104518",
+      "checkedOnlineAt": "2026-11-03",
+      "history": [
+        {
+          "date": "2026-11-03",
+          "action": "Ajout au registre depuis la liste MENFP 2024-2025, sans vérification d'activité en 2026",
+          "source": "https://www.haitidocs.org/doc/menfp-registre-ecoles-centre-2025?lang=ht"
+        }
+      ]
+    },
+    {
+      "id": "ht-centre-menfp-2025-061301104022",
+      "name": "ECOLE NATIONALE HENRY CHRISTOPHE",
+      "category": "education",
+      "department": "Centre",
+      "arrondissement": "Hinche",
+      "commune": "Thomonde",
+      "section": "Cabral",
+      "lat": null,
+      "lon": null,
+      "source": "https://www.haitidocs.org/doc/menfp-registre-ecoles-centre-2025?lang=ht",
+      "verification": "existence_documentee_registre_menfp_2024_2025",
+      "reviewStatus": "registre_scolaire_a_actualiser",
+      "institutionCode": "061301104022",
+      "ownershipReference": "public",
+      "referenceYear": "2024-2025",
+      "note": "École inscrite au registre MENFP 2024-2025 ; activité actuelle et localisation précise non vérifiées.",
+      "updatedAt": "2026-11-03",
+      "evidence": "MENFP, commune de Thomonde, section Cabral, code 061301104022",
+      "checkedOnlineAt": "2026-11-03",
+      "history": [
+        {
+          "date": "2026-11-03",
+          "action": "Ajout au registre depuis la liste MENFP 2024-2025, sans vérification d'activité en 2026",
+          "source": "https://www.haitidocs.org/doc/menfp-registre-ecoles-centre-2025?lang=ht"
+        }
+      ]
+    },
+    {
+      "id": "ht-centre-menfp-2025-061301117871",
+      "name": "ECOLE NATIONALE ORESTE ZAMOR",
+      "category": "education",
+      "department": "Centre",
+      "arrondissement": "Hinche",
+      "commune": "Thomonde",
+      "section": "Cabral",
+      "lat": null,
+      "lon": null,
+      "source": "https://www.haitidocs.org/doc/menfp-registre-ecoles-centre-2025?lang=ht",
+      "verification": "existence_documentee_registre_menfp_2024_2025",
+      "reviewStatus": "registre_scolaire_a_actualiser",
+      "institutionCode": "061301117871",
+      "ownershipReference": "public",
+      "referenceYear": "2024-2025",
+      "note": "École inscrite au registre MENFP 2024-2025 ; activité actuelle et localisation précise non vérifiées.",
+      "updatedAt": "2026-11-03",
+      "evidence": "MENFP, commune de Thomonde, section Cabral, code 061301117871",
+      "checkedOnlineAt": "2026-11-03",
+      "history": [
+        {
+          "date": "2026-11-03",
+          "action": "Ajout au registre depuis la liste MENFP 2024-2025, sans vérification d'activité en 2026",
+          "source": "https://www.haitidocs.org/doc/menfp-registre-ecoles-centre-2025?lang=ht"
+        }
+      ]
+    },
+    {
+      "id": "ht-centre-menfp-2025-061301106841",
+      "name": "LYCEE NATIONAL DE THOMONDE",
+      "category": "education",
+      "department": "Centre",
+      "arrondissement": "Hinche",
+      "commune": "Thomonde",
+      "section": "Cabral",
+      "lat": null,
+      "lon": null,
+      "source": "https://www.haitidocs.org/doc/menfp-registre-ecoles-centre-2025?lang=ht",
+      "verification": "existence_documentee_registre_menfp_2024_2025",
+      "reviewStatus": "registre_scolaire_a_actualiser",
+      "institutionCode": "061301106841",
+      "ownershipReference": "public",
+      "referenceYear": "2024-2025",
+      "note": "École inscrite au registre MENFP 2024-2025 ; activité actuelle et localisation précise non vérifiées.",
+      "updatedAt": "2026-11-03",
+      "evidence": "MENFP, commune de Thomonde, section Cabral, code 061301106841",
+      "checkedOnlineAt": "2026-11-03",
+      "history": [
+        {
+          "date": "2026-11-03",
+          "action": "Ajout au registre depuis la liste MENFP 2024-2025, sans vérification d'activité en 2026",
+          "source": "https://www.haitidocs.org/doc/menfp-registre-ecoles-centre-2025?lang=ht"
+        }
+      ]
+    },
+    {
+      "id": "ht-centre-menfp-2025-061302113712",
+      "name": "ECOLE NATIONALE BINTOURIBLE",
+      "category": "education",
+      "department": "Centre",
+      "arrondissement": "Hinche",
+      "commune": "Thomonde",
+      "section": "Tierra Muscady",
+      "lat": null,
+      "lon": null,
+      "source": "https://www.haitidocs.org/doc/menfp-registre-ecoles-centre-2025?lang=ht",
+      "verification": "existence_documentee_registre_menfp_2024_2025",
+      "reviewStatus": "registre_scolaire_a_actualiser",
+      "institutionCode": "061302113712",
+      "ownershipReference": "public",
+      "referenceYear": "2024-2025",
+      "note": "École inscrite au registre MENFP 2024-2025 ; activité actuelle et localisation précise non vérifiées.",
+      "updatedAt": "2026-11-03",
+      "evidence": "MENFP, commune de Thomonde, section Tierra Muscady, code 061302113712",
+      "checkedOnlineAt": "2026-11-03",
+      "history": [
+        {
+          "date": "2026-11-03",
+          "action": "Ajout au registre depuis la liste MENFP 2024-2025, sans vérification d'activité en 2026",
+          "source": "https://www.haitidocs.org/doc/menfp-registre-ecoles-centre-2025?lang=ht"
+        }
+      ]
+    },
+    {
+      "id": "ht-centre-menfp-2025-061302119817",
+      "name": "ECOLE NATIONALE DE LOCARET",
+      "category": "education",
+      "department": "Centre",
+      "arrondissement": "Hinche",
+      "commune": "Thomonde",
+      "section": "Tierra Muscady",
+      "lat": null,
+      "lon": null,
+      "source": "https://www.haitidocs.org/doc/menfp-registre-ecoles-centre-2025?lang=ht",
+      "verification": "existence_documentee_registre_menfp_2024_2025",
+      "reviewStatus": "registre_scolaire_a_actualiser",
+      "institutionCode": "061302119817",
+      "ownershipReference": "public",
+      "referenceYear": "2024-2025",
+      "note": "École inscrite au registre MENFP 2024-2025 ; activité actuelle et localisation précise non vérifiées.",
+      "updatedAt": "2026-11-03",
+      "evidence": "MENFP, commune de Thomonde, section Tierra Muscady, code 061302119817",
+      "checkedOnlineAt": "2026-11-03",
+      "history": [
+        {
+          "date": "2026-11-03",
+          "action": "Ajout au registre depuis la liste MENFP 2024-2025, sans vérification d'activité en 2026",
+          "source": "https://www.haitidocs.org/doc/menfp-registre-ecoles-centre-2025?lang=ht"
+        }
+      ]
+    },
+    {
+      "id": "ht-centre-menfp-2025-061302105724",
+      "name": "ECOLE NATIONALE DE TIERRA MUSCADY",
+      "category": "education",
+      "department": "Centre",
+      "arrondissement": "Hinche",
+      "commune": "Thomonde",
+      "section": "Tierra Muscady",
+      "lat": null,
+      "lon": null,
+      "source": "https://www.haitidocs.org/doc/menfp-registre-ecoles-centre-2025?lang=ht",
+      "verification": "existence_documentee_registre_menfp_2024_2025",
+      "reviewStatus": "registre_scolaire_a_actualiser",
+      "institutionCode": "061302105724",
+      "ownershipReference": "public",
+      "referenceYear": "2024-2025",
+      "note": "École inscrite au registre MENFP 2024-2025 ; activité actuelle et localisation précise non vérifiées.",
+      "updatedAt": "2026-11-03",
+      "evidence": "MENFP, commune de Thomonde, section Tierra Muscady, code 061302105724",
+      "checkedOnlineAt": "2026-11-03",
+      "history": [
+        {
+          "date": "2026-11-03",
+          "action": "Ajout au registre depuis la liste MENFP 2024-2025, sans vérification d'activité en 2026",
+          "source": "https://www.haitidocs.org/doc/menfp-registre-ecoles-centre-2025?lang=ht"
+        }
+      ]
+    },
+    {
+      "id": "ht-centre-menfp-2025-061302109141",
+      "name": "ECOLE NATIONALE DE TROIS ROCHES",
+      "category": "education",
+      "department": "Centre",
+      "arrondissement": "Hinche",
+      "commune": "Thomonde",
+      "section": "Tierra Muscady",
+      "lat": null,
+      "lon": null,
+      "source": "https://www.haitidocs.org/doc/menfp-registre-ecoles-centre-2025?lang=ht",
+      "verification": "existence_documentee_registre_menfp_2024_2025",
+      "reviewStatus": "registre_scolaire_a_actualiser",
+      "institutionCode": "061302109141",
+      "ownershipReference": "public",
+      "referenceYear": "2024-2025",
+      "note": "École inscrite au registre MENFP 2024-2025 ; activité actuelle et localisation précise non vérifiées.",
+      "updatedAt": "2026-11-03",
+      "evidence": "MENFP, commune de Thomonde, section Tierra Muscady, code 061302109141",
+      "checkedOnlineAt": "2026-11-03",
+      "history": [
+        {
+          "date": "2026-11-03",
+          "action": "Ajout au registre depuis la liste MENFP 2024-2025, sans vérification d'activité en 2026",
+          "source": "https://www.haitidocs.org/doc/menfp-registre-ecoles-centre-2025?lang=ht"
+        }
+      ]
+    },
+    {
+      "id": "ht-centre-menfp-2025-061302108861",
+      "name": "ECOLE NATIONALE EBEN EZER DE BENTOURIBLE",
+      "category": "education",
+      "department": "Centre",
+      "arrondissement": "Hinche",
+      "commune": "Thomonde",
+      "section": "Tierra Muscady",
+      "lat": null,
+      "lon": null,
+      "source": "https://www.haitidocs.org/doc/menfp-registre-ecoles-centre-2025?lang=ht",
+      "verification": "existence_documentee_registre_menfp_2024_2025",
+      "reviewStatus": "registre_scolaire_a_actualiser",
+      "institutionCode": "061302108861",
+      "ownershipReference": "public",
+      "referenceYear": "2024-2025",
+      "note": "École inscrite au registre MENFP 2024-2025 ; activité actuelle et localisation précise non vérifiées.",
+      "updatedAt": "2026-11-03",
+      "evidence": "MENFP, commune de Thomonde, section Tierra Muscady, code 061302108861",
+      "checkedOnlineAt": "2026-11-03",
+      "history": [
+        {
+          "date": "2026-11-03",
+          "action": "Ajout au registre depuis la liste MENFP 2024-2025, sans vérification d'activité en 2026",
+          "source": "https://www.haitidocs.org/doc/menfp-registre-ecoles-centre-2025?lang=ht"
+        }
+      ]
+    },
+    {
+      "id": "ht-centre-menfp-2025-061303104524",
+      "name": "ECOLE NATIONALE BOUCANTIS",
+      "category": "education",
+      "department": "Centre",
+      "arrondissement": "Hinche",
+      "commune": "Thomonde",
+      "section": "Baille Tourrible",
+      "lat": null,
+      "lon": null,
+      "source": "https://www.haitidocs.org/doc/menfp-registre-ecoles-centre-2025?lang=ht",
+      "verification": "existence_documentee_registre_menfp_2024_2025",
+      "reviewStatus": "registre_scolaire_a_actualiser",
+      "institutionCode": "061303104524",
+      "ownershipReference": "public",
+      "referenceYear": "2024-2025",
+      "note": "École inscrite au registre MENFP 2024-2025 ; activité actuelle et localisation précise non vérifiées.",
+      "updatedAt": "2026-11-03",
+      "evidence": "MENFP, commune de Thomonde, section Baille Tourrible, code 061303104524",
+      "checkedOnlineAt": "2026-11-03",
+      "history": [
+        {
+          "date": "2026-11-03",
+          "action": "Ajout au registre depuis la liste MENFP 2024-2025, sans vérification d'activité en 2026",
+          "source": "https://www.haitidocs.org/doc/menfp-registre-ecoles-centre-2025?lang=ht"
+        }
+      ]
+    },
+    {
+      "id": "ht-centre-menfp-2025-061303116473",
+      "name": "ECOLE NATIONALE DE BAILLETOURIBLE",
+      "category": "education",
+      "department": "Centre",
+      "arrondissement": "Hinche",
+      "commune": "Thomonde",
+      "section": "Baille Tourrible",
+      "lat": null,
+      "lon": null,
+      "source": "https://www.haitidocs.org/doc/menfp-registre-ecoles-centre-2025?lang=ht",
+      "verification": "existence_documentee_registre_menfp_2024_2025",
+      "reviewStatus": "registre_scolaire_a_actualiser",
+      "institutionCode": "061303116473",
+      "ownershipReference": "public",
+      "referenceYear": "2024-2025",
+      "note": "École inscrite au registre MENFP 2024-2025 ; activité actuelle et localisation précise non vérifiées.",
+      "updatedAt": "2026-11-03",
+      "evidence": "MENFP, commune de Thomonde, section Baille Tourrible, code 061303116473",
+      "checkedOnlineAt": "2026-11-03",
+      "history": [
+        {
+          "date": "2026-11-03",
+          "action": "Ajout au registre depuis la liste MENFP 2024-2025, sans vérification d'activité en 2026",
+          "source": "https://www.haitidocs.org/doc/menfp-registre-ecoles-centre-2025?lang=ht"
+        }
+      ]
+    },
+    {
+      "id": "ht-centre-menfp-2025-061304110370",
+      "name": "ECOLE NATIONALE DE VIEILLE HANTE",
+      "category": "education",
+      "department": "Centre",
+      "arrondissement": "Hinche",
+      "commune": "Thomonde",
+      "section": "La Hoye",
+      "lat": null,
+      "lon": null,
+      "source": "https://www.haitidocs.org/doc/menfp-registre-ecoles-centre-2025?lang=ht",
+      "verification": "existence_documentee_registre_menfp_2024_2025",
+      "reviewStatus": "registre_scolaire_a_actualiser",
+      "institutionCode": "061304110370",
+      "ownershipReference": "public",
+      "referenceYear": "2024-2025",
+      "note": "École inscrite au registre MENFP 2024-2025 ; activité actuelle et localisation précise non vérifiées.",
+      "updatedAt": "2026-11-03",
+      "evidence": "MENFP, commune de Thomonde, section La Hoye, code 061304110370",
+      "checkedOnlineAt": "2026-11-03",
+      "history": [
+        {
+          "date": "2026-11-03",
+          "action": "Ajout au registre depuis la liste MENFP 2024-2025, sans vérification d'activité en 2026",
+          "source": "https://www.haitidocs.org/doc/menfp-registre-ecoles-centre-2025?lang=ht"
+        }
+      ]
+    },
+    {
+      "id": "ht-centre-menfp-2025-061304105384",
+      "name": "ECOLE NATIONALE MIXTE DE CASSE",
+      "category": "education",
+      "department": "Centre",
+      "arrondissement": "Hinche",
+      "commune": "Thomonde",
+      "section": "La Hoye",
+      "lat": null,
+      "lon": null,
+      "source": "https://www.haitidocs.org/doc/menfp-registre-ecoles-centre-2025?lang=ht",
+      "verification": "existence_documentee_registre_menfp_2024_2025",
+      "reviewStatus": "registre_scolaire_a_actualiser",
+      "institutionCode": "061304105384",
+      "ownershipReference": "public",
+      "referenceYear": "2024-2025",
+      "note": "École inscrite au registre MENFP 2024-2025 ; activité actuelle et localisation précise non vérifiées.",
+      "updatedAt": "2026-11-03",
+      "evidence": "MENFP, commune de Thomonde, section La Hoye, code 061304105384",
+      "checkedOnlineAt": "2026-11-03",
+      "history": [
+        {
+          "date": "2026-11-03",
+          "action": "Ajout au registre depuis la liste MENFP 2024-2025, sans vérification d'activité en 2026",
+          "source": "https://www.haitidocs.org/doc/menfp-registre-ecoles-centre-2025?lang=ht"
+        }
+      ]
     }
   ]
 }
