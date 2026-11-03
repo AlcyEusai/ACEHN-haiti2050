@@ -1401,6 +1401,790 @@
       ],
       "evidence": "Nom et code d'identification transcrits du registre scolaire département du Centre, section Hinche / Juanaria / secteur public.",
       "checkedOnlineAt": "2026-11-03"
+    },
+    {
+      "id": "ht-centre-menfp-2025-062101119213",
+      "name": "ECOLE NATIONALE DE GALATA",
+      "category": "education",
+      "department": "Centre",
+      "arrondissement": "Mirebalais",
+      "commune": "Mirebalais",
+      "section": "Gascogne",
+      "lat": null,
+      "lon": null,
+      "source": "https://www.haitidocs.org/doc/menfp-registre-ecoles-centre-2025?lang=ht",
+      "verification": "existence_documentee_registre_menfp_2024_2025",
+      "reviewStatus": "registre_scolaire_a_actualiser",
+      "institutionCode": "062101119213",
+      "ownershipReference": "public",
+      "referenceYear": "2024-2025",
+      "note": "Répertorié par le MENFP pour l'année scolaire 2024-2025. Fonctionnement en novembre 2026 et géolocalisation non vérifiés.",
+      "updatedAt": "2026-11-03",
+      "history": [
+        {
+          "date": "2026-11-03",
+          "action": "Transcription nominative du registre MENFP 2024-2025",
+          "source": "https://www.haitidocs.org/doc/menfp-registre-ecoles-centre-2025?lang=ht"
+        }
+      ],
+      "evidence": "Registre MENFP, commune Mirebalais, secteur public, section Gascogne, code 062101119213.",
+      "checkedOnlineAt": "2026-11-03"
+    },
+    {
+      "id": "ht-centre-menfp-2025-062101115667",
+      "name": "ECOLE NATIONALE MARCHE CARNARD",
+      "category": "education",
+      "department": "Centre",
+      "arrondissement": "Mirebalais",
+      "commune": "Mirebalais",
+      "section": "Gascogne",
+      "lat": null,
+      "lon": null,
+      "source": "https://www.haitidocs.org/doc/menfp-registre-ecoles-centre-2025?lang=ht",
+      "verification": "existence_documentee_registre_menfp_2024_2025",
+      "reviewStatus": "registre_scolaire_a_actualiser",
+      "institutionCode": "062101115667",
+      "ownershipReference": "public",
+      "referenceYear": "2024-2025",
+      "note": "Répertorié par le MENFP pour l'année scolaire 2024-2025. Fonctionnement en novembre 2026 et géolocalisation non vérifiés.",
+      "updatedAt": "2026-11-03",
+      "history": [
+        {
+          "date": "2026-11-03",
+          "action": "Transcription nominative du registre MENFP 2024-2025",
+          "source": "https://www.haitidocs.org/doc/menfp-registre-ecoles-centre-2025?lang=ht"
+        }
+      ],
+      "evidence": "Registre MENFP, commune Mirebalais, secteur public, section Gascogne, code 062101115667.",
+      "checkedOnlineAt": "2026-11-03"
+    },
+    {
+      "id": "ht-centre-menfp-2025-062102109221",
+      "name": "ECOLE NATIONALE BAS SARRAZIN",
+      "category": "education",
+      "department": "Centre",
+      "arrondissement": "Mirebalais",
+      "commune": "Mirebalais",
+      "section": "Sarazin",
+      "lat": null,
+      "lon": null,
+      "source": "https://www.haitidocs.org/doc/menfp-registre-ecoles-centre-2025?lang=ht",
+      "verification": "existence_documentee_registre_menfp_2024_2025",
+      "reviewStatus": "registre_scolaire_a_actualiser",
+      "institutionCode": "062102109221",
+      "ownershipReference": "public",
+      "referenceYear": "2024-2025",
+      "note": "Répertorié par le MENFP pour l'année scolaire 2024-2025. Fonctionnement en novembre 2026 et géolocalisation non vérifiés.",
+      "updatedAt": "2026-11-03",
+      "history": [
+        {
+          "date": "2026-11-03",
+          "action": "Transcription nominative du registre MENFP 2024-2025",
+          "source": "https://www.haitidocs.org/doc/menfp-registre-ecoles-centre-2025?lang=ht"
+        }
+      ],
+      "evidence": "Registre MENFP, commune Mirebalais, secteur public, section Sarazin, code 062102109221.",
+      "checkedOnlineAt": "2026-11-03"
+    },
+    {
+      "id": "ht-centre-menfp-2025-062102119800",
+      "name": "ECOLE NATIONALE DE COUPE GORGE",
+      "category": "education",
+      "department": "Centre",
+      "arrondissement": "Mirebalais",
+      "commune": "Mirebalais",
+      "section": "Sarazin",
+      "lat": null,
+      "lon": null,
+      "source": "https://www.haitidocs.org/doc/menfp-registre-ecoles-centre-2025?lang=ht",
+      "verification": "existence_documentee_registre_menfp_2024_2025",
+      "reviewStatus": "registre_scolaire_a_actualiser",
+      "institutionCode": "062102119800",
+      "ownershipReference": "public",
+      "referenceYear": "2024-2025",
+      "note": "Répertorié par le MENFP pour l'année scolaire 2024-2025. Fonctionnement en novembre 2026 et géolocalisation non vérifiés.",
+      "updatedAt": "2026-11-03",
+      "history": [
+        {
+          "date": "2026-11-03",
+          "action": "Transcription nominative du registre MENFP 2024-2025",
+          "source": "https://www.haitidocs.org/doc/menfp-registre-ecoles-centre-2025?lang=ht"
+        }
+      ],
+      "evidence": "Registre MENFP, commune Mirebalais, secteur public, section Sarazin, code 062102119800.",
+      "checkedOnlineAt": "2026-11-03"
+    },
+    {
+      "id": "ht-centre-menfp-2025-062102117287",
+      "name": "ECOLE NATIONALE DE LIASSE",
+      "category": "education",
+      "department": "Centre",
+      "arrondissement": "Mirebalais",
+      "commune": "Mirebalais",
+      "section": "Sarazin",
+      "lat": null,
+      "lon": null,
+      "source": "https://www.haitidocs.org/doc/menfp-registre-ecoles-centre-2025?lang=ht",
+      "verification": "existence_documentee_registre_menfp_2024_2025",
+      "reviewStatus": "registre_scolaire_a_actualiser",
+      "institutionCode": "062102117287",
+      "ownershipReference": "public",
+      "referenceYear": "2024-2025",
+      "note": "Répertorié par le MENFP pour l'année scolaire 2024-2025. Fonctionnement en novembre 2026 et géolocalisation non vérifiés.",
+      "updatedAt": "2026-11-03",
+      "history": [
+        {
+          "date": "2026-11-03",
+          "action": "Transcription nominative du registre MENFP 2024-2025",
+          "source": "https://www.haitidocs.org/doc/menfp-registre-ecoles-centre-2025?lang=ht"
+        }
+      ],
+      "evidence": "Registre MENFP, commune Mirebalais, secteur public, section Sarazin, code 062102117287.",
+      "checkedOnlineAt": "2026-11-03"
+    },
+    {
+      "id": "ht-centre-menfp-2025-062102109916",
+      "name": "ECOLE NATIONALE JACQUES PREMIER DE SARAZIN",
+      "category": "education",
+      "department": "Centre",
+      "arrondissement": "Mirebalais",
+      "commune": "Mirebalais",
+      "section": "Sarazin",
+      "lat": null,
+      "lon": null,
+      "source": "https://www.haitidocs.org/doc/menfp-registre-ecoles-centre-2025?lang=ht",
+      "verification": "existence_documentee_registre_menfp_2024_2025",
+      "reviewStatus": "registre_scolaire_a_actualiser",
+      "institutionCode": "062102109916",
+      "ownershipReference": "public",
+      "referenceYear": "2024-2025",
+      "note": "Répertorié par le MENFP pour l'année scolaire 2024-2025. Fonctionnement en novembre 2026 et géolocalisation non vérifiés.",
+      "updatedAt": "2026-11-03",
+      "history": [
+        {
+          "date": "2026-11-03",
+          "action": "Transcription nominative du registre MENFP 2024-2025",
+          "source": "https://www.haitidocs.org/doc/menfp-registre-ecoles-centre-2025?lang=ht"
+        }
+      ],
+      "evidence": "Registre MENFP, commune Mirebalais, secteur public, section Sarazin, code 062102109916.",
+      "checkedOnlineAt": "2026-11-03"
+    },
+    {
+      "id": "ht-centre-menfp-2025-062104110471",
+      "name": "ECOLE NATIONALE CRETE BRULEE",
+      "category": "education",
+      "department": "Centre",
+      "arrondissement": "Mirebalais",
+      "commune": "Mirebalais",
+      "section": "Crête Brûlée",
+      "lat": null,
+      "lon": null,
+      "source": "https://www.haitidocs.org/doc/menfp-registre-ecoles-centre-2025?lang=ht",
+      "verification": "existence_documentee_registre_menfp_2024_2025",
+      "reviewStatus": "registre_scolaire_a_actualiser",
+      "institutionCode": "062104110471",
+      "ownershipReference": "public",
+      "referenceYear": "2024-2025",
+      "note": "Répertorié par le MENFP pour l'année scolaire 2024-2025. Fonctionnement en novembre 2026 et géolocalisation non vérifiés.",
+      "updatedAt": "2026-11-03",
+      "history": [
+        {
+          "date": "2026-11-03",
+          "action": "Transcription nominative du registre MENFP 2024-2025",
+          "source": "https://www.haitidocs.org/doc/menfp-registre-ecoles-centre-2025?lang=ht"
+        }
+      ],
+      "evidence": "Registre MENFP, commune Mirebalais, secteur public, section Crête Brûlée, code 062104110471.",
+      "checkedOnlineAt": "2026-11-03"
+    },
+    {
+      "id": "ht-centre-menfp-2025-062104115528",
+      "name": "ECOLE NATIONALE DE DEBUTE",
+      "category": "education",
+      "department": "Centre",
+      "arrondissement": "Mirebalais",
+      "commune": "Mirebalais",
+      "section": "Crête Brûlée",
+      "lat": null,
+      "lon": null,
+      "source": "https://www.haitidocs.org/doc/menfp-registre-ecoles-centre-2025?lang=ht",
+      "verification": "existence_documentee_registre_menfp_2024_2025",
+      "reviewStatus": "registre_scolaire_a_actualiser",
+      "institutionCode": "062104115528",
+      "ownershipReference": "public",
+      "referenceYear": "2024-2025",
+      "note": "Répertorié par le MENFP pour l'année scolaire 2024-2025. Fonctionnement en novembre 2026 et géolocalisation non vérifiés.",
+      "updatedAt": "2026-11-03",
+      "history": [
+        {
+          "date": "2026-11-03",
+          "action": "Transcription nominative du registre MENFP 2024-2025",
+          "source": "https://www.haitidocs.org/doc/menfp-registre-ecoles-centre-2025?lang=ht"
+        }
+      ],
+      "evidence": "Registre MENFP, commune Mirebalais, secteur public, section Crête Brûlée, code 062104115528.",
+      "checkedOnlineAt": "2026-11-03"
+    },
+    {
+      "id": "ht-centre-menfp-2025-062104109012",
+      "name": "ECOLE NATIONALE DE GIMBAL",
+      "category": "education",
+      "department": "Centre",
+      "arrondissement": "Mirebalais",
+      "commune": "Mirebalais",
+      "section": "Crête Brûlée",
+      "lat": null,
+      "lon": null,
+      "source": "https://www.haitidocs.org/doc/menfp-registre-ecoles-centre-2025?lang=ht",
+      "verification": "existence_documentee_registre_menfp_2024_2025",
+      "reviewStatus": "registre_scolaire_a_actualiser",
+      "institutionCode": "062104109012",
+      "ownershipReference": "public",
+      "referenceYear": "2024-2025",
+      "note": "Répertorié par le MENFP pour l'année scolaire 2024-2025. Fonctionnement en novembre 2026 et géolocalisation non vérifiés.",
+      "updatedAt": "2026-11-03",
+      "history": [
+        {
+          "date": "2026-11-03",
+          "action": "Transcription nominative du registre MENFP 2024-2025",
+          "source": "https://www.haitidocs.org/doc/menfp-registre-ecoles-centre-2025?lang=ht"
+        }
+      ],
+      "evidence": "Registre MENFP, commune Mirebalais, secteur public, section Crête Brûlée, code 062104109012.",
+      "checkedOnlineAt": "2026-11-03"
+    },
+    {
+      "id": "ht-centre-menfp-2025-062104115503",
+      "name": "ECOLE NATIONALE FATEM DE NICOLAS",
+      "category": "education",
+      "department": "Centre",
+      "arrondissement": "Mirebalais",
+      "commune": "Mirebalais",
+      "section": "Crête Brûlée",
+      "lat": null,
+      "lon": null,
+      "source": "https://www.haitidocs.org/doc/menfp-registre-ecoles-centre-2025?lang=ht",
+      "verification": "existence_documentee_registre_menfp_2024_2025",
+      "reviewStatus": "registre_scolaire_a_actualiser",
+      "institutionCode": "062104115503",
+      "ownershipReference": "public",
+      "referenceYear": "2024-2025",
+      "note": "Répertorié par le MENFP pour l'année scolaire 2024-2025. Fonctionnement en novembre 2026 et géolocalisation non vérifiés.",
+      "updatedAt": "2026-11-03",
+      "history": [
+        {
+          "date": "2026-11-03",
+          "action": "Transcription nominative du registre MENFP 2024-2025",
+          "source": "https://www.haitidocs.org/doc/menfp-registre-ecoles-centre-2025?lang=ht"
+        }
+      ],
+      "evidence": "Registre MENFP, commune Mirebalais, secteur public, section Crête Brûlée, code 062104115503.",
+      "checkedOnlineAt": "2026-11-03"
+    },
+    {
+      "id": "ht-centre-menfp-2025-062190116445",
+      "name": "ECOLE FONDAMENTALE D'APPLICATION JEAN PHILIPPE DAUT DE MIREBALAIS",
+      "category": "education",
+      "department": "Centre",
+      "arrondissement": "Mirebalais",
+      "commune": "Mirebalais",
+      "section": "Ville de Mirebalais",
+      "lat": null,
+      "lon": null,
+      "source": "https://www.haitidocs.org/doc/menfp-registre-ecoles-centre-2025?lang=ht",
+      "verification": "existence_documentee_registre_menfp_2024_2025",
+      "reviewStatus": "registre_scolaire_a_actualiser",
+      "institutionCode": "062190116445",
+      "ownershipReference": "public",
+      "referenceYear": "2024-2025",
+      "note": "Répertorié par le MENFP pour l'année scolaire 2024-2025. Fonctionnement en novembre 2026 et géolocalisation non vérifiés.",
+      "updatedAt": "2026-11-03",
+      "history": [
+        {
+          "date": "2026-11-03",
+          "action": "Transcription nominative du registre MENFP 2024-2025",
+          "source": "https://www.haitidocs.org/doc/menfp-registre-ecoles-centre-2025?lang=ht"
+        }
+      ],
+      "evidence": "Registre MENFP, commune Mirebalais, secteur public, section Ville de Mirebalais, code 062190116445.",
+      "checkedOnlineAt": "2026-11-03"
+    },
+    {
+      "id": "ht-centre-menfp-2025-062190117899",
+      "name": "ECOLE NATIONALE DE YAHOO",
+      "category": "education",
+      "department": "Centre",
+      "arrondissement": "Mirebalais",
+      "commune": "Mirebalais",
+      "section": "Ville de Mirebalais",
+      "lat": null,
+      "lon": null,
+      "source": "https://www.haitidocs.org/doc/menfp-registre-ecoles-centre-2025?lang=ht",
+      "verification": "existence_documentee_registre_menfp_2024_2025",
+      "reviewStatus": "registre_scolaire_a_actualiser",
+      "institutionCode": "062190117899",
+      "ownershipReference": "public",
+      "referenceYear": "2024-2025",
+      "note": "Répertorié par le MENFP pour l'année scolaire 2024-2025. Fonctionnement en novembre 2026 et géolocalisation non vérifiés.",
+      "updatedAt": "2026-11-03",
+      "history": [
+        {
+          "date": "2026-11-03",
+          "action": "Transcription nominative du registre MENFP 2024-2025",
+          "source": "https://www.haitidocs.org/doc/menfp-registre-ecoles-centre-2025?lang=ht"
+        }
+      ],
+      "evidence": "Registre MENFP, commune Mirebalais, secteur public, section Ville de Mirebalais, code 062190117899.",
+      "checkedOnlineAt": "2026-11-03"
+    },
+    {
+      "id": "ht-centre-menfp-2025-062190112298",
+      "name": "ECOLE NATIONALE VILLAGE ESPERANCE",
+      "category": "education",
+      "department": "Centre",
+      "arrondissement": "Mirebalais",
+      "commune": "Mirebalais",
+      "section": "Ville de Mirebalais",
+      "lat": null,
+      "lon": null,
+      "source": "https://www.haitidocs.org/doc/menfp-registre-ecoles-centre-2025?lang=ht",
+      "verification": "existence_documentee_registre_menfp_2024_2025",
+      "reviewStatus": "registre_scolaire_a_actualiser",
+      "institutionCode": "062190112298",
+      "ownershipReference": "public",
+      "referenceYear": "2024-2025",
+      "note": "Répertorié par le MENFP pour l'année scolaire 2024-2025. Fonctionnement en novembre 2026 et géolocalisation non vérifiés.",
+      "updatedAt": "2026-11-03",
+      "history": [
+        {
+          "date": "2026-11-03",
+          "action": "Transcription nominative du registre MENFP 2024-2025",
+          "source": "https://www.haitidocs.org/doc/menfp-registre-ecoles-centre-2025?lang=ht"
+        }
+      ],
+      "evidence": "Registre MENFP, commune Mirebalais, secteur public, section Ville de Mirebalais, code 062190112298.",
+      "checkedOnlineAt": "2026-11-03"
+    },
+    {
+      "id": "ht-centre-menfp-2025-062190118926",
+      "name": "LYCEE NATIONAL DE MIREBALAIS",
+      "category": "education",
+      "department": "Centre",
+      "arrondissement": "Mirebalais",
+      "commune": "Mirebalais",
+      "section": "Ville de Mirebalais",
+      "lat": null,
+      "lon": null,
+      "source": "https://www.haitidocs.org/doc/menfp-registre-ecoles-centre-2025?lang=ht",
+      "verification": "existence_documentee_registre_menfp_2024_2025",
+      "reviewStatus": "registre_scolaire_a_actualiser",
+      "institutionCode": "062190118926",
+      "ownershipReference": "public",
+      "referenceYear": "2024-2025",
+      "note": "Répertorié par le MENFP pour l'année scolaire 2024-2025. Fonctionnement en novembre 2026 et géolocalisation non vérifiés.",
+      "updatedAt": "2026-11-03",
+      "history": [
+        {
+          "date": "2026-11-03",
+          "action": "Transcription nominative du registre MENFP 2024-2025",
+          "source": "https://www.haitidocs.org/doc/menfp-registre-ecoles-centre-2025?lang=ht"
+        }
+      ],
+      "evidence": "Registre MENFP, commune Mirebalais, secteur public, section Ville de Mirebalais, code 062190118926.",
+      "checkedOnlineAt": "2026-11-03"
+    },
+    {
+      "id": "ht-centre-menfp-2025-062201119825",
+      "name": "ECOLE NATIONALE DE GRANDE SAVANE",
+      "category": "education",
+      "department": "Centre",
+      "arrondissement": "Mirebalais",
+      "commune": "Saut-d'Eau",
+      "section": "Canot",
+      "lat": null,
+      "lon": null,
+      "source": "https://www.haitidocs.org/doc/menfp-registre-ecoles-centre-2025?lang=ht",
+      "verification": "existence_documentee_registre_menfp_2024_2025",
+      "reviewStatus": "registre_scolaire_a_actualiser",
+      "institutionCode": "062201119825",
+      "ownershipReference": "public",
+      "referenceYear": "2024-2025",
+      "note": "Répertorié par le MENFP pour l'année scolaire 2024-2025. Fonctionnement en novembre 2026 et géolocalisation non vérifiés.",
+      "updatedAt": "2026-11-03",
+      "history": [
+        {
+          "date": "2026-11-03",
+          "action": "Transcription nominative du registre MENFP 2024-2025",
+          "source": "https://www.haitidocs.org/doc/menfp-registre-ecoles-centre-2025?lang=ht"
+        }
+      ],
+      "evidence": "Registre MENFP, commune Saut-d'Eau, secteur public, section Canot, code 062201119825.",
+      "checkedOnlineAt": "2026-11-03"
+    },
+    {
+      "id": "ht-centre-menfp-2025-062201118781",
+      "name": "ECOLE NATIONALE DE PERNIER",
+      "category": "education",
+      "department": "Centre",
+      "arrondissement": "Mirebalais",
+      "commune": "Saut-d'Eau",
+      "section": "Canot",
+      "lat": null,
+      "lon": null,
+      "source": "https://www.haitidocs.org/doc/menfp-registre-ecoles-centre-2025?lang=ht",
+      "verification": "existence_documentee_registre_menfp_2024_2025",
+      "reviewStatus": "registre_scolaire_a_actualiser",
+      "institutionCode": "062201118781",
+      "ownershipReference": "public",
+      "referenceYear": "2024-2025",
+      "note": "Répertorié par le MENFP pour l'année scolaire 2024-2025. Fonctionnement en novembre 2026 et géolocalisation non vérifiés.",
+      "updatedAt": "2026-11-03",
+      "history": [
+        {
+          "date": "2026-11-03",
+          "action": "Transcription nominative du registre MENFP 2024-2025",
+          "source": "https://www.haitidocs.org/doc/menfp-registre-ecoles-centre-2025?lang=ht"
+        }
+      ],
+      "evidence": "Registre MENFP, commune Saut-d'Eau, secteur public, section Canot, code 062201118781.",
+      "checkedOnlineAt": "2026-11-03"
+    },
+    {
+      "id": "ht-centre-menfp-2025-062201107943",
+      "name": "ECOLE NATIONALE DE RIVIERE CANOT",
+      "category": "education",
+      "department": "Centre",
+      "arrondissement": "Mirebalais",
+      "commune": "Saut-d'Eau",
+      "section": "Canot",
+      "lat": null,
+      "lon": null,
+      "source": "https://www.haitidocs.org/doc/menfp-registre-ecoles-centre-2025?lang=ht",
+      "verification": "existence_documentee_registre_menfp_2024_2025",
+      "reviewStatus": "registre_scolaire_a_actualiser",
+      "institutionCode": "062201107943",
+      "ownershipReference": "public",
+      "referenceYear": "2024-2025",
+      "note": "Répertorié par le MENFP pour l'année scolaire 2024-2025. Fonctionnement en novembre 2026 et géolocalisation non vérifiés.",
+      "updatedAt": "2026-11-03",
+      "history": [
+        {
+          "date": "2026-11-03",
+          "action": "Transcription nominative du registre MENFP 2024-2025",
+          "source": "https://www.haitidocs.org/doc/menfp-registre-ecoles-centre-2025?lang=ht"
+        }
+      ],
+      "evidence": "Registre MENFP, commune Saut-d'Eau, secteur public, section Canot, code 062201107943.",
+      "checkedOnlineAt": "2026-11-03"
+    },
+    {
+      "id": "ht-centre-menfp-2025-062202116146",
+      "name": "ECOLE NATIONALE DE HAUT SAUT DEAU",
+      "category": "education",
+      "department": "Centre",
+      "arrondissement": "Mirebalais",
+      "commune": "Saut-d'Eau",
+      "section": "La Selle",
+      "lat": null,
+      "lon": null,
+      "source": "https://www.haitidocs.org/doc/menfp-registre-ecoles-centre-2025?lang=ht",
+      "verification": "existence_documentee_registre_menfp_2024_2025",
+      "reviewStatus": "registre_scolaire_a_actualiser",
+      "institutionCode": "062202116146",
+      "ownershipReference": "public",
+      "referenceYear": "2024-2025",
+      "note": "Répertorié par le MENFP pour l'année scolaire 2024-2025. Fonctionnement en novembre 2026 et géolocalisation non vérifiés.",
+      "updatedAt": "2026-11-03",
+      "history": [
+        {
+          "date": "2026-11-03",
+          "action": "Transcription nominative du registre MENFP 2024-2025",
+          "source": "https://www.haitidocs.org/doc/menfp-registre-ecoles-centre-2025?lang=ht"
+        }
+      ],
+      "evidence": "Registre MENFP, commune Saut-d'Eau, secteur public, section La Selle, code 062202116146.",
+      "checkedOnlineAt": "2026-11-03"
+    },
+    {
+      "id": "ht-centre-menfp-2025-062202115524",
+      "name": "ECOLE NATIONALE DE SAUT D'EAU",
+      "category": "education",
+      "department": "Centre",
+      "arrondissement": "Mirebalais",
+      "commune": "Saut-d'Eau",
+      "section": "La Selle",
+      "lat": null,
+      "lon": null,
+      "source": "https://www.haitidocs.org/doc/menfp-registre-ecoles-centre-2025?lang=ht",
+      "verification": "existence_documentee_registre_menfp_2024_2025",
+      "reviewStatus": "registre_scolaire_a_actualiser",
+      "institutionCode": "062202115524",
+      "ownershipReference": "public",
+      "referenceYear": "2024-2025",
+      "note": "Répertorié par le MENFP pour l'année scolaire 2024-2025. Fonctionnement en novembre 2026 et géolocalisation non vérifiés.",
+      "updatedAt": "2026-11-03",
+      "history": [
+        {
+          "date": "2026-11-03",
+          "action": "Transcription nominative du registre MENFP 2024-2025",
+          "source": "https://www.haitidocs.org/doc/menfp-registre-ecoles-centre-2025?lang=ht"
+        }
+      ],
+      "evidence": "Registre MENFP, commune Saut-d'Eau, secteur public, section La Selle, code 062202115524.",
+      "checkedOnlineAt": "2026-11-03"
+    },
+    {
+      "id": "ht-centre-menfp-2025-062202119826",
+      "name": "ECOLE NATIONALE DE VIEUX CAYES",
+      "category": "education",
+      "department": "Centre",
+      "arrondissement": "Mirebalais",
+      "commune": "Saut-d'Eau",
+      "section": "La Selle",
+      "lat": null,
+      "lon": null,
+      "source": "https://www.haitidocs.org/doc/menfp-registre-ecoles-centre-2025?lang=ht",
+      "verification": "existence_documentee_registre_menfp_2024_2025",
+      "reviewStatus": "registre_scolaire_a_actualiser",
+      "institutionCode": "062202119826",
+      "ownershipReference": "public",
+      "referenceYear": "2024-2025",
+      "note": "Répertorié par le MENFP pour l'année scolaire 2024-2025. Fonctionnement en novembre 2026 et géolocalisation non vérifiés.",
+      "updatedAt": "2026-11-03",
+      "history": [
+        {
+          "date": "2026-11-03",
+          "action": "Transcription nominative du registre MENFP 2024-2025",
+          "source": "https://www.haitidocs.org/doc/menfp-registre-ecoles-centre-2025?lang=ht"
+        }
+      ],
+      "evidence": "Registre MENFP, commune Saut-d'Eau, secteur public, section La Selle, code 062202119826.",
+      "checkedOnlineAt": "2026-11-03"
+    },
+    {
+      "id": "ht-centre-menfp-2025-062203116870",
+      "name": "ECOLE NATIONALE DE LEQUETE",
+      "category": "education",
+      "department": "Centre",
+      "arrondissement": "Mirebalais",
+      "commune": "Saut-d'Eau",
+      "section": "Coupe Mardi-Gras",
+      "lat": null,
+      "lon": null,
+      "source": "https://www.haitidocs.org/doc/menfp-registre-ecoles-centre-2025?lang=ht",
+      "verification": "existence_documentee_registre_menfp_2024_2025",
+      "reviewStatus": "registre_scolaire_a_actualiser",
+      "institutionCode": "062203116870",
+      "ownershipReference": "public",
+      "referenceYear": "2024-2025",
+      "note": "Répertorié par le MENFP pour l'année scolaire 2024-2025. Fonctionnement en novembre 2026 et géolocalisation non vérifiés.",
+      "updatedAt": "2026-11-03",
+      "history": [
+        {
+          "date": "2026-11-03",
+          "action": "Transcription nominative du registre MENFP 2024-2025",
+          "source": "https://www.haitidocs.org/doc/menfp-registre-ecoles-centre-2025?lang=ht"
+        }
+      ],
+      "evidence": "Registre MENFP, commune Saut-d'Eau, secteur public, section Coupe Mardi-Gras, code 062203116870.",
+      "checkedOnlineAt": "2026-11-03"
+    },
+    {
+      "id": "ht-centre-menfp-2025-062204108797",
+      "name": "ECOLE NATIONALE DE DUVIER",
+      "category": "education",
+      "department": "Centre",
+      "arrondissement": "Mirebalais",
+      "commune": "Saut-d'Eau",
+      "section": "Montagne Terrible",
+      "lat": null,
+      "lon": null,
+      "source": "https://www.haitidocs.org/doc/menfp-registre-ecoles-centre-2025?lang=ht",
+      "verification": "existence_documentee_registre_menfp_2024_2025",
+      "reviewStatus": "registre_scolaire_a_actualiser",
+      "institutionCode": "062204108797",
+      "ownershipReference": "public",
+      "referenceYear": "2024-2025",
+      "note": "Répertorié par le MENFP pour l'année scolaire 2024-2025. Fonctionnement en novembre 2026 et géolocalisation non vérifiés.",
+      "updatedAt": "2026-11-03",
+      "history": [
+        {
+          "date": "2026-11-03",
+          "action": "Transcription nominative du registre MENFP 2024-2025",
+          "source": "https://www.haitidocs.org/doc/menfp-registre-ecoles-centre-2025?lang=ht"
+        }
+      ],
+      "evidence": "Registre MENFP, commune Saut-d'Eau, secteur public, section Montagne Terrible, code 062204108797.",
+      "checkedOnlineAt": "2026-11-03"
+    },
+    {
+      "id": "ht-centre-menfp-2025-062204111811",
+      "name": "ECOLE NATIONALE DE PELEM",
+      "category": "education",
+      "department": "Centre",
+      "arrondissement": "Mirebalais",
+      "commune": "Saut-d'Eau",
+      "section": "Montagne Terrible",
+      "lat": null,
+      "lon": null,
+      "source": "https://www.haitidocs.org/doc/menfp-registre-ecoles-centre-2025?lang=ht",
+      "verification": "existence_documentee_registre_menfp_2024_2025",
+      "reviewStatus": "registre_scolaire_a_actualiser",
+      "institutionCode": "062204111811",
+      "ownershipReference": "public",
+      "referenceYear": "2024-2025",
+      "note": "Répertorié par le MENFP pour l'année scolaire 2024-2025. Fonctionnement en novembre 2026 et géolocalisation non vérifiés.",
+      "updatedAt": "2026-11-03",
+      "history": [
+        {
+          "date": "2026-11-03",
+          "action": "Transcription nominative du registre MENFP 2024-2025",
+          "source": "https://www.haitidocs.org/doc/menfp-registre-ecoles-centre-2025?lang=ht"
+        }
+      ],
+      "evidence": "Registre MENFP, commune Saut-d'Eau, secteur public, section Montagne Terrible, code 062204111811.",
+      "checkedOnlineAt": "2026-11-03"
+    },
+    {
+      "id": "ht-centre-menfp-2025-062204112007",
+      "name": "ECOLE NATIONALE DE RECHIMO",
+      "category": "education",
+      "department": "Centre",
+      "arrondissement": "Mirebalais",
+      "commune": "Saut-d'Eau",
+      "section": "Montagne Terrible",
+      "lat": null,
+      "lon": null,
+      "source": "https://www.haitidocs.org/doc/menfp-registre-ecoles-centre-2025?lang=ht",
+      "verification": "existence_documentee_registre_menfp_2024_2025",
+      "reviewStatus": "registre_scolaire_a_actualiser",
+      "institutionCode": "062204112007",
+      "ownershipReference": "public",
+      "referenceYear": "2024-2025",
+      "note": "Répertorié par le MENFP pour l'année scolaire 2024-2025. Fonctionnement en novembre 2026 et géolocalisation non vérifiés.",
+      "updatedAt": "2026-11-03",
+      "history": [
+        {
+          "date": "2026-11-03",
+          "action": "Transcription nominative du registre MENFP 2024-2025",
+          "source": "https://www.haitidocs.org/doc/menfp-registre-ecoles-centre-2025?lang=ht"
+        }
+      ],
+      "evidence": "Registre MENFP, commune Saut-d'Eau, secteur public, section Montagne Terrible, code 062204112007.",
+      "checkedOnlineAt": "2026-11-03"
+    },
+    {
+      "id": "ht-centre-menfp-2025-062290110828",
+      "name": "ECOLE NATIONALE CONGREGANISTE NOTRE DAME DU MONT CARMEEL",
+      "category": "education",
+      "department": "Centre",
+      "arrondissement": "Mirebalais",
+      "commune": "Saut-d'Eau",
+      "section": "Ville de Saut-d'Eau",
+      "lat": null,
+      "lon": null,
+      "source": "https://www.haitidocs.org/doc/menfp-registre-ecoles-centre-2025?lang=ht",
+      "verification": "existence_documentee_registre_menfp_2024_2025",
+      "reviewStatus": "registre_scolaire_a_actualiser",
+      "institutionCode": "062290110828",
+      "ownershipReference": "public",
+      "referenceYear": "2024-2025",
+      "note": "Répertorié par le MENFP pour l'année scolaire 2024-2025. Fonctionnement en novembre 2026 et géolocalisation non vérifiés.",
+      "updatedAt": "2026-11-03",
+      "history": [
+        {
+          "date": "2026-11-03",
+          "action": "Transcription nominative du registre MENFP 2024-2025",
+          "source": "https://www.haitidocs.org/doc/menfp-registre-ecoles-centre-2025?lang=ht"
+        }
+      ],
+      "evidence": "Registre MENFP, commune Saut-d'Eau, secteur public, section Ville de Saut-d'Eau, code 062290110828.",
+      "checkedOnlineAt": "2026-11-03"
+    },
+    {
+      "id": "ht-centre-menfp-2025-062290117020",
+      "name": "ECOLE NATIONALE DES GARCONS SAUT D'EAU",
+      "category": "education",
+      "department": "Centre",
+      "arrondissement": "Mirebalais",
+      "commune": "Saut-d'Eau",
+      "section": "Ville de Saut-d'Eau",
+      "lat": null,
+      "lon": null,
+      "source": "https://www.haitidocs.org/doc/menfp-registre-ecoles-centre-2025?lang=ht",
+      "verification": "existence_documentee_registre_menfp_2024_2025",
+      "reviewStatus": "registre_scolaire_a_actualiser",
+      "institutionCode": "062290117020",
+      "ownershipReference": "public",
+      "referenceYear": "2024-2025",
+      "note": "Répertorié par le MENFP pour l'année scolaire 2024-2025. Fonctionnement en novembre 2026 et géolocalisation non vérifiés.",
+      "updatedAt": "2026-11-03",
+      "history": [
+        {
+          "date": "2026-11-03",
+          "action": "Transcription nominative du registre MENFP 2024-2025",
+          "source": "https://www.haitidocs.org/doc/menfp-registre-ecoles-centre-2025?lang=ht"
+        }
+      ],
+      "evidence": "Registre MENFP, commune Saut-d'Eau, secteur public, section Ville de Saut-d'Eau, code 062290117020.",
+      "checkedOnlineAt": "2026-11-03"
+    },
+    {
+      "id": "ht-centre-menfp-2025-062290118402",
+      "name": "ECOLE NATIONALE PELEM",
+      "category": "education",
+      "department": "Centre",
+      "arrondissement": "Mirebalais",
+      "commune": "Saut-d'Eau",
+      "section": "Ville de Saut-d'Eau",
+      "lat": null,
+      "lon": null,
+      "source": "https://www.haitidocs.org/doc/menfp-registre-ecoles-centre-2025?lang=ht",
+      "verification": "existence_documentee_registre_menfp_2024_2025",
+      "reviewStatus": "registre_scolaire_a_actualiser",
+      "institutionCode": "062290118402",
+      "ownershipReference": "public",
+      "referenceYear": "2024-2025",
+      "note": "Répertorié par le MENFP pour l'année scolaire 2024-2025. Fonctionnement en novembre 2026 et géolocalisation non vérifiés.",
+      "updatedAt": "2026-11-03",
+      "history": [
+        {
+          "date": "2026-11-03",
+          "action": "Transcription nominative du registre MENFP 2024-2025",
+          "source": "https://www.haitidocs.org/doc/menfp-registre-ecoles-centre-2025?lang=ht"
+        }
+      ],
+      "evidence": "Registre MENFP, commune Saut-d'Eau, secteur public, section Ville de Saut-d'Eau, code 062290118402.",
+      "checkedOnlineAt": "2026-11-03"
+    },
+    {
+      "id": "ht-centre-menfp-2025-062290105116",
+      "name": "LYCEE BENOIT BATRAVILLE DE SAUT-D'EAU",
+      "category": "education",
+      "department": "Centre",
+      "arrondissement": "Mirebalais",
+      "commune": "Saut-d'Eau",
+      "section": "Ville de Saut-d'Eau",
+      "lat": null,
+      "lon": null,
+      "source": "https://www.haitidocs.org/doc/menfp-registre-ecoles-centre-2025?lang=ht",
+      "verification": "existence_documentee_registre_menfp_2024_2025",
+      "reviewStatus": "registre_scolaire_a_actualiser",
+      "institutionCode": "062290105116",
+      "ownershipReference": "public",
+      "referenceYear": "2024-2025",
+      "note": "Répertorié par le MENFP pour l'année scolaire 2024-2025. Fonctionnement en novembre 2026 et géolocalisation non vérifiés.",
+      "updatedAt": "2026-11-03",
+      "history": [
+        {
+          "date": "2026-11-03",
+          "action": "Transcription nominative du registre MENFP 2024-2025",
+          "source": "https://www.haitidocs.org/doc/menfp-registre-ecoles-centre-2025?lang=ht"
+        }
+      ],
+      "evidence": "Registre MENFP, commune Saut-d'Eau, secteur public, section Ville de Saut-d'Eau, code 062290105116.",
+      "checkedOnlineAt": "2026-11-03"
     }
   ]
 }
