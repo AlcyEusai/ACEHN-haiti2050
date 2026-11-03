@@ -2759,6 +2759,331 @@
       "areaKm2": 613.74,
       "areaSource": "https://www.haitidocs.org/doc/ihsi-2024-disaggregated-estimates?lang=fr",
       "areaStatus": "documente"
+    },
+    {
+      "department": "Centre",
+      "arrondissement": "Hinche",
+      "commune": "Hinche",
+      "updatedAt": "2026-11-03",
+      "history": {
+        "text": "Histoire locale à documenter à partir de sources institutionnelles et historiques identifiées.",
+        "sources": [],
+        "status": "a_verifier"
+      },
+      "services": [],
+      "infrastructures": [],
+      "heritage": [],
+      "verification": "inventaire_en_cours",
+      "audit": {
+        "reviewedAt": "2026-11-03",
+        "method": "Structure de recherche fondée sur le répertoire territorial existant du projet; vérification administrative indépendante à effectuer.",
+        "warnings": [
+          "Statut administratif et limites territoriales à recouper avec les tableaux IHSI et les actes officiels.",
+          "Population, superficie, histoire, patrimoine et services non renseignés sans source.",
+          "Aucun établissement ni coordonnée GPS inférés.",
+          "La notice est une structure de recherche, pas une fiche documentaire validée."
+        ]
+      }
+    },
+    {
+      "department": "Centre",
+      "arrondissement": "Hinche",
+      "commune": "Maïssade",
+      "updatedAt": "2026-11-03",
+      "history": {
+        "text": "Histoire locale à documenter à partir de sources institutionnelles et historiques identifiées.",
+        "sources": [],
+        "status": "a_verifier"
+      },
+      "services": [],
+      "infrastructures": [],
+      "heritage": [],
+      "verification": "inventaire_en_cours",
+      "audit": {
+        "reviewedAt": "2026-11-03",
+        "method": "Structure de recherche fondée sur le répertoire territorial existant du projet; vérification administrative indépendante à effectuer.",
+        "warnings": [
+          "Statut administratif et limites territoriales à recouper avec les tableaux IHSI et les actes officiels.",
+          "Population, superficie, histoire, patrimoine et services non renseignés sans source.",
+          "Aucun établissement ni coordonnée GPS inférés.",
+          "La notice est une structure de recherche, pas une fiche documentaire validée."
+        ]
+      }
+    },
+    {
+      "department": "Centre",
+      "arrondissement": "Hinche",
+      "commune": "Thomonde",
+      "updatedAt": "2026-11-03",
+      "history": {
+        "text": "Histoire locale à documenter à partir de sources institutionnelles et historiques identifiées.",
+        "sources": [],
+        "status": "a_verifier"
+      },
+      "services": [],
+      "infrastructures": [],
+      "heritage": [],
+      "verification": "inventaire_en_cours",
+      "audit": {
+        "reviewedAt": "2026-11-03",
+        "method": "Structure de recherche fondée sur le répertoire territorial existant du projet; vérification administrative indépendante à effectuer.",
+        "warnings": [
+          "Statut administratif et limites territoriales à recouper avec les tableaux IHSI et les actes officiels.",
+          "Population, superficie, histoire, patrimoine et services non renseignés sans source.",
+          "Aucun établissement ni coordonnée GPS inférés.",
+          "La notice est une structure de recherche, pas une fiche documentaire validée."
+        ]
+      }
+    },
+    {
+      "department": "Centre",
+      "arrondissement": "Hinche",
+      "commune": "Cerca-Carvajal",
+      "updatedAt": "2026-11-03",
+      "history": {
+        "text": "Histoire locale à documenter à partir de sources institutionnelles et historiques identifiées.",
+        "sources": [],
+        "status": "a_verifier"
+      },
+      "services": [],
+      "infrastructures": [],
+      "heritage": [],
+      "verification": "inventaire_en_cours",
+      "audit": {
+        "reviewedAt": "2026-11-03",
+        "method": "Structure de recherche fondée sur le répertoire territorial existant du projet; vérification administrative indépendante à effectuer.",
+        "warnings": [
+          "Statut administratif et limites territoriales à recouper avec les tableaux IHSI et les actes officiels.",
+          "Population, superficie, histoire, patrimoine et services non renseignés sans source.",
+          "Aucun établissement ni coordonnée GPS inférés.",
+          "La notice est une structure de recherche, pas une fiche documentaire validée."
+        ]
+      }
+    },
+    {
+      "department": "Centre",
+      "arrondissement": "Mirebalais",
+      "commune": "Mirebalais",
+      "updatedAt": "2026-11-03",
+      "history": {
+        "text": "Histoire locale à documenter à partir de sources institutionnelles et historiques identifiées.",
+        "sources": [],
+        "status": "a_verifier"
+      },
+      "services": [],
+      "infrastructures": [],
+      "heritage": [],
+      "verification": "inventaire_en_cours",
+      "audit": {
+        "reviewedAt": "2026-11-03",
+        "method": "Structure de recherche fondée sur le répertoire territorial existant du projet; vérification administrative indépendante à effectuer.",
+        "warnings": [
+          "Statut administratif et limites territoriales à recouper avec les tableaux IHSI et les actes officiels.",
+          "Population, superficie, histoire, patrimoine et services non renseignés sans source.",
+          "Aucun établissement ni coordonnée GPS inférés.",
+          "La notice est une structure de recherche, pas une fiche documentaire validée."
+        ]
+      }
+    },
+    {
+      "department": "Centre",
+      "arrondissement": "Mirebalais",
+      "commune": "Saut-d'Eau",
+      "updatedAt": "2026-11-03",
+      "history": {
+        "text": "Histoire locale à documenter à partir de sources institutionnelles et historiques identifiées.",
+        "sources": [],
+        "status": "a_verifier"
+      },
+      "services": [],
+      "infrastructures": [],
+      "heritage": [],
+      "verification": "inventaire_en_cours",
+      "audit": {
+        "reviewedAt": "2026-11-03",
+        "method": "Structure de recherche fondée sur le répertoire territorial existant du projet; vérification administrative indépendante à effectuer.",
+        "warnings": [
+          "Statut administratif et limites territoriales à recouper avec les tableaux IHSI et les actes officiels.",
+          "Population, superficie, histoire, patrimoine et services non renseignés sans source.",
+          "Aucun établissement ni coordonnée GPS inférés.",
+          "La notice est une structure de recherche, pas une fiche documentaire validée."
+        ]
+      }
+    },
+    {
+      "department": "Centre",
+      "arrondissement": "Mirebalais",
+      "commune": "Boucan-Carré",
+      "updatedAt": "2026-11-03",
+      "history": {
+        "text": "Histoire locale à documenter à partir de sources institutionnelles et historiques identifiées.",
+        "sources": [],
+        "status": "a_verifier"
+      },
+      "services": [],
+      "infrastructures": [],
+      "heritage": [],
+      "verification": "inventaire_en_cours",
+      "audit": {
+        "reviewedAt": "2026-11-03",
+        "method": "Structure de recherche fondée sur le répertoire territorial existant du projet; vérification administrative indépendante à effectuer.",
+        "warnings": [
+          "Statut administratif et limites territoriales à recouper avec les tableaux IHSI et les actes officiels.",
+          "Population, superficie, histoire, patrimoine et services non renseignés sans source.",
+          "Aucun établissement ni coordonnée GPS inférés.",
+          "La notice est une structure de recherche, pas une fiche documentaire validée."
+        ]
+      }
+    },
+    {
+      "department": "Centre",
+      "arrondissement": "Lascahobas",
+      "commune": "Lascahobas",
+      "updatedAt": "2026-11-03",
+      "history": {
+        "text": "Histoire locale à documenter à partir de sources institutionnelles et historiques identifiées.",
+        "sources": [],
+        "status": "a_verifier"
+      },
+      "services": [],
+      "infrastructures": [],
+      "heritage": [],
+      "verification": "inventaire_en_cours",
+      "audit": {
+        "reviewedAt": "2026-11-03",
+        "method": "Structure de recherche fondée sur le répertoire territorial existant du projet; vérification administrative indépendante à effectuer.",
+        "warnings": [
+          "Statut administratif et limites territoriales à recouper avec les tableaux IHSI et les actes officiels.",
+          "Population, superficie, histoire, patrimoine et services non renseignés sans source.",
+          "Aucun établissement ni coordonnée GPS inférés.",
+          "La notice est une structure de recherche, pas une fiche documentaire validée."
+        ]
+      }
+    },
+    {
+      "department": "Centre",
+      "arrondissement": "Lascahobas",
+      "commune": "Belladère",
+      "updatedAt": "2026-11-03",
+      "history": {
+        "text": "Histoire locale à documenter à partir de sources institutionnelles et historiques identifiées.",
+        "sources": [],
+        "status": "a_verifier"
+      },
+      "services": [],
+      "infrastructures": [],
+      "heritage": [],
+      "verification": "inventaire_en_cours",
+      "audit": {
+        "reviewedAt": "2026-11-03",
+        "method": "Structure de recherche fondée sur le répertoire territorial existant du projet; vérification administrative indépendante à effectuer.",
+        "warnings": [
+          "Statut administratif et limites territoriales à recouper avec les tableaux IHSI et les actes officiels.",
+          "Population, superficie, histoire, patrimoine et services non renseignés sans source.",
+          "Aucun établissement ni coordonnée GPS inférés.",
+          "La notice est une structure de recherche, pas une fiche documentaire validée."
+        ]
+      }
+    },
+    {
+      "department": "Centre",
+      "arrondissement": "Lascahobas",
+      "commune": "Savanette",
+      "updatedAt": "2026-11-03",
+      "history": {
+        "text": "Histoire locale à documenter à partir de sources institutionnelles et historiques identifiées.",
+        "sources": [],
+        "status": "a_verifier"
+      },
+      "services": [],
+      "infrastructures": [],
+      "heritage": [],
+      "verification": "inventaire_en_cours",
+      "audit": {
+        "reviewedAt": "2026-11-03",
+        "method": "Structure de recherche fondée sur le répertoire territorial existant du projet; vérification administrative indépendante à effectuer.",
+        "warnings": [
+          "Statut administratif et limites territoriales à recouper avec les tableaux IHSI et les actes officiels.",
+          "Population, superficie, histoire, patrimoine et services non renseignés sans source.",
+          "Aucun établissement ni coordonnée GPS inférés.",
+          "La notice est une structure de recherche, pas une fiche documentaire validée."
+        ]
+      }
+    },
+    {
+      "department": "Centre",
+      "arrondissement": "Lascahobas",
+      "commune": "Baptiste",
+      "updatedAt": "2026-11-03",
+      "history": {
+        "text": "Histoire locale à documenter à partir de sources institutionnelles et historiques identifiées.",
+        "sources": [],
+        "status": "a_verifier"
+      },
+      "services": [],
+      "infrastructures": [],
+      "heritage": [],
+      "verification": "inventaire_en_cours",
+      "audit": {
+        "reviewedAt": "2026-11-03",
+        "method": "Structure de recherche fondée sur le répertoire territorial existant du projet; vérification administrative indépendante à effectuer.",
+        "warnings": [
+          "Statut administratif et limites territoriales à recouper avec les tableaux IHSI et les actes officiels.",
+          "Population, superficie, histoire, patrimoine et services non renseignés sans source.",
+          "Aucun établissement ni coordonnée GPS inférés.",
+          "La notice est une structure de recherche, pas une fiche documentaire validée."
+        ]
+      }
+    },
+    {
+      "department": "Centre",
+      "arrondissement": "Cerca-la-Source",
+      "commune": "Cerca-la-Source",
+      "updatedAt": "2026-11-03",
+      "history": {
+        "text": "Histoire locale à documenter à partir de sources institutionnelles et historiques identifiées.",
+        "sources": [],
+        "status": "a_verifier"
+      },
+      "services": [],
+      "infrastructures": [],
+      "heritage": [],
+      "verification": "inventaire_en_cours",
+      "audit": {
+        "reviewedAt": "2026-11-03",
+        "method": "Structure de recherche fondée sur le répertoire territorial existant du projet; vérification administrative indépendante à effectuer.",
+        "warnings": [
+          "Statut administratif et limites territoriales à recouper avec les tableaux IHSI et les actes officiels.",
+          "Population, superficie, histoire, patrimoine et services non renseignés sans source.",
+          "Aucun établissement ni coordonnée GPS inférés.",
+          "La notice est une structure de recherche, pas une fiche documentaire validée."
+        ]
+      }
+    },
+    {
+      "department": "Centre",
+      "arrondissement": "Cerca-la-Source",
+      "commune": "Thomassique",
+      "updatedAt": "2026-11-03",
+      "history": {
+        "text": "Histoire locale à documenter à partir de sources institutionnelles et historiques identifiées.",
+        "sources": [],
+        "status": "a_verifier"
+      },
+      "services": [],
+      "infrastructures": [],
+      "heritage": [],
+      "verification": "inventaire_en_cours",
+      "audit": {
+        "reviewedAt": "2026-11-03",
+        "method": "Structure de recherche fondée sur le répertoire territorial existant du projet; vérification administrative indépendante à effectuer.",
+        "warnings": [
+          "Statut administratif et limites territoriales à recouper avec les tableaux IHSI et les actes officiels.",
+          "Population, superficie, histoire, patrimoine et services non renseignés sans source.",
+          "Aucun établissement ni coordonnée GPS inférés.",
+          "La notice est une structure de recherche, pas une fiche documentaire validée."
+        ]
+      }
     }
   ]
 }
