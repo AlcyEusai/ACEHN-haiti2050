@@ -1,0 +1,7 @@
+/* GitHub-native moderation uses GitHub pull requests, not browser secrets. */
+(()=>{"use strict";const root=document.getElementById("v4Moderation");if(!root)return;
+root.replaceChildren();const title=document.createElement("h1");title.textContent="Modération — Haïti 2050 sur GitHub";root.append(title);
+const p=document.createElement("p");p.textContent="Les propositions sont examinées par pull request. Les contrôles automatiques valident les sources, coordonnées et doublons. L'approbation et la fusion se font dans GitHub, par les responsables du dépôt.";root.append(p);
+for(const [label,url] of [["Examiner les propositions (pull requests)","https://github.com/AlcyEusai/ACEHN-haiti2050/pulls?q=is%3Apr+is%3Aopen+base%3Aprototype%2Fhaiti2050-v4-parcours"],["Consulter les contrôles automatiques","https://github.com/AlcyEusai/ACEHN-haiti2050/actions"],["Consulter le registre","https://github.com/AlcyEusai/ACEHN-haiti2050/blob/prototype/haiti2050-v4-parcours/data/registre-etablissements.json"]]){const a=document.createElement("a");a.href=url;a.target="_blank";a.rel="noopener noreferrer";a.textContent=label+" ↗";a.style.display="block";a.style.margin="16px 0";root.append(a)}
+const note=document.createElement("p");note.textContent="Ne saisissez aucun jeton GitHub sur cette page. Les autorisations sont gérées par GitHub. Les contrôles ne remplacent pas une revue humaine.";root.append(note);
+})();

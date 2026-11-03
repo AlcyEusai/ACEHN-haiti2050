@@ -1,0 +1,91 @@
+{
+  "territoire": "Sud|Fond-des-Blancs",
+  "date": "2026-11-02",
+  "licenseNote": "Sources cartographiques à attribuer ; données OSM sous ODbL.",
+  "places": [
+    {
+      "id": "hospital-sb",
+      "name": "Hôpital Saint-Boniface",
+      "category": "sante",
+      "lat": null,
+      "lon": null,
+      "verification": "localisation_a_verifier",
+      "source": "https://www.openstreetmap.org/way/92449608",
+      "note": "Bâtiment hospitalier cartographié ; activité confirmée par l'organisme gestionnaire. Coordonnées non corroborées par une source géographique consultable : marqueur suspendu.",
+      "secondary": "https://healthequityintl.org/our-work/st-boniface-hospital-sbh"
+    },
+    {
+      "id": "market-fdb",
+      "name": "Marché de Fond-des-Blancs",
+      "category": "commerce",
+      "lat": 18.27625,
+      "lon": -73.12457,
+      "verification": "coordonnees_secondaires",
+      "source": "https://mapcarta.com/fr/26893586",
+      "note": "Position issue d'un agrégateur géographique ; nom et activité actuelle à confirmer."
+    },
+    {
+      "id": "ecole-nationale",
+      "name": "École nationale Fond-des-Blancs",
+      "category": "education",
+      "lat": null,
+      "lon": null,
+      "verification": "localisation_a_verifier",
+      "source": "https://charesso.org/en/observatories/elections/centres/?departement=CENTRE",
+      "note": "Coordonnées publiées dans un répertoire de centres ; emplacement à confirmer sur le terrain. Coordonnées non corroborées par une source géographique consultable : marqueur suspendu."
+    },
+    {
+      "id": "college-classique",
+      "name": "Collège classique (Sainthon)",
+      "category": "education",
+      "lat": null,
+      "lon": null,
+      "verification": "localisation_a_verifier",
+      "source": "https://charesso.org/en/observatories/elections/centres/?departement=CENTRE",
+      "note": "Coordonnées déclarées pour un centre ; identification et fonctionnement à confirmer. Coordonnées non corroborées par une source géographique consultable : marqueur suspendu."
+    },
+    {
+      "id": "eglise-francis",
+      "name": "Église Saint-François-Xavier",
+      "category": "patrimoine",
+      "lat": null,
+      "lon": null,
+      "verification": "localisation_a_verifier",
+      "source": "https://mapcarta.com/fr/26893586",
+      "note": "Lieu mentionné à proximité du marché ; pas de coordonnées individuelles vérifiées."
+    },
+    {
+      "id": "mairie",
+      "name": "Mairie de Fond-des-Blancs",
+      "category": "administration",
+      "lat": null,
+      "lon": null,
+      "verification": "localisation_a_verifier",
+      "source": "https://fonddesblancsht.org/",
+      "note": "Présence institutionnelle à confirmer auprès de la mairie ; le statut officiel du portail cité n'est pas authentifié."
+    },
+    {
+      "id": "adf",
+      "name": "ADF Haiti",
+      "category": "administration",
+      "lat": 18.29042,
+      "lon": -73.10253,
+      "verification": "coordonnees_osm",
+      "source": "https://www.openstreetmap.org/node/9695345656",
+      "note": "Position cartographique publiée sur OpenStreetMap. Horaires, coordonnées de contact et activité à confirmer directement auprès de l'association.",
+      "osmId": "node/9695345656"
+    }
+  ],
+  "sources": [
+    {
+      "name": "ADF Haiti — données scolaires et hydriques",
+      "url": "https://www.adf.ht/data",
+      "status": "catalogue_identifie_import_non_effectue"
+    },
+    {
+      "name": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/copyright",
+      "status": "points_cartographiques_et_exploration_dynamique"
+    }
+  ]
+}

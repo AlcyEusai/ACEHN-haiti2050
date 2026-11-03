@@ -1,0 +1,3469 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": "2026-11-03",
+  "notes": "Notices documentaires; chiffres historiques datés et non présentés comme actuels. Coordonnées GPS non inférées.",
+  "communes": [
+    {
+      "department": "Nord",
+      "arrondissement": "Cap-Haïtien",
+      "commune": "Cap-Haïtien",
+      "updatedAt": "2026-11-03",
+      "sectionsCommunales": [
+        "Bande du Nord",
+        "Haut du Cap",
+        "Petite Anse"
+      ],
+      "sectionsSource": "https://www.mtptc.gouv.ht/media/upload/doc/publications/Aposter1121192.pdf",
+      "areaKm2": 53.5,
+      "areaSource": "https://www.mtptc.gouv.ht/media/upload/doc/publications/Aposter1121192.pdf",
+      "population": {
+        "value": 274404,
+        "year": 2015,
+        "source": "https://www.mtptc.gouv.ht/media/upload/doc/publications/Aposter1121192.pdf",
+        "status": "historique"
+      },
+      "history": {
+        "text": "Ville fondée en 1670 sous l'administration coloniale française. Anciennement appelée Cap-Français, elle fut un centre majeur de Saint-Domingue et conserve une trame urbaine historique.",
+        "sources": [
+          "https://www.adnhaiti.ht/commune-de-cap-haitien/",
+          "https://documents1.worldbank.org/curated/en/905711468032171714/pdf/E45450FRENCH0P00Box385202B00PUBLIC0.pdf"
+        ],
+        "status": "historique"
+      },
+      "services": [
+        {
+          "name": "Plan communal de développement 2022–2027",
+          "detail": "La mairie a présenté son plan communal en août 2022. Ce document décrit les priorités municipales et ne garantit pas l'achèvement des projets.",
+          "source": "https://www.cap-haitien.ht/la-mairie-du-cap-haitien-presente-officiellement-son-plan-communal-de-developpement-pcd-%EF%BF%BC/",
+          "status": "historique"
+        },
+        {
+          "name": "Diagnostic des services publics",
+          "detail": "Le PCD 2022–2027 signale des besoins en services de base; les niveaux de couverture actuels restent à vérifier.",
+          "source": "https://www.haitidocs.org/doc/wb-2023-communal-development-plan-pcd-2022?lang=fr",
+          "status": "historique"
+        }
+      ],
+      "infrastructures": [
+        {
+          "name": "Voirie, drainage et risques urbains",
+          "detail": "L'évaluation environnementale du projet de développement urbain documente des enjeux de mobilité et d'inondation dans le périmètre communal, à la date du diagnostic.",
+          "source": "https://documents1.worldbank.org/curated/en/680981590698945508/pdf/Environmental-and-Social-Impact-Assessment-Cap-Haitien-Urban-Development-Project-P168951.pdf",
+          "status": "historique"
+        }
+      ],
+      "heritage": [
+        {
+          "name": "Centre historique du Cap-Haïtien",
+          "detail": "La ville possède un héritage urbain et architectural lié à l'ancienne cité du Cap-Français. Inventaire des bâtiments à compléter.",
+          "source": "https://documents1.worldbank.org/curated/en/905711468032171714/pdf/E45450FRENCH0P00Box385202B00PUBLIC0.pdf",
+          "status": "historique"
+        }
+      ],
+      "nearbyNotInCommune": [
+        {
+          "name": "Citadelle Henry et Palais Sans-Souci",
+          "commune": "Milot",
+          "detail": "Ensemble patrimonial régional inscrit à l'UNESCO, à ne pas rattacher à la commune de Cap-Haïtien.",
+          "source": "https://whc.unesco.org/fr/list/180",
+          "status": "documente"
+        }
+      ],
+      "verification": "sources_documentaires_sans_validation_terrain",
+      "areaStatus": "documente",
+      "sectionsStatus": "documente",
+      "audit": {
+        "reviewedAt": "2026-11-03",
+        "method": "Contrôle documentaire croisé de sources publiques, sans inspection de terrain.",
+        "warnings": [
+          "Population 2015 : ne pas présenter comme chiffre actuel.",
+          "Le plan communal décrit des projets et diagnostics historiques, pas leur réalisation actuelle.",
+          "Localisations précises des équipements et fonctionnement en 2026 non vérifiés.",
+          "Certaines anciennes sources du registre ont besoin d'être remplacées par des références consultables."
+        ],
+        "ihsiVerified": "Tableau 61, IHSI 2024"
+      },
+      "populationTotale2024": {
+        "value": 301506,
+        "year": 2024,
+        "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+        "status": "documente",
+        "note": "IHSI 2024, tableau 61, population totale communale."
+      },
+      "populationUrbaine": {
+        "value": 299645,
+        "year": 2024,
+        "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+        "status": "documente",
+        "note": "IHSI 2024, tableau 61, population urbaine (sous-ensemble de la population totale)."
+      }
+    },
+    {
+      "department": "Nord",
+      "arrondissement": "Cap-Haïtien",
+      "commune": "Limonade",
+      "updatedAt": "2026-11-03",
+      "history": {
+        "text": "La commune accueille le Campus Henry Christophe de l’Université d’État d’Haïti, inauguré en 2012 selon la présentation officielle de l'UEH.",
+        "sources": [
+          "https://admission.ueh.edu.ht/entites/details/23"
+        ],
+        "status": "historique"
+      },
+      "services": [
+        {
+          "name": "Campus Henry Christophe de Limonade (UEH)",
+          "detail": "Établissement universitaire situé à Pister, section communale de Roucou. L'UEH présente plusieurs domaines de formation. Son activité pédagogique et les inscriptions doivent être vérifiées pour chaque année.",
+          "source": "https://ueh.edu.ht/ueh/entites/23",
+          "status": "documente"
+        }
+      ],
+      "infrastructures": [],
+      "heritage": [],
+      "verification": "sources_documentaires_sans_validation_terrain",
+      "audit": {
+        "reviewedAt": "2026-11-03",
+        "warnings": [
+          "Aucune coordonnée GPS n'est inférée.",
+          "Population, superficie, établissements de santé, voirie et patrimoine : à documenter.",
+          "La mention d'une entité universitaire ne confirme pas son fonctionnement continu."
+        ],
+        "ihsiVerified": "Tableau 61, IHSI 2024"
+      },
+      "populationTotale2024": {
+        "value": 60583,
+        "year": 2024,
+        "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+        "status": "documente",
+        "note": "IHSI 2024, tableau 61, population totale communale."
+      },
+      "populationUrbaine": {
+        "value": 41309,
+        "year": 2024,
+        "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+        "status": "documente",
+        "note": "IHSI 2024, tableau 61, population urbaine (sous-ensemble de la population totale)."
+      }
+    },
+    {
+      "department": "Nord",
+      "arrondissement": "Acul-du-Nord",
+      "commune": "Milot",
+      "updatedAt": "2026-11-03",
+      "history": {
+        "text": "Le palais Sans-Souci, construit sous Henri Christophe au début du XIXe siècle, appartient à l'ensemble du Parc national historique – Citadelle, Sans Souci, Ramiers, inscrit au patrimoine mondial en 1982.",
+        "sources": [
+          "https://whc.unesco.org/fr/list/180"
+        ],
+        "status": "historique"
+      },
+      "services": [],
+      "infrastructures": [],
+      "heritage": [
+        {
+          "name": "Palais Sans-Souci",
+          "detail": "Monument historique associé au règne d'Henri Christophe, documenté par l'UNESCO à proximité du bourg de Milot.",
+          "source": "https://whc.unesco.org/fr/list/180",
+          "status": "documente"
+        },
+        {
+          "name": "Parc national historique – Citadelle, Sans Souci, Ramiers",
+          "detail": "Bien du patrimoine mondial situé sur le territoire des communes de Milot et Dondon. Ne pas assimiler tout le parc à la seule commune de Milot.",
+          "source": "https://whc.unesco.org/document/139828",
+          "status": "documente"
+        }
+      ],
+      "verification": "sources_documentaires_sans_validation_terrain",
+      "audit": {
+        "reviewedAt": "2026-11-03",
+        "warnings": [
+          "Le parc couvre aussi la commune de Dondon.",
+          "Les limites précises des monuments et leurs coordonnées ne sont pas déduites.",
+          "Services publics, population et infrastructures : à documenter."
+        ],
+        "ihsiVerified": "Tableau 61, IHSI 2024"
+      },
+      "populationTotale2024": {
+        "value": 35147,
+        "year": 2024,
+        "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+        "status": "documente",
+        "note": "IHSI 2024, tableau 61, population totale communale."
+      },
+      "populationUrbaine": {
+        "value": 21905,
+        "year": 2024,
+        "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+        "status": "documente",
+        "note": "IHSI 2024, tableau 61, population urbaine (sous-ensemble de la population totale)."
+      }
+    },
+    {
+      "department": "Nord",
+      "arrondissement": "Cap-Haïtien",
+      "commune": "Quartier-Morin",
+      "sectionsCommunales": [
+        "Basse Plaine",
+        "Morne Pelé"
+      ],
+      "sectionsSource": "https://www.adnhaiti.ht/commune-de-quartier-morin/",
+      "areaKm2": 60.36,
+      "areaSource": "https://www.adnhaiti.ht/commune-de-quartier-morin/",
+      "population": {
+        "value": 27359,
+        "year": 2015,
+        "source": "https://www.adnhaiti.ht/commune-de-quartier-morin/",
+        "status": "historique"
+      },
+      "history": {
+        "text": "La notice territoriale situe l'origine de la paroisse vers 1700 et évoque l'histoire sucrière de la plaine du Cap.",
+        "sources": [
+          "https://www.adnhaiti.ht/commune-de-quartier-morin/"
+        ],
+        "status": "historique"
+      },
+      "services": [
+        {
+          "name": "Inspection scolaire",
+          "detail": "Présence d'un bureau d'inspection scolaire rapportée dans une notice administrative historique; fonctionnement actuel non vérifié.",
+          "source": "https://www.adnhaiti.ht/commune-de-quartier-morin/",
+          "status": "historique"
+        },
+        {
+          "name": "Carte scolaire communale",
+          "detail": "Étude MENFP/BID d'août 2025 portant sur l'accès à l'éducation et les établissements scolaires; ne constitue pas une liste d'écoles vérifiées en 2026.",
+          "source": "https://www.haitidocs.org/doc/menfp-carte-scolaire-quartier-morin?lang=fr",
+          "status": "documente"
+        }
+      ],
+      "infrastructures": [
+        {
+          "name": "Projet de réhabilitation de la route SOS",
+          "detail": "Le plan d'action de réinstallation de 2024 documente un projet de réhabilitation du corridor desservant Quartier-Morin; achèvement non vérifié.",
+          "source": "https://www.mtptc.gouv.ht/media/upload/doc/publications/CHUD%20Plan%20Action%20Reinstallation%20%28PAR%29%20Route%20SOS-Mars%202024.pdf",
+          "status": "historique"
+        }
+      ],
+      "heritage": [
+        {
+          "name": "Habitation Desglaireaux",
+          "detail": "Site historique inventorié dans un rapport de ressources touristiques; état actuel et accès non confirmés.",
+          "source": "https://ceci-ressources.nyc3.cdn.digitaloceanspaces.com/uploads/Import/fr-haiti-rapport-inventaire-ressourcers-touristiques-1_2024-03-06-162753_hunj.pdf",
+          "status": "historique"
+        }
+      ],
+      "updatedAt": "2026-11-03",
+      "verification": "sources_documentaires_sans_validation_terrain",
+      "audit": {
+        "reviewedAt": "2026-11-03",
+        "warnings": [
+          "Population estimée en 2015 : non actuelle.",
+          "Services et infrastructures : existence et fonctionnement en 2026 non confirmés.",
+          "Aucune coordonnée GPS ajoutée sans source cartographique précise.",
+          "Notice initiale non exhaustive : établissements et données manquants à compléter."
+        ],
+        "ihsiVerified": "Tableau 61, IHSI 2024"
+      },
+      "populationTotale2024": {
+        "value": 30057,
+        "year": 2024,
+        "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+        "status": "documente",
+        "note": "IHSI 2024, tableau 61, population totale communale."
+      },
+      "populationUrbaine": {
+        "value": 12287,
+        "year": 2024,
+        "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+        "status": "documente",
+        "note": "IHSI 2024, tableau 61, population urbaine (sous-ensemble de la population totale)."
+      }
+    },
+    {
+      "department": "Nord",
+      "arrondissement": "Acul-du-Nord",
+      "commune": "Acul-du-Nord",
+      "sectionsCommunales": [
+        "Camp-Louise",
+        "Bas de l’Acul",
+        "Mornet",
+        "Grande Ravine",
+        "Coupe à David",
+        "Soufrière"
+      ],
+      "sectionsSource": "https://www.adnhaiti.ht/commune-de-lacul-du-nord/",
+      "areaKm2": 186.37,
+      "areaSource": "https://www.adnhaiti.ht/commune-de-lacul-du-nord/",
+      "population": {
+        "value": 55908,
+        "year": 2015,
+        "source": "https://www.adnhaiti.ht/commune-de-lacul-du-nord/",
+        "status": "historique"
+      },
+      "history": {
+        "text": "La notice départementale retrace les origines anciennes de la localité et indique une élévation au rang de commune en 1740; chronologie à recouper avec des archives.",
+        "sources": [
+          "https://www.adnhaiti.ht/commune-de-lacul-du-nord/"
+        ],
+        "status": "historique"
+      },
+      "services": [
+        {
+          "name": "Inspection scolaire, police, justice et état civil",
+          "detail": "La notice administrative mentionne un bureau d'inspection scolaire, un sous-commissariat, quatre tribunaux de paix et quatre bureaux d'état civil. Données non actualisées.",
+          "source": "https://www.adnhaiti.ht/commune-de-lacul-du-nord/",
+          "status": "historique"
+        }
+      ],
+      "infrastructures": [],
+      "heritage": [
+        {
+          "name": "Fête patronale de Notre-Dame de la Nativité",
+          "detail": "Célébration locale du 8 septembre recensée par l'administration départementale.",
+          "source": "https://www.adnhaiti.ht/champetres/",
+          "status": "documente"
+        }
+      ],
+      "updatedAt": "2026-11-03",
+      "verification": "sources_documentaires_sans_validation_terrain",
+      "audit": {
+        "reviewedAt": "2026-11-03",
+        "warnings": [
+          "Population estimée en 2015 : non actuelle.",
+          "Services et infrastructures : existence et fonctionnement en 2026 non confirmés.",
+          "Aucune coordonnée GPS ajoutée sans source cartographique précise.",
+          "Notice initiale non exhaustive : établissements et données manquants à compléter."
+        ],
+        "ihsiVerified": "Tableau 61, IHSI 2024"
+      },
+      "populationTotale2024": {
+        "value": 61421,
+        "year": 2024,
+        "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+        "status": "documente",
+        "note": "IHSI 2024, tableau 61, population totale communale."
+      },
+      "populationUrbaine": {
+        "value": 31215,
+        "year": 2024,
+        "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+        "status": "documente",
+        "note": "IHSI 2024, tableau 61, population urbaine (sous-ensemble de la population totale)."
+      }
+    },
+    {
+      "department": "Nord",
+      "arrondissement": "Acul-du-Nord",
+      "commune": "Plaine-du-Nord",
+      "sectionsCommunales": [
+        "Morne Rouge",
+        "Basse Plaine",
+        "Grand Boucan",
+        "Bassin Diamant"
+      ],
+      "sectionsSource": "https://www.adnhaiti.ht/commune-de-plaine-du-nord/",
+      "areaKm2": 100.69,
+      "areaSource": "https://www.adnhaiti.ht/commune-de-plaine-du-nord/",
+      "population": {
+        "value": 41255,
+        "year": 2015,
+        "source": "https://www.adnhaiti.ht/commune-de-plaine-du-nord/",
+        "status": "historique"
+      },
+      "history": {
+        "text": "La notice départementale indique une fondation au XVIIIe siècle et une élévation au rang de quartier en 1821.",
+        "sources": [
+          "https://www.adnhaiti.ht/commune-de-plaine-du-nord/"
+        ],
+        "status": "historique"
+      },
+      "services": [
+        {
+          "name": "Justice, police et état civil",
+          "detail": "Un tribunal de paix, un commissariat et un bureau d'état civil sont mentionnés dans une notice historique. Fonctionnement actuel à confirmer.",
+          "source": "https://www.adnhaiti.ht/commune-de-plaine-du-nord/",
+          "status": "historique"
+        }
+      ],
+      "infrastructures": [],
+      "heritage": [
+        {
+          "name": "Bois-Caïman, Morne Rouge",
+          "detail": "Lieu de mémoire associé à la cérémonie de Bois-Caïman; la datation précise rapportée par les traditions et sources historiques doit être recoupée.",
+          "source": "https://www.adnhaiti.ht/commune-de-plaine-du-nord/",
+          "status": "historique"
+        },
+        {
+          "name": "Grotte de Saint-Jacques, Grand Boucan",
+          "detail": "Site de pèlerinage et de pratiques religieuses décrit dans la notice départementale; conditions d'accès actuelles non vérifiées.",
+          "source": "https://www.adnhaiti.ht/commune-de-plaine-du-nord/",
+          "status": "historique"
+        }
+      ],
+      "updatedAt": "2026-11-03",
+      "verification": "sources_documentaires_sans_validation_terrain",
+      "audit": {
+        "reviewedAt": "2026-11-03",
+        "warnings": [
+          "Population estimée en 2015 : non actuelle.",
+          "Services et infrastructures : existence et fonctionnement en 2026 non confirmés.",
+          "Aucune coordonnée GPS ajoutée sans source cartographique précise.",
+          "Notice initiale non exhaustive : établissements et données manquants à compléter."
+        ],
+        "ihsiVerified": "Tableau 61, IHSI 2024"
+      },
+      "populationTotale2024": {
+        "value": 45326,
+        "year": 2024,
+        "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+        "status": "documente",
+        "note": "IHSI 2024, tableau 61, population totale communale."
+      },
+      "populationUrbaine": {
+        "value": 29337,
+        "year": 2024,
+        "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+        "status": "documente",
+        "note": "IHSI 2024, tableau 61, population urbaine (sous-ensemble de la population totale)."
+      }
+    },
+    {
+      "department": "Nord",
+      "arrondissement": "Grande-Rivière-du-Nord",
+      "commune": "Grande-Rivière-du-Nord",
+      "sectionsCommunales": [
+        "Grand Gilles",
+        "Solon",
+        "Caracol",
+        "Gambade",
+        "Jolitrou",
+        "Cormiers"
+      ],
+      "sectionsSource": "https://www.adnhaiti.ht/commune-de-grande-riviere-du-nord/",
+      "sectionsStatus": "documente",
+      "areaKm2": 128.15,
+      "areaSource": "https://www.adnhaiti.ht/commune-de-grande-riviere-du-nord/",
+      "areaStatus": "documente",
+      "population": {
+        "value": 41362,
+        "year": 2015,
+        "source": "https://www.adnhaiti.ht/commune-de-grande-riviere-du-nord/",
+        "status": "historique"
+      },
+      "history": {
+        "text": "La notice administrative situe la fondation de Grande-Rivière-du-Nord en 1712 et présente son importance dans l'histoire coloniale et nationale. Ces éléments historiques doivent être recoupés dans des archives spécialisées.",
+        "sources": [
+          "https://www.adnhaiti.ht/commune-de-grande-riviere-du-nord/"
+        ],
+        "status": "historique"
+      },
+      "services": [
+        {
+          "name": "Justice, état civil et police",
+          "detail": "La notice départementale mentionne des services judiciaires, d'état civil et de police, sans confirmer leur activité actuelle.",
+          "source": "https://www.adnhaiti.ht/commune-de-grande-riviere-du-nord/",
+          "status": "historique"
+        }
+      ],
+      "infrastructures": [
+        {
+          "name": "Corridor Grande-Rivière-du-Nord – Dondon",
+          "detail": "Une mission ICOMOS/UNESCO de 2013 décrit des variantes routières entre ces deux communes; aucun projet achevé n'est inféré.",
+          "source": "https://whc.unesco.org/document/139694",
+          "status": "historique"
+        }
+      ],
+      "heritage": [
+        {
+          "name": "Mémoire de Jean-Jacques Dessalines et Jean Price-Mars",
+          "detail": "La notice départementale associe la commune à ces figures historiques; les sites précis et leurs coordonnées restent à documenter.",
+          "source": "https://www.adnhaiti.ht/commune-de-grande-riviere-du-nord/",
+          "status": "historique"
+        }
+      ],
+      "updatedAt": "2026-11-03",
+      "verification": "sources_documentaires_sans_validation_terrain",
+      "audit": {
+        "reviewedAt": "2026-11-03",
+        "method": "Synthèse de sources administratives et institutionnelles accessibles en ligne; sans validation de terrain.",
+        "warnings": [
+          "Les chiffres datés ne sont pas des mesures de 2026.",
+          "Fonctionnement des services et état actuel des infrastructures à vérifier.",
+          "Aucun établissement individuel ni aucune coordonnée GPS ajoutés sans confirmation.",
+          "Fiche documentaire initiale, non exhaustive."
+        ],
+        "ihsiVerified": "Tableau 61, IHSI 2024"
+      },
+      "populationTotale2024": {
+        "value": 45443,
+        "year": 2024,
+        "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+        "status": "documente",
+        "note": "IHSI 2024, tableau 61, population totale communale."
+      },
+      "populationUrbaine": {
+        "value": 32211,
+        "year": 2024,
+        "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+        "status": "documente",
+        "note": "IHSI 2024, tableau 61, population urbaine (sous-ensemble de la population totale)."
+      }
+    },
+    {
+      "department": "Nord",
+      "arrondissement": "Grande-Rivière-du-Nord",
+      "commune": "Bahon",
+      "sectionsCommunales": [
+        "Bois Pin",
+        "Bailly",
+        "Montagne Noire"
+      ],
+      "sectionsSource": "https://www.haitidocs.org/doc/menfp-carte-scolaire-bahon?lang=fr",
+      "sectionsStatus": "documente",
+      "areaKm2": 76.38,
+      "areaSource": "https://www.haitidocs.org/doc/menfp-carte-scolaire-bahon?lang=fr",
+      "areaStatus": "documente",
+      "population": {
+        "value": 26773,
+        "year": 2025,
+        "source": "https://www.haitidocs.org/doc/menfp-carte-scolaire-bahon?lang=fr",
+        "status": "historique"
+      },
+      "history": {
+        "text": "La carte scolaire communale du MENFP présente Bahon comme une commune érigée en 1932 et anciennement appelée Raque-à-Zinga.",
+        "sources": [
+          "https://www.haitidocs.org/doc/menfp-carte-scolaire-bahon?lang=fr"
+        ],
+        "status": "historique"
+      },
+      "services": [
+        {
+          "name": "Offre scolaire documentée par le MENFP",
+          "detail": "La carte scolaire communale publiée en 2025 recense les établissements préscolaires, fondamentaux, secondaires et professionnels. Ces totaux ne sont pas assimilés à une vérification individuelle de leur fonctionnement en 2026.",
+          "source": "https://www.haitidocs.org/doc/menfp-carte-scolaire-bahon?lang=fr",
+          "status": "historique"
+        }
+      ],
+      "infrastructures": [
+        {
+          "name": "Eau et électricité — diagnostic 2025",
+          "detail": "La carte scolaire décrit cinq sources, neuf puits artésiens et une absence d'électricité à la date de son diagnostic; la situation actuelle peut différer.",
+          "source": "https://www.haitidocs.org/doc/menfp-carte-scolaire-bahon?lang=fr",
+          "status": "historique"
+        }
+      ],
+      "heritage": [],
+      "updatedAt": "2026-11-03",
+      "verification": "sources_documentaires_sans_validation_terrain",
+      "audit": {
+        "reviewedAt": "2026-11-03",
+        "method": "Synthèse de sources administratives et institutionnelles accessibles en ligne; sans validation de terrain.",
+        "warnings": [
+          "Les chiffres datés ne sont pas des mesures de 2026.",
+          "Fonctionnement des services et état actuel des infrastructures à vérifier.",
+          "Aucun établissement individuel ni aucune coordonnée GPS ajoutés sans confirmation.",
+          "Fiche documentaire initiale, non exhaustive."
+        ],
+        "ihsiVerified": "Tableau 61, IHSI 2024"
+      },
+      "populationTotale2024": {
+        "value": 25544,
+        "year": 2024,
+        "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+        "status": "documente",
+        "note": "IHSI 2024, tableau 61, population totale communale."
+      },
+      "populationUrbaine": {
+        "value": 8001,
+        "year": 2024,
+        "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+        "status": "documente",
+        "note": "IHSI 2024, tableau 61, population urbaine (sous-ensemble de la population totale)."
+      }
+    },
+    {
+      "department": "Nord",
+      "arrondissement": "Saint-Raphaël",
+      "commune": "Dondon",
+      "sectionsCommunales": [
+        "Brostage",
+        "Bassin Caïman",
+        "Matador",
+        "Laguille",
+        "Haut du Trou"
+      ],
+      "sectionsSource": "https://www.adnhaiti.ht/commune-de-dondon/",
+      "sectionsStatus": "documente",
+      "areaKm2": 120.36,
+      "areaSource": "https://www.adnhaiti.ht/commune-de-dondon/",
+      "areaStatus": "documente",
+      "population": {
+        "value": 34604,
+        "year": 2015,
+        "source": "https://www.adnhaiti.ht/commune-de-dondon/",
+        "status": "historique"
+      },
+      "history": {
+        "text": "La notice départementale rattache l'histoire de Dondon à la période coloniale et mentionne son ancien nom Trou-Dondon; la chronologie exacte requiert un recoupement archivistique.",
+        "sources": [
+          "https://www.adnhaiti.ht/commune-de-dondon/"
+        ],
+        "status": "historique"
+      },
+      "services": [
+        {
+          "name": "Inspection scolaire, tribunal de paix et police",
+          "detail": "Services mentionnés par la notice administrative, sans confirmation de leur fonctionnement en 2026.",
+          "source": "https://www.adnhaiti.ht/commune-de-dondon/",
+          "status": "historique"
+        }
+      ],
+      "infrastructures": [
+        {
+          "name": "Route nationale 3 — secteur de Dondon",
+          "detail": "Un rapport de suivi du patrimoine mondial décrit l'état du tronçon routier Barrière-Battant–Dondon lors de sa mission; ne pas présenter ce constat comme une mesure actuelle.",
+          "source": "https://whc.unesco.org/document/224779",
+          "status": "historique"
+        }
+      ],
+      "heritage": [
+        {
+          "name": "Voûte à Minguet",
+          "detail": "Site naturel signalé dans la section Laguille par la notice administrative.",
+          "source": "https://www.adnhaiti.ht/commune-de-dondon/",
+          "status": "documente"
+        },
+        {
+          "name": "Grotte des Dames",
+          "detail": "Site naturel signalé à Pont des Dames; coordonnées et conditions d'accès non confirmées.",
+          "source": "https://www.adnhaiti.ht/commune-de-dondon/",
+          "status": "documente"
+        }
+      ],
+      "updatedAt": "2026-11-03",
+      "verification": "sources_documentaires_sans_validation_terrain",
+      "audit": {
+        "reviewedAt": "2026-11-03",
+        "method": "Synthèse de sources administratives et institutionnelles accessibles en ligne; sans validation de terrain.",
+        "warnings": [
+          "Les chiffres datés ne sont pas des mesures de 2026.",
+          "Fonctionnement des services et état actuel des infrastructures à vérifier.",
+          "Aucun établissement individuel ni aucune coordonnée GPS ajoutés sans confirmation.",
+          "Fiche documentaire initiale, non exhaustive."
+        ],
+        "ihsiVerified": "Tableau 61, IHSI 2024"
+      },
+      "populationTotale2024": {
+        "value": 38016,
+        "year": 2024,
+        "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+        "status": "documente",
+        "note": "IHSI 2024, tableau 61, population totale communale."
+      },
+      "populationUrbaine": {
+        "value": 23753,
+        "year": 2024,
+        "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+        "status": "documente",
+        "note": "IHSI 2024, tableau 61, population urbaine (sous-ensemble de la population totale)."
+      }
+    },
+    {
+      "department": "Nord",
+      "arrondissement": "Saint-Raphaël",
+      "commune": "Saint-Raphaël",
+      "updatedAt": "2026-11-03",
+      "history": {
+        "text": "La commune figure dans le répertoire administratif des 19 communes du département du Nord. Les éléments historiques détaillés restent à rechercher.",
+        "sources": [
+          "https://www.adnhaiti.ht/communes/"
+        ],
+        "status": "documente"
+      },
+      "services": [
+        {
+          "name": "Couverture sanitaire — archives départementales",
+          "detail": "Un inventaire sanitaire fondé sur des données de 1996 évoque la couverture sanitaire départementale et cette commune. Il ne constitue pas un état des établissements actifs en 2026.",
+          "source": "https://www.adnhaiti.ht/sante-2/",
+          "status": "historique"
+        }
+      ],
+      "infrastructures": [
+        {
+          "name": "Contexte environnemental régional",
+          "detail": "L'administration départementale décrit un régime climatique de type Plateau Central pour Saint-Raphaël, Pignon, La Victoire et Ranquitte, ainsi que des problèmes d'érosion dans plusieurs zones. Ce diagnostic régional ne prouve pas la présence d'un ouvrage ou projet particulier dans cette commune.",
+          "source": "https://www.adnhaiti.ht/donnees/",
+          "status": "historique"
+        }
+      ],
+      "heritage": [
+        {
+          "name": "Fête patronale de Saint Raphaël",
+          "detail": "Célébration patronale indiquée au 24 octobre dans le répertoire départemental. Date et tenue effective des festivités en 2026 non vérifiées.",
+          "source": "https://www.adnhaiti.ht/champetres/",
+          "status": "documente"
+        }
+      ],
+      "verification": "sources_documentaires_sans_validation_terrain",
+      "audit": {
+        "reviewedAt": "2026-11-03",
+        "method": "Croisement du répertoire départemental du Nord et des estimations IHSI 2024. Aucune visite sur place.",
+        "warnings": [
+          "Population urbaine IHSI 2024 : ne pas confondre avec la population totale.",
+          "Fêtes patronales : célébration effective en 2026 non vérifiée.",
+          "Sources sanitaires historiques de 1996 : ne pas présenter comme état actuel.",
+          "Aucun établissement ni aucune coordonnée GPS ajoutés au registre sans validation indépendante."
+        ],
+        "ihsiVerified": "Tableau 61, IHSI 2024"
+      },
+      "populationUrbaine": {
+        "value": 36243,
+        "year": 2024,
+        "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+        "status": "documente",
+        "note": "IHSI 2024, tableau 61, population urbaine (sous-ensemble de la population totale)."
+      },
+      "populationTotale2024": {
+        "value": 59057,
+        "year": 2024,
+        "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+        "status": "documente",
+        "note": "IHSI 2024, tableau 61, population totale communale."
+      }
+    },
+    {
+      "department": "Nord",
+      "arrondissement": "Saint-Raphaël",
+      "commune": "Ranquitte",
+      "updatedAt": "2026-11-03",
+      "history": {
+        "text": "La commune figure dans le répertoire administratif des 19 communes du département du Nord. Les éléments historiques détaillés restent à rechercher.",
+        "sources": [
+          "https://www.adnhaiti.ht/communes/"
+        ],
+        "status": "documente"
+      },
+      "services": [
+        {
+          "name": "Couverture sanitaire — archives départementales",
+          "detail": "Un inventaire sanitaire fondé sur des données de 1996 évoque la couverture sanitaire départementale et cette commune. Il ne constitue pas un état des établissements actifs en 2026.",
+          "source": "https://www.adnhaiti.ht/sante-2/",
+          "status": "historique"
+        }
+      ],
+      "infrastructures": [
+        {
+          "name": "Contexte environnemental régional",
+          "detail": "L'administration départementale décrit un régime climatique de type Plateau Central pour Saint-Raphaël, Pignon, La Victoire et Ranquitte, ainsi que des problèmes d'érosion dans plusieurs zones. Ce diagnostic régional ne prouve pas la présence d'un ouvrage ou projet particulier dans cette commune.",
+          "source": "https://www.adnhaiti.ht/donnees/",
+          "status": "historique"
+        }
+      ],
+      "heritage": [
+        {
+          "name": "Fête patronale de Saint-François d’Assise",
+          "detail": "Célébration patronale indiquée au 4 octobre dans le répertoire départemental. Date et tenue effective des festivités en 2026 non vérifiées.",
+          "source": "https://www.adnhaiti.ht/champetres/",
+          "status": "documente"
+        }
+      ],
+      "verification": "sources_documentaires_sans_validation_terrain",
+      "audit": {
+        "reviewedAt": "2026-11-03",
+        "method": "Croisement du répertoire départemental du Nord et des estimations IHSI 2024. Aucune visite sur place.",
+        "warnings": [
+          "Population urbaine IHSI 2024 : ne pas confondre avec la population totale.",
+          "Fêtes patronales : célébration effective en 2026 non vérifiée.",
+          "Sources sanitaires historiques de 1996 : ne pas présenter comme état actuel.",
+          "Aucun établissement ni aucune coordonnée GPS ajoutés au registre sans validation indépendante."
+        ],
+        "ihsiVerified": "Tableau 61, IHSI 2024"
+      },
+      "populationUrbaine": {
+        "value": 12679,
+        "year": 2024,
+        "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+        "status": "documente",
+        "note": "IHSI 2024, tableau 61, population urbaine (sous-ensemble de la population totale)."
+      },
+      "populationTotale2024": {
+        "value": 30435,
+        "year": 2024,
+        "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+        "status": "documente",
+        "note": "IHSI 2024, tableau 61, population totale communale."
+      }
+    },
+    {
+      "department": "Nord",
+      "arrondissement": "Saint-Raphaël",
+      "commune": "Pignon",
+      "updatedAt": "2026-11-03",
+      "history": {
+        "text": "La commune figure dans le répertoire administratif des 19 communes du département du Nord. Les éléments historiques détaillés restent à rechercher.",
+        "sources": [
+          "https://www.adnhaiti.ht/communes/"
+        ],
+        "status": "documente"
+      },
+      "services": [
+        {
+          "name": "Couverture sanitaire — archives départementales",
+          "detail": "Un inventaire sanitaire historique mentionne l'hôpital Bienfaisance de Pignon. Existence et fonctionnement en 2026 non confirmés par cet inventaire.",
+          "source": "https://www.adnhaiti.ht/sante-2/",
+          "status": "historique"
+        }
+      ],
+      "infrastructures": [
+        {
+          "name": "Contexte environnemental régional",
+          "detail": "L'administration départementale décrit un régime climatique de type Plateau Central pour Saint-Raphaël, Pignon, La Victoire et Ranquitte, ainsi que des problèmes d'érosion dans plusieurs zones. Ce diagnostic régional ne prouve pas la présence d'un ouvrage ou projet particulier dans cette commune.",
+          "source": "https://www.adnhaiti.ht/donnees/",
+          "status": "historique"
+        }
+      ],
+      "heritage": [
+        {
+          "name": "Fête patronale de Notre-Dame de la Nativité de la Vierge",
+          "detail": "Célébration patronale indiquée au 8 septembre dans le répertoire départemental. Date et tenue effective des festivités en 2026 non vérifiées.",
+          "source": "https://www.adnhaiti.ht/champetres/",
+          "status": "documente"
+        }
+      ],
+      "verification": "sources_documentaires_sans_validation_terrain",
+      "audit": {
+        "reviewedAt": "2026-11-03",
+        "method": "Croisement du répertoire départemental du Nord et des estimations IHSI 2024. Aucune visite sur place.",
+        "warnings": [
+          "Population urbaine IHSI 2024 : ne pas confondre avec la population totale.",
+          "Fêtes patronales : célébration effective en 2026 non vérifiée.",
+          "Sources sanitaires historiques de 1996 : ne pas présenter comme état actuel.",
+          "Aucun établissement ni aucune coordonnée GPS ajoutés au registre sans validation indépendante."
+        ],
+        "ihsiVerified": "Tableau 61, IHSI 2024"
+      },
+      "populationUrbaine": {
+        "value": 31274,
+        "year": 2024,
+        "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+        "status": "documente",
+        "note": "IHSI 2024, tableau 61, population urbaine (sous-ensemble de la population totale)."
+      },
+      "populationTotale2024": {
+        "value": 47530,
+        "year": 2024,
+        "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+        "status": "documente",
+        "note": "IHSI 2024, tableau 61, population totale communale."
+      }
+    },
+    {
+      "department": "Nord",
+      "arrondissement": "Saint-Raphaël",
+      "commune": "La Victoire",
+      "updatedAt": "2026-11-03",
+      "history": {
+        "text": "La commune figure dans le répertoire administratif des 19 communes du département du Nord. Les éléments historiques détaillés restent à rechercher.",
+        "sources": [
+          "https://www.adnhaiti.ht/communes/"
+        ],
+        "status": "documente"
+      },
+      "services": [
+        {
+          "name": "Couverture sanitaire — archives départementales",
+          "detail": "Un inventaire sanitaire fondé sur des données de 1996 évoque la couverture sanitaire départementale et cette commune. Il ne constitue pas un état des établissements actifs en 2026.",
+          "source": "https://www.adnhaiti.ht/sante-2/",
+          "status": "historique"
+        }
+      ],
+      "infrastructures": [
+        {
+          "name": "Contexte environnemental régional",
+          "detail": "L'administration départementale décrit un régime climatique de type Plateau Central pour Saint-Raphaël, Pignon, La Victoire et Ranquitte, ainsi que des problèmes d'érosion dans plusieurs zones. Ce diagnostic régional ne prouve pas la présence d'un ouvrage ou projet particulier dans cette commune.",
+          "source": "https://www.adnhaiti.ht/donnees/",
+          "status": "historique"
+        }
+      ],
+      "heritage": [
+        {
+          "name": "Fête patronale de Sainte Cécile",
+          "detail": "Célébration patronale indiquée au 22 novembre dans le répertoire départemental. Date et tenue effective des festivités en 2026 non vérifiées.",
+          "source": "https://www.adnhaiti.ht/champetres/",
+          "status": "documente"
+        }
+      ],
+      "verification": "sources_documentaires_sans_validation_terrain",
+      "audit": {
+        "reviewedAt": "2026-11-03",
+        "method": "Croisement du répertoire départemental du Nord et des estimations IHSI 2024. Aucune visite sur place.",
+        "warnings": [
+          "Population urbaine IHSI 2024 : ne pas confondre avec la population totale.",
+          "Fêtes patronales : célébration effective en 2026 non vérifiée.",
+          "Sources sanitaires historiques de 1996 : ne pas présenter comme état actuel.",
+          "Aucun établissement ni aucune coordonnée GPS ajoutés au registre sans validation indépendante."
+        ],
+        "ihsiVerified": "Tableau 61, IHSI 2024"
+      },
+      "populationUrbaine": {
+        "value": 9060,
+        "year": 2024,
+        "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+        "status": "documente",
+        "note": "IHSI 2024, tableau 61, population urbaine (sous-ensemble de la population totale)."
+      },
+      "populationTotale2024": {
+        "value": 11582,
+        "year": 2024,
+        "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+        "status": "documente",
+        "note": "IHSI 2024, tableau 61, population totale communale."
+      }
+    },
+    {
+      "department": "Nord",
+      "arrondissement": "Borgne",
+      "commune": "Borgne",
+      "updatedAt": "2026-11-03",
+      "populationUrbaine": {
+        "value": 30101,
+        "year": 2024,
+        "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+        "status": "documente",
+        "note": "IHSI 2024, tableau 61, population urbaine (sous-ensemble de la population totale)."
+      },
+      "history": {
+        "text": "Commune répertoriée par l'Administration départementale du Nord. Notice historique locale à compléter à partir d'archives documentées.",
+        "sources": [
+          "https://www.adnhaiti.ht/communes/"
+        ],
+        "status": "a_verifier"
+      },
+      "services": [],
+      "infrastructures": [
+        {
+          "name": "Contexte climatique et risques environnementaux",
+          "detail": "Le diagnostic départemental décrit les enjeux de fortes précipitations et d'érosion dans les zones montagneuses humides du Nord, notamment le secteur de Borgne. Il ne s'agit pas d'un inventaire d'ouvrages.",
+          "source": "https://www.adnhaiti.ht/donnees/",
+          "status": "historique"
+        }
+      ],
+      "heritage": [],
+      "verification": "sources_documentaires_sans_validation_terrain",
+      "audit": {
+        "reviewedAt": "2026-11-03",
+        "method": "IHSI 2024 tableau 65 et administration départementale du Nord; pas de validation sur place.",
+        "warnings": [
+          "Le chiffre 2024 est la population urbaine, pas la population communale totale.",
+          "Les informations environnementales sont issues d'un diagnostic régional non daté précisément.",
+          "Écoles, hôpitaux, marchés, patrimoine et équipements restent à documenter.",
+          "Aucun établissement ni aucune coordonnée GPS inventés."
+        ],
+        "ihsiVerified": "Tableau 61, IHSI 2024"
+      },
+      "populationTotale2024": {
+        "value": 73523,
+        "year": 2024,
+        "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+        "status": "documente",
+        "note": "IHSI 2024, tableau 61, population totale communale."
+      }
+    },
+    {
+      "department": "Nord",
+      "arrondissement": "Borgne",
+      "commune": "Port-Margot",
+      "updatedAt": "2026-11-03",
+      "populationUrbaine": {
+        "value": 38949,
+        "year": 2024,
+        "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+        "status": "documente",
+        "note": "IHSI 2024, tableau 61, population urbaine (sous-ensemble de la population totale)."
+      },
+      "history": {
+        "text": "Commune répertoriée par l'Administration départementale du Nord. Notice historique locale à compléter à partir d'archives documentées.",
+        "sources": [
+          "https://www.adnhaiti.ht/communes/"
+        ],
+        "status": "a_verifier"
+      },
+      "services": [],
+      "infrastructures": [
+        {
+          "name": "Contexte climatique et risques environnementaux",
+          "detail": "Le diagnostic départemental décrit les enjeux de fortes précipitations et d'érosion dans les zones montagneuses humides du Nord, notamment le secteur de Port-Margot. Il ne s'agit pas d'un inventaire d'ouvrages.",
+          "source": "https://www.adnhaiti.ht/donnees/",
+          "status": "historique"
+        }
+      ],
+      "heritage": [],
+      "verification": "sources_documentaires_sans_validation_terrain",
+      "audit": {
+        "reviewedAt": "2026-11-03",
+        "method": "IHSI 2024 tableau 65 et administration départementale du Nord; pas de validation sur place.",
+        "warnings": [
+          "Le chiffre 2024 est la population urbaine, pas la population communale totale.",
+          "Les informations environnementales sont issues d'un diagnostic régional non daté précisément.",
+          "Écoles, hôpitaux, marchés, patrimoine et équipements restent à documenter.",
+          "Aucun établissement ni aucune coordonnée GPS inventés."
+        ],
+        "ihsiVerified": "Tableau 61, IHSI 2024"
+      },
+      "populationTotale2024": {
+        "value": 54799,
+        "year": 2024,
+        "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+        "status": "documente",
+        "note": "IHSI 2024, tableau 61, population totale communale."
+      }
+    },
+    {
+      "department": "Nord",
+      "arrondissement": "Limbé",
+      "commune": "Limbé",
+      "updatedAt": "2026-11-03",
+      "populationUrbaine": {
+        "value": 82084,
+        "year": 2024,
+        "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+        "status": "documente",
+        "note": "IHSI 2024, tableau 61, population urbaine (sous-ensemble de la population totale)."
+      },
+      "history": {
+        "text": "Commune répertoriée par l'Administration départementale du Nord. Notice historique locale à compléter à partir d'archives documentées.",
+        "sources": [
+          "https://www.adnhaiti.ht/communes/"
+        ],
+        "status": "a_verifier"
+      },
+      "services": [],
+      "infrastructures": [
+        {
+          "name": "Contexte climatique et risques environnementaux",
+          "detail": "Le diagnostic départemental décrit les enjeux de fortes précipitations et d'érosion dans les zones montagneuses humides du Nord, notamment le secteur de Limbé. Il ne s'agit pas d'un inventaire d'ouvrages.",
+          "source": "https://www.adnhaiti.ht/donnees/",
+          "status": "historique"
+        }
+      ],
+      "heritage": [],
+      "verification": "sources_documentaires_sans_validation_terrain",
+      "audit": {
+        "reviewedAt": "2026-11-03",
+        "method": "IHSI 2024 tableau 65 et administration départementale du Nord; pas de validation sur place.",
+        "warnings": [
+          "Le chiffre 2024 est la population urbaine, pas la population communale totale.",
+          "Les informations environnementales sont issues d'un diagnostic régional non daté précisément.",
+          "Écoles, hôpitaux, marchés, patrimoine et équipements restent à documenter.",
+          "Aucun établissement ni aucune coordonnée GPS inventés."
+        ],
+        "ihsiVerified": "Tableau 61, IHSI 2024"
+      },
+      "populationTotale2024": {
+        "value": 93717,
+        "year": 2024,
+        "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+        "status": "documente",
+        "note": "IHSI 2024, tableau 61, population totale communale."
+      }
+    },
+    {
+      "department": "Nord",
+      "arrondissement": "Limbé",
+      "commune": "Bas-Limbé",
+      "updatedAt": "2026-11-03",
+      "populationUrbaine": {
+        "value": 16279,
+        "year": 2024,
+        "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+        "status": "documente",
+        "note": "IHSI 2024, tableau 61, population urbaine (sous-ensemble de la population totale)."
+      },
+      "history": {
+        "text": "Commune répertoriée par l'Administration départementale du Nord. Notice historique locale à compléter à partir d'archives documentées.",
+        "sources": [
+          "https://www.adnhaiti.ht/communes/"
+        ],
+        "status": "a_verifier"
+      },
+      "services": [],
+      "infrastructures": [
+        {
+          "name": "Contexte climatique et risques environnementaux",
+          "detail": "Le diagnostic départemental mentionne Bas-Limbé parmi les localités exposées aux inondations; état des protections et fréquence actuelle à vérifier.",
+          "source": "https://www.adnhaiti.ht/donnees/",
+          "status": "historique"
+        }
+      ],
+      "heritage": [],
+      "verification": "sources_documentaires_sans_validation_terrain",
+      "audit": {
+        "reviewedAt": "2026-11-03",
+        "method": "IHSI 2024 tableau 65 et administration départementale du Nord; pas de validation sur place.",
+        "warnings": [
+          "Le chiffre 2024 est la population urbaine, pas la population communale totale.",
+          "Les informations environnementales sont issues d'un diagnostic régional non daté précisément.",
+          "Écoles, hôpitaux, marchés, patrimoine et équipements restent à documenter.",
+          "Aucun établissement ni aucune coordonnée GPS inventés."
+        ],
+        "ihsiVerified": "Tableau 61, IHSI 2024"
+      },
+      "populationTotale2024": {
+        "value": 22961,
+        "year": 2024,
+        "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+        "status": "documente",
+        "note": "IHSI 2024, tableau 61, population totale communale."
+      }
+    },
+    {
+      "department": "Nord",
+      "arrondissement": "Plaisance",
+      "commune": "Plaisance",
+      "updatedAt": "2026-11-03",
+      "populationUrbaine": {
+        "value": 43515,
+        "year": 2024,
+        "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+        "status": "documente",
+        "note": "IHSI 2024, tableau 61, population urbaine (sous-ensemble de la population totale)."
+      },
+      "history": {
+        "text": "Commune répertoriée par l'Administration départementale du Nord. Notice historique locale à compléter à partir d'archives documentées.",
+        "sources": [
+          "https://www.adnhaiti.ht/communes/"
+        ],
+        "status": "a_verifier"
+      },
+      "services": [],
+      "infrastructures": [
+        {
+          "name": "Contexte climatique et risques environnementaux",
+          "detail": "Le diagnostic départemental décrit les enjeux de fortes précipitations et d'érosion dans les zones montagneuses humides du Nord, notamment le secteur de Plaisance. Il ne s'agit pas d'un inventaire d'ouvrages.",
+          "source": "https://www.adnhaiti.ht/donnees/",
+          "status": "historique"
+        }
+      ],
+      "heritage": [],
+      "verification": "sources_documentaires_sans_validation_terrain",
+      "audit": {
+        "reviewedAt": "2026-11-03",
+        "method": "IHSI 2024 tableau 65 et administration départementale du Nord; pas de validation sur place.",
+        "warnings": [
+          "Le chiffre 2024 est la population urbaine, pas la population communale totale.",
+          "Les informations environnementales sont issues d'un diagnostic régional non daté précisément.",
+          "Écoles, hôpitaux, marchés, patrimoine et équipements restent à documenter.",
+          "Aucun établissement ni aucune coordonnée GPS inventés."
+        ],
+        "ihsiVerified": "Tableau 61, IHSI 2024"
+      },
+      "populationTotale2024": {
+        "value": 76447,
+        "year": 2024,
+        "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+        "status": "documente",
+        "note": "IHSI 2024, tableau 61, population totale communale."
+      }
+    },
+    {
+      "department": "Nord",
+      "arrondissement": "Plaisance",
+      "commune": "Pilate",
+      "updatedAt": "2026-11-03",
+      "populationUrbaine": {
+        "value": 21323,
+        "year": 2024,
+        "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+        "status": "documente",
+        "note": "IHSI 2024, tableau 61, population urbaine (sous-ensemble de la population totale)."
+      },
+      "history": {
+        "text": "Commune répertoriée par l'Administration départementale du Nord. Notice historique locale à compléter à partir d'archives documentées.",
+        "sources": [
+          "https://www.adnhaiti.ht/communes/"
+        ],
+        "status": "a_verifier"
+      },
+      "services": [],
+      "infrastructures": [
+        {
+          "name": "Contexte climatique et risques environnementaux",
+          "detail": "Le diagnostic départemental décrit les enjeux de fortes précipitations et d'érosion dans les zones montagneuses humides du Nord, notamment le secteur de Pilate. Il ne s'agit pas d'un inventaire d'ouvrages.",
+          "source": "https://www.adnhaiti.ht/donnees/",
+          "status": "historique"
+        }
+      ],
+      "heritage": [],
+      "verification": "sources_documentaires_sans_validation_terrain",
+      "audit": {
+        "reviewedAt": "2026-11-03",
+        "method": "IHSI 2024 tableau 65 et administration départementale du Nord; pas de validation sur place.",
+        "warnings": [
+          "Le chiffre 2024 est la population urbaine, pas la population communale totale.",
+          "Les informations environnementales sont issues d'un diagnostic régional non daté précisément.",
+          "Écoles, hôpitaux, marchés, patrimoine et équipements restent à documenter.",
+          "Aucun établissement ni aucune coordonnée GPS inventés."
+        ],
+        "ihsiVerified": "Tableau 61, IHSI 2024"
+      },
+      "populationTotale2024": {
+        "value": 59382,
+        "year": 2024,
+        "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+        "status": "documente",
+        "note": "IHSI 2024, tableau 61, population totale communale."
+      }
+    },
+    {
+      "department": "Nord-Est",
+      "arrondissement": "Fort-Liberté",
+      "commune": "Fort-Liberté",
+      "updatedAt": "2026-11-03",
+      "populationTotale2024": {
+        "value": 37665,
+        "year": 2024,
+        "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+        "status": "documente"
+      },
+      "populationUrbaine": {
+        "value": 34652,
+        "year": 2024,
+        "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+        "status": "documente"
+      },
+      "history": {
+        "text": "La ville, anciennement connue sous les noms de Bayaha et Fort-Dauphin, conserve un héritage urbain et militaire lié à la période coloniale.",
+        "sources": [
+          "https://ceci.org/uploads/Import/fr-haiti-rapport-inventaire-ressourcers-touristiques-1_2024-02-28-172153_lblc.pdf"
+        ],
+        "status": "historique"
+      },
+      "services": [],
+      "infrastructures": [
+        {
+          "name": "Préparation au risque de tsunami",
+          "detail": "L'UNESCO annonçait en janvier 2022 la reconnaissance Tsunami Ready de Fort-Liberté. Le statut et les dispositifs en 2026 sont à revérifier.",
+          "source": "https://www.unesco.org/fr/articles/fort-liberte-haiti-declaree-tsunami-ready",
+          "status": "historique"
+        }
+      ],
+      "heritage": [
+        {
+          "name": "Fort Saint-Joseph et système défensif de la baie",
+          "detail": "Fortifications coloniales inventoriées dans le rapport touristique; conservation et accès en 2026 à vérifier.",
+          "source": "https://ceci.org/uploads/Import/fr-haiti-rapport-inventaire-ressourcers-touristiques-1_2024-02-28-172153_lblc.pdf",
+          "status": "historique"
+        },
+        {
+          "name": "Place d'Armes et patrimoine urbain",
+          "detail": "Place historique et fontaine décrites dans l'inventaire patrimonial.",
+          "source": "https://www.ifad.org/documents/38711624/42988594/haiti_fmhcp_f.pdf/4011c1a5-4a2d-d5b8-e21f-96e4246e7a61?t=1621000255007",
+          "status": "historique"
+        }
+      ],
+      "verification": "demographie_documentee",
+      "audit": {
+        "reviewedAt": "2026-11-03",
+        "warnings": [
+          "Estimation IHSI 2024, tableau 76; non recensement.",
+          "Établissements et coordonnées non renseignés."
+        ]
+      }
+    },
+    {
+      "department": "Nord-Est",
+      "arrondissement": "Fort-Liberté",
+      "commune": "Ferrier",
+      "updatedAt": "2026-11-03",
+      "populationTotale2024": {
+        "value": 16015,
+        "year": 2024,
+        "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+        "status": "documente"
+      },
+      "populationUrbaine": {
+        "value": 13375,
+        "year": 2024,
+        "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+        "status": "documente"
+      },
+      "history": {
+        "text": "La carte scolaire communale du MENFP indique une fondation en 1932 et une élévation au rang de commune en 1946.",
+        "sources": [
+          "https://www.haitidocs.org/doc/menfp-carte-scolaire-ferrier"
+        ],
+        "status": "historique"
+      },
+      "services": [
+        {
+          "name": "Carte scolaire de Ferrier",
+          "detail": "Document MENFP d'avril 2025 contenant un répertoire d'écoles; leur fonctionnement actuel n'est pas déduit.",
+          "source": "https://www.haitidocs.org/doc/menfp-carte-scolaire-ferrier",
+          "status": "historique"
+        }
+      ],
+      "infrastructures": [
+        {
+          "name": "Ressources hydriques et électrification",
+          "detail": "La carte scolaire décrit les cours d'eau, points d'eau et certains dispositifs solaires à la date de son diagnostic.",
+          "source": "https://www.haitidocs.org/doc/menfp-carte-scolaire-ferrier",
+          "status": "historique"
+        }
+      ],
+      "heritage": [],
+      "verification": "demographie_documentee",
+      "audit": {
+        "reviewedAt": "2026-11-03",
+        "warnings": [
+          "Estimation IHSI 2024, tableau 76; non recensement.",
+          "Établissements et coordonnées non renseignés."
+        ]
+      },
+      "sectionsCommunales": [
+        "Bas Maribaroux"
+      ],
+      "sectionsSource": "https://www.haitidocs.org/doc/menfp-carte-scolaire-ferrier",
+      "sectionsStatus": "documente"
+    },
+    {
+      "department": "Nord-Est",
+      "arrondissement": "Fort-Liberté",
+      "commune": "Perches",
+      "updatedAt": "2026-11-03",
+      "populationTotale2024": {
+        "value": 12640,
+        "year": 2024,
+        "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+        "status": "documente"
+      },
+      "populationUrbaine": {
+        "value": 10325,
+        "year": 2024,
+        "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+        "status": "documente"
+      },
+      "history": {
+        "text": "Commune du Nord-Est rattachée à l'arrondissement de Fort-Liberté; chronologie locale à compléter.",
+        "sources": [
+          "https://www.haiti-reference.info/pages/plan/geographie-et-tourisme/divisions-territoriales/arrondissements-et-communes/nordest/"
+        ],
+        "status": "documente"
+      },
+      "services": [],
+      "infrastructures": [],
+      "heritage": [],
+      "verification": "demographie_documentee",
+      "audit": {
+        "reviewedAt": "2026-11-03",
+        "warnings": [
+          "Estimation IHSI 2024, tableau 76; non recensement.",
+          "Établissements et coordonnées non renseignés."
+        ]
+      }
+    },
+    {
+      "department": "Nord-Est",
+      "arrondissement": "Ouanaminthe",
+      "commune": "Ouanaminthe",
+      "updatedAt": "2026-11-03",
+      "history": {
+        "text": "Commune frontalière du Nord-Est. Le répertoire territorial rapporte son élévation au rang de commune en 1807; donnée historique à recouper.",
+        "sources": [
+          "https://www.haiti-reference.info/pages/plan/geographie-et-tourisme/divisions-territoriales/arrondissements-et-communes/nordest/"
+        ],
+        "status": "historique"
+      },
+      "services": [
+        {
+          "name": "Tribunal de première instance — décret de création",
+          "detail": "Un décret du 2 septembre 2024 institue un tribunal à Ouanaminthe; son fonctionnement effectif en 2026 n'est pas établi par le décret.",
+          "source": "https://www.haitidocs.org/doc/ht-decret-2024-tpi-ouanaminthe?lang=fr",
+          "status": "historique"
+        }
+      ],
+      "infrastructures": [],
+      "heritage": [],
+      "verification": "sources_documentaires_sans_validation_terrain",
+      "audit": {
+        "reviewedAt": "2026-11-03",
+        "warnings": [
+          "Notice partielle, sans validation sur place.",
+          "Aucun chiffre démographique ni coordonnée GPS ajouté sans contrôle.",
+          "État actuel des services et équipements non établi."
+        ]
+      }
+    },
+    {
+      "department": "Nord-Est",
+      "arrondissement": "Ouanaminthe",
+      "commune": "Capotille",
+      "updatedAt": "2026-11-03",
+      "history": {
+        "text": "Un plan de gestion environnementale de 2019 indique que Capotille est devenue commune en 1978 et décrit son contexte frontalier.",
+        "sources": [
+          "https://www.haitidocs.org/doc/mde-2019-land-water-management-plan?lang=fr"
+        ],
+        "status": "historique"
+      },
+      "services": [],
+      "infrastructures": [
+        {
+          "name": "Gestion des terres et des eaux",
+          "detail": "Un plan de gestion publié en 2019 décrit les caractéristiques biophysiques du territoire; il ne confirme pas l'exécution des mesures proposées.",
+          "source": "https://www.haitidocs.org/doc/mde-2019-land-water-management-plan?lang=fr",
+          "status": "historique"
+        }
+      ],
+      "heritage": [],
+      "sectionsCommunales": [
+        "Welsh",
+        "Lamine"
+      ],
+      "sectionsSource": "https://www.haitidocs.org/doc/mde-2019-land-water-management-plan?lang=fr",
+      "sectionsStatus": "historique",
+      "verification": "sources_documentaires_sans_validation_terrain",
+      "audit": {
+        "reviewedAt": "2026-11-03",
+        "warnings": [
+          "Notice partielle, sans validation sur place.",
+          "Aucun chiffre démographique ni coordonnée GPS ajouté sans contrôle.",
+          "État actuel des services et équipements non établi."
+        ]
+      }
+    },
+    {
+      "department": "Nord-Est",
+      "arrondissement": "Ouanaminthe",
+      "commune": "Mont-Organisé",
+      "updatedAt": "2026-11-03",
+      "history": {
+        "text": "Commune du Nord-Est rattachée à l'arrondissement de Ouanaminthe; notice historique détaillée à documenter.",
+        "sources": [
+          "https://www.haiti-reference.info/pages/plan/geographie-et-tourisme/divisions-territoriales/arrondissements-et-communes/nordest/"
+        ],
+        "status": "documente"
+      },
+      "services": [
+        {
+          "name": "Ressort judiciaire prévu par le décret de 2024",
+          "detail": "Le décret créant le tribunal de première instance à Ouanaminthe inclut Mont-Organisé dans son ressort. Le service effectif reste à confirmer.",
+          "source": "https://www.haitidocs.org/doc/ht-decret-2024-tpi-ouanaminthe?lang=fr",
+          "status": "historique"
+        }
+      ],
+      "infrastructures": [],
+      "heritage": [],
+      "verification": "sources_documentaires_sans_validation_terrain",
+      "audit": {
+        "reviewedAt": "2026-11-03",
+        "warnings": [
+          "Notice partielle, sans validation sur place.",
+          "Aucun chiffre démographique ni coordonnée GPS ajouté sans contrôle.",
+          "État actuel des services et équipements non établi."
+        ]
+      }
+    },
+    {
+      "department": "Nord-Est",
+      "arrondissement": "Trou-du-Nord",
+      "commune": "Trou-du-Nord",
+      "updatedAt": "2026-11-03",
+      "history": {
+        "text": "Haiti-Référence signale l'ancien toponyme Trou-de-Jacquesil. Cette mention est historique et demande recoupement archivistique.",
+        "sources": [
+          "https://www.haiti-reference.info/pages/plan/geographie-et-tourisme/divisions-territoriales/arrondissements-et-communes/nordest/"
+        ],
+        "status": "historique"
+      },
+      "services": [],
+      "infrastructures": [],
+      "heritage": [
+        {
+          "name": "Vestiges historiques de Trou-du-Nord",
+          "detail": "Un inventaire touristique identifie des vestiges historiques sans permettre de fixer leur localisation exacte.",
+          "source": "https://ceci.org/uploads/Import/fr-haiti-rapport-inventaire-ressourcers-touristiques-1_2024-02-28-172153_lblc.pdf",
+          "status": "historique"
+        }
+      ],
+      "verification": "demographie_documentee_autres_rubriques_a_completer",
+      "administrativeSource": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+      "audit": {
+        "reviewedAt": "2026-11-03",
+        "method": "Rattachement administratif recoupé avec le répertoire territorial IHSI; autres rubriques en attente.",
+        "warnings": [
+          "Données estimées pour 2024, non recensement.",
+          "Services publics, infrastructures et patrimoine : recherche documentaire toujours nécessaire.",
+          "Aucune coordonnée GPS ajoutée sans source."
+        ],
+        "demographyReference": "IHSI 2024 tableau 76"
+      },
+      "populationTotale2024": {
+        "value": 53524,
+        "year": 2024,
+        "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+        "status": "documente",
+        "note": "Estimation IHSI 2024, tableau 76; population totale."
+      },
+      "populationUrbaine": {
+        "value": 42366,
+        "year": 2024,
+        "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+        "status": "documente",
+        "note": "Estimation IHSI 2024, tableau 76; population urbaine."
+      },
+      "populationRurale": {
+        "value": 11158,
+        "year": 2024,
+        "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+        "status": "documente",
+        "note": "Estimation IHSI 2024, tableau 76; population rurale."
+      }
+    },
+    {
+      "department": "Nord-Est",
+      "arrondissement": "Trou-du-Nord",
+      "commune": "Sainte-Suzanne",
+      "updatedAt": "2026-11-03",
+      "history": {
+        "text": "Commune de l'arrondissement de Trou-du-Nord dans le répertoire administratif IHSI 2024; chronologie locale encore à documenter.",
+        "sources": [
+          "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf"
+        ],
+        "status": "documente"
+      },
+      "services": [],
+      "infrastructures": [],
+      "heritage": [],
+      "verification": "demographie_documentee_autres_rubriques_a_completer",
+      "administrativeSource": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+      "audit": {
+        "reviewedAt": "2026-11-03",
+        "method": "Rattachement administratif recoupé avec le répertoire territorial IHSI; autres rubriques en attente.",
+        "warnings": [
+          "Données estimées pour 2024, non recensement.",
+          "Services publics, infrastructures et patrimoine : recherche documentaire toujours nécessaire.",
+          "Aucune coordonnée GPS ajoutée sans source."
+        ],
+        "demographyReference": "IHSI 2024 tableau 76"
+      },
+      "populationTotale2024": {
+        "value": 30658,
+        "year": 2024,
+        "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+        "status": "documente",
+        "note": "Estimation IHSI 2024, tableau 76; population totale."
+      },
+      "populationUrbaine": {
+        "value": 7149,
+        "year": 2024,
+        "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+        "status": "documente",
+        "note": "Estimation IHSI 2024, tableau 76; population urbaine."
+      },
+      "populationRurale": {
+        "value": 23509,
+        "year": 2024,
+        "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+        "status": "documente",
+        "note": "Estimation IHSI 2024, tableau 76; population rurale."
+      }
+    },
+    {
+      "department": "Nord-Est",
+      "arrondissement": "Trou-du-Nord",
+      "commune": "Terrier-Rouge",
+      "updatedAt": "2026-11-03",
+      "history": {
+        "text": "Histoire locale à documenter par des archives et publications identifiées.",
+        "sources": [],
+        "status": "a_verifier"
+      },
+      "services": [
+        {
+          "name": "Carte scolaire communale MENFP, août 2025",
+          "detail": "Le document comporte un répertoire d'écoles et une analyse de l'offre éducative; leur fonctionnement actuel doit être vérifié établissement par établissement.",
+          "source": "https://www.haitidocs.org/doc/menfp-carte-scolaire-terrier-rouge?lang=fr",
+          "status": "historique"
+        }
+      ],
+      "infrastructures": [
+        {
+          "name": "Eau, électricité et communications — diagnostic scolaire",
+          "detail": "Le document MENFP décrit des cours d'eau, des points d'eau et l'électrification de la ville à la date du diagnostic; il ne constitue pas un état des réseaux en 2026.",
+          "source": "https://www.haitidocs.org/doc/menfp-carte-scolaire-terrier-rouge?lang=fr",
+          "status": "historique"
+        }
+      ],
+      "heritage": [],
+      "verification": "demographie_documentee_autres_rubriques_a_completer",
+      "administrativeSource": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+      "audit": {
+        "reviewedAt": "2026-11-03",
+        "method": "Rattachement administratif recoupé avec le répertoire territorial IHSI; autres rubriques en attente.",
+        "warnings": [
+          "Données estimées pour 2024, non recensement.",
+          "Services publics, infrastructures et patrimoine : recherche documentaire toujours nécessaire.",
+          "Aucune coordonnée GPS ajoutée sans source."
+        ],
+        "demographyReference": "IHSI 2024 tableau 76"
+      },
+      "populationTotale2024": {
+        "value": 33168,
+        "year": 2024,
+        "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+        "status": "documente",
+        "note": "Estimation IHSI 2024, tableau 76; population totale."
+      },
+      "populationUrbaine": {
+        "value": 30855,
+        "year": 2024,
+        "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+        "status": "documente",
+        "note": "Estimation IHSI 2024, tableau 76; population urbaine."
+      },
+      "populationRurale": {
+        "value": 2313,
+        "year": 2024,
+        "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+        "status": "documente",
+        "note": "Estimation IHSI 2024, tableau 76; population rurale."
+      },
+      "sectionsCommunales": [
+        "Fond Blanc",
+        "Grand Bassin"
+      ],
+      "sectionsSource": "https://www.haitidocs.org/doc/menfp-carte-scolaire-terrier-rouge?lang=fr",
+      "sectionsStatus": "historique"
+    },
+    {
+      "department": "Nord-Est",
+      "arrondissement": "Trou-du-Nord",
+      "commune": "Caracol",
+      "updatedAt": "2026-11-03",
+      "history": {
+        "text": "Haiti-Référence rapporte que Caracol, autrefois appelée Caya España, a été élevée au rang de commune en septembre 1889; affirmation à recouper dans les textes officiels.",
+        "sources": [
+          "https://www.haiti-reference.info/pages/plan/geographie-et-tourisme/divisions-territoriales/arrondissements-et-communes/nordest/"
+        ],
+        "status": "historique"
+      },
+      "services": [],
+      "infrastructures": [],
+      "heritage": [
+        {
+          "name": "Baie de Caracol",
+          "detail": "Espace naturel côtier identifié dans l'inventaire touristique du Nord-Est; limites et usages actuels non précisés.",
+          "source": "https://ceci.org/uploads/Import/fr-haiti-rapport-inventaire-ressourcers-touristiques-1_2024-02-28-172153_lblc.pdf",
+          "status": "documente"
+        }
+      ],
+      "verification": "demographie_documentee_autres_rubriques_a_completer",
+      "administrativeSource": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+      "audit": {
+        "reviewedAt": "2026-11-03",
+        "method": "Rattachement administratif recoupé avec le répertoire territorial IHSI; autres rubriques en attente.",
+        "warnings": [
+          "Données estimées pour 2024, non recensement.",
+          "Services publics, infrastructures et patrimoine : recherche documentaire toujours nécessaire.",
+          "Aucune coordonnée GPS ajoutée sans source."
+        ],
+        "demographyReference": "IHSI 2024 tableau 76"
+      },
+      "populationTotale2024": {
+        "value": 8436,
+        "year": 2024,
+        "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+        "status": "documente",
+        "note": "Estimation IHSI 2024, tableau 76; population totale."
+      },
+      "populationUrbaine": {
+        "value": 5925,
+        "year": 2024,
+        "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+        "status": "documente",
+        "note": "Estimation IHSI 2024, tableau 76; population urbaine."
+      },
+      "populationRurale": {
+        "value": 2511,
+        "year": 2024,
+        "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+        "status": "documente",
+        "note": "Estimation IHSI 2024, tableau 76; population rurale."
+      }
+    },
+    {
+      "department": "Nord-Est",
+      "arrondissement": "Trou-du-Nord",
+      "commune": "Grand-Bassin",
+      "updatedAt": "2026-11-03",
+      "history": {
+        "text": "Un article de presse du 12 décembre 2020 rapporte un arrêté publié au Moniteur du 10 décembre 2020 élevant Grand-Bassin au rang de commune. Le MENFP/BID le décrit néanmoins comme deuxième section communale de Terrier-Rouge dans une carte scolaire d'août 2025. La décision juridique et sa mise en application administrative doivent être distinguées.",
+        "sources": [
+          "https://haitistandard.com/gouvernance-nordest-la-localite-de-grand-bassin-relevee-au-rang-de-commune/",
+          "https://www.haitidocs.org/doc/menfp-carte-scolaire-terrier-rouge?lang=fr"
+        ],
+        "status": "a_verifier"
+      },
+      "services": [],
+      "infrastructures": [],
+      "heritage": [],
+      "verification": "arrete_2020_application_administrative_a_confirmer",
+      "administrativeSource": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+      "audit": {
+        "reviewedAt": "2026-11-03",
+        "method": "Confrontation de l'article du 12 décembre 2020 rapportant un arrêté du Moniteur du 10 décembre 2020 avec la carte scolaire MENFP/BID d'août 2025.",
+        "warnings": [
+          "Élévation au rang de commune rapportée en décembre 2020; texte intégral de l'arrêté non authentifié dans cet audit.",
+          "La carte scolaire MENFP/BID d'août 2025 décrit Grand-Bassin comme deuxième section communale de Terrier-Rouge.",
+          "Statut administratif appliqué, limites et population communale distincte à confirmer auprès de l'IHSI et des autorités.",
+          "Aucune coordonnée ni population distincte inférée."
+        ]
+      }
+    },
+    {
+      "department": "Nord-Est",
+      "arrondissement": "Vallières",
+      "commune": "Vallières",
+      "updatedAt": "2026-11-03",
+      "history": {
+        "text": "Commune et chef-lieu de l'arrondissement de Vallières, documentée dans le répertoire territorial.",
+        "sources": [
+          "https://www.haiti-reference.info/pages/plan/geographie-et-tourisme/divisions-territoriales/arrondissements-et-communes/nordest/"
+        ],
+        "status": "documente"
+      },
+      "services": [],
+      "infrastructures": [],
+      "heritage": [],
+      "verification": "demographie_documentee_autres_rubriques_a_completer",
+      "administrativeSource": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+      "audit": {
+        "reviewedAt": "2026-11-03",
+        "method": "Rattachement administratif recoupé avec le répertoire territorial IHSI; autres rubriques en attente.",
+        "warnings": [
+          "Données estimées pour 2024, non recensement.",
+          "Services publics, infrastructures et patrimoine : recherche documentaire toujours nécessaire.",
+          "Aucune coordonnée GPS ajoutée sans source."
+        ],
+        "demographyReference": "IHSI 2024 tableau 76"
+      },
+      "populationTotale2024": {
+        "value": 25743,
+        "year": 2024,
+        "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+        "status": "documente",
+        "note": "Estimation IHSI 2024, tableau 76; population totale."
+      },
+      "populationUrbaine": {
+        "value": 10377,
+        "year": 2024,
+        "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+        "status": "documente",
+        "note": "Estimation IHSI 2024, tableau 76; population urbaine."
+      },
+      "populationRurale": {
+        "value": 15366,
+        "year": 2024,
+        "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+        "status": "documente",
+        "note": "Estimation IHSI 2024, tableau 76; population rurale."
+      }
+    },
+    {
+      "department": "Nord-Est",
+      "arrondissement": "Vallières",
+      "commune": "Carice",
+      "updatedAt": "2026-11-03",
+      "history": {
+        "text": "Haiti-Référence rapporte l'élévation de Carice au rang de commune en 1950; date à recouper avec l'acte officiel.",
+        "sources": [
+          "https://www.haiti-reference.info/pages/plan/geographie-et-tourisme/divisions-territoriales/arrondissements-et-communes/nordest/"
+        ],
+        "status": "historique"
+      },
+      "services": [],
+      "infrastructures": [],
+      "heritage": [],
+      "verification": "demographie_documentee_autres_rubriques_a_completer",
+      "administrativeSource": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+      "audit": {
+        "reviewedAt": "2026-11-03",
+        "method": "Rattachement administratif recoupé avec le répertoire territorial IHSI; autres rubriques en attente.",
+        "warnings": [
+          "Données estimées pour 2024, non recensement.",
+          "Services publics, infrastructures et patrimoine : recherche documentaire toujours nécessaire.",
+          "Aucune coordonnée GPS ajoutée sans source."
+        ],
+        "demographyReference": "IHSI 2024 tableau 76"
+      },
+      "populationTotale2024": {
+        "value": 14892,
+        "year": 2024,
+        "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+        "status": "documente",
+        "note": "Estimation IHSI 2024, tableau 76; population totale."
+      },
+      "populationUrbaine": {
+        "value": 9365,
+        "year": 2024,
+        "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+        "status": "documente",
+        "note": "Estimation IHSI 2024, tableau 76; population urbaine."
+      },
+      "populationRurale": {
+        "value": 5527,
+        "year": 2024,
+        "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+        "status": "documente",
+        "note": "Estimation IHSI 2024, tableau 76; population rurale."
+      }
+    },
+    {
+      "department": "Nord-Est",
+      "arrondissement": "Vallières",
+      "commune": "Mombin-Crochu",
+      "updatedAt": "2026-11-03",
+      "history": {
+        "text": "Haiti-Référence rapporte une histoire administrative complexe de Mombin-Crochu et une modification de statut en 1942; dates exactes à confirmer dans les actes.",
+        "sources": [
+          "https://www.haiti-reference.info/pages/plan/geographie-et-tourisme/divisions-territoriales/arrondissements-et-communes/nordest/"
+        ],
+        "status": "historique"
+      },
+      "services": [],
+      "infrastructures": [],
+      "heritage": [],
+      "verification": "demographie_documentee_autres_rubriques_a_completer",
+      "administrativeSource": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+      "audit": {
+        "reviewedAt": "2026-11-03",
+        "method": "Rattachement administratif recoupé avec le répertoire territorial IHSI; autres rubriques en attente.",
+        "warnings": [
+          "Données estimées pour 2024, non recensement.",
+          "Services publics, infrastructures et patrimoine : recherche documentaire toujours nécessaire.",
+          "Aucune coordonnée GPS ajoutée sans source."
+        ],
+        "demographyReference": "IHSI 2024 tableau 76"
+      },
+      "populationTotale2024": {
+        "value": 37956,
+        "year": 2024,
+        "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+        "status": "documente",
+        "note": "Estimation IHSI 2024, tableau 76; population totale."
+      },
+      "populationUrbaine": {
+        "value": 14849,
+        "year": 2024,
+        "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+        "status": "documente",
+        "note": "Estimation IHSI 2024, tableau 76; population urbaine."
+      },
+      "populationRurale": {
+        "value": 23107,
+        "year": 2024,
+        "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+        "status": "documente",
+        "note": "Estimation IHSI 2024, tableau 76; population rurale."
+      }
+    },
+    {
+      "department": "Artibonite",
+      "arrondissement": "Les Gonaïves",
+      "commune": "Les Gonaïves",
+      "updatedAt": "2026-11-03",
+      "administrativeSource": "https://www.ihsi.gouv.ht/statistiques/statistiques_demographiques_et_sociales/projections_et_estimations_de_la_population",
+      "history": {
+        "text": "Les Gonaïves sont le lieu de proclamation de l'indépendance d'Haïti le 1er janvier 1804. La ville est le chef-lieu du département de l'Artibonite.",
+        "sources": [
+          "https://heritage.bnf.fr/france-ameriques/jean-jacques-dessalines-et-lindependance-dhaiti",
+          "https://www.haiti-reference.info/pages/plan/geographie-et-tourisme/divisions-territoriales/chefs-lieux/gonaives/"
+        ],
+        "status": "historique"
+      },
+      "services": [],
+      "infrastructures": [],
+      "heritage": [
+        {
+          "name": "Mémoire de la proclamation de l'indépendance",
+          "detail": "Événement historique du 1er janvier 1804 aux Gonaïves. Les monuments et bâtiments précis associés restent à inventorier et localiser.",
+          "source": "https://heritage.bnf.fr/france-ameriques/jean-jacques-dessalines-et-lindependance-dhaiti",
+          "status": "historique"
+        }
+      ],
+      "verification": "demographie_documentee_histoire_partielle",
+      "audit": {
+        "reviewedAt": "2026-11-03",
+        "method": "Recoupement des estimations IHSI 2024 tableau 248 et des sources historiques indiquées.",
+        "warnings": [
+          "Estimations 2024, non recensement 2026.",
+          "Équipements publics, établissements et infrastructures à inventorier séparément.",
+          "Aucune coordonnée GPS inventée.",
+          "Patrimoine matériel local à vérifier sur des sources spécifiques."
+        ]
+      },
+      "populationTotale2024": {
+        "value": 391173,
+        "year": 2024,
+        "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+        "status": "documente",
+        "note": "IHSI 2024, tableau 248 : estimation de population communale totale."
+      },
+      "populationUrbaine": {
+        "value": 358704,
+        "year": 2024,
+        "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+        "status": "documente",
+        "note": "IHSI 2024, tableau 248 : estimation de population urbaine."
+      },
+      "populationRurale": {
+        "value": 32469,
+        "year": 2024,
+        "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+        "status": "documente",
+        "note": "IHSI 2024, tableau 248 : estimation de population rurale."
+      },
+      "areaKm2": 573.58,
+      "areaSource": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+      "areaStatus": "documente"
+    },
+    {
+      "department": "Artibonite",
+      "arrondissement": "Les Gonaïves",
+      "commune": "Ennery",
+      "updatedAt": "2026-11-03",
+      "administrativeSource": "https://www.ihsi.gouv.ht/statistiques/statistiques_demographiques_et_sociales/projections_et_estimations_de_la_population",
+      "history": {
+        "text": "Le rattachement administratif et les données démographiques de la commune sont documentés par l'IHSI. Une histoire locale précise reste à rechercher dans les archives.",
+        "sources": [
+          "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf"
+        ],
+        "status": "a_verifier"
+      },
+      "services": [],
+      "infrastructures": [],
+      "heritage": [],
+      "verification": "demographie_documentee_histoire_partielle",
+      "audit": {
+        "reviewedAt": "2026-11-03",
+        "method": "Recoupement des estimations IHSI 2024 tableau 248 et des sources historiques indiquées.",
+        "warnings": [
+          "Estimations 2024, non recensement 2026.",
+          "Équipements publics, établissements et infrastructures à inventorier séparément.",
+          "Aucune coordonnée GPS inventée.",
+          "Patrimoine matériel local à vérifier sur des sources spécifiques."
+        ]
+      },
+      "populationTotale2024": {
+        "value": 56226,
+        "year": 2024,
+        "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+        "status": "documente",
+        "note": "IHSI 2024, tableau 248 : estimation de population communale totale."
+      },
+      "populationUrbaine": {
+        "value": 14725,
+        "year": 2024,
+        "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+        "status": "documente",
+        "note": "IHSI 2024, tableau 248 : estimation de population urbaine."
+      },
+      "populationRurale": {
+        "value": 41501,
+        "year": 2024,
+        "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+        "status": "documente",
+        "note": "IHSI 2024, tableau 248 : estimation de population rurale."
+      }
+    },
+    {
+      "department": "Artibonite",
+      "arrondissement": "Les Gonaïves",
+      "commune": "L'Estère",
+      "updatedAt": "2026-11-03",
+      "administrativeSource": "https://www.ihsi.gouv.ht/statistiques/statistiques_demographiques_et_sociales/projections_et_estimations_de_la_population",
+      "history": {
+        "text": "Le rattachement administratif et les données démographiques de la commune sont documentés par l'IHSI. Une histoire locale précise reste à rechercher dans les archives.",
+        "sources": [
+          "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf"
+        ],
+        "status": "a_verifier"
+      },
+      "services": [],
+      "infrastructures": [],
+      "heritage": [],
+      "verification": "demographie_documentee_histoire_partielle",
+      "audit": {
+        "reviewedAt": "2026-11-03",
+        "method": "Recoupement des estimations IHSI 2024 tableau 248 et des sources historiques indiquées.",
+        "warnings": [
+          "Estimations 2024, non recensement 2026.",
+          "Équipements publics, établissements et infrastructures à inventorier séparément.",
+          "Aucune coordonnée GPS inventée.",
+          "Patrimoine matériel local à vérifier sur des sources spécifiques."
+        ]
+      },
+      "populationTotale2024": {
+        "value": 49572,
+        "year": 2024,
+        "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+        "status": "documente",
+        "note": "IHSI 2024, tableau 248 : estimation de population communale totale."
+      },
+      "populationUrbaine": {
+        "value": 37266,
+        "year": 2024,
+        "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+        "status": "documente",
+        "note": "IHSI 2024, tableau 248 : estimation de population urbaine."
+      },
+      "populationRurale": {
+        "value": 12306,
+        "year": 2024,
+        "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+        "status": "documente",
+        "note": "IHSI 2024, tableau 248 : estimation de population rurale."
+      }
+    },
+    {
+      "department": "Artibonite",
+      "arrondissement": "Gros-Morne",
+      "commune": "Gros-Morne",
+      "updatedAt": "2026-11-03",
+      "administrativeSource": "https://www.ihsi.gouv.ht/statistiques/statistiques_demographiques_et_sociales/projections_et_estimations_de_la_population",
+      "history": {
+        "text": "La commune de Gros-Morne est le chef-lieu de l'arrondissement du même nom dans l'Artibonite. Son histoire locale reste à documenter avec des archives vérifiables.",
+        "sources": [
+          "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf"
+        ],
+        "status": "a_verifier"
+      },
+      "services": [],
+      "infrastructures": [],
+      "heritage": [],
+      "verification": "demographie_documentee_histoire_partielle",
+      "audit": {
+        "reviewedAt": "2026-11-03",
+        "method": "Population IHSI tableau 248 et superficie tableau 249, source publiée sur HaitiDocs.",
+        "warnings": [
+          "Les chiffres sont des estimations 2024 et non un recensement 2026.",
+          "Les établissements et infrastructures en activité restent à inventorier.",
+          "Aucune coordonnée GPS ajoutée sans preuve cartographique.",
+          "Histoire et patrimoine locaux encore à documenter précisément."
+        ]
+      },
+      "populationTotale2024": {
+        "value": 170905,
+        "year": 2024,
+        "source": "https://www.haitidocs.org/doc/ihsi-2024-disaggregated-estimates?lang=fr",
+        "status": "documente",
+        "note": "IHSI 2024, tableau 248"
+      },
+      "populationUrbaine": {
+        "value": 82196,
+        "year": 2024,
+        "source": "https://www.haitidocs.org/doc/ihsi-2024-disaggregated-estimates?lang=fr",
+        "status": "documente",
+        "note": "IHSI 2024, tableau 248"
+      },
+      "populationRurale": {
+        "value": 88709,
+        "year": 2024,
+        "source": "https://www.haitidocs.org/doc/ihsi-2024-disaggregated-estimates?lang=fr",
+        "status": "documente",
+        "note": "IHSI 2024, tableau 248"
+      },
+      "areaKm2": 397.03,
+      "areaSource": "https://www.haitidocs.org/doc/ihsi-2024-disaggregated-estimates?lang=fr",
+      "areaStatus": "documente"
+    },
+    {
+      "department": "Artibonite",
+      "arrondissement": "Gros-Morne",
+      "commune": "Terre-Neuve",
+      "updatedAt": "2026-11-03",
+      "administrativeSource": "https://www.ihsi.gouv.ht/statistiques/statistiques_demographiques_et_sociales/projections_et_estimations_de_la_population",
+      "history": {
+        "text": "Commune de l'arrondissement de Gros-Morne, documentée dans le répertoire territorial IHSI. Chronologie historique et patrimoine à vérifier.",
+        "sources": [
+          "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf"
+        ],
+        "status": "a_verifier"
+      },
+      "services": [],
+      "infrastructures": [],
+      "heritage": [],
+      "verification": "demographie_documentee_histoire_partielle",
+      "audit": {
+        "reviewedAt": "2026-11-03",
+        "method": "Population IHSI tableau 248 et superficie tableau 249, source publiée sur HaitiDocs.",
+        "warnings": [
+          "Les chiffres sont des estimations 2024 et non un recensement 2026.",
+          "Les établissements et infrastructures en activité restent à inventorier.",
+          "Aucune coordonnée GPS ajoutée sans preuve cartographique.",
+          "Histoire et patrimoine locaux encore à documenter précisément."
+        ]
+      },
+      "populationTotale2024": {
+        "value": 34305,
+        "year": 2024,
+        "source": "https://www.haitidocs.org/doc/ihsi-2024-disaggregated-estimates?lang=fr",
+        "status": "documente",
+        "note": "IHSI 2024, tableau 248"
+      },
+      "populationUrbaine": {
+        "value": 4685,
+        "year": 2024,
+        "source": "https://www.haitidocs.org/doc/ihsi-2024-disaggregated-estimates?lang=fr",
+        "status": "documente",
+        "note": "IHSI 2024, tableau 248"
+      },
+      "populationRurale": {
+        "value": 29620,
+        "year": 2024,
+        "source": "https://www.haitidocs.org/doc/ihsi-2024-disaggregated-estimates?lang=fr",
+        "status": "documente",
+        "note": "IHSI 2024, tableau 248"
+      },
+      "areaKm2": 176.83,
+      "areaSource": "https://www.haitidocs.org/doc/ihsi-2024-disaggregated-estimates?lang=fr",
+      "areaStatus": "documente"
+    },
+    {
+      "department": "Artibonite",
+      "arrondissement": "Gros-Morne",
+      "commune": "Anse-Rouge",
+      "updatedAt": "2026-11-03",
+      "administrativeSource": "https://www.ihsi.gouv.ht/statistiques/statistiques_demographiques_et_sociales/projections_et_estimations_de_la_population",
+      "history": {
+        "text": "Commune de l'arrondissement de Gros-Morne dans le département de l'Artibonite. Les informations historiques détaillées restent à documenter.",
+        "sources": [
+          "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf"
+        ],
+        "status": "a_verifier"
+      },
+      "services": [],
+      "infrastructures": [],
+      "heritage": [],
+      "verification": "demographie_documentee_histoire_partielle",
+      "audit": {
+        "reviewedAt": "2026-11-03",
+        "method": "Population IHSI tableau 248 et superficie tableau 249, source publiée sur HaitiDocs.",
+        "warnings": [
+          "Les chiffres sont des estimations 2024 et non un recensement 2026.",
+          "Les établissements et infrastructures en activité restent à inventorier.",
+          "Aucune coordonnée GPS ajoutée sans preuve cartographique.",
+          "Histoire et patrimoine locaux encore à documenter précisément."
+        ]
+      },
+      "populationTotale2024": {
+        "value": 47636,
+        "year": 2024,
+        "source": "https://www.haitidocs.org/doc/ihsi-2024-disaggregated-estimates?lang=fr",
+        "status": "documente",
+        "note": "IHSI 2024, tableau 248"
+      },
+      "populationUrbaine": {
+        "value": 29562,
+        "year": 2024,
+        "source": "https://www.haitidocs.org/doc/ihsi-2024-disaggregated-estimates?lang=fr",
+        "status": "documente",
+        "note": "IHSI 2024, tableau 248"
+      },
+      "populationRurale": {
+        "value": 18074,
+        "year": 2024,
+        "source": "https://www.haitidocs.org/doc/ihsi-2024-disaggregated-estimates?lang=fr",
+        "status": "documente",
+        "note": "IHSI 2024, tableau 248"
+      },
+      "areaKm2": 434.35,
+      "areaSource": "https://www.haitidocs.org/doc/ihsi-2024-disaggregated-estimates?lang=fr",
+      "areaStatus": "documente"
+    },
+    {
+      "department": "Artibonite",
+      "arrondissement": "Saint-Marc",
+      "commune": "Saint-Marc",
+      "updatedAt": "2026-11-03",
+      "administrativeSource": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+      "history": {
+        "text": "Saint-Marc est une ville portuaire historique de l'Artibonite. Les sources consultées documentent également des fortifications de l'époque postindépendance dans son secteur; les limites communales des ouvrages doivent être contrôlées.",
+        "sources": [
+          "https://www.mtptc.gouv.ht/media/upload/doc/publications/FA_PARR_PGES_Dessalines-Saint%20Michel_Septembre%202021.pdf"
+        ],
+        "status": "historique"
+      },
+      "services": [],
+      "infrastructures": [],
+      "heritage": [
+        {
+          "name": "Fort Doko et fort Madame — secteur de Saint-Marc",
+          "detail": "L'inventaire MTPTC de 2021 classe ces ouvrages dans le secteur de Saint-Marc, au sein du système défensif de Marchand-Dessalines. Localisation communale exacte et accès actuels à confirmer.",
+          "source": "https://www.mtptc.gouv.ht/media/upload/doc/publications/FA_PARR_PGES_Dessalines-Saint%20Michel_Septembre%202021.pdf",
+          "status": "historique"
+        }
+      ],
+      "verification": "demographie_ihsi_documentee_histoire_a_completer",
+      "audit": {
+        "reviewedAt": "2026-11-03",
+        "method": "IHSI 2024, tableaux 248 (population) et 249 (superficie); aucune validation de terrain.",
+        "warnings": [
+          "Population totale, urbaine et rurale sont des estimations pour 2024.",
+          "Histoire locale, monuments et services publics non vérifiés dans cette intervention.",
+          "Ne pas confondre les quartiers de Liancourt et Montrouis avec des communes statistiques distinctes."
+        ]
+      },
+      "administrativeStatus": "commune_ihsi_2024",
+      "populationTotale2024": {
+        "value": 292716,
+        "year": 2024,
+        "source": "https://www.haitidocs.org/doc/ihsi-2024-disaggregated-estimates?lang=fr",
+        "status": "documente",
+        "note": "IHSI 2024 tableau 248, population totale de la commune"
+      },
+      "populationUrbaine": {
+        "value": 237686,
+        "year": 2024,
+        "source": "https://www.haitidocs.org/doc/ihsi-2024-disaggregated-estimates?lang=fr",
+        "status": "documente",
+        "note": "IHSI 2024 tableau 248, population urbaine de la commune"
+      },
+      "populationRurale": {
+        "value": 55030,
+        "year": 2024,
+        "source": "https://www.haitidocs.org/doc/ihsi-2024-disaggregated-estimates?lang=fr",
+        "status": "documente",
+        "note": "IHSI 2024 tableau 248, population rurale de la commune"
+      },
+      "areaKm2": 556.56,
+      "areaSource": "https://www.haitidocs.org/doc/ihsi-2024-disaggregated-estimates?lang=fr",
+      "areaStatus": "documente"
+    },
+    {
+      "department": "Artibonite",
+      "arrondissement": "Saint-Marc",
+      "commune": "Verrettes",
+      "updatedAt": "2026-11-03",
+      "administrativeSource": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+      "history": {
+        "text": "Commune de l'arrondissement de Saint-Marc dans l'Artibonite. Les dates de fondation et les principaux monuments restent à vérifier à partir d'archives locales.",
+        "sources": [
+          "https://ihsi.gouv.ht/statistiques/statistiques_demographiques_et_sociales/data_set"
+        ],
+        "status": "a_verifier"
+      },
+      "services": [],
+      "infrastructures": [],
+      "heritage": [],
+      "verification": "demographie_ihsi_documentee_histoire_a_completer",
+      "audit": {
+        "reviewedAt": "2026-11-03",
+        "method": "IHSI 2024, tableaux 248 (population) et 249 (superficie); aucune validation de terrain.",
+        "warnings": [
+          "Population totale, urbaine et rurale sont des estimations pour 2024.",
+          "Histoire locale, monuments et services publics non vérifiés dans cette intervention.",
+          "Ne pas confondre les quartiers de Liancourt et Montrouis avec des communes statistiques distinctes."
+        ]
+      },
+      "administrativeStatus": "commune_ihsi_2024",
+      "populationTotale2024": {
+        "value": 158965,
+        "year": 2024,
+        "source": "https://www.haitidocs.org/doc/ihsi-2024-disaggregated-estimates?lang=fr",
+        "status": "documente",
+        "note": "IHSI 2024 tableau 248, population totale de la commune"
+      },
+      "populationUrbaine": {
+        "value": 93511,
+        "year": 2024,
+        "source": "https://www.haitidocs.org/doc/ihsi-2024-disaggregated-estimates?lang=fr",
+        "status": "documente",
+        "note": "IHSI 2024 tableau 248, population urbaine de la commune"
+      },
+      "populationRurale": {
+        "value": 65454,
+        "year": 2024,
+        "source": "https://www.haitidocs.org/doc/ihsi-2024-disaggregated-estimates?lang=fr",
+        "status": "documente",
+        "note": "IHSI 2024 tableau 248, population rurale de la commune"
+      },
+      "areaKm2": 356.72,
+      "areaSource": "https://www.haitidocs.org/doc/ihsi-2024-disaggregated-estimates?lang=fr",
+      "areaStatus": "documente"
+    },
+    {
+      "department": "Artibonite",
+      "arrondissement": "Saint-Marc",
+      "commune": "La Chapelle",
+      "updatedAt": "2026-11-03",
+      "administrativeSource": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+      "history": {
+        "text": "Commune de l'arrondissement de Saint-Marc dans l'Artibonite. Les dates de fondation et les principaux monuments restent à vérifier à partir d'archives locales.",
+        "sources": [
+          "https://ihsi.gouv.ht/statistiques/statistiques_demographiques_et_sociales/data_set"
+        ],
+        "status": "a_verifier"
+      },
+      "services": [],
+      "infrastructures": [],
+      "heritage": [],
+      "verification": "demographie_ihsi_documentee_histoire_a_completer",
+      "audit": {
+        "reviewedAt": "2026-11-03",
+        "method": "IHSI 2024, tableaux 248 (population) et 249 (superficie); aucune validation de terrain.",
+        "warnings": [
+          "Population totale, urbaine et rurale sont des estimations pour 2024.",
+          "Histoire locale, monuments et services publics non vérifiés dans cette intervention.",
+          "Ne pas confondre les quartiers de Liancourt et Montrouis avec des communes statistiques distinctes."
+        ]
+      },
+      "administrativeStatus": "commune_ihsi_2024",
+      "populationTotale2024": {
+        "value": 34635,
+        "year": 2024,
+        "source": "https://www.haitidocs.org/doc/ihsi-2024-disaggregated-estimates?lang=fr",
+        "status": "documente",
+        "note": "IHSI 2024 tableau 248, population totale de la commune"
+      },
+      "populationUrbaine": {
+        "value": 14907,
+        "year": 2024,
+        "source": "https://www.haitidocs.org/doc/ihsi-2024-disaggregated-estimates?lang=fr",
+        "status": "documente",
+        "note": "IHSI 2024 tableau 248, population urbaine de la commune"
+      },
+      "populationRurale": {
+        "value": 19728,
+        "year": 2024,
+        "source": "https://www.haitidocs.org/doc/ihsi-2024-disaggregated-estimates?lang=fr",
+        "status": "documente",
+        "note": "IHSI 2024 tableau 248, population rurale de la commune"
+      },
+      "areaKm2": 143.6,
+      "areaSource": "https://www.haitidocs.org/doc/ihsi-2024-disaggregated-estimates?lang=fr",
+      "areaStatus": "documente"
+    },
+    {
+      "department": "Artibonite",
+      "arrondissement": "Saint-Marc",
+      "commune": "Liancourt",
+      "updatedAt": "2026-11-03",
+      "administrativeSource": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+      "history": {
+        "text": "Liancourt figure parmi les communes constituées par décret en juillet 2015, selon un compte rendu de la visite du ministère de l'Intérieur en juin 2017. Le ministère y examinait la structuration administrative. Les estimations IHSI 2024 ne permettent pas d'attribuer une population communale distincte à Liancourt.",
+        "sources": [
+          "https://www.haitilibre.com/article-21286-haiti-politique-vers-la-normalisation-des-communes-de-liancourt-et-montrouis.html",
+          "https://ihsi.gouv.ht/statistiques/statistiques_demographiques_et_sociales/data_set"
+        ],
+        "status": "historique"
+      },
+      "services": [],
+      "infrastructures": [],
+      "heritage": [],
+      "verification": "statut_juridique_rapporte_application_et_delimitation_a_confirmer",
+      "audit": {
+        "reviewedAt": "2026-11-03",
+        "method": "Comparaison des comptes rendus du ministère de l'Intérieur relayés en 2017 et de la couverture statistique IHSI 2024.",
+        "warnings": [
+          "Création juridique par décret de juillet 2015 rapportée par la presse; texte primaire à retrouver.",
+          "Mise en œuvre administrative et limites exactes non établies par ces sources.",
+          "Les données 2024 disponibles pour le quartier ne constituent pas la population de la nouvelle commune.",
+          "Ne pas supprimer la commune du répertoire ni additionner son quartier à une commune parente.",
+          "Les tableaux IHSI 2024 ne les individualisent pas comme communes statistiques; aucune population communale distincte ne peut être inférée."
+        ]
+      },
+      "administrativeStatus": "creation_juridique_rapportee_2015_ihsi_2024_quartier",
+      "populationQuartier2024": {
+        "value": 36832,
+        "year": 2024,
+        "source": "https://www.haitidocs.org/doc/ihsi-2024-disaggregated-estimates?lang=fr",
+        "status": "documente",
+        "note": "Quartier de Liancourt, au sein de Verrettes (IHSI 2024, tableau 248)."
+      }
+    },
+    {
+      "department": "Artibonite",
+      "arrondissement": "Saint-Marc",
+      "commune": "Montrouis",
+      "updatedAt": "2026-11-03",
+      "administrativeSource": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+      "history": {
+        "text": "Montrouis figure parmi les communes constituées par décret en juillet 2015, selon un compte rendu de la visite du ministère de l'Intérieur en juin 2017. Le ministère y examinait la structuration administrative. Les estimations IHSI 2024 ne permettent pas d'attribuer une population communale distincte à Montrouis.",
+        "sources": [
+          "https://www.haitilibre.com/article-21286-haiti-politique-vers-la-normalisation-des-communes-de-liancourt-et-montrouis.html",
+          "https://ihsi.gouv.ht/statistiques/statistiques_demographiques_et_sociales/data_set"
+        ],
+        "status": "historique"
+      },
+      "services": [],
+      "infrastructures": [],
+      "heritage": [],
+      "verification": "statut_juridique_rapporte_application_et_delimitation_a_confirmer",
+      "audit": {
+        "reviewedAt": "2026-11-03",
+        "method": "Comparaison des comptes rendus du ministère de l'Intérieur relayés en 2017 et de la couverture statistique IHSI 2024.",
+        "warnings": [
+          "Création juridique par décret de juillet 2015 rapportée par la presse; texte primaire à retrouver.",
+          "Mise en œuvre administrative et limites exactes non établies par ces sources.",
+          "Les données 2024 disponibles pour le quartier ne constituent pas la population de la nouvelle commune.",
+          "Ne pas supprimer la commune du répertoire ni additionner son quartier à une commune parente.",
+          "Les tableaux IHSI 2024 ne les individualisent pas comme communes statistiques; aucune population communale distincte ne peut être inférée."
+        ]
+      },
+      "administrativeStatus": "creation_juridique_rapportee_2015_ihsi_2024_quartier",
+      "populationQuartier2024": {
+        "value": 12960,
+        "year": 2024,
+        "source": "https://www.haitidocs.org/doc/ihsi-2024-disaggregated-estimates?lang=fr",
+        "status": "documente",
+        "note": "Quartier de Montrouis, au sein de Saint-Marc (IHSI 2024, tableau 248)."
+      }
+    },
+    {
+      "department": "Artibonite",
+      "arrondissement": "Dessalines",
+      "commune": "Dessalines",
+      "updatedAt": "2026-11-03",
+      "administrativeSource": "https://www.ihsi.gouv.ht/statistiques/statistiques_demographiques_et_sociales/projections_et_estimations_de_la_population",
+      "history": {
+        "text": "Marchand-Dessalines, ancienne capitale de l'État haïtien au début du XIXe siècle, est associée à Jean-Jacques Dessalines et à un système de fortifications aménagé après l'indépendance de 1804.",
+        "sources": [
+          "https://www.haitidocs.org/doc/ispan-bulletin-2009-08?lang=fr",
+          "https://www.haiti-reference.info/pages/plan/geographie-et-tourisme/divisions-territoriales/arrondissements-et-communes/artibonite/"
+        ],
+        "status": "historique"
+      },
+      "services": [],
+      "infrastructures": [],
+      "heritage": [
+        {
+          "name": "Fort Décidé",
+          "detail": "Fortification du système défensif de Marchand-Dessalines décrite par l'ISPAN en 2009. État actuel et accès à vérifier. Attribution communale précise et périmètre géographique à confirmer; aucune géolocalisation ajoutée.",
+          "source": "https://www.haitidocs.org/doc/ispan-bulletin-2009-08?lang=fr",
+          "status": "historique"
+        },
+        {
+          "name": "Fort Culbuté (fort La Source)",
+          "detail": "Fortification destinée à protéger l'entrée orientale de Marchand-Dessalines et les sources d'eau; décrite dans l'inventaire patrimonial du MTPTC de 2021. Attribution communale précise et périmètre géographique à confirmer; aucune géolocalisation ajoutée.",
+          "source": "https://www.mtptc.gouv.ht/media/upload/doc/publications/FA_PARR_PGES_Dessalines-Saint%20Michel_Septembre%202021.pdf",
+          "status": "historique"
+        },
+        {
+          "name": "Système fortifié de Marchand-Dessalines",
+          "detail": "Ensemble historique de plusieurs forts décrit par l'ISPAN; les ouvrages situés hors des limites communales ne sont pas attribués automatiquement à Dessalines. Attribution communale précise et périmètre géographique à confirmer; aucune géolocalisation ajoutée.",
+          "source": "https://www.haitidocs.org/doc/ispan-bulletin-2009-10?lang=fr",
+          "status": "historique"
+        }
+      ],
+      "verification": "demographie_ihsi_documentee_patrimoine_partiel",
+      "audit": {
+        "reviewedAt": "2026-11-03",
+        "method": "Recoupement ISPAN 2009, inventaire MTPTC 2021 et répertoire historique.",
+        "warnings": [
+          "Population estimée en 2024; non recensement.",
+          "Ne pas confondre population urbaine et totale.",
+          "État actuel des monuments, services et équipements à confirmer.",
+          "Coordonnées et limites patrimoniales non inférées.",
+          "Les ouvrages du système fortifié de Marchand-Dessalines ne sont pas tous attribués à la commune sans preuve de localisation précise."
+        ],
+        "demographyReference": "IHSI 2024, tableau 248 (population), tableau 249 (superficie lorsqu'indiquée)"
+      },
+      "populationTotale2024": {
+        "value": 199677,
+        "year": 2024,
+        "source": "https://www.haitidocs.org/doc/ihsi-2024-disaggregated-estimates?lang=fr",
+        "status": "documente",
+        "note": "Estimation IHSI 2024, tableau 248, population totale de la commune."
+      },
+      "populationUrbaine": {
+        "value": 77145,
+        "year": 2024,
+        "source": "https://www.haitidocs.org/doc/ihsi-2024-disaggregated-estimates?lang=fr",
+        "status": "documente",
+        "note": "Estimation IHSI 2024, tableau 248, population urbaine de la commune."
+      },
+      "populationRurale": {
+        "value": 122532,
+        "year": 2024,
+        "source": "https://www.haitidocs.org/doc/ihsi-2024-disaggregated-estimates?lang=fr",
+        "status": "documente",
+        "note": "Estimation IHSI 2024, tableau 248, population rurale de la commune."
+      }
+    },
+    {
+      "department": "Artibonite",
+      "arrondissement": "Dessalines",
+      "commune": "Petite-Rivière-de-l'Artibonite",
+      "updatedAt": "2026-11-03",
+      "administrativeSource": "https://www.ihsi.gouv.ht/statistiques/statistiques_demographiques_et_sociales/projections_et_estimations_de_la_population",
+      "history": {
+        "text": "La commune est associée au palais des 365 portes et au fort de la Crête-à-Pierrot, dont l'histoire et la localisation précise demandent un inventaire patrimonial complémentaire.",
+        "sources": [
+          "https://www.haiti-reference.info/pages/plan/geographie-et-tourisme/divisions-territoriales/arrondissements-et-communes/artibonite/"
+        ],
+        "status": "historique"
+      },
+      "services": [],
+      "infrastructures": [],
+      "heritage": [
+        {
+          "name": "Palais des 365 portes",
+          "detail": "Patrimoine historique associé à Petite-Rivière-de-l'Artibonite; délimitation cadastrale, état actuel et coordonnées exactes non vérifiés.",
+          "source": "https://www.haiti-reference.info/pages/plan/geographie-et-tourisme/divisions-territoriales/arrondissements-et-communes/artibonite/",
+          "status": "historique"
+        },
+        {
+          "name": "Fort de la Crête-à-Pierrot",
+          "detail": "Site historique associé à la bataille de 1802; localisation parcellaire et état de conservation à confirmer avant cartographie.",
+          "source": "https://www.haiti-reference.info/pages/plan/geographie-et-tourisme/divisions-territoriales/arrondissements-et-communes/artibonite/",
+          "status": "historique"
+        }
+      ],
+      "verification": "demographie_ihsi_documentee_patrimoine_partiel",
+      "audit": {
+        "reviewedAt": "2026-11-03",
+        "method": "Structure initiale d'après le répertoire administratif du projet; chiffres et informations locales non renseignés sans contrôle des tableaux IHSI.",
+        "warnings": [
+          "Population estimée en 2024; non recensement.",
+          "Ne pas confondre population urbaine et totale.",
+          "État actuel des monuments, services et équipements à confirmer.",
+          "Coordonnées et limites patrimoniales non inférées."
+        ],
+        "demographyReference": "IHSI 2024, tableau 248 (population), tableau 249 (superficie lorsqu'indiquée)"
+      },
+      "populationTotale2024": {
+        "value": 187423,
+        "year": 2024,
+        "source": "https://www.haitidocs.org/doc/ihsi-2024-disaggregated-estimates?lang=fr",
+        "status": "documente",
+        "note": "Estimation IHSI 2024, tableau 248, population totale de la commune."
+      },
+      "populationUrbaine": {
+        "value": 99556,
+        "year": 2024,
+        "source": "https://www.haitidocs.org/doc/ihsi-2024-disaggregated-estimates?lang=fr",
+        "status": "documente",
+        "note": "Estimation IHSI 2024, tableau 248, population urbaine de la commune."
+      },
+      "populationRurale": {
+        "value": 87867,
+        "year": 2024,
+        "source": "https://www.haitidocs.org/doc/ihsi-2024-disaggregated-estimates?lang=fr",
+        "status": "documente",
+        "note": "Estimation IHSI 2024, tableau 248, population rurale de la commune."
+      }
+    },
+    {
+      "department": "Artibonite",
+      "arrondissement": "Dessalines",
+      "commune": "Grande-Saline",
+      "updatedAt": "2026-11-03",
+      "administrativeSource": "https://www.ihsi.gouv.ht/statistiques/statistiques_demographiques_et_sociales/projections_et_estimations_de_la_population",
+      "history": {
+        "text": "Commune située dans la région de l'embouchure du fleuve Artibonite; histoire et usages historiques à préciser.",
+        "sources": [
+          "https://www.haiti-reference.info/pages/plan/geographie-et-tourisme/divisions-territoriales/arrondissements-et-communes/artibonite/"
+        ],
+        "status": "historique"
+      },
+      "services": [],
+      "infrastructures": [],
+      "heritage": [],
+      "verification": "demographie_ihsi_documentee_patrimoine_partiel",
+      "audit": {
+        "reviewedAt": "2026-11-03",
+        "method": "Structure initiale d'après le répertoire administratif du projet; chiffres et informations locales non renseignés sans contrôle des tableaux IHSI.",
+        "warnings": [
+          "Population estimée en 2024; non recensement.",
+          "Ne pas confondre population urbaine et totale.",
+          "État actuel des monuments, services et équipements à confirmer.",
+          "Coordonnées et limites patrimoniales non inférées."
+        ],
+        "demographyReference": "IHSI 2024, tableau 248 (population), tableau 249 (superficie lorsqu'indiquée)"
+      },
+      "populationTotale2024": {
+        "value": 25504,
+        "year": 2024,
+        "source": "https://www.haitidocs.org/doc/ihsi-2024-disaggregated-estimates?lang=fr",
+        "status": "documente",
+        "note": "Estimation IHSI 2024, tableau 248, population totale de la commune."
+      },
+      "populationUrbaine": {
+        "value": 11314,
+        "year": 2024,
+        "source": "https://www.haitidocs.org/doc/ihsi-2024-disaggregated-estimates?lang=fr",
+        "status": "documente",
+        "note": "Estimation IHSI 2024, tableau 248, population urbaine de la commune."
+      },
+      "populationRurale": {
+        "value": 14190,
+        "year": 2024,
+        "source": "https://www.haitidocs.org/doc/ihsi-2024-disaggregated-estimates?lang=fr",
+        "status": "documente",
+        "note": "Estimation IHSI 2024, tableau 248, population rurale de la commune."
+      }
+    },
+    {
+      "department": "Artibonite",
+      "arrondissement": "Dessalines",
+      "commune": "Desdunes",
+      "updatedAt": "2026-11-03",
+      "administrativeSource": "https://www.ihsi.gouv.ht/statistiques/statistiques_demographiques_et_sociales/projections_et_estimations_de_la_population",
+      "history": {
+        "text": "La commune de Desdunes est présentée comme ayant été élevée au rang de commune en 1983 dans un répertoire historique; acte officiel à retrouver.",
+        "sources": [
+          "https://www.haiti-reference.info/pages/plan/geographie-et-tourisme/divisions-territoriales/arrondissements-et-communes/artibonite/"
+        ],
+        "status": "historique"
+      },
+      "services": [],
+      "infrastructures": [],
+      "heritage": [],
+      "verification": "demographie_ihsi_documentee_patrimoine_partiel",
+      "audit": {
+        "reviewedAt": "2026-11-03",
+        "method": "Structure initiale d'après le répertoire administratif du projet; chiffres et informations locales non renseignés sans contrôle des tableaux IHSI.",
+        "warnings": [
+          "Population estimée en 2024; non recensement.",
+          "Ne pas confondre population urbaine et totale.",
+          "État actuel des monuments, services et équipements à confirmer.",
+          "Coordonnées et limites patrimoniales non inférées."
+        ],
+        "demographyReference": "IHSI 2024, tableau 248 (population), tableau 249 (superficie lorsqu'indiquée)"
+      },
+      "populationTotale2024": {
+        "value": 40645,
+        "year": 2024,
+        "source": "https://www.haitidocs.org/doc/ihsi-2024-disaggregated-estimates?lang=fr",
+        "status": "documente",
+        "note": "Estimation IHSI 2024, tableau 248, population totale de la commune."
+      },
+      "populationUrbaine": {
+        "value": 39127,
+        "year": 2024,
+        "source": "https://www.haitidocs.org/doc/ihsi-2024-disaggregated-estimates?lang=fr",
+        "status": "documente",
+        "note": "Estimation IHSI 2024, tableau 248, population urbaine de la commune."
+      },
+      "populationRurale": {
+        "value": 1518,
+        "year": 2024,
+        "source": "https://www.haitidocs.org/doc/ihsi-2024-disaggregated-estimates?lang=fr",
+        "status": "documente",
+        "note": "Estimation IHSI 2024, tableau 248, population rurale de la commune."
+      }
+    },
+    {
+      "department": "Artibonite",
+      "arrondissement": "Marmelade",
+      "commune": "Marmelade",
+      "updatedAt": "2026-11-03",
+      "administrativeSource": "https://www.ihsi.gouv.ht/statistiques/statistiques_demographiques_et_sociales/projections_et_estimations_de_la_population",
+      "history": {
+        "text": "Commune de l'arrondissement de Marmelade dans l'Artibonite; chronologie historique détaillée à établir à partir d'archives et de publications patrimoniales.",
+        "sources": [
+          "https://www.haitidocs.org/doc/ihsi-2024-disaggregated-estimates?lang=fr"
+        ],
+        "status": "a_verifier"
+      },
+      "services": [],
+      "infrastructures": [],
+      "heritage": [],
+      "verification": "demographie_ihsi_documentee_patrimoine_partiel",
+      "audit": {
+        "reviewedAt": "2026-11-03",
+        "method": "Structure initiale d'après le répertoire administratif du projet; chiffres et informations locales non renseignés sans contrôle des tableaux IHSI.",
+        "warnings": [
+          "Population estimée en 2024; non recensement.",
+          "Ne pas confondre population urbaine et totale.",
+          "État actuel des monuments, services et équipements à confirmer.",
+          "Coordonnées et limites patrimoniales non inférées."
+        ],
+        "demographyReference": "IHSI 2024, tableau 248 (population), tableau 249 (superficie lorsqu'indiquée)"
+      },
+      "populationTotale2024": {
+        "value": 41775,
+        "year": 2024,
+        "source": "https://www.haitidocs.org/doc/ihsi-2024-disaggregated-estimates?lang=fr",
+        "status": "documente",
+        "note": "Estimation IHSI 2024, tableau 248, population totale de la commune."
+      },
+      "populationUrbaine": {
+        "value": 20544,
+        "year": 2024,
+        "source": "https://www.haitidocs.org/doc/ihsi-2024-disaggregated-estimates?lang=fr",
+        "status": "documente",
+        "note": "Estimation IHSI 2024, tableau 248, population urbaine de la commune."
+      },
+      "populationRurale": {
+        "value": 21231,
+        "year": 2024,
+        "source": "https://www.haitidocs.org/doc/ihsi-2024-disaggregated-estimates?lang=fr",
+        "status": "documente",
+        "note": "Estimation IHSI 2024, tableau 248, population rurale de la commune."
+      },
+      "areaKm2": 108.94,
+      "areaSource": "https://www.haitidocs.org/doc/ihsi-2024-disaggregated-estimates?lang=fr",
+      "areaStatus": "documente"
+    },
+    {
+      "department": "Artibonite",
+      "arrondissement": "Marmelade",
+      "commune": "Saint-Michel-de-l'Attalaye",
+      "updatedAt": "2026-11-03",
+      "administrativeSource": "https://www.ihsi.gouv.ht/statistiques/statistiques_demographiques_et_sociales/projections_et_estimations_de_la_population",
+      "history": {
+        "text": "Commune de l'arrondissement de Marmelade dans l'Artibonite; chronologie historique détaillée à établir à partir d'archives et de publications patrimoniales.",
+        "sources": [
+          "https://www.haitidocs.org/doc/ihsi-2024-disaggregated-estimates?lang=fr"
+        ],
+        "status": "a_verifier"
+      },
+      "services": [],
+      "infrastructures": [],
+      "heritage": [],
+      "verification": "demographie_ihsi_documentee_patrimoine_partiel",
+      "audit": {
+        "reviewedAt": "2026-11-03",
+        "method": "Structure initiale d'après le répertoire administratif du projet; chiffres et informations locales non renseignés sans contrôle des tableaux IHSI.",
+        "warnings": [
+          "Population estimée en 2024; non recensement.",
+          "Ne pas confondre population urbaine et totale.",
+          "État actuel des monuments, services et équipements à confirmer.",
+          "Coordonnées et limites patrimoniales non inférées."
+        ],
+        "demographyReference": "IHSI 2024, tableau 248 (population), tableau 249 (superficie lorsqu'indiquée)"
+      },
+      "populationTotale2024": {
+        "value": 165223,
+        "year": 2024,
+        "source": "https://www.haitidocs.org/doc/ihsi-2024-disaggregated-estimates?lang=fr",
+        "status": "documente",
+        "note": "Estimation IHSI 2024, tableau 248, population totale de la commune."
+      },
+      "populationUrbaine": {
+        "value": 81951,
+        "year": 2024,
+        "source": "https://www.haitidocs.org/doc/ihsi-2024-disaggregated-estimates?lang=fr",
+        "status": "documente",
+        "note": "Estimation IHSI 2024, tableau 248, population urbaine de la commune."
+      },
+      "populationRurale": {
+        "value": 83272,
+        "year": 2024,
+        "source": "https://www.haitidocs.org/doc/ihsi-2024-disaggregated-estimates?lang=fr",
+        "status": "documente",
+        "note": "Estimation IHSI 2024, tableau 248, population rurale de la commune."
+      },
+      "areaKm2": 613.74,
+      "areaSource": "https://www.haitidocs.org/doc/ihsi-2024-disaggregated-estimates?lang=fr",
+      "areaStatus": "documente"
+    },
+    {
+      "department": "Centre",
+      "arrondissement": "Hinche",
+      "commune": "Hinche",
+      "updatedAt": "2026-11-03",
+      "history": {
+        "text": "Histoire locale à documenter à partir de sources institutionnelles et historiques identifiées.",
+        "sources": [],
+        "status": "a_verifier"
+      },
+      "services": [],
+      "infrastructures": [],
+      "heritage": [
+        {
+          "name": "Bassin Zim et grottes associées",
+          "detail": "Site naturel et ensemble de grottes signalés près de Hinche par une source de terrain; rattachement communal précis, statut patrimonial et coordonnées non vérifiés.",
+          "source": "https://www.mappinghaitianhistory.com/central",
+          "status": "a_verifier"
+        }
+      ],
+      "verification": "demographie_documentee_audit_historique_patrimonial_ouvert",
+      "audit": {
+        "reviewedAt": "2026-11-03",
+        "method": "Lecture des tableaux 110 et 111 du rapport IHSI 2024 et calcul du total urbain+rural.",
+        "warnings": [
+          "Estimations 2024, pas un recensement.",
+          "Population totale calculée à partir des deux tableaux et non copiée d'un tableau de population totale.",
+          "Services publics, patrimoine, histoire et infrastructures à documenter indépendamment.",
+          "Aucune coordonnée GPS inventée.",
+          "Chronologie historique et éventuels sites patrimoniaux nécessitent des références primaires propres à la commune.",
+          "Ne pas confondre patrimoine culturel local, pèlerinage, protection juridique nationale et inscription UNESCO.",
+          "Aucun monument précisément localisé n'a été ajouté à cette étape faute de source patrimoniale vérifiable."
+        ],
+        "historicalAdministrativeReview": "Revue documentaire initiale : rattachement territorial confronté au tableau administratif IHSI 2024. Patrimoine non certifié sans inventaire ISPAN localisé."
+      },
+      "populationTotale2024": {
+        "value": 138051,
+        "year": 2024,
+        "source": "https://budget.gouv.ht/storage/app/uploads/public/67c/e9d/d54/67ce9dd540912792656630.pdf",
+        "status": "documente",
+        "note": "Total calculé à partir des populations urbaine (tableau 110) et rurale (tableau 111) de l'IHSI 2024."
+      },
+      "populationUrbaine": {
+        "value": 74966,
+        "year": 2024,
+        "source": "https://budget.gouv.ht/storage/app/uploads/public/67c/e9d/d54/67ce9dd540912792656630.pdf",
+        "status": "documente",
+        "note": "IHSI 2024, tableau 110 : population urbaine."
+      },
+      "populationRurale": {
+        "value": 63085,
+        "year": 2024,
+        "source": "https://budget.gouv.ht/storage/app/uploads/public/67c/e9d/d54/67ce9dd540912792656630.pdf",
+        "status": "documente",
+        "note": "IHSI 2024, tableau 111 : population rurale."
+      }
+    },
+    {
+      "department": "Centre",
+      "arrondissement": "Hinche",
+      "commune": "Maïssade",
+      "updatedAt": "2026-11-03",
+      "history": {
+        "text": "Haiti-Référence rapporte que Maïssade était aussi appelée « Maisal ». Un diagnostic agricole de 2004 identifie ses sections Savane Grande, Narang et Hatty; ces noms et leur statut actuel doivent être recoupés.",
+        "sources": [
+          "https://www.haiti-reference.info/pages/plan/geographie-et-tourisme/divisions-territoriales/arrondissements-et-communes/centre/",
+          "https://www.haitidocs.org/doc/gardel-haut-plateau-central-diagnostic-2004?lang=fr"
+        ],
+        "status": "historique_a_verifier"
+      },
+      "services": [],
+      "infrastructures": [],
+      "heritage": [],
+      "verification": "demographie_documentee_autres_rubriques_a_completer",
+      "audit": {
+        "reviewedAt": "2026-11-03",
+        "method": "Lecture des tableaux 110 et 111 du rapport IHSI 2024 et calcul du total urbain+rural.",
+        "warnings": [
+          "Estimations 2024, pas un recensement.",
+          "Population totale calculée à partir des deux tableaux et non copiée d'un tableau de population totale.",
+          "Services publics, patrimoine, histoire et infrastructures à documenter indépendamment.",
+          "Aucune coordonnée GPS inventée.",
+          "Les divisions territoriales de 2004 ne prouvent pas la nomenclature en vigueur en 2026.",
+          "Aucun site patrimonial, classement ou géolocalisation ajouté sans preuve spécifique."
+        ],
+        "historicalReview": "Sources secondaires historiques et diagnostic sectoriel daté recensés; actes primaires et patrimoine matériel non certifiés."
+      },
+      "populationTotale2024": {
+        "value": 67315,
+        "year": 2024,
+        "source": "https://budget.gouv.ht/storage/app/uploads/public/67c/e9d/d54/67ce9dd540912792656630.pdf",
+        "status": "documente",
+        "note": "Total calculé à partir des populations urbaine (tableau 110) et rurale (tableau 111) de l'IHSI 2024."
+      },
+      "populationUrbaine": {
+        "value": 31272,
+        "year": 2024,
+        "source": "https://budget.gouv.ht/storage/app/uploads/public/67c/e9d/d54/67ce9dd540912792656630.pdf",
+        "status": "documente",
+        "note": "IHSI 2024, tableau 110 : population urbaine."
+      },
+      "populationRurale": {
+        "value": 36043,
+        "year": 2024,
+        "source": "https://budget.gouv.ht/storage/app/uploads/public/67c/e9d/d54/67ce9dd540912792656630.pdf",
+        "status": "documente",
+        "note": "IHSI 2024, tableau 111 : population rurale."
+      }
+    },
+    {
+      "department": "Centre",
+      "arrondissement": "Hinche",
+      "commune": "Thomonde",
+      "updatedAt": "2026-11-03",
+      "history": {
+        "text": "Haiti-Référence situe l'élévation de Thomonde au rang de commune au 17 mai 1949. Le diagnostic agricole de 2004 mentionne Cabral, Tierra Muscady et Baille Touribe parmi ses sections; acte historique et délimitations actuelles à contrôler.",
+        "sources": [
+          "https://www.haiti-reference.info/pages/plan/geographie-et-tourisme/divisions-territoriales/arrondissements-et-communes/centre/",
+          "https://www.haitidocs.org/doc/gardel-haut-plateau-central-diagnostic-2004?lang=fr"
+        ],
+        "status": "historique_a_verifier"
+      },
+      "services": [],
+      "infrastructures": [],
+      "heritage": [],
+      "verification": "demographie_documentee_autres_rubriques_a_completer",
+      "audit": {
+        "reviewedAt": "2026-11-03",
+        "method": "Lecture des tableaux 110 et 111 du rapport IHSI 2024 et calcul du total urbain+rural.",
+        "warnings": [
+          "Estimations 2024, pas un recensement.",
+          "Population totale calculée à partir des deux tableaux et non copiée d'un tableau de population totale.",
+          "Services publics, patrimoine, histoire et infrastructures à documenter indépendamment.",
+          "Aucune coordonnée GPS inventée.",
+          "Les divisions territoriales de 2004 ne prouvent pas la nomenclature en vigueur en 2026.",
+          "Aucun site patrimonial, classement ou géolocalisation ajouté sans preuve spécifique."
+        ],
+        "historicalReview": "Sources secondaires historiques et diagnostic sectoriel daté recensés; actes primaires et patrimoine matériel non certifiés."
+      },
+      "populationTotale2024": {
+        "value": 70662,
+        "year": 2024,
+        "source": "https://budget.gouv.ht/storage/app/uploads/public/67c/e9d/d54/67ce9dd540912792656630.pdf",
+        "status": "documente",
+        "note": "Total calculé à partir des populations urbaine (tableau 110) et rurale (tableau 111) de l'IHSI 2024."
+      },
+      "populationUrbaine": {
+        "value": 25398,
+        "year": 2024,
+        "source": "https://budget.gouv.ht/storage/app/uploads/public/67c/e9d/d54/67ce9dd540912792656630.pdf",
+        "status": "documente",
+        "note": "IHSI 2024, tableau 110 : population urbaine."
+      },
+      "populationRurale": {
+        "value": 45264,
+        "year": 2024,
+        "source": "https://budget.gouv.ht/storage/app/uploads/public/67c/e9d/d54/67ce9dd540912792656630.pdf",
+        "status": "documente",
+        "note": "IHSI 2024, tableau 111 : population rurale."
+      }
+    },
+    {
+      "department": "Centre",
+      "arrondissement": "Hinche",
+      "commune": "Cerca-Carvajal",
+      "updatedAt": "2026-11-03",
+      "history": {
+        "text": "Un diagnostic agricole du Haut Plateau Central (2004) identifie Cerca-Carvajal comme commune de l'arrondissement de Hinche et mentionne Rang comme section; vérifier la nomenclature actuelle sur les actes officiels.",
+        "sources": [
+          "https://www.haitidocs.org/doc/gardel-haut-plateau-central-diagnostic-2004?lang=fr"
+        ],
+        "status": "historique_a_verifier"
+      },
+      "services": [],
+      "infrastructures": [],
+      "heritage": [],
+      "verification": "demographie_documentee_autres_rubriques_a_completer",
+      "audit": {
+        "reviewedAt": "2026-11-03",
+        "method": "Lecture des tableaux 110 et 111 du rapport IHSI 2024 et calcul du total urbain+rural.",
+        "warnings": [
+          "Estimations 2024, pas un recensement.",
+          "Population totale calculée à partir des deux tableaux et non copiée d'un tableau de population totale.",
+          "Services publics, patrimoine, histoire et infrastructures à documenter indépendamment.",
+          "Aucune coordonnée GPS inventée.",
+          "Les divisions territoriales de 2004 ne prouvent pas la nomenclature en vigueur en 2026.",
+          "Aucun site patrimonial, classement ou géolocalisation ajouté sans preuve spécifique."
+        ],
+        "historicalReview": "Sources secondaires historiques et diagnostic sectoriel daté recensés; actes primaires et patrimoine matériel non certifiés."
+      },
+      "populationTotale2024": {
+        "value": 26561,
+        "year": 2024,
+        "source": "https://budget.gouv.ht/storage/app/uploads/public/67c/e9d/d54/67ce9dd540912792656630.pdf",
+        "status": "documente",
+        "note": "Total calculé à partir des populations urbaine (tableau 110) et rurale (tableau 111) de l'IHSI 2024."
+      },
+      "populationUrbaine": {
+        "value": 11874,
+        "year": 2024,
+        "source": "https://budget.gouv.ht/storage/app/uploads/public/67c/e9d/d54/67ce9dd540912792656630.pdf",
+        "status": "documente",
+        "note": "IHSI 2024, tableau 110 : population urbaine."
+      },
+      "populationRurale": {
+        "value": 14687,
+        "year": 2024,
+        "source": "https://budget.gouv.ht/storage/app/uploads/public/67c/e9d/d54/67ce9dd540912792656630.pdf",
+        "status": "documente",
+        "note": "IHSI 2024, tableau 111 : population rurale."
+      }
+    },
+    {
+      "department": "Centre",
+      "arrondissement": "Mirebalais",
+      "commune": "Mirebalais",
+      "updatedAt": "2026-11-03",
+      "history": {
+        "text": "La présence du Fort Anglais est signalée dans un inventaire de terrain du patrimoine historique de Mirebalais; sa datation, son classement et son périmètre demandent confirmation dans le bulletin ISPAN n°2.",
+        "sources": [
+          "https://www.mappinghaitianhistory.com/central",
+          "https://www.haitidocs.org/series/ispan-bulletin?lang=fr"
+        ],
+        "status": "historique_a_verifier"
+      },
+      "services": [],
+      "infrastructures": [],
+      "heritage": [
+        {
+          "name": "Fort Anglais",
+          "detail": "Fort historique décrit sur une colline à l'est de Mirebalais dans un inventaire de terrain indépendant, qui renvoie au bulletin ISPAN n°2; classement et localisation exacte à contrôler sur source primaire.",
+          "source": "https://www.mappinghaitianhistory.com/central",
+          "status": "historique_a_verifier"
+        }
+      ],
+      "verification": "demographie_documentee_audit_historique_patrimonial_ouvert",
+      "audit": {
+        "reviewedAt": "2026-11-03",
+        "method": "Transcription des estimations de population IHSI 2024 tableau 250, superficie du tableau 251 si indiquée.",
+        "warnings": [
+          "Estimation 2024, non recensement.",
+          "Population communale totale, urbaine et rurale distinctes des quartiers et sections.",
+          "Services, infrastructures, histoire et patrimoine non vérifiés dans cette phase.",
+          "Aucune coordonnée GPS ni établissement inventés.",
+          "Chronologie historique et éventuels sites patrimoniaux nécessitent des références primaires propres à la commune.",
+          "Ne pas confondre patrimoine culturel local, pèlerinage, protection juridique nationale et inscription UNESCO.",
+          "Aucun monument précisément localisé n'a été ajouté à cette étape faute de source patrimoniale vérifiable."
+        ],
+        "historicalAdministrativeReview": "Revue documentaire initiale : rattachement territorial confronté au tableau administratif IHSI 2024. Patrimoine non certifié sans inventaire ISPAN localisé."
+      },
+      "populationTotale2024": {
+        "value": 111654,
+        "year": 2024,
+        "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+        "status": "documente",
+        "note": "IHSI 2024, tableau 250, estimation de population totale."
+      },
+      "populationUrbaine": {
+        "value": 42210,
+        "year": 2024,
+        "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+        "status": "documente",
+        "note": "IHSI 2024, tableau 250, estimation de population urbaine."
+      },
+      "populationRurale": {
+        "value": 69444,
+        "year": 2024,
+        "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+        "status": "documente",
+        "note": "IHSI 2024, tableau 250, estimation de population rurale."
+      },
+      "areaKm2": 330.87,
+      "areaSource": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+      "areaStatus": "documente"
+    },
+    {
+      "department": "Centre",
+      "arrondissement": "Mirebalais",
+      "commune": "Saut-d'Eau",
+      "updatedAt": "2026-11-03",
+      "history": {
+        "text": "Saut-d'Eau est associé à un pèlerinage annuel autour de la fête de Notre-Dame du Mont-Carmel, le 16 juillet, et à sa cascade. Ce fait culturel ne constitue pas à lui seul une preuve de classement patrimonial.",
+        "sources": [
+          "https://www.haiti-reference.info/pages/plan/religions/vodou-haitien/vodou-lieux-saints/"
+        ],
+        "status": "historique"
+      },
+      "services": [],
+      "infrastructures": [],
+      "heritage": [
+        {
+          "name": "Cascade de Saut-d'Eau",
+          "detail": "Site naturel et lieu de pèlerinage associé à la fête du 16 juillet; limites, statut de protection et état actuel à documenter. Un inventaire de terrain indépendant décrit également l'accès à la cascade et les pratiques de pèlerinage.",
+          "source": "https://www.haiti-reference.info/pages/plan/religions/vodou-haitien/vodou-lieux-saints/",
+          "status": "historique",
+          "secondarySource": "https://www.mappinghaitianhistory.com/central"
+        }
+      ],
+      "verification": "demographie_documentee_audit_historique_patrimonial_ouvert",
+      "audit": {
+        "reviewedAt": "2026-11-03",
+        "method": "Transcription des estimations de population IHSI 2024 tableau 250, superficie du tableau 251 si indiquée.",
+        "warnings": [
+          "Estimation 2024, non recensement.",
+          "Population communale totale, urbaine et rurale distinctes des quartiers et sections.",
+          "Services, infrastructures, histoire et patrimoine non vérifiés dans cette phase.",
+          "Aucune coordonnée GPS ni établissement inventés.",
+          "Chronologie historique et éventuels sites patrimoniaux nécessitent des références primaires propres à la commune.",
+          "Ne pas confondre patrimoine culturel local, pèlerinage, protection juridique nationale et inscription UNESCO."
+        ],
+        "historicalAdministrativeReview": "Revue documentaire initiale : rattachement territorial confronté au tableau administratif IHSI 2024. Patrimoine non certifié sans inventaire ISPAN localisé."
+      },
+      "populationTotale2024": {
+        "value": 44616,
+        "year": 2024,
+        "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+        "status": "documente",
+        "note": "IHSI 2024, tableau 250, estimation de population totale."
+      },
+      "populationUrbaine": {
+        "value": 12615,
+        "year": 2024,
+        "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+        "status": "documente",
+        "note": "IHSI 2024, tableau 250, estimation de population urbaine."
+      },
+      "populationRurale": {
+        "value": 32001,
+        "year": 2024,
+        "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+        "status": "documente",
+        "note": "IHSI 2024, tableau 250, estimation de population rurale."
+      },
+      "areaKm2": 179.41,
+      "areaSource": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+      "areaStatus": "documente"
+    },
+    {
+      "department": "Centre",
+      "arrondissement": "Mirebalais",
+      "commune": "Boucan-Carré",
+      "updatedAt": "2026-11-03",
+      "history": {
+        "text": "Selon Haiti-Référence, Boucan-Carré, anciennement Chambo, a été une section communale de Mirebalais avant son élévation au rang de commune en avril 1985. La référence juridique primaire reste à retrouver.",
+        "sources": [
+          "https://www.haiti-reference.info/pages/plan/geographie-et-tourisme/divisions-territoriales/arrondissements-et-communes/centre/"
+        ],
+        "status": "historique_a_verifier"
+      },
+      "services": [],
+      "infrastructures": [],
+      "heritage": [],
+      "verification": "demographie_ihsi_documentee_autres_rubriques_a_completer",
+      "audit": {
+        "reviewedAt": "2026-11-03",
+        "method": "Transcription des estimations de population IHSI 2024 tableau 250, superficie du tableau 251 si indiquée.",
+        "warnings": [
+          "Estimation 2024, non recensement.",
+          "Population communale totale, urbaine et rurale distinctes des quartiers et sections.",
+          "Services, infrastructures, histoire et patrimoine non vérifiés dans cette phase.",
+          "Aucune coordonnée GPS ni établissement inventés."
+        ]
+      },
+      "populationTotale2024": {
+        "value": 63982,
+        "year": 2024,
+        "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+        "status": "documente",
+        "note": "IHSI 2024, tableau 250, estimation de population totale."
+      },
+      "populationUrbaine": {
+        "value": 9957,
+        "year": 2024,
+        "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+        "status": "documente",
+        "note": "IHSI 2024, tableau 250, estimation de population urbaine."
+      },
+      "populationRurale": {
+        "value": 54025,
+        "year": 2024,
+        "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+        "status": "documente",
+        "note": "IHSI 2024, tableau 250, estimation de population rurale."
+      }
+    },
+    {
+      "department": "Centre",
+      "arrondissement": "Lascahobas",
+      "commune": "Lascahobas",
+      "updatedAt": "2026-11-03",
+      "history": {
+        "text": "Lascahobas figure parmi les communes de l'arrondissement homonyme dans le répertoire IHSI 2024. La chronologie locale et les éléments patrimoniaux restent à établir sur archives primaires.",
+        "sources": [
+          "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf"
+        ],
+        "status": "historique_a_verifier"
+      },
+      "services": [],
+      "infrastructures": [],
+      "heritage": [],
+      "verification": "demographie_ihsi_documentee_autres_rubriques_a_completer",
+      "audit": {
+        "reviewedAt": "2026-11-03",
+        "method": "Transcription des estimations de population IHSI 2024 tableau 250, superficie du tableau 251 si indiquée.",
+        "warnings": [
+          "Estimation 2024, non recensement.",
+          "Population communale totale, urbaine et rurale distinctes des quartiers et sections.",
+          "Services, infrastructures, histoire et patrimoine non vérifiés dans cette phase.",
+          "Aucune coordonnée GPS ni établissement inventés.",
+          "Les divisions territoriales de 2004 ne prouvent pas la nomenclature en vigueur en 2026.",
+          "Aucun site patrimonial, classement ou géolocalisation ajouté sans preuve spécifique."
+        ],
+        "historicalReview": "Sources secondaires historiques et diagnostic sectoriel daté recensés; actes primaires et patrimoine matériel non certifiés."
+      },
+      "populationTotale2024": {
+        "value": 52396,
+        "year": 2024,
+        "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+        "status": "documente",
+        "note": "IHSI 2024, tableau 250, estimation de population totale."
+      },
+      "populationUrbaine": {
+        "value": 22307,
+        "year": 2024,
+        "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+        "status": "documente",
+        "note": "IHSI 2024, tableau 250, estimation de population urbaine."
+      },
+      "populationRurale": {
+        "value": 30089,
+        "year": 2024,
+        "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+        "status": "documente",
+        "note": "IHSI 2024, tableau 250, estimation de population rurale."
+      }
+    },
+    {
+      "department": "Centre",
+      "arrondissement": "Lascahobas",
+      "commune": "Belladère",
+      "updatedAt": "2026-11-03",
+      "history": {
+        "text": "Belladère a été érigée en commune par la loi du 2 août 1907, publiée au Moniteur le 10 août 1907, selon une transcription historique. En 2015, l'ancien quartier Baptiste a été élevé au rang de commune par décret, tandis que l'IHSI 2024 continue de comptabiliser Baptiste comme quartier dans la ventilation démographique de Belladère.",
+        "sources": [
+          "https://www.haitianaute.com/2021/04/",
+          "https://lenouvelliste.com/article/148647/creation-de-cinq-nouvelles-communes-par-decret-presidentiel"
+        ],
+        "status": "historique"
+      },
+      "services": [],
+      "infrastructures": [],
+      "heritage": [],
+      "verification": "demographie_documentee_audit_historique_patrimonial_ouvert",
+      "audit": {
+        "reviewedAt": "2026-11-03",
+        "method": "Transcription des estimations de population IHSI 2024 tableau 250, superficie du tableau 251 si indiquée.",
+        "warnings": [
+          "Estimation 2024, non recensement.",
+          "Population communale totale, urbaine et rurale distinctes des quartiers et sections.",
+          "Services, infrastructures, histoire et patrimoine non vérifiés dans cette phase.",
+          "Aucune coordonnée GPS ni établissement inventés.",
+          "Chronologie historique et éventuels sites patrimoniaux nécessitent des références primaires propres à la commune.",
+          "Ne pas confondre patrimoine culturel local, pèlerinage, protection juridique nationale et inscription UNESCO."
+        ],
+        "historicalAdministrativeReview": "Revue documentaire initiale : rattachement territorial confronté au tableau administratif IHSI 2024. Patrimoine non certifié sans inventaire ISPAN localisé."
+      },
+      "populationTotale2024": {
+        "value": 98916,
+        "year": 2024,
+        "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+        "status": "documente",
+        "note": "IHSI 2024, tableau 250, estimation de population totale."
+      },
+      "populationUrbaine": {
+        "value": 35827,
+        "year": 2024,
+        "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+        "status": "documente",
+        "note": "IHSI 2024, tableau 250, estimation de population urbaine."
+      },
+      "populationRurale": {
+        "value": 63089,
+        "year": 2024,
+        "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+        "status": "documente",
+        "note": "IHSI 2024, tableau 250, estimation de population rurale."
+      }
+    },
+    {
+      "department": "Centre",
+      "arrondissement": "Lascahobas",
+      "commune": "Savanette",
+      "updatedAt": "2026-11-03",
+      "history": {
+        "text": "Selon Haiti-Référence, Savanette est devenue quartier par loi du 1er octobre 1907, puis commune en 1932; une suppression en 1942 et une réorganisation des sections en 1956 sont rapportées. Textes originaux à confronter.",
+        "sources": [
+          "https://www.haiti-reference.info/pages/plan/geographie-et-tourisme/divisions-territoriales/arrondissements-et-communes/centre/"
+        ],
+        "status": "historique_a_verifier"
+      },
+      "services": [],
+      "infrastructures": [],
+      "heritage": [],
+      "verification": "demographie_ihsi_documentee_autres_rubriques_a_completer",
+      "audit": {
+        "reviewedAt": "2026-11-03",
+        "method": "Transcription des estimations de population IHSI 2024 tableau 250, superficie du tableau 251 si indiquée.",
+        "warnings": [
+          "Estimation 2024, non recensement.",
+          "Population communale totale, urbaine et rurale distinctes des quartiers et sections.",
+          "Services, infrastructures, histoire et patrimoine non vérifiés dans cette phase.",
+          "Aucune coordonnée GPS ni établissement inventés.",
+          "Les divisions territoriales de 2004 ne prouvent pas la nomenclature en vigueur en 2026.",
+          "Aucun site patrimonial, classement ou géolocalisation ajouté sans preuve spécifique."
+        ],
+        "historicalReview": "Sources secondaires historiques et diagnostic sectoriel daté recensés; actes primaires et patrimoine matériel non certifiés."
+      },
+      "populationTotale2024": {
+        "value": 41346,
+        "year": 2024,
+        "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+        "status": "documente",
+        "note": "IHSI 2024, tableau 250, estimation de population totale."
+      },
+      "populationUrbaine": {
+        "value": 11613,
+        "year": 2024,
+        "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+        "status": "documente",
+        "note": "IHSI 2024, tableau 250, estimation de population urbaine."
+      },
+      "populationRurale": {
+        "value": 29733,
+        "year": 2024,
+        "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+        "status": "documente",
+        "note": "IHSI 2024, tableau 250, estimation de population rurale."
+      }
+    },
+    {
+      "department": "Centre",
+      "arrondissement": "Lascahobas",
+      "commune": "Baptiste",
+      "updatedAt": "2026-11-03",
+      "history": {
+        "text": "Le décret du 22 juillet 2015 (Le Moniteur n° 147 du 5 août 2015) a élevé Baptiste, ancien quartier de la première section Renthe-Mathé de Belladère, au rang de commune. Un arrêté du 14 novembre 2018 (Le Moniteur n° 197 du 16 novembre 2018) a nommé une commission municipale pour Baptiste. Les tableaux démographiques IHSI 2024 conservent une ventilation de quartier sous Belladère; la population communale autonome n'est pas établie par ces tableaux. Le décret de 2015 prévoit également le rattachement de la 3e section communale Riaribes à Baptiste. Les limites cardinales sont identifiées textuellement mais ne constituent pas une géométrie validée.",
+        "sources": [
+          "https://lenouvelliste.com/article/148647/creation-de-cinq-nouvelles-communes-par-decret-presidentiel",
+          "https://www.haitidocs.org/doc/moniteur-2018-11-16-nominations-delegues?lang=fr",
+          "https://www.haiti-reference.info/pages/plan/geographie-et-tourisme/divisions-territoriales/arrondissements-et-communes/centre/",
+          "https://fr.scribd.com/document/832110484/Decret-Sections-Communales",
+          "https://haitiahp.blogspot.com/2015/08/lexecutif-cree-cinq-nouvelles-communes.html"
+        ],
+        "status": "documente"
+      },
+      "services": [],
+      "infrastructures": [],
+      "heritage": [],
+      "verification": "statut_juridique_et_commission_2018_documentes_demographie_non_individualisee",
+      "audit": {
+        "reviewedAt": "2026-11-03",
+        "method": "Comparaison du tableau administratif et du tableau démographique 250 de l'IHSI 2024.",
+        "warnings": [
+          "Ne pas présenter le statut de commune comme non confirmé : les actes de 2015 et 2018 sont identifiés.",
+          "Ne pas traiter les 6 278 habitants du quartier comme population autonome de la commune.",
+          "Les limites juridiques doivent être distinguées de la géométrie cartographique disponible.",
+          "Fonctionnement actuel de l'administration municipale non vérifié.",
+          "Le territoire juridique inclut la 3e section Riaribes; ne pas assimiler l'ancien quartier Baptiste à l'ensemble de la commune.",
+          "Les limites cardinales du décret ne constituent pas un polygone géoréférencé.",
+          "Aucun polygone officiel de Baptiste confirmé : la couche OCHA COD-AB et la carte Banque mondiale ne représentent pas cette nouvelle commune séparément."
+        ],
+        "administrativeReview": "Création juridique attestée par décret du 22 juillet 2015 cité dans Le Moniteur n°147 (5 août 2015). Arrêté de commission municipale du 14 novembre 2018 reproduit dans Le Moniteur n°197 (16 novembre 2018). Tableau IHSI 2024 continue de présenter Baptiste comme quartier de Belladère.",
+        "cartographyReview": "Comparaison avec les limites OCHA COD-AB ADM2 (140 communes) et carte Banque mondiale datée de mars 2017 (12 communes du Centre) : ces couches ne représentent pas Baptiste comme polygone communal autonome. Ne pas substituer le quartier à la commune."
+      },
+      "administrativeStatus": "commune_creee_decret_2015_commission_municipale_2018_ihsi_quartier_2024",
+      "populationQuartier2024": {
+        "value": 6278,
+        "year": 2024,
+        "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+        "status": "documente",
+        "note": "IHSI 2024, tableau 250 : quartier de Baptiste inclus dans la population urbaine de Belladère; ne pas additionner séparément."
+      },
+      "territorialBoundaries": {
+        "north": "1re section Renthe-Mathé (Belladère)",
+        "south": "commune de Savanette",
+        "west": "communes de Belladère et Lascahobas",
+        "east": "frontière haïtiano-dominicaine",
+        "includedAdministrativeUnits": [
+          "ancien quartier Baptiste de Renthe-Mathé",
+          "3e section communale Riaribes, auparavant rattachée à Belladère"
+        ],
+        "source": "https://fr.scribd.com/document/832110484/Decret-Sections-Communales",
+        "secondarySource": "https://haitiahp.blogspot.com/2015/08/lexecutif-cree-cinq-nouvelles-communes.html",
+        "status": "limites_textuelles_decret_2015_geometrie_non_verifiee",
+        "note": "Le décret donne des limites textuelles; les données OCHA COD-AB (140 communes) et la carte Banque mondiale (12 communes dans le Centre) ne permettent pas de tracer une géométrie propre à Baptiste. Afficher une alerte de géométrie non validée.",
+        "cartographyStatus": "polygone_communal_non_identifie_dans_sources_consultees",
+        "cartographySources": [
+          "https://www.haitidocs.org/map/layers/boundaries-admin?lang=fr",
+          "https://documents1.worldbank.org/curated/en/262401525850726777/pdf/cges-resepagii-version-final.pdf"
+        ]
+      }
+    },
+    {
+      "department": "Centre",
+      "arrondissement": "Cerca-la-Source",
+      "commune": "Cerca-la-Source",
+      "updatedAt": "2026-11-03",
+      "history": {
+        "text": "Selon Haiti-Référence, Cerca-la-Source, anciennement « Clairet », a été élevée au rang de commune en 1918. Le diagnostic agricole de 2004 mentionne Acajou Brûlé et Lamielle; vérification des actes et de la nomenclature actuelle nécessaire.",
+        "sources": [
+          "https://www.haiti-reference.info/pages/plan/geographie-et-tourisme/divisions-territoriales/arrondissements-et-communes/centre/",
+          "https://www.haitidocs.org/doc/gardel-haut-plateau-central-diagnostic-2004?lang=fr"
+        ],
+        "status": "historique_a_verifier"
+      },
+      "services": [],
+      "infrastructures": [],
+      "heritage": [],
+      "verification": "demographie_ihsi_documentee_autres_rubriques_a_completer",
+      "audit": {
+        "reviewedAt": "2026-11-03",
+        "method": "Transcription des estimations de population IHSI 2024 tableau 250, superficie du tableau 251 si indiquée.",
+        "warnings": [
+          "Estimation 2024, non recensement.",
+          "Population communale totale, urbaine et rurale distinctes des quartiers et sections.",
+          "Services, infrastructures, histoire et patrimoine non vérifiés dans cette phase.",
+          "Aucune coordonnée GPS ni établissement inventés.",
+          "Les divisions territoriales de 2004 ne prouvent pas la nomenclature en vigueur en 2026.",
+          "Aucun site patrimonial, classement ou géolocalisation ajouté sans preuve spécifique."
+        ],
+        "historicalReview": "Sources secondaires historiques et diagnostic sectoriel daté recensés; actes primaires et patrimoine matériel non certifiés."
+      },
+      "populationTotale2024": {
+        "value": 64567,
+        "year": 2024,
+        "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+        "status": "documente",
+        "note": "IHSI 2024, tableau 250, estimation de population totale."
+      },
+      "populationUrbaine": {
+        "value": 18472,
+        "year": 2024,
+        "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+        "status": "documente",
+        "note": "IHSI 2024, tableau 250, estimation de population urbaine."
+      },
+      "populationRurale": {
+        "value": 46095,
+        "year": 2024,
+        "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+        "status": "documente",
+        "note": "IHSI 2024, tableau 250, estimation de population rurale."
+      }
+    },
+    {
+      "department": "Centre",
+      "arrondissement": "Cerca-la-Source",
+      "commune": "Thomassique",
+      "updatedAt": "2026-11-03",
+      "history": {
+        "text": "Haiti-Référence rapporte un statut de quartier en 1889, une élévation en commune en 1934, une révocation en 1942 et une nouvelle élévation en 1954. Les actes du Moniteur et leurs effets juridiques restent à examiner directement.",
+        "sources": [
+          "https://www.haiti-reference.info/pages/plan/geographie-et-tourisme/divisions-territoriales/arrondissements-et-communes/centre/"
+        ],
+        "status": "historique_a_verifier"
+      },
+      "services": [],
+      "infrastructures": [],
+      "heritage": [],
+      "verification": "demographie_ihsi_documentee_autres_rubriques_a_completer",
+      "audit": {
+        "reviewedAt": "2026-11-03",
+        "method": "Transcription des estimations de population IHSI 2024 tableau 250, superficie du tableau 251 si indiquée.",
+        "warnings": [
+          "Estimation 2024, non recensement.",
+          "Population communale totale, urbaine et rurale distinctes des quartiers et sections.",
+          "Services, infrastructures, histoire et patrimoine non vérifiés dans cette phase.",
+          "Aucune coordonnée GPS ni établissement inventés.",
+          "Les divisions territoriales de 2004 ne prouvent pas la nomenclature en vigueur en 2026.",
+          "Aucun site patrimonial, classement ou géolocalisation ajouté sans preuve spécifique."
+        ],
+        "historicalReview": "Sources secondaires historiques et diagnostic sectoriel daté recensés; actes primaires et patrimoine matériel non certifiés."
+      },
+      "populationTotale2024": {
+        "value": 72214,
+        "year": 2024,
+        "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+        "status": "documente",
+        "note": "IHSI 2024, tableau 250, estimation de population totale."
+      },
+      "populationUrbaine": {
+        "value": 30304,
+        "year": 2024,
+        "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+        "status": "documente",
+        "note": "IHSI 2024, tableau 250, estimation de population urbaine."
+      },
+      "populationRurale": {
+        "value": 41910,
+        "year": 2024,
+        "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+        "status": "documente",
+        "note": "IHSI 2024, tableau 250, estimation de population rurale."
+      }
+    }
+  ]
+}

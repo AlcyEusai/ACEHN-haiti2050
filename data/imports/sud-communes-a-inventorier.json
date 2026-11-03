@@ -1,0 +1,174 @@
+{
+  "schemaVersion": 1,
+  "department": "Sud",
+  "scope": "Inventaire préparatoire : aucune implantation non sourcée ajoutée",
+  "communes": [
+    {
+      "department": "Sud",
+      "arrondissement": "Les Cayes",
+      "commune": "Les Cayes",
+      "status": "inventaire_multisectoriel_commence",
+      "places": [
+        "Hôpital Immaculée Conception des Cayes",
+        "Lycée Philippe Guerrier",
+        "Lycée Jean Claudy Museau",
+        "Marché en Fer des Cayes",
+        "Marché Relais des Cayes",
+        "Aéroport Antoine Simon des Cayes",
+        "Mairie des Cayes"
+      ],
+      "sourceReview": "sources_institutionnelles_repertoriees"
+    },
+    {
+      "department": "Sud",
+      "arrondissement": "Les Cayes",
+      "commune": "Torbeck",
+      "status": "a_inventorier",
+      "places": [],
+      "sourceReview": "non_commence"
+    },
+    {
+      "department": "Sud",
+      "arrondissement": "Les Cayes",
+      "commune": "Chantal",
+      "status": "a_inventorier",
+      "places": [],
+      "sourceReview": "non_commence"
+    },
+    {
+      "department": "Sud",
+      "arrondissement": "Les Cayes",
+      "commune": "Camp-Perrin",
+      "status": "a_inventorier",
+      "places": [],
+      "sourceReview": "non_commence"
+    },
+    {
+      "department": "Sud",
+      "arrondissement": "Les Cayes",
+      "commune": "Maniche",
+      "status": "a_inventorier",
+      "places": [],
+      "sourceReview": "non_commence"
+    },
+    {
+      "department": "Sud",
+      "arrondissement": "Les Cayes",
+      "commune": "Île-à-Vache",
+      "status": "a_inventorier",
+      "places": [],
+      "sourceReview": "non_commence"
+    },
+    {
+      "department": "Sud",
+      "arrondissement": "Les Cayes",
+      "commune": "Ducis",
+      "status": "a_inventorier",
+      "places": [],
+      "sourceReview": "non_commence"
+    },
+    {
+      "department": "Sud",
+      "arrondissement": "Port-Salut",
+      "commune": "Port-Salut",
+      "status": "a_inventorier",
+      "places": [],
+      "sourceReview": "non_commence"
+    },
+    {
+      "department": "Sud",
+      "arrondissement": "Port-Salut",
+      "commune": "Saint-Jean-du-Sud",
+      "status": "a_inventorier",
+      "places": [],
+      "sourceReview": "non_commence"
+    },
+    {
+      "department": "Sud",
+      "arrondissement": "Port-Salut",
+      "commune": "Arniquet",
+      "status": "a_inventorier",
+      "places": [],
+      "sourceReview": "non_commence"
+    },
+    {
+      "department": "Sud",
+      "arrondissement": "Aquin",
+      "commune": "Aquin",
+      "status": "inventaire_multisectoriel_commence",
+      "places": [
+        "Hôpital Communautaire de Référence d’Aquin",
+        "Lycée Pierre Sully"
+      ],
+      "sourceReview": "sources_institutionnelles_repertoriees"
+    },
+    {
+      "department": "Sud",
+      "arrondissement": "Aquin",
+      "commune": "Saint-Louis-du-Sud",
+      "status": "inventaire_documentaire_commence",
+      "places": [
+        "Centre de Santé de Saint-Louis-du-Sud"
+      ],
+      "sourceReview": "sources_institutionnelles_repertoriees"
+    },
+    {
+      "department": "Sud",
+      "arrondissement": "Aquin",
+      "commune": "Cavaillon",
+      "status": "inventaire_documentaire_commence",
+      "places": [
+        "Hôpital Lumière de Bonne Fin"
+      ],
+      "sourceReview": "sources_institutionnelles_repertoriees"
+    },
+    {
+      "department": "Sud",
+      "arrondissement": "Côteaux",
+      "commune": "Les Côteaux",
+      "status": "a_inventorier",
+      "places": [],
+      "sourceReview": "non_commence"
+    },
+    {
+      "department": "Sud",
+      "arrondissement": "Côteaux",
+      "commune": "Port-à-Piment",
+      "status": "a_inventorier",
+      "places": [],
+      "sourceReview": "non_commence"
+    },
+    {
+      "department": "Sud",
+      "arrondissement": "Côteaux",
+      "commune": "Roche-à-Bateau",
+      "status": "a_inventorier",
+      "places": [],
+      "sourceReview": "non_commence"
+    },
+    {
+      "department": "Sud",
+      "arrondissement": "Chardonnières",
+      "commune": "Chardonnières",
+      "status": "a_inventorier",
+      "places": [],
+      "sourceReview": "non_commence"
+    },
+    {
+      "department": "Sud",
+      "arrondissement": "Chardonnières",
+      "commune": "Les Anglais",
+      "status": "a_inventorier",
+      "places": [],
+      "sourceReview": "non_commence"
+    },
+    {
+      "department": "Sud",
+      "arrondissement": "Chardonnières",
+      "commune": "Tiburon",
+      "status": "a_inventorier",
+      "places": [],
+      "sourceReview": "non_commence"
+    }
+  ]
+}

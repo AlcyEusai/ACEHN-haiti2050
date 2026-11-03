@@ -16,8 +16,14 @@
   >
 
   <!-- Styles du site -->
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css?v=3">
   <link rel="stylesheet" href="etablissements.css?v=2">
+  <link rel="stylesheet" href="styles-v4.css?v=1">
+  <link rel="stylesheet" href="styles-v4-territory.css?v=2">
+  <link rel="stylesheet" href="styles-v4-inventory.css?v=1">
+  <link rel="stylesheet" href="styles-v4-catalog.css?v=1">
+  <link rel="stylesheet" href="styles-v4-place-details.css?v=1">
+  <link rel="stylesheet" href="styles-v4-registry.css?v=1">
 </head>
 
 <body>
@@ -39,7 +45,7 @@
       <a href="#method">Méthodologie</a>
     </nav>
 
-    <span class="tag">Atlas territorial • V2.5</span>
+    <span class="tag">Atlas territorial • V4 prototype</span>
   </header>
 
   <!-- ACCUEIL -->
@@ -50,8 +56,8 @@
       </p>
 
       <h1>
-        Imaginons l'avenir<br>
-        de chaque commune d'Haïti.
+        Explorez Haïti, son histoire<br>
+        et son avenir.
       </h1>
 
       <p>
@@ -91,7 +97,7 @@
       <div>
         <p class="eyebrow">ATLAS INTERACTIF</p>
 
-        <h2>Explorer le territoire</h2>
+        <h2>Explorer Haïti aujourd’hui et imaginer 2050</h2>
 
         <p>
           Explorez les départements et les arrondissements
@@ -471,7 +477,7 @@
   <script src="territoires.js"></script>
 
   <!-- Application principale -->
-  <script src="app.js?v=4"></script>
+  <script src="app.js?v=6"></script>
 
   <!-- Départements et arrondissements -->
   <script src="map-v2.js?v=3"></script>
@@ -488,6 +494,20 @@
   <script src="bureaux-administratifs.js?v=1"></script>
   <script src="etablissements.js?v=2"></script>
   
+  <!-- Prototype : vues actuelles, satellite et future -->
+  <script src="atlas-v3-modes.js?v=4"></script>
+  <script src="atlas-v3-future-map.js?v=3"></script>
+  <script src="atlas-v3-projects.js?v=2"></script>
+
+  <script src="atlas-v4-poi-import.js?v=1"></script>
+  <script src="atlas-v4-places.js?v=1"></script>
+  <script src="atlas-v4-territory-sheet.js?v=7"></script>
+  <script src="atlas-v4-inventory.js?v=1"></script>
+  <script src="atlas-v4-place-details.js?v=1"></script>
+  <script src="atlas-v4-national-catalog.js?v=2"></script>
+  <script src="registry-config.js?v=1"></script>
+  <script src="atlas-v4-registry.js?v=2"></script>
+
   <!-- Sections communales temporairement désactivées -->
   <!--
   <script src="sections.js"></script>
