@@ -82,6 +82,76 @@
           "Certaines anciennes sources du registre ont besoin d'être remplacées par des références consultables."
         ]
       }
+    },
+    {
+      "department": "Nord",
+      "arrondissement": "Cap-Haïtien",
+      "commune": "Limonade",
+      "updatedAt": "2026-11-03",
+      "history": {
+        "text": "La commune accueille le Campus Henry Christophe de l’Université d’État d’Haïti, inauguré en 2012 selon la présentation officielle de l'UEH.",
+        "sources": [
+          "https://admission.ueh.edu.ht/entites/details/23"
+        ],
+        "status": "historique"
+      },
+      "services": [
+        {
+          "name": "Campus Henry Christophe de Limonade (UEH)",
+          "detail": "Établissement universitaire situé à Pister, section communale de Roucou. L'UEH présente plusieurs domaines de formation. Son activité pédagogique et les inscriptions doivent être vérifiées pour chaque année.",
+          "source": "https://ueh.edu.ht/ueh/entites/23",
+          "status": "documente"
+        }
+      ],
+      "infrastructures": [],
+      "heritage": [],
+      "verification": "sources_documentaires_sans_validation_terrain",
+      "audit": {
+        "reviewedAt": "2026-11-03",
+        "warnings": [
+          "Aucune coordonnée GPS n'est inférée.",
+          "Population, superficie, établissements de santé, voirie et patrimoine : à documenter.",
+          "La mention d'une entité universitaire ne confirme pas son fonctionnement continu."
+        ]
+      }
+    },
+    {
+      "department": "Nord",
+      "arrondissement": "Acul-du-Nord",
+      "commune": "Milot",
+      "updatedAt": "2026-11-03",
+      "history": {
+        "text": "Le palais Sans-Souci, construit sous Henri Christophe au début du XIXe siècle, appartient à l'ensemble du Parc national historique – Citadelle, Sans Souci, Ramiers, inscrit au patrimoine mondial en 1982.",
+        "sources": [
+          "https://whc.unesco.org/fr/list/180"
+        ],
+        "status": "historique"
+      },
+      "services": [],
+      "infrastructures": [],
+      "heritage": [
+        {
+          "name": "Palais Sans-Souci",
+          "detail": "Monument historique associé au règne d'Henri Christophe, documenté par l'UNESCO à proximité du bourg de Milot.",
+          "source": "https://whc.unesco.org/fr/list/180",
+          "status": "documente"
+        },
+        {
+          "name": "Parc national historique – Citadelle, Sans Souci, Ramiers",
+          "detail": "Bien du patrimoine mondial situé sur le territoire des communes de Milot et Dondon. Ne pas assimiler tout le parc à la seule commune de Milot.",
+          "source": "https://whc.unesco.org/document/139828",
+          "status": "documente"
+        }
+      ],
+      "verification": "sources_documentaires_sans_validation_terrain",
+      "audit": {
+        "reviewedAt": "2026-11-03",
+        "warnings": [
+          "Le parc couvre aussi la commune de Dondon.",
+          "Les limites précises des monuments et leurs coordonnées ne sont pas déduites.",
+          "Services publics, population et infrastructures : à documenter."
+        ]
+      }
     }
   ]
 }
