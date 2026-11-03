@@ -97,3 +97,17 @@ Le registre MENFP 2024-2025 a été exploité pour **28 écoles publiques suppl�
 Le registre MSPP 2015 permet un inventaire nominatif, mais les établissements supplémentaires des autres communes ne sont pas ajoutés tant que leur nom, leur code et leur rattachement communal ne sont pas vérifiés directement dans le document. Les **64 institutions** du tableau historique restent un agrégat, non 64 fiches individuelles. Le rapprochement avec la cartographie sanitaire actualisée est nécessaire avant toute indication de fonctionnement actuel.
 
 **Priorité suivante :** dépouiller le MENFP pour Boucan-Carré, Lascahobas, Belladère, Savanette, Cerca-la-Source, Thomassique, Maïssade, Thomonde et Cerca-Carvajal; vérifier les institutions MSPP restantes par nom et code. Le cas de Baptiste doit être traité avec les précautions de découpage administratif déjà documentées.
+
+## Revue ciblée — Boucan-Carré, Lascahobas, Belladère (3 novembre 2026)
+
+### MENFP : quatre entrées nominatives ajoutées à Belladère
+
+Le registre officiel 2024-2025, p. 70, secteur public de la ville de Belladère, indique : École nationale Anténor Firmin (063290118604), École nationale congréganiste Marie Jeanne (063290103253), École nationale Thomas Madiou (063290117060), Lycée Charlemagne Péralte (063290103470). Source : https://www.haitidocs.org/doc/menfp-registre-ecoles-centre-2025?lang=ht . Codes contrôlés avec la ligne nominative. Les autres pages et sections de Belladère, Boucan-Carré et Lascahobas restent à dépouiller; ne pas extrapoler.
+
+### MSPP : audit des agrégats, pas de création de fiches fictives
+
+Le rapport MSPP 2015, graphique 9, donne pour **Boucan-Carré** 3 institutions fonctionnelles et 0 non fonctionnelle; pour **Lascahobas** 2 fonctionnelles et 1 non fonctionnelle; pour **Belladère** 3 fonctionnelles et 1 non fonctionnelle. Il s'agit de la situation issue des données EPSSS 2013 et des rapports sanitaires utilisés à l'époque, non d'un statut d'ouverture en 2026. Source : https://mspp.gouv.ht/site/downloads/Liste%20des%20Institutions%20Sanitaires%202015.pdf .
+
+Un autre rapport MSPP fondé sur une enquête de 2011 retient respectivement **3, 1 et 3** institutions pour ces communes, dans un sous-ensemble de 35 institutions du Centre. Ce décalage de périmètre et d'année ne prouve ni fermeture ni ouverture : https://www.mspp.gouv.ht/site/downloads/Rapport%20carte%20sanitaire%20centre.pdf .
+
+**Contrôle nominatif :** aucun établissement sanitaire supplémentaire n'a été créé dans le registre lors de cette phase. Les totaux des graphiques ne sont pas des preuves nominatives; le nom, le code, la commune et le statut devront être lus dans les annexes du MSPP avant ajout.
