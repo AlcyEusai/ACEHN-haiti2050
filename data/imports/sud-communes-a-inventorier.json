@@ -7,9 +7,15 @@
       "department": "Sud",
       "arrondissement": "Les Cayes",
       "commune": "Les Cayes",
-      "status": "inventaire_documentaire_commence",
+      "status": "inventaire_multisectoriel_commence",
       "places": [
-        "Hôpital Immaculée Conception des Cayes"
+        "Hôpital Immaculée Conception des Cayes",
+        "Lycée Philippe Guerrier",
+        "Lycée Jean Claudy Museau",
+        "Marché en Fer des Cayes",
+        "Marché Relais des Cayes",
+        "Aéroport Antoine Simon des Cayes",
+        "Mairie des Cayes"
       ],
       "sourceReview": "sources_institutionnelles_repertoriees"
     },
@@ -89,9 +95,10 @@
       "department": "Sud",
       "arrondissement": "Aquin",
       "commune": "Aquin",
-      "status": "inventaire_documentaire_commence",
+      "status": "inventaire_multisectoriel_commence",
       "places": [
-        "Hôpital Communautaire de Référence d’Aquin"
+        "Hôpital Communautaire de Référence d’Aquin",
+        "Lycée Pierre Sully"
       ],
       "sourceReview": "sources_institutionnelles_repertoriees"
     },
