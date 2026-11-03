@@ -336,6 +336,202 @@
           "Notice initiale non exhaustive : établissements et données manquants à compléter."
         ]
       }
+    },
+    {
+      "department": "Nord",
+      "arrondissement": "Grande-Rivière-du-Nord",
+      "commune": "Grande-Rivière-du-Nord",
+      "sectionsCommunales": [
+        "Grand Gilles",
+        "Solon",
+        "Caracol",
+        "Gambade",
+        "Jolitrou",
+        "Cormiers"
+      ],
+      "sectionsSource": "https://www.adnhaiti.ht/commune-de-grande-riviere-du-nord/",
+      "sectionsStatus": "documente",
+      "areaKm2": 128.15,
+      "areaSource": "https://www.adnhaiti.ht/commune-de-grande-riviere-du-nord/",
+      "areaStatus": "documente",
+      "population": {
+        "value": 41362,
+        "year": 2015,
+        "source": "https://www.adnhaiti.ht/commune-de-grande-riviere-du-nord/",
+        "status": "historique"
+      },
+      "history": {
+        "text": "La notice administrative situe la fondation de Grande-Rivière-du-Nord en 1712 et présente son importance dans l'histoire coloniale et nationale. Ces éléments historiques doivent être recoupés dans des archives spécialisées.",
+        "sources": [
+          "https://www.adnhaiti.ht/commune-de-grande-riviere-du-nord/"
+        ],
+        "status": "historique"
+      },
+      "services": [
+        {
+          "name": "Justice, état civil et police",
+          "detail": "La notice départementale mentionne des services judiciaires, d'état civil et de police, sans confirmer leur activité actuelle.",
+          "source": "https://www.adnhaiti.ht/commune-de-grande-riviere-du-nord/",
+          "status": "historique"
+        }
+      ],
+      "infrastructures": [
+        {
+          "name": "Corridor Grande-Rivière-du-Nord – Dondon",
+          "detail": "Une mission ICOMOS/UNESCO de 2013 décrit des variantes routières entre ces deux communes; aucun projet achevé n'est inféré.",
+          "source": "https://whc.unesco.org/document/139694",
+          "status": "historique"
+        }
+      ],
+      "heritage": [
+        {
+          "name": "Mémoire de Jean-Jacques Dessalines et Jean Price-Mars",
+          "detail": "La notice départementale associe la commune à ces figures historiques; les sites précis et leurs coordonnées restent à documenter.",
+          "source": "https://www.adnhaiti.ht/commune-de-grande-riviere-du-nord/",
+          "status": "historique"
+        }
+      ],
+      "updatedAt": "2026-11-03",
+      "verification": "sources_documentaires_sans_validation_terrain",
+      "audit": {
+        "reviewedAt": "2026-11-03",
+        "method": "Synthèse de sources administratives et institutionnelles accessibles en ligne; sans validation de terrain.",
+        "warnings": [
+          "Les chiffres datés ne sont pas des mesures de 2026.",
+          "Fonctionnement des services et état actuel des infrastructures à vérifier.",
+          "Aucun établissement individuel ni aucune coordonnée GPS ajoutés sans confirmation.",
+          "Fiche documentaire initiale, non exhaustive."
+        ]
+      }
+    },
+    {
+      "department": "Nord",
+      "arrondissement": "Grande-Rivière-du-Nord",
+      "commune": "Bahon",
+      "sectionsCommunales": [
+        "Bois Pin",
+        "Bailly",
+        "Montagne Noire"
+      ],
+      "sectionsSource": "https://www.haitidocs.org/doc/menfp-carte-scolaire-bahon?lang=fr",
+      "sectionsStatus": "documente",
+      "areaKm2": 76.38,
+      "areaSource": "https://www.haitidocs.org/doc/menfp-carte-scolaire-bahon?lang=fr",
+      "areaStatus": "documente",
+      "population": {
+        "value": 26773,
+        "year": 2025,
+        "source": "https://www.haitidocs.org/doc/menfp-carte-scolaire-bahon?lang=fr",
+        "status": "historique"
+      },
+      "history": {
+        "text": "La carte scolaire communale du MENFP présente Bahon comme une commune érigée en 1932 et anciennement appelée Raque-à-Zinga.",
+        "sources": [
+          "https://www.haitidocs.org/doc/menfp-carte-scolaire-bahon?lang=fr"
+        ],
+        "status": "historique"
+      },
+      "services": [
+        {
+          "name": "Offre scolaire documentée par le MENFP",
+          "detail": "La carte scolaire communale publiée en 2025 recense les établissements préscolaires, fondamentaux, secondaires et professionnels. Ces totaux ne sont pas assimilés à une vérification individuelle de leur fonctionnement en 2026.",
+          "source": "https://www.haitidocs.org/doc/menfp-carte-scolaire-bahon?lang=fr",
+          "status": "historique"
+        }
+      ],
+      "infrastructures": [
+        {
+          "name": "Eau et électricité — diagnostic 2025",
+          "detail": "La carte scolaire décrit cinq sources, neuf puits artésiens et une absence d'électricité à la date de son diagnostic; la situation actuelle peut différer.",
+          "source": "https://www.haitidocs.org/doc/menfp-carte-scolaire-bahon?lang=fr",
+          "status": "historique"
+        }
+      ],
+      "heritage": [],
+      "updatedAt": "2026-11-03",
+      "verification": "sources_documentaires_sans_validation_terrain",
+      "audit": {
+        "reviewedAt": "2026-11-03",
+        "method": "Synthèse de sources administratives et institutionnelles accessibles en ligne; sans validation de terrain.",
+        "warnings": [
+          "Les chiffres datés ne sont pas des mesures de 2026.",
+          "Fonctionnement des services et état actuel des infrastructures à vérifier.",
+          "Aucun établissement individuel ni aucune coordonnée GPS ajoutés sans confirmation.",
+          "Fiche documentaire initiale, non exhaustive."
+        ]
+      }
+    },
+    {
+      "department": "Nord",
+      "arrondissement": "Saint-Raphaël",
+      "commune": "Dondon",
+      "sectionsCommunales": [
+        "Brostage",
+        "Bassin Caïman",
+        "Matador",
+        "Laguille",
+        "Haut du Trou"
+      ],
+      "sectionsSource": "https://www.adnhaiti.ht/commune-de-dondon/",
+      "sectionsStatus": "documente",
+      "areaKm2": 120.36,
+      "areaSource": "https://www.adnhaiti.ht/commune-de-dondon/",
+      "areaStatus": "documente",
+      "population": {
+        "value": 34604,
+        "year": 2015,
+        "source": "https://www.adnhaiti.ht/commune-de-dondon/",
+        "status": "historique"
+      },
+      "history": {
+        "text": "La notice départementale rattache l'histoire de Dondon à la période coloniale et mentionne son ancien nom Trou-Dondon; la chronologie exacte requiert un recoupement archivistique.",
+        "sources": [
+          "https://www.adnhaiti.ht/commune-de-dondon/"
+        ],
+        "status": "historique"
+      },
+      "services": [
+        {
+          "name": "Inspection scolaire, tribunal de paix et police",
+          "detail": "Services mentionnés par la notice administrative, sans confirmation de leur fonctionnement en 2026.",
+          "source": "https://www.adnhaiti.ht/commune-de-dondon/",
+          "status": "historique"
+        }
+      ],
+      "infrastructures": [
+        {
+          "name": "Route nationale 3 — secteur de Dondon",
+          "detail": "Un rapport de suivi du patrimoine mondial décrit l'état du tronçon routier Barrière-Battant–Dondon lors de sa mission; ne pas présenter ce constat comme une mesure actuelle.",
+          "source": "https://whc.unesco.org/document/224779",
+          "status": "historique"
+        }
+      ],
+      "heritage": [
+        {
+          "name": "Voûte à Minguet",
+          "detail": "Site naturel signalé dans la section Laguille par la notice administrative.",
+          "source": "https://www.adnhaiti.ht/commune-de-dondon/",
+          "status": "documente"
+        },
+        {
+          "name": "Grotte des Dames",
+          "detail": "Site naturel signalé à Pont des Dames; coordonnées et conditions d'accès non confirmées.",
+          "source": "https://www.adnhaiti.ht/commune-de-dondon/",
+          "status": "documente"
+        }
+      ],
+      "updatedAt": "2026-11-03",
+      "verification": "sources_documentaires_sans_validation_terrain",
+      "audit": {
+        "reviewedAt": "2026-11-03",
+        "method": "Synthèse de sources administratives et institutionnelles accessibles en ligne; sans validation de terrain.",
+        "warnings": [
+          "Les chiffres datés ne sont pas des mesures de 2026.",
+          "Fonctionnement des services et état actuel des infrastructures à vérifier.",
+          "Aucun établissement individuel ni aucune coordonnée GPS ajoutés sans confirmation.",
+          "Fiche documentaire initiale, non exhaustive."
+        ]
+      }
     }
   ]
 }
