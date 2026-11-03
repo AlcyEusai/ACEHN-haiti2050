@@ -2044,7 +2044,7 @@
       "verification": "demographie_documentee_histoire_partielle",
       "audit": {
         "reviewedAt": "2026-11-03",
-        "method": "Relevé des estimations démographiques et superficies IHSI 2024, tableau 248; recherche historique complémentaire à mener.",
+        "method": "Population IHSI tableau 248 et superficie tableau 249, source publiée sur HaitiDocs.",
         "warnings": [
           "Les chiffres sont des estimations 2024 et non un recensement 2026.",
           "Les établissements et infrastructures en activité restent à inventorier.",
@@ -2053,28 +2053,28 @@
         ]
       },
       "populationTotale2024": {
-        "value": 209526,
+        "value": 170905,
         "year": 2024,
-        "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+        "source": "https://www.haitidocs.org/doc/ihsi-2024-disaggregated-estimates?lang=fr",
         "status": "documente",
-        "note": "Estimation IHSI 2024, tableau 248, population totale."
+        "note": "IHSI 2024, tableau 248"
       },
       "populationUrbaine": {
-        "value": 78138,
+        "value": 82196,
         "year": 2024,
-        "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+        "source": "https://www.haitidocs.org/doc/ihsi-2024-disaggregated-estimates?lang=fr",
         "status": "documente",
-        "note": "Estimation IHSI 2024, tableau 248, population urbaine."
+        "note": "IHSI 2024, tableau 248"
       },
       "populationRurale": {
-        "value": 131388,
+        "value": 88709,
         "year": 2024,
-        "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+        "source": "https://www.haitidocs.org/doc/ihsi-2024-disaggregated-estimates?lang=fr",
         "status": "documente",
-        "note": "Estimation IHSI 2024, tableau 248, population rurale."
+        "note": "IHSI 2024, tableau 248"
       },
-      "areaKm2": 397.2,
-      "areaSource": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+      "areaKm2": 397.03,
+      "areaSource": "https://www.haitidocs.org/doc/ihsi-2024-disaggregated-estimates?lang=fr",
       "areaStatus": "documente"
     },
     {
@@ -2096,7 +2096,7 @@
       "verification": "demographie_documentee_histoire_partielle",
       "audit": {
         "reviewedAt": "2026-11-03",
-        "method": "Relevé des estimations démographiques et superficies IHSI 2024, tableau 248; recherche historique complémentaire à mener.",
+        "method": "Population IHSI tableau 248 et superficie tableau 249, source publiée sur HaitiDocs.",
         "warnings": [
           "Les chiffres sont des estimations 2024 et non un recensement 2026.",
           "Les établissements et infrastructures en activité restent à inventorier.",
@@ -2105,28 +2105,28 @@
         ]
       },
       "populationTotale2024": {
-        "value": 34197,
+        "value": 34305,
         "year": 2024,
-        "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+        "source": "https://www.haitidocs.org/doc/ihsi-2024-disaggregated-estimates?lang=fr",
         "status": "documente",
-        "note": "Estimation IHSI 2024, tableau 248, population totale."
+        "note": "IHSI 2024, tableau 248"
       },
       "populationUrbaine": {
-        "value": 12286,
+        "value": 4685,
         "year": 2024,
-        "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+        "source": "https://www.haitidocs.org/doc/ihsi-2024-disaggregated-estimates?lang=fr",
         "status": "documente",
-        "note": "Estimation IHSI 2024, tableau 248, population urbaine."
+        "note": "IHSI 2024, tableau 248"
       },
       "populationRurale": {
-        "value": 21911,
+        "value": 29620,
         "year": 2024,
-        "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+        "source": "https://www.haitidocs.org/doc/ihsi-2024-disaggregated-estimates?lang=fr",
         "status": "documente",
-        "note": "Estimation IHSI 2024, tableau 248, population rurale."
+        "note": "IHSI 2024, tableau 248"
       },
-      "areaKm2": 90.95,
-      "areaSource": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+      "areaKm2": 176.83,
+      "areaSource": "https://www.haitidocs.org/doc/ihsi-2024-disaggregated-estimates?lang=fr",
       "areaStatus": "documente"
     },
     {
@@ -2148,7 +2148,7 @@
       "verification": "demographie_documentee_histoire_partielle",
       "audit": {
         "reviewedAt": "2026-11-03",
-        "method": "Relevé des estimations démographiques et superficies IHSI 2024, tableau 248; recherche historique complémentaire à mener.",
+        "method": "Population IHSI tableau 248 et superficie tableau 249, source publiée sur HaitiDocs.",
         "warnings": [
           "Les chiffres sont des estimations 2024 et non un recensement 2026.",
           "Les établissements et infrastructures en activité restent à inventorier.",
@@ -2157,28 +2157,28 @@
         ]
       },
       "populationTotale2024": {
-        "value": 48789,
+        "value": 47636,
         "year": 2024,
-        "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+        "source": "https://www.haitidocs.org/doc/ihsi-2024-disaggregated-estimates?lang=fr",
         "status": "documente",
-        "note": "Estimation IHSI 2024, tableau 248, population totale."
+        "note": "IHSI 2024, tableau 248"
       },
       "populationUrbaine": {
-        "value": 19746,
+        "value": 29562,
         "year": 2024,
-        "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+        "source": "https://www.haitidocs.org/doc/ihsi-2024-disaggregated-estimates?lang=fr",
         "status": "documente",
-        "note": "Estimation IHSI 2024, tableau 248, population urbaine."
+        "note": "IHSI 2024, tableau 248"
       },
       "populationRurale": {
-        "value": 29043,
+        "value": 18074,
         "year": 2024,
-        "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+        "source": "https://www.haitidocs.org/doc/ihsi-2024-disaggregated-estimates?lang=fr",
         "status": "documente",
-        "note": "Estimation IHSI 2024, tableau 248, population rurale."
+        "note": "IHSI 2024, tableau 248"
       },
-      "areaKm2": 427.22,
-      "areaSource": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+      "areaKm2": 434.35,
+      "areaSource": "https://www.haitidocs.org/doc/ihsi-2024-disaggregated-estimates?lang=fr",
       "areaStatus": "documente"
     },
     {
