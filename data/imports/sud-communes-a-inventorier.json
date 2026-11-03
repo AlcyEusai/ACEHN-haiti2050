@@ -7,9 +7,11 @@
       "department": "Sud",
       "arrondissement": "Les Cayes",
       "commune": "Les Cayes",
-      "status": "a_inventorier",
-      "places": [],
-      "sourceReview": "non_commence"
+      "status": "inventaire_documentaire_commence",
+      "places": [
+        "Hôpital Immaculée Conception des Cayes"
+      ],
+      "sourceReview": "sources_institutionnelles_repertoriees"
     },
     {
       "department": "Sud",
@@ -87,25 +89,31 @@
       "department": "Sud",
       "arrondissement": "Aquin",
       "commune": "Aquin",
-      "status": "a_inventorier",
-      "places": [],
-      "sourceReview": "non_commence"
+      "status": "inventaire_documentaire_commence",
+      "places": [
+        "Hôpital Communautaire de Référence d’Aquin"
+      ],
+      "sourceReview": "sources_institutionnelles_repertoriees"
     },
     {
       "department": "Sud",
       "arrondissement": "Aquin",
       "commune": "Saint-Louis-du-Sud",
-      "status": "a_inventorier",
-      "places": [],
-      "sourceReview": "non_commence"
+      "status": "inventaire_documentaire_commence",
+      "places": [
+        "Centre de Santé de Saint-Louis-du-Sud"
+      ],
+      "sourceReview": "sources_institutionnelles_repertoriees"
     },
     {
       "department": "Sud",
       "arrondissement": "Aquin",
       "commune": "Cavaillon",
-      "status": "a_inventorier",
-      "places": [],
-      "sourceReview": "non_commence"
+      "status": "inventaire_documentaire_commence",
+      "places": [
+        "Hôpital Lumière de Bonne Fin"
+      ],
+      "sourceReview": "sources_institutionnelles_repertoriees"
     },
     {
       "department": "Sud",
