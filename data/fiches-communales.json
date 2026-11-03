@@ -81,21 +81,21 @@
           "Localisations précises des équipements et fonctionnement en 2026 non vérifiés.",
           "Certaines anciennes sources du registre ont besoin d'être remplacées par des références consultables."
         ],
-        "ihsiVerified": "Tableaux 64 et 65, IHSI 2024"
+        "ihsiVerified": "Tableau 61, IHSI 2024"
       },
       "populationTotale2024": {
         "value": 301506,
         "year": 2024,
         "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
         "status": "documente",
-        "note": "Estimation IHSI 2024, tableau 64, population communale totale (urbaine et rurale)."
+        "note": "IHSI 2024, tableau 61, population totale communale."
       },
       "populationUrbaine": {
         "value": 299645,
         "year": 2024,
         "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
         "status": "documente",
-        "note": "Estimation IHSI 2024, tableau 65, population urbaine uniquement."
+        "note": "IHSI 2024, tableau 61, population urbaine (sous-ensemble de la population totale)."
       }
     },
     {
@@ -128,21 +128,21 @@
           "Population, superficie, établissements de santé, voirie et patrimoine : à documenter.",
           "La mention d'une entité universitaire ne confirme pas son fonctionnement continu."
         ],
-        "ihsiVerified": "Tableaux 64 et 65, IHSI 2024"
+        "ihsiVerified": "Tableau 61, IHSI 2024"
       },
       "populationTotale2024": {
         "value": 60583,
         "year": 2024,
         "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
         "status": "documente",
-        "note": "Estimation IHSI 2024, tableau 64, population communale totale (urbaine et rurale)."
+        "note": "IHSI 2024, tableau 61, population totale communale."
       },
       "populationUrbaine": {
         "value": 41309,
         "year": 2024,
         "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
         "status": "documente",
-        "note": "Estimation IHSI 2024, tableau 65, population urbaine uniquement."
+        "note": "IHSI 2024, tableau 61, population urbaine (sous-ensemble de la population totale)."
       }
     },
     {
@@ -181,21 +181,21 @@
           "Les limites précises des monuments et leurs coordonnées ne sont pas déduites.",
           "Services publics, population et infrastructures : à documenter."
         ],
-        "ihsiVerified": "Tableaux 64 et 65, IHSI 2024"
+        "ihsiVerified": "Tableau 61, IHSI 2024"
       },
       "populationTotale2024": {
         "value": 35147,
         "year": 2024,
         "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
         "status": "documente",
-        "note": "Estimation IHSI 2024, tableau 64, population communale totale (urbaine et rurale)."
+        "note": "IHSI 2024, tableau 61, population totale communale."
       },
       "populationUrbaine": {
         "value": 21905,
         "year": 2024,
         "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
         "status": "documente",
-        "note": "Estimation IHSI 2024, tableau 65, population urbaine uniquement."
+        "note": "IHSI 2024, tableau 61, population urbaine (sous-ensemble de la population totale)."
       }
     },
     {
@@ -262,21 +262,21 @@
           "Aucune coordonnée GPS ajoutée sans source cartographique précise.",
           "Notice initiale non exhaustive : établissements et données manquants à compléter."
         ],
-        "ihsiVerified": "Tableaux 64 et 65, IHSI 2024"
+        "ihsiVerified": "Tableau 61, IHSI 2024"
       },
       "populationTotale2024": {
         "value": 30057,
         "year": 2024,
         "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
         "status": "documente",
-        "note": "Estimation IHSI 2024, tableau 64, population communale totale (urbaine et rurale)."
+        "note": "IHSI 2024, tableau 61, population totale communale."
       },
       "populationUrbaine": {
         "value": 12287,
         "year": 2024,
         "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
         "status": "documente",
-        "note": "Estimation IHSI 2024, tableau 65, population urbaine uniquement."
+        "note": "IHSI 2024, tableau 61, population urbaine (sous-ensemble de la population totale)."
       }
     },
     {
@@ -334,21 +334,21 @@
           "Aucune coordonnée GPS ajoutée sans source cartographique précise.",
           "Notice initiale non exhaustive : établissements et données manquants à compléter."
         ],
-        "ihsiVerified": "Tableaux 64 et 65, IHSI 2024"
+        "ihsiVerified": "Tableau 61, IHSI 2024"
       },
       "populationTotale2024": {
         "value": 61421,
         "year": 2024,
         "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
         "status": "documente",
-        "note": "Estimation IHSI 2024, tableau 64, population communale totale (urbaine et rurale)."
+        "note": "IHSI 2024, tableau 61, population totale communale."
       },
       "populationUrbaine": {
         "value": 31215,
         "year": 2024,
         "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
         "status": "documente",
-        "note": "Estimation IHSI 2024, tableau 65, population urbaine uniquement."
+        "note": "IHSI 2024, tableau 61, population urbaine (sous-ensemble de la population totale)."
       }
     },
     {
@@ -410,21 +410,21 @@
           "Aucune coordonnée GPS ajoutée sans source cartographique précise.",
           "Notice initiale non exhaustive : établissements et données manquants à compléter."
         ],
-        "ihsiVerified": "Tableaux 64 et 65, IHSI 2024"
+        "ihsiVerified": "Tableau 61, IHSI 2024"
       },
       "populationTotale2024": {
         "value": 45326,
         "year": 2024,
         "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
         "status": "documente",
-        "note": "Estimation IHSI 2024, tableau 64, population communale totale (urbaine et rurale)."
+        "note": "IHSI 2024, tableau 61, population totale communale."
       },
       "populationUrbaine": {
         "value": 29337,
         "year": 2024,
         "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
         "status": "documente",
-        "note": "Estimation IHSI 2024, tableau 65, population urbaine uniquement."
+        "note": "IHSI 2024, tableau 61, population urbaine (sous-ensemble de la population totale)."
       }
     },
     {
@@ -492,21 +492,21 @@
           "Aucun établissement individuel ni aucune coordonnée GPS ajoutés sans confirmation.",
           "Fiche documentaire initiale, non exhaustive."
         ],
-        "ihsiVerified": "Tableaux 64 et 65, IHSI 2024"
+        "ihsiVerified": "Tableau 61, IHSI 2024"
       },
       "populationTotale2024": {
         "value": 45443,
         "year": 2024,
         "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
         "status": "documente",
-        "note": "Estimation IHSI 2024, tableau 64, population communale totale (urbaine et rurale)."
+        "note": "IHSI 2024, tableau 61, population totale communale."
       },
       "populationUrbaine": {
         "value": 32211,
         "year": 2024,
         "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
         "status": "documente",
-        "note": "Estimation IHSI 2024, tableau 65, population urbaine uniquement."
+        "note": "IHSI 2024, tableau 61, population urbaine (sous-ensemble de la population totale)."
       }
     },
     {
@@ -564,21 +564,21 @@
           "Aucun établissement individuel ni aucune coordonnée GPS ajoutés sans confirmation.",
           "Fiche documentaire initiale, non exhaustive."
         ],
-        "ihsiVerified": "Tableaux 64 et 65, IHSI 2024"
+        "ihsiVerified": "Tableau 61, IHSI 2024"
       },
       "populationTotale2024": {
         "value": 25544,
         "year": 2024,
         "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
         "status": "documente",
-        "note": "Estimation IHSI 2024, tableau 64, population communale totale (urbaine et rurale)."
+        "note": "IHSI 2024, tableau 61, population totale communale."
       },
       "populationUrbaine": {
         "value": 8001,
         "year": 2024,
         "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
         "status": "documente",
-        "note": "Estimation IHSI 2024, tableau 65, population urbaine uniquement."
+        "note": "IHSI 2024, tableau 61, population urbaine (sous-ensemble de la population totale)."
       }
     },
     {
@@ -651,21 +651,21 @@
           "Aucun établissement individuel ni aucune coordonnée GPS ajoutés sans confirmation.",
           "Fiche documentaire initiale, non exhaustive."
         ],
-        "ihsiVerified": "Tableaux 64 et 65, IHSI 2024"
+        "ihsiVerified": "Tableau 61, IHSI 2024"
       },
       "populationTotale2024": {
         "value": 38016,
         "year": 2024,
         "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
         "status": "documente",
-        "note": "Estimation IHSI 2024, tableau 64, population communale totale (urbaine et rurale)."
+        "note": "IHSI 2024, tableau 61, population totale communale."
       },
       "populationUrbaine": {
         "value": 23753,
         "year": 2024,
         "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
         "status": "documente",
-        "note": "Estimation IHSI 2024, tableau 65, population urbaine uniquement."
+        "note": "IHSI 2024, tableau 61, population urbaine (sous-ensemble de la population totale)."
       }
     },
     {
@@ -714,21 +714,21 @@
           "Sources sanitaires historiques de 1996 : ne pas présenter comme état actuel.",
           "Aucun établissement ni aucune coordonnée GPS ajoutés au registre sans validation indépendante."
         ],
-        "ihsiVerified": "Tableaux 64 et 65, IHSI 2024"
+        "ihsiVerified": "Tableau 61, IHSI 2024"
       },
       "populationUrbaine": {
         "value": 36243,
         "year": 2024,
         "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
         "status": "documente",
-        "note": "Estimation IHSI 2024, tableau 65, population urbaine uniquement."
+        "note": "IHSI 2024, tableau 61, population urbaine (sous-ensemble de la population totale)."
       },
       "populationTotale2024": {
         "value": 59057,
         "year": 2024,
         "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
         "status": "documente",
-        "note": "Estimation IHSI 2024, tableau 64, population communale totale (urbaine et rurale)."
+        "note": "IHSI 2024, tableau 61, population totale communale."
       }
     },
     {
@@ -777,21 +777,21 @@
           "Sources sanitaires historiques de 1996 : ne pas présenter comme état actuel.",
           "Aucun établissement ni aucune coordonnée GPS ajoutés au registre sans validation indépendante."
         ],
-        "ihsiVerified": "Tableaux 64 et 65, IHSI 2024"
+        "ihsiVerified": "Tableau 61, IHSI 2024"
       },
       "populationUrbaine": {
         "value": 12679,
         "year": 2024,
         "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
         "status": "documente",
-        "note": "Estimation IHSI 2024, tableau 65, population urbaine uniquement."
+        "note": "IHSI 2024, tableau 61, population urbaine (sous-ensemble de la population totale)."
       },
       "populationTotale2024": {
         "value": 30435,
         "year": 2024,
         "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
         "status": "documente",
-        "note": "Estimation IHSI 2024, tableau 64, population communale totale (urbaine et rurale)."
+        "note": "IHSI 2024, tableau 61, population totale communale."
       }
     },
     {
@@ -840,21 +840,21 @@
           "Sources sanitaires historiques de 1996 : ne pas présenter comme état actuel.",
           "Aucun établissement ni aucune coordonnée GPS ajoutés au registre sans validation indépendante."
         ],
-        "ihsiVerified": "Tableaux 64 et 65, IHSI 2024"
+        "ihsiVerified": "Tableau 61, IHSI 2024"
       },
       "populationUrbaine": {
         "value": 31274,
         "year": 2024,
         "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
         "status": "documente",
-        "note": "Estimation IHSI 2024, tableau 65, population urbaine uniquement."
+        "note": "IHSI 2024, tableau 61, population urbaine (sous-ensemble de la population totale)."
       },
       "populationTotale2024": {
         "value": 47530,
         "year": 2024,
         "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
         "status": "documente",
-        "note": "Estimation IHSI 2024, tableau 64, population communale totale (urbaine et rurale)."
+        "note": "IHSI 2024, tableau 61, population totale communale."
       }
     },
     {
@@ -903,21 +903,21 @@
           "Sources sanitaires historiques de 1996 : ne pas présenter comme état actuel.",
           "Aucun établissement ni aucune coordonnée GPS ajoutés au registre sans validation indépendante."
         ],
-        "ihsiVerified": "Tableaux 64 et 65, IHSI 2024"
+        "ihsiVerified": "Tableau 61, IHSI 2024"
       },
       "populationUrbaine": {
         "value": 9060,
         "year": 2024,
         "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
         "status": "documente",
-        "note": "Estimation IHSI 2024, tableau 65, population urbaine uniquement."
+        "note": "IHSI 2024, tableau 61, population urbaine (sous-ensemble de la population totale)."
       },
       "populationTotale2024": {
         "value": 11582,
         "year": 2024,
         "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
         "status": "documente",
-        "note": "Estimation IHSI 2024, tableau 64, population communale totale (urbaine et rurale)."
+        "note": "IHSI 2024, tableau 61, population totale communale."
       }
     },
     {
@@ -930,7 +930,7 @@
         "year": 2024,
         "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
         "status": "documente",
-        "note": "Estimation IHSI 2024, tableau 65, population urbaine uniquement."
+        "note": "IHSI 2024, tableau 61, population urbaine (sous-ensemble de la population totale)."
       },
       "history": {
         "text": "Commune répertoriée par l'Administration départementale du Nord. Notice historique locale à compléter à partir d'archives documentées.",
@@ -959,14 +959,14 @@
           "Écoles, hôpitaux, marchés, patrimoine et équipements restent à documenter.",
           "Aucun établissement ni aucune coordonnée GPS inventés."
         ],
-        "ihsiVerified": "Tableaux 64 et 65, IHSI 2024"
+        "ihsiVerified": "Tableau 61, IHSI 2024"
       },
       "populationTotale2024": {
         "value": 73523,
         "year": 2024,
         "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
         "status": "documente",
-        "note": "Estimation IHSI 2024, tableau 64, population communale totale (urbaine et rurale)."
+        "note": "IHSI 2024, tableau 61, population totale communale."
       }
     },
     {
@@ -979,7 +979,7 @@
         "year": 2024,
         "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
         "status": "documente",
-        "note": "Estimation IHSI 2024, tableau 65, population urbaine uniquement."
+        "note": "IHSI 2024, tableau 61, population urbaine (sous-ensemble de la population totale)."
       },
       "history": {
         "text": "Commune répertoriée par l'Administration départementale du Nord. Notice historique locale à compléter à partir d'archives documentées.",
@@ -1008,14 +1008,14 @@
           "Écoles, hôpitaux, marchés, patrimoine et équipements restent à documenter.",
           "Aucun établissement ni aucune coordonnée GPS inventés."
         ],
-        "ihsiVerified": "Tableaux 64 et 65, IHSI 2024"
+        "ihsiVerified": "Tableau 61, IHSI 2024"
       },
       "populationTotale2024": {
         "value": 54799,
         "year": 2024,
         "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
         "status": "documente",
-        "note": "Estimation IHSI 2024, tableau 64, population communale totale (urbaine et rurale)."
+        "note": "IHSI 2024, tableau 61, population totale communale."
       }
     },
     {
@@ -1028,7 +1028,7 @@
         "year": 2024,
         "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
         "status": "documente",
-        "note": "Estimation IHSI 2024, tableau 65, population urbaine uniquement."
+        "note": "IHSI 2024, tableau 61, population urbaine (sous-ensemble de la population totale)."
       },
       "history": {
         "text": "Commune répertoriée par l'Administration départementale du Nord. Notice historique locale à compléter à partir d'archives documentées.",
@@ -1057,14 +1057,14 @@
           "Écoles, hôpitaux, marchés, patrimoine et équipements restent à documenter.",
           "Aucun établissement ni aucune coordonnée GPS inventés."
         ],
-        "ihsiVerified": "Tableaux 64 et 65, IHSI 2024"
+        "ihsiVerified": "Tableau 61, IHSI 2024"
       },
       "populationTotale2024": {
         "value": 93717,
         "year": 2024,
         "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
         "status": "documente",
-        "note": "Estimation IHSI 2024, tableau 64, population communale totale (urbaine et rurale)."
+        "note": "IHSI 2024, tableau 61, population totale communale."
       }
     },
     {
@@ -1077,7 +1077,7 @@
         "year": 2024,
         "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
         "status": "documente",
-        "note": "Estimation IHSI 2024, tableau 65, population urbaine uniquement."
+        "note": "IHSI 2024, tableau 61, population urbaine (sous-ensemble de la population totale)."
       },
       "history": {
         "text": "Commune répertoriée par l'Administration départementale du Nord. Notice historique locale à compléter à partir d'archives documentées.",
@@ -1106,14 +1106,14 @@
           "Écoles, hôpitaux, marchés, patrimoine et équipements restent à documenter.",
           "Aucun établissement ni aucune coordonnée GPS inventés."
         ],
-        "ihsiVerified": "Tableaux 64 et 65, IHSI 2024"
+        "ihsiVerified": "Tableau 61, IHSI 2024"
       },
       "populationTotale2024": {
         "value": 22961,
         "year": 2024,
         "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
         "status": "documente",
-        "note": "Estimation IHSI 2024, tableau 64, population communale totale (urbaine et rurale)."
+        "note": "IHSI 2024, tableau 61, population totale communale."
       }
     },
     {
@@ -1126,7 +1126,7 @@
         "year": 2024,
         "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
         "status": "documente",
-        "note": "Estimation IHSI 2024, tableau 65, population urbaine uniquement."
+        "note": "IHSI 2024, tableau 61, population urbaine (sous-ensemble de la population totale)."
       },
       "history": {
         "text": "Commune répertoriée par l'Administration départementale du Nord. Notice historique locale à compléter à partir d'archives documentées.",
@@ -1155,14 +1155,14 @@
           "Écoles, hôpitaux, marchés, patrimoine et équipements restent à documenter.",
           "Aucun établissement ni aucune coordonnée GPS inventés."
         ],
-        "ihsiVerified": "Tableaux 64 et 65, IHSI 2024"
+        "ihsiVerified": "Tableau 61, IHSI 2024"
       },
       "populationTotale2024": {
         "value": 76447,
         "year": 2024,
         "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
         "status": "documente",
-        "note": "Estimation IHSI 2024, tableau 64, population communale totale (urbaine et rurale)."
+        "note": "IHSI 2024, tableau 61, population totale communale."
       }
     },
     {
@@ -1175,7 +1175,7 @@
         "year": 2024,
         "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
         "status": "documente",
-        "note": "Estimation IHSI 2024, tableau 65, population urbaine uniquement."
+        "note": "IHSI 2024, tableau 61, population urbaine (sous-ensemble de la population totale)."
       },
       "history": {
         "text": "Commune répertoriée par l'Administration départementale du Nord. Notice historique locale à compléter à partir d'archives documentées.",
@@ -1204,14 +1204,14 @@
           "Écoles, hôpitaux, marchés, patrimoine et équipements restent à documenter.",
           "Aucun établissement ni aucune coordonnée GPS inventés."
         ],
-        "ihsiVerified": "Tableaux 64 et 65, IHSI 2024"
+        "ihsiVerified": "Tableau 61, IHSI 2024"
       },
       "populationTotale2024": {
         "value": 59382,
         "year": 2024,
         "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
         "status": "documente",
-        "note": "Estimation IHSI 2024, tableau 64, population communale totale (urbaine et rurale)."
+        "note": "IHSI 2024, tableau 61, population totale communale."
       }
     }
   ]
