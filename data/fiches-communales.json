@@ -2772,7 +2772,14 @@
       },
       "services": [],
       "infrastructures": [],
-      "heritage": [],
+      "heritage": [
+        {
+          "name": "Bassin Zim et grottes associées",
+          "detail": "Site naturel et ensemble de grottes signalés près de Hinche par une source de terrain; rattachement communal précis, statut patrimonial et coordonnées non vérifiés.",
+          "source": "https://www.mappinghaitianhistory.com/central",
+          "status": "a_verifier"
+        }
+      ],
       "verification": "demographie_documentee_audit_historique_patrimonial_ouvert",
       "audit": {
         "reviewedAt": "2026-11-03",
@@ -2954,13 +2961,23 @@
       "commune": "Mirebalais",
       "updatedAt": "2026-11-03",
       "history": {
-        "text": "Histoire locale à documenter à partir de sources institutionnelles et historiques identifiées.",
-        "sources": [],
-        "status": "a_verifier"
+        "text": "La présence du Fort Anglais est signalée dans un inventaire de terrain du patrimoine historique de Mirebalais; sa datation, son classement et son périmètre demandent confirmation dans le bulletin ISPAN n°2.",
+        "sources": [
+          "https://www.mappinghaitianhistory.com/central",
+          "https://www.haitidocs.org/series/ispan-bulletin?lang=fr"
+        ],
+        "status": "historique_a_verifier"
       },
       "services": [],
       "infrastructures": [],
-      "heritage": [],
+      "heritage": [
+        {
+          "name": "Fort Anglais",
+          "detail": "Fort historique décrit sur une colline à l'est de Mirebalais dans un inventaire de terrain indépendant, qui renvoie au bulletin ISPAN n°2; classement et localisation exacte à contrôler sur source primaire.",
+          "source": "https://www.mappinghaitianhistory.com/central",
+          "status": "historique_a_verifier"
+        }
+      ],
       "verification": "demographie_documentee_audit_historique_patrimonial_ouvert",
       "audit": {
         "reviewedAt": "2026-11-03",
@@ -3018,9 +3035,10 @@
       "heritage": [
         {
           "name": "Cascade de Saut-d'Eau",
-          "detail": "Site naturel et lieu de pèlerinage associé à la fête du 16 juillet; limites, statut de protection et état actuel à documenter.",
+          "detail": "Site naturel et lieu de pèlerinage associé à la fête du 16 juillet; limites, statut de protection et état actuel à documenter. Un inventaire de terrain indépendant décrit également l'accès à la cascade et les pratiques de pèlerinage.",
           "source": "https://www.haiti-reference.info/pages/plan/religions/vodou-haitien/vodou-lieux-saints/",
-          "status": "historique"
+          "status": "historique",
+          "secondarySource": "https://www.mappinghaitianhistory.com/central"
         }
       ],
       "verification": "demographie_documentee_audit_historique_patrimonial_ouvert",
@@ -3068,9 +3086,11 @@
       "commune": "Boucan-Carré",
       "updatedAt": "2026-11-03",
       "history": {
-        "text": "Histoire locale à documenter à partir de sources institutionnelles et historiques identifiées.",
-        "sources": [],
-        "status": "a_verifier"
+        "text": "Selon Haiti-Référence, Boucan-Carré, anciennement Chambo, a été une section communale de Mirebalais avant son élévation au rang de commune en avril 1985. La référence juridique primaire reste à retrouver.",
+        "sources": [
+          "https://www.haiti-reference.info/pages/plan/geographie-et-tourisme/divisions-territoriales/arrondissements-et-communes/centre/"
+        ],
+        "status": "historique_a_verifier"
       },
       "services": [],
       "infrastructures": [],
@@ -3258,11 +3278,13 @@
       "commune": "Baptiste",
       "updatedAt": "2026-11-03",
       "history": {
-        "text": "Le décret du 22 juillet 2015 (Le Moniteur n° 147 du 5 août 2015) a élevé Baptiste, ancien quartier de la première section Renthe-Mathé de Belladère, au rang de commune. Un arrêté du 14 novembre 2018 (Le Moniteur n° 197 du 16 novembre 2018) a nommé une commission municipale pour Baptiste. Les tableaux démographiques IHSI 2024 conservent une ventilation de quartier sous Belladère; la population communale autonome n'est pas établie par ces tableaux.",
+        "text": "Le décret du 22 juillet 2015 (Le Moniteur n° 147 du 5 août 2015) a élevé Baptiste, ancien quartier de la première section Renthe-Mathé de Belladère, au rang de commune. Un arrêté du 14 novembre 2018 (Le Moniteur n° 197 du 16 novembre 2018) a nommé une commission municipale pour Baptiste. Les tableaux démographiques IHSI 2024 conservent une ventilation de quartier sous Belladère; la population communale autonome n'est pas établie par ces tableaux. Le décret de 2015 prévoit également le rattachement de la 3e section communale Riaribes à Baptiste. Les limites cardinales sont identifiées textuellement mais ne constituent pas une géométrie validée.",
         "sources": [
           "https://lenouvelliste.com/article/148647/creation-de-cinq-nouvelles-communes-par-decret-presidentiel",
           "https://www.haitidocs.org/doc/moniteur-2018-11-16-nominations-delegues?lang=fr",
-          "https://www.haiti-reference.info/pages/plan/geographie-et-tourisme/divisions-territoriales/arrondissements-et-communes/centre/"
+          "https://www.haiti-reference.info/pages/plan/geographie-et-tourisme/divisions-territoriales/arrondissements-et-communes/centre/",
+          "https://fr.scribd.com/document/832110484/Decret-Sections-Communales",
+          "https://haitiahp.blogspot.com/2015/08/lexecutif-cree-cinq-nouvelles-communes.html"
         ],
         "status": "documente"
       },
@@ -3277,7 +3299,9 @@
           "Ne pas présenter le statut de commune comme non confirmé : les actes de 2015 et 2018 sont identifiés.",
           "Ne pas traiter les 6 278 habitants du quartier comme population autonome de la commune.",
           "Les limites juridiques doivent être distinguées de la géométrie cartographique disponible.",
-          "Fonctionnement actuel de l'administration municipale non vérifié."
+          "Fonctionnement actuel de l'administration municipale non vérifié.",
+          "Le territoire juridique inclut la 3e section Riaribes; ne pas assimiler l'ancien quartier Baptiste à l'ensemble de la commune.",
+          "Les limites cardinales du décret ne constituent pas un polygone géoréférencé."
         ],
         "administrativeReview": "Création juridique attestée par décret du 22 juillet 2015 cité dans Le Moniteur n°147 (5 août 2015). Arrêté de commission municipale du 14 novembre 2018 reproduit dans Le Moniteur n°197 (16 novembre 2018). Tableau IHSI 2024 continue de présenter Baptiste comme quartier de Belladère."
       },
@@ -3288,6 +3312,20 @@
         "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
         "status": "documente",
         "note": "IHSI 2024, tableau 250 : quartier de Baptiste inclus dans la population urbaine de Belladère; ne pas additionner séparément."
+      },
+      "territorialBoundaries": {
+        "north": "1re section Renthe-Mathé (Belladère)",
+        "south": "commune de Savanette",
+        "west": "communes de Belladère et Lascahobas",
+        "east": "frontière haïtiano-dominicaine",
+        "includedAdministrativeUnits": [
+          "ancien quartier Baptiste de Renthe-Mathé",
+          "3e section communale Riaribes, auparavant rattachée à Belladère"
+        ],
+        "source": "https://fr.scribd.com/document/832110484/Decret-Sections-Communales",
+        "secondarySource": "https://haitiahp.blogspot.com/2015/08/lexecutif-cree-cinq-nouvelles-communes.html",
+        "status": "limites_textuelles_decret_2015_geometrie_non_verifiee",
+        "note": "Limites décrites textuellement; ne pas convertir en polygone ou coordonnées sans source cartographique officielle."
       }
     },
     {
