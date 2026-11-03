@@ -2188,15 +2188,22 @@
       "updatedAt": "2026-11-03",
       "administrativeSource": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
       "history": {
-        "text": "Commune reconnue dans le tableau 1 des divisions territoriales de l'IHSI 2024. Histoire locale et patrimoine à documenter par des sources spécialisées.",
+        "text": "Saint-Marc est une ville portuaire historique de l'Artibonite. Les sources consultées documentent également des fortifications de l'époque postindépendance dans son secteur; les limites communales des ouvrages doivent être contrôlées.",
         "sources": [
-          "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf"
+          "https://www.mtptc.gouv.ht/media/upload/doc/publications/FA_PARR_PGES_Dessalines-Saint%20Michel_Septembre%202021.pdf"
         ],
-        "status": "documente"
+        "status": "historique"
       },
       "services": [],
       "infrastructures": [],
-      "heritage": [],
+      "heritage": [
+        {
+          "name": "Fort Doko et fort Madame — secteur de Saint-Marc",
+          "detail": "L'inventaire MTPTC de 2021 classe ces ouvrages dans le secteur de Saint-Marc, au sein du système défensif de Marchand-Dessalines. Localisation communale exacte et accès actuels à confirmer.",
+          "source": "https://www.mtptc.gouv.ht/media/upload/doc/publications/FA_PARR_PGES_Dessalines-Saint%20Michel_Septembre%202021.pdf",
+          "status": "historique"
+        }
+      ],
       "verification": "demographie_ihsi_documentee_histoire_a_completer",
       "audit": {
         "reviewedAt": "2026-11-03",
@@ -2240,11 +2247,11 @@
       "updatedAt": "2026-11-03",
       "administrativeSource": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
       "history": {
-        "text": "Commune reconnue dans le tableau 1 des divisions territoriales de l'IHSI 2024. Histoire locale et patrimoine à documenter par des sources spécialisées.",
+        "text": "Commune de l'arrondissement de Saint-Marc dans l'Artibonite. Les dates de fondation et les principaux monuments restent à vérifier à partir d'archives locales.",
         "sources": [
-          "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf"
+          "https://ihsi.gouv.ht/statistiques/statistiques_demographiques_et_sociales/data_set"
         ],
-        "status": "documente"
+        "status": "a_verifier"
       },
       "services": [],
       "infrastructures": [],
@@ -2292,11 +2299,11 @@
       "updatedAt": "2026-11-03",
       "administrativeSource": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
       "history": {
-        "text": "Commune reconnue dans le tableau 1 des divisions territoriales de l'IHSI 2024. Histoire locale et patrimoine à documenter par des sources spécialisées.",
+        "text": "Commune de l'arrondissement de Saint-Marc dans l'Artibonite. Les dates de fondation et les principaux monuments restent à vérifier à partir d'archives locales.",
         "sources": [
-          "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf"
+          "https://ihsi.gouv.ht/statistiques/statistiques_demographiques_et_sociales/data_set"
         ],
-        "status": "documente"
+        "status": "a_verifier"
       },
       "services": [],
       "infrastructures": [],
@@ -2344,26 +2351,28 @@
       "updatedAt": "2026-11-03",
       "administrativeSource": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
       "history": {
-        "text": "Le répertoire territorial du projet classe ce territoire comme commune, mais les tableaux 248–249 de l'IHSI 2024 le présentent comme quartier au sein d'une autre commune. Son statut administratif et la portée de son élévation éventuelle doivent être vérifiés dans les textes officiels.",
+        "text": "Liancourt figure parmi les communes constituées par décret en juillet 2015, selon un compte rendu de la visite du ministère de l'Intérieur en juin 2017. Le ministère y examinait la structuration administrative. Les estimations IHSI 2024 ne permettent pas d'attribuer une population communale distincte à Liancourt.",
         "sources": [
-          "https://www.haitidocs.org/doc/ihsi-2024-disaggregated-estimates?lang=fr"
+          "https://www.haitilibre.com/article-21286-haiti-politique-vers-la-normalisation-des-communes-de-liancourt-et-montrouis.html",
+          "https://ihsi.gouv.ht/statistiques/statistiques_demographiques_et_sociales/data_set"
         ],
-        "status": "a_verifier"
+        "status": "historique"
       },
       "services": [],
       "infrastructures": [],
       "heritage": [],
-      "verification": "divergence_statut_commune_quartier_ihsi",
+      "verification": "statut_juridique_rapporte_application_et_delimitation_a_confirmer",
       "audit": {
         "reviewedAt": "2026-11-03",
-        "method": "Comparaison des tableaux 248 et 249 de l'IHSI 2024 avec le répertoire territorial du projet.",
+        "method": "Comparaison des comptes rendus du ministère de l'Intérieur relayés en 2017 et de la couverture statistique IHSI 2024.",
         "warnings": [
-          "Statut communal distinct à clarifier; ne pas additionner ce quartier aux populations des communes parentes.",
-          "Les chiffres de quartier ci-dessous ne sont pas une population communale distincte.",
-          "Aucune superficie de commune distincte déduite."
+          "Création juridique par décret de juillet 2015 rapportée par la presse; texte primaire à retrouver.",
+          "Mise en œuvre administrative et limites exactes non établies par ces sources.",
+          "Les données 2024 disponibles pour le quartier ne constituent pas la population de la nouvelle commune.",
+          "Ne pas supprimer la commune du répertoire ni additionner son quartier à une commune parente."
         ]
       },
-      "administrativeStatus": "commune_ihsi_2024",
+      "administrativeStatus": "commune_creee_2015_statistiques_non_individualisees",
       "populationQuartier2024": {
         "value": 36832,
         "year": 2024,
@@ -2379,26 +2388,28 @@
       "updatedAt": "2026-11-03",
       "administrativeSource": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
       "history": {
-        "text": "Le répertoire territorial du projet classe ce territoire comme commune, mais les tableaux 248–249 de l'IHSI 2024 le présentent comme quartier au sein d'une autre commune. Son statut administratif et la portée de son élévation éventuelle doivent être vérifiés dans les textes officiels.",
+        "text": "Montrouis figure parmi les communes constituées par décret en juillet 2015, selon un compte rendu de la visite du ministère de l'Intérieur en juin 2017. Le ministère y examinait la structuration administrative. Les estimations IHSI 2024 ne permettent pas d'attribuer une population communale distincte à Montrouis.",
         "sources": [
-          "https://www.haitidocs.org/doc/ihsi-2024-disaggregated-estimates?lang=fr"
+          "https://www.haitilibre.com/article-21286-haiti-politique-vers-la-normalisation-des-communes-de-liancourt-et-montrouis.html",
+          "https://ihsi.gouv.ht/statistiques/statistiques_demographiques_et_sociales/data_set"
         ],
-        "status": "a_verifier"
+        "status": "historique"
       },
       "services": [],
       "infrastructures": [],
       "heritage": [],
-      "verification": "divergence_statut_commune_quartier_ihsi",
+      "verification": "statut_juridique_rapporte_application_et_delimitation_a_confirmer",
       "audit": {
         "reviewedAt": "2026-11-03",
-        "method": "Comparaison des tableaux 248 et 249 de l'IHSI 2024 avec le répertoire territorial du projet.",
+        "method": "Comparaison des comptes rendus du ministère de l'Intérieur relayés en 2017 et de la couverture statistique IHSI 2024.",
         "warnings": [
-          "Statut communal distinct à clarifier; ne pas additionner ce quartier aux populations des communes parentes.",
-          "Les chiffres de quartier ci-dessous ne sont pas une population communale distincte.",
-          "Aucune superficie de commune distincte déduite."
+          "Création juridique par décret de juillet 2015 rapportée par la presse; texte primaire à retrouver.",
+          "Mise en œuvre administrative et limites exactes non établies par ces sources.",
+          "Les données 2024 disponibles pour le quartier ne constituent pas la population de la nouvelle commune.",
+          "Ne pas supprimer la commune du répertoire ni additionner son quartier à une commune parente."
         ]
       },
-      "administrativeStatus": "commune_ihsi_2024",
+      "administrativeStatus": "commune_creee_2015_statistiques_non_individualisees",
       "populationQuartier2024": {
         "value": 12960,
         "year": 2024,
@@ -2414,21 +2425,44 @@
       "updatedAt": "2026-11-03",
       "administrativeSource": "https://www.ihsi.gouv.ht/statistiques/statistiques_demographiques_et_sociales/projections_et_estimations_de_la_population",
       "history": {
-        "text": "Notice historique à rechercher et à vérifier.",
-        "sources": [],
-        "status": "a_verifier"
+        "text": "Marchand-Dessalines, ancienne capitale de l'État haïtien au début du XIXe siècle, est associée à Jean-Jacques Dessalines et à un système de fortifications aménagé après l'indépendance de 1804.",
+        "sources": [
+          "https://www.haitidocs.org/doc/ispan-bulletin-2009-08?lang=fr",
+          "https://www.haiti-reference.info/pages/plan/geographie-et-tourisme/divisions-territoriales/arrondissements-et-communes/artibonite/"
+        ],
+        "status": "historique"
       },
       "services": [],
       "infrastructures": [],
-      "heritage": [],
-      "verification": "inventaire_en_cours",
+      "heritage": [
+        {
+          "name": "Fort Décidé",
+          "detail": "Fortification du système défensif de Marchand-Dessalines décrite par l'ISPAN en 2009. État actuel et accès à vérifier.",
+          "source": "https://www.haitidocs.org/doc/ispan-bulletin-2009-08?lang=fr",
+          "status": "historique"
+        },
+        {
+          "name": "Fort Culbuté (fort La Source)",
+          "detail": "Fortification destinée à protéger l'entrée orientale de Marchand-Dessalines et les sources d'eau; décrite dans l'inventaire patrimonial du MTPTC de 2021.",
+          "source": "https://www.mtptc.gouv.ht/media/upload/doc/publications/FA_PARR_PGES_Dessalines-Saint%20Michel_Septembre%202021.pdf",
+          "status": "historique"
+        },
+        {
+          "name": "Système fortifié de Marchand-Dessalines",
+          "detail": "Ensemble historique de plusieurs forts décrit par l'ISPAN; les ouvrages situés hors des limites communales ne sont pas attribués automatiquement à Dessalines.",
+          "source": "https://www.haitidocs.org/doc/ispan-bulletin-2009-10?lang=fr",
+          "status": "historique"
+        }
+      ],
+      "verification": "histoire_et_patrimoine_documentes_demographie_a_completer",
       "audit": {
         "reviewedAt": "2026-11-03",
-        "method": "Structure initiale d'après le répertoire administratif du projet; chiffres et informations locales non renseignés sans contrôle des tableaux IHSI.",
+        "method": "Recoupement ISPAN 2009, inventaire MTPTC 2021 et répertoire historique.",
         "warnings": [
-          "Population, superficie et histoire locale à documenter à partir des sources primaires.",
-          "Services, infrastructures et patrimoine : inventaire à réaliser.",
-          "Aucune coordonnée GPS ni établissement ajouté sans preuve."
+          "Les descriptions historiques ne prouvent pas l'état des monuments en 2026.",
+          "Les limites des fortifications voisines doivent être contrôlées.",
+          "Population et superficie à renseigner après contrôle IHSI.",
+          "Aucune coordonnée GPS inférée."
         ]
       }
     },
@@ -2439,14 +2473,16 @@
       "updatedAt": "2026-11-03",
       "administrativeSource": "https://www.ihsi.gouv.ht/statistiques/statistiques_demographiques_et_sociales/projections_et_estimations_de_la_population",
       "history": {
-        "text": "Notice historique à rechercher et à vérifier.",
-        "sources": [],
-        "status": "a_verifier"
+        "text": "La commune est associée au palais des 365 portes et au fort de la Crête-à-Pierrot, dont l'histoire et la localisation précise demandent un inventaire patrimonial complémentaire.",
+        "sources": [
+          "https://www.haiti-reference.info/pages/plan/geographie-et-tourisme/divisions-territoriales/arrondissements-et-communes/artibonite/"
+        ],
+        "status": "historique"
       },
       "services": [],
       "infrastructures": [],
       "heritage": [],
-      "verification": "inventaire_en_cours",
+      "verification": "histoire_initiale_documentee_autres_rubriques_a_completer",
       "audit": {
         "reviewedAt": "2026-11-03",
         "method": "Structure initiale d'après le répertoire administratif du projet; chiffres et informations locales non renseignés sans contrôle des tableaux IHSI.",
@@ -2464,14 +2500,16 @@
       "updatedAt": "2026-11-03",
       "administrativeSource": "https://www.ihsi.gouv.ht/statistiques/statistiques_demographiques_et_sociales/projections_et_estimations_de_la_population",
       "history": {
-        "text": "Notice historique à rechercher et à vérifier.",
-        "sources": [],
-        "status": "a_verifier"
+        "text": "Commune située dans la région de l'embouchure du fleuve Artibonite; histoire et usages historiques à préciser.",
+        "sources": [
+          "https://www.haiti-reference.info/pages/plan/geographie-et-tourisme/divisions-territoriales/arrondissements-et-communes/artibonite/"
+        ],
+        "status": "historique"
       },
       "services": [],
       "infrastructures": [],
       "heritage": [],
-      "verification": "inventaire_en_cours",
+      "verification": "histoire_initiale_documentee_autres_rubriques_a_completer",
       "audit": {
         "reviewedAt": "2026-11-03",
         "method": "Structure initiale d'après le répertoire administratif du projet; chiffres et informations locales non renseignés sans contrôle des tableaux IHSI.",
@@ -2489,14 +2527,16 @@
       "updatedAt": "2026-11-03",
       "administrativeSource": "https://www.ihsi.gouv.ht/statistiques/statistiques_demographiques_et_sociales/projections_et_estimations_de_la_population",
       "history": {
-        "text": "Notice historique à rechercher et à vérifier.",
-        "sources": [],
-        "status": "a_verifier"
+        "text": "La commune de Desdunes est présentée comme ayant été élevée au rang de commune en 1983 dans un répertoire historique; acte officiel à retrouver.",
+        "sources": [
+          "https://www.haiti-reference.info/pages/plan/geographie-et-tourisme/divisions-territoriales/arrondissements-et-communes/artibonite/"
+        ],
+        "status": "historique"
       },
       "services": [],
       "infrastructures": [],
       "heritage": [],
-      "verification": "inventaire_en_cours",
+      "verification": "histoire_initiale_documentee_autres_rubriques_a_completer",
       "audit": {
         "reviewedAt": "2026-11-03",
         "method": "Structure initiale d'après le répertoire administratif du projet; chiffres et informations locales non renseignés sans contrôle des tableaux IHSI.",
