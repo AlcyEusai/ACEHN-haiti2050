@@ -619,6 +619,78 @@
           "source": "https://www.mappinghaitianhistory.com/south"
         }
       ]
+    },
+    {
+      "id": "ht-nord-cap-hopital-universitaire-justinien",
+      "name": "Hôpital Universitaire Justinien",
+      "category": "sante",
+      "source": "https://mspp.gouv.ht/hopitaux-universitaires",
+      "evidence": "Le MSPP répertorie l'Hôpital Universitaire Justinien du Cap-Haïtien parmi les hôpitaux universitaires du pays.",
+      "verification": "existence_confirmee_source_primaire",
+      "reviewStatus": "existence_documentee",
+      "department": "Nord",
+      "arrondissement": "Cap-Haïtien",
+      "commune": "Cap-Haïtien",
+      "lat": null,
+      "lon": null,
+      "note": "Localisation GPS non confirmée. La présence dans les sources ne garantit pas l'état actuel de fonctionnement.",
+      "updatedAt": "2026-11-03",
+      "checkedOnlineAt": "2026-11-03",
+      "history": [
+        {
+          "date": "2026-11-03",
+          "action": "Ajout documentaire fondé sur une source institutionnelle, sans coordonnées GPS inférées",
+          "source": "https://mspp.gouv.ht/hopitaux-universitaires"
+        }
+      ]
+    },
+    {
+      "id": "ht-nord-cap-administration-communale",
+      "name": "Administration communale du Cap-Haïtien",
+      "category": "administration",
+      "source": "https://www.cap-haitien.ht/gouvernance/",
+      "evidence": "Le site municipal décrit l'administration communale du Cap-Haïtien et son organisation.",
+      "verification": "existence_confirmee_source_primaire",
+      "reviewStatus": "existence_documentee",
+      "department": "Nord",
+      "arrondissement": "Cap-Haïtien",
+      "commune": "Cap-Haïtien",
+      "lat": null,
+      "lon": null,
+      "note": "Localisation GPS non confirmée. La présence dans les sources ne garantit pas l'état actuel de fonctionnement.",
+      "updatedAt": "2026-11-03",
+      "checkedOnlineAt": "2026-11-03",
+      "history": [
+        {
+          "date": "2026-11-03",
+          "action": "Ajout documentaire fondé sur une source institutionnelle, sans coordonnées GPS inférées",
+          "source": "https://www.cap-haitien.ht/gouvernance/"
+        }
+      ]
+    },
+    {
+      "id": "ht-nord-cap-hopital-fort-saint-michel",
+      "name": "Hôpital communautaire de référence de Fort Saint-Michel",
+      "category": "sante",
+      "source": "https://documents1.worldbank.org/curated/en/099052824220536898/pdf/P1689511b312250941926110df5593daba0.pdf",
+      "evidence": "Le document de la Banque mondiale identifie Fort St Michel, code institution 311302, comme HCR dans la commune de Cap-Haïtien. Activité actuelle à reconfirmer.",
+      "verification": "existence_documentee_source_institutionnelle_historique",
+      "reviewStatus": "a_verifier",
+      "department": "Nord",
+      "arrondissement": "Cap-Haïtien",
+      "commune": "Cap-Haïtien",
+      "lat": null,
+      "lon": null,
+      "note": "Localisation GPS non confirmée. La présence dans les sources ne garantit pas l'état actuel de fonctionnement.",
+      "updatedAt": "2026-11-03",
+      "checkedOnlineAt": "2026-11-03",
+      "history": [
+        {
+          "date": "2026-11-03",
+          "action": "Ajout documentaire fondé sur une source institutionnelle, sans coordonnées GPS inférées",
+          "source": "https://documents1.worldbank.org/curated/en/099052824220536898/pdf/P1689511b312250941926110df5593daba0.pdf"
+        }
+      ]
     }
   ]
 }
