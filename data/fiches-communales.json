@@ -1469,13 +1469,22 @@
       "commune": "Trou-du-Nord",
       "updatedAt": "2026-11-03",
       "history": {
-        "text": "Histoire locale à documenter par des archives et publications identifiées.",
-        "sources": [],
-        "status": "a_verifier"
+        "text": "Haiti-Référence signale l'ancien toponyme Trou-de-Jacquesil. Cette mention est historique et demande recoupement archivistique.",
+        "sources": [
+          "https://www.haiti-reference.info/pages/plan/geographie-et-tourisme/divisions-territoriales/arrondissements-et-communes/nordest/"
+        ],
+        "status": "historique"
       },
       "services": [],
       "infrastructures": [],
-      "heritage": [],
+      "heritage": [
+        {
+          "name": "Vestiges historiques de Trou-du-Nord",
+          "detail": "Un inventaire touristique identifie des vestiges historiques sans permettre de fixer leur localisation exacte.",
+          "source": "https://ceci.org/uploads/Import/fr-haiti-rapport-inventaire-ressourcers-touristiques-1_2024-02-28-172153_lblc.pdf",
+          "status": "historique"
+        }
+      ],
       "verification": "demographie_documentee_autres_rubriques_a_completer",
       "administrativeSource": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
       "audit": {
@@ -1516,9 +1525,11 @@
       "commune": "Sainte-Suzanne",
       "updatedAt": "2026-11-03",
       "history": {
-        "text": "Histoire locale à documenter par des archives et publications identifiées.",
-        "sources": [],
-        "status": "a_verifier"
+        "text": "Commune de l'arrondissement de Trou-du-Nord dans le répertoire administratif IHSI 2024; chronologie locale encore à documenter.",
+        "sources": [
+          "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf"
+        ],
+        "status": "documente"
       },
       "services": [],
       "infrastructures": [],
@@ -1567,8 +1578,22 @@
         "sources": [],
         "status": "a_verifier"
       },
-      "services": [],
-      "infrastructures": [],
+      "services": [
+        {
+          "name": "Carte scolaire communale MENFP, août 2025",
+          "detail": "Le document comporte un répertoire d'écoles et une analyse de l'offre éducative; leur fonctionnement actuel doit être vérifié établissement par établissement.",
+          "source": "https://www.haitidocs.org/doc/menfp-carte-scolaire-terrier-rouge?lang=fr",
+          "status": "historique"
+        }
+      ],
+      "infrastructures": [
+        {
+          "name": "Eau, électricité et communications — diagnostic scolaire",
+          "detail": "Le document MENFP décrit des cours d'eau, des points d'eau et l'électrification de la ville à la date du diagnostic; il ne constitue pas un état des réseaux en 2026.",
+          "source": "https://www.haitidocs.org/doc/menfp-carte-scolaire-terrier-rouge?lang=fr",
+          "status": "historique"
+        }
+      ],
       "heritage": [],
       "verification": "demographie_documentee_autres_rubriques_a_completer",
       "administrativeSource": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
@@ -1602,7 +1627,13 @@
         "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
         "status": "documente",
         "note": "Estimation IHSI 2024, tableau 76; population rurale."
-      }
+      },
+      "sectionsCommunales": [
+        "Fond Blanc",
+        "Grand Bassin"
+      ],
+      "sectionsSource": "https://www.haitidocs.org/doc/menfp-carte-scolaire-terrier-rouge?lang=fr",
+      "sectionsStatus": "historique"
     },
     {
       "department": "Nord-Est",
@@ -1610,13 +1641,22 @@
       "commune": "Caracol",
       "updatedAt": "2026-11-03",
       "history": {
-        "text": "Histoire locale à documenter par des archives et publications identifiées.",
-        "sources": [],
-        "status": "a_verifier"
+        "text": "Haiti-Référence rapporte que Caracol, autrefois appelée Caya España, a été élevée au rang de commune en septembre 1889; affirmation à recouper dans les textes officiels.",
+        "sources": [
+          "https://www.haiti-reference.info/pages/plan/geographie-et-tourisme/divisions-territoriales/arrondissements-et-communes/nordest/"
+        ],
+        "status": "historique"
       },
       "services": [],
       "infrastructures": [],
-      "heritage": [],
+      "heritage": [
+        {
+          "name": "Baie de Caracol",
+          "detail": "Espace naturel côtier identifié dans l'inventaire touristique du Nord-Est; limites et usages actuels non précisés.",
+          "source": "https://ceci.org/uploads/Import/fr-haiti-rapport-inventaire-ressourcers-touristiques-1_2024-02-28-172153_lblc.pdf",
+          "status": "documente"
+        }
+      ],
       "verification": "demographie_documentee_autres_rubriques_a_completer",
       "administrativeSource": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
       "audit": {
@@ -1657,22 +1697,27 @@
       "commune": "Grand-Bassin",
       "updatedAt": "2026-11-03",
       "history": {
-        "text": "Histoire locale à documenter par des archives et publications identifiées.",
-        "sources": [],
+        "text": "Un article de décembre 2020 rapporte l'élévation de Grand-Bassin au rang de commune par arrêté publié au Moniteur du 10 décembre 2020. L'IHSI 2024 le mentionne comme commune dans son tableau administratif, mais le MENFP le décrit encore comme une section communale de Terrier-Rouge dans une carte scolaire de 2025. Statut et application administrative à clarifier.",
+        "sources": [
+          "https://haitistandard.com/gouvernance-nordest-la-localite-de-grand-bassin-relevee-au-rang-de-commune/",
+          "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+          "https://www.haitidocs.org/doc/menfp-carte-scolaire-terrier-rouge?lang=fr"
+        ],
         "status": "a_verifier"
       },
       "services": [],
       "infrastructures": [],
       "heritage": [],
-      "verification": "statut_administratif_a_verifier",
+      "verification": "statut_administratif_a_clarifier",
       "administrativeSource": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
       "audit": {
         "reviewedAt": "2026-11-03",
-        "method": "Rattachement administratif recoupé avec le répertoire territorial IHSI; autres rubriques en attente.",
+        "method": "Comparaison IHSI 2024, article sur l'arrêté 2020 et carte scolaire MENFP 2025.",
         "warnings": [
-          "Grand-Bassin figure dans le répertoire territorial actuel du projet, mais n'apparaît pas comme commune distincte au tableau 76 de l'IHSI 2024.",
-          "Vérifier son statut administratif et le rattachement exact avant toute attribution de population.",
-          "Aucune population, établissement ni coordonnée GPS inventés."
+          "L'IHSI inclut Grand-Bassin dans les communes du tableau administratif, mais ne fournit pas de population communale distincte au tableau démographique consulté.",
+          "La carte scolaire MENFP 2025 le rattache comme section communale à Terrier-Rouge.",
+          "Conserver provisoirement dans le répertoire et vérifier le texte de l'arrêté au Moniteur ainsi que son application administrative.",
+          "Ne pas attribuer de population ni de coordonnées fictives."
         ]
       }
     },
@@ -1682,9 +1727,11 @@
       "commune": "Vallières",
       "updatedAt": "2026-11-03",
       "history": {
-        "text": "Histoire locale à documenter par des archives et publications identifiées.",
-        "sources": [],
-        "status": "a_verifier"
+        "text": "Commune et chef-lieu de l'arrondissement de Vallières, documentée dans le répertoire territorial.",
+        "sources": [
+          "https://www.haiti-reference.info/pages/plan/geographie-et-tourisme/divisions-territoriales/arrondissements-et-communes/nordest/"
+        ],
+        "status": "documente"
       },
       "services": [],
       "infrastructures": [],
@@ -1729,9 +1776,11 @@
       "commune": "Carice",
       "updatedAt": "2026-11-03",
       "history": {
-        "text": "Histoire locale à documenter par des archives et publications identifiées.",
-        "sources": [],
-        "status": "a_verifier"
+        "text": "Haiti-Référence rapporte l'élévation de Carice au rang de commune en 1950; date à recouper avec l'acte officiel.",
+        "sources": [
+          "https://www.haiti-reference.info/pages/plan/geographie-et-tourisme/divisions-territoriales/arrondissements-et-communes/nordest/"
+        ],
+        "status": "historique"
       },
       "services": [],
       "infrastructures": [],
@@ -1776,9 +1825,11 @@
       "commune": "Mombin-Crochu",
       "updatedAt": "2026-11-03",
       "history": {
-        "text": "Histoire locale à documenter par des archives et publications identifiées.",
-        "sources": [],
-        "status": "a_verifier"
+        "text": "Haiti-Référence rapporte une histoire administrative complexe de Mombin-Crochu et une modification de statut en 1942; dates exactes à confirmer dans les actes.",
+        "sources": [
+          "https://www.haiti-reference.info/pages/plan/geographie-et-tourisme/divisions-territoriales/arrondissements-et-communes/nordest/"
+        ],
+        "status": "historique"
       },
       "services": [],
       "infrastructures": [],
