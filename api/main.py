@@ -6,13 +6,18 @@ import json, os, sqlite3, uuid, hmac
 from datetime import datetime, timezone
 from pathlib import Path
 from fastapi import FastAPI, HTTPException, Header
+from fastapi.middleware.cors import CORSMiddleware
+from urllib.parse import urlparse
 from pydantic import BaseModel, Field
 
 DB=Path(os.getenv("HAITI2050_DB","haiti2050.sqlite3"))
-app=FastAPI(title="Haïti 2050 — registre des établissements",version="0.1.0")
+DB.parent.mkdir(parents=True,exist_ok=True)
+app=FastAPI(title="Haïti 2050 — registre des établissements",version="0.2.0")
+origins=[x.strip() for x in os.getenv("HAITI2050_ALLOWED_ORIGINS","").split(",") if x.strip()]
+app.add_middleware(CORSMiddleware,allow_origins=origins,allow_methods=["GET","POST"],allow_headers=["Content-Type","X-Admin-Token"])
 def now(): return datetime.now(timezone.utc).isoformat()
 def connect():
-    db=sqlite3.connect(DB);db.row_factory=sqlite3.Row;db.execute("PRAGMA foreign_keys=ON");return db
+    db=sqlite3.connect(DB,timeout=20);db.row_factory=sqlite3.Row;db.execute("PRAGMA foreign_keys=ON");db.execute("PRAGMA busy_timeout=20000");return db
 def init():
     with connect() as db:
         db.executescript("""
@@ -61,6 +66,8 @@ def normalize(value):return " ".join((value or "").casefold().split())
 @app.post("/api/places",status_code=201)
 def submit(item:Submission):
     if (item.lat is None)!=(item.lon is None):raise HTTPException(422,"Latitude et longitude doivent être fournies ensemble.")
+    parsed=urlparse(item.source_url)
+    if parsed.scheme!="https" or not parsed.netloc:raise HTTPException(422,"Une source HTTPS valide est requise.")
     with connect() as db:
         if item.external_id:
             existing=db.execute("SELECT place_id FROM sources WHERE provider=? AND external_id=?",(item.provider,item.external_id)).fetchone()
@@ -125,3 +132,9 @@ def review_place(place_id:str,review:Review,x_admin_token:str|None=Header(defaul
         db.execute("UPDATE places SET status=?,updated_at=? WHERE id=?",(review.decision,now(),place_id))
         record(db,place_id,"reviewed","admin",review.model_dump())
         return {"id":place_id,"status":review.decision}
+
+@app.get("/api/health")
+def health():
+    with connect() as db:
+        db.execute("SELECT 1")
+    return {"status":"ok"}
