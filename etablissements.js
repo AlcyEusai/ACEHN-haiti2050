@@ -86,8 +86,21 @@
   [deptEl, arrEl, communeEl].forEach(el => el?.addEventListener('change', () => setTimeout(refresh, 0)));
   window.addEventListener('haiti2050:territorychange', () => setTimeout(refresh, 0));
   count.textContent = 'Chargement des établissements…';
-  fetch('./data/etablissements.json').then(r => { if (!r.ok) throw new Error(`HTTP ${r.status}`); return r.json(); }).then(data => {
-    if (!Array.isArray(data)) throw new Error('Le JSON doit être un tableau.');
-    records = data; refresh();
+  Promise.all([
+    fetch('./data/etablissements.json').then(r => { if (!r.ok) throw new Error(`HTTP ${r.status}`); return r.json(); }),
+    fetch('./data/ecoles-savanette-menfp-2024-2025.json').then(r => { if (!r.ok) throw new Error(`HTTP ${r.status}`); return r.json(); }),
+    fetch('./data/ecoles-thomonde-menfp-2024-2025.json').then(r => { if (!r.ok) throw new Error(`HTTP ${r.status}`); return r.json(); })
+  ]).then(([data, savanette, thomonde]) => {
+    if (!Array.isArray(data) || !Array.isArray(savanette) || !Array.isArray(thomonde)) throw new Error('Les JSON doivent être des tableaux.');
+    const ids = new Set(data.map(x => x.id));
+    const codes = new Set(data.map(x => String(x.code_menfp || '')).filter(Boolean));
+    const alreadyMappedThomonde = new Set(['061301104022', '061302105724', '061303116473']); // Correspondances OSM probables : Henry Christophe, Tierra Muscady, Baille Tourible
+    records = data.concat([...savanette, ...thomonde].filter(x => !ids.has(x.id) && !codes.has(String(x.code_menfp || '')) && !alreadyMappedThomonde.has(String(x.code_menfp || ''))));
+    if (window.HAITI_NORMALISER_ETABLISSEMENTS) {
+      const normalized = window.HAITI_NORMALISER_ETABLISSEMENTS(records);
+      records = normalized.records;
+      console.info('Haïti 2050 — rattachement territorial', normalized.rapport);
+    }
+    refresh();
   }).catch(e => { count.textContent = 'Chargement impossible : ' + e.message; console.error(e); });
 })();

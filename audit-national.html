@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Haïti 2050 — Audit national des institutions</title>
+<style>body{font:16px system-ui,sans-serif;max-width:1200px;margin:2rem auto;padding:0 1rem;color:#172334}h1{margin-bottom:.3rem}.muted{color:#566}table{border-collapse:collapse;width:100%;font-size:14px}th,td{padding:9px;border-bottom:1px solid #ddd;text-align:left}th{position:sticky;top:0;background:#eef3f8}input{padding:10px;width:min(100%,350px);margin:1rem 0}#tablewrap{max-height:70vh;overflow:auto}a{color:#064f99}.note{padding:12px;background:#f3f5f7}</style></head>
+<body><h1>Audit national des institutions — 149 communes</h1>
+<p class="muted">Tableau de couverture du registre Haïti 2050 par commune et par catégorie. Les zéros indiquent une absence de fiche dans le registre, pas une absence réelle d'établissement.</p>
+<p id="status">Chargement…</p><p class="note">Source des communes : <code>territoires.js</code>. Sources des établissements : <code>data/etablissements.json</code> et registres MENFP complémentaires de Savanette/Thomonde. Les données non vérifiées ne constituent pas un recensement exhaustif.</p>
+<input id="search" type="search" placeholder="Rechercher une commune ou un département">
+<button id="export" type="button">Exporter le tableau CSV</button>
+<div id="tablewrap"><table><thead id="head"></thead><tbody id="body"></tbody></table></div>
+<script src="./territoires.js"></script>
+<script src="./normalisation-territoriale.js"></script>
+<script>
+(async()=>{
+const norm=s=>String(s||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^a-z0-9]/g,'');
+const territory=window.HAITI_TERRITOIRES;
+const communes=[];
+for(const d of territory.departements) for(const a of d.arrondissements) for(const c of a.communes) communes.push({departement:d.nom,arrondissement:a.nom,commune:typeof c==='string'?c:c.nom});
+const paths=['./data/etablissements.json','./data/ecoles-savanette-menfp-2024-2025.json','./data/ecoles-thomonde-menfp-2024-2025.json'];
+const responses=await Promise.all(paths.map(async(p,i)=>{try{const r=await fetch(p);if(!r.ok){if(i===0)throw Error('Registre principal indisponible');return [];}const data=await r.json();if(!Array.isArray(data))throw Error('Format JSON invalide : '+p);return data;}catch(e){if(i===0)throw e;return [];}}));
+const ids=new Set(),codes=new Set(),records=[];
+for(const r of responses.flat()){const id=String(r.id||''),code=String(r.code_menfp||'');if((id&&ids.has(id))||(code&&codes.has(code)))continue;if(id)ids.add(id);if(code)codes.add(code);records.push(r);}
+const reconciliation=window.HAITI_NORMALISER_ETABLISSEMENTS(records);
+records.splice(0,records.length,...reconciliation.records);
+const cats=[...new Set(records.map(x=>x.categorie).filter(Boolean))].sort((a,b)=>a.localeCompare(b,'fr'));
+const by=new Map();
+for(const x of records){const k=norm(x.departement)+'|'+norm(x.commune);if(!by.has(k))by.set(k,[]);by.get(k).push(x);}
+const rows=communes.map(c=>{const items=by.get(norm(c.departement)+'|'+norm(c.commune))||[];return {...c,total:items.length,counts:cats.map(k=>items.filter(x=>x.categorie===k).length)};});
+const head=document.getElementById('head'),body=document.getElementById('body'),search=document.getElementById('search');
+const headers=['Département','Arrondissement','Commune','Total',...cats];
+const tr=document.createElement('tr');for(const h of headers){const th=document.createElement('th');th.textContent=h;tr.append(th);}head.append(tr);
+function render(){body.replaceChildren();const term=norm(search.value);for(const r of rows.filter(x=>norm(x.departement+' '+x.arrondissement+' '+x.commune).includes(term))){const tr=document.createElement('tr');for(const v of [r.departement,r.arrondissement,r.commune,r.total,...r.counts]){const td=document.createElement('td');td.textContent=v;tr.append(td);}body.append(tr);}}
+search.addEventListener('input',render);
+document.getElementById('export').addEventListener('click',()=>{const quote=s=>'"'+String(s).replace(/"/g,'""')+'"';const csv='\ufeff'+[headers,...rows.map(r=>[r.departement,r.arrondissement,r.commune,r.total,...r.counts])].map(row=>row.map(quote).join(';')).join('\r\n');const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([csv],{type:'text/csv;charset=utf-8'}));a.download='haiti2050-audit-149-communes.csv';a.click();URL.revokeObjectURL(a.href);});
+document.getElementById('status').textContent=communes.length+' communes du référentiel • '+records.length+' fiches chargées • '+cats.length+' catégories • '+rows.filter(x=>x.total===0).length+' communes sans fiche • '+reconciliation.rapport.non_rattaches_total+' fiches non rattachées';
+render();
+})().catch(e=>{document.getElementById('status').textContent='Erreur : '+e.message;console.error(e)});
+</script></body></html>
