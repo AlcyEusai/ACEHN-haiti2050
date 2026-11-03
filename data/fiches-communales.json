@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": "2026-11-03",
+  "notes": "Notices documentaires; chiffres historiques datés et non présentés comme actuels. Coordonnées GPS non inférées.",
+  "communes": [
+    {
+      "department": "Nord",
+      "arrondissement": "Cap-Haïtien",
+      "commune": "Cap-Haïtien",
+      "updatedAt": "2026-11-03",
+      "sectionsCommunales": [
+        "Bande du Nord",
+        "Haut du Cap",
+        "Petite Anse"
+      ],
+      "sectionsSource": "https://www.adnhaiti.ht/commune-de-cap-haitien/",
+      "areaKm2": 53.5,
+      "areaSource": "https://www.adnhaiti.ht/commune-de-cap-haitien/",
+      "population": {
+        "value": 274404,
+        "year": 2015,
+        "source": "https://www.adnhaiti.ht/commune-de-cap-haitien/"
+      },
+      "history": {
+        "text": "Ville fondée en 1670 sous l'administration coloniale française. Anciennement appelée Cap-Français, elle fut un centre majeur de Saint-Domingue et conserve une trame urbaine historique.",
+        "sources": [
+          "https://www.adnhaiti.ht/commune-de-cap-haitien/",
+          "https://www.villeducaphaitien.com/decouvrir-le-cap/rues-du-cap"
+        ]
+      },
+      "services": [
+        {
+          "name": "Administration communale",
+          "detail": "L'administration municipale et ses services sont décrits dans le Plan communal de développement 2022–2027 (diagnostic antérieur).",
+          "source": "https://www.haitidocs.org/doc/wb-2023-communal-development-plan-pcd-2022?lang=fr"
+        },
+        {
+          "name": "Services publics territoriaux",
+          "detail": "La notice territoriale décrit la présence historique de services judiciaires, policiers, sanitaires et éducatifs; effectifs et fonctionnement actuels à vérifier.",
+          "source": "https://www.adnhaiti.ht/commune-de-cap-haitien/"
+        }
+      ],
+      "infrastructures": [
+        {
+          "name": "Voirie et mobilité",
+          "detail": "Le Plan communal de développement décrit des problèmes de congestion, stationnement et drainage au moment du diagnostic. Ce constat ne doit pas être présenté comme une mesure actuelle.",
+          "source": "https://www.haitidocs.org/doc/wb-2023-communal-development-plan-pcd-2022?lang=fr"
+        }
+      ],
+      "heritage": [
+        {
+          "name": "Place d'Armes",
+          "detail": "Place historique située au cœur de la ville, documentée par un inventaire patrimonial local.",
+          "source": "https://www.villeducaphaitien.com/art-et-culture/architecture/431-la-place-darmes-du-cap-haitien"
+        },
+        {
+          "name": "Trame urbaine historique",
+          "detail": "Rues rectilignes et héritage architectural documentés dans la ville.",
+          "source": "https://www.villeducaphaitien.com/decouvrir-le-cap/rues-du-cap"
+        }
+      ],
+      "nearbyNotInCommune": [
+        {
+          "name": "Citadelle Henry et Palais Sans-Souci",
+          "commune": "Milot",
+          "detail": "Sites majeurs du patrimoine mondial dans le Nord, à ne pas attribuer à la commune de Cap-Haïtien.",
+          "source": "https://whc.unesco.org/fr/list/180"
+        }
+      ],
+      "verification": "sources_documentaires_sans_validation_terrain"
+    }
+  ]
+}
