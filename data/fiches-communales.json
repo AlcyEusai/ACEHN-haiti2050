@@ -152,6 +152,190 @@
           "Services publics, population et infrastructures : à documenter."
         ]
       }
+    },
+    {
+      "department": "Nord",
+      "arrondissement": "Cap-Haïtien",
+      "commune": "Quartier-Morin",
+      "sectionsCommunales": [
+        "Basse Plaine",
+        "Morne Pelé"
+      ],
+      "sectionsSource": "https://www.adnhaiti.ht/commune-de-quartier-morin/",
+      "areaKm2": 60.36,
+      "areaSource": "https://www.adnhaiti.ht/commune-de-quartier-morin/",
+      "population": {
+        "value": 27359,
+        "year": 2015,
+        "source": "https://www.adnhaiti.ht/commune-de-quartier-morin/",
+        "status": "historique"
+      },
+      "history": {
+        "text": "La notice territoriale situe l'origine de la paroisse vers 1700 et évoque l'histoire sucrière de la plaine du Cap.",
+        "sources": [
+          "https://www.adnhaiti.ht/commune-de-quartier-morin/"
+        ],
+        "status": "historique"
+      },
+      "services": [
+        {
+          "name": "Inspection scolaire",
+          "detail": "Présence d'un bureau d'inspection scolaire rapportée dans une notice administrative historique; fonctionnement actuel non vérifié.",
+          "source": "https://www.adnhaiti.ht/commune-de-quartier-morin/",
+          "status": "historique"
+        },
+        {
+          "name": "Carte scolaire communale",
+          "detail": "Étude MENFP/BID d'août 2025 portant sur l'accès à l'éducation et les établissements scolaires; ne constitue pas une liste d'écoles vérifiées en 2026.",
+          "source": "https://www.haitidocs.org/doc/menfp-carte-scolaire-quartier-morin?lang=fr",
+          "status": "documente"
+        }
+      ],
+      "infrastructures": [
+        {
+          "name": "Projet de réhabilitation de la route SOS",
+          "detail": "Le plan d'action de réinstallation de 2024 documente un projet de réhabilitation du corridor desservant Quartier-Morin; achèvement non vérifié.",
+          "source": "https://www.mtptc.gouv.ht/media/upload/doc/publications/CHUD%20Plan%20Action%20Reinstallation%20%28PAR%29%20Route%20SOS-Mars%202024.pdf",
+          "status": "historique"
+        }
+      ],
+      "heritage": [
+        {
+          "name": "Habitation Desglaireaux",
+          "detail": "Site historique inventorié dans un rapport de ressources touristiques; état actuel et accès non confirmés.",
+          "source": "https://ceci-ressources.nyc3.cdn.digitaloceanspaces.com/uploads/Import/fr-haiti-rapport-inventaire-ressourcers-touristiques-1_2024-03-06-162753_hunj.pdf",
+          "status": "historique"
+        }
+      ],
+      "updatedAt": "2026-11-03",
+      "verification": "sources_documentaires_sans_validation_terrain",
+      "audit": {
+        "reviewedAt": "2026-11-03",
+        "warnings": [
+          "Population estimée en 2015 : non actuelle.",
+          "Services et infrastructures : existence et fonctionnement en 2026 non confirmés.",
+          "Aucune coordonnée GPS ajoutée sans source cartographique précise.",
+          "Notice initiale non exhaustive : établissements et données manquants à compléter."
+        ]
+      }
+    },
+    {
+      "department": "Nord",
+      "arrondissement": "Acul-du-Nord",
+      "commune": "Acul-du-Nord",
+      "sectionsCommunales": [
+        "Camp-Louise",
+        "Bas de l’Acul",
+        "Mornet",
+        "Grande Ravine",
+        "Coupe à David",
+        "Soufrière"
+      ],
+      "sectionsSource": "https://www.adnhaiti.ht/commune-de-lacul-du-nord/",
+      "areaKm2": 186.37,
+      "areaSource": "https://www.adnhaiti.ht/commune-de-lacul-du-nord/",
+      "population": {
+        "value": 55908,
+        "year": 2015,
+        "source": "https://www.adnhaiti.ht/commune-de-lacul-du-nord/",
+        "status": "historique"
+      },
+      "history": {
+        "text": "La notice départementale retrace les origines anciennes de la localité et indique une élévation au rang de commune en 1740; chronologie à recouper avec des archives.",
+        "sources": [
+          "https://www.adnhaiti.ht/commune-de-lacul-du-nord/"
+        ],
+        "status": "historique"
+      },
+      "services": [
+        {
+          "name": "Inspection scolaire, police, justice et état civil",
+          "detail": "La notice administrative mentionne un bureau d'inspection scolaire, un sous-commissariat, quatre tribunaux de paix et quatre bureaux d'état civil. Données non actualisées.",
+          "source": "https://www.adnhaiti.ht/commune-de-lacul-du-nord/",
+          "status": "historique"
+        }
+      ],
+      "infrastructures": [],
+      "heritage": [
+        {
+          "name": "Fête patronale de Notre-Dame de la Nativité",
+          "detail": "Célébration locale du 8 septembre recensée par l'administration départementale.",
+          "source": "https://www.adnhaiti.ht/champetres/",
+          "status": "documente"
+        }
+      ],
+      "updatedAt": "2026-11-03",
+      "verification": "sources_documentaires_sans_validation_terrain",
+      "audit": {
+        "reviewedAt": "2026-11-03",
+        "warnings": [
+          "Population estimée en 2015 : non actuelle.",
+          "Services et infrastructures : existence et fonctionnement en 2026 non confirmés.",
+          "Aucune coordonnée GPS ajoutée sans source cartographique précise.",
+          "Notice initiale non exhaustive : établissements et données manquants à compléter."
+        ]
+      }
+    },
+    {
+      "department": "Nord",
+      "arrondissement": "Acul-du-Nord",
+      "commune": "Plaine-du-Nord",
+      "sectionsCommunales": [
+        "Morne Rouge",
+        "Basse Plaine",
+        "Grand Boucan",
+        "Bassin Diamant"
+      ],
+      "sectionsSource": "https://www.adnhaiti.ht/commune-de-plaine-du-nord/",
+      "areaKm2": 100.69,
+      "areaSource": "https://www.adnhaiti.ht/commune-de-plaine-du-nord/",
+      "population": {
+        "value": 41255,
+        "year": 2015,
+        "source": "https://www.adnhaiti.ht/commune-de-plaine-du-nord/",
+        "status": "historique"
+      },
+      "history": {
+        "text": "La notice départementale indique une fondation au XVIIIe siècle et une élévation au rang de quartier en 1821.",
+        "sources": [
+          "https://www.adnhaiti.ht/commune-de-plaine-du-nord/"
+        ],
+        "status": "historique"
+      },
+      "services": [
+        {
+          "name": "Justice, police et état civil",
+          "detail": "Un tribunal de paix, un commissariat et un bureau d'état civil sont mentionnés dans une notice historique. Fonctionnement actuel à confirmer.",
+          "source": "https://www.adnhaiti.ht/commune-de-plaine-du-nord/",
+          "status": "historique"
+        }
+      ],
+      "infrastructures": [],
+      "heritage": [
+        {
+          "name": "Bois-Caïman, Morne Rouge",
+          "detail": "Lieu de mémoire associé à la cérémonie de Bois-Caïman; la datation précise rapportée par les traditions et sources historiques doit être recoupée.",
+          "source": "https://www.adnhaiti.ht/commune-de-plaine-du-nord/",
+          "status": "historique"
+        },
+        {
+          "name": "Grotte de Saint-Jacques, Grand Boucan",
+          "detail": "Site de pèlerinage et de pratiques religieuses décrit dans la notice départementale; conditions d'accès actuelles non vérifiées.",
+          "source": "https://www.adnhaiti.ht/commune-de-plaine-du-nord/",
+          "status": "historique"
+        }
+      ],
+      "updatedAt": "2026-11-03",
+      "verification": "sources_documentaires_sans_validation_terrain",
+      "audit": {
+        "reviewedAt": "2026-11-03",
+        "warnings": [
+          "Population estimée en 2015 : non actuelle.",
+          "Services et infrastructures : existence et fonctionnement en 2026 non confirmés.",
+          "Aucune coordonnée GPS ajoutée sans source cartographique précise.",
+          "Notice initiale non exhaustive : établissements et données manquants à compléter."
+        ]
+      }
     }
   ]
 }
