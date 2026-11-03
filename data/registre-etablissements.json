@@ -691,6 +691,230 @@
           "source": "https://documents1.worldbank.org/curated/en/099052824220536898/pdf/P1689511b312250941926110df5593daba0.pdf"
         }
       ]
+    },
+    {
+      "id": "ht-centre-mspp-2015-611100",
+      "name": "Hôpital Sainte Thérèse",
+      "category": "sante",
+      "department": "Centre",
+      "arrondissement": "Hinche",
+      "commune": "Hinche",
+      "lat": null,
+      "lon": null,
+      "source": "https://mspp.gouv.ht/site/downloads/Liste%20des%20Institutions%20Sanitaires%202015.pdf",
+      "verification": "existence_documentee_registre_mspp_2015",
+      "reviewStatus": "historique_a_actualiser",
+      "institutionCode": "611100",
+      "institutionType2015": "HD",
+      "ownership2015": "Public",
+      "referenceYear": 2015,
+      "note": "Inscrit dans le répertoire MSPP de 2015; fonctionnement, tutelle et localisation exacte en 2026 non vérifiés. Aucun marqueur cartographique.",
+      "updatedAt": "2026-11-03",
+      "history": [
+        {
+          "date": "2026-11-03",
+          "action": "Ajout documentaire à partir de la liste MSPP 2015, sans présumer d'une activité actuelle",
+          "source": "https://mspp.gouv.ht/site/downloads/Liste%20des%20Institutions%20Sanitaires%202015.pdf"
+        }
+      ],
+      "evidence": "Répertoire MSPP 2015 : Hôpital Sainte Thérèse ; code 611100 ; type HD ; statut Public.",
+      "checkedOnlineAt": "2026-11-03"
+    },
+    {
+      "id": "ht-centre-mspp-2015-611107",
+      "name": "Dispensaire Whitney Clinic",
+      "category": "sante",
+      "department": "Centre",
+      "arrondissement": "Hinche",
+      "commune": "Hinche",
+      "lat": null,
+      "lon": null,
+      "source": "https://mspp.gouv.ht/site/downloads/Liste%20des%20Institutions%20Sanitaires%202015.pdf",
+      "verification": "existence_documentee_registre_mspp_2015",
+      "reviewStatus": "historique_a_actualiser",
+      "institutionCode": "611107",
+      "institutionType2015": "CSL",
+      "ownership2015": "Public",
+      "referenceYear": 2015,
+      "note": "Inscrit dans le répertoire MSPP de 2015; fonctionnement, tutelle et localisation exacte en 2026 non vérifiés. Aucun marqueur cartographique.",
+      "updatedAt": "2026-11-03",
+      "history": [
+        {
+          "date": "2026-11-03",
+          "action": "Ajout documentaire à partir de la liste MSPP 2015, sans présumer d'une activité actuelle",
+          "source": "https://mspp.gouv.ht/site/downloads/Liste%20des%20Institutions%20Sanitaires%202015.pdf"
+        }
+      ],
+      "evidence": "Répertoire MSPP 2015 : Dispensaire Whitney Clinic ; code 611107 ; type CSL ; statut Public.",
+      "checkedOnlineAt": "2026-11-03"
+    },
+    {
+      "id": "ht-centre-mspp-2015-611201",
+      "name": "Centre de Santé de Mamont",
+      "category": "sante",
+      "department": "Centre",
+      "arrondissement": "Hinche",
+      "commune": "Hinche",
+      "lat": null,
+      "lon": null,
+      "source": "https://mspp.gouv.ht/site/downloads/Liste%20des%20Institutions%20Sanitaires%202015.pdf",
+      "verification": "existence_documentee_registre_mspp_2015",
+      "reviewStatus": "historique_a_actualiser",
+      "institutionCode": "611201",
+      "institutionType2015": "CSL",
+      "ownership2015": "Public",
+      "referenceYear": 2015,
+      "note": "Inscrit dans le répertoire MSPP de 2015; fonctionnement, tutelle et localisation exacte en 2026 non vérifiés. Aucun marqueur cartographique.",
+      "updatedAt": "2026-11-03",
+      "history": [
+        {
+          "date": "2026-11-03",
+          "action": "Ajout documentaire à partir de la liste MSPP 2015, sans présumer d'une activité actuelle",
+          "source": "https://mspp.gouv.ht/site/downloads/Liste%20des%20Institutions%20Sanitaires%202015.pdf"
+        }
+      ],
+      "evidence": "Répertoire MSPP 2015 : Centre de Santé de Mamont ; code 611201 ; type CSL ; statut Public.",
+      "checkedOnlineAt": "2026-11-03"
+    },
+    {
+      "id": "ht-centre-mspp-2015-611308",
+      "name": "Dispensaire de Bassin Zim",
+      "category": "sante",
+      "department": "Centre",
+      "arrondissement": "Hinche",
+      "commune": "Hinche",
+      "lat": null,
+      "lon": null,
+      "source": "https://mspp.gouv.ht/site/downloads/Liste%20des%20Institutions%20Sanitaires%202015.pdf",
+      "verification": "existence_documentee_registre_mspp_2015",
+      "reviewStatus": "historique_a_actualiser",
+      "institutionCode": "611308",
+      "institutionType2015": "Dispensaire",
+      "ownership2015": "Public",
+      "referenceYear": 2015,
+      "note": "Inscrit dans le répertoire MSPP de 2015; fonctionnement, tutelle et localisation exacte en 2026 non vérifiés. Aucun marqueur cartographique.",
+      "updatedAt": "2026-11-03",
+      "history": [
+        {
+          "date": "2026-11-03",
+          "action": "Ajout documentaire à partir de la liste MSPP 2015, sans présumer d'une activité actuelle",
+          "source": "https://mspp.gouv.ht/site/downloads/Liste%20des%20Institutions%20Sanitaires%202015.pdf"
+        }
+      ],
+      "evidence": "Répertoire MSPP 2015 : Dispensaire de Bassin Zim ; code 611308 ; type Dispensaire ; statut Public.",
+      "checkedOnlineAt": "2026-11-03"
+    },
+    {
+      "id": "ht-centre-mspp-2015-612101",
+      "name": "Centre de Santé de Maïssade",
+      "category": "sante",
+      "department": "Centre",
+      "arrondissement": "Hinche",
+      "commune": "Maïssade",
+      "lat": null,
+      "lon": null,
+      "source": "https://mspp.gouv.ht/site/downloads/Liste%20des%20Institutions%20Sanitaires%202015.pdf",
+      "verification": "existence_documentee_registre_mspp_2015",
+      "reviewStatus": "historique_a_actualiser",
+      "institutionCode": "612101",
+      "institutionType2015": "CAL",
+      "ownership2015": "Public",
+      "referenceYear": 2015,
+      "note": "Inscrit dans le répertoire MSPP de 2015; fonctionnement, tutelle et localisation exacte en 2026 non vérifiés. Aucun marqueur cartographique.",
+      "updatedAt": "2026-11-03",
+      "history": [
+        {
+          "date": "2026-11-03",
+          "action": "Ajout documentaire à partir de la liste MSPP 2015, sans présumer d'une activité actuelle",
+          "source": "https://mspp.gouv.ht/site/downloads/Liste%20des%20Institutions%20Sanitaires%202015.pdf"
+        }
+      ],
+      "evidence": "Répertoire MSPP 2015 : Centre de Santé de Maïssade ; code 612101 ; type CAL ; statut Public.",
+      "checkedOnlineAt": "2026-11-03"
+    },
+    {
+      "id": "ht-centre-mspp-2015-612104",
+      "name": "Dispensaire de Seblêtre",
+      "category": "sante",
+      "department": "Centre",
+      "arrondissement": "Hinche",
+      "commune": "Maïssade",
+      "lat": null,
+      "lon": null,
+      "source": "https://mspp.gouv.ht/site/downloads/Liste%20des%20Institutions%20Sanitaires%202015.pdf",
+      "verification": "existence_documentee_registre_mspp_2015",
+      "reviewStatus": "historique_a_actualiser",
+      "institutionCode": "612104",
+      "institutionType2015": "CSL",
+      "ownership2015": "Public",
+      "referenceYear": 2015,
+      "note": "Inscrit dans le répertoire MSPP de 2015; fonctionnement, tutelle et localisation exacte en 2026 non vérifiés. Aucun marqueur cartographique.",
+      "updatedAt": "2026-11-03",
+      "history": [
+        {
+          "date": "2026-11-03",
+          "action": "Ajout documentaire à partir de la liste MSPP 2015, sans présumer d'une activité actuelle",
+          "source": "https://mspp.gouv.ht/site/downloads/Liste%20des%20Institutions%20Sanitaires%202015.pdf"
+        }
+      ],
+      "evidence": "Répertoire MSPP 2015 : Dispensaire de Seblêtre ; code 612104 ; type CSL ; statut Public.",
+      "checkedOnlineAt": "2026-11-03"
+    },
+    {
+      "id": "ht-centre-mspp-2015-613101",
+      "name": "Centre de Santé de Thomonde",
+      "category": "sante",
+      "department": "Centre",
+      "arrondissement": "Hinche",
+      "commune": "Thomonde",
+      "lat": null,
+      "lon": null,
+      "source": "https://mspp.gouv.ht/site/downloads/Liste%20des%20Institutions%20Sanitaires%202015.pdf",
+      "verification": "existence_documentee_registre_mspp_2015",
+      "reviewStatus": "historique_a_actualiser",
+      "institutionCode": "613101",
+      "institutionType2015": "CAL",
+      "ownership2015": "Mixte",
+      "referenceYear": 2015,
+      "note": "Inscrit dans le répertoire MSPP de 2015; fonctionnement, tutelle et localisation exacte en 2026 non vérifiés. Aucun marqueur cartographique.",
+      "updatedAt": "2026-11-03",
+      "history": [
+        {
+          "date": "2026-11-03",
+          "action": "Ajout documentaire à partir de la liste MSPP 2015, sans présumer d'une activité actuelle",
+          "source": "https://mspp.gouv.ht/site/downloads/Liste%20des%20Institutions%20Sanitaires%202015.pdf"
+        }
+      ],
+      "evidence": "Répertoire MSPP 2015 : Centre de Santé de Thomonde ; code 613101 ; type CAL ; statut Mixte.",
+      "checkedOnlineAt": "2026-11-03"
+    },
+    {
+      "id": "ht-centre-mspp-2015-621308",
+      "name": "Hôpital universitaire de Mirebalais",
+      "category": "sante",
+      "department": "Centre",
+      "arrondissement": "Mirebalais",
+      "commune": "Mirebalais",
+      "lat": null,
+      "lon": null,
+      "source": "https://mspp.gouv.ht/site/downloads/Liste%20des%20Institutions%20Sanitaires%202015.pdf",
+      "verification": "existence_documentee_registre_mspp_2015",
+      "reviewStatus": "historique_a_actualiser",
+      "institutionCode": "621308",
+      "institutionType2015": "HU",
+      "ownership2015": "Public",
+      "referenceYear": 2015,
+      "note": "Inscrit dans le répertoire MSPP de 2015; fonctionnement, tutelle et localisation exacte en 2026 non vérifiés. Aucun marqueur cartographique.",
+      "updatedAt": "2026-11-03",
+      "history": [
+        {
+          "date": "2026-11-03",
+          "action": "Ajout documentaire à partir de la liste MSPP 2015, sans présumer d'une activité actuelle",
+          "source": "https://mspp.gouv.ht/site/downloads/Liste%20des%20Institutions%20Sanitaires%202015.pdf"
+        }
+      ],
+      "evidence": "Répertoire MSPP 2015 : Hôpital universitaire de Mirebalais ; code 621308 ; type HU ; statut Public.",
+      "checkedOnlineAt": "2026-11-03"
     }
   ]
 }
