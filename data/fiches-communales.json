@@ -2197,28 +2197,41 @@
       "services": [],
       "infrastructures": [],
       "heritage": [],
-      "verification": "statut_communal_et_population_adulte_documentes",
+      "verification": "demographie_ihsi_documentee_histoire_a_completer",
       "audit": {
         "reviewedAt": "2026-11-03",
-        "method": "Comparaison du tableau 1 de l'IHSI 2024 (statut de commune) et du tableau 202 sur la population âgée de 18 ans et plus.",
+        "method": "IHSI 2024, tableaux 248 (population) et 249 (superficie); aucune validation de terrain.",
         "warnings": [
-          "Le tableau 1 de l'IHSI 2024 répertorie cinq communes dans l'arrondissement de Saint-Marc.",
-          "Le tableau 202 présente la population de 18 ans et plus pour trois d'entre elles, mais ne ventile pas Liancourt et Montrouis séparément.",
-          "Ne pas confondre population de 18 ans et plus avec population totale.",
-          "Ne pas déduire des chiffres de Liancourt ou Montrouis par soustraction.",
-          "Services, histoire locale et patrimoine à documenter séparément."
+          "Population totale, urbaine et rurale sont des estimations pour 2024.",
+          "Histoire locale, monuments et services publics non vérifiés dans cette intervention.",
+          "Ne pas confondre les quartiers de Liancourt et Montrouis avec des communes statistiques distinctes."
         ]
       },
       "administrativeStatus": "commune_ihsi_2024",
-      "population18Plus2024": {
-        "value": 183811,
-        "urban": 149212,
-        "rural": 34599,
+      "populationTotale2024": {
+        "value": 292716,
         "year": 2024,
-        "source": "https://budget.gouv.ht/storage/app/uploads/public/67c/e9d/d54/67ce9dd540912792656630.pdf",
+        "source": "https://www.haitidocs.org/doc/ihsi-2024-disaggregated-estimates?lang=fr",
         "status": "documente",
-        "note": "Tableau 202, population estimée de 18 ans et plus; ne pas assimiler à la population totale."
-      }
+        "note": "IHSI 2024 tableau 248, population totale de la commune"
+      },
+      "populationUrbaine": {
+        "value": 237686,
+        "year": 2024,
+        "source": "https://www.haitidocs.org/doc/ihsi-2024-disaggregated-estimates?lang=fr",
+        "status": "documente",
+        "note": "IHSI 2024 tableau 248, population urbaine de la commune"
+      },
+      "populationRurale": {
+        "value": 55030,
+        "year": 2024,
+        "source": "https://www.haitidocs.org/doc/ihsi-2024-disaggregated-estimates?lang=fr",
+        "status": "documente",
+        "note": "IHSI 2024 tableau 248, population rurale de la commune"
+      },
+      "areaKm2": 556.56,
+      "areaSource": "https://www.haitidocs.org/doc/ihsi-2024-disaggregated-estimates?lang=fr",
+      "areaStatus": "documente"
     },
     {
       "department": "Artibonite",
@@ -2236,28 +2249,41 @@
       "services": [],
       "infrastructures": [],
       "heritage": [],
-      "verification": "statut_communal_et_population_adulte_documentes",
+      "verification": "demographie_ihsi_documentee_histoire_a_completer",
       "audit": {
         "reviewedAt": "2026-11-03",
-        "method": "Comparaison du tableau 1 de l'IHSI 2024 (statut de commune) et du tableau 202 sur la population âgée de 18 ans et plus.",
+        "method": "IHSI 2024, tableaux 248 (population) et 249 (superficie); aucune validation de terrain.",
         "warnings": [
-          "Le tableau 1 de l'IHSI 2024 répertorie cinq communes dans l'arrondissement de Saint-Marc.",
-          "Le tableau 202 présente la population de 18 ans et plus pour trois d'entre elles, mais ne ventile pas Liancourt et Montrouis séparément.",
-          "Ne pas confondre population de 18 ans et plus avec population totale.",
-          "Ne pas déduire des chiffres de Liancourt ou Montrouis par soustraction.",
-          "Services, histoire locale et patrimoine à documenter séparément."
+          "Population totale, urbaine et rurale sont des estimations pour 2024.",
+          "Histoire locale, monuments et services publics non vérifiés dans cette intervention.",
+          "Ne pas confondre les quartiers de Liancourt et Montrouis avec des communes statistiques distinctes."
         ]
       },
       "administrativeStatus": "commune_ihsi_2024",
-      "population18Plus2024": {
-        "value": 100430,
-        "urban": 59790,
-        "rural": 40640,
+      "populationTotale2024": {
+        "value": 158965,
         "year": 2024,
-        "source": "https://budget.gouv.ht/storage/app/uploads/public/67c/e9d/d54/67ce9dd540912792656630.pdf",
+        "source": "https://www.haitidocs.org/doc/ihsi-2024-disaggregated-estimates?lang=fr",
         "status": "documente",
-        "note": "Tableau 202, population estimée de 18 ans et plus; ne pas assimiler à la population totale."
-      }
+        "note": "IHSI 2024 tableau 248, population totale de la commune"
+      },
+      "populationUrbaine": {
+        "value": 93511,
+        "year": 2024,
+        "source": "https://www.haitidocs.org/doc/ihsi-2024-disaggregated-estimates?lang=fr",
+        "status": "documente",
+        "note": "IHSI 2024 tableau 248, population urbaine de la commune"
+      },
+      "populationRurale": {
+        "value": 65454,
+        "year": 2024,
+        "source": "https://www.haitidocs.org/doc/ihsi-2024-disaggregated-estimates?lang=fr",
+        "status": "documente",
+        "note": "IHSI 2024 tableau 248, population rurale de la commune"
+      },
+      "areaKm2": 356.72,
+      "areaSource": "https://www.haitidocs.org/doc/ihsi-2024-disaggregated-estimates?lang=fr",
+      "areaStatus": "documente"
     },
     {
       "department": "Artibonite",
@@ -2275,28 +2301,41 @@
       "services": [],
       "infrastructures": [],
       "heritage": [],
-      "verification": "statut_communal_et_population_adulte_documentes",
+      "verification": "demographie_ihsi_documentee_histoire_a_completer",
       "audit": {
         "reviewedAt": "2026-11-03",
-        "method": "Comparaison du tableau 1 de l'IHSI 2024 (statut de commune) et du tableau 202 sur la population âgée de 18 ans et plus.",
+        "method": "IHSI 2024, tableaux 248 (population) et 249 (superficie); aucune validation de terrain.",
         "warnings": [
-          "Le tableau 1 de l'IHSI 2024 répertorie cinq communes dans l'arrondissement de Saint-Marc.",
-          "Le tableau 202 présente la population de 18 ans et plus pour trois d'entre elles, mais ne ventile pas Liancourt et Montrouis séparément.",
-          "Ne pas confondre population de 18 ans et plus avec population totale.",
-          "Ne pas déduire des chiffres de Liancourt ou Montrouis par soustraction.",
-          "Services, histoire locale et patrimoine à documenter séparément."
+          "Population totale, urbaine et rurale sont des estimations pour 2024.",
+          "Histoire locale, monuments et services publics non vérifiés dans cette intervention.",
+          "Ne pas confondre les quartiers de Liancourt et Montrouis avec des communes statistiques distinctes."
         ]
       },
       "administrativeStatus": "commune_ihsi_2024",
-      "population18Plus2024": {
-        "value": 20894,
-        "urban": 8935,
-        "rural": 11959,
+      "populationTotale2024": {
+        "value": 34635,
         "year": 2024,
-        "source": "https://budget.gouv.ht/storage/app/uploads/public/67c/e9d/d54/67ce9dd540912792656630.pdf",
+        "source": "https://www.haitidocs.org/doc/ihsi-2024-disaggregated-estimates?lang=fr",
         "status": "documente",
-        "note": "Tableau 202, population estimée de 18 ans et plus; ne pas assimiler à la population totale."
-      }
+        "note": "IHSI 2024 tableau 248, population totale de la commune"
+      },
+      "populationUrbaine": {
+        "value": 14907,
+        "year": 2024,
+        "source": "https://www.haitidocs.org/doc/ihsi-2024-disaggregated-estimates?lang=fr",
+        "status": "documente",
+        "note": "IHSI 2024 tableau 248, population urbaine de la commune"
+      },
+      "populationRurale": {
+        "value": 19728,
+        "year": 2024,
+        "source": "https://www.haitidocs.org/doc/ihsi-2024-disaggregated-estimates?lang=fr",
+        "status": "documente",
+        "note": "IHSI 2024 tableau 248, population rurale de la commune"
+      },
+      "areaKm2": 143.6,
+      "areaSource": "https://www.haitidocs.org/doc/ihsi-2024-disaggregated-estimates?lang=fr",
+      "areaStatus": "documente"
     },
     {
       "department": "Artibonite",
@@ -2305,29 +2344,33 @@
       "updatedAt": "2026-11-03",
       "administrativeSource": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
       "history": {
-        "text": "Commune reconnue dans le tableau 1 des divisions territoriales de l'IHSI 2024. Histoire locale et patrimoine à documenter par des sources spécialisées.",
+        "text": "Le répertoire territorial du projet classe ce territoire comme commune, mais les tableaux 248–249 de l'IHSI 2024 le présentent comme quartier au sein d'une autre commune. Son statut administratif et la portée de son élévation éventuelle doivent être vérifiés dans les textes officiels.",
         "sources": [
-          "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf"
+          "https://www.haitidocs.org/doc/ihsi-2024-disaggregated-estimates?lang=fr"
         ],
-        "status": "documente"
+        "status": "a_verifier"
       },
       "services": [],
       "infrastructures": [],
       "heritage": [],
-      "verification": "statut_communal_documente_population_distincte_non_disponible",
+      "verification": "divergence_statut_commune_quartier_ihsi",
       "audit": {
         "reviewedAt": "2026-11-03",
-        "method": "Comparaison du tableau 1 de l'IHSI 2024 (statut de commune) et du tableau 202 sur la population âgée de 18 ans et plus.",
+        "method": "Comparaison des tableaux 248 et 249 de l'IHSI 2024 avec le répertoire territorial du projet.",
         "warnings": [
-          "Population communale distincte non disponible dans le tableau 202 consulté.",
-          "Le tableau 1 de l'IHSI 2024 répertorie cinq communes dans l'arrondissement de Saint-Marc.",
-          "Le tableau 202 présente la population de 18 ans et plus pour trois d'entre elles, mais ne ventile pas Liancourt et Montrouis séparément.",
-          "Ne pas confondre population de 18 ans et plus avec population totale.",
-          "Ne pas déduire des chiffres de Liancourt ou Montrouis par soustraction.",
-          "Services, histoire locale et patrimoine à documenter séparément."
+          "Statut communal distinct à clarifier; ne pas additionner ce quartier aux populations des communes parentes.",
+          "Les chiffres de quartier ci-dessous ne sont pas une population communale distincte.",
+          "Aucune superficie de commune distincte déduite."
         ]
       },
-      "administrativeStatus": "commune_ihsi_2024"
+      "administrativeStatus": "commune_ihsi_2024",
+      "populationQuartier2024": {
+        "value": 36832,
+        "year": 2024,
+        "source": "https://www.haitidocs.org/doc/ihsi-2024-disaggregated-estimates?lang=fr",
+        "status": "documente",
+        "note": "Quartier de Liancourt, au sein de Verrettes (IHSI 2024, tableau 248)."
+      }
     },
     {
       "department": "Artibonite",
@@ -2336,29 +2379,33 @@
       "updatedAt": "2026-11-03",
       "administrativeSource": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
       "history": {
-        "text": "Commune reconnue dans le tableau 1 des divisions territoriales de l'IHSI 2024. Histoire locale et patrimoine à documenter par des sources spécialisées.",
+        "text": "Le répertoire territorial du projet classe ce territoire comme commune, mais les tableaux 248–249 de l'IHSI 2024 le présentent comme quartier au sein d'une autre commune. Son statut administratif et la portée de son élévation éventuelle doivent être vérifiés dans les textes officiels.",
         "sources": [
-          "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf"
+          "https://www.haitidocs.org/doc/ihsi-2024-disaggregated-estimates?lang=fr"
         ],
-        "status": "documente"
+        "status": "a_verifier"
       },
       "services": [],
       "infrastructures": [],
       "heritage": [],
-      "verification": "statut_communal_documente_population_distincte_non_disponible",
+      "verification": "divergence_statut_commune_quartier_ihsi",
       "audit": {
         "reviewedAt": "2026-11-03",
-        "method": "Comparaison du tableau 1 de l'IHSI 2024 (statut de commune) et du tableau 202 sur la population âgée de 18 ans et plus.",
+        "method": "Comparaison des tableaux 248 et 249 de l'IHSI 2024 avec le répertoire territorial du projet.",
         "warnings": [
-          "Population communale distincte non disponible dans le tableau 202 consulté.",
-          "Le tableau 1 de l'IHSI 2024 répertorie cinq communes dans l'arrondissement de Saint-Marc.",
-          "Le tableau 202 présente la population de 18 ans et plus pour trois d'entre elles, mais ne ventile pas Liancourt et Montrouis séparément.",
-          "Ne pas confondre population de 18 ans et plus avec population totale.",
-          "Ne pas déduire des chiffres de Liancourt ou Montrouis par soustraction.",
-          "Services, histoire locale et patrimoine à documenter séparément."
+          "Statut communal distinct à clarifier; ne pas additionner ce quartier aux populations des communes parentes.",
+          "Les chiffres de quartier ci-dessous ne sont pas une population communale distincte.",
+          "Aucune superficie de commune distincte déduite."
         ]
       },
-      "administrativeStatus": "commune_ihsi_2024"
+      "administrativeStatus": "commune_ihsi_2024",
+      "populationQuartier2024": {
+        "value": 12960,
+        "year": 2024,
+        "source": "https://www.haitidocs.org/doc/ihsi-2024-disaggregated-estimates?lang=fr",
+        "status": "documente",
+        "note": "Quartier de Montrouis, au sein de Saint-Marc (IHSI 2024, tableau 248)."
+      }
     },
     {
       "department": "Artibonite",
