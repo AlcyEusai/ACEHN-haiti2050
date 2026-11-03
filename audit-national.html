@@ -7,6 +7,7 @@
 <p id="status">Chargement…</p><p class="note">Source des communes : <code>territoires.js</code>. Sources des établissements : <code>data/etablissements.json</code> et registres MENFP complémentaires de Savanette/Thomonde. Les données non vérifiées ne constituent pas un recensement exhaustif.</p>
 <input id="search" type="search" placeholder="Rechercher une commune ou un département">
 <button id="export" type="button">Exporter le tableau CSV</button>
+<button id="export-unmatched" type="button">Exporter les fiches non rattachées</button>
 <div id="tablewrap"><table><thead id="head"></thead><tbody id="body"></tbody></table></div>
 <script src="./territoires.js"></script>
 <script src="./normalisation-territoriale.js"></script>
@@ -32,6 +33,18 @@ const tr=document.createElement('tr');for(const h of headers){const th=document.
 function render(){body.replaceChildren();const term=norm(search.value);for(const r of rows.filter(x=>norm(x.departement+' '+x.arrondissement+' '+x.commune).includes(term))){const tr=document.createElement('tr');for(const v of [r.departement,r.arrondissement,r.commune,r.total,...r.counts]){const td=document.createElement('td');td.textContent=v;tr.append(td);}body.append(tr);}}
 search.addEventListener('input',render);
 document.getElementById('export').addEventListener('click',()=>{const quote=s=>'"'+String(s).replace(/"/g,'""')+'"';const csv='\ufeff'+[headers,...rows.map(r=>[r.departement,r.arrondissement,r.commune,r.total,...r.counts])].map(row=>row.map(quote).join(';')).join('\r\n');const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([csv],{type:'text/csv;charset=utf-8'}));a.download='haiti2050-audit-149-communes.csv';a.click();URL.revokeObjectURL(a.href);});
+const unmatchedHeaders=['Index','Identifiant','Nom','Catégorie','Département brut','Commune brute','Motif','Latitude','Longitude','Source'];
+document.getElementById('export-unmatched').addEventListener('click',()=>{
+  const quote=v=>'"'+String(v??'').replace(/"/g,'""')+'"';
+  const data=reconciliation.rapport.non_rattaches.map(item=>{
+    const r=records[item.index]||{};
+    return [item.index,item.id,r.nom,r.categorie,item.departement,item.commune,item.raison,r.latitude,r.longitude,r.source];
+  });
+  const csv='\ufeff'+[unmatchedHeaders,...data].map(row=>row.map(quote).join(';')).join('\r\n');
+  const url=URL.createObjectURL(new Blob([csv],{type:'text/csv;charset=utf-8'}));
+  const a=document.createElement('a');a.href=url;a.download='haiti2050-fiches-non-rattachees.csv';a.click();
+  setTimeout(()=>URL.revokeObjectURL(url),1000);
+});
 document.getElementById('status').textContent=communes.length+' communes du référentiel • '+records.length+' fiches chargées • '+cats.length+' catégories • '+rows.filter(x=>x.total===0).length+' communes sans fiche • '+reconciliation.rapport.non_rattaches_total+' fiches non rattachées';
 render();
 })().catch(e=>{document.getElementById('status').textContent='Erreur : '+e.message;console.error(e)});
