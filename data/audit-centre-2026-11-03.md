@@ -43,3 +43,20 @@ Le tableau administratif de l'IHSI 2024 cite **Baptiste comme commune** de l'arr
 **Belladère :** une transcription de la loi du 2 août 1907 relative à son élévation en commune est signalée dans https://www.haitianaute.com/2021/04/ ; la consultation du Moniteur original reste souhaitable.
 
 **Hinche et Mirebalais :** aucune attribution de monument ou protection patrimoniale sans source localisée; recherches à poursuivre auprès de l'ISPAN et des archives.
+
+## Complément : limites de Baptiste et inventaire patrimonial initial
+
+### Baptiste — décret du 22 juillet 2015
+
+La reproduction du décret dans *Le Moniteur* n°147 du 5 août 2015 mentionne l'élévation de l'ancien quartier Baptiste de Renthe-Mathé en commune et le **rattachement de la 3e section communale Riaribes** (anciennement Belladère) à cette nouvelle commune. Limites textuelles rapportées : nord Renthe-Mathé (Belladère), sud Savanette, ouest Belladère et Lascahobas, est frontière haïtiano-dominicaine. Ces limites ne permettent pas de produire une géométrie officielle ni de confirmer les coordonnées d'une frontière administrative. Sources : https://fr.scribd.com/document/832110484/Decret-Sections-Communales et https://haitiahp.blogspot.com/2015/08/lexecutif-cree-cinq-nouvelles-communes.html .
+
+### Pistes patrimoniales sourcées, non certifiées
+
+- **Mirebalais** : Fort Anglais signalé par Mapping Haitian History, avec renvoi au bulletin ISPAN n°2. Contrôler la notice primaire et le statut de protection : https://www.mappinghaitianhistory.com/central .
+- **Hinche** : Bassin Zim et grottes associées, signalés comme lieux à étudier par la même source. Ne pas les qualifier de monument classé ni attribuer des coordonnées.
+- **Saut-d'Eau** : cascade et pèlerinage, documentation de terrain complémentaire : https://www.mappinghaitianhistory.com/central .
+- **Boucan-Carré** : ancien nom Chambo et accession au rang de commune en avril 1985 selon Haiti-Référence; acte primaire à retrouver : https://www.haiti-reference.info/pages/plan/geographie-et-tourisme/divisions-territoriales/arrondissements-et-communes/centre/ .
+
+### À poursuivre
+
+Pour Maïssade, Thomonde, Cerca-Carvajal, Lascahobas, Savanette, Cerca-la-Source et Thomassique, aucune attribution patrimoniale détaillée n'a été ajoutée sans documentation suffisamment localisée. Le statut actuel des protections, les limites géoréférencées et les références archivistiques demeurent à vérifier.
