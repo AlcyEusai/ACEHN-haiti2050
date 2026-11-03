@@ -915,6 +915,492 @@
       ],
       "evidence": "Répertoire MSPP 2015 : Hôpital universitaire de Mirebalais ; code 621308 ; type HU ; statut Public.",
       "checkedOnlineAt": "2026-11-03"
+    },
+    {
+      "id": "ht-centre-menfp-2025-061101112307",
+      "name": "ECOLE FONDAMENTALE D'APPLICATION DE HINCHE",
+      "category": "education",
+      "department": "Centre",
+      "arrondissement": "Hinche",
+      "commune": "Hinche",
+      "lat": null,
+      "lon": null,
+      "source": "https://www.haitidocs.org/doc/menfp-registre-ecoles-centre-2025?lang=ht",
+      "verification": "existence_documentee_registre_menfp_2024_2025",
+      "reviewStatus": "registre_scolaire_a_actualiser",
+      "institutionCode": "061101112307",
+      "ownershipReference": "public",
+      "referenceYear": "2024-2025",
+      "note": "MENFP registre scolaire 2024-2025, Hinche, première section Juanaria, secteur public. Présence et fonctionnement en novembre 2026 non vérifiés. Aucun marqueur géographique.",
+      "updatedAt": "2026-11-03",
+      "history": [
+        {
+          "date": "2026-11-03",
+          "action": "Ajout depuis registre scolaire officiel MENFP 2024-2025, sans vérification d'activité actuelle",
+          "source": "https://www.haitidocs.org/doc/menfp-registre-ecoles-centre-2025?lang=ht"
+        }
+      ],
+      "evidence": "Nom et code d'identification transcrits du registre scolaire département du Centre, section Hinche / Juanaria / secteur public.",
+      "checkedOnlineAt": "2026-11-03"
+    },
+    {
+      "id": "ht-centre-menfp-2025-061101116320",
+      "name": "ECOLE NATIONALE ABRIOT",
+      "category": "education",
+      "department": "Centre",
+      "arrondissement": "Hinche",
+      "commune": "Hinche",
+      "lat": null,
+      "lon": null,
+      "source": "https://www.haitidocs.org/doc/menfp-registre-ecoles-centre-2025?lang=ht",
+      "verification": "existence_documentee_registre_menfp_2024_2025",
+      "reviewStatus": "registre_scolaire_a_actualiser",
+      "institutionCode": "061101116320",
+      "ownershipReference": "public",
+      "referenceYear": "2024-2025",
+      "note": "MENFP registre scolaire 2024-2025, Hinche, première section Juanaria, secteur public. Présence et fonctionnement en novembre 2026 non vérifiés. Aucun marqueur géographique.",
+      "updatedAt": "2026-11-03",
+      "history": [
+        {
+          "date": "2026-11-03",
+          "action": "Ajout depuis registre scolaire officiel MENFP 2024-2025, sans vérification d'activité actuelle",
+          "source": "https://www.haitidocs.org/doc/menfp-registre-ecoles-centre-2025?lang=ht"
+        }
+      ],
+      "evidence": "Nom et code d'identification transcrits du registre scolaire département du Centre, section Hinche / Juanaria / secteur public.",
+      "checkedOnlineAt": "2026-11-03"
+    },
+    {
+      "id": "ht-centre-menfp-2025-061101105680",
+      "name": "ECOLE NATIONALE BENOIT BATRAVILLE",
+      "category": "education",
+      "department": "Centre",
+      "arrondissement": "Hinche",
+      "commune": "Hinche",
+      "lat": null,
+      "lon": null,
+      "source": "https://www.haitidocs.org/doc/menfp-registre-ecoles-centre-2025?lang=ht",
+      "verification": "existence_documentee_registre_menfp_2024_2025",
+      "reviewStatus": "registre_scolaire_a_actualiser",
+      "institutionCode": "061101105680",
+      "ownershipReference": "public",
+      "referenceYear": "2024-2025",
+      "note": "MENFP registre scolaire 2024-2025, Hinche, première section Juanaria, secteur public. Présence et fonctionnement en novembre 2026 non vérifiés. Aucun marqueur géographique.",
+      "updatedAt": "2026-11-03",
+      "history": [
+        {
+          "date": "2026-11-03",
+          "action": "Ajout depuis registre scolaire officiel MENFP 2024-2025, sans vérification d'activité actuelle",
+          "source": "https://www.haitidocs.org/doc/menfp-registre-ecoles-centre-2025?lang=ht"
+        }
+      ],
+      "evidence": "Nom et code d'identification transcrits du registre scolaire département du Centre, section Hinche / Juanaria / secteur public.",
+      "checkedOnlineAt": "2026-11-03"
+    },
+    {
+      "id": "ht-centre-menfp-2025-061101100145",
+      "name": "ECOLE NATIONALE DE BIASSOU",
+      "category": "education",
+      "department": "Centre",
+      "arrondissement": "Hinche",
+      "commune": "Hinche",
+      "lat": null,
+      "lon": null,
+      "source": "https://www.haitidocs.org/doc/menfp-registre-ecoles-centre-2025?lang=ht",
+      "verification": "existence_documentee_registre_menfp_2024_2025",
+      "reviewStatus": "registre_scolaire_a_actualiser",
+      "institutionCode": "061101100145",
+      "ownershipReference": "public",
+      "referenceYear": "2024-2025",
+      "note": "MENFP registre scolaire 2024-2025, Hinche, première section Juanaria, secteur public. Présence et fonctionnement en novembre 2026 non vérifiés. Aucun marqueur géographique.",
+      "updatedAt": "2026-11-03",
+      "history": [
+        {
+          "date": "2026-11-03",
+          "action": "Ajout depuis registre scolaire officiel MENFP 2024-2025, sans vérification d'activité actuelle",
+          "source": "https://www.haitidocs.org/doc/menfp-registre-ecoles-centre-2025?lang=ht"
+        }
+      ],
+      "evidence": "Nom et code d'identification transcrits du registre scolaire département du Centre, section Hinche / Juanaria / secteur public.",
+      "checkedOnlineAt": "2026-11-03"
+    },
+    {
+      "id": "ht-centre-menfp-2025-061101116014",
+      "name": "ECOLE NATIONALE DE BOUHOUC",
+      "category": "education",
+      "department": "Centre",
+      "arrondissement": "Hinche",
+      "commune": "Hinche",
+      "lat": null,
+      "lon": null,
+      "source": "https://www.haitidocs.org/doc/menfp-registre-ecoles-centre-2025?lang=ht",
+      "verification": "existence_documentee_registre_menfp_2024_2025",
+      "reviewStatus": "registre_scolaire_a_actualiser",
+      "institutionCode": "061101116014",
+      "ownershipReference": "public",
+      "referenceYear": "2024-2025",
+      "note": "MENFP registre scolaire 2024-2025, Hinche, première section Juanaria, secteur public. Présence et fonctionnement en novembre 2026 non vérifiés. Aucun marqueur géographique.",
+      "updatedAt": "2026-11-03",
+      "history": [
+        {
+          "date": "2026-11-03",
+          "action": "Ajout depuis registre scolaire officiel MENFP 2024-2025, sans vérification d'activité actuelle",
+          "source": "https://www.haitidocs.org/doc/menfp-registre-ecoles-centre-2025?lang=ht"
+        }
+      ],
+      "evidence": "Nom et code d'identification transcrits du registre scolaire département du Centre, section Hinche / Juanaria / secteur public.",
+      "checkedOnlineAt": "2026-11-03"
+    },
+    {
+      "id": "ht-centre-menfp-2025-061101110187",
+      "name": "ECOLE NATIONALE DE COLLADERE",
+      "category": "education",
+      "department": "Centre",
+      "arrondissement": "Hinche",
+      "commune": "Hinche",
+      "lat": null,
+      "lon": null,
+      "source": "https://www.haitidocs.org/doc/menfp-registre-ecoles-centre-2025?lang=ht",
+      "verification": "existence_documentee_registre_menfp_2024_2025",
+      "reviewStatus": "registre_scolaire_a_actualiser",
+      "institutionCode": "061101110187",
+      "ownershipReference": "public",
+      "referenceYear": "2024-2025",
+      "note": "MENFP registre scolaire 2024-2025, Hinche, première section Juanaria, secteur public. Présence et fonctionnement en novembre 2026 non vérifiés. Aucun marqueur géographique.",
+      "updatedAt": "2026-11-03",
+      "history": [
+        {
+          "date": "2026-11-03",
+          "action": "Ajout depuis registre scolaire officiel MENFP 2024-2025, sans vérification d'activité actuelle",
+          "source": "https://www.haitidocs.org/doc/menfp-registre-ecoles-centre-2025?lang=ht"
+        }
+      ],
+      "evidence": "Nom et code d'identification transcrits du registre scolaire département du Centre, section Hinche / Juanaria / secteur public.",
+      "checkedOnlineAt": "2026-11-03"
+    },
+    {
+      "id": "ht-centre-menfp-2025-061101105251",
+      "name": "ECOLE NATIONALE DE DOS-PALAIS",
+      "category": "education",
+      "department": "Centre",
+      "arrondissement": "Hinche",
+      "commune": "Hinche",
+      "lat": null,
+      "lon": null,
+      "source": "https://www.haitidocs.org/doc/menfp-registre-ecoles-centre-2025?lang=ht",
+      "verification": "existence_documentee_registre_menfp_2024_2025",
+      "reviewStatus": "registre_scolaire_a_actualiser",
+      "institutionCode": "061101105251",
+      "ownershipReference": "public",
+      "referenceYear": "2024-2025",
+      "note": "MENFP registre scolaire 2024-2025, Hinche, première section Juanaria, secteur public. Présence et fonctionnement en novembre 2026 non vérifiés. Aucun marqueur géographique.",
+      "updatedAt": "2026-11-03",
+      "history": [
+        {
+          "date": "2026-11-03",
+          "action": "Ajout depuis registre scolaire officiel MENFP 2024-2025, sans vérification d'activité actuelle",
+          "source": "https://www.haitidocs.org/doc/menfp-registre-ecoles-centre-2025?lang=ht"
+        }
+      ],
+      "evidence": "Nom et code d'identification transcrits du registre scolaire département du Centre, section Hinche / Juanaria / secteur public.",
+      "checkedOnlineAt": "2026-11-03"
+    },
+    {
+      "id": "ht-centre-menfp-2025-061101105864",
+      "name": "ECOLE NATIONALE DE MANAC",
+      "category": "education",
+      "department": "Centre",
+      "arrondissement": "Hinche",
+      "commune": "Hinche",
+      "lat": null,
+      "lon": null,
+      "source": "https://www.haitidocs.org/doc/menfp-registre-ecoles-centre-2025?lang=ht",
+      "verification": "existence_documentee_registre_menfp_2024_2025",
+      "reviewStatus": "registre_scolaire_a_actualiser",
+      "institutionCode": "061101105864",
+      "ownershipReference": "public",
+      "referenceYear": "2024-2025",
+      "note": "MENFP registre scolaire 2024-2025, Hinche, première section Juanaria, secteur public. Présence et fonctionnement en novembre 2026 non vérifiés. Aucun marqueur géographique.",
+      "updatedAt": "2026-11-03",
+      "history": [
+        {
+          "date": "2026-11-03",
+          "action": "Ajout depuis registre scolaire officiel MENFP 2024-2025, sans vérification d'activité actuelle",
+          "source": "https://www.haitidocs.org/doc/menfp-registre-ecoles-centre-2025?lang=ht"
+        }
+      ],
+      "evidence": "Nom et code d'identification transcrits du registre scolaire département du Centre, section Hinche / Juanaria / secteur public.",
+      "checkedOnlineAt": "2026-11-03"
+    },
+    {
+      "id": "ht-centre-menfp-2025-061101112466",
+      "name": "ECOLE NATIONALE DE PACLOT",
+      "category": "education",
+      "department": "Centre",
+      "arrondissement": "Hinche",
+      "commune": "Hinche",
+      "lat": null,
+      "lon": null,
+      "source": "https://www.haitidocs.org/doc/menfp-registre-ecoles-centre-2025?lang=ht",
+      "verification": "existence_documentee_registre_menfp_2024_2025",
+      "reviewStatus": "registre_scolaire_a_actualiser",
+      "institutionCode": "061101112466",
+      "ownershipReference": "public",
+      "referenceYear": "2024-2025",
+      "note": "MENFP registre scolaire 2024-2025, Hinche, première section Juanaria, secteur public. Présence et fonctionnement en novembre 2026 non vérifiés. Aucun marqueur géographique.",
+      "updatedAt": "2026-11-03",
+      "history": [
+        {
+          "date": "2026-11-03",
+          "action": "Ajout depuis registre scolaire officiel MENFP 2024-2025, sans vérification d'activité actuelle",
+          "source": "https://www.haitidocs.org/doc/menfp-registre-ecoles-centre-2025?lang=ht"
+        }
+      ],
+      "evidence": "Nom et code d'identification transcrits du registre scolaire département du Centre, section Hinche / Juanaria / secteur public.",
+      "checkedOnlineAt": "2026-11-03"
+    },
+    {
+      "id": "ht-centre-menfp-2025-061101105848",
+      "name": "ECOLE NATIONALE DE REGALUS",
+      "category": "education",
+      "department": "Centre",
+      "arrondissement": "Hinche",
+      "commune": "Hinche",
+      "lat": null,
+      "lon": null,
+      "source": "https://www.haitidocs.org/doc/menfp-registre-ecoles-centre-2025?lang=ht",
+      "verification": "existence_documentee_registre_menfp_2024_2025",
+      "reviewStatus": "registre_scolaire_a_actualiser",
+      "institutionCode": "061101105848",
+      "ownershipReference": "public",
+      "referenceYear": "2024-2025",
+      "note": "MENFP registre scolaire 2024-2025, Hinche, première section Juanaria, secteur public. Présence et fonctionnement en novembre 2026 non vérifiés. Aucun marqueur géographique.",
+      "updatedAt": "2026-11-03",
+      "history": [
+        {
+          "date": "2026-11-03",
+          "action": "Ajout depuis registre scolaire officiel MENFP 2024-2025, sans vérification d'activité actuelle",
+          "source": "https://www.haitidocs.org/doc/menfp-registre-ecoles-centre-2025?lang=ht"
+        }
+      ],
+      "evidence": "Nom et code d'identification transcrits du registre scolaire département du Centre, section Hinche / Juanaria / secteur public.",
+      "checkedOnlineAt": "2026-11-03"
+    },
+    {
+      "id": "ht-centre-menfp-2025-061101105771",
+      "name": "ECOLE NATIONALE DE RINCON",
+      "category": "education",
+      "department": "Centre",
+      "arrondissement": "Hinche",
+      "commune": "Hinche",
+      "lat": null,
+      "lon": null,
+      "source": "https://www.haitidocs.org/doc/menfp-registre-ecoles-centre-2025?lang=ht",
+      "verification": "existence_documentee_registre_menfp_2024_2025",
+      "reviewStatus": "registre_scolaire_a_actualiser",
+      "institutionCode": "061101105771",
+      "ownershipReference": "public",
+      "referenceYear": "2024-2025",
+      "note": "MENFP registre scolaire 2024-2025, Hinche, première section Juanaria, secteur public. Présence et fonctionnement en novembre 2026 non vérifiés. Aucun marqueur géographique.",
+      "updatedAt": "2026-11-03",
+      "history": [
+        {
+          "date": "2026-11-03",
+          "action": "Ajout depuis registre scolaire officiel MENFP 2024-2025, sans vérification d'activité actuelle",
+          "source": "https://www.haitidocs.org/doc/menfp-registre-ecoles-centre-2025?lang=ht"
+        }
+      ],
+      "evidence": "Nom et code d'identification transcrits du registre scolaire département du Centre, section Hinche / Juanaria / secteur public.",
+      "checkedOnlineAt": "2026-11-03"
+    },
+    {
+      "id": "ht-centre-menfp-2025-061101112328",
+      "name": "ECOLE NATIONALE DE SALMORY",
+      "category": "education",
+      "department": "Centre",
+      "arrondissement": "Hinche",
+      "commune": "Hinche",
+      "lat": null,
+      "lon": null,
+      "source": "https://www.haitidocs.org/doc/menfp-registre-ecoles-centre-2025?lang=ht",
+      "verification": "existence_documentee_registre_menfp_2024_2025",
+      "reviewStatus": "registre_scolaire_a_actualiser",
+      "institutionCode": "061101112328",
+      "ownershipReference": "public",
+      "referenceYear": "2024-2025",
+      "note": "MENFP registre scolaire 2024-2025, Hinche, première section Juanaria, secteur public. Présence et fonctionnement en novembre 2026 non vérifiés. Aucun marqueur géographique.",
+      "updatedAt": "2026-11-03",
+      "history": [
+        {
+          "date": "2026-11-03",
+          "action": "Ajout depuis registre scolaire officiel MENFP 2024-2025, sans vérification d'activité actuelle",
+          "source": "https://www.haitidocs.org/doc/menfp-registre-ecoles-centre-2025?lang=ht"
+        }
+      ],
+      "evidence": "Nom et code d'identification transcrits du registre scolaire département du Centre, section Hinche / Juanaria / secteur public.",
+      "checkedOnlineAt": "2026-11-03"
+    },
+    {
+      "id": "ht-centre-menfp-2025-061101104877",
+      "name": "ECOLE NATIONALE DES ABRICOTS",
+      "category": "education",
+      "department": "Centre",
+      "arrondissement": "Hinche",
+      "commune": "Hinche",
+      "lat": null,
+      "lon": null,
+      "source": "https://www.haitidocs.org/doc/menfp-registre-ecoles-centre-2025?lang=ht",
+      "verification": "existence_documentee_registre_menfp_2024_2025",
+      "reviewStatus": "registre_scolaire_a_actualiser",
+      "institutionCode": "061101104877",
+      "ownershipReference": "public",
+      "referenceYear": "2024-2025",
+      "note": "MENFP registre scolaire 2024-2025, Hinche, première section Juanaria, secteur public. Présence et fonctionnement en novembre 2026 non vérifiés. Aucun marqueur géographique.",
+      "updatedAt": "2026-11-03",
+      "history": [
+        {
+          "date": "2026-11-03",
+          "action": "Ajout depuis registre scolaire officiel MENFP 2024-2025, sans vérification d'activité actuelle",
+          "source": "https://www.haitidocs.org/doc/menfp-registre-ecoles-centre-2025?lang=ht"
+        }
+      ],
+      "evidence": "Nom et code d'identification transcrits du registre scolaire département du Centre, section Hinche / Juanaria / secteur public.",
+      "checkedOnlineAt": "2026-11-03"
+    },
+    {
+      "id": "ht-centre-menfp-2025-061101101419",
+      "name": "ECOLE NATIONALE GUY MALARY",
+      "category": "education",
+      "department": "Centre",
+      "arrondissement": "Hinche",
+      "commune": "Hinche",
+      "lat": null,
+      "lon": null,
+      "source": "https://www.haitidocs.org/doc/menfp-registre-ecoles-centre-2025?lang=ht",
+      "verification": "existence_documentee_registre_menfp_2024_2025",
+      "reviewStatus": "registre_scolaire_a_actualiser",
+      "institutionCode": "061101101419",
+      "ownershipReference": "public",
+      "referenceYear": "2024-2025",
+      "note": "MENFP registre scolaire 2024-2025, Hinche, première section Juanaria, secteur public. Présence et fonctionnement en novembre 2026 non vérifiés. Aucun marqueur géographique.",
+      "updatedAt": "2026-11-03",
+      "history": [
+        {
+          "date": "2026-11-03",
+          "action": "Ajout depuis registre scolaire officiel MENFP 2024-2025, sans vérification d'activité actuelle",
+          "source": "https://www.haitidocs.org/doc/menfp-registre-ecoles-centre-2025?lang=ht"
+        }
+      ],
+      "evidence": "Nom et code d'identification transcrits du registre scolaire département du Centre, section Hinche / Juanaria / secteur public.",
+      "checkedOnlineAt": "2026-11-03"
+    },
+    {
+      "id": "ht-centre-menfp-2025-061101118083",
+      "name": "ECOLE NATIONALE PIERRE BRISARD",
+      "category": "education",
+      "department": "Centre",
+      "arrondissement": "Hinche",
+      "commune": "Hinche",
+      "lat": null,
+      "lon": null,
+      "source": "https://www.haitidocs.org/doc/menfp-registre-ecoles-centre-2025?lang=ht",
+      "verification": "existence_documentee_registre_menfp_2024_2025",
+      "reviewStatus": "registre_scolaire_a_actualiser",
+      "institutionCode": "061101118083",
+      "ownershipReference": "public",
+      "referenceYear": "2024-2025",
+      "note": "MENFP registre scolaire 2024-2025, Hinche, première section Juanaria, secteur public. Présence et fonctionnement en novembre 2026 non vérifiés. Aucun marqueur géographique.",
+      "updatedAt": "2026-11-03",
+      "history": [
+        {
+          "date": "2026-11-03",
+          "action": "Ajout depuis registre scolaire officiel MENFP 2024-2025, sans vérification d'activité actuelle",
+          "source": "https://www.haitidocs.org/doc/menfp-registre-ecoles-centre-2025?lang=ht"
+        }
+      ],
+      "evidence": "Nom et code d'identification transcrits du registre scolaire département du Centre, section Hinche / Juanaria / secteur public.",
+      "checkedOnlineAt": "2026-11-03"
+    },
+    {
+      "id": "ht-centre-menfp-2025-061101108011",
+      "name": "ECOLE NATIONALE TOUSSAINT LOUVERTURE",
+      "category": "education",
+      "department": "Centre",
+      "arrondissement": "Hinche",
+      "commune": "Hinche",
+      "lat": null,
+      "lon": null,
+      "source": "https://www.haitidocs.org/doc/menfp-registre-ecoles-centre-2025?lang=ht",
+      "verification": "existence_documentee_registre_menfp_2024_2025",
+      "reviewStatus": "registre_scolaire_a_actualiser",
+      "institutionCode": "061101108011",
+      "ownershipReference": "public",
+      "referenceYear": "2024-2025",
+      "note": "MENFP registre scolaire 2024-2025, Hinche, première section Juanaria, secteur public. Présence et fonctionnement en novembre 2026 non vérifiés. Aucun marqueur géographique.",
+      "updatedAt": "2026-11-03",
+      "history": [
+        {
+          "date": "2026-11-03",
+          "action": "Ajout depuis registre scolaire officiel MENFP 2024-2025, sans vérification d'activité actuelle",
+          "source": "https://www.haitidocs.org/doc/menfp-registre-ecoles-centre-2025?lang=ht"
+        }
+      ],
+      "evidence": "Nom et code d'identification transcrits du registre scolaire département du Centre, section Hinche / Juanaria / secteur public.",
+      "checkedOnlineAt": "2026-11-03"
+    },
+    {
+      "id": "ht-centre-menfp-2025-061101110517",
+      "name": "LYCEE CHARLEMAGNE PERALTE",
+      "category": "education",
+      "department": "Centre",
+      "arrondissement": "Hinche",
+      "commune": "Hinche",
+      "lat": null,
+      "lon": null,
+      "source": "https://www.haitidocs.org/doc/menfp-registre-ecoles-centre-2025?lang=ht",
+      "verification": "existence_documentee_registre_menfp_2024_2025",
+      "reviewStatus": "registre_scolaire_a_actualiser",
+      "institutionCode": "061101110517",
+      "ownershipReference": "public",
+      "referenceYear": "2024-2025",
+      "note": "MENFP registre scolaire 2024-2025, Hinche, première section Juanaria, secteur public. Présence et fonctionnement en novembre 2026 non vérifiés. Aucun marqueur géographique.",
+      "updatedAt": "2026-11-03",
+      "history": [
+        {
+          "date": "2026-11-03",
+          "action": "Ajout depuis registre scolaire officiel MENFP 2024-2025, sans vérification d'activité actuelle",
+          "source": "https://www.haitidocs.org/doc/menfp-registre-ecoles-centre-2025?lang=ht"
+        }
+      ],
+      "evidence": "Nom et code d'identification transcrits du registre scolaire département du Centre, section Hinche / Juanaria / secteur public.",
+      "checkedOnlineAt": "2026-11-03"
+    },
+    {
+      "id": "ht-centre-menfp-2025-061101108780",
+      "name": "LYCEE NATIONAL DE BASSIN ZIM",
+      "category": "education",
+      "department": "Centre",
+      "arrondissement": "Hinche",
+      "commune": "Hinche",
+      "lat": null,
+      "lon": null,
+      "source": "https://www.haitidocs.org/doc/menfp-registre-ecoles-centre-2025?lang=ht",
+      "verification": "existence_documentee_registre_menfp_2024_2025",
+      "reviewStatus": "registre_scolaire_a_actualiser",
+      "institutionCode": "061101108780",
+      "ownershipReference": "public",
+      "referenceYear": "2024-2025",
+      "note": "MENFP registre scolaire 2024-2025, Hinche, première section Juanaria, secteur public. Présence et fonctionnement en novembre 2026 non vérifiés. Aucun marqueur géographique.",
+      "updatedAt": "2026-11-03",
+      "history": [
+        {
+          "date": "2026-11-03",
+          "action": "Ajout depuis registre scolaire officiel MENFP 2024-2025, sans vérification d'activité actuelle",
+          "source": "https://www.haitidocs.org/doc/menfp-registre-ecoles-centre-2025?lang=ht"
+        }
+      ],
+      "evidence": "Nom et code d'identification transcrits du registre scolaire département du Centre, section Hinche / Juanaria / secteur public.",
+      "checkedOnlineAt": "2026-11-03"
     }
   ]
 }
