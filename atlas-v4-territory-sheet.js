@@ -8,7 +8,7 @@ const el=(tag,value)=>{const node=document.createElement(tag);node.textContent=v
 const norm=value=>String(value||"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").replace(/[^a-z0-9]/gi,"").toLowerCase();
 const equal=(a,b)=>norm(a)===norm(b);
 const labels={department:"Département",arrondissement:"Arrondissement",commune:"Commune"};
-let pilotData={},registry=[];
+let pilotData={},registry=[],communalProfiles=[];
 const current=()=>({department:document.getElementById("department")?.value||"",arrondissement:document.getElementById("arrondissement")?.value||"",commune:document.getElementById("commune")?.value||""});
 function panel(grid,title,description){const box=document.createElement("article");box.append(el("h3",title),el("p",description));grid.append(box);return box}
 function list(parent,values){const ul=document.createElement("ul");for(const value of values)ul.append(el("li",value));parent.append(ul);return ul}
@@ -45,6 +45,19 @@ function render(){
  if(pilot?.history){history.querySelector("p").textContent=pilot.history;if(pilot.historySource)link(history,"Consulter la source historique ↗",pilot.historySource)}
  link(history,"Rechercher des sources historiques ↗","https://fr.wikipedia.org/w/index.php?search="+encodeURIComponent(name+" Haïti"));
  const geography=panel(grid,"Géographie et localités",level==="commune"?"Sections communales, localités, superficie et population : à renseigner à partir de sources officielles.":level==="arrondissement"?"Les "+communes.length+" communes de cet arrondissement figurent dans le répertoire ci-dessus.":level==="department"?"Les "+communes.length+" communes sont réparties entre "+arrs.length+" arrondissements.":"L'atlas couvre le répertoire national des 149 communes.");
+ const profile=level==="commune"?communalProfiles.find(p=>equal(p.department,department.nom)&&equal(p.arrondissement,arrondissement.nom)&&equal(p.commune,commune)):null;
+ if(profile){
+  const context=panel(grid,"Portrait communal documenté","Informations issues de sources documentaires datées; ne constituent pas une validation de terrain.");
+  if(profile.population?.value)context.append(el("p","Population (estimation "+profile.population.year+") : "+profile.population.value.toLocaleString("fr-FR")+" habitants.")); 
+  if(profile.areaKm2)context.append(el("p","Superficie indiquée par la source : "+profile.areaKm2+" km²."));
+  if(profile.sectionsCommunales?.length){context.append(el("h4","Sections communales"));list(context,profile.sectionsCommunales)}
+  if(profile.history?.text){history.querySelector("p").textContent=profile.history.text;for(const source of profile.history.sources||[])link(history,"Source historique ↗",source)}
+  for(const [title,items] of [["Services publics documentés",profile.services],["Infrastructures et mobilité",profile.infrastructures],["Patrimoine local",profile.heritage]]){
+   if(!items?.length)continue;const box=panel(grid,title,"Sources documentaires : vérifier l'état actuel et la localisation de chaque élément.");
+   for(const item of items){box.append(el("h4",item.name),el("p",item.detail));if(item.source)link(box,"Consulter la source ↗",item.source)}
+  }
+  if(profile.nearbyNotInCommune?.length){const nearby=panel(grid,"Patrimoine régional hors commune","Sites voisins : présentés à titre de contexte et non comme établissements de la commune.");for(const item of profile.nearbyNotInCommune){nearby.append(el("h4",item.name),el("p","Commune : "+item.commune+". "+item.detail));if(item.source)link(nearby,"Source ↗",item.source)}}
+ }
  const future=panel(grid,"Vision Haïti 2050","Espace pour les projets et priorités de développement du territoire. Les propositions ne constituent pas des projets publics approuvés.");
  if(pilot?.projects)list(future,pilot.projects);
  const a=el("a","Consulter les projets et propositions ↗");a.href="#projects";future.append(a);
@@ -53,6 +66,7 @@ function render(){
 document.addEventListener("haiti2050:territorychange",render);
 for(const id of ["department","arrondissement","commune"])document.getElementById(id)?.addEventListener("change",()=>queueMicrotask(render));
 fetch("./data/fond-des-blancs-pilot.json").then(r=>r.ok?r.json():{}).then(data=>{pilotData=data;render()}).catch(()=>{});
+fetch("./data/fiches-communales.json",{cache:"no-store"}).then(r=>r.ok?r.json():{}).then(data=>{communalProfiles=Array.isArray(data.communes)?data.communes:[];render()}).catch(()=>{});
 fetch("./data/registre-etablissements.json",{cache:"no-store"}).then(r=>r.ok?r.json():{}).then(data=>{registry=Array.isArray(data.places)?data.places:[];render()}).catch(()=>{});
 render();
 })();
