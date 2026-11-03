@@ -50,3 +50,11 @@ Ajouts au registre : **12 écoles publiques de Cerca-Carvajal** (section Rang et
 Sources : MENFP, registre scolaire 2024-2025, pages 27-29 et 90 : https://www.haitidocs.org/doc/menfp-registre-ecoles-centre-2025?lang=ht ; MSPP, liste des institutions sanitaires 2015, lignes 62-64 : https://mspp.gouv.ht/site/downloads/Liste%20des%20Institutions%20Sanitaires%202015.pdf .
 
 **Nouveau total national : 146 entrées**, dont 119 pour le Centre (94 écoles, 25 établissements sanitaires). La liste reste non exhaustive : Thomassique a notamment d'autres écoles dans les sections Matelgate et Lociane qui restent à transcrire. Les données de santé de 2015 ne garantissent pas le fonctionnement en 2026. Ne pas présenter cet audit daté comme clôturé.
+
+## Complément — Thomassique, section Lociane (3 novembre 2026)
+
+Neuf écoles publiques ajoutées depuis les pages 87-88 du registre MENFP 2024-2025, avec codes : Boisrond Tonnerre de Bac-Banique (064202100653), Boispinplate (064202101221), Fondais (064202104609), Garde Salnave (064202101096), Hatto Nuevo (064202100576), Lauranette (064202100468), Nan Croix (064202101186), Poteauboff (064202101233), Savanemulatre (064202101907). Source : https://www.haitidocs.org/doc/menfp-registre-ecoles-centre-2025?lang=ht .
+
+Registre national désormais à **155 entrées**; Centre **128** (103 scolaires, 25 sanitaires), calculé à partir des additions depuis le dernier audit. Les établissements scolaires de Matelgate, Maïssade, Thomonde et Savanette restent à dépouiller. Les sites patrimoniaux nécessitent encore des notices ISPAN primaires.
+
+**Anomalie documentaire à résoudre avant clôture :** le tableau A.3 du rapport MSPP 2015 ne compte que **2 établissements à Thomassique**, alors que **3 entrées nominatives** ont été ajoutées précédemment depuis une extraction attribuée au même rapport (dont un code à cinq chiffres, 64305). Cette discordance doit être vérifiée sur la page originale : statut, commune et code exacts. Ne pas considérer ces trois entrées comme certifiées, ni en déduire un fonctionnement en 2026. Source du tableau A.3 : https://mspp.gouv.ht/site/downloads/Liste%20des%20Institutions%20Sanitaires%202015.pdf .
