@@ -5254,6 +5254,34 @@
           "source": "https://www.haitidocs.org/doc/menfp-registre-ecoles-centre-2025?lang=ht"
         }
       ]
+    },
+    {
+      "id": "ht-centre-menfp-2025-063490100885",
+      "name": "ECOLE NATIONALE CLAIRE HEUREUSE",
+      "category": "education",
+      "department": "Centre",
+      "arrondissement": "Lascahobas",
+      "commune": "Savanette",
+      "section": "Ville de Savanette",
+      "lat": null,
+      "lon": null,
+      "source": "https://www.haitidocs.org/doc/menfp-registre-ecoles-centre-2025?lang=ht",
+      "verification": "existence_documentee_registre_menfp_2024_2025",
+      "reviewStatus": "registre_scolaire_a_actualiser",
+      "institutionCode": "063490100885",
+      "ownershipReference": "public",
+      "referenceYear": "2024-2025",
+      "note": "École inscrite dans le secteur public du registre MENFP 2024-2025, page 76. Activité actuelle et localisation précise non vérifiées.",
+      "updatedAt": "2026-11-03",
+      "evidence": "MENFP 2024-2025, page 76, Ville de Savanette, code 063490100885",
+      "checkedOnlineAt": "2026-11-03",
+      "history": [
+        {
+          "date": "2026-11-03",
+          "action": "Ajout documentaire à partir du registre MENFP 2024-2025, sans confirmation de fonctionnement actuel",
+          "source": "https://www.haitidocs.org/doc/menfp-registre-ecoles-centre-2025?lang=ht"
+        }
+      ]
     }
   ]
 }
