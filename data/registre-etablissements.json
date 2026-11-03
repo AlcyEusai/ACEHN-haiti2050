@@ -2297,6 +2297,370 @@
       ],
       "evidence": "Tableau ville de Belladère, secteur public, page 70 du registre MENFP.",
       "checkedOnlineAt": "2026-11-03"
+    },
+    {
+      "id": "ht-centre-menfp-2025-062301119821",
+      "name": "ECOLE NATIONALE DE PETITE MONTAGNE",
+      "category": "education",
+      "department": "Centre",
+      "arrondissement": "Mirebalais",
+      "commune": "Boucan-Carré",
+      "section": "Petite Montagne",
+      "lat": null,
+      "lon": null,
+      "source": "https://www.haitidocs.org/doc/menfp-registre-ecoles-centre-2025?lang=ht",
+      "verification": "existence_documentee_registre_menfp_2024_2025",
+      "reviewStatus": "registre_scolaire_a_actualiser",
+      "institutionCode": "062301119821",
+      "ownershipReference": "public",
+      "referenceYear": "2024-2025",
+      "note": "École du secteur public dans le registre MENFP 2024-2025, pages 51 à 53. Activité 2026 et coordonnées non vérifiées.",
+      "updatedAt": "2026-11-03",
+      "history": [
+        {
+          "date": "2026-11-03",
+          "action": "Transcription nominative du registre MENFP 2024-2025",
+          "source": "https://www.haitidocs.org/doc/menfp-registre-ecoles-centre-2025?lang=ht"
+        }
+      ],
+      "evidence": "Commune Boucan-Carré, section Petite Montagne, secteur public, code 062301119821.",
+      "checkedOnlineAt": "2026-11-03"
+    },
+    {
+      "id": "ht-centre-menfp-2025-062302117575",
+      "name": "ECOLE NATIONALE DE BELLEVUE",
+      "category": "education",
+      "department": "Centre",
+      "arrondissement": "Mirebalais",
+      "commune": "Boucan-Carré",
+      "section": "Boucan-Carré",
+      "lat": null,
+      "lon": null,
+      "source": "https://www.haitidocs.org/doc/menfp-registre-ecoles-centre-2025?lang=ht",
+      "verification": "existence_documentee_registre_menfp_2024_2025",
+      "reviewStatus": "registre_scolaire_a_actualiser",
+      "institutionCode": "062302117575",
+      "ownershipReference": "public",
+      "referenceYear": "2024-2025",
+      "note": "École du secteur public dans le registre MENFP 2024-2025, pages 51 à 53. Activité 2026 et coordonnées non vérifiées.",
+      "updatedAt": "2026-11-03",
+      "history": [
+        {
+          "date": "2026-11-03",
+          "action": "Transcription nominative du registre MENFP 2024-2025",
+          "source": "https://www.haitidocs.org/doc/menfp-registre-ecoles-centre-2025?lang=ht"
+        }
+      ],
+      "evidence": "Commune Boucan-Carré, section Boucan-Carré, secteur public, code 062302117575.",
+      "checkedOnlineAt": "2026-11-03"
+    },
+    {
+      "id": "ht-centre-menfp-2025-062302117367",
+      "name": "ECOLE NATIONALE DE BOIDINE",
+      "category": "education",
+      "department": "Centre",
+      "arrondissement": "Mirebalais",
+      "commune": "Boucan-Carré",
+      "section": "Boucan-Carré",
+      "lat": null,
+      "lon": null,
+      "source": "https://www.haitidocs.org/doc/menfp-registre-ecoles-centre-2025?lang=ht",
+      "verification": "existence_documentee_registre_menfp_2024_2025",
+      "reviewStatus": "registre_scolaire_a_actualiser",
+      "institutionCode": "062302117367",
+      "ownershipReference": "public",
+      "referenceYear": "2024-2025",
+      "note": "École du secteur public dans le registre MENFP 2024-2025, pages 51 à 53. Activité 2026 et coordonnées non vérifiées.",
+      "updatedAt": "2026-11-03",
+      "history": [
+        {
+          "date": "2026-11-03",
+          "action": "Transcription nominative du registre MENFP 2024-2025",
+          "source": "https://www.haitidocs.org/doc/menfp-registre-ecoles-centre-2025?lang=ht"
+        }
+      ],
+      "evidence": "Commune Boucan-Carré, section Boucan-Carré, secteur public, code 062302117367.",
+      "checkedOnlineAt": "2026-11-03"
+    },
+    {
+      "id": "ht-centre-menfp-2025-062302109764",
+      "name": "ECOLE NATIONALE DE BOUCAN CARRE",
+      "category": "education",
+      "department": "Centre",
+      "arrondissement": "Mirebalais",
+      "commune": "Boucan-Carré",
+      "section": "Boucan-Carré",
+      "lat": null,
+      "lon": null,
+      "source": "https://www.haitidocs.org/doc/menfp-registre-ecoles-centre-2025?lang=ht",
+      "verification": "existence_documentee_registre_menfp_2024_2025",
+      "reviewStatus": "registre_scolaire_a_actualiser",
+      "institutionCode": "062302109764",
+      "ownershipReference": "public",
+      "referenceYear": "2024-2025",
+      "note": "École du secteur public dans le registre MENFP 2024-2025, pages 51 à 53. Activité 2026 et coordonnées non vérifiées.",
+      "updatedAt": "2026-11-03",
+      "history": [
+        {
+          "date": "2026-11-03",
+          "action": "Transcription nominative du registre MENFP 2024-2025",
+          "source": "https://www.haitidocs.org/doc/menfp-registre-ecoles-centre-2025?lang=ht"
+        }
+      ],
+      "evidence": "Commune Boucan-Carré, section Boucan-Carré, secteur public, code 062302109764.",
+      "checkedOnlineAt": "2026-11-03"
+    },
+    {
+      "id": "ht-centre-menfp-2025-062302119801",
+      "name": "ECOLE NATIONALE DE CHIMOREAU",
+      "category": "education",
+      "department": "Centre",
+      "arrondissement": "Mirebalais",
+      "commune": "Boucan-Carré",
+      "section": "Boucan-Carré",
+      "lat": null,
+      "lon": null,
+      "source": "https://www.haitidocs.org/doc/menfp-registre-ecoles-centre-2025?lang=ht",
+      "verification": "existence_documentee_registre_menfp_2024_2025",
+      "reviewStatus": "registre_scolaire_a_actualiser",
+      "institutionCode": "062302119801",
+      "ownershipReference": "public",
+      "referenceYear": "2024-2025",
+      "note": "École du secteur public dans le registre MENFP 2024-2025, pages 51 à 53. Activité 2026 et coordonnées non vérifiées.",
+      "updatedAt": "2026-11-03",
+      "history": [
+        {
+          "date": "2026-11-03",
+          "action": "Transcription nominative du registre MENFP 2024-2025",
+          "source": "https://www.haitidocs.org/doc/menfp-registre-ecoles-centre-2025?lang=ht"
+        }
+      ],
+      "evidence": "Commune Boucan-Carré, section Boucan-Carré, secteur public, code 062302119801.",
+      "checkedOnlineAt": "2026-11-03"
+    },
+    {
+      "id": "ht-centre-menfp-2025-062302110676",
+      "name": "ECOLE NATIONALE DE DUPONT",
+      "category": "education",
+      "department": "Centre",
+      "arrondissement": "Mirebalais",
+      "commune": "Boucan-Carré",
+      "section": "Boucan-Carré",
+      "lat": null,
+      "lon": null,
+      "source": "https://www.haitidocs.org/doc/menfp-registre-ecoles-centre-2025?lang=ht",
+      "verification": "existence_documentee_registre_menfp_2024_2025",
+      "reviewStatus": "registre_scolaire_a_actualiser",
+      "institutionCode": "062302110676",
+      "ownershipReference": "public",
+      "referenceYear": "2024-2025",
+      "note": "École du secteur public dans le registre MENFP 2024-2025, pages 51 à 53. Activité 2026 et coordonnées non vérifiées.",
+      "updatedAt": "2026-11-03",
+      "history": [
+        {
+          "date": "2026-11-03",
+          "action": "Transcription nominative du registre MENFP 2024-2025",
+          "source": "https://www.haitidocs.org/doc/menfp-registre-ecoles-centre-2025?lang=ht"
+        }
+      ],
+      "evidence": "Commune Boucan-Carré, section Boucan-Carré, secteur public, code 062302110676.",
+      "checkedOnlineAt": "2026-11-03"
+    },
+    {
+      "id": "ht-centre-menfp-2025-062302106524",
+      "name": "ECOLE NATIONALE DE PITON",
+      "category": "education",
+      "department": "Centre",
+      "arrondissement": "Mirebalais",
+      "commune": "Boucan-Carré",
+      "section": "Boucan-Carré",
+      "lat": null,
+      "lon": null,
+      "source": "https://www.haitidocs.org/doc/menfp-registre-ecoles-centre-2025?lang=ht",
+      "verification": "existence_documentee_registre_menfp_2024_2025",
+      "reviewStatus": "registre_scolaire_a_actualiser",
+      "institutionCode": "062302106524",
+      "ownershipReference": "public",
+      "referenceYear": "2024-2025",
+      "note": "École du secteur public dans le registre MENFP 2024-2025, pages 51 à 53. Activité 2026 et coordonnées non vérifiées.",
+      "updatedAt": "2026-11-03",
+      "history": [
+        {
+          "date": "2026-11-03",
+          "action": "Transcription nominative du registre MENFP 2024-2025",
+          "source": "https://www.haitidocs.org/doc/menfp-registre-ecoles-centre-2025?lang=ht"
+        }
+      ],
+      "evidence": "Commune Boucan-Carré, section Boucan-Carré, secteur public, code 062302106524.",
+      "checkedOnlineAt": "2026-11-03"
+    },
+    {
+      "id": "ht-centre-menfp-2025-062302110319",
+      "name": "LYCEE DIJON JEAN GILLES",
+      "category": "education",
+      "department": "Centre",
+      "arrondissement": "Mirebalais",
+      "commune": "Boucan-Carré",
+      "section": "Boucan-Carré",
+      "lat": null,
+      "lon": null,
+      "source": "https://www.haitidocs.org/doc/menfp-registre-ecoles-centre-2025?lang=ht",
+      "verification": "existence_documentee_registre_menfp_2024_2025",
+      "reviewStatus": "registre_scolaire_a_actualiser",
+      "institutionCode": "062302110319",
+      "ownershipReference": "public",
+      "referenceYear": "2024-2025",
+      "note": "École du secteur public dans le registre MENFP 2024-2025, pages 51 à 53. Activité 2026 et coordonnées non vérifiées.",
+      "updatedAt": "2026-11-03",
+      "history": [
+        {
+          "date": "2026-11-03",
+          "action": "Transcription nominative du registre MENFP 2024-2025",
+          "source": "https://www.haitidocs.org/doc/menfp-registre-ecoles-centre-2025?lang=ht"
+        }
+      ],
+      "evidence": "Commune Boucan-Carré, section Boucan-Carré, secteur public, code 062302110319.",
+      "checkedOnlineAt": "2026-11-03"
+    },
+    {
+      "id": "ht-centre-menfp-2025-062303116747",
+      "name": "ECOLE NATIONALE DE BALANDRY",
+      "category": "education",
+      "department": "Centre",
+      "arrondissement": "Mirebalais",
+      "commune": "Boucan-Carré",
+      "section": "Des Bayes",
+      "lat": null,
+      "lon": null,
+      "source": "https://www.haitidocs.org/doc/menfp-registre-ecoles-centre-2025?lang=ht",
+      "verification": "existence_documentee_registre_menfp_2024_2025",
+      "reviewStatus": "registre_scolaire_a_actualiser",
+      "institutionCode": "062303116747",
+      "ownershipReference": "public",
+      "referenceYear": "2024-2025",
+      "note": "École du secteur public dans le registre MENFP 2024-2025, pages 51 à 53. Activité 2026 et coordonnées non vérifiées.",
+      "updatedAt": "2026-11-03",
+      "history": [
+        {
+          "date": "2026-11-03",
+          "action": "Transcription nominative du registre MENFP 2024-2025",
+          "source": "https://www.haitidocs.org/doc/menfp-registre-ecoles-centre-2025?lang=ht"
+        }
+      ],
+      "evidence": "Commune Boucan-Carré, section Des Bayes, secteur public, code 062303116747.",
+      "checkedOnlineAt": "2026-11-03"
+    },
+    {
+      "id": "ht-centre-menfp-2025-062303109810",
+      "name": "ECOLE NATIONALE DE BOZIO",
+      "category": "education",
+      "department": "Centre",
+      "arrondissement": "Mirebalais",
+      "commune": "Boucan-Carré",
+      "section": "Des Bayes",
+      "lat": null,
+      "lon": null,
+      "source": "https://www.haitidocs.org/doc/menfp-registre-ecoles-centre-2025?lang=ht",
+      "verification": "existence_documentee_registre_menfp_2024_2025",
+      "reviewStatus": "registre_scolaire_a_actualiser",
+      "institutionCode": "062303109810",
+      "ownershipReference": "public",
+      "referenceYear": "2024-2025",
+      "note": "École du secteur public dans le registre MENFP 2024-2025, pages 51 à 53. Activité 2026 et coordonnées non vérifiées.",
+      "updatedAt": "2026-11-03",
+      "history": [
+        {
+          "date": "2026-11-03",
+          "action": "Transcription nominative du registre MENFP 2024-2025",
+          "source": "https://www.haitidocs.org/doc/menfp-registre-ecoles-centre-2025?lang=ht"
+        }
+      ],
+      "evidence": "Commune Boucan-Carré, section Des Bayes, secteur public, code 062303109810.",
+      "checkedOnlineAt": "2026-11-03"
+    },
+    {
+      "id": "ht-centre-menfp-2025-062303113234",
+      "name": "ECOLE NATIONALE DE DOMON PELIGRE",
+      "category": "education",
+      "department": "Centre",
+      "arrondissement": "Mirebalais",
+      "commune": "Boucan-Carré",
+      "section": "Des Bayes",
+      "lat": null,
+      "lon": null,
+      "source": "https://www.haitidocs.org/doc/menfp-registre-ecoles-centre-2025?lang=ht",
+      "verification": "existence_documentee_registre_menfp_2024_2025",
+      "reviewStatus": "registre_scolaire_a_actualiser",
+      "institutionCode": "062303113234",
+      "ownershipReference": "public",
+      "referenceYear": "2024-2025",
+      "note": "École du secteur public dans le registre MENFP 2024-2025, pages 51 à 53. Activité 2026 et coordonnées non vérifiées.",
+      "updatedAt": "2026-11-03",
+      "history": [
+        {
+          "date": "2026-11-03",
+          "action": "Transcription nominative du registre MENFP 2024-2025",
+          "source": "https://www.haitidocs.org/doc/menfp-registre-ecoles-centre-2025?lang=ht"
+        }
+      ],
+      "evidence": "Commune Boucan-Carré, section Des Bayes, secteur public, code 062303113234.",
+      "checkedOnlineAt": "2026-11-03"
+    },
+    {
+      "id": "ht-centre-menfp-2025-062303112161",
+      "name": "ECOLE NATIONALE DE DUFAILLY",
+      "category": "education",
+      "department": "Centre",
+      "arrondissement": "Mirebalais",
+      "commune": "Boucan-Carré",
+      "section": "Des Bayes",
+      "lat": null,
+      "lon": null,
+      "source": "https://www.haitidocs.org/doc/menfp-registre-ecoles-centre-2025?lang=ht",
+      "verification": "existence_documentee_registre_menfp_2024_2025",
+      "reviewStatus": "registre_scolaire_a_actualiser",
+      "institutionCode": "062303112161",
+      "ownershipReference": "public",
+      "referenceYear": "2024-2025",
+      "note": "École du secteur public dans le registre MENFP 2024-2025, pages 51 à 53. Activité 2026 et coordonnées non vérifiées.",
+      "updatedAt": "2026-11-03",
+      "history": [
+        {
+          "date": "2026-11-03",
+          "action": "Transcription nominative du registre MENFP 2024-2025",
+          "source": "https://www.haitidocs.org/doc/menfp-registre-ecoles-centre-2025?lang=ht"
+        }
+      ],
+      "evidence": "Commune Boucan-Carré, section Des Bayes, secteur public, code 062303112161.",
+      "checkedOnlineAt": "2026-11-03"
+    },
+    {
+      "id": "ht-centre-menfp-2025-062303116261",
+      "name": "ECOLE NATIONALE FOYERDIVIN DE LACHETEAU",
+      "category": "education",
+      "department": "Centre",
+      "arrondissement": "Mirebalais",
+      "commune": "Boucan-Carré",
+      "section": "Des Bayes",
+      "lat": null,
+      "lon": null,
+      "source": "https://www.haitidocs.org/doc/menfp-registre-ecoles-centre-2025?lang=ht",
+      "verification": "existence_documentee_registre_menfp_2024_2025",
+      "reviewStatus": "registre_scolaire_a_actualiser",
+      "institutionCode": "062303116261",
+      "ownershipReference": "public",
+      "referenceYear": "2024-2025",
+      "note": "École du secteur public dans le registre MENFP 2024-2025, pages 51 à 53. Activité 2026 et coordonnées non vérifiées.",
+      "updatedAt": "2026-11-03",
+      "history": [
+        {
+          "date": "2026-11-03",
+          "action": "Transcription nominative du registre MENFP 2024-2025",
+          "source": "https://www.haitidocs.org/doc/menfp-registre-ecoles-centre-2025?lang=ht"
+        }
+      ],
+      "evidence": "Commune Boucan-Carré, section Des Bayes, secteur public, code 062303116261.",
+      "checkedOnlineAt": "2026-11-03"
     }
   ]
 }
