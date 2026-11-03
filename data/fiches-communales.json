@@ -539,23 +539,53 @@
       "commune": "Saint-Raphaël",
       "updatedAt": "2026-11-03",
       "history": {
-        "text": "Notice historique en cours de recherche documentaire.",
-        "sources": [],
-        "status": "a_verifier"
+        "text": "La commune figure dans le répertoire administratif des 19 communes du département du Nord. Les éléments historiques détaillés restent à rechercher.",
+        "sources": [
+          "https://www.adnhaiti.ht/communes/"
+        ],
+        "status": "documente"
       },
-      "services": [],
-      "infrastructures": [],
-      "heritage": [],
-      "verification": "inventaire_en_cours",
+      "services": [
+        {
+          "name": "Couverture sanitaire — archives départementales",
+          "detail": "Un inventaire sanitaire fondé sur des données de 1996 évoque la couverture sanitaire départementale et cette commune. Il ne constitue pas un état des établissements actifs en 2026.",
+          "source": "https://www.adnhaiti.ht/sante-2/",
+          "status": "historique"
+        }
+      ],
+      "infrastructures": [
+        {
+          "name": "Contexte environnemental régional",
+          "detail": "L'administration départementale décrit un régime climatique de type Plateau Central pour Saint-Raphaël, Pignon, La Victoire et Ranquitte, ainsi que des problèmes d'érosion dans plusieurs zones. Ce diagnostic régional ne prouve pas la présence d'un ouvrage ou projet particulier dans cette commune.",
+          "source": "https://www.adnhaiti.ht/donnees/",
+          "status": "historique"
+        }
+      ],
+      "heritage": [
+        {
+          "name": "Fête patronale de Saint Raphaël",
+          "detail": "Célébration patronale indiquée au 24 octobre dans le répertoire départemental. Date et tenue effective des festivités en 2026 non vérifiées.",
+          "source": "https://www.adnhaiti.ht/champetres/",
+          "status": "documente"
+        }
+      ],
+      "verification": "sources_documentaires_sans_validation_terrain",
       "audit": {
         "reviewedAt": "2026-11-03",
-        "method": "Création d'une notice de travail; aucun fait local non sourcé ajouté.",
+        "method": "Croisement du répertoire départemental du Nord et des estimations IHSI 2024. Aucune visite sur place.",
         "warnings": [
-          "Histoire, population et superficie : sources à rechercher et recouper.",
-          "Services publics, établissements, patrimoine et infrastructures : inventaire non commencé.",
-          "Aucune coordonnée GPS ni statistique inférée.",
-          "Cette fiche ne doit pas être considérée comme une notice documentaire validée."
+          "Population urbaine IHSI 2024 : ne pas confondre avec la population totale.",
+          "Fêtes patronales : célébration effective en 2026 non vérifiée.",
+          "Sources sanitaires historiques de 1996 : ne pas présenter comme état actuel.",
+          "Aucun établissement ni aucune coordonnée GPS ajoutés au registre sans validation indépendante."
         ]
+      },
+      "populationUrbaine": {
+        "value": 36243,
+        "year": 2024,
+        "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+        "status": "historique",
+        "note": "Population urbaine seulement, non population totale de la commune. Tableau 65."
       }
     },
     {
@@ -564,23 +594,53 @@
       "commune": "Ranquitte",
       "updatedAt": "2026-11-03",
       "history": {
-        "text": "Notice historique en cours de recherche documentaire.",
-        "sources": [],
-        "status": "a_verifier"
+        "text": "La commune figure dans le répertoire administratif des 19 communes du département du Nord. Les éléments historiques détaillés restent à rechercher.",
+        "sources": [
+          "https://www.adnhaiti.ht/communes/"
+        ],
+        "status": "documente"
       },
-      "services": [],
-      "infrastructures": [],
-      "heritage": [],
-      "verification": "inventaire_en_cours",
+      "services": [
+        {
+          "name": "Couverture sanitaire — archives départementales",
+          "detail": "Un inventaire sanitaire fondé sur des données de 1996 évoque la couverture sanitaire départementale et cette commune. Il ne constitue pas un état des établissements actifs en 2026.",
+          "source": "https://www.adnhaiti.ht/sante-2/",
+          "status": "historique"
+        }
+      ],
+      "infrastructures": [
+        {
+          "name": "Contexte environnemental régional",
+          "detail": "L'administration départementale décrit un régime climatique de type Plateau Central pour Saint-Raphaël, Pignon, La Victoire et Ranquitte, ainsi que des problèmes d'érosion dans plusieurs zones. Ce diagnostic régional ne prouve pas la présence d'un ouvrage ou projet particulier dans cette commune.",
+          "source": "https://www.adnhaiti.ht/donnees/",
+          "status": "historique"
+        }
+      ],
+      "heritage": [
+        {
+          "name": "Fête patronale de Saint-François d’Assise",
+          "detail": "Célébration patronale indiquée au 4 octobre dans le répertoire départemental. Date et tenue effective des festivités en 2026 non vérifiées.",
+          "source": "https://www.adnhaiti.ht/champetres/",
+          "status": "documente"
+        }
+      ],
+      "verification": "sources_documentaires_sans_validation_terrain",
       "audit": {
         "reviewedAt": "2026-11-03",
-        "method": "Création d'une notice de travail; aucun fait local non sourcé ajouté.",
+        "method": "Croisement du répertoire départemental du Nord et des estimations IHSI 2024. Aucune visite sur place.",
         "warnings": [
-          "Histoire, population et superficie : sources à rechercher et recouper.",
-          "Services publics, établissements, patrimoine et infrastructures : inventaire non commencé.",
-          "Aucune coordonnée GPS ni statistique inférée.",
-          "Cette fiche ne doit pas être considérée comme une notice documentaire validée."
+          "Population urbaine IHSI 2024 : ne pas confondre avec la population totale.",
+          "Fêtes patronales : célébration effective en 2026 non vérifiée.",
+          "Sources sanitaires historiques de 1996 : ne pas présenter comme état actuel.",
+          "Aucun établissement ni aucune coordonnée GPS ajoutés au registre sans validation indépendante."
         ]
+      },
+      "populationUrbaine": {
+        "value": 12679,
+        "year": 2024,
+        "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+        "status": "historique",
+        "note": "Population urbaine seulement, non population totale de la commune. Tableau 65."
       }
     },
     {
@@ -589,23 +649,53 @@
       "commune": "Pignon",
       "updatedAt": "2026-11-03",
       "history": {
-        "text": "Notice historique en cours de recherche documentaire.",
-        "sources": [],
-        "status": "a_verifier"
+        "text": "La commune figure dans le répertoire administratif des 19 communes du département du Nord. Les éléments historiques détaillés restent à rechercher.",
+        "sources": [
+          "https://www.adnhaiti.ht/communes/"
+        ],
+        "status": "documente"
       },
-      "services": [],
-      "infrastructures": [],
-      "heritage": [],
-      "verification": "inventaire_en_cours",
+      "services": [
+        {
+          "name": "Couverture sanitaire — archives départementales",
+          "detail": "Un inventaire sanitaire historique mentionne l'hôpital Bienfaisance de Pignon. Existence et fonctionnement en 2026 non confirmés par cet inventaire.",
+          "source": "https://www.adnhaiti.ht/sante-2/",
+          "status": "historique"
+        }
+      ],
+      "infrastructures": [
+        {
+          "name": "Contexte environnemental régional",
+          "detail": "L'administration départementale décrit un régime climatique de type Plateau Central pour Saint-Raphaël, Pignon, La Victoire et Ranquitte, ainsi que des problèmes d'érosion dans plusieurs zones. Ce diagnostic régional ne prouve pas la présence d'un ouvrage ou projet particulier dans cette commune.",
+          "source": "https://www.adnhaiti.ht/donnees/",
+          "status": "historique"
+        }
+      ],
+      "heritage": [
+        {
+          "name": "Fête patronale de Notre-Dame de la Nativité de la Vierge",
+          "detail": "Célébration patronale indiquée au 8 septembre dans le répertoire départemental. Date et tenue effective des festivités en 2026 non vérifiées.",
+          "source": "https://www.adnhaiti.ht/champetres/",
+          "status": "documente"
+        }
+      ],
+      "verification": "sources_documentaires_sans_validation_terrain",
       "audit": {
         "reviewedAt": "2026-11-03",
-        "method": "Création d'une notice de travail; aucun fait local non sourcé ajouté.",
+        "method": "Croisement du répertoire départemental du Nord et des estimations IHSI 2024. Aucune visite sur place.",
         "warnings": [
-          "Histoire, population et superficie : sources à rechercher et recouper.",
-          "Services publics, établissements, patrimoine et infrastructures : inventaire non commencé.",
-          "Aucune coordonnée GPS ni statistique inférée.",
-          "Cette fiche ne doit pas être considérée comme une notice documentaire validée."
+          "Population urbaine IHSI 2024 : ne pas confondre avec la population totale.",
+          "Fêtes patronales : célébration effective en 2026 non vérifiée.",
+          "Sources sanitaires historiques de 1996 : ne pas présenter comme état actuel.",
+          "Aucun établissement ni aucune coordonnée GPS ajoutés au registre sans validation indépendante."
         ]
+      },
+      "populationUrbaine": {
+        "value": 31274,
+        "year": 2024,
+        "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+        "status": "historique",
+        "note": "Population urbaine seulement, non population totale de la commune. Tableau 65."
       }
     },
     {
@@ -614,23 +704,53 @@
       "commune": "La Victoire",
       "updatedAt": "2026-11-03",
       "history": {
-        "text": "Notice historique en cours de recherche documentaire.",
-        "sources": [],
-        "status": "a_verifier"
+        "text": "La commune figure dans le répertoire administratif des 19 communes du département du Nord. Les éléments historiques détaillés restent à rechercher.",
+        "sources": [
+          "https://www.adnhaiti.ht/communes/"
+        ],
+        "status": "documente"
       },
-      "services": [],
-      "infrastructures": [],
-      "heritage": [],
-      "verification": "inventaire_en_cours",
+      "services": [
+        {
+          "name": "Couverture sanitaire — archives départementales",
+          "detail": "Un inventaire sanitaire fondé sur des données de 1996 évoque la couverture sanitaire départementale et cette commune. Il ne constitue pas un état des établissements actifs en 2026.",
+          "source": "https://www.adnhaiti.ht/sante-2/",
+          "status": "historique"
+        }
+      ],
+      "infrastructures": [
+        {
+          "name": "Contexte environnemental régional",
+          "detail": "L'administration départementale décrit un régime climatique de type Plateau Central pour Saint-Raphaël, Pignon, La Victoire et Ranquitte, ainsi que des problèmes d'érosion dans plusieurs zones. Ce diagnostic régional ne prouve pas la présence d'un ouvrage ou projet particulier dans cette commune.",
+          "source": "https://www.adnhaiti.ht/donnees/",
+          "status": "historique"
+        }
+      ],
+      "heritage": [
+        {
+          "name": "Fête patronale de Sainte Cécile",
+          "detail": "Célébration patronale indiquée au 22 novembre dans le répertoire départemental. Date et tenue effective des festivités en 2026 non vérifiées.",
+          "source": "https://www.adnhaiti.ht/champetres/",
+          "status": "documente"
+        }
+      ],
+      "verification": "sources_documentaires_sans_validation_terrain",
       "audit": {
         "reviewedAt": "2026-11-03",
-        "method": "Création d'une notice de travail; aucun fait local non sourcé ajouté.",
+        "method": "Croisement du répertoire départemental du Nord et des estimations IHSI 2024. Aucune visite sur place.",
         "warnings": [
-          "Histoire, population et superficie : sources à rechercher et recouper.",
-          "Services publics, établissements, patrimoine et infrastructures : inventaire non commencé.",
-          "Aucune coordonnée GPS ni statistique inférée.",
-          "Cette fiche ne doit pas être considérée comme une notice documentaire validée."
+          "Population urbaine IHSI 2024 : ne pas confondre avec la population totale.",
+          "Fêtes patronales : célébration effective en 2026 non vérifiée.",
+          "Sources sanitaires historiques de 1996 : ne pas présenter comme état actuel.",
+          "Aucun établissement ni aucune coordonnée GPS ajoutés au registre sans validation indépendante."
         ]
+      },
+      "populationUrbaine": {
+        "value": 9060,
+        "year": 2024,
+        "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+        "status": "historique",
+        "note": "Population urbaine seulement, non population totale de la commune. Tableau 65."
       }
     }
   ]
