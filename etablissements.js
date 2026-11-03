@@ -94,7 +94,8 @@
     if (!Array.isArray(data) || !Array.isArray(savanette) || !Array.isArray(thomonde)) throw new Error('Les JSON doivent être des tableaux.');
     const ids = new Set(data.map(x => x.id));
     const codes = new Set(data.map(x => String(x.code_menfp || '')).filter(Boolean));
-    records = data.concat([...savanette, ...thomonde].filter(x => !ids.has(x.id) && !codes.has(String(x.code_menfp || ''))));
+    const alreadyMappedThomonde = new Set(['061301104022', '061302105724', '061303116473']); // Correspondances OSM probables : Henry Christophe, Tierra Muscady, Baille Tourible
+    records = data.concat([...savanette, ...thomonde].filter(x => !ids.has(x.id) && !codes.has(String(x.code_menfp || '')) && !alreadyMappedThomonde.has(String(x.code_menfp || ''))));
     refresh();
   }).catch(e => { count.textContent = 'Chargement impossible : ' + e.message; console.error(e); });
 })();
