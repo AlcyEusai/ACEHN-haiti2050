@@ -117,3 +117,13 @@ Un autre rapport MSPP fondé sur une enquête de 2011 retient respectivement **3
 **13 établissements publics** de Boucan-Carré ont été ajoutés à `data/registre-etablissements.json` à partir des pages 51 à 53 du registre MENFP 2024-2025 : une école à Petite Montagne, sept dans la deuxième section Boucan-Carré et cinq dans la troisième section Des Bayes. Les codes MENFP ont été conservés. Source : https://www.haitidocs.org/doc/menfp-registre-ecoles-centre-2025?lang=ht . Les écoles du secteur non public ne sont pas encore dépouillées.
 
 **Point de contrôle :** le total du registre national du prototype est désormais de 98 entrées (toutes catégories et tous départements confondus), sans que cela représente un inventaire exhaustif du Centre. Lascahobas, les autres sections de Belladère et les autres communes demeurent à documenter. Les 64 établissements sanitaires historiques du MSPP ne sont pas des entrées nominatives; leur extraction est encore ouverte. Le patrimoine ISPAN demeure non certifié. Ne pas annoncer la clôture documentaire du Centre.
+
+## Extraction nominative complémentaire — Lascahobas et MSPP
+
+Date : 2026-11-03. **15 écoles publiques de Lascahobas** intégrées depuis le registre MENFP 2024-2025 (Petit Fond, Petit Juampas et ville, pages 57-62) avec code d'identification. Source : https://www.haitidocs.org/doc/menfp-registre-ecoles-centre-2025?lang=ht . Les autres écoles et secteurs ne sont pas exhaustivement dépouillés.
+
+**14 structures sanitaires nominatives supplémentaires** ont été relevées avec code MSPP 2015 : Boucan-Carré (1), Lascahobas (3), Belladère (4), Savanette (2), Cerca-la-Source (4). Source : https://mspp.gouv.ht/site/downloads/Liste%20des%20Institutions%20Sanitaires%202015.pdf . Les mentions « NF » et catégories sont historiques. Certains libellés MSPP comportent des incohérences de typologie et des graphies originales; les conserver comme transcriptions, pas comme classifications médicales certifiées.
+
+**Cas Baptiste :** le Centre de Santé Baptiste (code 632101) est rattaché à Belladère / Renthe-Mathé dans le répertoire historique. Ce rattachement ne permet pas de déduire les frontières postérieures au décret du 22 juillet 2015.
+
+**Bilan :** registre national = 127 entrées toutes catégories et départements confondus; inventaire du Centre toujours **ouvert** : compléter écoles d'autres communes, autres lignes MSPP et actualité des établissements, puis vérifier patrimoine ISPAN. Aucun GPS ou statut d'ouverture 2026 inventé.
