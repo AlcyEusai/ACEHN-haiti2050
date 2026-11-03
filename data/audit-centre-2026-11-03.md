@@ -60,3 +60,17 @@ La reproduction du décret dans *Le Moniteur* n°147 du 5 août 2015 mentionne l
 ### À poursuivre
 
 Pour Maïssade, Thomonde, Cerca-Carvajal, Lascahobas, Savanette, Cerca-la-Source et Thomassique, aucune attribution patrimoniale détaillée n'a été ajoutée sans documentation suffisamment localisée. Le statut actuel des protections, les limites géoréférencées et les références archivistiques demeurent à vérifier.
+
+## Recherche complémentaire : sept communes et géométrie de Baptiste
+
+Les notices Maïssade, Thomonde, Cerca-Carvajal, Lascahobas, Savanette, Cerca-la-Source et Thomassique ont reçu des pistes historiques issues de Haiti-Référence et du diagnostic agricole du Haut Plateau Central (2004). Ce dernier est un document historique : ses sections communales ne sont pas réputées à jour sans comparaison officielle. Sources : https://www.haiti-reference.info/pages/plan/geographie-et-tourisme/divisions-territoriales/arrondissements-et-communes/centre/ et https://www.haitidocs.org/doc/gardel-haut-plateau-central-diagnostic-2004?lang=fr .
+
+### Cartographie de Baptiste : avertissement nécessaire
+
+La couche OCHA COD-AB présentée par HaitiDocs comprend 140 unités communales ADM2, et une carte du Centre publiée dans un rapport de la Banque mondiale (figure 6, carte datée de mars 2017) montre douze communes sans polygone autonome de Baptiste. Ces sources ne permettent donc pas de dessiner la commune créée en 2015. **Aucune géométrie ni coordonnées ne sont validées.** Sources : https://www.haitidocs.org/map/layers/boundaries-admin?lang=fr et https://documents1.worldbank.org/curated/en/262401525850726777/pdf/cges-resepagii-version-final.pdf .
+
+Le décret du 22 juillet 2015 reste la référence juridique pour les limites textuelles : https://redop.charesso.org/document/redopd-kgjdme1b-decret-du-22-juillet-2015-identifiant-et-etablissant-les-limites-territoriales-de-la-republique-dhaiti/ . Il faudra solliciter une couche administrative géoréférencée officielle auprès du CNIGS ou d'une autorité compétente, puis confronter la géométrie aux limites textuelles.
+
+### Niveau de validation
+
+Recherches historiques amorcées pour les 13 notices; cela **ne signifie pas** 13 inventaires patrimoniaux exhaustifs ou certifiés. Le patrimoine matériel, les établissements actuels et les limites cartographiques restent largement à documenter.
