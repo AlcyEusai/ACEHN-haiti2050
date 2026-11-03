@@ -383,9 +383,9 @@
       "lat": null,
       "lon": null,
       "source": "https://www.jobpaw.com/private/memoire/944.pdf",
-      "verification": "existence_documentee_localisation_non_verifiee",
+      "verification": "existence_documentee_sources_croisees_localisation_non_verifiee",
       "reviewStatus": "existence_documentee",
-      "evidence": "Étude universitaire UNDH décrivant le marché en Fer entre première et deuxième Grande Rue. Fonctionnement actuel à confirmer.",
+      "evidence": "Deux études décrivent un marché construit en 1910 entre la 1re et la 2e Grande Rue aux Cayes. Aucun point GPS de bâtiment vérifié; ne pas confondre avec le marché Hyppolite de Port-au-Prince.",
       "updatedAt": "2026-11-03",
       "checkedOnlineAt": "2026-11-03",
       "history": [
@@ -393,8 +393,14 @@
           "date": "2026-11-03",
           "action": "Ajout documentaire multi-sectoriel sans point GPS",
           "source": "https://www.jobpaw.com/private/memoire/944.pdf"
+        },
+        {
+          "date": "2026-11-03",
+          "action": "Recoupement documentaire des marchés et suspension de toute géolocalisation non corroborée",
+          "source": "https://www.jobpaw.com/private/memoire/944.pdf"
         }
-      ]
+      ],
+      "secondary": "https://www.memoireonline.com/11/13/7998/m_Typologie-et-analyse-de-la-gestion-des-dechets-municipaux-ordures-menageres-et-dechets-de-march13.html"
     },
     {
       "id": "ht-sud-les-cayes-marche-relais",
@@ -405,10 +411,10 @@
       "commune": "Les Cayes",
       "lat": null,
       "lon": null,
-      "source": "https://www.jobpaw.com/private/memoire/944.pdf",
-      "verification": "existence_documentee_localisation_non_verifiee",
+      "source": "https://minustah.unmissions.org/fr/news/cayes-important-coup-de-balai-au-marche-relais",
+      "verification": "existence_documentee_sources_croisees_localisation_non_verifiee",
       "reviewStatus": "existence_documentee",
-      "evidence": "Étude universitaire UNDH distinguant le marché Relais du marché en Fer; localisation précise et activité actuelle à confirmer.",
+      "evidence": "La MINUSTAH documente des travaux d'assainissement en 2015 et l'étude universitaire le distingue du Marché en Fer. Un mémoire le nomme aussi Croix-des-Bossales. Identité et position exactes à rapprocher des cartes.",
       "updatedAt": "2026-11-03",
       "checkedOnlineAt": "2026-11-03",
       "history": [
@@ -416,8 +422,14 @@
           "date": "2026-11-03",
           "action": "Ajout documentaire multi-sectoriel sans point GPS",
           "source": "https://www.jobpaw.com/private/memoire/944.pdf"
+        },
+        {
+          "date": "2026-11-03",
+          "action": "Recoupement documentaire des marchés et suspension de toute géolocalisation non corroborée",
+          "source": "https://minustah.unmissions.org/fr/news/cayes-important-coup-de-balai-au-marche-relais"
         }
-      ]
+      ],
+      "secondary": "https://www.jobpaw.com/private/memoire/944.pdf"
     },
     {
       "id": "ht-sud-les-cayes-aeroport-antoine-simon",
@@ -462,6 +474,54 @@
           "date": "2026-11-03",
           "action": "Ajout documentaire multi-sectoriel sans point GPS",
           "source": "https://communication.gouv.ht/communiques/lancement-des-etudes-et-elaboration-du-plan-directeur-de-laeroport-international-antoine-simon-des-cayes/"
+        }
+      ]
+    },
+    {
+      "id": "ht-sud-les-cayes-marche-rival",
+      "name": "Marché Rival",
+      "category": "commerce",
+      "source": "https://www.citiesalliance.org/sites/default/files/2024-10/lavil_rival_market_diagnostic_cayes_spreads_fr.pdf",
+      "secondary": "https://www.citiesalliance.org/resources/publications/brochure/profile-rival-market-les-cayes-haiti",
+      "verification": "existence_documentee_enquete_terrain_localisation_approximative",
+      "evidence": "Étude de terrain Cities Alliance : marché périurbain près de la RN7 et de l'aéroport Antoine-Simon, déplacé en 2002; aucun point précis géocodé confirmé.",
+      "department": "Sud",
+      "arrondissement": "Les Cayes",
+      "commune": "Les Cayes",
+      "lat": null,
+      "lon": null,
+      "reviewStatus": "existence_documentee",
+      "checkedOnlineAt": "2026-11-03",
+      "updatedAt": "2026-11-03",
+      "history": [
+        {
+          "date": "2026-11-03",
+          "action": "Ajout documentaire avec géolocalisation volontairement suspendue",
+          "source": "https://www.citiesalliance.org/sites/default/files/2024-10/lavil_rival_market_diagnostic_cayes_spreads_fr.pdf"
+        }
+      ]
+    },
+    {
+      "id": "ht-sud-les-cayes-marche-poissons-savane",
+      "name": "Marché aux poissons de la Savane",
+      "category": "commerce",
+      "source": "https://www.jobpaw.com/private/memoire/944.pdf",
+      "secondary": "https://www.cniah.org/uploads/3/4/3/2/34327341/normes_et_r%C3%A9f%C3%A9rentiel_technique_march%C3%A9s.pdf",
+      "verification": "mention_documentaire_sources_croisees",
+      "evidence": "Marché aux poissons mentionné à la Savane (K-ciel) dans une étude universitaire et dans un référentiel de marchés; activité actuelle et point GPS non vérifiés.",
+      "department": "Sud",
+      "arrondissement": "Les Cayes",
+      "commune": "Les Cayes",
+      "lat": null,
+      "lon": null,
+      "reviewStatus": "existence_documentee",
+      "checkedOnlineAt": "2026-11-03",
+      "updatedAt": "2026-11-03",
+      "history": [
+        {
+          "date": "2026-11-03",
+          "action": "Ajout documentaire avec géolocalisation volontairement suspendue",
+          "source": "https://www.jobpaw.com/private/memoire/944.pdf"
         }
       ]
     }
