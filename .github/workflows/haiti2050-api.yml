@@ -1,0 +1,25 @@
+name: Haiti2050 V4 API checks
+on:
+  push:
+    branches:
+      - prototype/haiti2050-v4-parcours
+    paths:
+      - 'api/**'
+      - '.github/workflows/haiti2050-api.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  test-api:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install dependencies
+        run: pip install -r api/requirements.txt pytest httpx
+      - name: Run API tests
+        run: python -m pytest -q api/test_main.py
+      - name: Compile API
+        run: python -m compileall -q api
