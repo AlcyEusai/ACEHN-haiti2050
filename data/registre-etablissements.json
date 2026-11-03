@@ -1,5 +1,163 @@
 {
   "schemaVersion": 1,
-  "updatedAt": null,
-  "places": []
+  "updatedAt": "2026-11-03",
+  "publicationNote": "Fiches documentaires provisoires : aucune validation de terrain ni approbation institutionnelle implicite.",
+  "places": [
+    {
+      "id": "ht-sud-fdb-hospital-sb",
+      "name": "Hôpital Saint-Boniface",
+      "category": "sante",
+      "department": "Sud",
+      "arrondissement": "Aquin",
+      "commune": "Fond-des-Blancs",
+      "lat": null,
+      "lon": null,
+      "source": "https://www.openstreetmap.org/way/92449608",
+      "secondary": "https://healthequityintl.org/our-work/st-boniface-hospital-sbh",
+      "verification": "localisation_a_verifier",
+      "reviewStatus": "documented_unverified",
+      "note": "Bâtiment hospitalier cartographié ; activité confirmée par l'organisme gestionnaire. Coordonnées non corroborées par une source géographique consultable : marqueur suspendu.",
+      "updatedAt": "2026-11-03",
+      "history": [
+        {
+          "date": "2026-11-03",
+          "action": "Import documentaire depuis l'inventaire pilote, sans validation de terrain",
+          "source": "data/fond-des-blancs-inventaire.json"
+        }
+      ]
+    },
+    {
+      "id": "ht-sud-fdb-market-fdb",
+      "name": "Marché de Fond-des-Blancs",
+      "category": "commerce",
+      "department": "Sud",
+      "arrondissement": "Aquin",
+      "commune": "Fond-des-Blancs",
+      "lat": 18.27625,
+      "lon": -73.12457,
+      "source": "https://mapcarta.com/fr/26893586",
+      "verification": "coordonnees_secondaires",
+      "reviewStatus": "documented_unverified",
+      "note": "Position issue d'un agrégateur géographique ; nom et activité actuelle à confirmer.",
+      "updatedAt": "2026-11-03",
+      "history": [
+        {
+          "date": "2026-11-03",
+          "action": "Import documentaire depuis l'inventaire pilote, sans validation de terrain",
+          "source": "data/fond-des-blancs-inventaire.json"
+        }
+      ]
+    },
+    {
+      "id": "ht-sud-fdb-ecole-nationale",
+      "name": "École nationale Fond-des-Blancs",
+      "category": "education",
+      "department": "Sud",
+      "arrondissement": "Aquin",
+      "commune": "Fond-des-Blancs",
+      "lat": null,
+      "lon": null,
+      "source": "https://charesso.org/en/observatories/elections/centres/?departement=CENTRE",
+      "verification": "localisation_a_verifier",
+      "reviewStatus": "documented_unverified",
+      "note": "Coordonnées publiées dans un répertoire de centres ; emplacement à confirmer sur le terrain. Coordonnées non corroborées par une source géographique consultable : marqueur suspendu.",
+      "updatedAt": "2026-11-03",
+      "history": [
+        {
+          "date": "2026-11-03",
+          "action": "Import documentaire depuis l'inventaire pilote, sans validation de terrain",
+          "source": "data/fond-des-blancs-inventaire.json"
+        }
+      ]
+    },
+    {
+      "id": "ht-sud-fdb-college-classique",
+      "name": "Collège classique (Sainthon)",
+      "category": "education",
+      "department": "Sud",
+      "arrondissement": "Aquin",
+      "commune": "Fond-des-Blancs",
+      "lat": null,
+      "lon": null,
+      "source": "https://charesso.org/en/observatories/elections/centres/?departement=CENTRE",
+      "verification": "localisation_a_verifier",
+      "reviewStatus": "documented_unverified",
+      "note": "Coordonnées déclarées pour un centre ; identification et fonctionnement à confirmer. Coordonnées non corroborées par une source géographique consultable : marqueur suspendu.",
+      "updatedAt": "2026-11-03",
+      "history": [
+        {
+          "date": "2026-11-03",
+          "action": "Import documentaire depuis l'inventaire pilote, sans validation de terrain",
+          "source": "data/fond-des-blancs-inventaire.json"
+        }
+      ]
+    },
+    {
+      "id": "ht-sud-fdb-eglise-francis",
+      "name": "Église Saint-François-Xavier",
+      "category": "patrimoine",
+      "department": "Sud",
+      "arrondissement": "Aquin",
+      "commune": "Fond-des-Blancs",
+      "lat": null,
+      "lon": null,
+      "source": "https://mapcarta.com/fr/26893586",
+      "verification": "localisation_a_verifier",
+      "reviewStatus": "documented_unverified",
+      "note": "Lieu mentionné à proximité du marché ; pas de coordonnées individuelles vérifiées.",
+      "updatedAt": "2026-11-03",
+      "history": [
+        {
+          "date": "2026-11-03",
+          "action": "Import documentaire depuis l'inventaire pilote, sans validation de terrain",
+          "source": "data/fond-des-blancs-inventaire.json"
+        }
+      ]
+    },
+    {
+      "id": "ht-sud-fdb-mairie",
+      "name": "Mairie de Fond-des-Blancs",
+      "category": "administration",
+      "department": "Sud",
+      "arrondissement": "Aquin",
+      "commune": "Fond-des-Blancs",
+      "lat": null,
+      "lon": null,
+      "source": "https://fonddesblancsht.org/",
+      "verification": "localisation_a_verifier",
+      "reviewStatus": "documented_unverified",
+      "note": "Présence institutionnelle à confirmer auprès de la mairie ; le statut officiel du portail cité n'est pas authentifié.",
+      "updatedAt": "2026-11-03",
+      "history": [
+        {
+          "date": "2026-11-03",
+          "action": "Import documentaire depuis l'inventaire pilote, sans validation de terrain",
+          "source": "data/fond-des-blancs-inventaire.json"
+        }
+      ]
+    },
+    {
+      "id": "ht-sud-fdb-adf",
+      "name": "ADF Haiti",
+      "category": "administration",
+      "department": "Sud",
+      "arrondissement": "Aquin",
+      "commune": "Fond-des-Blancs",
+      "lat": 18.29042,
+      "lon": -73.10253,
+      "source": "https://www.openstreetmap.org/node/9695345656",
+      "osmId": "node/9695345656",
+      "verification": "coordonnees_osm",
+      "reviewStatus": "documented_unverified",
+      "note": "Position cartographique publiée sur OpenStreetMap. Horaires, coordonnées de contact et activité à confirmer directement auprès de l'association.",
+      "updatedAt": "2026-11-03",
+      "history": [
+        {
+          "date": "2026-11-03",
+          "action": "Import documentaire depuis l'inventaire pilote, sans validation de terrain",
+          "source": "data/fond-des-blancs-inventaire.json"
+        }
+      ]
+    }
+  ]
 }
