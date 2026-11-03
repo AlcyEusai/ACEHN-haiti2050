@@ -2773,7 +2773,7 @@
       "services": [],
       "infrastructures": [],
       "heritage": [],
-      "verification": "demographie_documentee_autres_rubriques_a_completer",
+      "verification": "demographie_documentee_audit_historique_patrimonial_ouvert",
       "audit": {
         "reviewedAt": "2026-11-03",
         "method": "Lecture des tableaux 110 et 111 du rapport IHSI 2024 et calcul du total urbain+rural.",
@@ -2781,8 +2781,11 @@
           "Estimations 2024, pas un recensement.",
           "Population totale calculée à partir des deux tableaux et non copiée d'un tableau de population totale.",
           "Services publics, patrimoine, histoire et infrastructures à documenter indépendamment.",
-          "Aucune coordonnée GPS inventée."
-        ]
+          "Aucune coordonnée GPS inventée.",
+          "Chronologie historique et éventuels sites patrimoniaux nécessitent des références primaires propres à la commune.",
+          "Ne pas confondre patrimoine culturel local, pèlerinage, protection juridique nationale et inscription UNESCO."
+        ],
+        "historicalAdministrativeReview": "Revue documentaire initiale : rattachement territorial confronté au tableau administratif IHSI 2024. Patrimoine non certifié sans inventaire ISPAN localisé."
       },
       "populationTotale2024": {
         "value": 138051,
@@ -2957,7 +2960,7 @@
       "services": [],
       "infrastructures": [],
       "heritage": [],
-      "verification": "demographie_ihsi_documentee_autres_rubriques_a_completer",
+      "verification": "demographie_documentee_audit_historique_patrimonial_ouvert",
       "audit": {
         "reviewedAt": "2026-11-03",
         "method": "Transcription des estimations de population IHSI 2024 tableau 250, superficie du tableau 251 si indiquée.",
@@ -2965,8 +2968,11 @@
           "Estimation 2024, non recensement.",
           "Population communale totale, urbaine et rurale distinctes des quartiers et sections.",
           "Services, infrastructures, histoire et patrimoine non vérifiés dans cette phase.",
-          "Aucune coordonnée GPS ni établissement inventés."
-        ]
+          "Aucune coordonnée GPS ni établissement inventés.",
+          "Chronologie historique et éventuels sites patrimoniaux nécessitent des références primaires propres à la commune.",
+          "Ne pas confondre patrimoine culturel local, pèlerinage, protection juridique nationale et inscription UNESCO."
+        ],
+        "historicalAdministrativeReview": "Revue documentaire initiale : rattachement territorial confronté au tableau administratif IHSI 2024. Patrimoine non certifié sans inventaire ISPAN localisé."
       },
       "populationTotale2024": {
         "value": 111654,
@@ -3006,7 +3012,7 @@
       "services": [],
       "infrastructures": [],
       "heritage": [],
-      "verification": "demographie_ihsi_documentee_autres_rubriques_a_completer",
+      "verification": "demographie_documentee_audit_historique_patrimonial_ouvert",
       "audit": {
         "reviewedAt": "2026-11-03",
         "method": "Transcription des estimations de population IHSI 2024 tableau 250, superficie du tableau 251 si indiquée.",
@@ -3014,8 +3020,11 @@
           "Estimation 2024, non recensement.",
           "Population communale totale, urbaine et rurale distinctes des quartiers et sections.",
           "Services, infrastructures, histoire et patrimoine non vérifiés dans cette phase.",
-          "Aucune coordonnée GPS ni établissement inventés."
-        ]
+          "Aucune coordonnée GPS ni établissement inventés.",
+          "Chronologie historique et éventuels sites patrimoniaux nécessitent des références primaires propres à la commune.",
+          "Ne pas confondre patrimoine culturel local, pèlerinage, protection juridique nationale et inscription UNESCO."
+        ],
+        "historicalAdministrativeReview": "Revue documentaire initiale : rattachement territorial confronté au tableau administratif IHSI 2024. Patrimoine non certifié sans inventaire ISPAN localisé."
       },
       "populationTotale2024": {
         "value": 44616,
@@ -3147,7 +3156,7 @@
       "services": [],
       "infrastructures": [],
       "heritage": [],
-      "verification": "demographie_ihsi_documentee_autres_rubriques_a_completer",
+      "verification": "demographie_documentee_audit_historique_patrimonial_ouvert",
       "audit": {
         "reviewedAt": "2026-11-03",
         "method": "Transcription des estimations de population IHSI 2024 tableau 250, superficie du tableau 251 si indiquée.",
@@ -3155,8 +3164,11 @@
           "Estimation 2024, non recensement.",
           "Population communale totale, urbaine et rurale distinctes des quartiers et sections.",
           "Services, infrastructures, histoire et patrimoine non vérifiés dans cette phase.",
-          "Aucune coordonnée GPS ni établissement inventés."
-        ]
+          "Aucune coordonnée GPS ni établissement inventés.",
+          "Chronologie historique et éventuels sites patrimoniaux nécessitent des références primaires propres à la commune.",
+          "Ne pas confondre patrimoine culturel local, pèlerinage, protection juridique nationale et inscription UNESCO."
+        ],
+        "historicalAdministrativeReview": "Revue documentaire initiale : rattachement territorial confronté au tableau administratif IHSI 2024. Patrimoine non certifié sans inventaire ISPAN localisé."
       },
       "populationTotale2024": {
         "value": 98916,
@@ -3241,7 +3253,7 @@
       "services": [],
       "infrastructures": [],
       "heritage": [],
-      "verification": "statut_administratif_divergent_quartier_ihsi",
+      "verification": "divergence_ihsi_statut_juridique_non_confirme",
       "audit": {
         "reviewedAt": "2026-11-03",
         "method": "Comparaison du tableau administratif et du tableau démographique 250 de l'IHSI 2024.",
@@ -3249,8 +3261,11 @@
           "Baptiste figure comme commune dans le tableau administratif, mais comme quartier de Belladère dans le tableau 250.",
           "Les 6 278 habitants sont déjà inclus dans Belladère; ne pas les compter une seconde fois.",
           "Population communale autonome et limites territoriales non établies.",
-          "Ne pas inférer de coordonnées ni d'établissements."
-        ]
+          "Ne pas inférer de coordonnées ni d'établissements.",
+          "La nomenclature administrative et l'unité statistique ne concordent pas dans les sections consultées de l'IHSI.",
+          "Recherche du texte légal de création et des limites territoriales requise avant qualification définitive."
+        ],
+        "administrativeReview": "L'IHSI 2024 inscrit Baptiste parmi les communes dans son tableau administratif, mais le tableau de population le traite comme quartier de Belladère. Sans décret ou arrêté officiel authentifié, la divergence reste ouverte."
       },
       "administrativeStatus": "mention_commune_tableau_administratif_quartier_belladere_tableau_demographique",
       "populationQuartier2024": {
