@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "updatedAt": "2026-11-03",
-  "publicationNote": "Fiches documentaires provisoires : aucune validation de terrain ni approbation institutionnelle implicite.",
+  "publicationNote": "Existence documentée ≠ établissement actuellement ouvert ; les points non vérifiés ne sont pas placés sur la carte.",
   "places": [
     {
       "id": "ht-sud-fdb-hospital-sb",
@@ -12,10 +12,10 @@
       "commune": "Fond-des-Blancs",
       "lat": null,
       "lon": null,
-      "source": "https://www.openstreetmap.org/way/92449608",
-      "secondary": "https://healthequityintl.org/our-work/st-boniface-hospital-sbh",
-      "verification": "localisation_a_verifier",
-      "reviewStatus": "documented_unverified",
+      "source": "https://healthequityintl.org/our-work/st-boniface-hospital-sbh",
+      "secondary": "https://www.openstreetmap.org/way/92449608",
+      "verification": "existence_confirmee_source_primaire",
+      "reviewStatus": "existence_documentee",
       "note": "Bâtiment hospitalier cartographié ; activité confirmée par l'organisme gestionnaire. Coordonnées non corroborées par une source géographique consultable : marqueur suspendu.",
       "updatedAt": "2026-11-03",
       "history": [
@@ -23,8 +23,15 @@
           "date": "2026-11-03",
           "action": "Import documentaire depuis l'inventaire pilote, sans validation de terrain",
           "source": "data/fond-des-blancs-inventaire.json"
+        },
+        {
+          "date": "2026-11-03",
+          "action": "Revue documentaire des sources : existence_confirmee_source_primaire",
+          "source": "https://healthequityintl.org/our-work/st-boniface-hospital-sbh"
         }
-      ]
+      ],
+      "evidence": "L'organisme gestionnaire présente explicitement l'hôpital et ses services. Position exacte non vérifiée.",
+      "checkedOnlineAt": "2026-11-03"
     },
     {
       "id": "ht-sud-fdb-market-fdb",
@@ -36,8 +43,8 @@
       "lat": 18.27625,
       "lon": -73.12457,
       "source": "https://mapcarta.com/fr/26893586",
-      "verification": "coordonnees_secondaires",
-      "reviewStatus": "documented_unverified",
+      "verification": "lieu_cartographie_source_secondaire",
+      "reviewStatus": "a_verifier",
       "note": "Position issue d'un agrégateur géographique ; nom et activité actuelle à confirmer.",
       "updatedAt": "2026-11-03",
       "history": [
@@ -45,8 +52,15 @@
           "date": "2026-11-03",
           "action": "Import documentaire depuis l'inventaire pilote, sans validation de terrain",
           "source": "data/fond-des-blancs-inventaire.json"
+        },
+        {
+          "date": "2026-11-03",
+          "action": "Revue documentaire des sources : lieu_cartographie_source_secondaire",
+          "source": "https://mapcarta.com/fr/26893586"
         }
-      ]
+      ],
+      "evidence": "Mapcarta répertorie le marché avec latitude et longitude; aucune vérification indépendante de son activité actuelle.",
+      "checkedOnlineAt": "2026-11-03"
     },
     {
       "id": "ht-sud-fdb-ecole-nationale",
@@ -58,8 +72,8 @@
       "lat": null,
       "lon": null,
       "source": "https://charesso.org/en/observatories/elections/centres/?departement=CENTRE",
-      "verification": "localisation_a_verifier",
-      "reviewStatus": "documented_unverified",
+      "verification": "mention_non_confirmee",
+      "reviewStatus": "a_verifier",
       "note": "Coordonnées publiées dans un répertoire de centres ; emplacement à confirmer sur le terrain. Coordonnées non corroborées par une source géographique consultable : marqueur suspendu.",
       "updatedAt": "2026-11-03",
       "history": [
@@ -67,8 +81,15 @@
           "date": "2026-11-03",
           "action": "Import documentaire depuis l'inventaire pilote, sans validation de terrain",
           "source": "data/fond-des-blancs-inventaire.json"
+        },
+        {
+          "date": "2026-11-03",
+          "action": "Revue documentaire des sources : mention_non_confirmee",
+          "source": "https://charesso.org/en/observatories/elections/centres/?departement=CENTRE"
         }
-      ]
+      ],
+      "evidence": "Le lien initial pointe vers des centres électoraux du département du Centre; il ne confirme pas cet établissement dans le Sud.",
+      "checkedOnlineAt": "2026-11-03"
     },
     {
       "id": "ht-sud-fdb-college-classique",
@@ -80,8 +101,8 @@
       "lat": null,
       "lon": null,
       "source": "https://charesso.org/en/observatories/elections/centres/?departement=CENTRE",
-      "verification": "localisation_a_verifier",
-      "reviewStatus": "documented_unverified",
+      "verification": "mention_non_confirmee",
+      "reviewStatus": "a_verifier",
       "note": "Coordonnées déclarées pour un centre ; identification et fonctionnement à confirmer. Coordonnées non corroborées par une source géographique consultable : marqueur suspendu.",
       "updatedAt": "2026-11-03",
       "history": [
@@ -89,8 +110,15 @@
           "date": "2026-11-03",
           "action": "Import documentaire depuis l'inventaire pilote, sans validation de terrain",
           "source": "data/fond-des-blancs-inventaire.json"
+        },
+        {
+          "date": "2026-11-03",
+          "action": "Revue documentaire des sources : mention_non_confirmee",
+          "source": "https://charesso.org/en/observatories/elections/centres/?departement=CENTRE"
         }
-      ]
+      ],
+      "evidence": "Le lien initial pointe vers des centres électoraux du département du Centre; il ne confirme pas ce collège dans le Sud.",
+      "checkedOnlineAt": "2026-11-03"
     },
     {
       "id": "ht-sud-fdb-eglise-francis",
@@ -102,8 +130,8 @@
       "lat": null,
       "lon": null,
       "source": "https://mapcarta.com/fr/26893586",
-      "verification": "localisation_a_verifier",
-      "reviewStatus": "documented_unverified",
+      "verification": "lieu_cartographie_source_secondaire",
+      "reviewStatus": "a_verifier",
       "note": "Lieu mentionné à proximité du marché ; pas de coordonnées individuelles vérifiées.",
       "updatedAt": "2026-11-03",
       "history": [
@@ -111,8 +139,15 @@
           "date": "2026-11-03",
           "action": "Import documentaire depuis l'inventaire pilote, sans validation de terrain",
           "source": "data/fond-des-blancs-inventaire.json"
+        },
+        {
+          "date": "2026-11-03",
+          "action": "Revue documentaire des sources : lieu_cartographie_source_secondaire",
+          "source": "https://mapcarta.com/fr/26893586"
         }
-      ]
+      ],
+      "evidence": "Mapcarta mentionne St Francis of Xavier Church à proximité du marché; nom français et localisation précise à confirmer.",
+      "checkedOnlineAt": "2026-11-03"
     },
     {
       "id": "ht-sud-fdb-mairie",
@@ -124,8 +159,8 @@
       "lat": null,
       "lon": null,
       "source": "https://fonddesblancsht.org/",
-      "verification": "localisation_a_verifier",
-      "reviewStatus": "documented_unverified",
+      "verification": "mention_non_confirmee",
+      "reviewStatus": "a_verifier",
       "note": "Présence institutionnelle à confirmer auprès de la mairie ; le statut officiel du portail cité n'est pas authentifié.",
       "updatedAt": "2026-11-03",
       "history": [
@@ -133,8 +168,15 @@
           "date": "2026-11-03",
           "action": "Import documentaire depuis l'inventaire pilote, sans validation de terrain",
           "source": "data/fond-des-blancs-inventaire.json"
+        },
+        {
+          "date": "2026-11-03",
+          "action": "Revue documentaire des sources : mention_non_confirmee",
+          "source": "https://fonddesblancsht.org/"
         }
-      ]
+      ],
+      "evidence": "Le portail cité n'a pas pu être authentifié comme source institutionnelle officielle.",
+      "checkedOnlineAt": "2026-11-03"
     },
     {
       "id": "ht-sud-fdb-adf",
@@ -143,12 +185,12 @@
       "department": "Sud",
       "arrondissement": "Aquin",
       "commune": "Fond-des-Blancs",
-      "lat": 18.29042,
-      "lon": -73.10253,
-      "source": "https://www.openstreetmap.org/node/9695345656",
+      "lat": null,
+      "lon": null,
+      "source": "https://www.adf.ht/data",
       "osmId": "node/9695345656",
-      "verification": "coordonnees_osm",
-      "reviewStatus": "documented_unverified",
+      "verification": "existence_confirmee_source_primaire",
+      "reviewStatus": "existence_documentee",
       "note": "Position cartographique publiée sur OpenStreetMap. Horaires, coordonnées de contact et activité à confirmer directement auprès de l'association.",
       "updatedAt": "2026-11-03",
       "history": [
@@ -156,6 +198,129 @@
           "date": "2026-11-03",
           "action": "Import documentaire depuis l'inventaire pilote, sans validation de terrain",
           "source": "data/fond-des-blancs-inventaire.json"
+        },
+        {
+          "date": "2026-11-03",
+          "action": "Revue documentaire des sources : existence_confirmee_source_primaire",
+          "source": "https://www.adf.ht/data"
+        }
+      ],
+      "secondary": "https://www.openstreetmap.org/node/9695345656",
+      "evidence": "Le site de l'association donne une adresse à Dugué, Fond-des-Blancs. Le point GPS OSM précédemment fourni n'a pas été vérifié indépendamment; coordonnées suspendues.",
+      "checkedOnlineAt": "2026-11-03"
+    },
+    {
+      "id": "ht-sud-aquin-hopital-communautaire-de-reference-d-aquin",
+      "name": "Hôpital communautaire de référence d'Aquin",
+      "category": "sante",
+      "department": "Sud",
+      "arrondissement": "Aquin",
+      "commune": "Aquin",
+      "lat": null,
+      "lon": null,
+      "source": "https://healthequityintl.org/our-work/health-system-strengthening/southwest-corridor-healthcare-alliance",
+      "verification": "existence_documentee_reseau_sante",
+      "reviewStatus": "existence_documentee",
+      "evidence": "Établissement nommé par Health Equity International parmi les structures du réseau Southwest Corridor Healthcare Alliance. Coordonnées et fonctionnement actuel à vérifier.",
+      "updatedAt": "2026-11-03",
+      "checkedOnlineAt": "2026-11-03",
+      "history": [
+        {
+          "date": "2026-11-03",
+          "action": "Ajout documentaire depuis le réseau de santé HEI; sans coordonnées vérifiées",
+          "source": "https://healthequityintl.org/our-work/health-system-strengthening/southwest-corridor-healthcare-alliance"
+        }
+      ]
+    },
+    {
+      "id": "ht-sud-saint-louis-du-sud-centre-de-sante-de-saint-louis-du-sud",
+      "name": "Centre de Santé de Saint-Louis-du-Sud",
+      "category": "sante",
+      "department": "Sud",
+      "arrondissement": "Aquin",
+      "commune": "Saint-Louis-du-Sud",
+      "lat": null,
+      "lon": null,
+      "source": "https://healthequityintl.org/our-work/health-system-strengthening/southwest-corridor-healthcare-alliance",
+      "verification": "existence_documentee_reseau_sante",
+      "reviewStatus": "existence_documentee",
+      "evidence": "Établissement nommé par Health Equity International parmi les structures du réseau Southwest Corridor Healthcare Alliance. Coordonnées et fonctionnement actuel à vérifier.",
+      "updatedAt": "2026-11-03",
+      "checkedOnlineAt": "2026-11-03",
+      "history": [
+        {
+          "date": "2026-11-03",
+          "action": "Ajout documentaire depuis le réseau de santé HEI; sans coordonnées vérifiées",
+          "source": "https://healthequityintl.org/our-work/health-system-strengthening/southwest-corridor-healthcare-alliance"
+        }
+      ]
+    },
+    {
+      "id": "ht-sud-cavaillon-hopital-lumiere-de-bonne-fin",
+      "name": "Hôpital Lumière de Bonne Fin",
+      "category": "sante",
+      "department": "Sud",
+      "arrondissement": "Aquin",
+      "commune": "Cavaillon",
+      "lat": null,
+      "lon": null,
+      "source": "https://healthequityintl.org/our-work/health-system-strengthening/southwest-corridor-healthcare-alliance",
+      "verification": "existence_documentee_reseau_sante",
+      "reviewStatus": "existence_documentee",
+      "evidence": "Établissement nommé par Health Equity International parmi les structures du réseau Southwest Corridor Healthcare Alliance. Coordonnées et fonctionnement actuel à vérifier.",
+      "updatedAt": "2026-11-03",
+      "checkedOnlineAt": "2026-11-03",
+      "history": [
+        {
+          "date": "2026-11-03",
+          "action": "Ajout documentaire depuis le réseau de santé HEI; sans coordonnées vérifiées",
+          "source": "https://healthequityintl.org/our-work/health-system-strengthening/southwest-corridor-healthcare-alliance"
+        }
+      ]
+    },
+    {
+      "id": "ht-sud-maniche-centre-de-sante-de-maniche",
+      "name": "Centre de Santé de Maniche",
+      "category": "sante",
+      "department": "Sud",
+      "arrondissement": "Les Cayes",
+      "commune": "Maniche",
+      "lat": null,
+      "lon": null,
+      "source": "https://healthequityintl.org/our-work/health-system-strengthening/southwest-corridor-healthcare-alliance",
+      "verification": "existence_documentee_reseau_sante",
+      "reviewStatus": "existence_documentee",
+      "evidence": "Établissement nommé par Health Equity International parmi les structures du réseau Southwest Corridor Healthcare Alliance. Coordonnées et fonctionnement actuel à vérifier.",
+      "updatedAt": "2026-11-03",
+      "checkedOnlineAt": "2026-11-03",
+      "history": [
+        {
+          "date": "2026-11-03",
+          "action": "Ajout documentaire depuis le réseau de santé HEI; sans coordonnées vérifiées",
+          "source": "https://healthequityintl.org/our-work/health-system-strengthening/southwest-corridor-healthcare-alliance"
+        }
+      ]
+    },
+    {
+      "id": "ht-sud-les-cayes-hopital-immaculee-conception",
+      "name": "Hôpital Immaculée Conception",
+      "category": "sante",
+      "department": "Sud",
+      "arrondissement": "Les Cayes",
+      "commune": "Les Cayes",
+      "lat": null,
+      "lon": null,
+      "source": "https://healthequityintl.org/our-work/health-system-strengthening/southwest-corridor-healthcare-alliance",
+      "verification": "existence_documentee_reseau_sante",
+      "reviewStatus": "existence_documentee",
+      "evidence": "Établissement nommé par Health Equity International parmi les structures du réseau Southwest Corridor Healthcare Alliance. Coordonnées et fonctionnement actuel à vérifier.",
+      "updatedAt": "2026-11-03",
+      "checkedOnlineAt": "2026-11-03",
+      "history": [
+        {
+          "date": "2026-11-03",
+          "action": "Ajout documentaire depuis le réseau de santé HEI; sans coordonnées vérifiées",
+          "source": "https://healthequityintl.org/our-work/health-system-strengthening/southwest-corridor-healthcare-alliance"
         }
       ]
     }
