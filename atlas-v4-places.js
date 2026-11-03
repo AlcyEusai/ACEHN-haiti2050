@@ -13,15 +13,23 @@ $("v4LoadPlaces").addEventListener("click",async()=>{
 if(map.getZoom()<11){status.textContent="Zoomez davantage sur une commune (niveau 11 minimum).";return}
 const b=map.getBounds(),area=[b.getSouth(),b.getWest(),b.getNorth(),b.getEast()].join(",");
 const q='[out:json][timeout:25];('+rules[kind].split(";").map(x=>x+'('+area+');').join("")+');out center 300;';
-const id=++request;status.textContent="Chargement des lieux…";
-try{const response=await fetch("https://overpass.kumi.systems/api/interpreter",{method:"POST",headers:{"Content-Type":"application/x-www-form-urlencoded"},body:"data="+encodeURIComponent(q)});
-if(!response.ok)throw Error("service temporairement indisponible");
-const data=await response.json();if(id!==request)return;layer.clearLayers();details.replaceChildren();let count=0;
+const id=++request;const loadButton=$("v4LoadPlaces");loadButton.disabled=true;status.textContent="Chargement des lieux…";
+try{const endpoints=["https://overpass-api.de/api/interpreter","https://overpass.kumi.systems/api/interpreter"];
+let data=null,lastError=null;
+for(const endpoint of endpoints){
+ const controller=new AbortController(),timeout=setTimeout(()=>controller.abort(),18000);
+ try{
+  const response=await fetch(endpoint,{method:"POST",headers:{"Content-Type":"application/x-www-form-urlencoded;charset=UTF-8"},body:"data="+encodeURIComponent(q),signal:controller.signal});
+  if(!response.ok)throw Error("HTTP "+response.status);
+  data=await response.json();break;
+ }catch(error){lastError=error}finally{clearTimeout(timeout)}
+}
+if(!data)throw Error(lastError?.name==="AbortError"?"Délai dépassé sur les serveurs OpenStreetMap":lastError?.message||"Serveurs indisponibles");if(id!==request)return;layer.clearLayers();details.replaceChildren();let count=0;
 for(const e of data.elements||[]){const lat=e.lat??e.center?.lat,lon=e.lon??e.center?.lon;if(!Number.isFinite(lat)||!Number.isFinite(lon))continue;const tags=e.tags||{},name=tags["name:fr"]||tags.name||"Lieu sans nom";
 const point=L.circleMarker([lat,lon],{radius:6,color:"#fff",weight:1.5,fillColor:"#0b796b",fillOpacity:.95}).addTo(layer);
 point.bindTooltip(name);point.on("click",()=>{details.replaceChildren();const h=document.createElement("h4");h.textContent=name;const p=document.createElement("p");p.textContent="Catégorie : "+(tags.office||tags.amenity||tags.tourism||tags.historic||"Lieu cartographié");details.append(h,p);for(const [label,value] of [["Adresse",tags["addr:street"]],["Téléphone",tags.phone],["Site web",tags.website]]){if(value){const line=document.createElement("p");line.textContent=label+" : "+value;details.appendChild(line)}}const note=document.createElement("small");note.textContent="Source : OpenStreetMap. Informations non vérifiées en temps réel.";details.appendChild(note);});count++}
 status.textContent=count+" lieux chargés dans la zone visible (données non exhaustives).";
-}catch(e){if(id===request)status.textContent="Impossible de charger les lieux : "+e.message+". Réessayez plus tard."}
+}catch(e){if(id===request)status.textContent="Impossible de charger les lieux : "+e.message+". Réessayez plus tard ou zoomez sur une zone plus petite."}finally{loadButton.disabled=false}
 });
 const nav=document.querySelector("header nav");if(nav){nav.replaceChildren();for(const [label,target,kindValue] of [["Explorer Haïti","#atlas","all"],["Tourisme & patrimoine","#atlas","tourism"],["Services & administrations","#atlas","office"],["Sécurité & vigilance","#v4Vigilance",""],["Vision Haïti 2050","#projects",""]]){const a=document.createElement("a");a.href=target;a.textContent=label;a.addEventListener("click",()=>{if(kindValue){const button=toolbar.querySelector('[data-kind="'+kindValue+'"]');button?.click()}if(label==="Vision Haïti 2050"){const mode=$("haiti2050ViewMode");if(mode){mode.value="future";mode.dispatchEvent(new Event("change",{bubbles:true}))}}});nav.appendChild(a)}}
 const vigilance=document.createElement("section");vigilance.id="v4Vigilance";vigilance.className="v4-vigilance";vigilance.innerHTML='<h2>Sécurité & vigilance</h2><p>Ce prototype ne fournit pas d’alertes en temps réel. Consultez les avis officiels datés avant tout déplacement. L’absence de signalement ne signifie pas qu’une zone est sûre.</p>';document.querySelector("#method")?.before(vigilance);
