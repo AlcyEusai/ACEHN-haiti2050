@@ -2437,33 +2437,56 @@
       "heritage": [
         {
           "name": "Fort Décidé",
-          "detail": "Fortification du système défensif de Marchand-Dessalines décrite par l'ISPAN en 2009. État actuel et accès à vérifier.",
+          "detail": "Fortification du système défensif de Marchand-Dessalines décrite par l'ISPAN en 2009. État actuel et accès à vérifier. Attribution communale précise et périmètre géographique à confirmer; aucune géolocalisation ajoutée.",
           "source": "https://www.haitidocs.org/doc/ispan-bulletin-2009-08?lang=fr",
           "status": "historique"
         },
         {
           "name": "Fort Culbuté (fort La Source)",
-          "detail": "Fortification destinée à protéger l'entrée orientale de Marchand-Dessalines et les sources d'eau; décrite dans l'inventaire patrimonial du MTPTC de 2021.",
+          "detail": "Fortification destinée à protéger l'entrée orientale de Marchand-Dessalines et les sources d'eau; décrite dans l'inventaire patrimonial du MTPTC de 2021. Attribution communale précise et périmètre géographique à confirmer; aucune géolocalisation ajoutée.",
           "source": "https://www.mtptc.gouv.ht/media/upload/doc/publications/FA_PARR_PGES_Dessalines-Saint%20Michel_Septembre%202021.pdf",
           "status": "historique"
         },
         {
           "name": "Système fortifié de Marchand-Dessalines",
-          "detail": "Ensemble historique de plusieurs forts décrit par l'ISPAN; les ouvrages situés hors des limites communales ne sont pas attribués automatiquement à Dessalines.",
+          "detail": "Ensemble historique de plusieurs forts décrit par l'ISPAN; les ouvrages situés hors des limites communales ne sont pas attribués automatiquement à Dessalines. Attribution communale précise et périmètre géographique à confirmer; aucune géolocalisation ajoutée.",
           "source": "https://www.haitidocs.org/doc/ispan-bulletin-2009-10?lang=fr",
           "status": "historique"
         }
       ],
-      "verification": "histoire_et_patrimoine_documentes_demographie_a_completer",
+      "verification": "demographie_ihsi_documentee_patrimoine_partiel",
       "audit": {
         "reviewedAt": "2026-11-03",
         "method": "Recoupement ISPAN 2009, inventaire MTPTC 2021 et répertoire historique.",
         "warnings": [
-          "Les descriptions historiques ne prouvent pas l'état des monuments en 2026.",
-          "Les limites des fortifications voisines doivent être contrôlées.",
-          "Population et superficie à renseigner après contrôle IHSI.",
-          "Aucune coordonnée GPS inférée."
-        ]
+          "Population estimée en 2024; non recensement.",
+          "Ne pas confondre population urbaine et totale.",
+          "État actuel des monuments, services et équipements à confirmer.",
+          "Coordonnées et limites patrimoniales non inférées.",
+          "Les ouvrages du système fortifié de Marchand-Dessalines ne sont pas tous attribués à la commune sans preuve de localisation précise."
+        ],
+        "demographyReference": "IHSI 2024, tableau 248 (population), tableau 249 (superficie lorsqu'indiquée)"
+      },
+      "populationTotale2024": {
+        "value": 199677,
+        "year": 2024,
+        "source": "https://www.haitidocs.org/doc/ihsi-2024-disaggregated-estimates?lang=fr",
+        "status": "documente",
+        "note": "Estimation IHSI 2024, tableau 248, population totale de la commune."
+      },
+      "populationUrbaine": {
+        "value": 77145,
+        "year": 2024,
+        "source": "https://www.haitidocs.org/doc/ihsi-2024-disaggregated-estimates?lang=fr",
+        "status": "documente",
+        "note": "Estimation IHSI 2024, tableau 248, population urbaine de la commune."
+      },
+      "populationRurale": {
+        "value": 122532,
+        "year": 2024,
+        "source": "https://www.haitidocs.org/doc/ihsi-2024-disaggregated-estimates?lang=fr",
+        "status": "documente",
+        "note": "Estimation IHSI 2024, tableau 248, population rurale de la commune."
       }
     },
     {
@@ -2481,16 +2504,52 @@
       },
       "services": [],
       "infrastructures": [],
-      "heritage": [],
-      "verification": "histoire_initiale_documentee_autres_rubriques_a_completer",
+      "heritage": [
+        {
+          "name": "Palais des 365 portes",
+          "detail": "Patrimoine historique associé à Petite-Rivière-de-l'Artibonite; délimitation cadastrale, état actuel et coordonnées exactes non vérifiés.",
+          "source": "https://www.haiti-reference.info/pages/plan/geographie-et-tourisme/divisions-territoriales/arrondissements-et-communes/artibonite/",
+          "status": "historique"
+        },
+        {
+          "name": "Fort de la Crête-à-Pierrot",
+          "detail": "Site historique associé à la bataille de 1802; localisation parcellaire et état de conservation à confirmer avant cartographie.",
+          "source": "https://www.haiti-reference.info/pages/plan/geographie-et-tourisme/divisions-territoriales/arrondissements-et-communes/artibonite/",
+          "status": "historique"
+        }
+      ],
+      "verification": "demographie_ihsi_documentee_patrimoine_partiel",
       "audit": {
         "reviewedAt": "2026-11-03",
         "method": "Structure initiale d'après le répertoire administratif du projet; chiffres et informations locales non renseignés sans contrôle des tableaux IHSI.",
         "warnings": [
-          "Population, superficie et histoire locale à documenter à partir des sources primaires.",
-          "Services, infrastructures et patrimoine : inventaire à réaliser.",
-          "Aucune coordonnée GPS ni établissement ajouté sans preuve."
-        ]
+          "Population estimée en 2024; non recensement.",
+          "Ne pas confondre population urbaine et totale.",
+          "État actuel des monuments, services et équipements à confirmer.",
+          "Coordonnées et limites patrimoniales non inférées."
+        ],
+        "demographyReference": "IHSI 2024, tableau 248 (population), tableau 249 (superficie lorsqu'indiquée)"
+      },
+      "populationTotale2024": {
+        "value": 187423,
+        "year": 2024,
+        "source": "https://www.haitidocs.org/doc/ihsi-2024-disaggregated-estimates?lang=fr",
+        "status": "documente",
+        "note": "Estimation IHSI 2024, tableau 248, population totale de la commune."
+      },
+      "populationUrbaine": {
+        "value": 99556,
+        "year": 2024,
+        "source": "https://www.haitidocs.org/doc/ihsi-2024-disaggregated-estimates?lang=fr",
+        "status": "documente",
+        "note": "Estimation IHSI 2024, tableau 248, population urbaine de la commune."
+      },
+      "populationRurale": {
+        "value": 87867,
+        "year": 2024,
+        "source": "https://www.haitidocs.org/doc/ihsi-2024-disaggregated-estimates?lang=fr",
+        "status": "documente",
+        "note": "Estimation IHSI 2024, tableau 248, population rurale de la commune."
       }
     },
     {
@@ -2509,15 +2568,38 @@
       "services": [],
       "infrastructures": [],
       "heritage": [],
-      "verification": "histoire_initiale_documentee_autres_rubriques_a_completer",
+      "verification": "demographie_ihsi_documentee_patrimoine_partiel",
       "audit": {
         "reviewedAt": "2026-11-03",
         "method": "Structure initiale d'après le répertoire administratif du projet; chiffres et informations locales non renseignés sans contrôle des tableaux IHSI.",
         "warnings": [
-          "Population, superficie et histoire locale à documenter à partir des sources primaires.",
-          "Services, infrastructures et patrimoine : inventaire à réaliser.",
-          "Aucune coordonnée GPS ni établissement ajouté sans preuve."
-        ]
+          "Population estimée en 2024; non recensement.",
+          "Ne pas confondre population urbaine et totale.",
+          "État actuel des monuments, services et équipements à confirmer.",
+          "Coordonnées et limites patrimoniales non inférées."
+        ],
+        "demographyReference": "IHSI 2024, tableau 248 (population), tableau 249 (superficie lorsqu'indiquée)"
+      },
+      "populationTotale2024": {
+        "value": 25504,
+        "year": 2024,
+        "source": "https://www.haitidocs.org/doc/ihsi-2024-disaggregated-estimates?lang=fr",
+        "status": "documente",
+        "note": "Estimation IHSI 2024, tableau 248, population totale de la commune."
+      },
+      "populationUrbaine": {
+        "value": 11314,
+        "year": 2024,
+        "source": "https://www.haitidocs.org/doc/ihsi-2024-disaggregated-estimates?lang=fr",
+        "status": "documente",
+        "note": "Estimation IHSI 2024, tableau 248, population urbaine de la commune."
+      },
+      "populationRurale": {
+        "value": 14190,
+        "year": 2024,
+        "source": "https://www.haitidocs.org/doc/ihsi-2024-disaggregated-estimates?lang=fr",
+        "status": "documente",
+        "note": "Estimation IHSI 2024, tableau 248, population rurale de la commune."
       }
     },
     {
@@ -2536,15 +2618,38 @@
       "services": [],
       "infrastructures": [],
       "heritage": [],
-      "verification": "histoire_initiale_documentee_autres_rubriques_a_completer",
+      "verification": "demographie_ihsi_documentee_patrimoine_partiel",
       "audit": {
         "reviewedAt": "2026-11-03",
         "method": "Structure initiale d'après le répertoire administratif du projet; chiffres et informations locales non renseignés sans contrôle des tableaux IHSI.",
         "warnings": [
-          "Population, superficie et histoire locale à documenter à partir des sources primaires.",
-          "Services, infrastructures et patrimoine : inventaire à réaliser.",
-          "Aucune coordonnée GPS ni établissement ajouté sans preuve."
-        ]
+          "Population estimée en 2024; non recensement.",
+          "Ne pas confondre population urbaine et totale.",
+          "État actuel des monuments, services et équipements à confirmer.",
+          "Coordonnées et limites patrimoniales non inférées."
+        ],
+        "demographyReference": "IHSI 2024, tableau 248 (population), tableau 249 (superficie lorsqu'indiquée)"
+      },
+      "populationTotale2024": {
+        "value": 40645,
+        "year": 2024,
+        "source": "https://www.haitidocs.org/doc/ihsi-2024-disaggregated-estimates?lang=fr",
+        "status": "documente",
+        "note": "Estimation IHSI 2024, tableau 248, population totale de la commune."
+      },
+      "populationUrbaine": {
+        "value": 39127,
+        "year": 2024,
+        "source": "https://www.haitidocs.org/doc/ihsi-2024-disaggregated-estimates?lang=fr",
+        "status": "documente",
+        "note": "Estimation IHSI 2024, tableau 248, population urbaine de la commune."
+      },
+      "populationRurale": {
+        "value": 1518,
+        "year": 2024,
+        "source": "https://www.haitidocs.org/doc/ihsi-2024-disaggregated-estimates?lang=fr",
+        "status": "documente",
+        "note": "Estimation IHSI 2024, tableau 248, population rurale de la commune."
       }
     },
     {
@@ -2554,23 +2659,51 @@
       "updatedAt": "2026-11-03",
       "administrativeSource": "https://www.ihsi.gouv.ht/statistiques/statistiques_demographiques_et_sociales/projections_et_estimations_de_la_population",
       "history": {
-        "text": "Notice historique à rechercher et à vérifier.",
-        "sources": [],
+        "text": "Commune de l'arrondissement de Marmelade dans l'Artibonite; chronologie historique détaillée à établir à partir d'archives et de publications patrimoniales.",
+        "sources": [
+          "https://www.haitidocs.org/doc/ihsi-2024-disaggregated-estimates?lang=fr"
+        ],
         "status": "a_verifier"
       },
       "services": [],
       "infrastructures": [],
       "heritage": [],
-      "verification": "inventaire_en_cours",
+      "verification": "demographie_ihsi_documentee_patrimoine_partiel",
       "audit": {
         "reviewedAt": "2026-11-03",
         "method": "Structure initiale d'après le répertoire administratif du projet; chiffres et informations locales non renseignés sans contrôle des tableaux IHSI.",
         "warnings": [
-          "Population, superficie et histoire locale à documenter à partir des sources primaires.",
-          "Services, infrastructures et patrimoine : inventaire à réaliser.",
-          "Aucune coordonnée GPS ni établissement ajouté sans preuve."
-        ]
-      }
+          "Population estimée en 2024; non recensement.",
+          "Ne pas confondre population urbaine et totale.",
+          "État actuel des monuments, services et équipements à confirmer.",
+          "Coordonnées et limites patrimoniales non inférées."
+        ],
+        "demographyReference": "IHSI 2024, tableau 248 (population), tableau 249 (superficie lorsqu'indiquée)"
+      },
+      "populationTotale2024": {
+        "value": 41775,
+        "year": 2024,
+        "source": "https://www.haitidocs.org/doc/ihsi-2024-disaggregated-estimates?lang=fr",
+        "status": "documente",
+        "note": "Estimation IHSI 2024, tableau 248, population totale de la commune."
+      },
+      "populationUrbaine": {
+        "value": 20544,
+        "year": 2024,
+        "source": "https://www.haitidocs.org/doc/ihsi-2024-disaggregated-estimates?lang=fr",
+        "status": "documente",
+        "note": "Estimation IHSI 2024, tableau 248, population urbaine de la commune."
+      },
+      "populationRurale": {
+        "value": 21231,
+        "year": 2024,
+        "source": "https://www.haitidocs.org/doc/ihsi-2024-disaggregated-estimates?lang=fr",
+        "status": "documente",
+        "note": "Estimation IHSI 2024, tableau 248, population rurale de la commune."
+      },
+      "areaKm2": 108.94,
+      "areaSource": "https://www.haitidocs.org/doc/ihsi-2024-disaggregated-estimates?lang=fr",
+      "areaStatus": "documente"
     },
     {
       "department": "Artibonite",
@@ -2579,23 +2712,51 @@
       "updatedAt": "2026-11-03",
       "administrativeSource": "https://www.ihsi.gouv.ht/statistiques/statistiques_demographiques_et_sociales/projections_et_estimations_de_la_population",
       "history": {
-        "text": "Notice historique à rechercher et à vérifier.",
-        "sources": [],
+        "text": "Commune de l'arrondissement de Marmelade dans l'Artibonite; chronologie historique détaillée à établir à partir d'archives et de publications patrimoniales.",
+        "sources": [
+          "https://www.haitidocs.org/doc/ihsi-2024-disaggregated-estimates?lang=fr"
+        ],
         "status": "a_verifier"
       },
       "services": [],
       "infrastructures": [],
       "heritage": [],
-      "verification": "inventaire_en_cours",
+      "verification": "demographie_ihsi_documentee_patrimoine_partiel",
       "audit": {
         "reviewedAt": "2026-11-03",
         "method": "Structure initiale d'après le répertoire administratif du projet; chiffres et informations locales non renseignés sans contrôle des tableaux IHSI.",
         "warnings": [
-          "Population, superficie et histoire locale à documenter à partir des sources primaires.",
-          "Services, infrastructures et patrimoine : inventaire à réaliser.",
-          "Aucune coordonnée GPS ni établissement ajouté sans preuve."
-        ]
-      }
+          "Population estimée en 2024; non recensement.",
+          "Ne pas confondre population urbaine et totale.",
+          "État actuel des monuments, services et équipements à confirmer.",
+          "Coordonnées et limites patrimoniales non inférées."
+        ],
+        "demographyReference": "IHSI 2024, tableau 248 (population), tableau 249 (superficie lorsqu'indiquée)"
+      },
+      "populationTotale2024": {
+        "value": 165223,
+        "year": 2024,
+        "source": "https://www.haitidocs.org/doc/ihsi-2024-disaggregated-estimates?lang=fr",
+        "status": "documente",
+        "note": "Estimation IHSI 2024, tableau 248, population totale de la commune."
+      },
+      "populationUrbaine": {
+        "value": 81951,
+        "year": 2024,
+        "source": "https://www.haitidocs.org/doc/ihsi-2024-disaggregated-estimates?lang=fr",
+        "status": "documente",
+        "note": "Estimation IHSI 2024, tableau 248, population urbaine de la commune."
+      },
+      "populationRurale": {
+        "value": 83272,
+        "year": 2024,
+        "source": "https://www.haitidocs.org/doc/ihsi-2024-disaggregated-estimates?lang=fr",
+        "status": "documente",
+        "note": "Estimation IHSI 2024, tableau 248, population rurale de la commune."
+      },
+      "areaKm2": 613.74,
+      "areaSource": "https://www.haitidocs.org/doc/ihsi-2024-disaggregated-estimates?lang=fr",
+      "areaStatus": "documente"
     }
   ]
 }
