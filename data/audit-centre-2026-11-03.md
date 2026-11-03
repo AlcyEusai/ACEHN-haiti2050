@@ -33,3 +33,13 @@ Le tableau administratif de l'IHSI 2024 cite **Baptiste comme commune** de l'arr
 4. Vérifier sur document original les chiffres déjà transcrits dans les 12 fiches démographiques du Centre.
 
 **Conclusion :** vérification administrative préliminaire et signalement des ambiguïtés effectués; histoire et patrimoine non validés définitivement.
+
+## Complément documentaire — 3 novembre 2026
+
+**Baptiste : statut juridique désormais documenté.** Le décret du 22 juillet 2015 (Le Moniteur n°147, 5 août 2015) élève Baptiste au rang de commune. Un arrêté du 14 novembre 2018 (Le Moniteur n°197, 16 novembre 2018) nomme une commission municipale pour Baptiste. Cela résout l'incertitude sur l'existence d'actes de création et d'administration, mais pas la divergence avec les tableaux statistiques IHSI 2024 ni la délimitation géographique opérationnelle. Sources : https://lenouvelliste.com/article/148647/creation-de-cinq-nouvelles-communes-par-decret-presidentiel et https://www.haitidocs.org/doc/moniteur-2018-11-16-nominations-delegues?lang=fr .
+
+**Saut-d'Eau :** le pèlerinage annuel autour du 16 juillet et la cascade sont documentés par https://www.haiti-reference.info/pages/plan/religions/vodou-haitien/vodou-lieux-saints/ ; ni classement patrimonial ni géométrie vérifiés.
+
+**Belladère :** une transcription de la loi du 2 août 1907 relative à son élévation en commune est signalée dans https://www.haitianaute.com/2021/04/ ; la consultation du Moniteur original reste souhaitable.
+
+**Hinche et Mirebalais :** aucune attribution de monument ou protection patrimoniale sans source localisée; recherches à poursuivre auprès de l'ISPAN et des archives.
