@@ -1462,6 +1462,206 @@
           "État actuel des services et équipements non établi."
         ]
       }
+    },
+    {
+      "department": "Nord-Est",
+      "arrondissement": "Trou-du-Nord",
+      "commune": "Trou-du-Nord",
+      "updatedAt": "2026-11-03",
+      "history": {
+        "text": "Histoire locale à documenter par des archives et publications identifiées.",
+        "sources": [],
+        "status": "a_verifier"
+      },
+      "services": [],
+      "infrastructures": [],
+      "heritage": [],
+      "verification": "inventaire_en_cours",
+      "administrativeSource": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+      "audit": {
+        "reviewedAt": "2026-11-03",
+        "method": "Rattachement administratif recoupé avec le répertoire territorial IHSI; autres rubriques en attente.",
+        "warnings": [
+          "La structure administrative est documentée; aucune validation de services locaux n'a été faite.",
+          "Population, histoire, établissements, patrimoine et infrastructures non renseignés sans source précise.",
+          "Aucune coordonnée GPS inférée."
+        ]
+      }
+    },
+    {
+      "department": "Nord-Est",
+      "arrondissement": "Trou-du-Nord",
+      "commune": "Sainte-Suzanne",
+      "updatedAt": "2026-11-03",
+      "history": {
+        "text": "Histoire locale à documenter par des archives et publications identifiées.",
+        "sources": [],
+        "status": "a_verifier"
+      },
+      "services": [],
+      "infrastructures": [],
+      "heritage": [],
+      "verification": "inventaire_en_cours",
+      "administrativeSource": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+      "audit": {
+        "reviewedAt": "2026-11-03",
+        "method": "Rattachement administratif recoupé avec le répertoire territorial IHSI; autres rubriques en attente.",
+        "warnings": [
+          "La structure administrative est documentée; aucune validation de services locaux n'a été faite.",
+          "Population, histoire, établissements, patrimoine et infrastructures non renseignés sans source précise.",
+          "Aucune coordonnée GPS inférée."
+        ]
+      }
+    },
+    {
+      "department": "Nord-Est",
+      "arrondissement": "Trou-du-Nord",
+      "commune": "Terrier-Rouge",
+      "updatedAt": "2026-11-03",
+      "history": {
+        "text": "Histoire locale à documenter par des archives et publications identifiées.",
+        "sources": [],
+        "status": "a_verifier"
+      },
+      "services": [],
+      "infrastructures": [],
+      "heritage": [],
+      "verification": "inventaire_en_cours",
+      "administrativeSource": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+      "audit": {
+        "reviewedAt": "2026-11-03",
+        "method": "Rattachement administratif recoupé avec le répertoire territorial IHSI; autres rubriques en attente.",
+        "warnings": [
+          "La structure administrative est documentée; aucune validation de services locaux n'a été faite.",
+          "Population, histoire, établissements, patrimoine et infrastructures non renseignés sans source précise.",
+          "Aucune coordonnée GPS inférée."
+        ]
+      }
+    },
+    {
+      "department": "Nord-Est",
+      "arrondissement": "Trou-du-Nord",
+      "commune": "Caracol",
+      "updatedAt": "2026-11-03",
+      "history": {
+        "text": "Histoire locale à documenter par des archives et publications identifiées.",
+        "sources": [],
+        "status": "a_verifier"
+      },
+      "services": [],
+      "infrastructures": [],
+      "heritage": [],
+      "verification": "inventaire_en_cours",
+      "administrativeSource": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+      "audit": {
+        "reviewedAt": "2026-11-03",
+        "method": "Rattachement administratif recoupé avec le répertoire territorial IHSI; autres rubriques en attente.",
+        "warnings": [
+          "La structure administrative est documentée; aucune validation de services locaux n'a été faite.",
+          "Population, histoire, établissements, patrimoine et infrastructures non renseignés sans source précise.",
+          "Aucune coordonnée GPS inférée."
+        ]
+      }
+    },
+    {
+      "department": "Nord-Est",
+      "arrondissement": "Trou-du-Nord",
+      "commune": "Grand-Bassin",
+      "updatedAt": "2026-11-03",
+      "history": {
+        "text": "Histoire locale à documenter par des archives et publications identifiées.",
+        "sources": [],
+        "status": "a_verifier"
+      },
+      "services": [],
+      "infrastructures": [],
+      "heritage": [],
+      "verification": "inventaire_en_cours",
+      "administrativeSource": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+      "audit": {
+        "reviewedAt": "2026-11-03",
+        "method": "Rattachement administratif recoupé avec le répertoire territorial IHSI; autres rubriques en attente.",
+        "warnings": [
+          "La structure administrative est documentée; aucune validation de services locaux n'a été faite.",
+          "Population, histoire, établissements, patrimoine et infrastructures non renseignés sans source précise.",
+          "Aucune coordonnée GPS inférée."
+        ]
+      }
+    },
+    {
+      "department": "Nord-Est",
+      "arrondissement": "Vallières",
+      "commune": "Vallières",
+      "updatedAt": "2026-11-03",
+      "history": {
+        "text": "Histoire locale à documenter par des archives et publications identifiées.",
+        "sources": [],
+        "status": "a_verifier"
+      },
+      "services": [],
+      "infrastructures": [],
+      "heritage": [],
+      "verification": "inventaire_en_cours",
+      "administrativeSource": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+      "audit": {
+        "reviewedAt": "2026-11-03",
+        "method": "Rattachement administratif recoupé avec le répertoire territorial IHSI; autres rubriques en attente.",
+        "warnings": [
+          "La structure administrative est documentée; aucune validation de services locaux n'a été faite.",
+          "Population, histoire, établissements, patrimoine et infrastructures non renseignés sans source précise.",
+          "Aucune coordonnée GPS inférée."
+        ]
+      }
+    },
+    {
+      "department": "Nord-Est",
+      "arrondissement": "Vallières",
+      "commune": "Carice",
+      "updatedAt": "2026-11-03",
+      "history": {
+        "text": "Histoire locale à documenter par des archives et publications identifiées.",
+        "sources": [],
+        "status": "a_verifier"
+      },
+      "services": [],
+      "infrastructures": [],
+      "heritage": [],
+      "verification": "inventaire_en_cours",
+      "administrativeSource": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+      "audit": {
+        "reviewedAt": "2026-11-03",
+        "method": "Rattachement administratif recoupé avec le répertoire territorial IHSI; autres rubriques en attente.",
+        "warnings": [
+          "La structure administrative est documentée; aucune validation de services locaux n'a été faite.",
+          "Population, histoire, établissements, patrimoine et infrastructures non renseignés sans source précise.",
+          "Aucune coordonnée GPS inférée."
+        ]
+      }
+    },
+    {
+      "department": "Nord-Est",
+      "arrondissement": "Vallières",
+      "commune": "Mombin-Crochu",
+      "updatedAt": "2026-11-03",
+      "history": {
+        "text": "Histoire locale à documenter par des archives et publications identifiées.",
+        "sources": [],
+        "status": "a_verifier"
+      },
+      "services": [],
+      "infrastructures": [],
+      "heritage": [],
+      "verification": "inventaire_en_cours",
+      "administrativeSource": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+      "audit": {
+        "reviewedAt": "2026-11-03",
+        "method": "Rattachement administratif recoupé avec le répertoire territorial IHSI; autres rubriques en attente.",
+        "warnings": [
+          "La structure administrative est documentée; aucune validation de services locaux n'a été faite.",
+          "Population, histoire, établissements, patrimoine et infrastructures non renseignés sans source précise.",
+          "Aucune coordonnée GPS inférée."
+        ]
+      }
     }
   ]
 }
