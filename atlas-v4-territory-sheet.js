@@ -13,6 +13,7 @@ const current=()=>({department:document.getElementById("department")?.value||"",
 function panel(grid,title,description){const box=document.createElement("article");box.append(el("h3",title),el("p",description));grid.append(box);return box}
 function list(parent,values){const ul=document.createElement("ul");for(const value of values)ul.append(el("li",value));parent.append(ul);return ul}
 function link(parent,title,url){const a=el("a",title);a.href=url;a.target="_blank";a.rel="noopener noreferrer";parent.append(a)}
+function sourceStatus(parent,status){const values={documente:"Documenté — source à consulter",historique:"Donnée historique — non actuelle",a_verifier:"À compléter ou vérifier"};const tag=el("span",values[status]||values.a_verifier);tag.className="v4-source-status v4-source-"+(values[status]?status:"a_verifier");parent.append(tag)}
 function matches(place,selection){return (!selection.department||equal(place.department,selection.department))&&(!selection.arrondissement||equal(place.arrondissement,selection.arrondissement))&&(!selection.commune||equal(place.commune,selection.commune))}
 function render(){
  const selection=current(),department=territories.find(d=>equal(d.nom,selection.department));
@@ -48,16 +49,17 @@ function render(){
  const profile=level==="commune"?communalProfiles.find(p=>equal(p.department,department.nom)&&equal(p.arrondissement,arrondissement.nom)&&equal(p.commune,commune)):null;
  if(profile){
   const context=panel(grid,"Portrait communal documenté","Informations issues de sources documentaires datées; ne constituent pas une validation de terrain.");
-  if(profile.population?.value)context.append(el("p","Population (estimation "+profile.population.year+") : "+profile.population.value.toLocaleString("fr-FR")+" habitants.")); 
-  if(profile.areaKm2)context.append(el("p","Superficie indiquée par la source : "+profile.areaKm2+" km²."));
-  if(profile.sectionsCommunales?.length){context.append(el("h4","Sections communales"));list(context,profile.sectionsCommunales)}
-  if(profile.history?.text){history.querySelector("p").textContent=profile.history.text;for(const source of profile.history.sources||[])link(history,"Source historique ↗",source)}
+  if(profile.population?.value){const line=el("p","Population (estimation "+profile.population.year+") : "+profile.population.value.toLocaleString("fr-FR")+" habitants.");context.append(line);sourceStatus(context,profile.population.status||"historique");if(profile.population.source)link(context,"Source de la population ↗",profile.population.source)} 
+  if(profile.areaKm2){context.append(el("p","Superficie indiquée par la source : "+profile.areaKm2+" km²."));sourceStatus(context,profile.areaStatus);if(profile.areaSource)link(context,"Source de la superficie ↗",profile.areaSource)}
+  if(profile.sectionsCommunales?.length){context.append(el("h4","Sections communales"));list(context,profile.sectionsCommunales);sourceStatus(context,profile.sectionsStatus);if(profile.sectionsSource)link(context,"Source des sections ↗",profile.sectionsSource)}
+  if(profile.history?.text){history.querySelector("p").textContent=profile.history.text;sourceStatus(history,profile.history.status||"historique");for(const source of profile.history.sources||[])link(history,"Source historique ↗",source)}
   for(const [title,items] of [["Services publics documentés",profile.services],["Infrastructures et mobilité",profile.infrastructures],["Patrimoine local",profile.heritage]]){
    if(!items?.length)continue;const box=panel(grid,title,"Sources documentaires : vérifier l'état actuel et la localisation de chaque élément.");
-   for(const item of items){box.append(el("h4",item.name),el("p",item.detail));if(item.source)link(box,"Consulter la source ↗",item.source)}
+   for(const item of items){box.append(el("h4",item.name),el("p",item.detail));sourceStatus(box,item.status);if(item.source)link(box,"Consulter la source ↗",item.source)}
   }
-  if(profile.nearbyNotInCommune?.length){const nearby=panel(grid,"Patrimoine régional hors commune","Sites voisins : présentés à titre de contexte et non comme établissements de la commune.");for(const item of profile.nearbyNotInCommune){nearby.append(el("h4",item.name),el("p","Commune : "+item.commune+". "+item.detail));if(item.source)link(nearby,"Source ↗",item.source)}}
+  if(profile.nearbyNotInCommune?.length){const nearby=panel(grid,"Patrimoine régional hors commune","Sites voisins : présentés à titre de contexte et non comme établissements de la commune.");for(const item of profile.nearbyNotInCommune){nearby.append(el("h4",item.name),el("p","Commune : "+item.commune+". "+item.detail));sourceStatus(nearby,item.status);if(item.source)link(nearby,"Source ↗",item.source)}}
  }
+ if(profile?.audit?.warnings?.length){const audit=panel(grid,"Contrôle documentaire","Précautions de lecture et points à vérifier :");list(audit,profile.audit.warnings)}
  const future=panel(grid,"Vision Haïti 2050","Espace pour les projets et priorités de développement du territoire. Les propositions ne constituent pas des projets publics approuvés.");
  if(pilot?.projects)list(future,pilot.projects);
  const a=el("a","Consulter les projets et propositions ↗");a.href="#projects";future.append(a);
