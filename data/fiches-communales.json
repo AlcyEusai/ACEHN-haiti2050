@@ -2369,10 +2369,11 @@
           "Création juridique par décret de juillet 2015 rapportée par la presse; texte primaire à retrouver.",
           "Mise en œuvre administrative et limites exactes non établies par ces sources.",
           "Les données 2024 disponibles pour le quartier ne constituent pas la population de la nouvelle commune.",
-          "Ne pas supprimer la commune du répertoire ni additionner son quartier à une commune parente."
+          "Ne pas supprimer la commune du répertoire ni additionner son quartier à une commune parente.",
+          "Les tableaux IHSI 2024 ne les individualisent pas comme communes statistiques; aucune population communale distincte ne peut être inférée."
         ]
       },
-      "administrativeStatus": "commune_creee_2015_statistiques_non_individualisees",
+      "administrativeStatus": "creation_juridique_rapportee_2015_ihsi_2024_quartier",
       "populationQuartier2024": {
         "value": 36832,
         "year": 2024,
@@ -2406,10 +2407,11 @@
           "Création juridique par décret de juillet 2015 rapportée par la presse; texte primaire à retrouver.",
           "Mise en œuvre administrative et limites exactes non établies par ces sources.",
           "Les données 2024 disponibles pour le quartier ne constituent pas la population de la nouvelle commune.",
-          "Ne pas supprimer la commune du répertoire ni additionner son quartier à une commune parente."
+          "Ne pas supprimer la commune du répertoire ni additionner son quartier à une commune parente.",
+          "Les tableaux IHSI 2024 ne les individualisent pas comme communes statistiques; aucune population communale distincte ne peut être inférée."
         ]
       },
-      "administrativeStatus": "commune_creee_2015_statistiques_non_individualisees",
+      "administrativeStatus": "creation_juridique_rapportee_2015_ihsi_2024_quartier",
       "populationQuartier2024": {
         "value": 12960,
         "year": 2024,
