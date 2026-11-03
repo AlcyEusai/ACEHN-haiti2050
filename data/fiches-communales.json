@@ -752,6 +752,252 @@
         "status": "historique",
         "note": "Population urbaine seulement, non population totale de la commune. Tableau 65."
       }
+    },
+    {
+      "department": "Nord",
+      "arrondissement": "Borgne",
+      "commune": "Borgne",
+      "updatedAt": "2026-11-03",
+      "populationUrbaine": {
+        "value": 30101,
+        "year": 2024,
+        "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+        "status": "historique",
+        "note": "Tableau 65, population urbaine estimée seulement; ne représente pas la population totale communale."
+      },
+      "history": {
+        "text": "Commune répertoriée par l'Administration départementale du Nord. Notice historique locale à compléter à partir d'archives documentées.",
+        "sources": [
+          "https://www.adnhaiti.ht/communes/"
+        ],
+        "status": "a_verifier"
+      },
+      "services": [],
+      "infrastructures": [
+        {
+          "name": "Contexte climatique et risques environnementaux",
+          "detail": "Le diagnostic départemental décrit les enjeux de fortes précipitations et d'érosion dans les zones montagneuses humides du Nord, notamment le secteur de Borgne. Il ne s'agit pas d'un inventaire d'ouvrages.",
+          "source": "https://www.adnhaiti.ht/donnees/",
+          "status": "historique"
+        }
+      ],
+      "heritage": [],
+      "verification": "sources_documentaires_sans_validation_terrain",
+      "audit": {
+        "reviewedAt": "2026-11-03",
+        "method": "IHSI 2024 tableau 65 et administration départementale du Nord; pas de validation sur place.",
+        "warnings": [
+          "Le chiffre 2024 est la population urbaine, pas la population communale totale.",
+          "Les informations environnementales sont issues d'un diagnostic régional non daté précisément.",
+          "Écoles, hôpitaux, marchés, patrimoine et équipements restent à documenter.",
+          "Aucun établissement ni aucune coordonnée GPS inventés."
+        ]
+      }
+    },
+    {
+      "department": "Nord",
+      "arrondissement": "Borgne",
+      "commune": "Port-Margot",
+      "updatedAt": "2026-11-03",
+      "populationUrbaine": {
+        "value": 38949,
+        "year": 2024,
+        "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+        "status": "historique",
+        "note": "Tableau 65, population urbaine estimée seulement; ne représente pas la population totale communale."
+      },
+      "history": {
+        "text": "Commune répertoriée par l'Administration départementale du Nord. Notice historique locale à compléter à partir d'archives documentées.",
+        "sources": [
+          "https://www.adnhaiti.ht/communes/"
+        ],
+        "status": "a_verifier"
+      },
+      "services": [],
+      "infrastructures": [
+        {
+          "name": "Contexte climatique et risques environnementaux",
+          "detail": "Le diagnostic départemental décrit les enjeux de fortes précipitations et d'érosion dans les zones montagneuses humides du Nord, notamment le secteur de Port-Margot. Il ne s'agit pas d'un inventaire d'ouvrages.",
+          "source": "https://www.adnhaiti.ht/donnees/",
+          "status": "historique"
+        }
+      ],
+      "heritage": [],
+      "verification": "sources_documentaires_sans_validation_terrain",
+      "audit": {
+        "reviewedAt": "2026-11-03",
+        "method": "IHSI 2024 tableau 65 et administration départementale du Nord; pas de validation sur place.",
+        "warnings": [
+          "Le chiffre 2024 est la population urbaine, pas la population communale totale.",
+          "Les informations environnementales sont issues d'un diagnostic régional non daté précisément.",
+          "Écoles, hôpitaux, marchés, patrimoine et équipements restent à documenter.",
+          "Aucun établissement ni aucune coordonnée GPS inventés."
+        ]
+      }
+    },
+    {
+      "department": "Nord",
+      "arrondissement": "Limbé",
+      "commune": "Limbé",
+      "updatedAt": "2026-11-03",
+      "populationUrbaine": {
+        "value": 82084,
+        "year": 2024,
+        "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+        "status": "historique",
+        "note": "Tableau 65, population urbaine estimée seulement; ne représente pas la population totale communale."
+      },
+      "history": {
+        "text": "Commune répertoriée par l'Administration départementale du Nord. Notice historique locale à compléter à partir d'archives documentées.",
+        "sources": [
+          "https://www.adnhaiti.ht/communes/"
+        ],
+        "status": "a_verifier"
+      },
+      "services": [],
+      "infrastructures": [
+        {
+          "name": "Contexte climatique et risques environnementaux",
+          "detail": "Le diagnostic départemental décrit les enjeux de fortes précipitations et d'érosion dans les zones montagneuses humides du Nord, notamment le secteur de Limbé. Il ne s'agit pas d'un inventaire d'ouvrages.",
+          "source": "https://www.adnhaiti.ht/donnees/",
+          "status": "historique"
+        }
+      ],
+      "heritage": [],
+      "verification": "sources_documentaires_sans_validation_terrain",
+      "audit": {
+        "reviewedAt": "2026-11-03",
+        "method": "IHSI 2024 tableau 65 et administration départementale du Nord; pas de validation sur place.",
+        "warnings": [
+          "Le chiffre 2024 est la population urbaine, pas la population communale totale.",
+          "Les informations environnementales sont issues d'un diagnostic régional non daté précisément.",
+          "Écoles, hôpitaux, marchés, patrimoine et équipements restent à documenter.",
+          "Aucun établissement ni aucune coordonnée GPS inventés."
+        ]
+      }
+    },
+    {
+      "department": "Nord",
+      "arrondissement": "Limbé",
+      "commune": "Bas-Limbé",
+      "updatedAt": "2026-11-03",
+      "populationUrbaine": {
+        "value": 16279,
+        "year": 2024,
+        "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+        "status": "historique",
+        "note": "Tableau 65, population urbaine estimée seulement; ne représente pas la population totale communale."
+      },
+      "history": {
+        "text": "Commune répertoriée par l'Administration départementale du Nord. Notice historique locale à compléter à partir d'archives documentées.",
+        "sources": [
+          "https://www.adnhaiti.ht/communes/"
+        ],
+        "status": "a_verifier"
+      },
+      "services": [],
+      "infrastructures": [
+        {
+          "name": "Contexte climatique et risques environnementaux",
+          "detail": "Le diagnostic départemental mentionne Bas-Limbé parmi les localités exposées aux inondations; état des protections et fréquence actuelle à vérifier.",
+          "source": "https://www.adnhaiti.ht/donnees/",
+          "status": "historique"
+        }
+      ],
+      "heritage": [],
+      "verification": "sources_documentaires_sans_validation_terrain",
+      "audit": {
+        "reviewedAt": "2026-11-03",
+        "method": "IHSI 2024 tableau 65 et administration départementale du Nord; pas de validation sur place.",
+        "warnings": [
+          "Le chiffre 2024 est la population urbaine, pas la population communale totale.",
+          "Les informations environnementales sont issues d'un diagnostic régional non daté précisément.",
+          "Écoles, hôpitaux, marchés, patrimoine et équipements restent à documenter.",
+          "Aucun établissement ni aucune coordonnée GPS inventés."
+        ]
+      }
+    },
+    {
+      "department": "Nord",
+      "arrondissement": "Plaisance",
+      "commune": "Plaisance",
+      "updatedAt": "2026-11-03",
+      "populationUrbaine": {
+        "value": 43515,
+        "year": 2024,
+        "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+        "status": "historique",
+        "note": "Tableau 65, population urbaine estimée seulement; ne représente pas la population totale communale."
+      },
+      "history": {
+        "text": "Commune répertoriée par l'Administration départementale du Nord. Notice historique locale à compléter à partir d'archives documentées.",
+        "sources": [
+          "https://www.adnhaiti.ht/communes/"
+        ],
+        "status": "a_verifier"
+      },
+      "services": [],
+      "infrastructures": [
+        {
+          "name": "Contexte climatique et risques environnementaux",
+          "detail": "Le diagnostic départemental décrit les enjeux de fortes précipitations et d'érosion dans les zones montagneuses humides du Nord, notamment le secteur de Plaisance. Il ne s'agit pas d'un inventaire d'ouvrages.",
+          "source": "https://www.adnhaiti.ht/donnees/",
+          "status": "historique"
+        }
+      ],
+      "heritage": [],
+      "verification": "sources_documentaires_sans_validation_terrain",
+      "audit": {
+        "reviewedAt": "2026-11-03",
+        "method": "IHSI 2024 tableau 65 et administration départementale du Nord; pas de validation sur place.",
+        "warnings": [
+          "Le chiffre 2024 est la population urbaine, pas la population communale totale.",
+          "Les informations environnementales sont issues d'un diagnostic régional non daté précisément.",
+          "Écoles, hôpitaux, marchés, patrimoine et équipements restent à documenter.",
+          "Aucun établissement ni aucune coordonnée GPS inventés."
+        ]
+      }
+    },
+    {
+      "department": "Nord",
+      "arrondissement": "Plaisance",
+      "commune": "Pilate",
+      "updatedAt": "2026-11-03",
+      "populationUrbaine": {
+        "value": 21323,
+        "year": 2024,
+        "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+        "status": "historique",
+        "note": "Tableau 65, population urbaine estimée seulement; ne représente pas la population totale communale."
+      },
+      "history": {
+        "text": "Commune répertoriée par l'Administration départementale du Nord. Notice historique locale à compléter à partir d'archives documentées.",
+        "sources": [
+          "https://www.adnhaiti.ht/communes/"
+        ],
+        "status": "a_verifier"
+      },
+      "services": [],
+      "infrastructures": [
+        {
+          "name": "Contexte climatique et risques environnementaux",
+          "detail": "Le diagnostic départemental décrit les enjeux de fortes précipitations et d'érosion dans les zones montagneuses humides du Nord, notamment le secteur de Pilate. Il ne s'agit pas d'un inventaire d'ouvrages.",
+          "source": "https://www.adnhaiti.ht/donnees/",
+          "status": "historique"
+        }
+      ],
+      "heritage": [],
+      "verification": "sources_documentaires_sans_validation_terrain",
+      "audit": {
+        "reviewedAt": "2026-11-03",
+        "method": "IHSI 2024 tableau 65 et administration départementale du Nord; pas de validation sur place.",
+        "warnings": [
+          "Le chiffre 2024 est la population urbaine, pas la population communale totale.",
+          "Les informations environnementales sont issues d'un diagnostic régional non daté précisément.",
+          "Écoles, hôpitaux, marchés, patrimoine et équipements restent à documenter.",
+          "Aucun établissement ni aucune coordonnée GPS inventés."
+        ]
+      }
     }
   ]
 }
