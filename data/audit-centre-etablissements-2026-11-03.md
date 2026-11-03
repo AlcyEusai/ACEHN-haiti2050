@@ -111,3 +111,9 @@ Le rapport MSPP 2015, graphique 9, donne pour **Boucan-Carré** 3 institutions f
 Un autre rapport MSPP fondé sur une enquête de 2011 retient respectivement **3, 1 et 3** institutions pour ces communes, dans un sous-ensemble de 35 institutions du Centre. Ce décalage de périmètre et d'année ne prouve ni fermeture ni ouverture : https://www.mspp.gouv.ht/site/downloads/Rapport%20carte%20sanitaire%20centre.pdf .
 
 **Contrôle nominatif :** aucun établissement sanitaire supplémentaire n'a été créé dans le registre lors de cette phase. Les totaux des graphiques ne sont pas des preuves nominatives; le nom, le code, la commune et le statut devront être lus dans les annexes du MSPP avant ajout.
+
+## Poursuite du dépouillement — Boucan-Carré
+
+**13 établissements publics** de Boucan-Carré ont été ajoutés à `data/registre-etablissements.json` à partir des pages 51 à 53 du registre MENFP 2024-2025 : une école à Petite Montagne, sept dans la deuxième section Boucan-Carré et cinq dans la troisième section Des Bayes. Les codes MENFP ont été conservés. Source : https://www.haitidocs.org/doc/menfp-registre-ecoles-centre-2025?lang=ht . Les écoles du secteur non public ne sont pas encore dépouillées.
+
+**Point de contrôle :** le total du registre national du prototype est désormais de 98 entrées (toutes catégories et tous départements confondus), sans que cela représente un inventaire exhaustif du Centre. Lascahobas, les autres sections de Belladère et les autres communes demeurent à documenter. Les 64 établissements sanitaires historiques du MSPP ne sont pas des entrées nominatives; leur extraction est encore ouverte. Le patrimoine ISPAN demeure non certifié. Ne pas annoncer la clôture documentaire du Centre.
