@@ -1,34 +1,58 @@
-/* Fiches territoriales V4 — réutilise le répertoire existant, sans inventer de données. */
+/* Haïti 2050 V4 — 10 fiches départementales, 42 d'arrondissement, 149 communales.
+   Répertoire territorial existant; aucune donnée manquante n'est inventée. */
 (()=>{"use strict";
-const root=document.createElement("section");root.id="v4TerritorySheet";root.className="v4-territory-sheet";root.setAttribute("aria-live","polite");
-const atlas=document.getElementById("atlas");if(!atlas)return;atlas.appendChild(root);
-const text=(tag,value)=>{const e=document.createElement(tag);e.textContent=value;return e};
-const link=(label,href)=>{const a=document.createElement("a");a.textContent=label;a.href=href;a.target="_blank";a.rel="noopener noreferrer";return a};
-let pilotData={};
+const atlas=document.getElementById("atlas"),territories=window.HAITI_TERRITOIRES?.departements;
+if(!atlas||!Array.isArray(territories))return;
+const root=document.createElement("section");root.id="v4TerritorySheet";root.className="v4-territory-sheet";root.setAttribute("aria-live","polite");atlas.append(root);
+const el=(tag,value)=>{const node=document.createElement(tag);node.textContent=value;return node};
+const norm=value=>String(value||"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").replace(/[^a-z0-9]/gi,"").toLowerCase();
+const equal=(a,b)=>norm(a)===norm(b);
+const labels={department:"Département",arrondissement:"Arrondissement",commune:"Commune"};
+let pilotData={},registry=[];
+const current=()=>({department:document.getElementById("department")?.value||"",arrondissement:document.getElementById("arrondissement")?.value||"",commune:document.getElementById("commune")?.value||""});
+function panel(grid,title,description){const box=document.createElement("article");box.append(el("h3",title),el("p",description));grid.append(box);return box}
+function list(parent,values){const ul=document.createElement("ul");for(const value of values)ul.append(el("li",value));parent.append(ul);return ul}
+function link(parent,title,url){const a=el("a",title);a.href=url;a.target="_blank";a.rel="noopener noreferrer";parent.append(a)}
+function matches(place,selection){return (!selection.department||equal(place.department,selection.department))&&(!selection.arrondissement||equal(place.arrondissement,selection.arrondissement))&&(!selection.commune||equal(place.commune,selection.commune))}
 function render(){
-const dept=document.getElementById("department")?.value||"",arr=document.getElementById("arrondissement")?.value||"",commune=document.getElementById("commune")?.value||"";
-root.replaceChildren();if(!commune||!dept){root.hidden=true;return}root.hidden=false;
-const data=window.HAITI_TERRITOIRES?.departements||[];
-const d=data.find(x=>x.nom===dept),a=d?.arrondissements.find(x=>x.nom===arr)||d?.arrondissements.find(x=>x.communes.includes(commune));
-root.append(text("p","FICHE TERRITORIALE · RÉPERTOIRE NATIONAL"),text("h2",commune));
-const meta=text("p",[dept,a?.nom,commune].filter(Boolean).join("  ›  "));meta.className="v4-sheet-meta";root.append(meta);
-const pilot=pilotData[dept+"|"+commune];
-const grid=document.createElement("div");grid.className="v4-sheet-grid";root.append(grid);
-function panel(title,description){const s=document.createElement("article");s.append(text("h3",title),text("p",description));grid.append(s);return s}
-const history=panel("Histoire & patrimoine","La notice historique de cette commune reste à documenter et à vérifier. Les sources externes permettent de commencer la recherche.");
-if(pilot){history.querySelector("p").textContent=pilot.history;history.append(link("Source historique ↗",pilot.historySource))}
-history.append(link("Rechercher des sources historiques ↗","https://fr.wikipedia.org/w/index.php?search="+encodeURIComponent(commune+" Haïti")));
-const services=panel("Services & administrations","Explorez les administrations, bureaux, écoles, établissements de santé et autres lieux renseignés dans OpenStreetMap. Leur présence et leurs coordonnées restent à vérifier.");
-if(pilot){services.append(text("h4","Établissement documenté"),text("p",pilot.hospital),link("Source officielle de l’hôpital ↗",pilot.hospitalSource),text("p","Mairie, écoles, commissariat et autres services : inventaire et coordonnées à vérifier."))}
-const show=document.createElement("button");show.type="button";show.textContent="Afficher les lieux sur la carte";show.addEventListener("click",()=>{document.getElementById("atlas")?.scrollIntoView({behavior:"smooth"});document.getElementById("v4LoadPlaces")?.focus()});services.append(show);
-const tourism=panel("Tourisme & lieux d'intérêt","Les sites patrimoniaux et touristiques seront ajoutés progressivement, avec description, photographie, localisation et sources.");
-if(pilot){tourism.querySelector("p").textContent=pilot.heritage;tourism.append(link("Reportage sur le patrimoine local ↗",pilot.heritageSource))}
-tourism.append(link("Rechercher les lieux documentés ↗","https://www.openstreetmap.org/search?query="+encodeURIComponent(commune+", Haïti")));
-const future=panel("Vision Haïti 2050","Les projets présentés sont des propositions ou contributions locales, et non des travaux publics officiellement approuvés.");
-if(pilot){const ul=document.createElement("ul");pilot.projects.forEach(v=>ul.append(text("li",v)));future.append(ul)}
-const projectLink=document.createElement("a");projectLink.href="#projects";projectLink.textContent="Consulter les projets et propositions ↗";future.append(projectLink);
-const warning=text("p","État des données : fiche en cours d'enrichissement. Aucun renseignement non vérifié n'est présenté comme un fait.");warning.className="v4-sheet-warning";root.append(warning);
+ const selection=current(),department=territories.find(d=>equal(d.nom,selection.department));
+ const arrondissement=department?.arrondissements.find(a=>equal(a.nom,selection.arrondissement))||department?.arrondissements.find(a=>a.communes.some(c=>equal(c,selection.commune)));
+ const commune=arrondissement?.communes.find(c=>equal(c,selection.commune));
+ const level=commune?"commune":arrondissement?"arrondissement":department?"department":"national";
+ root.replaceChildren();root.hidden=false;
+ const name=level==="national"?"Haïti":level==="department"?department.nom:level==="arrondissement"?arrondissement.nom:commune;
+ root.append(el("p","ATLAS HAÏTI 2050 · FICHE "+(level==="national"?"NATIONALE":labels[level].toUpperCase())),el("h2",name));
+ const hierarchy=[department?.nom,arrondissement?.nom,commune].filter(Boolean);
+ const meta=el("p",hierarchy.length?hierarchy.join(" › "):"Répertoire national des territoires");meta.className="v4-sheet-meta";root.append(meta);
+ const allArr=territories.flatMap(d=>d.arrondissements),allCom=allArr.flatMap(a=>a.communes);
+ const arrs=level==="national"?allArr:level==="department"?department.arrondissements:level==="arrondissement"?[arrondissement]:[arrondissement];
+ const communes=level==="national"?allCom:level==="department"?department.arrondissements.flatMap(a=>a.communes):level==="arrondissement"?arrondissement.communes:[commune];
+ const count=registry.filter(p=>matches(p,selection)).length;
+ const summary=el("p",level==="national"?territories.length+" départements · "+allArr.length+" arrondissements · "+allCom.length+" communes":level==="department"?arrs.length+" arrondissements · "+communes.length+" communes":level==="arrondissement"?communes.length+" communes":"Commune de l'arrondissement de "+arrondissement.nom);
+ summary.className="v4-sheet-meta";root.append(summary);
+ const grid=document.createElement("div");grid.className="v4-sheet-grid";root.append(grid);
+ const administration=panel(grid,"Identité administrative",level==="national"?"Organisation administrative nationale":level==="department"?"Chef-lieu départemental : "+(department.chefLieu||"À documenter"):level==="arrondissement"?"Département : "+department.nom:"Département : "+department.nom+" · Arrondissement : "+arrondissement.nom);
+ if(level==="national")list(administration,territories.map(d=>d.nom));
+ else if(level==="department")list(administration,arrs.map(a=>a.nom));
+ else if(level==="arrondissement")list(administration,communes);
+ else administration.append(el("p","Informations administratives complémentaires : à documenter."));
+ const inventory=panel(grid,"Établissements et services",count+" fiche"+(count===1?"":"s")+" documentaire"+(count===1?"":"s")+" rattachée"+(count===1?"":"s")+" à ce territoire dans le registre GitHub. Ces fiches ne sont pas toutes vérifiées.");
+ const byCategory={};for(const p of registry.filter(p=>matches(p,selection))){const category=p.category||"Autres";byCategory[category]=(byCategory[category]||0)+1}
+ if(count)list(inventory,Object.entries(byCategory).map(([category,n])=>category+" : "+n));
+ else inventory.append(el("p","Inventaire à compléter : santé, écoles, marchés, administrations et infrastructures."));
+ const history=panel(grid,"Histoire et patrimoine","Notice historique et patrimoine : recherches et sources à compléter pour ce territoire.");
+ const pilot=level==="commune"?pilotData[department.nom+"|"+commune]:null;
+ if(pilot?.history){history.querySelector("p").textContent=pilot.history;if(pilot.historySource)link(history,"Consulter la source historique ↗",pilot.historySource)}
+ link(history,"Rechercher des sources historiques ↗","https://fr.wikipedia.org/w/index.php?search="+encodeURIComponent(name+" Haïti"));
+ const geography=panel(grid,"Géographie et localités",level==="commune"?"Sections communales, localités, superficie et population : à renseigner à partir de sources officielles.":level==="arrondissement"?"Les "+communes.length+" communes de cet arrondissement figurent dans le répertoire ci-dessus.":level==="department"?"Les "+communes.length+" communes sont réparties entre "+arrs.length+" arrondissements.":"L'atlas couvre le répertoire national des 149 communes.");
+ const future=panel(grid,"Vision Haïti 2050","Espace pour les projets et priorités de développement du territoire. Les propositions ne constituent pas des projets publics approuvés.");
+ if(pilot?.projects)list(future,pilot.projects);
+ const a=el("a","Consulter les projets et propositions ↗");a.href="#projects";future.append(a);
+ const status=el("p","État documentaire : structure territoriale disponible pour chaque département, arrondissement et commune. Les données historiques, démographiques et les établissements seront enrichis progressivement et vérifiés avec leurs sources.");status.className="v4-sheet-warning";root.append(status)
 }
-fetch("./data/fond-des-blancs-pilot.json").then(r=>{if(!r.ok)throw Error("Données indisponibles");return r.json()}).then(data=>{pilotData=data;render()}).catch(()=>{});
-document.addEventListener("haiti2050:territorychange",render);["department","arrondissement","commune"].forEach(id=>document.getElementById(id)?.addEventListener("change",()=>setTimeout(render,0)));render();
+document.addEventListener("haiti2050:territorychange",render);
+for(const id of ["department","arrondissement","commune"])document.getElementById(id)?.addEventListener("change",()=>queueMicrotask(render));
+fetch("./data/fond-des-blancs-pilot.json").then(r=>r.ok?r.json():{}).then(data=>{pilotData=data;render()}).catch(()=>{});
+fetch("./data/registre-etablissements.json",{cache:"no-store"}).then(r=>r.ok?r.json():{}).then(data=>{registry=Array.isArray(data.places)?data.places:[];render()}).catch(()=>{});
+render();
 })();
