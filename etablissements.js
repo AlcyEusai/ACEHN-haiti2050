@@ -96,6 +96,11 @@
     const codes = new Set(data.map(x => String(x.code_menfp || '')).filter(Boolean));
     const alreadyMappedThomonde = new Set(['061301104022', '061302105724', '061303116473']); // Correspondances OSM probables : Henry Christophe, Tierra Muscady, Baille Tourible
     records = data.concat([...savanette, ...thomonde].filter(x => !ids.has(x.id) && !codes.has(String(x.code_menfp || '')) && !alreadyMappedThomonde.has(String(x.code_menfp || ''))));
+    if (window.HAITI_NORMALISER_ETABLISSEMENTS) {
+      const normalized = window.HAITI_NORMALISER_ETABLISSEMENTS(records);
+      records = normalized.records;
+      console.info('Haïti 2050 — rattachement territorial', normalized.rapport);
+    }
     refresh();
   }).catch(e => { count.textContent = 'Chargement impossible : ' + e.message; console.error(e); });
 })();
