@@ -2957,17 +2957,41 @@
       "services": [],
       "infrastructures": [],
       "heritage": [],
-      "verification": "inventaire_en_cours",
+      "verification": "demographie_ihsi_documentee_autres_rubriques_a_completer",
       "audit": {
         "reviewedAt": "2026-11-03",
-        "method": "Structure de recherche fondée sur le répertoire territorial existant du projet; vérification administrative indépendante à effectuer.",
+        "method": "Transcription des estimations de population IHSI 2024 tableau 250, superficie du tableau 251 si indiquée.",
         "warnings": [
-          "Statut administratif et limites territoriales à recouper avec les tableaux IHSI et les actes officiels.",
-          "Population, superficie, histoire, patrimoine et services non renseignés sans source.",
-          "Aucun établissement ni coordonnée GPS inférés.",
-          "La notice est une structure de recherche, pas une fiche documentaire validée."
+          "Estimation 2024, non recensement.",
+          "Population communale totale, urbaine et rurale distinctes des quartiers et sections.",
+          "Services, infrastructures, histoire et patrimoine non vérifiés dans cette phase.",
+          "Aucune coordonnée GPS ni établissement inventés."
         ]
-      }
+      },
+      "populationTotale2024": {
+        "value": 111654,
+        "year": 2024,
+        "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+        "status": "documente",
+        "note": "IHSI 2024, tableau 250, estimation de population totale."
+      },
+      "populationUrbaine": {
+        "value": 42210,
+        "year": 2024,
+        "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+        "status": "documente",
+        "note": "IHSI 2024, tableau 250, estimation de population urbaine."
+      },
+      "populationRurale": {
+        "value": 69444,
+        "year": 2024,
+        "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+        "status": "documente",
+        "note": "IHSI 2024, tableau 250, estimation de population rurale."
+      },
+      "areaKm2": 330.87,
+      "areaSource": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+      "areaStatus": "documente"
     },
     {
       "department": "Centre",
@@ -2982,17 +3006,41 @@
       "services": [],
       "infrastructures": [],
       "heritage": [],
-      "verification": "inventaire_en_cours",
+      "verification": "demographie_ihsi_documentee_autres_rubriques_a_completer",
       "audit": {
         "reviewedAt": "2026-11-03",
-        "method": "Structure de recherche fondée sur le répertoire territorial existant du projet; vérification administrative indépendante à effectuer.",
+        "method": "Transcription des estimations de population IHSI 2024 tableau 250, superficie du tableau 251 si indiquée.",
         "warnings": [
-          "Statut administratif et limites territoriales à recouper avec les tableaux IHSI et les actes officiels.",
-          "Population, superficie, histoire, patrimoine et services non renseignés sans source.",
-          "Aucun établissement ni coordonnée GPS inférés.",
-          "La notice est une structure de recherche, pas une fiche documentaire validée."
+          "Estimation 2024, non recensement.",
+          "Population communale totale, urbaine et rurale distinctes des quartiers et sections.",
+          "Services, infrastructures, histoire et patrimoine non vérifiés dans cette phase.",
+          "Aucune coordonnée GPS ni établissement inventés."
         ]
-      }
+      },
+      "populationTotale2024": {
+        "value": 44616,
+        "year": 2024,
+        "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+        "status": "documente",
+        "note": "IHSI 2024, tableau 250, estimation de population totale."
+      },
+      "populationUrbaine": {
+        "value": 12615,
+        "year": 2024,
+        "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+        "status": "documente",
+        "note": "IHSI 2024, tableau 250, estimation de population urbaine."
+      },
+      "populationRurale": {
+        "value": 32001,
+        "year": 2024,
+        "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+        "status": "documente",
+        "note": "IHSI 2024, tableau 250, estimation de population rurale."
+      },
+      "areaKm2": 179.41,
+      "areaSource": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+      "areaStatus": "documente"
     },
     {
       "department": "Centre",
@@ -3007,16 +3055,37 @@
       "services": [],
       "infrastructures": [],
       "heritage": [],
-      "verification": "inventaire_en_cours",
+      "verification": "demographie_ihsi_documentee_autres_rubriques_a_completer",
       "audit": {
         "reviewedAt": "2026-11-03",
-        "method": "Structure de recherche fondée sur le répertoire territorial existant du projet; vérification administrative indépendante à effectuer.",
+        "method": "Transcription des estimations de population IHSI 2024 tableau 250, superficie du tableau 251 si indiquée.",
         "warnings": [
-          "Statut administratif et limites territoriales à recouper avec les tableaux IHSI et les actes officiels.",
-          "Population, superficie, histoire, patrimoine et services non renseignés sans source.",
-          "Aucun établissement ni coordonnée GPS inférés.",
-          "La notice est une structure de recherche, pas une fiche documentaire validée."
+          "Estimation 2024, non recensement.",
+          "Population communale totale, urbaine et rurale distinctes des quartiers et sections.",
+          "Services, infrastructures, histoire et patrimoine non vérifiés dans cette phase.",
+          "Aucune coordonnée GPS ni établissement inventés."
         ]
+      },
+      "populationTotale2024": {
+        "value": 63982,
+        "year": 2024,
+        "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+        "status": "documente",
+        "note": "IHSI 2024, tableau 250, estimation de population totale."
+      },
+      "populationUrbaine": {
+        "value": 9957,
+        "year": 2024,
+        "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+        "status": "documente",
+        "note": "IHSI 2024, tableau 250, estimation de population urbaine."
+      },
+      "populationRurale": {
+        "value": 54025,
+        "year": 2024,
+        "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+        "status": "documente",
+        "note": "IHSI 2024, tableau 250, estimation de population rurale."
       }
     },
     {
@@ -3032,16 +3101,37 @@
       "services": [],
       "infrastructures": [],
       "heritage": [],
-      "verification": "inventaire_en_cours",
+      "verification": "demographie_ihsi_documentee_autres_rubriques_a_completer",
       "audit": {
         "reviewedAt": "2026-11-03",
-        "method": "Structure de recherche fondée sur le répertoire territorial existant du projet; vérification administrative indépendante à effectuer.",
+        "method": "Transcription des estimations de population IHSI 2024 tableau 250, superficie du tableau 251 si indiquée.",
         "warnings": [
-          "Statut administratif et limites territoriales à recouper avec les tableaux IHSI et les actes officiels.",
-          "Population, superficie, histoire, patrimoine et services non renseignés sans source.",
-          "Aucun établissement ni coordonnée GPS inférés.",
-          "La notice est une structure de recherche, pas une fiche documentaire validée."
+          "Estimation 2024, non recensement.",
+          "Population communale totale, urbaine et rurale distinctes des quartiers et sections.",
+          "Services, infrastructures, histoire et patrimoine non vérifiés dans cette phase.",
+          "Aucune coordonnée GPS ni établissement inventés."
         ]
+      },
+      "populationTotale2024": {
+        "value": 52396,
+        "year": 2024,
+        "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+        "status": "documente",
+        "note": "IHSI 2024, tableau 250, estimation de population totale."
+      },
+      "populationUrbaine": {
+        "value": 22307,
+        "year": 2024,
+        "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+        "status": "documente",
+        "note": "IHSI 2024, tableau 250, estimation de population urbaine."
+      },
+      "populationRurale": {
+        "value": 30089,
+        "year": 2024,
+        "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+        "status": "documente",
+        "note": "IHSI 2024, tableau 250, estimation de population rurale."
       }
     },
     {
@@ -3057,16 +3147,37 @@
       "services": [],
       "infrastructures": [],
       "heritage": [],
-      "verification": "inventaire_en_cours",
+      "verification": "demographie_ihsi_documentee_autres_rubriques_a_completer",
       "audit": {
         "reviewedAt": "2026-11-03",
-        "method": "Structure de recherche fondée sur le répertoire territorial existant du projet; vérification administrative indépendante à effectuer.",
+        "method": "Transcription des estimations de population IHSI 2024 tableau 250, superficie du tableau 251 si indiquée.",
         "warnings": [
-          "Statut administratif et limites territoriales à recouper avec les tableaux IHSI et les actes officiels.",
-          "Population, superficie, histoire, patrimoine et services non renseignés sans source.",
-          "Aucun établissement ni coordonnée GPS inférés.",
-          "La notice est une structure de recherche, pas une fiche documentaire validée."
+          "Estimation 2024, non recensement.",
+          "Population communale totale, urbaine et rurale distinctes des quartiers et sections.",
+          "Services, infrastructures, histoire et patrimoine non vérifiés dans cette phase.",
+          "Aucune coordonnée GPS ni établissement inventés."
         ]
+      },
+      "populationTotale2024": {
+        "value": 98916,
+        "year": 2024,
+        "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+        "status": "documente",
+        "note": "IHSI 2024, tableau 250, estimation de population totale."
+      },
+      "populationUrbaine": {
+        "value": 35827,
+        "year": 2024,
+        "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+        "status": "documente",
+        "note": "IHSI 2024, tableau 250, estimation de population urbaine."
+      },
+      "populationRurale": {
+        "value": 63089,
+        "year": 2024,
+        "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+        "status": "documente",
+        "note": "IHSI 2024, tableau 250, estimation de population rurale."
       }
     },
     {
@@ -3082,16 +3193,37 @@
       "services": [],
       "infrastructures": [],
       "heritage": [],
-      "verification": "inventaire_en_cours",
+      "verification": "demographie_ihsi_documentee_autres_rubriques_a_completer",
       "audit": {
         "reviewedAt": "2026-11-03",
-        "method": "Structure de recherche fondée sur le répertoire territorial existant du projet; vérification administrative indépendante à effectuer.",
+        "method": "Transcription des estimations de population IHSI 2024 tableau 250, superficie du tableau 251 si indiquée.",
         "warnings": [
-          "Statut administratif et limites territoriales à recouper avec les tableaux IHSI et les actes officiels.",
-          "Population, superficie, histoire, patrimoine et services non renseignés sans source.",
-          "Aucun établissement ni coordonnée GPS inférés.",
-          "La notice est une structure de recherche, pas une fiche documentaire validée."
+          "Estimation 2024, non recensement.",
+          "Population communale totale, urbaine et rurale distinctes des quartiers et sections.",
+          "Services, infrastructures, histoire et patrimoine non vérifiés dans cette phase.",
+          "Aucune coordonnée GPS ni établissement inventés."
         ]
+      },
+      "populationTotale2024": {
+        "value": 41346,
+        "year": 2024,
+        "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+        "status": "documente",
+        "note": "IHSI 2024, tableau 250, estimation de population totale."
+      },
+      "populationUrbaine": {
+        "value": 11613,
+        "year": 2024,
+        "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+        "status": "documente",
+        "note": "IHSI 2024, tableau 250, estimation de population urbaine."
+      },
+      "populationRurale": {
+        "value": 29733,
+        "year": 2024,
+        "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+        "status": "documente",
+        "note": "IHSI 2024, tableau 250, estimation de population rurale."
       }
     },
     {
@@ -3100,23 +3232,33 @@
       "commune": "Baptiste",
       "updatedAt": "2026-11-03",
       "history": {
-        "text": "Histoire locale à documenter à partir de sources institutionnelles et historiques identifiées.",
-        "sources": [],
+        "text": "Le répertoire administratif de l'IHSI mentionne Baptiste parmi les communes de l'arrondissement de Lascahobas, tandis que le tableau démographique 250 l'intègre comme quartier de Belladère. Le statut juridique et sa mise en œuvre restent à confirmer par un acte officiel.",
+        "sources": [
+          "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf"
+        ],
         "status": "a_verifier"
       },
       "services": [],
       "infrastructures": [],
       "heritage": [],
-      "verification": "inventaire_en_cours",
+      "verification": "statut_administratif_divergent_quartier_ihsi",
       "audit": {
         "reviewedAt": "2026-11-03",
-        "method": "Structure de recherche fondée sur le répertoire territorial existant du projet; vérification administrative indépendante à effectuer.",
+        "method": "Comparaison du tableau administratif et du tableau démographique 250 de l'IHSI 2024.",
         "warnings": [
-          "Statut administratif et limites territoriales à recouper avec les tableaux IHSI et les actes officiels.",
-          "Population, superficie, histoire, patrimoine et services non renseignés sans source.",
-          "Aucun établissement ni coordonnée GPS inférés.",
-          "La notice est une structure de recherche, pas une fiche documentaire validée."
+          "Baptiste figure comme commune dans le tableau administratif, mais comme quartier de Belladère dans le tableau 250.",
+          "Les 6 278 habitants sont déjà inclus dans Belladère; ne pas les compter une seconde fois.",
+          "Population communale autonome et limites territoriales non établies.",
+          "Ne pas inférer de coordonnées ni d'établissements."
         ]
+      },
+      "administrativeStatus": "mention_commune_tableau_administratif_quartier_belladere_tableau_demographique",
+      "populationQuartier2024": {
+        "value": 6278,
+        "year": 2024,
+        "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+        "status": "documente",
+        "note": "IHSI 2024, tableau 250 : quartier de Baptiste inclus dans la population urbaine de Belladère; ne pas additionner séparément."
       }
     },
     {
@@ -3132,16 +3274,37 @@
       "services": [],
       "infrastructures": [],
       "heritage": [],
-      "verification": "inventaire_en_cours",
+      "verification": "demographie_ihsi_documentee_autres_rubriques_a_completer",
       "audit": {
         "reviewedAt": "2026-11-03",
-        "method": "Structure de recherche fondée sur le répertoire territorial existant du projet; vérification administrative indépendante à effectuer.",
+        "method": "Transcription des estimations de population IHSI 2024 tableau 250, superficie du tableau 251 si indiquée.",
         "warnings": [
-          "Statut administratif et limites territoriales à recouper avec les tableaux IHSI et les actes officiels.",
-          "Population, superficie, histoire, patrimoine et services non renseignés sans source.",
-          "Aucun établissement ni coordonnée GPS inférés.",
-          "La notice est une structure de recherche, pas une fiche documentaire validée."
+          "Estimation 2024, non recensement.",
+          "Population communale totale, urbaine et rurale distinctes des quartiers et sections.",
+          "Services, infrastructures, histoire et patrimoine non vérifiés dans cette phase.",
+          "Aucune coordonnée GPS ni établissement inventés."
         ]
+      },
+      "populationTotale2024": {
+        "value": 64567,
+        "year": 2024,
+        "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+        "status": "documente",
+        "note": "IHSI 2024, tableau 250, estimation de population totale."
+      },
+      "populationUrbaine": {
+        "value": 18472,
+        "year": 2024,
+        "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+        "status": "documente",
+        "note": "IHSI 2024, tableau 250, estimation de population urbaine."
+      },
+      "populationRurale": {
+        "value": 46095,
+        "year": 2024,
+        "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+        "status": "documente",
+        "note": "IHSI 2024, tableau 250, estimation de population rurale."
       }
     },
     {
@@ -3157,16 +3320,37 @@
       "services": [],
       "infrastructures": [],
       "heritage": [],
-      "verification": "inventaire_en_cours",
+      "verification": "demographie_ihsi_documentee_autres_rubriques_a_completer",
       "audit": {
         "reviewedAt": "2026-11-03",
-        "method": "Structure de recherche fondée sur le répertoire territorial existant du projet; vérification administrative indépendante à effectuer.",
+        "method": "Transcription des estimations de population IHSI 2024 tableau 250, superficie du tableau 251 si indiquée.",
         "warnings": [
-          "Statut administratif et limites territoriales à recouper avec les tableaux IHSI et les actes officiels.",
-          "Population, superficie, histoire, patrimoine et services non renseignés sans source.",
-          "Aucun établissement ni coordonnée GPS inférés.",
-          "La notice est une structure de recherche, pas une fiche documentaire validée."
+          "Estimation 2024, non recensement.",
+          "Population communale totale, urbaine et rurale distinctes des quartiers et sections.",
+          "Services, infrastructures, histoire et patrimoine non vérifiés dans cette phase.",
+          "Aucune coordonnée GPS ni établissement inventés."
         ]
+      },
+      "populationTotale2024": {
+        "value": 72214,
+        "year": 2024,
+        "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+        "status": "documente",
+        "note": "IHSI 2024, tableau 250, estimation de population totale."
+      },
+      "populationUrbaine": {
+        "value": 30304,
+        "year": 2024,
+        "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+        "status": "documente",
+        "note": "IHSI 2024, tableau 250, estimation de population urbaine."
+      },
+      "populationRurale": {
+        "value": 41910,
+        "year": 2024,
+        "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+        "status": "documente",
+        "note": "IHSI 2024, tableau 250, estimation de population rurale."
       }
     }
   ]
