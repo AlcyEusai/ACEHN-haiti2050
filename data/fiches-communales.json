@@ -1213,6 +1213,108 @@
         "status": "documente",
         "note": "IHSI 2024, tableau 61, population totale communale."
       }
+    },
+    {
+      "department": "Nord-Est",
+      "arrondissement": "Fort-Liberté",
+      "commune": "Fort-Liberté",
+      "updatedAt": "2026-11-03",
+      "populationTotale2024": {
+        "value": 37665,
+        "year": 2024,
+        "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+        "status": "documente"
+      },
+      "populationUrbaine": {
+        "value": 34652,
+        "year": 2024,
+        "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+        "status": "documente"
+      },
+      "history": {
+        "text": "À documenter",
+        "sources": [],
+        "status": "a_verifier"
+      },
+      "services": [],
+      "infrastructures": [],
+      "heritage": [],
+      "verification": "demographie_documentee",
+      "audit": {
+        "reviewedAt": "2026-11-03",
+        "warnings": [
+          "Estimation IHSI 2024, tableau 76; non recensement.",
+          "Établissements et coordonnées non renseignés."
+        ]
+      }
+    },
+    {
+      "department": "Nord-Est",
+      "arrondissement": "Fort-Liberté",
+      "commune": "Ferrier",
+      "updatedAt": "2026-11-03",
+      "populationTotale2024": {
+        "value": 16015,
+        "year": 2024,
+        "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+        "status": "documente"
+      },
+      "populationUrbaine": {
+        "value": 13375,
+        "year": 2024,
+        "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+        "status": "documente"
+      },
+      "history": {
+        "text": "À documenter",
+        "sources": [],
+        "status": "a_verifier"
+      },
+      "services": [],
+      "infrastructures": [],
+      "heritage": [],
+      "verification": "demographie_documentee",
+      "audit": {
+        "reviewedAt": "2026-11-03",
+        "warnings": [
+          "Estimation IHSI 2024, tableau 76; non recensement.",
+          "Établissements et coordonnées non renseignés."
+        ]
+      }
+    },
+    {
+      "department": "Nord-Est",
+      "arrondissement": "Fort-Liberté",
+      "commune": "Perches",
+      "updatedAt": "2026-11-03",
+      "populationTotale2024": {
+        "value": 12640,
+        "year": 2024,
+        "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+        "status": "documente"
+      },
+      "populationUrbaine": {
+        "value": 10325,
+        "year": 2024,
+        "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+        "status": "documente"
+      },
+      "history": {
+        "text": "À documenter",
+        "sources": [],
+        "status": "a_verifier"
+      },
+      "services": [],
+      "infrastructures": [],
+      "heritage": [],
+      "verification": "demographie_documentee",
+      "audit": {
+        "reviewedAt": "2026-11-03",
+        "warnings": [
+          "Estimation IHSI 2024, tableau 76; non recensement.",
+          "Établissements et coordonnées non renseignés."
+        ]
+      }
     }
   ]
 }
