@@ -2773,16 +2773,37 @@
       "services": [],
       "infrastructures": [],
       "heritage": [],
-      "verification": "inventaire_en_cours",
+      "verification": "demographie_documentee_autres_rubriques_a_completer",
       "audit": {
         "reviewedAt": "2026-11-03",
-        "method": "Structure de recherche fondée sur le répertoire territorial existant du projet; vérification administrative indépendante à effectuer.",
+        "method": "Lecture des tableaux 110 et 111 du rapport IHSI 2024 et calcul du total urbain+rural.",
         "warnings": [
-          "Statut administratif et limites territoriales à recouper avec les tableaux IHSI et les actes officiels.",
-          "Population, superficie, histoire, patrimoine et services non renseignés sans source.",
-          "Aucun établissement ni coordonnée GPS inférés.",
-          "La notice est une structure de recherche, pas une fiche documentaire validée."
+          "Estimations 2024, pas un recensement.",
+          "Population totale calculée à partir des deux tableaux et non copiée d'un tableau de population totale.",
+          "Services publics, patrimoine, histoire et infrastructures à documenter indépendamment.",
+          "Aucune coordonnée GPS inventée."
         ]
+      },
+      "populationTotale2024": {
+        "value": 138051,
+        "year": 2024,
+        "source": "https://budget.gouv.ht/storage/app/uploads/public/67c/e9d/d54/67ce9dd540912792656630.pdf",
+        "status": "documente",
+        "note": "Total calculé à partir des populations urbaine (tableau 110) et rurale (tableau 111) de l'IHSI 2024."
+      },
+      "populationUrbaine": {
+        "value": 74966,
+        "year": 2024,
+        "source": "https://budget.gouv.ht/storage/app/uploads/public/67c/e9d/d54/67ce9dd540912792656630.pdf",
+        "status": "documente",
+        "note": "IHSI 2024, tableau 110 : population urbaine."
+      },
+      "populationRurale": {
+        "value": 63085,
+        "year": 2024,
+        "source": "https://budget.gouv.ht/storage/app/uploads/public/67c/e9d/d54/67ce9dd540912792656630.pdf",
+        "status": "documente",
+        "note": "IHSI 2024, tableau 111 : population rurale."
       }
     },
     {
@@ -2798,16 +2819,37 @@
       "services": [],
       "infrastructures": [],
       "heritage": [],
-      "verification": "inventaire_en_cours",
+      "verification": "demographie_documentee_autres_rubriques_a_completer",
       "audit": {
         "reviewedAt": "2026-11-03",
-        "method": "Structure de recherche fondée sur le répertoire territorial existant du projet; vérification administrative indépendante à effectuer.",
+        "method": "Lecture des tableaux 110 et 111 du rapport IHSI 2024 et calcul du total urbain+rural.",
         "warnings": [
-          "Statut administratif et limites territoriales à recouper avec les tableaux IHSI et les actes officiels.",
-          "Population, superficie, histoire, patrimoine et services non renseignés sans source.",
-          "Aucun établissement ni coordonnée GPS inférés.",
-          "La notice est une structure de recherche, pas une fiche documentaire validée."
+          "Estimations 2024, pas un recensement.",
+          "Population totale calculée à partir des deux tableaux et non copiée d'un tableau de population totale.",
+          "Services publics, patrimoine, histoire et infrastructures à documenter indépendamment.",
+          "Aucune coordonnée GPS inventée."
         ]
+      },
+      "populationTotale2024": {
+        "value": 67315,
+        "year": 2024,
+        "source": "https://budget.gouv.ht/storage/app/uploads/public/67c/e9d/d54/67ce9dd540912792656630.pdf",
+        "status": "documente",
+        "note": "Total calculé à partir des populations urbaine (tableau 110) et rurale (tableau 111) de l'IHSI 2024."
+      },
+      "populationUrbaine": {
+        "value": 31272,
+        "year": 2024,
+        "source": "https://budget.gouv.ht/storage/app/uploads/public/67c/e9d/d54/67ce9dd540912792656630.pdf",
+        "status": "documente",
+        "note": "IHSI 2024, tableau 110 : population urbaine."
+      },
+      "populationRurale": {
+        "value": 36043,
+        "year": 2024,
+        "source": "https://budget.gouv.ht/storage/app/uploads/public/67c/e9d/d54/67ce9dd540912792656630.pdf",
+        "status": "documente",
+        "note": "IHSI 2024, tableau 111 : population rurale."
       }
     },
     {
@@ -2823,16 +2865,37 @@
       "services": [],
       "infrastructures": [],
       "heritage": [],
-      "verification": "inventaire_en_cours",
+      "verification": "demographie_documentee_autres_rubriques_a_completer",
       "audit": {
         "reviewedAt": "2026-11-03",
-        "method": "Structure de recherche fondée sur le répertoire territorial existant du projet; vérification administrative indépendante à effectuer.",
+        "method": "Lecture des tableaux 110 et 111 du rapport IHSI 2024 et calcul du total urbain+rural.",
         "warnings": [
-          "Statut administratif et limites territoriales à recouper avec les tableaux IHSI et les actes officiels.",
-          "Population, superficie, histoire, patrimoine et services non renseignés sans source.",
-          "Aucun établissement ni coordonnée GPS inférés.",
-          "La notice est une structure de recherche, pas une fiche documentaire validée."
+          "Estimations 2024, pas un recensement.",
+          "Population totale calculée à partir des deux tableaux et non copiée d'un tableau de population totale.",
+          "Services publics, patrimoine, histoire et infrastructures à documenter indépendamment.",
+          "Aucune coordonnée GPS inventée."
         ]
+      },
+      "populationTotale2024": {
+        "value": 70662,
+        "year": 2024,
+        "source": "https://budget.gouv.ht/storage/app/uploads/public/67c/e9d/d54/67ce9dd540912792656630.pdf",
+        "status": "documente",
+        "note": "Total calculé à partir des populations urbaine (tableau 110) et rurale (tableau 111) de l'IHSI 2024."
+      },
+      "populationUrbaine": {
+        "value": 25398,
+        "year": 2024,
+        "source": "https://budget.gouv.ht/storage/app/uploads/public/67c/e9d/d54/67ce9dd540912792656630.pdf",
+        "status": "documente",
+        "note": "IHSI 2024, tableau 110 : population urbaine."
+      },
+      "populationRurale": {
+        "value": 45264,
+        "year": 2024,
+        "source": "https://budget.gouv.ht/storage/app/uploads/public/67c/e9d/d54/67ce9dd540912792656630.pdf",
+        "status": "documente",
+        "note": "IHSI 2024, tableau 111 : population rurale."
       }
     },
     {
@@ -2848,16 +2911,37 @@
       "services": [],
       "infrastructures": [],
       "heritage": [],
-      "verification": "inventaire_en_cours",
+      "verification": "demographie_documentee_autres_rubriques_a_completer",
       "audit": {
         "reviewedAt": "2026-11-03",
-        "method": "Structure de recherche fondée sur le répertoire territorial existant du projet; vérification administrative indépendante à effectuer.",
+        "method": "Lecture des tableaux 110 et 111 du rapport IHSI 2024 et calcul du total urbain+rural.",
         "warnings": [
-          "Statut administratif et limites territoriales à recouper avec les tableaux IHSI et les actes officiels.",
-          "Population, superficie, histoire, patrimoine et services non renseignés sans source.",
-          "Aucun établissement ni coordonnée GPS inférés.",
-          "La notice est une structure de recherche, pas une fiche documentaire validée."
+          "Estimations 2024, pas un recensement.",
+          "Population totale calculée à partir des deux tableaux et non copiée d'un tableau de population totale.",
+          "Services publics, patrimoine, histoire et infrastructures à documenter indépendamment.",
+          "Aucune coordonnée GPS inventée."
         ]
+      },
+      "populationTotale2024": {
+        "value": 26561,
+        "year": 2024,
+        "source": "https://budget.gouv.ht/storage/app/uploads/public/67c/e9d/d54/67ce9dd540912792656630.pdf",
+        "status": "documente",
+        "note": "Total calculé à partir des populations urbaine (tableau 110) et rurale (tableau 111) de l'IHSI 2024."
+      },
+      "populationUrbaine": {
+        "value": 11874,
+        "year": 2024,
+        "source": "https://budget.gouv.ht/storage/app/uploads/public/67c/e9d/d54/67ce9dd540912792656630.pdf",
+        "status": "documente",
+        "note": "IHSI 2024, tableau 110 : population urbaine."
+      },
+      "populationRurale": {
+        "value": 14687,
+        "year": 2024,
+        "source": "https://budget.gouv.ht/storage/app/uploads/public/67c/e9d/d54/67ce9dd540912792656630.pdf",
+        "status": "documente",
+        "note": "IHSI 2024, tableau 111 : population rurale."
       }
     },
     {
