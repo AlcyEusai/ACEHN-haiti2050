@@ -76,3 +76,15 @@
   width: 100%;
   min-width: 0;
 }
+
+
+/* Mode satellite : conserver les frontières sans masquer l'imagerie. */
+#map.haiti2050-satellite-clean .leaflet-overlay-pane path.leaflet-interactive {
+  fill-opacity: 0 !important;
+  stroke-opacity: .65 !important;
+  stroke-width: 1.5px !important;
+}
+#map.haiti2050-satellite-clean .leaflet-overlay-pane path.leaflet-interactive:hover {
+  stroke-opacity: 1 !important;
+  stroke-width: 2.5px !important;
+}
