@@ -1476,16 +1476,38 @@
       "services": [],
       "infrastructures": [],
       "heritage": [],
-      "verification": "inventaire_en_cours",
+      "verification": "demographie_documentee_autres_rubriques_a_completer",
       "administrativeSource": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
       "audit": {
         "reviewedAt": "2026-11-03",
         "method": "Rattachement administratif recoupé avec le répertoire territorial IHSI; autres rubriques en attente.",
         "warnings": [
-          "La structure administrative est documentée; aucune validation de services locaux n'a été faite.",
-          "Population, histoire, établissements, patrimoine et infrastructures non renseignés sans source précise.",
-          "Aucune coordonnée GPS inférée."
-        ]
+          "Données estimées pour 2024, non recensement.",
+          "Services publics, infrastructures et patrimoine : recherche documentaire toujours nécessaire.",
+          "Aucune coordonnée GPS ajoutée sans source."
+        ],
+        "demographyReference": "IHSI 2024 tableau 76"
+      },
+      "populationTotale2024": {
+        "value": 53524,
+        "year": 2024,
+        "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+        "status": "documente",
+        "note": "Estimation IHSI 2024, tableau 76; population totale."
+      },
+      "populationUrbaine": {
+        "value": 42366,
+        "year": 2024,
+        "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+        "status": "documente",
+        "note": "Estimation IHSI 2024, tableau 76; population urbaine."
+      },
+      "populationRurale": {
+        "value": 11158,
+        "year": 2024,
+        "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+        "status": "documente",
+        "note": "Estimation IHSI 2024, tableau 76; population rurale."
       }
     },
     {
@@ -1501,16 +1523,38 @@
       "services": [],
       "infrastructures": [],
       "heritage": [],
-      "verification": "inventaire_en_cours",
+      "verification": "demographie_documentee_autres_rubriques_a_completer",
       "administrativeSource": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
       "audit": {
         "reviewedAt": "2026-11-03",
         "method": "Rattachement administratif recoupé avec le répertoire territorial IHSI; autres rubriques en attente.",
         "warnings": [
-          "La structure administrative est documentée; aucune validation de services locaux n'a été faite.",
-          "Population, histoire, établissements, patrimoine et infrastructures non renseignés sans source précise.",
-          "Aucune coordonnée GPS inférée."
-        ]
+          "Données estimées pour 2024, non recensement.",
+          "Services publics, infrastructures et patrimoine : recherche documentaire toujours nécessaire.",
+          "Aucune coordonnée GPS ajoutée sans source."
+        ],
+        "demographyReference": "IHSI 2024 tableau 76"
+      },
+      "populationTotale2024": {
+        "value": 30658,
+        "year": 2024,
+        "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+        "status": "documente",
+        "note": "Estimation IHSI 2024, tableau 76; population totale."
+      },
+      "populationUrbaine": {
+        "value": 7149,
+        "year": 2024,
+        "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+        "status": "documente",
+        "note": "Estimation IHSI 2024, tableau 76; population urbaine."
+      },
+      "populationRurale": {
+        "value": 23509,
+        "year": 2024,
+        "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+        "status": "documente",
+        "note": "Estimation IHSI 2024, tableau 76; population rurale."
       }
     },
     {
@@ -1526,16 +1570,38 @@
       "services": [],
       "infrastructures": [],
       "heritage": [],
-      "verification": "inventaire_en_cours",
+      "verification": "demographie_documentee_autres_rubriques_a_completer",
       "administrativeSource": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
       "audit": {
         "reviewedAt": "2026-11-03",
         "method": "Rattachement administratif recoupé avec le répertoire territorial IHSI; autres rubriques en attente.",
         "warnings": [
-          "La structure administrative est documentée; aucune validation de services locaux n'a été faite.",
-          "Population, histoire, établissements, patrimoine et infrastructures non renseignés sans source précise.",
-          "Aucune coordonnée GPS inférée."
-        ]
+          "Données estimées pour 2024, non recensement.",
+          "Services publics, infrastructures et patrimoine : recherche documentaire toujours nécessaire.",
+          "Aucune coordonnée GPS ajoutée sans source."
+        ],
+        "demographyReference": "IHSI 2024 tableau 76"
+      },
+      "populationTotale2024": {
+        "value": 33168,
+        "year": 2024,
+        "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+        "status": "documente",
+        "note": "Estimation IHSI 2024, tableau 76; population totale."
+      },
+      "populationUrbaine": {
+        "value": 30855,
+        "year": 2024,
+        "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+        "status": "documente",
+        "note": "Estimation IHSI 2024, tableau 76; population urbaine."
+      },
+      "populationRurale": {
+        "value": 2313,
+        "year": 2024,
+        "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+        "status": "documente",
+        "note": "Estimation IHSI 2024, tableau 76; population rurale."
       }
     },
     {
@@ -1551,16 +1617,38 @@
       "services": [],
       "infrastructures": [],
       "heritage": [],
-      "verification": "inventaire_en_cours",
+      "verification": "demographie_documentee_autres_rubriques_a_completer",
       "administrativeSource": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
       "audit": {
         "reviewedAt": "2026-11-03",
         "method": "Rattachement administratif recoupé avec le répertoire territorial IHSI; autres rubriques en attente.",
         "warnings": [
-          "La structure administrative est documentée; aucune validation de services locaux n'a été faite.",
-          "Population, histoire, établissements, patrimoine et infrastructures non renseignés sans source précise.",
-          "Aucune coordonnée GPS inférée."
-        ]
+          "Données estimées pour 2024, non recensement.",
+          "Services publics, infrastructures et patrimoine : recherche documentaire toujours nécessaire.",
+          "Aucune coordonnée GPS ajoutée sans source."
+        ],
+        "demographyReference": "IHSI 2024 tableau 76"
+      },
+      "populationTotale2024": {
+        "value": 8436,
+        "year": 2024,
+        "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+        "status": "documente",
+        "note": "Estimation IHSI 2024, tableau 76; population totale."
+      },
+      "populationUrbaine": {
+        "value": 5925,
+        "year": 2024,
+        "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+        "status": "documente",
+        "note": "Estimation IHSI 2024, tableau 76; population urbaine."
+      },
+      "populationRurale": {
+        "value": 2511,
+        "year": 2024,
+        "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+        "status": "documente",
+        "note": "Estimation IHSI 2024, tableau 76; population rurale."
       }
     },
     {
@@ -1576,15 +1664,15 @@
       "services": [],
       "infrastructures": [],
       "heritage": [],
-      "verification": "inventaire_en_cours",
+      "verification": "statut_administratif_a_verifier",
       "administrativeSource": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
       "audit": {
         "reviewedAt": "2026-11-03",
         "method": "Rattachement administratif recoupé avec le répertoire territorial IHSI; autres rubriques en attente.",
         "warnings": [
-          "La structure administrative est documentée; aucune validation de services locaux n'a été faite.",
-          "Population, histoire, établissements, patrimoine et infrastructures non renseignés sans source précise.",
-          "Aucune coordonnée GPS inférée."
+          "Grand-Bassin figure dans le répertoire territorial actuel du projet, mais n'apparaît pas comme commune distincte au tableau 76 de l'IHSI 2024.",
+          "Vérifier son statut administratif et le rattachement exact avant toute attribution de population.",
+          "Aucune population, établissement ni coordonnée GPS inventés."
         ]
       }
     },
@@ -1601,16 +1689,38 @@
       "services": [],
       "infrastructures": [],
       "heritage": [],
-      "verification": "inventaire_en_cours",
+      "verification": "demographie_documentee_autres_rubriques_a_completer",
       "administrativeSource": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
       "audit": {
         "reviewedAt": "2026-11-03",
         "method": "Rattachement administratif recoupé avec le répertoire territorial IHSI; autres rubriques en attente.",
         "warnings": [
-          "La structure administrative est documentée; aucune validation de services locaux n'a été faite.",
-          "Population, histoire, établissements, patrimoine et infrastructures non renseignés sans source précise.",
-          "Aucune coordonnée GPS inférée."
-        ]
+          "Données estimées pour 2024, non recensement.",
+          "Services publics, infrastructures et patrimoine : recherche documentaire toujours nécessaire.",
+          "Aucune coordonnée GPS ajoutée sans source."
+        ],
+        "demographyReference": "IHSI 2024 tableau 76"
+      },
+      "populationTotale2024": {
+        "value": 25743,
+        "year": 2024,
+        "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+        "status": "documente",
+        "note": "Estimation IHSI 2024, tableau 76; population totale."
+      },
+      "populationUrbaine": {
+        "value": 10377,
+        "year": 2024,
+        "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+        "status": "documente",
+        "note": "Estimation IHSI 2024, tableau 76; population urbaine."
+      },
+      "populationRurale": {
+        "value": 15366,
+        "year": 2024,
+        "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+        "status": "documente",
+        "note": "Estimation IHSI 2024, tableau 76; population rurale."
       }
     },
     {
@@ -1626,16 +1736,38 @@
       "services": [],
       "infrastructures": [],
       "heritage": [],
-      "verification": "inventaire_en_cours",
+      "verification": "demographie_documentee_autres_rubriques_a_completer",
       "administrativeSource": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
       "audit": {
         "reviewedAt": "2026-11-03",
         "method": "Rattachement administratif recoupé avec le répertoire territorial IHSI; autres rubriques en attente.",
         "warnings": [
-          "La structure administrative est documentée; aucune validation de services locaux n'a été faite.",
-          "Population, histoire, établissements, patrimoine et infrastructures non renseignés sans source précise.",
-          "Aucune coordonnée GPS inférée."
-        ]
+          "Données estimées pour 2024, non recensement.",
+          "Services publics, infrastructures et patrimoine : recherche documentaire toujours nécessaire.",
+          "Aucune coordonnée GPS ajoutée sans source."
+        ],
+        "demographyReference": "IHSI 2024 tableau 76"
+      },
+      "populationTotale2024": {
+        "value": 14892,
+        "year": 2024,
+        "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+        "status": "documente",
+        "note": "Estimation IHSI 2024, tableau 76; population totale."
+      },
+      "populationUrbaine": {
+        "value": 9365,
+        "year": 2024,
+        "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+        "status": "documente",
+        "note": "Estimation IHSI 2024, tableau 76; population urbaine."
+      },
+      "populationRurale": {
+        "value": 5527,
+        "year": 2024,
+        "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+        "status": "documente",
+        "note": "Estimation IHSI 2024, tableau 76; population rurale."
       }
     },
     {
@@ -1651,16 +1783,38 @@
       "services": [],
       "infrastructures": [],
       "heritage": [],
-      "verification": "inventaire_en_cours",
+      "verification": "demographie_documentee_autres_rubriques_a_completer",
       "administrativeSource": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
       "audit": {
         "reviewedAt": "2026-11-03",
         "method": "Rattachement administratif recoupé avec le répertoire territorial IHSI; autres rubriques en attente.",
         "warnings": [
-          "La structure administrative est documentée; aucune validation de services locaux n'a été faite.",
-          "Population, histoire, établissements, patrimoine et infrastructures non renseignés sans source précise.",
-          "Aucune coordonnée GPS inférée."
-        ]
+          "Données estimées pour 2024, non recensement.",
+          "Services publics, infrastructures et patrimoine : recherche documentaire toujours nécessaire.",
+          "Aucune coordonnée GPS ajoutée sans source."
+        ],
+        "demographyReference": "IHSI 2024 tableau 76"
+      },
+      "populationTotale2024": {
+        "value": 37956,
+        "year": 2024,
+        "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+        "status": "documente",
+        "note": "Estimation IHSI 2024, tableau 76; population totale."
+      },
+      "populationUrbaine": {
+        "value": 14849,
+        "year": 2024,
+        "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+        "status": "documente",
+        "note": "Estimation IHSI 2024, tableau 76; population urbaine."
+      },
+      "populationRurale": {
+        "value": 23107,
+        "year": 2024,
+        "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+        "status": "documente",
+        "note": "Estimation IHSI 2024, tableau 76; population rurale."
       }
     }
   ]
