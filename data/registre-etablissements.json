@@ -524,6 +524,101 @@
           "source": "https://www.jobpaw.com/private/memoire/944.pdf"
         }
       ]
+    },
+    {
+      "id": "ht-sud-saint-louis-fort-oliviers",
+      "name": "Fort des Oliviers",
+      "category": "patrimoine",
+      "department": "Sud",
+      "arrondissement": "Aquin",
+      "commune": "Saint-Louis-du-Sud",
+      "lat": null,
+      "lon": null,
+      "source": "https://visithaiti.com/fr/histoire-patrimoine/le-fort-des-oliviers/",
+      "secondary": "https://cniah.org/uploads/3/4/3/2/34327341/ciat_lois_d_urbanisme_vol_1_1e_edition_juillet2013.pdf",
+      "verification": "existence_documentee_sources_croisees_localisation_non_verifiee",
+      "reviewStatus": "existence_documentee",
+      "evidence": "Site historique à Saint-Louis-du-Sud, recoupé par un inventaire patrimonial et un reportage. Chronologies historiques divergentes selon sources ; position exacte non certifiée.",
+      "updatedAt": "2026-11-03",
+      "checkedOnlineAt": "2026-11-03",
+      "history": [
+        {
+          "date": "2026-11-03",
+          "action": "Ajout de patrimoine historique documenté, sans géolocalisation inférée",
+          "source": "https://visithaiti.com/fr/histoire-patrimoine/le-fort-des-oliviers/"
+        }
+      ]
+    },
+    {
+      "id": "ht-sud-saint-louis-fort-saint-louis",
+      "name": "Fort Saint-Louis",
+      "category": "patrimoine",
+      "department": "Sud",
+      "arrondissement": "Aquin",
+      "commune": "Saint-Louis-du-Sud",
+      "lat": null,
+      "lon": null,
+      "source": "https://cniah.org/uploads/3/4/3/2/34327341/ciat_lois_d_urbanisme_vol_1_1e_edition_juillet2013.pdf",
+      "secondary": "https://visithaiti.com/fr/histoire-patrimoine/le-fort-des-oliviers/",
+      "verification": "existence_documentee_sources_croisees_localisation_non_verifiee",
+      "reviewStatus": "existence_documentee",
+      "evidence": "Fort insulaire dans la baie de Saint-Louis-du-Sud, distinct du Fort des Oliviers. Point exact de l'îlot non vérifié.",
+      "updatedAt": "2026-11-03",
+      "checkedOnlineAt": "2026-11-03",
+      "history": [
+        {
+          "date": "2026-11-03",
+          "action": "Ajout de patrimoine historique documenté, sans géolocalisation inférée",
+          "source": "https://cniah.org/uploads/3/4/3/2/34327341/ciat_lois_d_urbanisme_vol_1_1e_edition_juillet2013.pdf"
+        }
+      ]
+    },
+    {
+      "id": "ht-sud-ducis-citadelle-platons",
+      "name": "Citadelle des Platons",
+      "category": "patrimoine",
+      "department": "Sud",
+      "arrondissement": "Les Cayes",
+      "commune": "Ducis",
+      "lat": null,
+      "lon": null,
+      "source": "https://cniah.org/uploads/3/4/3/2/34327341/ciat_lois_d_urbanisme_vol_1_1e_edition_juillet2013.pdf",
+      "secondary": "https://www.mappinghaitianhistory.com/south",
+      "verification": "existence_documentee_sources_croisees_localisation_non_verifiee",
+      "reviewStatus": "existence_documentee",
+      "evidence": "Inventaire patrimonial localisant le site à Ducis; attribution administrative à vérifier au niveau communal actuel. GPS non certifié.",
+      "updatedAt": "2026-11-03",
+      "checkedOnlineAt": "2026-11-03",
+      "history": [
+        {
+          "date": "2026-11-03",
+          "action": "Ajout de patrimoine historique documenté, sans géolocalisation inférée",
+          "source": "https://cniah.org/uploads/3/4/3/2/34327341/ciat_lois_d_urbanisme_vol_1_1e_edition_juillet2013.pdf"
+        }
+      ]
+    },
+    {
+      "id": "ht-sud-aquin-fort-morne-rouge",
+      "name": "Fort du Morne-Rouge (mention historique)",
+      "category": "patrimoine",
+      "department": "Sud",
+      "arrondissement": "Aquin",
+      "commune": "Aquin",
+      "lat": null,
+      "lon": null,
+      "source": "https://www.mappinghaitianhistory.com/south",
+      "verification": "mention_historique_non_confirmee",
+      "reviewStatus": "a_verifier",
+      "evidence": "Site recherché par un projet de documentation historique, sans confirmation patrimoniale indépendante; simple mention non localisée.",
+      "updatedAt": "2026-11-03",
+      "checkedOnlineAt": "2026-11-03",
+      "history": [
+        {
+          "date": "2026-11-03",
+          "action": "Ajout de patrimoine historique documenté, sans géolocalisation inférée",
+          "source": "https://www.mappinghaitianhistory.com/south"
+        }
+      ]
     }
   ]
 }
