@@ -1,6 +1,6 @@
 /* Haïti 2050 — fiche détaillée et journal de provenance, lecture seule. */
 (()=>{"use strict";
-const catalog=document.getElementById("v4NationalCatalog");if(!catalog)return;
+/* La fiche est également utilisée par le registre documentaire : ne dépend pas du catalogue. */
 const dialog=document.createElement("dialog");dialog.id="v4PlaceDialog";dialog.className="v4-place-dialog";dialog.setAttribute("aria-label","Fiche d'établissement");
 document.body.append(dialog);
 const el=(tag,value)=>{const n=document.createElement(tag);if(value!==undefined)n.textContent=String(value);return n};
@@ -11,7 +11,7 @@ const badge=el("p",place.verification||"Source cartographique — non vérifiée
 const info=el("dl");info.className="v4-place-fields";field(info,"Catégorie",place.category);field(info,"Département",place.territory?.departement);field(info,"Arrondissement",place.territory?.arrondissement);field(info,"Commune",place.territory?.commune);field(info,"Rattachement géographique",place.territory?.status||"Non évalué");field(info,"Latitude",Number.isFinite(place.lat)?place.lat.toFixed(6):null);field(info,"Longitude",Number.isFinite(place.lon)?place.lon.toFixed(6):null);field(info,"Identifiant OSM",place.osmId);field(info,"Dernière modification OSM",place.lastOsmEdit||"Non fournie");field(info,"Dernière vérification sur le terrain",place.fieldVerifiedAt||"Non effectuée");dialog.append(info);
 dialog.append(el("h3","Sources"));const sources=el("ul");for(const url of [place.source,place.secondary].filter(Boolean)){const safe=validUrl(url);if(!safe)continue;const li=el("li"),a=el("a",safe);a.href=safe;a.target="_blank";a.rel="noopener noreferrer";li.append(a);sources.append(li)}if(!sources.children.length)sources.append(el("li","Aucune source renseignée"));dialog.append(sources);
 dialog.append(el("h3","Historique des mises à jour"));const history=el("ol");const events=Array.isArray(place.history)?place.history:[];if(events.length){for(const entry of events){const li=el("li",(entry.date||"Date inconnue")+" — "+(entry.action||"Modification")+" ("+(entry.source||"source non précisée")+")");history.append(li)}}else{history.append(el("li","Fiche importée pendant cette session. Aucun historique éditorial persistant n'est encore disponible."));if(place.lastOsmEdit)history.append(el("li","Modification OSM déclarée : "+place.lastOsmEdit))}dialog.append(history);
-const disclaimer=el("p","Les informations OpenStreetMap ne prouvent pas qu'un établissement est actuellement ouvert. Une vérification indépendante reste nécessaire.");disclaimer.className="v4-place-disclaimer";dialog.append(disclaimer);dialog.showModal()}
+const disclaimer=el("p","Les informations OpenStreetMap ne prouvent pas qu'un établissement est actuellement ouvert. Une vérification indépendante reste nécessaire.");disclaimer.className="v4-place-disclaimer";dialog.append(disclaimer);if(typeof dialog.showModal==="function")dialog.showModal();else dialog.setAttribute("open","")}
 dialog.addEventListener("click",event=>{if(event.target===dialog)dialog.close()});
 window.HAITI2050_PLACE_DETAILS={open};
 })();
