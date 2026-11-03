@@ -1232,13 +1232,35 @@
         "status": "documente"
       },
       "history": {
-        "text": "À documenter",
-        "sources": [],
-        "status": "a_verifier"
+        "text": "La ville, anciennement connue sous les noms de Bayaha et Fort-Dauphin, conserve un héritage urbain et militaire lié à la période coloniale.",
+        "sources": [
+          "https://ceci.org/uploads/Import/fr-haiti-rapport-inventaire-ressourcers-touristiques-1_2024-02-28-172153_lblc.pdf"
+        ],
+        "status": "historique"
       },
       "services": [],
-      "infrastructures": [],
-      "heritage": [],
+      "infrastructures": [
+        {
+          "name": "Préparation au risque de tsunami",
+          "detail": "L'UNESCO annonçait en janvier 2022 la reconnaissance Tsunami Ready de Fort-Liberté. Le statut et les dispositifs en 2026 sont à revérifier.",
+          "source": "https://www.unesco.org/fr/articles/fort-liberte-haiti-declaree-tsunami-ready",
+          "status": "historique"
+        }
+      ],
+      "heritage": [
+        {
+          "name": "Fort Saint-Joseph et système défensif de la baie",
+          "detail": "Fortifications coloniales inventoriées dans le rapport touristique; conservation et accès en 2026 à vérifier.",
+          "source": "https://ceci.org/uploads/Import/fr-haiti-rapport-inventaire-ressourcers-touristiques-1_2024-02-28-172153_lblc.pdf",
+          "status": "historique"
+        },
+        {
+          "name": "Place d'Armes et patrimoine urbain",
+          "detail": "Place historique et fontaine décrites dans l'inventaire patrimonial.",
+          "source": "https://www.ifad.org/documents/38711624/42988594/haiti_fmhcp_f.pdf/4011c1a5-4a2d-d5b8-e21f-96e4246e7a61?t=1621000255007",
+          "status": "historique"
+        }
+      ],
       "verification": "demographie_documentee",
       "audit": {
         "reviewedAt": "2026-11-03",
@@ -1266,12 +1288,28 @@
         "status": "documente"
       },
       "history": {
-        "text": "À documenter",
-        "sources": [],
-        "status": "a_verifier"
+        "text": "La carte scolaire communale du MENFP indique une fondation en 1932 et une élévation au rang de commune en 1946.",
+        "sources": [
+          "https://www.haitidocs.org/doc/menfp-carte-scolaire-ferrier"
+        ],
+        "status": "historique"
       },
-      "services": [],
-      "infrastructures": [],
+      "services": [
+        {
+          "name": "Carte scolaire de Ferrier",
+          "detail": "Document MENFP d'avril 2025 contenant un répertoire d'écoles; leur fonctionnement actuel n'est pas déduit.",
+          "source": "https://www.haitidocs.org/doc/menfp-carte-scolaire-ferrier",
+          "status": "historique"
+        }
+      ],
+      "infrastructures": [
+        {
+          "name": "Ressources hydriques et électrification",
+          "detail": "La carte scolaire décrit les cours d'eau, points d'eau et certains dispositifs solaires à la date de son diagnostic.",
+          "source": "https://www.haitidocs.org/doc/menfp-carte-scolaire-ferrier",
+          "status": "historique"
+        }
+      ],
       "heritage": [],
       "verification": "demographie_documentee",
       "audit": {
@@ -1280,7 +1318,12 @@
           "Estimation IHSI 2024, tableau 76; non recensement.",
           "Établissements et coordonnées non renseignés."
         ]
-      }
+      },
+      "sectionsCommunales": [
+        "Bas Maribaroux"
+      ],
+      "sectionsSource": "https://www.haitidocs.org/doc/menfp-carte-scolaire-ferrier",
+      "sectionsStatus": "documente"
     },
     {
       "department": "Nord-Est",
@@ -1300,9 +1343,11 @@
         "status": "documente"
       },
       "history": {
-        "text": "À documenter",
-        "sources": [],
-        "status": "a_verifier"
+        "text": "Commune du Nord-Est rattachée à l'arrondissement de Fort-Liberté; chronologie locale à compléter.",
+        "sources": [
+          "https://www.haiti-reference.info/pages/plan/geographie-et-tourisme/divisions-territoriales/arrondissements-et-communes/nordest/"
+        ],
+        "status": "documente"
       },
       "services": [],
       "infrastructures": [],
@@ -1313,6 +1358,108 @@
         "warnings": [
           "Estimation IHSI 2024, tableau 76; non recensement.",
           "Établissements et coordonnées non renseignés."
+        ]
+      }
+    },
+    {
+      "department": "Nord-Est",
+      "arrondissement": "Ouanaminthe",
+      "commune": "Ouanaminthe",
+      "updatedAt": "2026-11-03",
+      "history": {
+        "text": "Commune frontalière du Nord-Est. Le répertoire territorial rapporte son élévation au rang de commune en 1807; donnée historique à recouper.",
+        "sources": [
+          "https://www.haiti-reference.info/pages/plan/geographie-et-tourisme/divisions-territoriales/arrondissements-et-communes/nordest/"
+        ],
+        "status": "historique"
+      },
+      "services": [
+        {
+          "name": "Tribunal de première instance — décret de création",
+          "detail": "Un décret du 2 septembre 2024 institue un tribunal à Ouanaminthe; son fonctionnement effectif en 2026 n'est pas établi par le décret.",
+          "source": "https://www.haitidocs.org/doc/ht-decret-2024-tpi-ouanaminthe?lang=fr",
+          "status": "historique"
+        }
+      ],
+      "infrastructures": [],
+      "heritage": [],
+      "verification": "sources_documentaires_sans_validation_terrain",
+      "audit": {
+        "reviewedAt": "2026-11-03",
+        "warnings": [
+          "Notice partielle, sans validation sur place.",
+          "Aucun chiffre démographique ni coordonnée GPS ajouté sans contrôle.",
+          "État actuel des services et équipements non établi."
+        ]
+      }
+    },
+    {
+      "department": "Nord-Est",
+      "arrondissement": "Ouanaminthe",
+      "commune": "Capotille",
+      "updatedAt": "2026-11-03",
+      "history": {
+        "text": "Un plan de gestion environnementale de 2019 indique que Capotille est devenue commune en 1978 et décrit son contexte frontalier.",
+        "sources": [
+          "https://www.haitidocs.org/doc/mde-2019-land-water-management-plan?lang=fr"
+        ],
+        "status": "historique"
+      },
+      "services": [],
+      "infrastructures": [
+        {
+          "name": "Gestion des terres et des eaux",
+          "detail": "Un plan de gestion publié en 2019 décrit les caractéristiques biophysiques du territoire; il ne confirme pas l'exécution des mesures proposées.",
+          "source": "https://www.haitidocs.org/doc/mde-2019-land-water-management-plan?lang=fr",
+          "status": "historique"
+        }
+      ],
+      "heritage": [],
+      "sectionsCommunales": [
+        "Welsh",
+        "Lamine"
+      ],
+      "sectionsSource": "https://www.haitidocs.org/doc/mde-2019-land-water-management-plan?lang=fr",
+      "sectionsStatus": "historique",
+      "verification": "sources_documentaires_sans_validation_terrain",
+      "audit": {
+        "reviewedAt": "2026-11-03",
+        "warnings": [
+          "Notice partielle, sans validation sur place.",
+          "Aucun chiffre démographique ni coordonnée GPS ajouté sans contrôle.",
+          "État actuel des services et équipements non établi."
+        ]
+      }
+    },
+    {
+      "department": "Nord-Est",
+      "arrondissement": "Ouanaminthe",
+      "commune": "Mont-Organisé",
+      "updatedAt": "2026-11-03",
+      "history": {
+        "text": "Commune du Nord-Est rattachée à l'arrondissement de Ouanaminthe; notice historique détaillée à documenter.",
+        "sources": [
+          "https://www.haiti-reference.info/pages/plan/geographie-et-tourisme/divisions-territoriales/arrondissements-et-communes/nordest/"
+        ],
+        "status": "documente"
+      },
+      "services": [
+        {
+          "name": "Ressort judiciaire prévu par le décret de 2024",
+          "detail": "Le décret créant le tribunal de première instance à Ouanaminthe inclut Mont-Organisé dans son ressort. Le service effectif reste à confirmer.",
+          "source": "https://www.haitidocs.org/doc/ht-decret-2024-tpi-ouanaminthe?lang=fr",
+          "status": "historique"
+        }
+      ],
+      "infrastructures": [],
+      "heritage": [],
+      "verification": "sources_documentaires_sans_validation_terrain",
+      "audit": {
+        "reviewedAt": "2026-11-03",
+        "warnings": [
+          "Notice partielle, sans validation sur place.",
+          "Aucun chiffre démographique ni coordonnée GPS ajouté sans contrôle.",
+          "État actuel des services et équipements non établi."
         ]
       }
     }
