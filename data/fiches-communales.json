@@ -1697,10 +1697,9 @@
       "commune": "Grand-Bassin",
       "updatedAt": "2026-11-03",
       "history": {
-        "text": "Un article de décembre 2020 rapporte l'élévation de Grand-Bassin au rang de commune par arrêté publié au Moniteur du 10 décembre 2020. L'IHSI 2024 le mentionne comme commune dans son tableau administratif, mais le MENFP le décrit encore comme une section communale de Terrier-Rouge dans une carte scolaire de 2025. Statut et application administrative à clarifier.",
+        "text": "Un article de presse du 12 décembre 2020 rapporte un arrêté publié au Moniteur du 10 décembre 2020 élevant Grand-Bassin au rang de commune. Le MENFP/BID le décrit néanmoins comme deuxième section communale de Terrier-Rouge dans une carte scolaire d'août 2025. La décision juridique et sa mise en application administrative doivent être distinguées.",
         "sources": [
           "https://haitistandard.com/gouvernance-nordest-la-localite-de-grand-bassin-relevee-au-rang-de-commune/",
-          "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
           "https://www.haitidocs.org/doc/menfp-carte-scolaire-terrier-rouge?lang=fr"
         ],
         "status": "a_verifier"
@@ -1708,16 +1707,16 @@
       "services": [],
       "infrastructures": [],
       "heritage": [],
-      "verification": "statut_administratif_a_clarifier",
+      "verification": "arrete_2020_application_administrative_a_confirmer",
       "administrativeSource": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
       "audit": {
         "reviewedAt": "2026-11-03",
-        "method": "Comparaison IHSI 2024, article sur l'arrêté 2020 et carte scolaire MENFP 2025.",
+        "method": "Confrontation de l'article du 12 décembre 2020 rapportant un arrêté du Moniteur du 10 décembre 2020 avec la carte scolaire MENFP/BID d'août 2025.",
         "warnings": [
-          "L'IHSI inclut Grand-Bassin dans les communes du tableau administratif, mais ne fournit pas de population communale distincte au tableau démographique consulté.",
-          "La carte scolaire MENFP 2025 le rattache comme section communale à Terrier-Rouge.",
-          "Conserver provisoirement dans le répertoire et vérifier le texte de l'arrêté au Moniteur ainsi que son application administrative.",
-          "Ne pas attribuer de population ni de coordonnées fictives."
+          "Élévation au rang de commune rapportée en décembre 2020; texte intégral de l'arrêté non authentifié dans cet audit.",
+          "La carte scolaire MENFP/BID d'août 2025 décrit Grand-Bassin comme deuxième section communale de Terrier-Rouge.",
+          "Statut administratif appliqué, limites et population communale distincte à confirmer auprès de l'IHSI et des autorités.",
+          "Aucune coordonnée ni population distincte inférée."
         ]
       }
     },
@@ -1866,6 +1865,431 @@
         "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
         "status": "documente",
         "note": "Estimation IHSI 2024, tableau 76; population rurale."
+      }
+    },
+    {
+      "department": "Artibonite",
+      "arrondissement": "Les Gonaïves",
+      "commune": "Les Gonaïves",
+      "updatedAt": "2026-11-03",
+      "administrativeSource": "https://www.ihsi.gouv.ht/statistiques/statistiques_demographiques_et_sociales/projections_et_estimations_de_la_population",
+      "history": {
+        "text": "Notice historique à rechercher et à vérifier.",
+        "sources": [],
+        "status": "a_verifier"
+      },
+      "services": [],
+      "infrastructures": [],
+      "heritage": [],
+      "verification": "inventaire_en_cours",
+      "audit": {
+        "reviewedAt": "2026-11-03",
+        "method": "Structure initiale d'après le répertoire administratif du projet; chiffres et informations locales non renseignés sans contrôle des tableaux IHSI.",
+        "warnings": [
+          "Population, superficie et histoire locale à documenter à partir des sources primaires.",
+          "Services, infrastructures et patrimoine : inventaire à réaliser.",
+          "Aucune coordonnée GPS ni établissement ajouté sans preuve."
+        ]
+      }
+    },
+    {
+      "department": "Artibonite",
+      "arrondissement": "Les Gonaïves",
+      "commune": "Ennery",
+      "updatedAt": "2026-11-03",
+      "administrativeSource": "https://www.ihsi.gouv.ht/statistiques/statistiques_demographiques_et_sociales/projections_et_estimations_de_la_population",
+      "history": {
+        "text": "Notice historique à rechercher et à vérifier.",
+        "sources": [],
+        "status": "a_verifier"
+      },
+      "services": [],
+      "infrastructures": [],
+      "heritage": [],
+      "verification": "inventaire_en_cours",
+      "audit": {
+        "reviewedAt": "2026-11-03",
+        "method": "Structure initiale d'après le répertoire administratif du projet; chiffres et informations locales non renseignés sans contrôle des tableaux IHSI.",
+        "warnings": [
+          "Population, superficie et histoire locale à documenter à partir des sources primaires.",
+          "Services, infrastructures et patrimoine : inventaire à réaliser.",
+          "Aucune coordonnée GPS ni établissement ajouté sans preuve."
+        ]
+      }
+    },
+    {
+      "department": "Artibonite",
+      "arrondissement": "Les Gonaïves",
+      "commune": "L'Estère",
+      "updatedAt": "2026-11-03",
+      "administrativeSource": "https://www.ihsi.gouv.ht/statistiques/statistiques_demographiques_et_sociales/projections_et_estimations_de_la_population",
+      "history": {
+        "text": "Notice historique à rechercher et à vérifier.",
+        "sources": [],
+        "status": "a_verifier"
+      },
+      "services": [],
+      "infrastructures": [],
+      "heritage": [],
+      "verification": "inventaire_en_cours",
+      "audit": {
+        "reviewedAt": "2026-11-03",
+        "method": "Structure initiale d'après le répertoire administratif du projet; chiffres et informations locales non renseignés sans contrôle des tableaux IHSI.",
+        "warnings": [
+          "Population, superficie et histoire locale à documenter à partir des sources primaires.",
+          "Services, infrastructures et patrimoine : inventaire à réaliser.",
+          "Aucune coordonnée GPS ni établissement ajouté sans preuve."
+        ]
+      }
+    },
+    {
+      "department": "Artibonite",
+      "arrondissement": "Gros-Morne",
+      "commune": "Gros-Morne",
+      "updatedAt": "2026-11-03",
+      "administrativeSource": "https://www.ihsi.gouv.ht/statistiques/statistiques_demographiques_et_sociales/projections_et_estimations_de_la_population",
+      "history": {
+        "text": "Notice historique à rechercher et à vérifier.",
+        "sources": [],
+        "status": "a_verifier"
+      },
+      "services": [],
+      "infrastructures": [],
+      "heritage": [],
+      "verification": "inventaire_en_cours",
+      "audit": {
+        "reviewedAt": "2026-11-03",
+        "method": "Structure initiale d'après le répertoire administratif du projet; chiffres et informations locales non renseignés sans contrôle des tableaux IHSI.",
+        "warnings": [
+          "Population, superficie et histoire locale à documenter à partir des sources primaires.",
+          "Services, infrastructures et patrimoine : inventaire à réaliser.",
+          "Aucune coordonnée GPS ni établissement ajouté sans preuve."
+        ]
+      }
+    },
+    {
+      "department": "Artibonite",
+      "arrondissement": "Gros-Morne",
+      "commune": "Terre-Neuve",
+      "updatedAt": "2026-11-03",
+      "administrativeSource": "https://www.ihsi.gouv.ht/statistiques/statistiques_demographiques_et_sociales/projections_et_estimations_de_la_population",
+      "history": {
+        "text": "Notice historique à rechercher et à vérifier.",
+        "sources": [],
+        "status": "a_verifier"
+      },
+      "services": [],
+      "infrastructures": [],
+      "heritage": [],
+      "verification": "inventaire_en_cours",
+      "audit": {
+        "reviewedAt": "2026-11-03",
+        "method": "Structure initiale d'après le répertoire administratif du projet; chiffres et informations locales non renseignés sans contrôle des tableaux IHSI.",
+        "warnings": [
+          "Population, superficie et histoire locale à documenter à partir des sources primaires.",
+          "Services, infrastructures et patrimoine : inventaire à réaliser.",
+          "Aucune coordonnée GPS ni établissement ajouté sans preuve."
+        ]
+      }
+    },
+    {
+      "department": "Artibonite",
+      "arrondissement": "Gros-Morne",
+      "commune": "Anse-Rouge",
+      "updatedAt": "2026-11-03",
+      "administrativeSource": "https://www.ihsi.gouv.ht/statistiques/statistiques_demographiques_et_sociales/projections_et_estimations_de_la_population",
+      "history": {
+        "text": "Notice historique à rechercher et à vérifier.",
+        "sources": [],
+        "status": "a_verifier"
+      },
+      "services": [],
+      "infrastructures": [],
+      "heritage": [],
+      "verification": "inventaire_en_cours",
+      "audit": {
+        "reviewedAt": "2026-11-03",
+        "method": "Structure initiale d'après le répertoire administratif du projet; chiffres et informations locales non renseignés sans contrôle des tableaux IHSI.",
+        "warnings": [
+          "Population, superficie et histoire locale à documenter à partir des sources primaires.",
+          "Services, infrastructures et patrimoine : inventaire à réaliser.",
+          "Aucune coordonnée GPS ni établissement ajouté sans preuve."
+        ]
+      }
+    },
+    {
+      "department": "Artibonite",
+      "arrondissement": "Saint-Marc",
+      "commune": "Saint-Marc",
+      "updatedAt": "2026-11-03",
+      "administrativeSource": "https://www.ihsi.gouv.ht/statistiques/statistiques_demographiques_et_sociales/projections_et_estimations_de_la_population",
+      "history": {
+        "text": "Notice historique à rechercher et à vérifier.",
+        "sources": [],
+        "status": "a_verifier"
+      },
+      "services": [],
+      "infrastructures": [],
+      "heritage": [],
+      "verification": "inventaire_en_cours",
+      "audit": {
+        "reviewedAt": "2026-11-03",
+        "method": "Structure initiale d'après le répertoire administratif du projet; chiffres et informations locales non renseignés sans contrôle des tableaux IHSI.",
+        "warnings": [
+          "Population, superficie et histoire locale à documenter à partir des sources primaires.",
+          "Services, infrastructures et patrimoine : inventaire à réaliser.",
+          "Aucune coordonnée GPS ni établissement ajouté sans preuve."
+        ]
+      }
+    },
+    {
+      "department": "Artibonite",
+      "arrondissement": "Saint-Marc",
+      "commune": "Verrettes",
+      "updatedAt": "2026-11-03",
+      "administrativeSource": "https://www.ihsi.gouv.ht/statistiques/statistiques_demographiques_et_sociales/projections_et_estimations_de_la_population",
+      "history": {
+        "text": "Notice historique à rechercher et à vérifier.",
+        "sources": [],
+        "status": "a_verifier"
+      },
+      "services": [],
+      "infrastructures": [],
+      "heritage": [],
+      "verification": "inventaire_en_cours",
+      "audit": {
+        "reviewedAt": "2026-11-03",
+        "method": "Structure initiale d'après le répertoire administratif du projet; chiffres et informations locales non renseignés sans contrôle des tableaux IHSI.",
+        "warnings": [
+          "Population, superficie et histoire locale à documenter à partir des sources primaires.",
+          "Services, infrastructures et patrimoine : inventaire à réaliser.",
+          "Aucune coordonnée GPS ni établissement ajouté sans preuve."
+        ]
+      }
+    },
+    {
+      "department": "Artibonite",
+      "arrondissement": "Saint-Marc",
+      "commune": "La Chapelle",
+      "updatedAt": "2026-11-03",
+      "administrativeSource": "https://www.ihsi.gouv.ht/statistiques/statistiques_demographiques_et_sociales/projections_et_estimations_de_la_population",
+      "history": {
+        "text": "Notice historique à rechercher et à vérifier.",
+        "sources": [],
+        "status": "a_verifier"
+      },
+      "services": [],
+      "infrastructures": [],
+      "heritage": [],
+      "verification": "inventaire_en_cours",
+      "audit": {
+        "reviewedAt": "2026-11-03",
+        "method": "Structure initiale d'après le répertoire administratif du projet; chiffres et informations locales non renseignés sans contrôle des tableaux IHSI.",
+        "warnings": [
+          "Population, superficie et histoire locale à documenter à partir des sources primaires.",
+          "Services, infrastructures et patrimoine : inventaire à réaliser.",
+          "Aucune coordonnée GPS ni établissement ajouté sans preuve."
+        ]
+      }
+    },
+    {
+      "department": "Artibonite",
+      "arrondissement": "Saint-Marc",
+      "commune": "Liancourt",
+      "updatedAt": "2026-11-03",
+      "administrativeSource": "https://www.ihsi.gouv.ht/statistiques/statistiques_demographiques_et_sociales/projections_et_estimations_de_la_population",
+      "history": {
+        "text": "Notice historique à rechercher et à vérifier.",
+        "sources": [],
+        "status": "a_verifier"
+      },
+      "services": [],
+      "infrastructures": [],
+      "heritage": [],
+      "verification": "inventaire_en_cours",
+      "audit": {
+        "reviewedAt": "2026-11-03",
+        "method": "Structure initiale d'après le répertoire administratif du projet; chiffres et informations locales non renseignés sans contrôle des tableaux IHSI.",
+        "warnings": [
+          "Population, superficie et histoire locale à documenter à partir des sources primaires.",
+          "Services, infrastructures et patrimoine : inventaire à réaliser.",
+          "Aucune coordonnée GPS ni établissement ajouté sans preuve."
+        ]
+      }
+    },
+    {
+      "department": "Artibonite",
+      "arrondissement": "Saint-Marc",
+      "commune": "Montrouis",
+      "updatedAt": "2026-11-03",
+      "administrativeSource": "https://www.ihsi.gouv.ht/statistiques/statistiques_demographiques_et_sociales/projections_et_estimations_de_la_population",
+      "history": {
+        "text": "Notice historique à rechercher et à vérifier.",
+        "sources": [],
+        "status": "a_verifier"
+      },
+      "services": [],
+      "infrastructures": [],
+      "heritage": [],
+      "verification": "inventaire_en_cours",
+      "audit": {
+        "reviewedAt": "2026-11-03",
+        "method": "Structure initiale d'après le répertoire administratif du projet; chiffres et informations locales non renseignés sans contrôle des tableaux IHSI.",
+        "warnings": [
+          "Population, superficie et histoire locale à documenter à partir des sources primaires.",
+          "Services, infrastructures et patrimoine : inventaire à réaliser.",
+          "Aucune coordonnée GPS ni établissement ajouté sans preuve."
+        ]
+      }
+    },
+    {
+      "department": "Artibonite",
+      "arrondissement": "Dessalines",
+      "commune": "Dessalines",
+      "updatedAt": "2026-11-03",
+      "administrativeSource": "https://www.ihsi.gouv.ht/statistiques/statistiques_demographiques_et_sociales/projections_et_estimations_de_la_population",
+      "history": {
+        "text": "Notice historique à rechercher et à vérifier.",
+        "sources": [],
+        "status": "a_verifier"
+      },
+      "services": [],
+      "infrastructures": [],
+      "heritage": [],
+      "verification": "inventaire_en_cours",
+      "audit": {
+        "reviewedAt": "2026-11-03",
+        "method": "Structure initiale d'après le répertoire administratif du projet; chiffres et informations locales non renseignés sans contrôle des tableaux IHSI.",
+        "warnings": [
+          "Population, superficie et histoire locale à documenter à partir des sources primaires.",
+          "Services, infrastructures et patrimoine : inventaire à réaliser.",
+          "Aucune coordonnée GPS ni établissement ajouté sans preuve."
+        ]
+      }
+    },
+    {
+      "department": "Artibonite",
+      "arrondissement": "Dessalines",
+      "commune": "Petite-Rivière-de-l'Artibonite",
+      "updatedAt": "2026-11-03",
+      "administrativeSource": "https://www.ihsi.gouv.ht/statistiques/statistiques_demographiques_et_sociales/projections_et_estimations_de_la_population",
+      "history": {
+        "text": "Notice historique à rechercher et à vérifier.",
+        "sources": [],
+        "status": "a_verifier"
+      },
+      "services": [],
+      "infrastructures": [],
+      "heritage": [],
+      "verification": "inventaire_en_cours",
+      "audit": {
+        "reviewedAt": "2026-11-03",
+        "method": "Structure initiale d'après le répertoire administratif du projet; chiffres et informations locales non renseignés sans contrôle des tableaux IHSI.",
+        "warnings": [
+          "Population, superficie et histoire locale à documenter à partir des sources primaires.",
+          "Services, infrastructures et patrimoine : inventaire à réaliser.",
+          "Aucune coordonnée GPS ni établissement ajouté sans preuve."
+        ]
+      }
+    },
+    {
+      "department": "Artibonite",
+      "arrondissement": "Dessalines",
+      "commune": "Grande-Saline",
+      "updatedAt": "2026-11-03",
+      "administrativeSource": "https://www.ihsi.gouv.ht/statistiques/statistiques_demographiques_et_sociales/projections_et_estimations_de_la_population",
+      "history": {
+        "text": "Notice historique à rechercher et à vérifier.",
+        "sources": [],
+        "status": "a_verifier"
+      },
+      "services": [],
+      "infrastructures": [],
+      "heritage": [],
+      "verification": "inventaire_en_cours",
+      "audit": {
+        "reviewedAt": "2026-11-03",
+        "method": "Structure initiale d'après le répertoire administratif du projet; chiffres et informations locales non renseignés sans contrôle des tableaux IHSI.",
+        "warnings": [
+          "Population, superficie et histoire locale à documenter à partir des sources primaires.",
+          "Services, infrastructures et patrimoine : inventaire à réaliser.",
+          "Aucune coordonnée GPS ni établissement ajouté sans preuve."
+        ]
+      }
+    },
+    {
+      "department": "Artibonite",
+      "arrondissement": "Dessalines",
+      "commune": "Desdunes",
+      "updatedAt": "2026-11-03",
+      "administrativeSource": "https://www.ihsi.gouv.ht/statistiques/statistiques_demographiques_et_sociales/projections_et_estimations_de_la_population",
+      "history": {
+        "text": "Notice historique à rechercher et à vérifier.",
+        "sources": [],
+        "status": "a_verifier"
+      },
+      "services": [],
+      "infrastructures": [],
+      "heritage": [],
+      "verification": "inventaire_en_cours",
+      "audit": {
+        "reviewedAt": "2026-11-03",
+        "method": "Structure initiale d'après le répertoire administratif du projet; chiffres et informations locales non renseignés sans contrôle des tableaux IHSI.",
+        "warnings": [
+          "Population, superficie et histoire locale à documenter à partir des sources primaires.",
+          "Services, infrastructures et patrimoine : inventaire à réaliser.",
+          "Aucune coordonnée GPS ni établissement ajouté sans preuve."
+        ]
+      }
+    },
+    {
+      "department": "Artibonite",
+      "arrondissement": "Marmelade",
+      "commune": "Marmelade",
+      "updatedAt": "2026-11-03",
+      "administrativeSource": "https://www.ihsi.gouv.ht/statistiques/statistiques_demographiques_et_sociales/projections_et_estimations_de_la_population",
+      "history": {
+        "text": "Notice historique à rechercher et à vérifier.",
+        "sources": [],
+        "status": "a_verifier"
+      },
+      "services": [],
+      "infrastructures": [],
+      "heritage": [],
+      "verification": "inventaire_en_cours",
+      "audit": {
+        "reviewedAt": "2026-11-03",
+        "method": "Structure initiale d'après le répertoire administratif du projet; chiffres et informations locales non renseignés sans contrôle des tableaux IHSI.",
+        "warnings": [
+          "Population, superficie et histoire locale à documenter à partir des sources primaires.",
+          "Services, infrastructures et patrimoine : inventaire à réaliser.",
+          "Aucune coordonnée GPS ni établissement ajouté sans preuve."
+        ]
+      }
+    },
+    {
+      "department": "Artibonite",
+      "arrondissement": "Marmelade",
+      "commune": "Saint-Michel-de-l'Attalaye",
+      "updatedAt": "2026-11-03",
+      "administrativeSource": "https://www.ihsi.gouv.ht/statistiques/statistiques_demographiques_et_sociales/projections_et_estimations_de_la_population",
+      "history": {
+        "text": "Notice historique à rechercher et à vérifier.",
+        "sources": [],
+        "status": "a_verifier"
+      },
+      "services": [],
+      "infrastructures": [],
+      "heritage": [],
+      "verification": "inventaire_en_cours",
+      "audit": {
+        "reviewedAt": "2026-11-03",
+        "method": "Structure initiale d'après le répertoire administratif du projet; chiffres et informations locales non renseignés sans contrôle des tableaux IHSI.",
+        "warnings": [
+          "Population, superficie et histoire locale à documenter à partir des sources primaires.",
+          "Services, infrastructures et patrimoine : inventaire à réaliser.",
+          "Aucune coordonnée GPS ni établissement ajouté sans preuve."
+        ]
       }
     }
   ]
