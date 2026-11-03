@@ -2,10 +2,10 @@
 Démarrage : pip install fastapi uvicorn ; uvicorn api.main:app --reload
 En production : PostgreSQL, authentification, TLS et sauvegardes obligatoires.
 """
-import json, os, sqlite3, uuid
+import json, os, sqlite3, uuid, hmac
 from datetime import datetime, timezone
 from pathlib import Path
-from fastapi import FastAPI, HTTPException
+from fastapi import FastAPI, HTTPException, Header
 from pydantic import BaseModel, Field
 
 DB=Path(os.getenv("HAITI2050_DB","haiti2050.sqlite3"))
@@ -94,3 +94,34 @@ def get_place(place_id:str):
         sources=db.execute("SELECT provider,external_id,source_url,observed_at FROM sources WHERE place_id=?",(place_id,)).fetchall()
         changes=db.execute("SELECT at,action FROM changes WHERE place_id=? ORDER BY id",(place_id,)).fetchall()
         return {"place":dict(place),"sources":[dict(x) for x in sources],"history":[dict(x) for x in changes]}
+
+class Review(BaseModel):
+    decision:str=Field(pattern="^(approved|rejected)$")
+    reason:str=Field(min_length=3,max_length=500)
+def require_admin(token):
+    expected=os.getenv("HAITI2050_ADMIN_TOKEN")
+    if not expected or not token or not hmac.compare_digest(token,expected):
+        raise HTTPException(403,"Accès réservé à la modération")
+@app.get("/api/admin/pending")
+def pending(x_admin_token:str|None=Header(default=None)):
+    require_admin(x_admin_token)
+    with connect() as db:
+        return [dict(x) for x in db.execute("SELECT * FROM places WHERE status='pending' ORDER BY created_at LIMIT 200")]
+@app.get("/api/admin/duplicates")
+def duplicates(x_admin_token:str|None=Header(default=None)):
+    require_admin(x_admin_token)
+    with connect() as db:
+        return [dict(x) for x in db.execute("SELECT * FROM duplicate_candidates ORDER BY id DESC LIMIT 200")]
+@app.post("/api/admin/places/{place_id}/review")
+def review_place(place_id:str,review:Review,x_admin_token:str|None=Header(default=None)):
+    require_admin(x_admin_token)
+    with connect() as db:
+        place=db.execute("SELECT status FROM places WHERE id=?",(place_id,)).fetchone()
+        if not place:raise HTTPException(404,"Fiche introuvable")
+        if place["status"]!="pending":raise HTTPException(409,"Décision déjà enregistrée")
+        if review.decision=="approved":
+            duplicates=db.execute("SELECT COUNT(*) AS n FROM duplicate_candidates WHERE place_id=? OR possible_match_id=?",(place_id,place_id)).fetchone()["n"]
+            if duplicates:raise HTTPException(409,"Doublon potentiel à examiner avant approbation")
+        db.execute("UPDATE places SET status=?,updated_at=? WHERE id=?",(review.decision,now(),place_id))
+        record(db,place_id,"reviewed","admin",review.model_dump())
+        return {"id":place_id,"status":review.decision}
