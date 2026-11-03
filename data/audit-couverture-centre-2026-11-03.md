@@ -42,3 +42,11 @@ Ces contrôles ne garantissent pas l'absence de doublons sémantiques, ni l'exac
 6. Après contrôle documenté du Centre seulement : ouvrir des fiches dans les six départements encore non couverts, sans annoncer une couverture nationale achevée.
 
 **Statut : Centre non clôturé. Aucun établissement supplémentaire ajouté dans cette passe de contrôle.**
+
+## Extension documentaire du 3 novembre 2026 — Cerca-Carvajal et Thomassique
+
+Ajouts au registre : **12 écoles publiques de Cerca-Carvajal** (section Rang et ville), **4 écoles publiques de la ville de Thomassique**, et **3 établissements sanitaires historiques de Thomassique** (CS de Tioy, code 64305; Dispensaire de Boc Banic, code 642201; Clinique St Joseph, code 642202).
+
+Sources : MENFP, registre scolaire 2024-2025, pages 27-29 et 90 : https://www.haitidocs.org/doc/menfp-registre-ecoles-centre-2025?lang=ht ; MSPP, liste des institutions sanitaires 2015, lignes 62-64 : https://mspp.gouv.ht/site/downloads/Liste%20des%20Institutions%20Sanitaires%202015.pdf .
+
+**Nouveau total national : 146 entrées**, dont 119 pour le Centre (94 écoles, 25 établissements sanitaires). La liste reste non exhaustive : Thomassique a notamment d'autres écoles dans les sections Matelgate et Lociane qui restent à transcrire. Les données de santé de 2015 ne garantissent pas le fonctionnement en 2026. Ne pas présenter cet audit daté comme clôturé.
