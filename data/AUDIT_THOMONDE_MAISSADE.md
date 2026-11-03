@@ -24,3 +24,17 @@ Ces nombres sont des fiches déjà présentes, **pas** le total réel des établ
 5. Valider le JSON, l'absence de doublons d'ID et le chargement dans le site avant fusion dans main.
 
 **Statut : audit de départ ; aucune nouvelle école ou structure de santé ajoutée faute de registre nominatif vérifié.**
+
+## Périmètre élargi : inventaire de toutes les institutions
+
+L'atlas ne doit pas se limiter aux écoles et aux structures sanitaires. Pour Thomonde puis Maïssade, inventorier progressivement : administration publique, sécurité/justice, commerces et marchés, agriculture, transports, eau et énergie, patrimoine/culture, religion et associations, sports, télécommunications, éducation et santé.
+
+### Méthode
+
+- Conserver les catégories existantes du registre national et les enrichir seulement si nécessaire.
+- Rechercher les institutions par commune et section communale dans les sources publiques appropriées (OSM, administrations haïtiennes, registres sectoriels, données communales).
+- Vérifier l'existence, l'emplacement, la catégorie et les doublons avant toute insertion.
+- Ne jamais interpréter l'absence dans le registre comme une preuve d'inexistence.
+- Suivre la couverture par catégorie et par commune, avec sources et statut de vérification.
+
+**Cette extension du périmètre est une spécification de travail : elle n'atteste pas que toutes ces catégories ont déjà été recensées.**
