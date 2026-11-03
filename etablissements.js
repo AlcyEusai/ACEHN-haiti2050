@@ -88,12 +88,13 @@
   count.textContent = 'Chargement des établissements…';
   Promise.all([
     fetch('./data/etablissements.json').then(r => { if (!r.ok) throw new Error(`HTTP ${r.status}`); return r.json(); }),
-    fetch('./data/ecoles-savanette-menfp-2024-2025.json').then(r => { if (!r.ok) throw new Error(`HTTP ${r.status}`); return r.json(); })
-  ]).then(([data, savanette]) => {
-    if (!Array.isArray(data) || !Array.isArray(savanette)) throw new Error('Les JSON doivent être des tableaux.');
+    fetch('./data/ecoles-savanette-menfp-2024-2025.json').then(r => { if (!r.ok) throw new Error(`HTTP ${r.status}`); return r.json(); }),
+    fetch('./data/ecoles-thomonde-menfp-2024-2025.json').then(r => { if (!r.ok) throw new Error(`HTTP ${r.status}`); return r.json(); })
+  ]).then(([data, savanette, thomonde]) => {
+    if (!Array.isArray(data) || !Array.isArray(savanette) || !Array.isArray(thomonde)) throw new Error('Les JSON doivent être des tableaux.');
     const ids = new Set(data.map(x => x.id));
     const codes = new Set(data.map(x => String(x.code_menfp || '')).filter(Boolean));
-    records = data.concat(savanette.filter(x => !ids.has(x.id) && !codes.has(String(x.code_menfp || ''))));
+    records = data.concat([...savanette, ...thomonde].filter(x => !ids.has(x.id) && !codes.has(String(x.code_menfp || ''))));
     refresh();
   }).catch(e => { count.textContent = 'Chargement impossible : ' + e.message; console.error(e); });
 })();
