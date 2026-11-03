@@ -1,0 +1,29 @@
+name: Haiti2050 registry review
+on:
+  pull_request:
+    branches:
+      - prototype/haiti2050-v4-parcours
+    paths:
+      - 'data/registre-etablissements.json'
+      - 'scripts/validate_registry.py'
+      - '.github/workflows/haiti2050-registry.yml'
+  push:
+    branches:
+      - prototype/haiti2050-v4-parcours
+    paths:
+      - 'data/registre-etablissements.json'
+      - 'scripts/validate_registry.py'
+      - '.github/workflows/haiti2050-registry.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Validate registry and detect duplicates
+        run: python scripts/validate_registry.py
