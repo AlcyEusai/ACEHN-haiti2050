@@ -2185,6 +2185,118 @@
       ],
       "evidence": "Registre MENFP, commune Saut-d'Eau, secteur public, section Ville de Saut-d'Eau, code 062290105116.",
       "checkedOnlineAt": "2026-11-03"
+    },
+    {
+      "id": "ht-centre-menfp-2025-063290118604",
+      "name": "ECOLE NATIONALE ANTENOR FIRMIN BELLADERE",
+      "category": "education",
+      "department": "Centre",
+      "arrondissement": "Lascahobas",
+      "commune": "Belladère",
+      "section": "Ville de Belladère",
+      "lat": null,
+      "lon": null,
+      "source": "https://www.haitidocs.org/doc/menfp-registre-ecoles-centre-2025?lang=ht",
+      "verification": "existence_documentee_registre_menfp_2024_2025",
+      "reviewStatus": "registre_scolaire_a_actualiser",
+      "institutionCode": "063290118604",
+      "ownershipReference": "public",
+      "referenceYear": "2024-2025",
+      "note": "MENFP 2024-2025, ville de Belladère, secteur public. Ouverture en 2026 non vérifiée.",
+      "updatedAt": "2026-11-03",
+      "history": [
+        {
+          "date": "2026-11-03",
+          "action": "Transcription nominative et code MENFP du registre public",
+          "source": "https://www.haitidocs.org/doc/menfp-registre-ecoles-centre-2025?lang=ht"
+        }
+      ],
+      "evidence": "Tableau ville de Belladère, secteur public, page 70 du registre MENFP.",
+      "checkedOnlineAt": "2026-11-03"
+    },
+    {
+      "id": "ht-centre-menfp-2025-063290103253",
+      "name": "ECOLE NATIONALE CONGREGANISTE MARIE JEANNE",
+      "category": "education",
+      "department": "Centre",
+      "arrondissement": "Lascahobas",
+      "commune": "Belladère",
+      "section": "Ville de Belladère",
+      "lat": null,
+      "lon": null,
+      "source": "https://www.haitidocs.org/doc/menfp-registre-ecoles-centre-2025?lang=ht",
+      "verification": "existence_documentee_registre_menfp_2024_2025",
+      "reviewStatus": "registre_scolaire_a_actualiser",
+      "institutionCode": "063290103253",
+      "ownershipReference": "public",
+      "referenceYear": "2024-2025",
+      "note": "MENFP 2024-2025, ville de Belladère, secteur public. Ouverture en 2026 non vérifiée.",
+      "updatedAt": "2026-11-03",
+      "history": [
+        {
+          "date": "2026-11-03",
+          "action": "Transcription nominative et code MENFP du registre public",
+          "source": "https://www.haitidocs.org/doc/menfp-registre-ecoles-centre-2025?lang=ht"
+        }
+      ],
+      "evidence": "Tableau ville de Belladère, secteur public, page 70 du registre MENFP.",
+      "checkedOnlineAt": "2026-11-03"
+    },
+    {
+      "id": "ht-centre-menfp-2025-063290117060",
+      "name": "ECOLE NATIONALE THOMAS MADIOU DE BELLADERE",
+      "category": "education",
+      "department": "Centre",
+      "arrondissement": "Lascahobas",
+      "commune": "Belladère",
+      "section": "Ville de Belladère",
+      "lat": null,
+      "lon": null,
+      "source": "https://www.haitidocs.org/doc/menfp-registre-ecoles-centre-2025?lang=ht",
+      "verification": "existence_documentee_registre_menfp_2024_2025",
+      "reviewStatus": "registre_scolaire_a_actualiser",
+      "institutionCode": "063290117060",
+      "ownershipReference": "public",
+      "referenceYear": "2024-2025",
+      "note": "MENFP 2024-2025, ville de Belladère, secteur public. Ouverture en 2026 non vérifiée.",
+      "updatedAt": "2026-11-03",
+      "history": [
+        {
+          "date": "2026-11-03",
+          "action": "Transcription nominative et code MENFP du registre public",
+          "source": "https://www.haitidocs.org/doc/menfp-registre-ecoles-centre-2025?lang=ht"
+        }
+      ],
+      "evidence": "Tableau ville de Belladère, secteur public, page 70 du registre MENFP.",
+      "checkedOnlineAt": "2026-11-03"
+    },
+    {
+      "id": "ht-centre-menfp-2025-063290103470",
+      "name": "LYCEE CHARLEMAGNE PERALTE DE BELLADERE",
+      "category": "education",
+      "department": "Centre",
+      "arrondissement": "Lascahobas",
+      "commune": "Belladère",
+      "section": "Ville de Belladère",
+      "lat": null,
+      "lon": null,
+      "source": "https://www.haitidocs.org/doc/menfp-registre-ecoles-centre-2025?lang=ht",
+      "verification": "existence_documentee_registre_menfp_2024_2025",
+      "reviewStatus": "registre_scolaire_a_actualiser",
+      "institutionCode": "063290103470",
+      "ownershipReference": "public",
+      "referenceYear": "2024-2025",
+      "note": "MENFP 2024-2025, ville de Belladère, secteur public. Ouverture en 2026 non vérifiée.",
+      "updatedAt": "2026-11-03",
+      "history": [
+        {
+          "date": "2026-11-03",
+          "action": "Transcription nominative et code MENFP du registre public",
+          "source": "https://www.haitidocs.org/doc/menfp-registre-ecoles-centre-2025?lang=ht"
+        }
+      ],
+      "evidence": "Tableau ville de Belladère, secteur public, page 70 du registre MENFP.",
+      "checkedOnlineAt": "2026-11-03"
     }
   ]
 }
