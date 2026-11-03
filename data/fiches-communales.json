@@ -2032,23 +2032,50 @@
       "updatedAt": "2026-11-03",
       "administrativeSource": "https://www.ihsi.gouv.ht/statistiques/statistiques_demographiques_et_sociales/projections_et_estimations_de_la_population",
       "history": {
-        "text": "Notice historique à rechercher et à vérifier.",
-        "sources": [],
+        "text": "La commune de Gros-Morne est le chef-lieu de l'arrondissement du même nom dans l'Artibonite. Son histoire locale reste à documenter avec des archives vérifiables.",
+        "sources": [
+          "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf"
+        ],
         "status": "a_verifier"
       },
       "services": [],
       "infrastructures": [],
       "heritage": [],
-      "verification": "inventaire_en_cours",
+      "verification": "demographie_documentee_histoire_partielle",
       "audit": {
         "reviewedAt": "2026-11-03",
-        "method": "Structure initiale d'après le répertoire administratif du projet; chiffres et informations locales non renseignés sans contrôle des tableaux IHSI.",
+        "method": "Relevé des estimations démographiques et superficies IHSI 2024, tableau 248; recherche historique complémentaire à mener.",
         "warnings": [
-          "Population, superficie et histoire locale à documenter à partir des sources primaires.",
-          "Services, infrastructures et patrimoine : inventaire à réaliser.",
-          "Aucune coordonnée GPS ni établissement ajouté sans preuve."
+          "Les chiffres sont des estimations 2024 et non un recensement 2026.",
+          "Les établissements et infrastructures en activité restent à inventorier.",
+          "Aucune coordonnée GPS ajoutée sans preuve cartographique.",
+          "Histoire et patrimoine locaux encore à documenter précisément."
         ]
-      }
+      },
+      "populationTotale2024": {
+        "value": 209526,
+        "year": 2024,
+        "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+        "status": "documente",
+        "note": "Estimation IHSI 2024, tableau 248, population totale."
+      },
+      "populationUrbaine": {
+        "value": 78138,
+        "year": 2024,
+        "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+        "status": "documente",
+        "note": "Estimation IHSI 2024, tableau 248, population urbaine."
+      },
+      "populationRurale": {
+        "value": 131388,
+        "year": 2024,
+        "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+        "status": "documente",
+        "note": "Estimation IHSI 2024, tableau 248, population rurale."
+      },
+      "areaKm2": 397.2,
+      "areaSource": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+      "areaStatus": "documente"
     },
     {
       "department": "Artibonite",
@@ -2057,23 +2084,50 @@
       "updatedAt": "2026-11-03",
       "administrativeSource": "https://www.ihsi.gouv.ht/statistiques/statistiques_demographiques_et_sociales/projections_et_estimations_de_la_population",
       "history": {
-        "text": "Notice historique à rechercher et à vérifier.",
-        "sources": [],
+        "text": "Commune de l'arrondissement de Gros-Morne, documentée dans le répertoire territorial IHSI. Chronologie historique et patrimoine à vérifier.",
+        "sources": [
+          "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf"
+        ],
         "status": "a_verifier"
       },
       "services": [],
       "infrastructures": [],
       "heritage": [],
-      "verification": "inventaire_en_cours",
+      "verification": "demographie_documentee_histoire_partielle",
       "audit": {
         "reviewedAt": "2026-11-03",
-        "method": "Structure initiale d'après le répertoire administratif du projet; chiffres et informations locales non renseignés sans contrôle des tableaux IHSI.",
+        "method": "Relevé des estimations démographiques et superficies IHSI 2024, tableau 248; recherche historique complémentaire à mener.",
         "warnings": [
-          "Population, superficie et histoire locale à documenter à partir des sources primaires.",
-          "Services, infrastructures et patrimoine : inventaire à réaliser.",
-          "Aucune coordonnée GPS ni établissement ajouté sans preuve."
+          "Les chiffres sont des estimations 2024 et non un recensement 2026.",
+          "Les établissements et infrastructures en activité restent à inventorier.",
+          "Aucune coordonnée GPS ajoutée sans preuve cartographique.",
+          "Histoire et patrimoine locaux encore à documenter précisément."
         ]
-      }
+      },
+      "populationTotale2024": {
+        "value": 34197,
+        "year": 2024,
+        "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+        "status": "documente",
+        "note": "Estimation IHSI 2024, tableau 248, population totale."
+      },
+      "populationUrbaine": {
+        "value": 12286,
+        "year": 2024,
+        "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+        "status": "documente",
+        "note": "Estimation IHSI 2024, tableau 248, population urbaine."
+      },
+      "populationRurale": {
+        "value": 21911,
+        "year": 2024,
+        "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+        "status": "documente",
+        "note": "Estimation IHSI 2024, tableau 248, population rurale."
+      },
+      "areaKm2": 90.95,
+      "areaSource": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+      "areaStatus": "documente"
     },
     {
       "department": "Artibonite",
@@ -2082,23 +2136,50 @@
       "updatedAt": "2026-11-03",
       "administrativeSource": "https://www.ihsi.gouv.ht/statistiques/statistiques_demographiques_et_sociales/projections_et_estimations_de_la_population",
       "history": {
-        "text": "Notice historique à rechercher et à vérifier.",
-        "sources": [],
+        "text": "Commune de l'arrondissement de Gros-Morne dans le département de l'Artibonite. Les informations historiques détaillées restent à documenter.",
+        "sources": [
+          "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf"
+        ],
         "status": "a_verifier"
       },
       "services": [],
       "infrastructures": [],
       "heritage": [],
-      "verification": "inventaire_en_cours",
+      "verification": "demographie_documentee_histoire_partielle",
       "audit": {
         "reviewedAt": "2026-11-03",
-        "method": "Structure initiale d'après le répertoire administratif du projet; chiffres et informations locales non renseignés sans contrôle des tableaux IHSI.",
+        "method": "Relevé des estimations démographiques et superficies IHSI 2024, tableau 248; recherche historique complémentaire à mener.",
         "warnings": [
-          "Population, superficie et histoire locale à documenter à partir des sources primaires.",
-          "Services, infrastructures et patrimoine : inventaire à réaliser.",
-          "Aucune coordonnée GPS ni établissement ajouté sans preuve."
+          "Les chiffres sont des estimations 2024 et non un recensement 2026.",
+          "Les établissements et infrastructures en activité restent à inventorier.",
+          "Aucune coordonnée GPS ajoutée sans preuve cartographique.",
+          "Histoire et patrimoine locaux encore à documenter précisément."
         ]
-      }
+      },
+      "populationTotale2024": {
+        "value": 48789,
+        "year": 2024,
+        "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+        "status": "documente",
+        "note": "Estimation IHSI 2024, tableau 248, population totale."
+      },
+      "populationUrbaine": {
+        "value": 19746,
+        "year": 2024,
+        "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+        "status": "documente",
+        "note": "Estimation IHSI 2024, tableau 248, population urbaine."
+      },
+      "populationRurale": {
+        "value": 29043,
+        "year": 2024,
+        "source": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+        "status": "documente",
+        "note": "Estimation IHSI 2024, tableau 248, population rurale."
+      },
+      "areaKm2": 427.22,
+      "areaSource": "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf",
+      "areaStatus": "documente"
     },
     {
       "department": "Artibonite",
