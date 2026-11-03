@@ -2823,9 +2823,12 @@
       "commune": "Maïssade",
       "updatedAt": "2026-11-03",
       "history": {
-        "text": "Histoire locale à documenter à partir de sources institutionnelles et historiques identifiées.",
-        "sources": [],
-        "status": "a_verifier"
+        "text": "Haiti-Référence rapporte que Maïssade était aussi appelée « Maisal ». Un diagnostic agricole de 2004 identifie ses sections Savane Grande, Narang et Hatty; ces noms et leur statut actuel doivent être recoupés.",
+        "sources": [
+          "https://www.haiti-reference.info/pages/plan/geographie-et-tourisme/divisions-territoriales/arrondissements-et-communes/centre/",
+          "https://www.haitidocs.org/doc/gardel-haut-plateau-central-diagnostic-2004?lang=fr"
+        ],
+        "status": "historique_a_verifier"
       },
       "services": [],
       "infrastructures": [],
@@ -2838,8 +2841,11 @@
           "Estimations 2024, pas un recensement.",
           "Population totale calculée à partir des deux tableaux et non copiée d'un tableau de population totale.",
           "Services publics, patrimoine, histoire et infrastructures à documenter indépendamment.",
-          "Aucune coordonnée GPS inventée."
-        ]
+          "Aucune coordonnée GPS inventée.",
+          "Les divisions territoriales de 2004 ne prouvent pas la nomenclature en vigueur en 2026.",
+          "Aucun site patrimonial, classement ou géolocalisation ajouté sans preuve spécifique."
+        ],
+        "historicalReview": "Sources secondaires historiques et diagnostic sectoriel daté recensés; actes primaires et patrimoine matériel non certifiés."
       },
       "populationTotale2024": {
         "value": 67315,
@@ -2869,9 +2875,12 @@
       "commune": "Thomonde",
       "updatedAt": "2026-11-03",
       "history": {
-        "text": "Histoire locale à documenter à partir de sources institutionnelles et historiques identifiées.",
-        "sources": [],
-        "status": "a_verifier"
+        "text": "Haiti-Référence situe l'élévation de Thomonde au rang de commune au 17 mai 1949. Le diagnostic agricole de 2004 mentionne Cabral, Tierra Muscady et Baille Touribe parmi ses sections; acte historique et délimitations actuelles à contrôler.",
+        "sources": [
+          "https://www.haiti-reference.info/pages/plan/geographie-et-tourisme/divisions-territoriales/arrondissements-et-communes/centre/",
+          "https://www.haitidocs.org/doc/gardel-haut-plateau-central-diagnostic-2004?lang=fr"
+        ],
+        "status": "historique_a_verifier"
       },
       "services": [],
       "infrastructures": [],
@@ -2884,8 +2893,11 @@
           "Estimations 2024, pas un recensement.",
           "Population totale calculée à partir des deux tableaux et non copiée d'un tableau de population totale.",
           "Services publics, patrimoine, histoire et infrastructures à documenter indépendamment.",
-          "Aucune coordonnée GPS inventée."
-        ]
+          "Aucune coordonnée GPS inventée.",
+          "Les divisions territoriales de 2004 ne prouvent pas la nomenclature en vigueur en 2026.",
+          "Aucun site patrimonial, classement ou géolocalisation ajouté sans preuve spécifique."
+        ],
+        "historicalReview": "Sources secondaires historiques et diagnostic sectoriel daté recensés; actes primaires et patrimoine matériel non certifiés."
       },
       "populationTotale2024": {
         "value": 70662,
@@ -2915,9 +2927,11 @@
       "commune": "Cerca-Carvajal",
       "updatedAt": "2026-11-03",
       "history": {
-        "text": "Histoire locale à documenter à partir de sources institutionnelles et historiques identifiées.",
-        "sources": [],
-        "status": "a_verifier"
+        "text": "Un diagnostic agricole du Haut Plateau Central (2004) identifie Cerca-Carvajal comme commune de l'arrondissement de Hinche et mentionne Rang comme section; vérifier la nomenclature actuelle sur les actes officiels.",
+        "sources": [
+          "https://www.haitidocs.org/doc/gardel-haut-plateau-central-diagnostic-2004?lang=fr"
+        ],
+        "status": "historique_a_verifier"
       },
       "services": [],
       "infrastructures": [],
@@ -2930,8 +2944,11 @@
           "Estimations 2024, pas un recensement.",
           "Population totale calculée à partir des deux tableaux et non copiée d'un tableau de population totale.",
           "Services publics, patrimoine, histoire et infrastructures à documenter indépendamment.",
-          "Aucune coordonnée GPS inventée."
-        ]
+          "Aucune coordonnée GPS inventée.",
+          "Les divisions territoriales de 2004 ne prouvent pas la nomenclature en vigueur en 2026.",
+          "Aucun site patrimonial, classement ou géolocalisation ajouté sans preuve spécifique."
+        ],
+        "historicalReview": "Sources secondaires historiques et diagnostic sectoriel daté recensés; actes primaires et patrimoine matériel non certifiés."
       },
       "populationTotale2024": {
         "value": 26561,
@@ -3134,9 +3151,11 @@
       "commune": "Lascahobas",
       "updatedAt": "2026-11-03",
       "history": {
-        "text": "Histoire locale à documenter à partir de sources institutionnelles et historiques identifiées.",
-        "sources": [],
-        "status": "a_verifier"
+        "text": "Lascahobas figure parmi les communes de l'arrondissement homonyme dans le répertoire IHSI 2024. La chronologie locale et les éléments patrimoniaux restent à établir sur archives primaires.",
+        "sources": [
+          "https://ihsi.gouv.ht/public/storage/document-views/March2025/Oan4m17p5LEKtsGEnHgt.pdf"
+        ],
+        "status": "historique_a_verifier"
       },
       "services": [],
       "infrastructures": [],
@@ -3149,8 +3168,11 @@
           "Estimation 2024, non recensement.",
           "Population communale totale, urbaine et rurale distinctes des quartiers et sections.",
           "Services, infrastructures, histoire et patrimoine non vérifiés dans cette phase.",
-          "Aucune coordonnée GPS ni établissement inventés."
-        ]
+          "Aucune coordonnée GPS ni établissement inventés.",
+          "Les divisions territoriales de 2004 ne prouvent pas la nomenclature en vigueur en 2026.",
+          "Aucun site patrimonial, classement ou géolocalisation ajouté sans preuve spécifique."
+        ],
+        "historicalReview": "Sources secondaires historiques et diagnostic sectoriel daté recensés; actes primaires et patrimoine matériel non certifiés."
       },
       "populationTotale2024": {
         "value": 52396,
@@ -3232,9 +3254,11 @@
       "commune": "Savanette",
       "updatedAt": "2026-11-03",
       "history": {
-        "text": "Histoire locale à documenter à partir de sources institutionnelles et historiques identifiées.",
-        "sources": [],
-        "status": "a_verifier"
+        "text": "Selon Haiti-Référence, Savanette est devenue quartier par loi du 1er octobre 1907, puis commune en 1932; une suppression en 1942 et une réorganisation des sections en 1956 sont rapportées. Textes originaux à confronter.",
+        "sources": [
+          "https://www.haiti-reference.info/pages/plan/geographie-et-tourisme/divisions-territoriales/arrondissements-et-communes/centre/"
+        ],
+        "status": "historique_a_verifier"
       },
       "services": [],
       "infrastructures": [],
@@ -3247,8 +3271,11 @@
           "Estimation 2024, non recensement.",
           "Population communale totale, urbaine et rurale distinctes des quartiers et sections.",
           "Services, infrastructures, histoire et patrimoine non vérifiés dans cette phase.",
-          "Aucune coordonnée GPS ni établissement inventés."
-        ]
+          "Aucune coordonnée GPS ni établissement inventés.",
+          "Les divisions territoriales de 2004 ne prouvent pas la nomenclature en vigueur en 2026.",
+          "Aucun site patrimonial, classement ou géolocalisation ajouté sans preuve spécifique."
+        ],
+        "historicalReview": "Sources secondaires historiques et diagnostic sectoriel daté recensés; actes primaires et patrimoine matériel non certifiés."
       },
       "populationTotale2024": {
         "value": 41346,
@@ -3301,9 +3328,11 @@
           "Les limites juridiques doivent être distinguées de la géométrie cartographique disponible.",
           "Fonctionnement actuel de l'administration municipale non vérifié.",
           "Le territoire juridique inclut la 3e section Riaribes; ne pas assimiler l'ancien quartier Baptiste à l'ensemble de la commune.",
-          "Les limites cardinales du décret ne constituent pas un polygone géoréférencé."
+          "Les limites cardinales du décret ne constituent pas un polygone géoréférencé.",
+          "Aucun polygone officiel de Baptiste confirmé : la couche OCHA COD-AB et la carte Banque mondiale ne représentent pas cette nouvelle commune séparément."
         ],
-        "administrativeReview": "Création juridique attestée par décret du 22 juillet 2015 cité dans Le Moniteur n°147 (5 août 2015). Arrêté de commission municipale du 14 novembre 2018 reproduit dans Le Moniteur n°197 (16 novembre 2018). Tableau IHSI 2024 continue de présenter Baptiste comme quartier de Belladère."
+        "administrativeReview": "Création juridique attestée par décret du 22 juillet 2015 cité dans Le Moniteur n°147 (5 août 2015). Arrêté de commission municipale du 14 novembre 2018 reproduit dans Le Moniteur n°197 (16 novembre 2018). Tableau IHSI 2024 continue de présenter Baptiste comme quartier de Belladère.",
+        "cartographyReview": "Comparaison avec les limites OCHA COD-AB ADM2 (140 communes) et carte Banque mondiale datée de mars 2017 (12 communes du Centre) : ces couches ne représentent pas Baptiste comme polygone communal autonome. Ne pas substituer le quartier à la commune."
       },
       "administrativeStatus": "commune_creee_decret_2015_commission_municipale_2018_ihsi_quartier_2024",
       "populationQuartier2024": {
@@ -3325,7 +3354,12 @@
         "source": "https://fr.scribd.com/document/832110484/Decret-Sections-Communales",
         "secondarySource": "https://haitiahp.blogspot.com/2015/08/lexecutif-cree-cinq-nouvelles-communes.html",
         "status": "limites_textuelles_decret_2015_geometrie_non_verifiee",
-        "note": "Limites décrites textuellement; ne pas convertir en polygone ou coordonnées sans source cartographique officielle."
+        "note": "Le décret donne des limites textuelles; les données OCHA COD-AB (140 communes) et la carte Banque mondiale (12 communes dans le Centre) ne permettent pas de tracer une géométrie propre à Baptiste. Afficher une alerte de géométrie non validée.",
+        "cartographyStatus": "polygone_communal_non_identifie_dans_sources_consultees",
+        "cartographySources": [
+          "https://www.haitidocs.org/map/layers/boundaries-admin?lang=fr",
+          "https://documents1.worldbank.org/curated/en/262401525850726777/pdf/cges-resepagii-version-final.pdf"
+        ]
       }
     },
     {
@@ -3334,9 +3368,12 @@
       "commune": "Cerca-la-Source",
       "updatedAt": "2026-11-03",
       "history": {
-        "text": "Histoire locale à documenter à partir de sources institutionnelles et historiques identifiées.",
-        "sources": [],
-        "status": "a_verifier"
+        "text": "Selon Haiti-Référence, Cerca-la-Source, anciennement « Clairet », a été élevée au rang de commune en 1918. Le diagnostic agricole de 2004 mentionne Acajou Brûlé et Lamielle; vérification des actes et de la nomenclature actuelle nécessaire.",
+        "sources": [
+          "https://www.haiti-reference.info/pages/plan/geographie-et-tourisme/divisions-territoriales/arrondissements-et-communes/centre/",
+          "https://www.haitidocs.org/doc/gardel-haut-plateau-central-diagnostic-2004?lang=fr"
+        ],
+        "status": "historique_a_verifier"
       },
       "services": [],
       "infrastructures": [],
@@ -3349,8 +3386,11 @@
           "Estimation 2024, non recensement.",
           "Population communale totale, urbaine et rurale distinctes des quartiers et sections.",
           "Services, infrastructures, histoire et patrimoine non vérifiés dans cette phase.",
-          "Aucune coordonnée GPS ni établissement inventés."
-        ]
+          "Aucune coordonnée GPS ni établissement inventés.",
+          "Les divisions territoriales de 2004 ne prouvent pas la nomenclature en vigueur en 2026.",
+          "Aucun site patrimonial, classement ou géolocalisation ajouté sans preuve spécifique."
+        ],
+        "historicalReview": "Sources secondaires historiques et diagnostic sectoriel daté recensés; actes primaires et patrimoine matériel non certifiés."
       },
       "populationTotale2024": {
         "value": 64567,
@@ -3380,9 +3420,11 @@
       "commune": "Thomassique",
       "updatedAt": "2026-11-03",
       "history": {
-        "text": "Histoire locale à documenter à partir de sources institutionnelles et historiques identifiées.",
-        "sources": [],
-        "status": "a_verifier"
+        "text": "Haiti-Référence rapporte un statut de quartier en 1889, une élévation en commune en 1934, une révocation en 1942 et une nouvelle élévation en 1954. Les actes du Moniteur et leurs effets juridiques restent à examiner directement.",
+        "sources": [
+          "https://www.haiti-reference.info/pages/plan/geographie-et-tourisme/divisions-territoriales/arrondissements-et-communes/centre/"
+        ],
+        "status": "historique_a_verifier"
       },
       "services": [],
       "infrastructures": [],
@@ -3395,8 +3437,11 @@
           "Estimation 2024, non recensement.",
           "Population communale totale, urbaine et rurale distinctes des quartiers et sections.",
           "Services, infrastructures, histoire et patrimoine non vérifiés dans cette phase.",
-          "Aucune coordonnée GPS ni établissement inventés."
-        ]
+          "Aucune coordonnée GPS ni établissement inventés.",
+          "Les divisions territoriales de 2004 ne prouvent pas la nomenclature en vigueur en 2026.",
+          "Aucun site patrimonial, classement ou géolocalisation ajouté sans preuve spécifique."
+        ],
+        "historicalReview": "Sources secondaires historiques et diagnostic sectoriel daté recensés; actes primaires et patrimoine matériel non certifiés."
       },
       "populationTotale2024": {
         "value": 72214,
