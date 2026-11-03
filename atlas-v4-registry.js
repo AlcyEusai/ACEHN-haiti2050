@@ -6,7 +6,7 @@ const heading=document.createElement("h2");heading.textContent="Registre documen
 const status=document.createElement("p");status.setAttribute("role","status");section.append(status);
 const results=document.createElement("div");results.className="v4-registry-results";section.append(results);
 const refreshButton=document.createElement("button");refreshButton.type="button";refreshButton.textContent="Actualiser le registre";section.append(refreshButton);
-const contribute=document.createElement("a");contribute.href="https://github.com/AlcyEusai/ACEHN-haiti2050/edit/prototype/haiti2050-v4-parcours/data/registre-etablissements.json";contribute.target="_blank";contribute.rel="noopener noreferrer";contribute.textContent="Proposer une fiche via GitHub (connexion requise) ↗";section.append(contribute);
+const contribute=document.createElement("a");contribute.href="https://github.com/AlcyEusai/ACEHN-haiti2050/edit/main/data/registre-etablissements.json";contribute.target="_blank";contribute.rel="noopener noreferrer";contribute.textContent="Proposer une fiche via GitHub (connexion requise) ↗";section.append(contribute);
 let places=[],loaded=false;
 const normalize=value=>String(value||"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").replace(/[’']/g,"'").trim().toLocaleLowerCase("fr");
 function selectedTerritory(){return {department:document.getElementById("department")?.value||"",arrondissement:document.getElementById("arrondissement")?.value||"",commune:document.getElementById("commune")?.value||""}}
@@ -23,7 +23,11 @@ function render(){
   name.textContent=p.name;meta.textContent=[p.category,p.department,p.arrondissement,p.commune].filter(Boolean).join(" · ");
   verification.textContent="Vérification : "+(p.verification||"Non précisée");
   button.type="button";button.textContent="Consulter la fiche et l'historique";
-  button.addEventListener("click",()=>window.HAITI2050_PLACE_DETAILS?.open({...p,territory:{departement:p.department,arrondissement:p.arrondissement,commune:p.commune,status:p.reviewStatus||"documentaire"},verification:p.verification||"Non précisée"}));
+  button.addEventListener("click",()=>{
+   const details=window.HAITI2050_PLACE_DETAILS;
+   if(!details||typeof details.open!=="function"){status.textContent="La fiche détaillée n'est pas disponible. Rechargez la page (Ctrl + F5).";return}
+   details.open({...p,territory:{departement:p.department,arrondissement:p.arrondissement,commune:p.commune,status:p.reviewStatus||"documentaire"},verification:p.verification||"Non précisée"});
+  });
   card.append(name,meta,verification,button);results.append(card)
  }
 }
