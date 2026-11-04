@@ -1,0 +1,36 @@
+/* Référence visuelle : maquette Atlas numérique d'Haïti 2050. */
+:root{--atlas-navy:#092b5a;--atlas-blue:#0b4b91;--atlas-gold:#f1ae29}
+body{background:#f2f6fc;color:#102b50}
+header{background:linear-gradient(110deg,#052b62,#0b427f);color:#fff;border-bottom:0}
+header .brand,header .brand b,header .brand small,header nav a,header .tag{color:#fff}
+header .brand em{color:#fa3855}header nav a:hover,header nav a:focus-visible{background:#ffffff25;color:#fff}
+header .tag{background:#ffffff18;border:1px solid #ffffff30}
+.maquette-hero{position:relative;max-width:1500px;margin:18px auto 12px;min-height:385px;border-radius:20px;overflow:hidden;display:grid;grid-template-columns:minmax(0,1.4fr) minmax(270px,.65fr);gap:28px;align-items:center;padding:42px 44px 110px;background:linear-gradient(90deg,rgba(4,34,76,.94),rgba(8,59,104,.65)),url("https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?auto=format&fit=crop&w=1800&q=80") center/cover;color:#fff;box-shadow:0 14px 30px #113b6620}
+.maquette-hero .eyebrow{color:#a5dbf8;letter-spacing:.16em}
+.maquette-hero h1{font-size:clamp(35px,4vw,64px);line-height:1.08;margin:15px 0 18px;color:#fff;letter-spacing:-.035em}
+.maquette-hero h1 span{color:var(--atlas-gold)}
+.maquette-hero-main>p:not(.eyebrow){font-size:16px;line-height:1.55;max-width:650px;color:#f1f6ff}
+.maquette-search{display:flex;align-items:center;gap:8px;background:#fff;padding:6px;border-radius:30px;max-width:640px;margin-top:22px}
+.maquette-search input{border:0;outline:0;background:transparent;flex:1;min-width:0;margin:0;color:#19314c}
+.maquette-search button{border-radius:25px;background:#086f9f;color:white;padding:12px 18px;white-space:nowrap}
+.maquette-missions{display:grid;gap:12px}
+.maquette-missions>div{background:#f9fcffef;color:#0b2a53;border-radius:12px;padding:14px 18px;box-shadow:0 4px 18px #082a4c22}
+.maquette-missions strong{font-size:15px}.maquette-missions p{font-size:12px;line-height:1.45;margin:6px 0 0;color:#35516d}
+.maquette-sectors{position:absolute;left:25px;right:25px;bottom:18px;display:grid;grid-template-columns:repeat(8,minmax(0,1fr));gap:8px}
+.maquette-sectors a{background:#f8fbffeb;color:#082e5a;border:1px solid #d7e7f5;border-radius:10px;padding:14px 5px;text-align:center;text-decoration:none;font-size:12px;font-weight:750;line-height:1.4}
+.maquette-sectors a:hover,.maquette-sectors a:focus-visible{background:#d5eaff;outline:2px solid #2c6ac2}
+.maquette-path{max-width:1500px;margin:0 auto 20px;padding:12px 15px;display:flex;align-items:stretch;gap:8px;overflow-x:auto}
+.maquette-path strong{min-width:150px;background:var(--atlas-navy);color:#fff;border-radius:12px;padding:14px;font-size:15px}
+.maquette-path small{display:block;font-weight:400;font-size:11px;margin-top:5px}
+.maquette-path a{flex:1;min-width:105px;display:flex;align-items:center;justify-content:center;text-align:center;border:1px solid #b6cbe5;background:#fff;border-radius:11px;padding:12px 8px;color:#0b326b;text-decoration:none;font-weight:750;font-size:12px}
+.maquette-path a:hover{background:#e7f1ff}.maquette-path span{align-self:center;color:#1e4679;font-size:24px}
+main{max-width:1500px;padding-top:18px}.sectiontitle h2{color:#082b61}
+.maquette-atlas-tabs{display:flex;justify-content:flex-end;gap:5px;margin:0 0 10px}
+.maquette-atlas-tabs a{padding:10px 18px;border:1px solid #c5d7ee;background:#fff;border-radius:8px;color:#0a356a;text-decoration:none;font-size:13px;font-weight:700}
+.maquette-atlas-tabs a:first-child{background:#0957b2;color:#fff}
+.workspace{grid-template-columns:minmax(260px,320px) minmax(0,1fr)}
+.workspace aside,.mapCol{border-color:#c9d8e9;box-shadow:0 6px 25px #092d5b0d}
+#map{height:min(75vh,740px)}
+.v4-poi{background:#f7faff}.v4-categories button.active,#v4LoadPlaces{background:#0b55a2;border-color:#0b55a2}
+@media(max-width:1100px){.maquette-sectors{grid-template-columns:repeat(4,1fr)}.maquette-hero{padding-bottom:165px}.maquette-path a{min-width:120px}}
+@media(max-width:780px){.maquette-hero{grid-template-columns:1fr;padding:32px 22px 230px}.maquette-sectors{grid-template-columns:repeat(2,1fr);bottom:14px;left:15px;right:15px}.maquette-missions{grid-template-columns:1fr}.maquette-sectors a{padding:8px 4px}.maquette-hero h1{font-size:35px}.maquette-search{border-radius:15px}.maquette-search button{padding:10px}.maquette-path{padding:10px}.workspace{grid-template-columns:1fr}}
