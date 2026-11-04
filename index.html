@@ -24,6 +24,7 @@
   <link rel="stylesheet" href="styles-v4-catalog.css?v=1">
   <link rel="stylesheet" href="styles-v4-place-details.css?v=1">
   <link rel="stylesheet" href="styles-v4-registry.css?v=1">
+  <link rel="stylesheet" href="styles-maquette-2050.css?v=1">
 </head>
 
 <body>
@@ -46,51 +47,33 @@
       <a href="#method">Méthodologie</a>
     </nav>
 
-    <span class="tag">Atlas territorial • V4 prototype</span>
+    <span class="tag">Atlas numérique • Haïti 2050</span>
   </header>
 
-  <!-- ACCUEIL -->
-  <section class="hero">
-    <div>
-      <p class="eyebrow">
-        UN TERRITOIRE • UNE VISION • DES PROJETS
-      </p>
-
-      <h1>
-        Explorez Haïti, son histoire<br>
-        et son avenir.
-      </h1>
-
-      <p>
-        Explorez les départements, découvrez les communes
-        et documentez les transformations possibles —
-        des routes aux écoles, de l'eau potable
-        à l'énergie solaire.
-      </p>
-
-      <a class="primary" href="#atlas">
-        Explorer la carte ↗
-      </a>
+  <!-- ACCUEIL — maquette Haïti 2050 -->
+  <section class="hero maquette-hero">
+    <div class="maquette-hero-main">
+      <p class="eyebrow">ATLAS NUMÉRIQUE D’HAÏTI 2050</p>
+      <h1>Connaître, Comprendre<br>et <span>Transformer Haïti</span></h1>
+      <p>L’atlas numérique du territoire haïtien : les réalités d’aujourd’hui et les projets de développement à l’horizon 2050.</p>
+      <form id="maquetteQuickSearch" class="maquette-search" role="search">
+        <input id="maquetteQuery" type="search" placeholder="Rechercher un lieu, une commune, un établissement…" aria-label="Recherche dans l’atlas">
+        <button type="submit">Rechercher</button>
+      </form>
     </div>
-
-    <div class="heroStats">
-      <div>
-        <strong>10</strong>
-        <span>départements</span>
-      </div>
-
-      <div>
-        <strong id="communeCount">—</strong>
-        <span>communes dans le répertoire initial</span>
-      </div>
-
-      <div>
-        <strong id="projectCount">—</strong>
-        <span>projets documentés</span>
-      </div>
+    <div class="maquette-missions">
+      <div><strong>📖 Connaître Haïti</strong><p>Inventorier les localités, établissements, infrastructures et services existants.</p></div>
+      <div><strong>📊 Comprendre Haïti</strong><p>Identifier les besoins, les inégalités territoriales et les infrastructures manquantes.</p></div>
+      <div><strong>🌱 Transformer Haïti</strong><p>Proposer des projets concrets de développement, commune par commune.</p></div>
+    </div>
+    <div class="maquette-sectors" aria-label="Explorer par secteur">
+      <a href="#etablissementsPanel">🏫 Éducation</a><a href="#etablissementsPanel">❤️ Santé</a><a href="#v4Vigilance">🛡️ Sécurité</a><a href="#etablissementsPanel">🏛️ Administration</a><a href="#etablissementsPanel">💼 Économie</a><a href="#atlas">🛣️ Infrastructures</a><a href="#v4PoiMiniMap">🏝️ Tourisme & patrimoine</a><a href="#projects">🌱 Projets 2050</a>
     </div>
   </section>
-
+  <section class="maquette-path" aria-label="Parcours de navigation">
+    <strong>Parcours de navigation <small>Du national au détail</small></strong>
+    <a href="#atlas">1. Haïti</a><span>›</span><a href="#department">2. Département</a><span>›</span><a href="#arrondissement">3. Arrondissement</a><span>›</span><a href="#commune">4. Commune</a><span>›</span><a href="#geonamesSearch">5. Localité</a><span>›</span><a href="#etablissementsPanel">6. Établissement</a><span>›</span><a href="#v4NationalCatalog">7. Fiche & historique</a><span>›</span><a href="#projects">8. Projets 2050</a>
+  </section>
   <!-- ATLAS -->
   <main id="atlas">
 
@@ -110,6 +93,7 @@
       </div>
     </div>
 
+    <div class="maquette-atlas-tabs" aria-label="Modes de consultation"><a href="#map">Carte</a><a href="audit-national.html">Données</a><a href="audit-national.html">Statistiques</a></div>
     <div class="workspace">
 
       <!-- BARRE LATÉRALE -->
@@ -469,6 +453,16 @@
 
   </dialog>
 
+  <script>
+  document.getElementById("maquetteQuickSearch")?.addEventListener("submit",event=>{
+    event.preventDefault();
+    const query=document.getElementById("maquetteQuery").value.trim();
+    if(!query)return;
+    document.getElementById("atlas")?.scrollIntoView({behavior:"smooth"});
+    const target=document.getElementById("geonamesSearch")||document.getElementById("search");
+    if(target){target.value=query;target.dispatchEvent(new Event("input",{bubbles:true}));target.focus();}
+  });
+  </script>
   <!-- SCRIPTS -->
 
   <!-- Leaflet -->
