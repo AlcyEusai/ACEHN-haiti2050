@@ -4,7 +4,7 @@ function run(){results.replaceChildren();let doc;try{doc=frame.contentDocument;i
 const tests=[
 ["En-tête et navigation",()=>!!doc.querySelector("header nav a")],
 ["Accueil de la maquette",()=>!!doc.querySelector("#accueil.maquette-hero")],
-["Carte Leaflet",()=>!!doc.querySelector("#map .leaflet-pane")],
+["Carte Leaflet initialisée",()=>!!doc.querySelector("#map .leaflet-pane")],
 ["Sélecteurs territoriaux",()=>["department","arrondissement","commune"].every(id=>!!doc.getElementById(id))],
 ["Parcours en neuf étapes",()=>doc.querySelectorAll(".maquette-path a").length===9],
 ["Trois panneaux",()=>doc.querySelectorAll(".maquette-showcase-card").length===3],
@@ -13,7 +13,7 @@ const tests=[
 ["Onglets d'établissement",()=>doc.querySelectorAll(".v5-tab").length===4],
 ["Schéma 2050 déclaré illustratif",()=>!!doc.querySelector(".v5-plan-caption")],
 ["Panneau des projets",()=>!!doc.getElementById("projects")],
-["Absence de liens internes cassés (hors sections dynamiques)",()=>[...doc.querySelectorAll('a[href^="#"]')].every(a=>a.getAttribute("href")==="#"||!!doc.getElementById(a.getAttribute("href").slice(1)))]
+["Liens internes vers les sections chargées",()=>[...doc.querySelectorAll('a[href^="#"]')].every(a=>a.getAttribute("href")==="#"||!!doc.getElementById(a.getAttribute("href").slice(1)))]
 ];let ok=0;for(const [label,test] of tests){let pass=false;try{pass=!!test()}catch(e){}const li=document.createElement("li");li.className=pass?"pass":"fail";li.textContent=(pass?"✓ ":"✕ ")+label;results.append(li);if(pass)ok++}summary.textContent=ok+" / "+tests.length+" vérifications réussies. Contrôles manuels encore requis."}
 document.getElementById("run").addEventListener("click",run);frame.addEventListener("load",()=>setTimeout(run,1800));
 </script></body></html>
