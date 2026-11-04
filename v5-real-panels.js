@@ -17,14 +17,25 @@ function cloneText(source,destination,limit){destination.replaceChildren();if(!s
  for(const section of sections.slice(0,limit)){const title=section.querySelector("h3")?.textContent||"Informations";const block=element("div","v5-real-group");block.append(element("strong","",title));const lines=[...section.querySelectorAll("p,li")].map(n=>n.textContent.trim()).filter(Boolean);for(const line of lines.slice(0,4))block.append(element("p","",line));destination.append(block)}
  if(!sections.length)destination.append(element("p","","Sélectionnez une commune pour consulter sa fiche."))}
 function renderTerritory(){cloneText($("v4TerritorySheet"),territorial,3)}
+const tabs=element("div","v5-tabs");tabs.setAttribute("role","tablist");tabs.setAttribute("aria-label","Informations sur les établissements");institutionBody.insertBefore(tabs,institutions);
+const tabNames=["Description","Services","Historique","Sources"];let activeTab="Description";
+for(const name of tabNames){const button=element("button","v5-tab",name);button.type="button";button.setAttribute("role","tab");button.addEventListener("click",()=>{activeTab=name;renderInstitutions()});tabs.append(button)}
 function renderInstitutions(){
  institutions.replaceChildren();
+ for(const button of tabs.children){const active=button.textContent===activeTab;button.setAttribute("aria-selected",String(active));button.tabIndex=active?0:-1}
  const selected=commune?.selectedOptions?.[0]?.textContent?.trim();
  const current=commune?.value;
- institutions.append(element("strong","",current?"Établissements : "+selected:"Établissements du territoire"));
- institutions.append(element("p","",current?"Les résultats et leurs sources sont consultables dans l’inventaire et le catalogue national.":"Sélectionnez une commune pour consulter les fiches disponibles."));
- const links=[["Voir l’inventaire","#etablissementsPanel"],["Ouvrir le catalogue national","#v4NationalCatalog"]];
- for(const [label,href] of links){const a=element("a","v5-inline-link",label);a.href=href;institutions.append(a)}
+ const title=current?"Territoire : "+selected:"Répertoire national";
+ institutions.append(element("strong","",title));
+ const messages={
+ "Description":"Le catalogue national rassemble des fiches d’établissements. Ouvrez une fiche pour connaître les champs effectivement renseignés.",
+ "Services":"Les catégories de services sont documentées dans les fiches et l’inventaire territorial. La présence dans un registre ne confirme pas l’ouverture actuelle.",
+ "Historique":"Les événements et dates disponibles sont présentés dans la fiche détaillée de chaque établissement. Aucun historique n’est inventé pour les fiches incomplètes.",
+ "Sources":"Les fiches peuvent mentionner leur source et leur statut de vérification. Les informations sans source doivent être considérées comme à vérifier."
+ };
+ institutions.append(element("p","",messages[activeTab]));
+ const links=[["Consulter le registre","#etablissementsPanel"],["Explorer le catalogue national","#v4NationalCatalog"]];
+ for(const [label,href] of links){if(!$(href.slice(1)))continue;const a=element("a","v5-inline-link",label);a.href=href;institutions.append(a)}
 }
 function renderProjects(){
  proposals.replaceChildren();const cards=$("projectCards");const list=$("haiti2050FutureProjectList");
