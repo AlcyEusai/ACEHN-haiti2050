@@ -38,13 +38,21 @@ function renderInstitutions(){
  for(const [label,href] of links){if(!$(href.slice(1)))continue;const a=element("a","v5-inline-link",label);a.href=href;institutions.append(a)}
 }
 function renderProjects(){
+ const plan=document.querySelector(".v5-plan");
+ const selectedCommune=commune?.value||"";
+ const label=plan?.querySelector(".v5-plan-caption strong");
+ const notice=plan?.querySelector(".v5-plan-caption span");
+ if(label)label.textContent=selectedCommune?"Vision 2050 — "+(commune.selectedOptions[0]?.textContent.trim()||selectedCommune):"Vision 2050 — schéma illustratif";
+ if(notice)notice.textContent="Schéma générique non géolocalisé · Aucun chantier approuvé";
  proposals.replaceChildren();const cards=$("projectCards");const list=$("haiti2050FutureProjectList");
- const items=list?.children.length?[...list.children]:[...(cards?.children||[])];
- if(!items.length){proposals.append(element("p","","Aucun projet visible pour la sélection actuelle. Les propositions sont distinctes des infrastructures existantes."));return}
+ const items=list?.querySelectorAll("article")?.length?[...list.querySelectorAll("article")]:[...(cards?.children||[])];
+ if(!selectedCommune){proposals.append(element("p","","Sélectionnez une commune pour afficher ses projets. Le dessin ci-dessus reste un exemple conceptuel."));return}
+ if(!items.length){proposals.append(element("p","","Aucun projet visible pour cette commune. Le schéma ci-dessus est un exemple et ne constitue pas un projet local validé."));return}
  for(const item of items.slice(0,3)){const title=item.querySelector("h3,h4,strong")?.textContent?.trim()||item.textContent.trim().slice(0,90);const entry=element("div","v5-real-group");entry.append(element("strong","",title));proposals.append(entry)}
  proposals.append(element("p","v5-note","Propositions prospectives, non approuvées."))}
 let pending=false;function refresh(){if(pending)return;pending=true;requestAnimationFrame(()=>{pending=false;renderTerritory();renderInstitutions();renderProjects()})}
 for(const select of [commune,department,arrondissement])select?.addEventListener("change",()=>setTimeout(refresh,0));
 for(const id of ["v4TerritorySheet","projectCards","haiti2050FutureProjectList"]){const target=$(id);if(target)new MutationObserver(refresh).observe(target,{childList:true,subtree:false})}
+document.addEventListener("haiti2050:projectschange",refresh);
 refresh();
 })();
