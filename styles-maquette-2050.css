@@ -129,3 +129,23 @@ header nav a{font-size:12px;white-space:nowrap}
 .v5-plan-caption strong{font-size:11px}
 .v5-plan-caption span{color:#6c5361;text-align:right}
 @media(max-width:420px){.v5-plan-caption{flex-direction:column}.v5-plan-caption span{text-align:left}}
+
+/* Correctif V5 : la grille précédente étirait le bandeau bleu sur toute
+   la hauteur du contenu cartographique et masquait le texte au-dessus du pli. */
+@media(min-width:1180px){
+ body{display:block!important;padding:0!important}
+ body>header{margin:0!important}
+ body>.maquette-hero{width:calc(100% - 36px)!important;max-width:1500px!important;margin:18px auto 14px!important;min-height:0!important;height:auto!important;align-self:auto!important;display:grid!important;grid-template-columns:minmax(0,1.25fr) minmax(250px,.75fr)!important;align-items:start!important;padding:30px 32px 110px!important;box-sizing:border-box}
+ body>main#atlas{width:calc(100% - 36px)!important;max-width:1500px!important;margin:0 auto!important;padding:12px 0!important}
+ body>.maquette-path{width:calc(100% - 36px)!important;max-width:1500px!important;margin:12px auto!important}
+ body>.maquette-showcase{max-width:1500px!important;margin:12px auto 32px!important}
+ #atlas .workspace{display:grid!important;grid-template-columns:minmax(250px,300px) minmax(0,1fr)!important;gap:14px}
+ #atlas .workspace>aside{position:static!important;z-index:auto!important;width:auto!important;max-height:none!important;overflow:visible!important;padding:16px!important}
+ #atlas #map{height:440px!important;min-height:440px!important}
+ #atlas>.sectiontitle{display:block!important}
+ .maquette-hero .maquette-sectors{grid-template-columns:repeat(8,minmax(0,1fr))}
+}
+@media(min-width:1180px) and (max-width:1400px){
+ .maquette-hero .maquette-sectors{grid-template-columns:repeat(4,minmax(0,1fr))}
+ body>.maquette-hero{padding-bottom:145px!important}
+}
