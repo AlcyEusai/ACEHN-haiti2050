@@ -61,7 +61,7 @@ try{
  const endpoints=["https://overpass-api.de/api/interpreter","https://overpass.kumi.systems/api/interpreter"];
 let data=null,lastError=null;
 for(const endpoint of endpoints){
- const controller=new AbortController(),timeout=setTimeout(()=>controller.abort(),18000);
+ const controller=new AbortController(),timeout=setTimeout(()=>controller.abort(),8000);
  try{
   const response=await fetch(endpoint,{method:"POST",headers:{"Content-Type":"application/x-www-form-urlencoded;charset=UTF-8"},body:"data="+encodeURIComponent(q),signal:controller.signal});
   if(!response.ok)throw Error("HTTP "+response.status);
