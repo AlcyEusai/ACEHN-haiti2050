@@ -149,3 +149,45 @@ header nav a{font-size:12px;white-space:nowrap}
  .maquette-hero .maquette-sectors{grid-template-columns:repeat(4,minmax(0,1fr))}
  body>.maquette-hero{padding-bottom:145px!important}
 }
+
+/* V5 — Rééquilibrage de l'accueil */
+@media (min-width: 1180px) {
+  body {
+    grid-template-columns:
+      minmax(0, 40%) minmax(0, 60%);
+  }
+
+  body > .maquette-hero {
+    min-height: 0 !important;
+    height: auto !important;
+    align-self: start;
+    padding: 28px 24px 110px !important;
+    grid-template-columns: 1fr;
+  }
+
+  .maquette-hero h1 {
+    font-size: clamp(30px, 2.5vw, 44px);
+  }
+
+  #atlas .workspace > aside {
+    position: static;
+    width: auto;
+    max-height: none;
+    overflow: visible;
+    box-shadow: none;
+  }
+
+  #atlas .workspace {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #atlas .workspace > .mapCol {
+    order: 1;
+    width: 100%;
+  }
+
+  #atlas .workspace > aside {
+    order: 2;
+  }
+}
