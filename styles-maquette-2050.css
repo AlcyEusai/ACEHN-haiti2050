@@ -156,3 +156,12 @@ body>main#atlas{padding:8px 0;margin-top:0}
  .v5-plan-caption{flex-direction:column}
  .v5-plan-caption span{text-align:left}
 }
+
+/* Bureaux administratifs : panneau replié par défaut, ouvert sur demande */
+#administrationsPanel{padding:0;margin:10px 0;border:1px solid #c6d9eb;border-radius:10px;background:#fff;overflow:hidden}
+#administrationsPanel .admin-disclosure>summary{display:list-item;cursor:pointer;padding:12px 14px;color:#0a356a;font-size:13px;font-weight:750;background:#edf5fd}
+#administrationsPanel .admin-disclosure>summary:hover{background:#e1effd}
+#administrationsPanel .admin-disclosure>summary:focus-visible{outline:3px solid #f0a93d;outline-offset:-3px}
+#administrationsPanel .admin-disclosure[open]>summary{border-bottom:1px solid #c6d9eb}
+#administrationsPanel .admin-disclosure> :not(summary){margin-left:12px;margin-right:12px}
+#administrationsPanel .admin-disclosure #adminResults{max-height:330px;overflow-y:auto}
