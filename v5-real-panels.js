@@ -45,7 +45,7 @@ function renderProjects(){
  if(label)label.textContent=selectedCommune?"Vision 2050 — "+(commune.selectedOptions[0]?.textContent.trim()||selectedCommune):"Vision 2050 — schéma illustratif";
  if(notice)notice.textContent="Schéma générique non géolocalisé · Aucun chantier approuvé";
  proposals.replaceChildren();const cards=$("projectCards");const list=$("haiti2050FutureProjectList");
- const items=list?.querySelectorAll("article")?.length?[...list.querySelectorAll("article")]:[...(cards?.children||[])];
+ const items=list?[...list.querySelectorAll("article")]:[];
  if(!selectedCommune){proposals.append(element("p","","Sélectionnez une commune pour afficher ses projets. Le dessin ci-dessus reste un exemple conceptuel."));return}
  if(!items.length){proposals.append(element("p","","Aucun projet visible pour cette commune. Le schéma ci-dessus est un exemple et ne constitue pas un projet local validé."));return}
  for(const item of items.slice(0,3)){const title=item.querySelector("h3,h4,strong")?.textContent?.trim()||item.textContent.trim().slice(0,90);const entry=element("div","v5-real-group");entry.append(element("strong","",title));proposals.append(entry)}
