@@ -70,3 +70,30 @@ main{max-width:1500px;padding-top:18px}.sectiontitle h2{color:#082b61}
 .maquette-showcase-body p{font-size:13px;color:#506982;line-height:1.6;min-height:60px}
 .maquette-showcase-body a{display:inline-block;background:#0a55aa;color:#fff;text-decoration:none;border-radius:8px;padding:10px 14px;font-size:12px;font-weight:700}
 @media(max-width:800px){.maquette-showcase{grid-template-columns:1fr;padding:0 14px}}
+
+/* V5 : structure visuelle du parcours et lisibilité du panneau national */
+header nav{display:flex;flex-wrap:wrap;align-items:center;gap:4px}
+header nav a{font-size:12px;white-space:nowrap}
+.maquette-path{display:grid;grid-template-columns:minmax(150px,1.25fr) repeat(17,minmax(0,auto));gap:5px;align-items:stretch}
+.maquette-path strong{min-width:0}
+.maquette-path a{min-width:0;padding:12px 7px;white-space:normal}
+.maquette-path span{font-size:16px}
+@media(min-width:1180px){
+ .maquette-hero{min-height:510px!important;height:auto!important;align-self:stretch}
+ #atlas #map{height:440px;min-height:440px}
+ #atlas .workspace>aside{width:200px;max-height:345px}
+ .maquette-hero-main{min-width:0}
+ .maquette-missions{align-self:center}
+ .maquette-sectors{grid-template-columns:repeat(4,minmax(0,1fr));bottom:14px}
+ .maquette-sectors a{font-size:11px;padding:9px 4px}
+ .maquette-hero{padding-bottom:110px}
+}
+@media(max-width:1179px){
+ .maquette-path{display:flex;overflow-x:auto}
+ .maquette-path a{min-width:125px}
+}
+@media(max-width:650px){
+ header nav{justify-content:center}
+ .maquette-hero{padding-bottom:250px}
+ .maquette-showcase-banner{min-height:0}
+}
