@@ -15,6 +15,20 @@
       if (oldLabel) sidebar.insertBefore(panel, oldLabel);
       else selected.insertAdjacentElement('afterend', panel);
     } else sidebar.appendChild(panel);
+    // Le répertoire est disponible à la demande pour ne pas surcharger la carte.
+    // <details> garde les filtres et les résultats dans le DOM sans les afficher par défaut.
+    const disclosure = document.createElement('details');
+    disclosure.className = 'admin-disclosure';
+    const heading = panel.querySelector('h3');
+    const summary = document.createElement('summary');
+    summary.textContent = '🏛️ Bureaux administratifs';
+    summary.setAttribute('aria-label', 'Afficher ou masquer les bureaux administratifs');
+    disclosure.appendChild(summary);
+    for (const child of [...panel.children]) {
+      if (child !== heading) disclosure.appendChild(child);
+    }
+    heading?.remove();
+    panel.appendChild(disclosure);
     const category = panel.querySelector('#adminCategory');
     const query = panel.querySelector('#adminQuery');
     const status = panel.querySelector('#adminStatus');

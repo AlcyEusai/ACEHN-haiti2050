@@ -24,7 +24,7 @@
   <link rel="stylesheet" href="styles-v4-catalog.css?v=1">
   <link rel="stylesheet" href="styles-v4-place-details.css?v=1">
   <link rel="stylesheet" href="styles-v4-registry.css?v=1">
-  <link rel="stylesheet" href="styles-maquette-2050.css?v=2">
+  <link rel="stylesheet" href="styles-maquette-2050.css?v=13">
 </head>
 
 <body>
@@ -41,17 +41,19 @@
     </div>
 
     <nav>
-      <a href="#atlas">Atlas</a>
-      <a href="#projects">Projets</a>
-      <a href="audit-national.html">Inventaire national</a>
-      <a href="#method">Méthodologie</a>
+      <a href="#accueil">Accueil</a>
+      <a href="#atlas">Explorer le territoire</a>
+      <a href="#maquetteAujourdHui">Haïti aujourd’hui</a>
+      <a href="#projects">Haïti 2050</a>
+      <a href="audit-national.html">Données</a>
+      <a href="#method">À propos</a>
     </nav>
 
     <span class="tag">Atlas numérique • Haïti 2050</span>
   </header>
 
   <!-- ACCUEIL — maquette Haïti 2050 -->
-  <section class="hero maquette-hero">
+  <section id="accueil" class="hero maquette-hero">
     <div class="maquette-hero-main">
       <p class="eyebrow">ATLAS NUMÉRIQUE D’HAÏTI 2050</p>
       <h1>Connaître, Comprendre<br>et <span>Transformer Haïti</span></h1>
@@ -67,12 +69,12 @@
       <div><strong>🌱 Transformer Haïti</strong><p>Proposer des projets concrets de développement, commune par commune.</p></div>
     </div>
     <div class="maquette-sectors" aria-label="Explorer par secteur">
-      <a href="#etablissementsPanel">🏫 Éducation</a><a href="#etablissementsPanel">❤️ Santé</a><a href="#v4Vigilance">🛡️ Sécurité</a><a href="#etablissementsPanel">🏛️ Administration</a><a href="#etablissementsPanel">💼 Économie</a><a href="#atlas">🛣️ Infrastructures</a><a href="#v4PoiMiniMap">🏝️ Tourisme & patrimoine</a><a href="#projects">🌱 Projets 2050</a>
+      <a href="#v4NationalCatalog">🏫 Éducation</a><a href="#v4NationalCatalog">❤️ Santé</a><a href="#method">🛡️ Sécurité</a><a href="#v4NationalCatalog">🏛️ Administration</a><a href="#v4NationalCatalog">💼 Économie</a><a href="#atlas">🛣️ Infrastructures</a><a href="#atlas">🏝️ Tourisme & patrimoine</a><a href="#projects">🌱 Projets 2050</a>
     </div>
   </section>
   <section class="maquette-path" aria-label="Parcours de navigation">
     <strong>Parcours de navigation <small>Du national au détail</small></strong>
-    <a href="#atlas">1. Haïti</a><span>›</span><a href="#department">2. Département</a><span>›</span><a href="#arrondissement">3. Arrondissement</a><span>›</span><a href="#commune">4. Commune</a><span>›</span><a href="#geonamesSearch">5. Localité</a><span>›</span><a href="#etablissementsPanel">6. Établissement</a><span>›</span><a href="#v4NationalCatalog">7. Fiche & historique</a><span>›</span><a href="#projects">8. Projets 2050</a>
+    <a href="#atlas">1. Haïti</a><span>›</span><a href="#department">2. Département</a><span>›</span><a href="#arrondissement">3. Arrondissement</a><span>›</span><a href="#commune">4. Commune</a><span>›</span><a href="#search">5. Section communale</a><span>›</span><a href="#search">6. Localité</a><span>›</span><a href="#v4NationalCatalog">7. Établissement</a><span>›</span><a href="#v4NationalCatalog">8. Fiche & historique</a><span>›</span><a href="#projects">9. Projets 2050</a>
   </section>
   <!-- ATLAS -->
   <main id="atlas">
@@ -252,25 +254,40 @@
 
   </main>
 
-<section class="maquette-showcase" aria-label="Explorer les informations territoriales">
+<section id="maquetteAujourdHui" class="maquette-showcase" aria-label="Explorer les informations territoriales">
   <article class="maquette-showcase-card">
     <div class="maquette-showcase-banner"><small>HAÏTI › DÉPARTEMENT › COMMUNE</small><h2>Fiche territoriale</h2><p>Découvrir les infrastructures, les besoins et les projets d'une commune.</p></div>
     <div class="maquette-showcase-body">
-      <h3>Haïti aujourd'hui</h3><p>Consultez les écoles, centres de santé, administrations et autres services recensés dans le territoire sélectionné.</p>
+      <h3 id="v5CommuneName">Sélectionnez une commune</h3><p id="v5CommuneDetails">Choisissez un département, un arrondissement puis une commune dans l’atlas pour afficher son nom ici.</p><div class="v5-status">Territoire • Informations issues du sélecteur de l’atlas</div>
       <a href="#atlas">Explorer une commune →</a>
     </div>
   </article>
   <article class="maquette-showcase-card">
     <div class="maquette-showcase-banner"><small>INVENTAIRE NATIONAL</small><h2>Établissements et historique</h2><p>Retrouver les institutions documentées et leurs sources.</p></div>
     <div class="maquette-showcase-body">
-      <h3>Fiches d'établissements</h3><p>Nom, localisation, catégorie, historique, provenance des données et niveau de vérification.</p>
-      <a href="#etablissementsPanel">Consulter les établissements →</a>
+      <h3>Répertoire institutionnel</h3><p>Consultez les établissements du registre national et ouvrez leurs fiches lorsque des informations documentées sont disponibles.</p><div class="v5-status">Vérification • Selon les sources disponibles</div>
+      <a href="#v4NationalCatalog">Consulter les établissements →</a>
     </div>
   </article>
   <article class="maquette-showcase-card">
     <div class="maquette-showcase-banner"><small>VISION DE DÉVELOPPEMENT</small><h2>Haïti à l'horizon 2050</h2><p>Des projets territoriaux pour construire l'avenir.</p></div>
     <div class="maquette-showcase-body">
-      <h3>Plans et projets</h3><p>Aménagement, infrastructures, eau, santé, éducation et développement local. Propositions à documenter.</p>
+      <div class="v5-plan" role="img" aria-label="Schéma conceptuel d'aménagement : axes de mobilité, espaces verts et équipements publics. Ce dessin ne représente aucune commune réelle.">
+<svg viewBox="0 0 480 230" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+<rect width="480" height="230" fill="#e8f1e8"/>
+<path d="M0 45 L480 195 M-15 210 L480 20" stroke="#ffffff" stroke-width="34"/>
+<path d="M0 45 L480 195 M-15 210 L480 20" stroke="#90a6b8" stroke-width="22"/>
+<path d="M0 45 L480 195 M-15 210 L480 20" stroke="#fff" stroke-width="2" stroke-dasharray="10 12"/>
+<rect x="35" y="18" width="105" height="62" rx="5" fill="#9bc4df" stroke="#537c96" stroke-width="3"/>
+<rect x="175" y="22" width="76" height="55" rx="5" fill="#f5d98b" stroke="#b28d3f" stroke-width="3"/>
+<rect x="345" y="32" width="99" height="70" rx="5" fill="#b5d6b0" stroke="#5b9769" stroke-width="3"/>
+<rect x="245" y="147" width="90" height="64" rx="5" fill="#c9b9e5" stroke="#8372b1" stroke-width="3"/>
+<rect x="40" y="148" width="100" height="58" rx="5" fill="#a8d8c5" stroke="#5c9981" stroke-width="3"/>
+<g fill="#17395d" font-size="12" font-family="sans-serif" font-weight="700" text-anchor="middle">
+<text x="87" y="52">École</text><text x="213" y="52">Marché</text><text x="394" y="69">Parc</text><text x="290" y="182">Santé</text><text x="90" y="181">Eau</text>
+</g></svg>
+<div class="v5-plan-caption"><strong>Vision 2050 — schéma illustratif</strong><span>Non géolocalisé · Aucun chantier approuvé</span></div>
+</div><h3>Projets proposés</h3><p id="v5ProjectCount">Les projets du navigateur sont affichés dans la section dédiée.</p><div class="v5-status">Prospective • Non approuvée</div>
       <a href="#projects">Voir les projets 2050 →</a>
     </div>
   </article>
@@ -486,6 +503,29 @@
     if(target){target.value=query;target.dispatchEvent(new Event("input",{bubbles:true}));target.focus();}
   });
   </script>
+  <script>
+  (() => {
+    const commune=document.getElementById("commune");
+    const name=document.getElementById("v5CommuneName");
+    const detail=document.getElementById("v5CommuneDetails");
+    function updateCommune(){
+      if(!commune||!name||!detail)return;
+      const option=commune.options[commune.selectedIndex];
+      const value=option?.value;
+      name.textContent=value ? option.textContent.trim() : "Sélectionnez une commune";
+      detail.textContent=value ? "Commune sélectionnée dans l’atlas. Consultez sa fiche territoriale et les établissements documentés ci-dessous." : "Choisissez un département, un arrondissement puis une commune dans l’atlas pour afficher son nom ici.";
+    }
+    commune?.addEventListener("change",updateCommune);
+    updateCommune();
+    const projects=document.getElementById("projectCards");
+    const count=document.getElementById("v5ProjectCount");
+    if(projects&&count&&window.MutationObserver){
+      const update=()=>{const n=projects.children.length;count.textContent=n ? n+" fiche(s) de projet affichée(s) dans l’atlas. Les propositions ne sont pas des projets approuvés." : "Aucun projet affiché pour le moment. Les propositions peuvent être ajoutées depuis la section Projets.";};
+      new MutationObserver(update).observe(projects,{childList:true});
+      update();
+    }
+  })();
+  </script>
   <!-- SCRIPTS -->
 
   <!-- Leaflet -->
@@ -509,7 +549,7 @@
   <script src="sections-repertoire.js?v=3"></script>
 
  <script src="localites-nationales.js?v=5"></script>
-  <script src="bureaux-administratifs.js?v=1"></script>
+  <script src="bureaux-administratifs.js?v=2"></script>
   <script src="normalisation-territoriale.js"></script>
   <script src="etablissements.js?v=4"></script>
   
@@ -526,6 +566,8 @@
   <script src="atlas-v4-national-catalog.js?v=2"></script>
   <script src="registry-config.js?v=1"></script>
   <script src="atlas-v4-registry.js?v=3"></script>
+
+  <script src="v5-real-panels.js?v=1"></script>
 
   <!-- Sections communales temporairement désactivées -->
   <!--

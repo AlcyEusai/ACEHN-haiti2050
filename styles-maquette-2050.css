@@ -1,3 +1,7 @@
+/* Haïti 2050 — V5 | Styles organisés par composant.
+   Une seule règle de mise en page par breakpoint ; pas de grille sur body. */
+
+/* 01 — Palette, en-tête et accueil */
 /* Référence visuelle : maquette Atlas numérique d'Haïti 2050. */
 :root{--atlas-navy:#092b5a;--atlas-blue:#0b4b91;--atlas-gold:#f1ae29}
 body{background:#f2f6fc;color:#102b50}
@@ -32,17 +36,35 @@ main{max-width:1500px;padding-top:18px}.sectiontitle h2{color:#082b61}
 .workspace aside,.mapCol{border-color:#c9d8e9;box-shadow:0 6px 25px #092d5b0d}
 #map{height:min(75vh,740px)}
 .v4-poi{background:#f7faff}.v4-categories button.active,#v4LoadPlaces{background:#0b55a2;border-color:#0b55a2}
-@media(max-width:1100px){.maquette-sectors{grid-template-columns:repeat(4,1fr)}.maquette-hero{padding-bottom:165px}.maquette-path a{min-width:120px}}
-@media(max-width:780px){.maquette-hero{grid-template-columns:1fr;padding:32px 22px 230px}.maquette-sectors{grid-template-columns:repeat(2,1fr);bottom:14px;left:15px;right:15px}.maquette-missions{grid-template-columns:1fr}.maquette-sectors a{padding:8px 4px}.maquette-hero h1{font-size:35px}.maquette-search{border-radius:15px}.maquette-search button{padding:10px}.maquette-path{padding:10px}.workspace{grid-template-columns:1fr}}
 
-/* Disposition fidèle à la maquette : accueil et carte côte à côte. */
-@media(min-width:1180px){
- body{display:grid;grid-template-columns:minmax(0,1.12fr) minmax(0,.88fr);gap:14px;align-items:start;padding:0 14px}
- body>header{grid-column:1/-1;margin:0 -14px}
- body>.maquette-hero{grid-column:1;grid-row:2;margin:0;width:100%;min-height:420px;height:420px;box-sizing:border-box}
- body>main#atlas{grid-column:2;grid-row:2;margin:0;width:100%;max-width:none;min-width:0;padding:0}
- body>.maquette-path{grid-column:1/-1;grid-row:3;margin:0;width:100%;box-sizing:border-box;max-width:none}
- body>.maquette-showcase{grid-column:1/-1;grid-row:4}
+header nav{display:flex;flex-wrap:wrap;align-items:center;gap:4px}
+header nav a{font-size:12px;white-space:nowrap}
+body{display:block}
+body>header{margin:0}
+body>.maquette-hero,body>main#atlas,body>.maquette-path,body>.maquette-showcase{width:min(1500px,calc(100% - 36px));box-sizing:border-box;margin-left:auto;margin-right:auto}
+.maquette-hero{min-height:0;height:auto;grid-template-columns:minmax(0,1.3fr) minmax(240px,.7fr);gap:20px;align-items:center;padding:28px 28px 100px;margin-top:14px;margin-bottom:10px}
+.maquette-hero h1{font-size:clamp(30px,3vw,48px);margin:8px 0 12px}
+.maquette-hero-main>p:not(.eyebrow){font-size:14px;line-height:1.5}
+.maquette-missions{gap:8px}
+.maquette-missions>div{padding:10px 12px}
+.maquette-sectors{left:16px;right:16px;bottom:12px}
+.maquette-sectors a{padding:8px 3px}
+body>main#atlas{padding:8px 0;margin-top:0}
+#atlas>.sectiontitle{display:block}
+#atlas .workspace{display:grid;grid-template-columns:minmax(250px,300px) minmax(0,1fr);gap:12px}
+#atlas .workspace>aside{position:static;width:auto;max-height:none;overflow:visible;padding:16px;z-index:auto}
+#atlas .workspace>.mapCol{width:100%;min-width:0}
+#atlas #map{height:430px;min-height:430px}
+#atlas .maquette-atlas-tabs{margin:0;padding:8px;background:#f9fbff;border:1px solid #c8d8e8;border-radius:12px 12px 0 0}
+
+/* 02 — Parcours territorial */
+.maquette-path{display:flex;overflow-x:auto;gap:6px;padding:12px 0;margin-top:10px;margin-bottom:16px}
+.maquette-path strong{min-width:150px}
+.maquette-path a{min-width:116px;white-space:normal;flex:1}
+.maquette-path span{font-size:16px}
+
+/* 03 — Fiches de synthèse */
+.maquette-showcase{grid-column:1/-1;grid-row:4}
  body>section:not(.maquette-hero):not(.maquette-path):not(.maquette-showcase),body>footer,body>dialog{grid-column:1/-1}
  #atlas>.sectiontitle{display:none}
  #atlas .workspace{display:block;position:relative}
@@ -69,4 +91,77 @@ main{max-width:1500px;padding-top:18px}.sectiontitle h2{color:#082b61}
 .maquette-showcase-body h3{font-size:16px;color:#082d62;margin:0 0 10px}
 .maquette-showcase-body p{font-size:13px;color:#506982;line-height:1.6;min-height:60px}
 .maquette-showcase-body a{display:inline-block;background:#0a55aa;color:#fff;text-decoration:none;border-radius:8px;padding:10px 14px;font-size:12px;font-weight:700}
-@media(max-width:800px){.maquette-showcase{grid-template-columns:1fr;padding:0 14px}}
+
+/* V5 — Fiches de synthèse de la maquette */
+.maquette-showcase-card{display:flex;flex-direction:column;min-width:0}
+.maquette-showcase-banner{position:relative;background:linear-gradient(145deg,#06234e,#0a4d89 70%,#176d9c)}
+.maquette-showcase-banner:after{content:"";position:absolute;right:-30px;bottom:-65px;width:185px;height:185px;border:1px solid #ffffff2d;border-radius:50%;box-shadow:0 0 0 28px #ffffff09,0 0 0 55px #ffffff08;pointer-events:none}
+.maquette-showcase-body{display:flex;flex:1;flex-direction:column;gap:8px}
+.maquette-showcase-body p{min-height:0;margin:0 0 12px}
+.maquette-showcase-body a{margin-top:auto;align-self:flex-start}
+.v5-status{font-size:11px;color:#375b78;background:#eff5fc;border:1px solid #d9e6f4;padding:9px 11px;border-radius:7px;margin-bottom:12px}
+.maquette-showcase-card:focus-within{outline:2px solid #3376d2;outline-offset:2px}
+
+/* Panneaux V5 reliés aux données */
+.v5-real-details{border-top:1px solid #dce8f4;padding-top:12px;display:grid;gap:9px;margin:4px 0 14px}
+.v5-real-group{border-left:3px solid #1e77ba;padding:7px 10px;background:#f4f8fd;border-radius:0 7px 7px 0}
+.v5-real-group strong,.v5-real-details>strong{font-size:12px;color:#123e71}
+.v5-real-group p,.v5-real-details>p{font-size:11px!important;line-height:1.5;margin:5px 0!important;min-height:0!important}
+.v5-real-details a.v5-inline-link{background:transparent;color:#0b5c9f;border:0;padding:2px 0;font-size:11px;text-decoration:underline;margin:0}
+.v5-note{color:#596e83}
+
+/* V5 — navigation par onglets de la fiche établissement */
+.v5-tabs{display:flex;flex-wrap:wrap;gap:5px;margin:12px 0 4px}
+.v5-tab{font:inherit;font-size:11px;font-weight:700;padding:8px 9px;border:1px solid #c5d7ea;border-radius:7px;background:#f2f7fc;color:#184574;cursor:pointer}
+.v5-tab[aria-selected="true"]{background:#0b539c;color:white;border-color:#0b539c}
+.v5-tab:focus-visible{outline:3px solid #f0a93d;outline-offset:2px}
+
+/* V5 : représentation illustrative des projets 2050 */
+.v5-plan{border:1px solid #c8d8e5;border-radius:11px;overflow:hidden;background:#e8f1e8;margin:3px 0 12px}
+.v5-plan svg{display:block;width:100%;height:auto;aspect-ratio:480/230}
+.v5-plan-caption{display:flex;align-items:flex-start;justify-content:space-between;gap:9px;padding:9px 11px;background:#f4f9fd;color:#1d4769;font-size:10px;line-height:1.5}
+.v5-plan-caption strong{font-size:11px}
+.v5-plan-caption span{color:#6c5361;text-align:right}
+@media(max-width:420px){.v5-plan-caption{flex-direction:column}.v5-plan-caption span{text-align:left}}
+
+
+
+/* 04 — Responsive : tablette */
+@media(max-width:1179px){
+ .maquette-hero{grid-template-columns:1fr;gap:16px;padding:26px 24px 140px}
+ .maquette-missions{grid-template-columns:repeat(3,minmax(0,1fr))}
+ .maquette-sectors{grid-template-columns:repeat(4,minmax(0,1fr))}
+ #atlas .workspace{grid-template-columns:minmax(220px,280px) minmax(0,1fr)}
+ .maquette-path a{min-width:125px}
+}
+@media(max-width:800px){
+ #atlas .workspace{grid-template-columns:1fr}
+ .maquette-showcase{grid-template-columns:1fr}
+ .maquette-missions{grid-template-columns:1fr}
+ .maquette-hero{padding-bottom:210px}
+ .maquette-sectors{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .maquette-showcase-banner{min-height:0}
+}
+@media(max-width:650px){
+ header nav{justify-content:center}
+ body>.maquette-hero,body>main#atlas,body>.maquette-path,body>.maquette-showcase{width:calc(100% - 24px)}
+ .maquette-hero{padding:22px 16px 220px}
+ .maquette-hero h1{font-size:clamp(29px,8vw,38px)}
+ .maquette-search{border-radius:14px}
+ .maquette-search button{padding:10px}
+ .maquette-sectors{left:12px;right:12px}
+ .maquette-sectors a{font-size:11px;padding:8px 3px}
+}
+@media(max-width:420px){
+ .v5-plan-caption{flex-direction:column}
+ .v5-plan-caption span{text-align:left}
+}
+
+/* Bureaux administratifs : panneau replié par défaut, ouvert sur demande */
+#administrationsPanel{padding:0;margin:10px 0;border:1px solid #c6d9eb;border-radius:10px;background:#fff;overflow:hidden}
+#administrationsPanel .admin-disclosure>summary{display:list-item;cursor:pointer;padding:12px 14px;color:#0a356a;font-size:13px;font-weight:750;background:#edf5fd}
+#administrationsPanel .admin-disclosure>summary:hover{background:#e1effd}
+#administrationsPanel .admin-disclosure>summary:focus-visible{outline:3px solid #f0a93d;outline-offset:-3px}
+#administrationsPanel .admin-disclosure[open]>summary{border-bottom:1px solid #c6d9eb}
+#administrationsPanel .admin-disclosure> :not(summary){margin-left:12px;margin-right:12px}
+#administrationsPanel .admin-disclosure #adminResults{max-height:330px;overflow-y:auto}

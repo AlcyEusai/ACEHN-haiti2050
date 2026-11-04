@@ -1,0 +1,19 @@
+<!doctype html><html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Contrôle V5 — Haïti 2050</title><style>body{font:16px system-ui;margin:0;background:#f0f5fa;color:#123}header{background:#082d60;color:white;padding:20px}main{max-width:1100px;margin:auto;padding:20px}iframe{width:100%;height:640px;border:2px solid #a8c0d9;border-radius:12px;background:white}li{padding:6px} .pass{color:#08703b}.fail{color:#a12323}.warn{color:#865c00}button{padding:10px 18px;background:#1458a0;color:white;border:0;border-radius:8px;cursor:pointer}</style></head><body><header><h1>Contrôle de la V5 — Haïti 2050</h1><p>Page de vérification sur la branche de développement uniquement. Ne modifie aucune donnée.</p></header><main><p><button id="run">Relancer les vérifications</button> <span id="summary" aria-live="polite"></span></p><ol id="results"></ol><h2>Aperçu du site</h2><iframe id="site" src="./index.html" title="Aperçu de Haïti 2050 V5"></iframe><h2>Vérifications manuelles nécessaires</h2><p>1. Choisir un département, un arrondissement et une commune ; vérifier que les trois panneaux se mettent à jour. 2. Ouvrir le catalogue, rechercher un établissement et consulter sa fiche et ses sources. 3. Vérifier les projets en changeant de commune. 4. Contrôler le menu et les liens. 5. Refaire ces vérifications sur un écran mobile. 6. Comparer visuellement la page avec la maquette d'origine.</p><p><strong>Attention :</strong> la réussite des contrôles automatiques ne valide ni la qualité des données, ni la ressemblance visuelle, ni le fonctionnement de tous les services cartographiques externes.</p></main><script>
+const frame=document.getElementById("site"),results=document.getElementById("results"),summary=document.getElementById("summary");
+function run(){results.replaceChildren();let doc;try{doc=frame.contentDocument;if(!doc||doc.readyState!=="complete")throw Error("Page encore en chargement");}catch(e){summary.textContent="Aperçu non accessible : "+e.message;return}
+const tests=[
+["En-tête et navigation",()=>!!doc.querySelector("header nav a")],
+["Accueil de la maquette",()=>!!doc.querySelector("#accueil.maquette-hero")],
+["Carte Leaflet initialisée",()=>!!doc.querySelector("#map .leaflet-pane")],
+["Sélecteurs territoriaux",()=>["department","arrondissement","commune"].every(id=>!!doc.getElementById(id))],
+["Parcours en neuf étapes",()=>doc.querySelectorAll(".maquette-path a").length===9],
+["Trois panneaux",()=>doc.querySelectorAll(".maquette-showcase-card").length===3],
+["Fiche communale",()=>!!doc.getElementById("v4TerritorySheet")],
+["Catalogue national",()=>!!doc.getElementById("v4NationalCatalog")],
+["Onglets d'établissement",()=>doc.querySelectorAll(".v5-tab").length===4],
+["Schéma 2050 déclaré illustratif",()=>!!doc.querySelector(".v5-plan-caption")],
+["Panneau des projets",()=>!!doc.getElementById("projects")],
+["Liens internes vers les sections chargées",()=>[...doc.querySelectorAll('a[href^="#"]')].every(a=>a.getAttribute("href")==="#"||!!doc.getElementById(a.getAttribute("href").slice(1)))]
+];let ok=0;for(const [label,test] of tests){let pass=false;try{pass=!!test()}catch(e){}const li=document.createElement("li");li.className=pass?"pass":"fail";li.textContent=(pass?"✓ ":"✕ ")+label;results.append(li);if(pass)ok++}summary.textContent=ok+" / "+tests.length+" vérifications réussies. Contrôles manuels encore requis."}
+document.getElementById("run").addEventListener("click",run);frame.addEventListener("load",()=>setTimeout(run,1800));
+</script></body></html>
