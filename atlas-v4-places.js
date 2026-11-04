@@ -11,7 +11,7 @@ const layer=L.featureGroup().addTo(detailMap);let kind="all",request=0;
 const resize=()=>detailMap.invalidateSize();setTimeout(resize,150);
 map.on("moveend",()=>{if(!layer.getLayers().length)detailMap.setView(map.getCenter(),Math.max(7,map.getZoom()))});
 const rules={all:'nwr["tourism"];nwr["historic"];nwr["office"];nwr["amenity"~"townhall|courthouse|bank|post_office|embassy|fire_station|police|hospital|clinic|doctors|pharmacy|school|university|college"]',tourism:'nwr["tourism"];nwr["historic"]',office:'nwr["office"];nwr["amenity"~"townhall|courthouse|bank|post_office|embassy|fire_station"]',police:'nwr["amenity"="police"]',health:'nwr["amenity"~"hospital|clinic|doctors|pharmacy"]',education:'nwr["amenity"~"school|university|college"]'};
-toolbar.querySelectorAll("[data-kind]").forEach(b=>b.addEventListener("click",()=>{kind=b.dataset.kind;toolbar.querySelectorAll("[data-kind]").forEach(x=>x.classList.toggle("active",x===b));}));
+toolbar.querySelectorAll("[data-kind]").forEach(b=>b.addEventListener("click",()=>{kind=b.dataset.kind;toolbar.querySelectorAll("[data-kind]").forEach(x=>x.classList.toggle("active",x===b));if(map.getZoom()>=11)$("v4LoadPlaces")?.click();}));
 const status=$("v4PoiStatus"),details=$("v4PoiDetails");
 $("v4LoadPlaces").addEventListener("click",async()=>{
 if(map.getZoom()<11){status.textContent="Zoomez davantage sur une commune (niveau 11 minimum).";return}
