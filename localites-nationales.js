@@ -48,7 +48,10 @@
     results.style.cssText =
       "max-height:260px;overflow:auto;margin-top:8px";
 
-    panel.append(label, field, status, results);
+    const pickerLabel=document.createElement("label");pickerLabel.htmlFor="geonamesPicker";pickerLabel.textContent="Choisir une localité dans la liste";
+const picker=document.createElement("select");picker.id="geonamesPicker";picker.style.cssText="display:block;width:100%;padding:11px;margin:8px 0;box-sizing:border-box";
+picker.append(new Option("Choisir une localité…",""));
+panel.append(label,field,pickerLabel,picker,status,results);
 
     // Trouver la vraie barre latérale
     const sidebar = document.querySelector(
@@ -88,10 +91,27 @@
         places.length.toLocaleString("fr-FR") +
         " lieux disponibles. Saisissez au moins 2 lettres.";
 
-      field.addEventListener("input", () => {
+      const goToPlace=place=>{
+ const lat=Number(place.latitude),lon=Number(place.longitude);
+ if(!Number.isFinite(lat)||!Number.isFinite(lon))return;
+ field.value=place.nom;results.replaceChildren();
+ const map=window.haiti2050Map;
+ if(map&&window.L){map.setView([lat,lon],13);L.popup().setLatLng([lat,lon]).setContent(document.createTextNode(place.nom)).openOn(map);}
+ status.textContent="Localité sélectionnée : "+place.nom+". Rattachement administratif à vérifier.";
+};
+const updatePicker=query=>{
+ const matches=places.filter(p=>normalize(p.nom).includes(query)).slice(0,150);
+ picker.replaceChildren(new Option(query?matches.length+" résultats — choisir…":"Choisir une localité…",""));
+ for(const p of matches){const o=new Option(p.nom+" ("+Number(p.latitude).toFixed(3)+", "+Number(p.longitude).toFixed(3)+")",String(places.indexOf(p)));picker.add(o);}
+ return matches;
+};
+picker.addEventListener("change",()=>{if(picker.value!=="")goToPlace(places[Number(picker.value)])});
+updatePicker("");
+field.addEventListener("input", () => {
         const query = normalize(field.value);
         results.replaceChildren();
 
+        updatePicker(query);
         if (query.length < 2) {
           status.textContent = "Saisissez au moins 2 lettres.";
           return;
@@ -118,34 +138,7 @@
             Number(place.latitude).toFixed(4) + ", " +
             Number(place.longitude).toFixed(4);
 
-          button.addEventListener("click", () => {
-            field.value = place.nom;
-            results.replaceChildren();
-
-            const map = window.haiti2050Map;
-
-            if (map && window.L) {
-              map.setView(
-                [place.latitude, place.longitude],
-                13
-              );
-
-              L.popup()
-                .setLatLng([
-                  place.latitude,
-                  place.longitude
-                ])
-                .setContent(
-                  document.createTextNode(place.nom)
-                )
-                .openOn(map);
-
-              status.textContent =
-                "Lieu affiché sur la carte : " +
-                place.nom +
-                ". Rattachement administratif à vérifier.";
-            }
-          });
+          button.addEventListener("click", () => goToPlace(place));
 
           results.appendChild(button);
         });
