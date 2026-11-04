@@ -34,3 +34,39 @@ main{max-width:1500px;padding-top:18px}.sectiontitle h2{color:#082b61}
 .v4-poi{background:#f7faff}.v4-categories button.active,#v4LoadPlaces{background:#0b55a2;border-color:#0b55a2}
 @media(max-width:1100px){.maquette-sectors{grid-template-columns:repeat(4,1fr)}.maquette-hero{padding-bottom:165px}.maquette-path a{min-width:120px}}
 @media(max-width:780px){.maquette-hero{grid-template-columns:1fr;padding:32px 22px 230px}.maquette-sectors{grid-template-columns:repeat(2,1fr);bottom:14px;left:15px;right:15px}.maquette-missions{grid-template-columns:1fr}.maquette-sectors a{padding:8px 4px}.maquette-hero h1{font-size:35px}.maquette-search{border-radius:15px}.maquette-search button{padding:10px}.maquette-path{padding:10px}.workspace{grid-template-columns:1fr}}
+
+/* Disposition fidèle à la maquette : accueil et carte côte à côte. */
+@media(min-width:1180px){
+ body{display:grid;grid-template-columns:minmax(0,1.12fr) minmax(0,.88fr);gap:14px;align-items:start;padding:0 14px}
+ body>header{grid-column:1/-1;margin:0 -14px}
+ body>.maquette-hero{grid-column:1;grid-row:2;margin:0;width:100%;min-height:420px;height:420px;box-sizing:border-box}
+ body>main#atlas{grid-column:2;grid-row:2;margin:0;width:100%;max-width:none;min-width:0;padding:0}
+ body>.maquette-path{grid-column:1/-1;grid-row:3;margin:0;width:100%;box-sizing:border-box;max-width:none}
+ body>.maquette-showcase{grid-column:1/-1;grid-row:4}
+ body>section:not(.maquette-hero):not(.maquette-path):not(.maquette-showcase),body>footer,body>dialog{grid-column:1/-1}
+ #atlas>.sectiontitle{display:none}
+ #atlas .workspace{display:block;position:relative}
+ #atlas .workspace>aside{position:absolute;z-index:400;left:12px;top:12px;width:185px;max-height:285px;overflow:auto;background:#fffffff2;padding:12px;box-sizing:border-box;box-shadow:0 8px 20px #062f6228}
+ #atlas .workspace>.mapCol{width:100%;min-width:0}
+ #atlas #map{height:365px;min-height:365px}
+ #atlas .mapTools{padding:7px 10px}
+ #atlas .mapFooter{font-size:10px;max-height:38px;overflow:auto}
+ #atlas .maquette-atlas-tabs{margin:0;padding:8px;background:#f9fbff;border:1px solid #c8d8e8;border-radius:12px 12px 0 0}
+ .maquette-hero{padding:36px 28px 95px;gap:12px;grid-template-columns:1.15fr .85fr}
+ .maquette-hero h1{font-size:clamp(32px,3.1vw,53px)}
+ .maquette-hero-main>p:not(.eyebrow){font-size:14px}
+ .maquette-missions>div{padding:11px}
+ .maquette-sectors{gap:5px;left:15px;right:15px}
+ .maquette-sectors a{padding:11px 3px;font-size:10px}
+}
+.maquette-showcase{max-width:1500px;width:100%;box-sizing:border-box;margin:12px auto 32px;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:15px}
+.maquette-showcase-card{background:#fff;border:1px solid #bfd1e6;border-radius:14px;overflow:hidden;box-shadow:0 7px 22px #092d5b0f}
+.maquette-showcase-banner{background:linear-gradient(120deg,#072a60,#185c9d);padding:23px;color:white;min-height:150px}
+.maquette-showcase-banner small{font-size:10px;letter-spacing:.1em;color:#c8dfff}
+.maquette-showcase-banner h2{font-size:22px;color:#fff;margin:10px 0}
+.maquette-showcase-banner p{font-size:13px;line-height:1.5;color:#e5f0ff}
+.maquette-showcase-body{padding:20px}
+.maquette-showcase-body h3{font-size:16px;color:#082d62;margin:0 0 10px}
+.maquette-showcase-body p{font-size:13px;color:#506982;line-height:1.6;min-height:60px}
+.maquette-showcase-body a{display:inline-block;background:#0a55aa;color:#fff;text-decoration:none;border-radius:8px;padding:10px 14px;font-size:12px;font-weight:700}
+@media(max-width:800px){.maquette-showcase{grid-template-columns:1fr;padding:0 14px}}
