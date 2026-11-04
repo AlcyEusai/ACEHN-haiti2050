@@ -5,7 +5,7 @@ header{background:linear-gradient(110deg,#052b62,#0b427f);color:#fff;border-bott
 header .brand,header .brand b,header .brand small,header nav a,header .tag{color:#fff}
 header .brand em{color:#fa3855}header nav a:hover,header nav a:focus-visible{background:#ffffff25;color:#fff}
 header .tag{background:#ffffff18;border:1px solid #ffffff30}
-.maquette-hero{position:relative;max-width:1500px;margin:18px auto 12px;min-height:385px;border-radius:20px;overflow:hidden;display:grid;grid-template-columns:minmax(0,1.4fr) minmax(270px,.65fr);gap:28px;align-items:center;padding:42px 44px 110px;background:linear-gradient(90deg,rgba(4,34,76,.94),rgba(8,59,104,.65)),url("https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?auto=format&fit=crop&w=1800&q=80") center/cover;color:#fff;box-shadow:0 14px 30px #113b6620}
+.maquette-hero{position:relative;max-width:1500px;margin:18px auto 12px;min-height:385px;border-radius:20px;overflow:hidden;display:grid;grid-template-columns:minmax(0,1.4fr) minmax(270px,.65fr);gap:28px;align-items:center;padding:42px 44px 110px;background:linear-gradient(90deg,rgba(4,34,76,.94),rgba(8,59,104,.65));color:#fff;box-shadow:0 14px 30px #113b6620}
 .maquette-hero .eyebrow{color:#a5dbf8;letter-spacing:.16em}
 .maquette-hero h1{font-size:clamp(35px,4vw,64px);line-height:1.08;margin:15px 0 18px;color:#fff;letter-spacing:-.035em}
 .maquette-hero h1 span{color:var(--atlas-gold)}
