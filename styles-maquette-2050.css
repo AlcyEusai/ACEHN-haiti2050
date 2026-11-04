@@ -1,3 +1,7 @@
+/* Haïti 2050 — V5 | Styles organisés par composant.
+   Une seule règle de mise en page par breakpoint ; pas de grille sur body. */
+
+/* 01 — Palette, en-tête et accueil */
 /* Référence visuelle : maquette Atlas numérique d'Haïti 2050. */
 :root{--atlas-navy:#092b5a;--atlas-blue:#0b4b91;--atlas-gold:#f1ae29}
 body{background:#f2f6fc;color:#102b50}
@@ -32,17 +36,35 @@ main{max-width:1500px;padding-top:18px}.sectiontitle h2{color:#082b61}
 .workspace aside,.mapCol{border-color:#c9d8e9;box-shadow:0 6px 25px #092d5b0d}
 #map{height:min(75vh,740px)}
 .v4-poi{background:#f7faff}.v4-categories button.active,#v4LoadPlaces{background:#0b55a2;border-color:#0b55a2}
-@media(max-width:1100px){.maquette-sectors{grid-template-columns:repeat(4,1fr)}.maquette-hero{padding-bottom:165px}.maquette-path a{min-width:120px}}
-@media(max-width:780px){.maquette-hero{grid-template-columns:1fr;padding:32px 22px 230px}.maquette-sectors{grid-template-columns:repeat(2,1fr);bottom:14px;left:15px;right:15px}.maquette-missions{grid-template-columns:1fr}.maquette-sectors a{padding:8px 4px}.maquette-hero h1{font-size:35px}.maquette-search{border-radius:15px}.maquette-search button{padding:10px}.maquette-path{padding:10px}.workspace{grid-template-columns:1fr}}
 
-/* Disposition fidèle à la maquette : accueil et carte côte à côte. */
-@media(min-width:1180px){
- body{display:grid;grid-template-columns:minmax(0,1.12fr) minmax(0,.88fr);gap:14px;align-items:start;padding:0 14px}
- body>header{grid-column:1/-1;margin:0 -14px}
- body>.maquette-hero{grid-column:1;grid-row:2;margin:0;width:100%;min-height:420px;height:420px;box-sizing:border-box}
- body>main#atlas{grid-column:2;grid-row:2;margin:0;width:100%;max-width:none;min-width:0;padding:0}
- body>.maquette-path{grid-column:1/-1;grid-row:3;margin:0;width:100%;box-sizing:border-box;max-width:none}
- body>.maquette-showcase{grid-column:1/-1;grid-row:4}
+header nav{display:flex;flex-wrap:wrap;align-items:center;gap:4px}
+header nav a{font-size:12px;white-space:nowrap}
+body{display:block}
+body>header{margin:0}
+body>.maquette-hero,body>main#atlas,body>.maquette-path,body>.maquette-showcase{width:min(1500px,calc(100% - 36px));box-sizing:border-box;margin-left:auto;margin-right:auto}
+.maquette-hero{min-height:0;height:auto;grid-template-columns:minmax(0,1.3fr) minmax(240px,.7fr);gap:20px;align-items:center;padding:28px 28px 100px;margin-top:14px;margin-bottom:10px}
+.maquette-hero h1{font-size:clamp(30px,3vw,48px);margin:8px 0 12px}
+.maquette-hero-main>p:not(.eyebrow){font-size:14px;line-height:1.5}
+.maquette-missions{gap:8px}
+.maquette-missions>div{padding:10px 12px}
+.maquette-sectors{left:16px;right:16px;bottom:12px}
+.maquette-sectors a{padding:8px 3px}
+body>main#atlas{padding:8px 0;margin-top:0}
+#atlas>.sectiontitle{display:block}
+#atlas .workspace{display:grid;grid-template-columns:minmax(250px,300px) minmax(0,1fr);gap:12px}
+#atlas .workspace>aside{position:static;width:auto;max-height:none;overflow:visible;padding:16px;z-index:auto}
+#atlas .workspace>.mapCol{width:100%;min-width:0}
+#atlas #map{height:430px;min-height:430px}
+#atlas .maquette-atlas-tabs{margin:0;padding:8px;background:#f9fbff;border:1px solid #c8d8e8;border-radius:12px 12px 0 0}
+
+/* 02 — Parcours territorial */
+.maquette-path{display:flex;overflow-x:auto;gap:6px;padding:12px 0;margin-top:10px;margin-bottom:16px}
+.maquette-path strong{min-width:150px}
+.maquette-path a{min-width:116px;white-space:normal;flex:1}
+.maquette-path span{font-size:16px}
+
+/* 03 — Fiches de synthèse */
+.maquette-showcase{grid-column:1/-1;grid-row:4}
  body>section:not(.maquette-hero):not(.maquette-path):not(.maquette-showcase),body>footer,body>dialog{grid-column:1/-1}
  #atlas>.sectiontitle{display:none}
  #atlas .workspace{display:block;position:relative}
@@ -69,34 +91,6 @@ main{max-width:1500px;padding-top:18px}.sectiontitle h2{color:#082b61}
 .maquette-showcase-body h3{font-size:16px;color:#082d62;margin:0 0 10px}
 .maquette-showcase-body p{font-size:13px;color:#506982;line-height:1.6;min-height:60px}
 .maquette-showcase-body a{display:inline-block;background:#0a55aa;color:#fff;text-decoration:none;border-radius:8px;padding:10px 14px;font-size:12px;font-weight:700}
-@media(max-width:800px){.maquette-showcase{grid-template-columns:1fr;padding:0 14px}}
-
-/* V5 : structure visuelle du parcours et lisibilité du panneau national */
-header nav{display:flex;flex-wrap:wrap;align-items:center;gap:4px}
-header nav a{font-size:12px;white-space:nowrap}
-.maquette-path{display:grid;grid-template-columns:minmax(150px,1.25fr) repeat(17,minmax(0,auto));gap:5px;align-items:stretch}
-.maquette-path strong{min-width:0}
-.maquette-path a{min-width:0;padding:12px 7px;white-space:normal}
-.maquette-path span{font-size:16px}
-@media(min-width:1180px){
- .maquette-hero{min-height:510px!important;height:auto!important;align-self:stretch}
- #atlas #map{height:440px;min-height:440px}
- #atlas .workspace>aside{width:200px;max-height:345px}
- .maquette-hero-main{min-width:0}
- .maquette-missions{align-self:center}
- .maquette-sectors{grid-template-columns:repeat(4,minmax(0,1fr));bottom:14px}
- .maquette-sectors a{font-size:11px;padding:9px 4px}
- .maquette-hero{padding-bottom:110px}
-}
-@media(max-width:1179px){
- .maquette-path{display:flex;overflow-x:auto}
- .maquette-path a{min-width:125px}
-}
-@media(max-width:650px){
- header nav{justify-content:center}
- .maquette-hero{padding-bottom:250px}
- .maquette-showcase-banner{min-height:0}
-}
 
 /* V5 — Fiches de synthèse de la maquette */
 .maquette-showcase-card{display:flex;flex-direction:column;min-width:0}
@@ -130,44 +124,35 @@ header nav a{font-size:12px;white-space:nowrap}
 .v5-plan-caption span{color:#6c5361;text-align:right}
 @media(max-width:420px){.v5-plan-caption{flex-direction:column}.v5-plan-caption span{text-align:left}}
 
-/* Correctif V5 : la grille précédente étirait le bandeau bleu sur toute
-   la hauteur du contenu cartographique et masquait le texte au-dessus du pli. */
-@media(min-width:1180px){
- body{display:block!important;padding:0!important}
- body>header{margin:0!important}
- body>.maquette-hero{width:calc(100% - 36px)!important;max-width:1500px!important;margin:18px auto 14px!important;min-height:0!important;height:auto!important;align-self:auto!important;display:grid!important;grid-template-columns:minmax(0,1.25fr) minmax(250px,.75fr)!important;align-items:start!important;padding:30px 32px 110px!important;box-sizing:border-box}
- body>main#atlas{width:calc(100% - 36px)!important;max-width:1500px!important;margin:0 auto!important;padding:12px 0!important}
- body>.maquette-path{width:calc(100% - 36px)!important;max-width:1500px!important;margin:12px auto!important}
- body>.maquette-showcase{max-width:1500px!important;margin:12px auto 32px!important}
- #atlas .workspace{display:grid!important;grid-template-columns:minmax(250px,300px) minmax(0,1fr)!important;gap:14px}
- #atlas .workspace>aside{position:static!important;z-index:auto!important;width:auto!important;max-height:none!important;overflow:visible!important;padding:16px!important}
- #atlas #map{height:440px!important;min-height:440px!important}
- #atlas>.sectiontitle{display:block!important}
- .maquette-hero .maquette-sectors{grid-template-columns:repeat(8,minmax(0,1fr))}
-}
-@media(min-width:1180px) and (max-width:1400px){
- .maquette-hero .maquette-sectors{grid-template-columns:repeat(4,minmax(0,1fr))}
- body>.maquette-hero{padding-bottom:145px!important}
-}
 
 
-/* V5.1 — mise en page compacte sans colonne vide : accueil puis atlas pleine largeur */
-@media(min-width:1180px){
- body{display:block!important;padding:0!important}
- body>.maquette-hero{display:grid!important;width:min(1500px,calc(100% - 36px))!important;max-width:1500px!important;margin:14px auto 10px!important;height:auto!important;min-height:0!important;grid-template-columns:minmax(0,1.3fr) minmax(230px,.7fr)!important;gap:20px!important;padding:24px 28px 94px!important;align-items:center!important}
- .maquette-hero h1{font-size:clamp(30px,3vw,48px)!important;margin:8px 0 12px!important}
- .maquette-hero-main>p:not(.eyebrow){font-size:14px!important;line-height:1.45!important}
- .maquette-missions{gap:8px!important}
- .maquette-missions>div{padding:10px 12px!important}
- .maquette-sectors{grid-template-columns:repeat(8,minmax(0,1fr))!important;left:16px!important;right:16px!important;bottom:12px!important}
- .maquette-sectors a{padding:8px 3px!important}
- body>main#atlas{display:block!important;width:min(1500px,calc(100% - 36px))!important;margin:0 auto!important;padding:8px 0!important}
- #atlas .workspace{display:grid!important;grid-template-columns:minmax(250px,300px) minmax(0,1fr)!important;gap:12px!important}
- #atlas .workspace>aside{position:static!important;width:auto!important;max-height:none!important;overflow:visible!important;order:initial!important}
- #atlas .workspace>.mapCol{order:initial!important;width:100%!important}
- #atlas #map{height:430px!important;min-height:430px!important}
+/* 04 — Responsive : tablette */
+@media(max-width:1179px){
+ .maquette-hero{grid-template-columns:1fr;gap:16px;padding:26px 24px 140px}
+ .maquette-missions{grid-template-columns:repeat(3,minmax(0,1fr))}
+ .maquette-sectors{grid-template-columns:repeat(4,minmax(0,1fr))}
+ #atlas .workspace{grid-template-columns:minmax(220px,280px) minmax(0,1fr)}
+ .maquette-path a{min-width:125px}
 }
-@media(min-width:1180px) and (max-width:1400px){
- .maquette-sectors{grid-template-columns:repeat(4,minmax(0,1fr))!important}
- body>.maquette-hero{padding-bottom:142px!important}
+@media(max-width:800px){
+ #atlas .workspace{grid-template-columns:1fr}
+ .maquette-showcase{grid-template-columns:1fr}
+ .maquette-missions{grid-template-columns:1fr}
+ .maquette-hero{padding-bottom:210px}
+ .maquette-sectors{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .maquette-showcase-banner{min-height:0}
+}
+@media(max-width:650px){
+ header nav{justify-content:center}
+ body>.maquette-hero,body>main#atlas,body>.maquette-path,body>.maquette-showcase{width:calc(100% - 24px)}
+ .maquette-hero{padding:22px 16px 220px}
+ .maquette-hero h1{font-size:clamp(29px,8vw,38px)}
+ .maquette-search{border-radius:14px}
+ .maquette-search button{padding:10px}
+ .maquette-sectors{left:12px;right:12px}
+ .maquette-sectors a{font-size:11px;padding:8px 3px}
+}
+@media(max-width:420px){
+ .v5-plan-caption{flex-direction:column}
+ .v5-plan-caption span{text-align:left}
 }
