@@ -150,44 +150,24 @@ header nav a{font-size:12px;white-space:nowrap}
  body>.maquette-hero{padding-bottom:145px!important}
 }
 
-/* V5 — Rééquilibrage de l'accueil */
-@media (min-width: 1180px) {
-  body {
-    grid-template-columns:
-      minmax(0, 40%) minmax(0, 60%);
-  }
 
-  body > .maquette-hero {
-    min-height: 0 !important;
-    height: auto !important;
-    align-self: start;
-    padding: 28px 24px 110px !important;
-    grid-template-columns: 1fr;
-  }
-
-  .maquette-hero h1 {
-    font-size: clamp(30px, 2.5vw, 44px);
-  }
-
-  #atlas .workspace > aside {
-    position: static;
-    width: auto;
-    max-height: none;
-    overflow: visible;
-    box-shadow: none;
-  }
-
-  #atlas .workspace {
-    display: flex;
-    flex-direction: column;
-  }
-
-  #atlas .workspace > .mapCol {
-    order: 1;
-    width: 100%;
-  }
-
-  #atlas .workspace > aside {
-    order: 2;
-  }
+/* V5.1 — mise en page compacte sans colonne vide : accueil puis atlas pleine largeur */
+@media(min-width:1180px){
+ body{display:block!important;padding:0!important}
+ body>.maquette-hero{display:grid!important;width:min(1500px,calc(100% - 36px))!important;max-width:1500px!important;margin:14px auto 10px!important;height:auto!important;min-height:0!important;grid-template-columns:minmax(0,1.3fr) minmax(230px,.7fr)!important;gap:20px!important;padding:24px 28px 94px!important;align-items:center!important}
+ .maquette-hero h1{font-size:clamp(30px,3vw,48px)!important;margin:8px 0 12px!important}
+ .maquette-hero-main>p:not(.eyebrow){font-size:14px!important;line-height:1.45!important}
+ .maquette-missions{gap:8px!important}
+ .maquette-missions>div{padding:10px 12px!important}
+ .maquette-sectors{grid-template-columns:repeat(8,minmax(0,1fr))!important;left:16px!important;right:16px!important;bottom:12px!important}
+ .maquette-sectors a{padding:8px 3px!important}
+ body>main#atlas{display:block!important;width:min(1500px,calc(100% - 36px))!important;margin:0 auto!important;padding:8px 0!important}
+ #atlas .workspace{display:grid!important;grid-template-columns:minmax(250px,300px) minmax(0,1fr)!important;gap:12px!important}
+ #atlas .workspace>aside{position:static!important;width:auto!important;max-height:none!important;overflow:visible!important;order:initial!important}
+ #atlas .workspace>.mapCol{order:initial!important;width:100%!important}
+ #atlas #map{height:430px!important;min-height:430px!important}
+}
+@media(min-width:1180px) and (max-width:1400px){
+ .maquette-sectors{grid-template-columns:repeat(4,minmax(0,1fr))!important}
+ body>.maquette-hero{padding-bottom:142px!important}
 }
