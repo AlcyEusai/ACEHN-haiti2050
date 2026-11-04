@@ -97,3 +97,13 @@ header nav a{font-size:12px;white-space:nowrap}
  .maquette-hero{padding-bottom:250px}
  .maquette-showcase-banner{min-height:0}
 }
+
+/* V5 — Fiches de synthèse de la maquette */
+.maquette-showcase-card{display:flex;flex-direction:column;min-width:0}
+.maquette-showcase-banner{position:relative;background:linear-gradient(145deg,#06234e,#0a4d89 70%,#176d9c)}
+.maquette-showcase-banner:after{content:"";position:absolute;right:-30px;bottom:-65px;width:185px;height:185px;border:1px solid #ffffff2d;border-radius:50%;box-shadow:0 0 0 28px #ffffff09,0 0 0 55px #ffffff08;pointer-events:none}
+.maquette-showcase-body{display:flex;flex:1;flex-direction:column;gap:8px}
+.maquette-showcase-body p{min-height:0;margin:0 0 12px}
+.maquette-showcase-body a{margin-top:auto;align-self:flex-start}
+.v5-status{font-size:11px;color:#375b78;background:#eff5fc;border:1px solid #d9e6f4;padding:9px 11px;border-radius:7px;margin-bottom:12px}
+.maquette-showcase-card:focus-within{outline:2px solid #3376d2;outline-offset:2px}
